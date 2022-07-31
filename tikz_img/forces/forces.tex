@@ -1,0 +1,165 @@
+
+\fbox{
+
+
+\begin{tikzpicture}[scale=3.0, every node/.style={scale=0.7}]
+
+
+%%%Truncated sphere on a vertical wall
+
+\coordinate (O1) at (0,0);
+\coordinate (O2) at (0,2);
+
+\draw (O1)--(O2);
+
+\coordinate (Ob) at (0,1.0);
+
+\tikzmath{\thet = 45; \thetrad= \thet * pi / 180; \ray=0.5; \rw=\ray * sin(\thetrad r);};
+
+
+\coordinate (Oarc) at ($(Ob)-(0,{\ray * sin(\thetrad r)})$);
+\draw (Oarc) arc({(-pi+\thetrad ) r}:{(pi-\thetrad ) r}:\ray);
+
+%Upstream angle
+\draw (Oarc) --++(-90+\thet:0.3);
+\draw ($(Oarc)+(0,-0.15)$) arc(-90:-90+\thet:0.15) node[near end, below]{$\theta$};
+
+%%Downstream angle
+%\coordinate (Oarc2) at ($(Oarc) - (2*\rw,0)$);
+%\draw (Oarc2) --++(180-\thet:0.3);
+%\draw ($(Oarc2)+(-0.15,0)$) arc(180:180-\thet:0.15) node[near end, left]{$\alpha$};
+
+%Center and radius
+
+\coordinate (Cb) at ($(Ob)+({\ray*cos(\thetrad r)},0 )$);
+\draw (Cb) node{$\times$} node[below right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc) node[midway, below right]{$R$};
+
+
+%%Forces
+
+\draw[->, >=latex, violet!70!black] (Ob)--++(\ray/2,0) node[near end, above]{$\vect{F_{CP}}$};
+
+\draw[->, >=latex, red!70!black!] ($(Cb)+(\ray,0)$)--++(\ray/2,0) node[very near end, above]{$\vect{F_{L}}$};
+\draw[->, >=latex, red!70!black!] ($(Cb)+(0,\ray)$)--++(0,\ray/2) node[very near end, right]{$\vect{F_{D}}$};
+
+\coordinate (Oarc2) at ($(Oarc)+(0,{2*\rw})$);
+\draw[->, >=latex, violet] (Oarc)--++(90+\thet:\ray/2) node[very near end, above]{$\vect{F_{C}}$};
+\draw[->, >=latex, violet] (Oarc2)--++(-90-\thet:\ray/2) node[very near end, below]{$\vect{F_{C}}$};
+
+\draw[->, >=latex, blue!70!black] (Cb)--++(0,\ray/1.5) node[very near end, right]{$\vect{F_{B}}$};
+
+
+\draw[->, >=latex, green!50!black!] (Cb)--++(90+\thet/1.5:\ray/1.5) node[very near end, above]{$\vect{F_{AM}}$};
+
+%Gravity
+
+\draw[->, >=latex, blue!30!black]  ($(Cb)+({1.5*\ray},{1.5*\ray})$)--++(0,-\ray/2) node[very near end, right]{$\vect{g}$};
+
+
+%Flow arrows
+\foreach \i in {2,...,14} 
+{
+\coordinate (Oloc) at ($(O1)+(\i/15,0.05)$);
+\draw[->,>=latex, gray!70!blue] (Oloc)--++(0,{ln(1+0.03*\i)});
+}
+\draw[gray!70!blue] ($(Oloc)+(0.1,0.1)$) node{$\vect{U_{L}}$};
+
+%Referential vectors
+\coordinate (Ovect) at (1.75,0);
+\draw[->, >=latex] (Ovect)--++(0.3,0) node[very near end, above right]{$\vect{e_{y}}$};
+\draw[->, >=latex] (Ovect)--++(0,0.3) node[very near end, above right]{$\vect{e_{x}}$};
+
+
+
+
+%Tilted bubble
+\coordinate (Ob2) at (2.5,1.0);
+
+\coordinate (O1) at (2.5,0);
+\coordinate (O2) at (2.5,2);
+\draw (O1)--(O2);
+
+\tikzmath{\thet = 40; \thetrad= \thet * pi / 180;
+\dthet=10; \dthetrad=\dthet*pi/180;
+\thetadvrad=\thetrad - \dthetrad;
+\thetrecrad=\thetrad + \dthetrad;
+\thetadv=\thetadvrad*180/pi;
+\thetrec=\thetrecrad*180/pi;
+\ray=0.5; 
+\rayadv=\ray *(1+cos(\thetrad r))/(1+ cos(\thetadvrad r);
+\rayrec=\ray *(1+cos(\thetrad r))/(1+ cos(\thetrecrad r);};
+
+\coordinate (Oarc) at ($(Ob2)-(0,{\ray * sin(\thetrad r)})$);
+
+
+\draw (Oarc) arc({-pi+(\thetrecrad)) r}:{0 r}:\rayrec) arc ({0 r}:{pi-(\thetadvrad)) r}:\rayadv);
+
+%Upstream angle
+\draw (Oarc) --++(-90+\thetrecrad r:0.3) node[very near end, below]{$\theta + \dtheta$};
+\draw ($(Oarc)+(0,-0.15)$) arc(-90:-90+\thetrecrad r:0.15) ;
+
+%Downstream angle
+\coordinate (Oarc2) at ($(Oarc) + (0,{\rayadv * sin(\thetadvrad r) + \rayrec * sin(\thetrecrad r)})$);
+\draw (Oarc2) --++({90-(\thetadvrad r)}:0.3);
+\coordinate (angadv) at ($(Oarc2) +({90-(\thetadvrad r)}:0.3)$);
+\draw (angadv)  node[above]{$\theta - \dtheta $};
+\draw ($(Oarc2)+(0,+0.15)$) arc(90:{90-(\thetadvrad r)}:0.15);
+
+
+
+%Center and radius
+
+\coordinate (Cb) at ($(Oarc2)+( {\ray * cos(\thetrad r)} , {-0.5 * (\rayadv * sin(\thetadvrad r) + \rayrec  * sin(\thetrecrad r) )})$);
+\draw (Cb) node{$\times$} node[below right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc) node[midway, above left]{$R$};
+
+
+%Inclination angle
+
+%\draw[densely dotted] (Cb) --++ (0.7,0);
+%\draw[densely dotted] (Cb) --++ ({(1*\dthetrad r)}: 0.7 );
+%\draw ($(Cb) + (0.3,0)$) arc(0: {(\dthetrad r)}:0.3)  node[midway, right]{$\dtheta$};
+%
+%
+
+
+
+%%Forces
+
+\draw[->, >=latex, violet!70!black] (Ob2)--++(\ray/2,0) node[near end, above]{$\vect{F_{CP}}$};
+
+\draw[->, >=latex, red!70!black!] ($(Cb)+(\ray,0)$)--++(\ray/2,0) node[very near end, above]{$\vect{F_{L}}$};
+\draw[->, >=latex, red!70!black!] ($(Cb)+(0,-\rayadv*0.95)$)--++(0,-\ray/2) node[very near end, right]{$\vect{F_{D}}$};
+\draw[->, >=latex, red] ($(Cb)+(0,+\rayrec*1.04)$)--++(0,+\ray/2) node[very near end, right]{$\vect{U_{b}}$};
+
+
+\draw[->, >=latex, violet] (Oarc)--++(90+\thetrec:\ray/2) node[very near end, above]{$\vect{F_{C}}$};
+\draw[->, >=latex, violet] (Oarc2)--++(-90-\thetadv:\ray/2) node[very near end, below]{$\vect{F_{C}}$};
+
+\draw[->, >=latex, blue!70!black] (Cb)--++(0,\ray/1.5) node[very near end, right]{$\vect{F_{B}}$};
+
+
+\draw[->, >=latex, green!50!black!] (Cb)--++(90-\thet:-\ray/1.5) node[very near end, right]{$\vect{F_{AM}}$};
+
+%Gravity
+
+\draw[->, >=latex, blue!30!black]  ($(Cb)+({1.5*\ray},{1.5*\ray})$)--++(0,-\ray/2) node[very near end, right]{$\vect{g}$};
+
+
+
+%Flow arrows
+\foreach \i in {2,...,14} 
+{
+\coordinate (Oloc) at ($(O1)+(\i/15,0.05)$);
+\draw[->,>=latex, gray!70!blue] (Oloc)--++(0,{ln(1+0.03*\i)});
+}
+\draw[gray!70!blue] ($(Oloc)+(0.1,0.1)$) node{$\vect{U_{L}}$};
+
+
+
+\end{tikzpicture}
+
+}

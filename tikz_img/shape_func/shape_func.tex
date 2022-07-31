@@ -1,0 +1,51 @@
+
+\begin{tikzpicture}[yscale=3, xscale=2]
+
+\tikzmath{\alph1=70;}
+\draw[gray!90!] (0,0) grid[ystep=1,xstep=pi/2](pi,1);
+\draw[gray!60!, dashed] (0,0) grid[ystep=0.5, xstep=pi/8](pi,1);
+%\draw[gray!60!, densely dotted] (0,0) grid[step=pi/4](4,1);
+
+
+%\draw [domain=-pi:pi] plot (\x,{sin(\x r)});
+%\draw[domain=0:pi] plot(\x, {cos(\x r)});
+\draw [domain=0:pi, red] plot(\x,{0.25*(2-cos(\x r))*((1+cos(\x r))^2)}); %f_V
+\draw [domain=0:pi, olive!80!black] plot(\x,{1-\x/pi + sin((2*\x) r)/(2*pi)}); %f_Sp
+%\draw [domain=0:pi, blue] plot(\x,{(1-cos(\x r)^2)}); %f_G
+
+\draw[->,>=latex,black] (0,0)--(0,1.1) node[very near end, above=0.3cm]{$\redmath{f_{V}}$, $\greenmath{f_{S_{p}}}$} node[very near start, below=0.4cm]{$0$} node[very near end, left]{$1$};
+\draw[->,>=latex,black] (0,0)--(pi+0.1,0) node[very near end, below=0.2cm, right=0.8cm]{$\theta_{s}$};
+
+\draw (pi/4,0) node[below]{$\pi/4$};
+\draw (pi/2,0) node[below]{$\pi/2$};
+\draw (3*pi/4,0) node[below]{$3\pi/4$};
+
+
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}[xscale=2, yscale=1.5]
+
+\tikzmath{\alphdeg=45; \alphrad=\alphdeg*pi/180;}
+\draw[gray!90!] (0,-1) grid[xstep=pi/2,ystep=1](pi,1);
+\draw[gray!60!, dashed] (0,-1) grid[xstep=pi/8,ystep=0.5](pi,1);
+
+%\draw [domain=-pi:pi] plot (\x,{sin(\x r)});
+%\draw[domain=0:pi] plot(\x, {cos(\x r)});
+\draw [domain=0:pi, red] plot(\x,{(sin(\alphrad r)^2)*(cos(\x r)^2)}); %f_cp
+\draw [domain=0.001:pi, olive!80!black] plot(\x,{(sin(\alphrad r)^2)*sin(2*\x r)/(2*\x)}); %f_s,orth
+\draw [domain=0:pi, blue] plot(\x,{1.215*\x*(sin(\alphrad r)^2)*(cos(\x r)^2)/((pi/2)^2 - \x^2)}); %f_s,parl
+
+
+\draw[->,>=latex,black] (0,-1)--(0,1.1) node[very near end, above=0.5cm]{$\redmath{f_{cp}}$, $\greenmath{f_{s,\bot}}$, $\bluemath{f_{s,\|}}$};
+\draw (0,0) node[left]{$0$};
+\draw (0,1) node[left]{$1$};
+\draw (0,-1) node[left]{$-1$};
+\draw[->,>=latex,black] (0,-1)--(pi+0.1,-1) node[very near end, below=0.2cm, right=0.8cm]{$\dtheta$};
+
+\draw (pi/4,-1) node[below]{$\pi/4$};
+\draw (pi/2,-1) node[below]{$\pi/2$};
+\draw (3*pi/4,-1) node[below]{$3\pi/4$};
+
+\draw[orange!70!black] (\alphrad, -1) -- (\alphrad,1) node[very near end, above=0.5cm]{$\theta_{s}$};
+
+\end{tikzpicture}

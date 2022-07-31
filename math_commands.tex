@@ -1,0 +1,85 @@
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\npar}{\vspace{\baselineskip}}
+
+
+
+\newcommand{\dtime}[1]{\frac{\partial{#1}}{\partial t}}
+\newcommand{\dpartial}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\derive}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+
+%%Tensor Calculation
+%\newcommand{\vect}[1]{\overline{\boldsymbol{#1}}}
+\newcommand{\vect}[1]{\overline{#1}}
+
+\newcommand{\tens}[1]{\overline{\overline{#1}}}
+%\newcommand{\tens}[1]{\overline{\overline{\boldsymbol{#1}}}}
+
+\newcommand{\divg}[1]{\vect{\nabla} \cdot \left({#1}\right)}
+%\newcommand{\divg}[1]{\nabla\cdot\left(#1\right)}
+\newcommand{\vecdivg}[1]{{\tens{\nabla }\cdot \left({#1}\right)}}
+
+%\newcommand{\grad}[1]{\overline{\boldsymbol{\nabla}}#1}
+\newcommand{\grad}[1]{\overline{\nabla}\left({#1}\right)}
+\newcommand{\vecgrad}[1]{\overline{\overline{\nabla}}\left({#1}\right)}
+
+%\newcommand{\gradtens}[1]{\overline{\overline{\boldsymbol{\nabla}}}#1}
+\newcommand{\gradtens}[1]{\overline{\overline{{\nabla}}}#1}
+
+
+%\newcommand{\lapla}[1]{\overline{\boldsymbol{\Delta}}#1}
+\newcommand{\lapla}[1]{\overline{{\Delta}}#1}
+
+\newcommand{\inv}[1]{\frac{1}{#1}}
+
+\newcommand{\rot}[1]{\overline{\nabla}\wedge{#1}}
+
+
+
+
+%\newcommand{\debm}{\mathrm{kg}.\mathrm{m}^{-2}.\mathrm{s}^{-1}}
+\newcommand{\debm}{\text{kg/m$^{2}$/s}}
+
+
+\newcommand{\parth}[1]{\left( #1 \right)}
+\newcommand{\crocht}[1]{\left[ #1 \right]}
+\newcommand{\bars}[1]{\left| #1 \right|}
+\newcommand{\up}[1]{$^\mathrm{#1}$}
+\newcommand{\norm}[1]{\left|\left|{#1}\right|\right|}
+
+\newcommand{\Ja}{\mathrm{Ja}}
+\renewcommand{\Re}{\mathrm{Re}}
+\renewcommand{\Pr}{\mathrm{Pr}}
+\newcommand{\Nu}{\mathrm{Nu}}
+\newcommand{\Fr}{\mathrm{Fr}}
+\newcommand{\Eo}{\mathrm{Eo}}
+\newcommand{\St}{\mathrm{St}}
+\newcommand{\We}{\mathrm{We}}
+\newcommand{\Pe}{\mathrm{Pe}}
+\newcommand{\Ca}{\mathrm{Ca}}
+\newcommand{\Sr}{\mathrm{Sr}}
+
+
+
+\newcommand{\dalpha}{\mathrm{d}\alpha}
+\newcommand{\dtheta}{\mathrm{d}\theta}
+
+\newcommand{\trb}{\mathrm{tr}\parth{\beta}}
+
+\renewcommand{\cos}[1]{\mathrm{cos}\parth{#1}}
+\renewcommand{\sin}[1]{\mathrm{sin}\parth{#1}}
+\newcommand{\cossq}[1]{\mathrm{cos}^{2}\parth{#1}}
+\newcommand{\sinsq}[1]{\mathrm{sin}^{2}\parth{#1}}
+\renewcommand{\ln}[1]{\mathrm{ln}\parth{#1}}
+
+\newcommand{\redmath}[1]{\begingroup\color{red}#1\endgroup}
+\newcommand{\orangemath}[1]{\begingroup\color{orange}#1\endgroup}
+\newcommand{\yellowmath}[1]{\begingroup\color{yellow}#1\endgroup}
+\newcommand{\bluemath}[1]{\begingroup\color{blue}#1\endgroup}
+\newcommand{\greenmath}[1]{\begingroup\color{olive!70!black}#1\endgroup}
+
+
+%\newcommand{\etal}{\textit{et al.}}
+%\newcommand{\ie}{\textit{i.e.}}
+%\newcommand{\eg}{\textit{e.g.}}
+

@@ -1,0 +1,117 @@
+\fbox{
+
+\renewcommand{\dalpha}{\text{d}\alpha}
+
+\begin{tikzpicture}[scale=4.0, every node/.style={scale=0.7}]
+
+
+\coordinate (O) at (0,0);
+\coordinate (A2) at (1.4,0);
+\coordinate (A) at (3.2,0);
+
+
+%Sections and wall
+\draw (O) -- (A);
+%\draw ($(O)-(0,0.05)$) -- ($(A)-(0,0.05)$);
+%\foreach \i in {0,...,15}
+%{
+%\draw (\i*0.2,0) -- (\i*0.2+0.1,-0.05);
+%}
+
+\draw[dashed, gray!70!white] (A2) --++ (0,1);
+
+
+%Non-tilded bubble
+\coordinate (Ob) at (0.75,0);
+
+\tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.5; \rw=\ray * sin(\alphrad r); \h=\ray * cos(\alphrad r);};
+
+
+\coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
+\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+%Right angle
+\draw (Oarc) --++(\alph:0.3);
+\draw ($(Oarc)+(0.15,0)$) arc(0:\alph:0.15) node[near end, right]{$\theta_{s}$};
+
+%Left angle
+\coordinate (Oarc2) at ($(Oarc) - (2*\rw,0)$);
+\draw (Oarc2) --++(180-\alph:0.3);
+\draw ($(Oarc2)+(-0.15,0)$) arc(180:180-\alph:0.15) node[near end, left]{$\theta_{s}$};
+
+%Center and radius
+
+\coordinate (Cb) at ($(Ob)+(0,{\ray*cos(\alphrad r)} )$);
+\draw (Cb) node{$\times$} node[above right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc2) node[midway, above left]{$R$};
+
+
+%Angular portion
+
+\draw[densely dotted] (Cb)--++(0,\ray);
+\draw[densely dotted] (Cb) -- (Oarc);
+
+\draw ($(Cb)+(0,0.3)$) arc(90:-(90-\alph):0.3) node[midway, right]{$\Theta$};
+
+%Bubble foot
+\draw[<->,>=latex, densely dashed] ($(Oarc)-(0,0.02)$) --++ (-\rw,0) node[midway,below]{$r_{w}$};
+%Bubble height
+\draw[<->, >=latex, densely dashed] (Cb)--++(0,-\h) node[midway, right]{$h$};
+
+
+%Tilted bubble
+\coordinate (Ob2) at (2.25,0);
+
+\tikzmath{\alph = 40; \alphrad= \alph * pi / 180;
+\dalph=20; \dalphrad=\dalph*pi/180;
+\alphadvrad=\alphrad - \dalphrad;
+\alphrecrad=\alphrad + \dalphrad;
+\ray=0.5; 
+\rayadv=\ray *(1+cos(\alphrad r))/(1+ cos(\alphadvrad r);
+\rayrec=\ray *(1+cos(\alphrad r))/(1+ cos(\alphrecrad r);};
+
+\coordinate (Oarc) at ($(Ob2)+({\ray * sin(\alphrad r)},0)$);
+
+
+\draw (Oarc) arc({-(pi/2-(\alphadvrad)) r}:{(pi/2) r}:\rayadv) arc ({(pi/2) r}:{(pi+pi/2-(\alphrecrad)) r}:\rayrec);
+
+%Right angle
+\draw (Oarc) --++(\alphadvrad r:0.3);
+\draw ($(Oarc)+(0.15,0)$) arc(0:\alphadvrad r:0.15) node[midway, right]{$\theta_{s} - \dtheta$};
+
+%Left angle
+\coordinate (Oarc2) at ($(Oarc) - ({\rayadv * sin(\alphadvrad r) + \rayrec * sin(\alphrecrad r)},0)$);
+\draw (Oarc2) --++({180-(\alphrecrad r)}:0.3);
+\draw ($(Oarc2)+(-0.15,0)$) arc(180:{180-(\alphrecrad r)}:0.15) node[midway, left]{$\theta_{s} + \dtheta $};
+
+
+
+%Center and radius
+
+\coordinate (Cb) at ($(Oarc)+( -{0.5 * (\rayadv * sin(\alphadvrad r) + \rayrec  * sin(\alphrecrad r) } , {\ray * cos(\alphrad r)} )$);
+\draw (Cb) node{$\times$} node[below right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc2) node[midway, above left]{$R$};
+
+
+%Inclination angle
+
+\draw[densely dotted] (Cb) --++ (0,0.7);
+\draw[densely dotted] (Cb) --++ ({90 - (1*\dalphrad r)}: 0.7 );
+\draw ($(Cb) + (0,0.3)$) arc(90: {90 - (\dalphrad r)}:0.3)  node[midway, above]{$\dtheta$};
+
+
+
+%Flow arrows
+\foreach \i in {2,...,14} 
+{
+\coordinate (Oloc) at ($(A2)+(0.05,\i/15)$);
+\draw[->,>=latex, gray!70!blue] (Oloc)--++({ln(1+0.03*\i)},0);
+}
+
+
+
+\end{tikzpicture}
+
+}
