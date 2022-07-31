@@ -1,0 +1,82 @@
+% Appendix A
+
+\chapter{Details on the Bubble Force Balance}
+
+%----------------------------------------------------------------------------------------
+
+\lipsum[13-14]
+
+
+\begin{align}
+r_{w} &= \frac{1}{2}\parth{\sin{\theta_{d}}R + \sin{\theta_{u}}R}\\
+&= \frac{R}{2}\parth{ \sin{\theta_{s}+\dtheta} + \sin{\theta-\dtheta} }\\
+&= \frac{R}{2}\crocht{2\sin{ \frac{\theta_{s}+\dtheta + \theta_{s}-\dtheta}{2} }\cos{ \frac{\theta_{s}+\dtheta - \parth{\theta_{s}-\dtheta}}{2}  }   } \\
+&= R\sin{\theta_{s}}\cos{\dtheta}
+\end{align}
+
+
+\begin{align}
+\vect{F_{CP}}&=\frac{2\sigma}{R_{c}}\frac{\pi d_{w}^{2}}{4}\vect{e_{y}}\\
+&= \frac{2\sigma}{R}\frac{\pi 4R^{2}}{4}\sinsq{\theta}\cossq{\dtheta}\vect{e_{\bot}}\\
+&=2\sigma \pi R \underbrace{\sinsq{\theta} \cossq{\dtheta}}_{f_{cp}}\vect{e_{\bot}}\\
+&=2\pi R \sigma f_{cp}\parth{\theta, \dtheta}\vect{e_{\bot}}
+\end{align}
+
+
+
+\begin{align}
+\vect{F_{CP}}\cdot \vect{e_{\bot}}&=-d_{w} \sigma \frac{\pi}{\alpha_{r}-\alpha_{u}}\parth{\cos{\alpha_{a}}- \cos{\alpha_{r}}}\\
+&=\pi 2 R \sigma \frac{\sin{\alpha+\dalpha} + \sin{\alpha-\dalpha}}{2} \frac{\cos{\alpha+\dalpha} - \cos{\alpha-\dalpha}}{2\dalpha}   \\
+&=2\pi R \sigma \frac{2\sin{\alpha}\cos{\dalpha}}{2}\frac{\parth{-2\sin{\alpha}\sin{\dalpha}}}{2\dalpha}\\
+&=-2\pi R \sigma \underbrace{ \sinsq{\alpha}\frac{\sin{2\dalpha}}{2\dalpha} }_{f_{s,\bot}}\\
+&=-2\pi R \sigma f_{s,\bot}\parth{\alpha,\dalpha}\\
+\end{align}
+
+
+
+\begin{align}
+\vect{F_{s}}\cdot \vect{e_{\|}}&=-1.215d_{w}\sigma \frac{\pi\parth{\alpha_{r}-\alpha_{u}}}{\pi^{2}-\parth{\alpha_{r}-\alpha_{u}}^{2}}\parth{\sin{\alpha_{r}}+\sin{\alpha_{u}} }\\
+&=-1.215 d_{w} \sigma \frac{\pi~2\dalpha}{\pi^{2}-4\dalpha^{2}}\parth{\sin{\alpha + \dalpha} + \sin{\alpha - \dalpha}}\\
+&=-1.215  ~2R \sigma  \frac{\pi\dalpha}{\pi^{2}-4\dalpha^{2}}\parth{\sin{\alpha + \dalpha} + \sin{\alpha - \dalpha}}^{2}\\
+&=-2\pi R \sigma \frac{1.215\dalpha}{\pi^{2}-4\dalpha^{2}}4\sinsq{\alpha}\cossq{\dalpha}\\
+&=-2\pi R \sigma ~ \underbrace{ 1.215 \frac{\dalpha}{\parth{\frac{\pi}{2}}^{2}-\dalpha^{2}}\sinsq{\alpha}\cossq{\dalpha} }_{ f_{s,\|} }\\
+&=-2\pi R \sigma f_{s,\|}\parth{\alpha,\dalpha}
+\end{align}
+%----------------------------------------------------------------------------------------
+
+\section{Appendix Section Test}
+\lipsum[15]
+
+\graffito{More dummy text}
+\lipsum[16]
+
+%----------------------------------------------------------------------------------------
+
+\section{Another Appendix Section Test}
+\lipsum[17]
+
+\begin{table}
+\myfloatalign
+\begin{tabularx}{\textwidth}{Xll} \toprule
+\tableheadline{labitur bonorum pri no} & \tableheadline{que vista}
+& \tableheadline{human} \\ \midrule
+fastidii ea ius & germano &  demonstratea \\
+suscipit instructior & titulo & personas \\
+\midrule
+quaestio philosophia & facto & demonstrated \\
+\bottomrule
+\end{tabularx}
+\caption[Autem usu id]{Autem usu id.}
+\label{tab:moreexample}
+\end{table}
+
+\lipsum[18]
+
+There is also a useless Pascal listing below: \autoref{lst:useless}.
+
+\begin{lstlisting}[float=b,language=Pascal,frame=tb,caption={A floating example (\texttt{listings} manual)},label=lst:useless]
+for i:=maxint downto 0 do
+begin
+{ do nothing }
+end;
+\end{lstlisting}
