@@ -39,6 +39,23 @@
 \setlength{\parindent}{0cm}
 
 
+%%NOMENCLATURE
+\usepackage[english]{nomencl}
+\makenomenclature
+\usepackage{etoolbox}
+\usepackage{multicol}
+
+\renewcommand\nomgroup[1]{%
+  \item[\bfseries
+  \ifstrequal{#1}{L}{Latin symbols}{%
+  \ifstrequal{#1}{G}{Greek symbols}{%
+  \ifstrequal{#1}{S}{Subscripts}{
+  \ifstrequal{#1}{A}{Acronyms}{
+  \ifstrequal{#1}{N}{Non-dimensional numbers}{}}}}}%
+]}
+
+
+
 %\definecolor{chaptercolor}{green}{0.5}
 
 %\usepackage[Hansen]{fncychap}
