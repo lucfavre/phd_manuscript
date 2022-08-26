@@ -72,14 +72,27 @@ Their approach consist of separating the boiling flow in three regions (Figure \
 \label{eq:HFP_B_preONB}
 \end{equation}
 
-\item Zone between the ONB and the OSV, prior to observing a net amount of vapor with bubble lifting off the surface. The heat flux is then still totally transferred to the liquid, but the equivalent convective heat transfer coefficient is enhanced due to the presence of bubbles on the wall:
+\item Zone between the ONB and the OSV, prior to observing a net amount of vapor with bubble lifting off the surface. The heat flux is then still totally transferred to the liquid, but the equivalent convective heat transfer coefficient is supposed enhanced by 30\% due to the presence of bubbles on the wall:
 
 \begin{equation}
-\phi_{w}=\overline{h_{c,L}} \parth{T_{w}-T_{L}}
+\phi_{w}=\overline{h_{c,L}} \parth{T_{w}-T_{L}}\approx 1.3 h_{c,L}\parth{T_{w}-T_{L}}
 \label{eq:HFP_B_postONB}
 \end{equation}
 
-\item Post-OSV zone, where bubbles now leave the surface towards the bulk flow. This is where the other parts of the HFP appear \ie the boiling and quenching fluxes.
+Basu \etal define the ONB as:
+
+\begin{align}
+&T_{w, ONB}= T_{sat} + \frac{4 \sigma T_{sat}}{D_{v}\rho_{V} h_{LV}}\\
+&D_{c}= \sqrt{\frac{8 \sigma T_{sat} \lambda_{L}}{\rho_{V} h_{LV} \phi_{w}}}\parth{ 1- \exp{ -\parth{\frac{\pi \theta}{180}}^{3} - 0.5 \parth{\frac{\pi \theta}{180}}  } }
+\label{eq:HFP_B_ONB}
+\end{align}
+
+\item Post-OSV zone, where bubbles now leave the surface towards the bulk flow. This is where the other parts of the HFP appear \ie the boiling and quenching fluxes. The beginning of OSV is defined by Basu \etal as:
+
+\begin{equation}
+T_{L,OSV}=T_{sat}-0.7\exp{-0.065 \frac{D_{d}h_{c,L}}{\lambda_{L}}}\frac{\phi_{w}}{h_{c,L}}
+\end{equation}
+
 \end{itemize}
 
 
@@ -101,8 +114,8 @@ The hypothesis of Basu \etal is that the heat flux is first transferred to the s
 In order to estimate the quenching heat flux associated to bubble sliding and lift-off, Basu \etal consider two cases: 
 
 \begin{itemize}
-\item[1] Bubble sliding from departure ($D=D_{d}$) to lift-off ($D=D_{lo}$) ;
-\item[2] Bubble coalescence with neighboring sites before departure.
+\item[1)] Bubble sliding from departure ($D=D_{d}$) to lift-off ($D=D_{lo}$) ;
+\item[2)] Bubble coalescence with neighboring sites before departure.
 \end{itemize} 
 
 Those two cases are distinguished using the average distance between nucleation sites $s$, which they suppose equal to $1/\sqrt{N_{sit}}$.
@@ -123,10 +136,11 @@ If bubble coalescence occurs, the number of bubbles lifting-off the surface is l
 
 \begin{align}
 R_{f}&=
-\begin{cases}
+\begin{dcases}
 \dfrac{s}{l_{sl}} = \dfrac{1}{l\sqrt{N_{sit}}} & \text{if } l_{sl,0} \geq s \\
 1 & \text{if } l_{sl,0}<s
-\end{cases}
+\end{dcases}
+\label{eq:HFP_B_Rf}
 \end{align}  
 
 
@@ -137,7 +151,13 @@ l_{sl}=N_{merg}s + l_{D_{N}\rightarrow D_{lo}}
 \end{equation}
 where $l_{D_{N}\rightarrow D_{lo}}$ is the remaining distance to slide if $D_{N}<D_{lo}$, being $0$ if $D_{N}>D_{lo}$.
 
-The surface swiped by the sliding bubble is then expressed as $A_{sl} = C\overline{D}l_{sl}$ with $\overline{D}$ the average bubble diameter during sliding and $C$ the ration between the bubble diameter and its foot. After observing in their experiments that $D_{d}\approx 0.5D_{lo}$, Basu \etal choose:
+The surface swiped by the sliding bubble is then expressed as $A_{sl} = C\overline{D}l_{sl}$ with $\overline{D}$ the average bubble diameter during sliding and $C$ the ration between the bubble diameter and its foot, expressed correlating measurements from Maity \cite{Maity2000} as :
+
+\begin{equation}
+C=1-\exp{2-\theta ^{0.6}}
+\end{equation}
+
+After observing in their experiments that $D_{d}\approx 0.5D_{lo}$, Basu \etal choose:
 
 \begin{equation}
 \overline{D}=\frac{D_{lo}+D_{d}}{2}\approx 0.75D_{lo}
@@ -187,25 +207,208 @@ Under this massive coalescing regime, the entire surface will experience quenchi
 
 \begin{align}
 \phi_{c,L} &= 
-\begin{dcases} \overline{h_{c,L}}\parth{T_{w}-T_{L}}\frac{t_{w}-t^{*}}{t_{w}+t_{g}} + \overline{h_{c,L}}\parth{T_{w}-T_{L}}\crocht{1-S_{b}N_{sit}}\frac{t_{g}}{t_{w}+t_{g}} & \text{if } t^{*}<t_{w} \\
+\begin{dcases} \overline{h_{c,L}}\parth{T_{w}-T_{L}}\frac{t_{w}-t^{*}}{t_{w}+t_{g}} + \overline{h_{c,L}}\parth{T_{w}-T_{L}}\crocht{1-A_{b}N_{sit}}\frac{t_{g}}{t_{w}+t_{g}} & \text{if } t^{*}<t_{w} \\
 %
-\overline{h_{c,L}}\parth{T_{w}-T_{L}}\crocht{1-S_{b}N_{sit}}\frac{t_{w}+t_{g}-t^{*}}{t_{w}+t_{g}} & \text{if } t^{*}\geq t_{w} 
+\overline{h_{c,L}}\parth{T_{w}-T_{L}}\crocht{1-A_{b}N_{sit}}\frac{t_{w}+t_{g}-t^{*}}{t_{w}+t_{g}} & \text{if } t^{*}\geq t_{w} 
 \end{dcases}
 \end{align}
+with $A_{b} = \dfrac{\pi \parth{Cs}2}{4}$.
 
 And the boiling heat flux still expressed as Eq. \ref{eq:HFP_B_phiE}.
 
+\npar
 
-%------------------------------------------------
+
+\textbf{\underline{Needed closure relationships : }} $N_{sit}$, $t_{w}$, $t_{g}$, $D_{d}$, $D_{lo}$, $l_{sl,0}$, $h_{c,L}$. 
 
 
 %----------------------------------------------------------------------------------------
 
 \section{Gilman (2017)}
 
-Content
+A more recent HFP model dedicated to CFD simulations has been proposed by Gilman \& Baglietto in 2017 \cite{gilman2017}. Among the different advances proposed in their work, we can mention :
+
+\begin{itemize}
+\item A probabilistic law to account for static interaction between nucleation sites ;
+\item A force-balance approach to compute the bubble departure and lift-off diameters ;
+\item A generic law for the enhanced forced convection coefficient accounting for bubble presence ; 
+\item The presence of a modified quenching term accounting for local wall superheat beneath a bubble dry spot.
+\end{itemize}
+
+The total heat flux is partitioned between the liquid forced convection $\phi_{c,L}$, the solid quenching $\phi_{q,s}$, the quenching due to bubble sliding $\phi_{q,sl}$ and the evaporation flux $\phi_{e}$. Yielding:
+
+\begin{equation}
+\phi_{w} = \phi_{c,L} + \phi_{q,s} + \phi_{q,sl} + \phi_{e}
+\end{equation} 
+
+The convective term is computed in a way similar to Basu \etal \cite{Basu2005} in Eq. \ref{eq:HFP_B_phiCL}:
+
+\begin{align}
+\phi_{c,L} =& \phi_{c1,L} + \phi_{c2,L}\\
+% 
+=&h_{c,L}\parth{1-A_{sl}N_{sit,a}^{*}}\parth{T_{w}-T_{L}} + \overline{h_{c,L}}A_{sl}N_{sit,a}^{*}\parth{1 - \frac{t^{*}}{t_{w}+t_{g}}}\parth{T_{w}-T_{L}}
+\end{align}
+where $N_{sit,a}^{*}$ is the active nucleation site density that will generate sliding bubbles, that can differ from the empirical value of available sites $N_{sit}$ usually computed by a correlation. 
+
+The active nucleation site density is actually smaller than $N_{sit}$ since Gilman considers an static interaction between the available sites \ie the fact that a bubble laying on a site may be blocking nucleation from sites laying beneath its foot. Following a Complete Spatial Randomness (CSR) approach, they express the probability to find a site under a growing bubble of radius $R_{d}$ as:
+
+\begin{equation}
+\mathcal{P} = 1-e^{-N_{b}\pi R_{d}^{2}}
+\label{eq:HFP_G_Pinter}
+\end{equation} 
+where $N_{b} = \dfrac{t_{g}}{t_{w}+t_{g}}N_{sit}$ is the density of bubbles covering the heater.
+
+The number of active sites is then computed as:
+
+\begin{align}
+N_{sit,a} &= \parth{1-\mathcal{P}}N_{sit}\\
+%
+&= \exp{-\dfrac{t_{g}}{t_{w}+t_{g}}N_{sit}\pi R_{d}^{2}} N_{sit}
+\label{eq:HFP_G_Nsita}
+\end{align}
+
+This value is then reduced by Gilman to obtain $N_{sit,a}^{*}$ using a reduction factor representing sliding bubble coalesence (similar to Basu in Eq. \ref{eq:HFP_B_Rf}):
+
+\begin{equation}
+N_{sit,a}^{*}=R_{f}N_{sit,a} = \frac{s}{l_{sl,0}+s} N_{sit,a}
+\end{equation}
+
+
+The sliding quenching term is also computed in a similar way to Basu as:
+
+\begin{align}
+\phi_{q,sl}&=\frac{2\lambda_{L}\parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}t^{*}}}A_{sl}N_{sit,a}^{*} \\
+%
+A_{sl} &= \overline{D}l_{sl} = \frac{D_{d}+D_{lo}}{2}\parth{N_{merg}s+l_{D_{N}\rightarrow D_{lo}}}
+\end{align}
+
+Regarding the boiling heat flux, Gilman splits it in two contributions respectively associated with the inception of nucleation and liquid microlayer evaporation :
+
+\begin{align}
+\phi_{e} =& \phi_{e,init} + \phi_{e,ML} \\
+%
+=& \frac{4}{3}\pi R_{d}^{3}\rho_{V} h_{LV} \frac{1}{t_{w}+t_{g}}N_{sit,a} + V_{ML} \rho_{L}h_{LV} \frac{1}{t_{w}+t_{g}}N_{sit,a}\\
+%\
+\text{with } V_{ML} =& \frac{2}{3}\pi \parth{\frac{R_{d}}{2}}^{3}\delta_{max}
+\end{align}
+where $\delta_{max}=2\ \mu\text{m}$ based on experiments from Gerardi \cite{Gerardi}.
+
+
+Finally, the solid quenching term is written as:
+
+\begin{align}
+& \phi_{q,s} = \rho_{w} c_{p,w} V_{q} \delta T_{q} \frac{1}{t_{g}+t_{w}} N_{sit,a}\\
+%
+& V_{q} = \frac{2}{3} \pi r_{w}^{2}
+\end{align}
+with $\Delta T_{q}=2\ K$ as suggested by Gerardi \etal \cite{Gerardi_etal}.
+
+\npar
+
+\textbf{\underline{Needed closure relationships : }} $N_{sit}$, $t_{w}$, $t_{g}$, $D_{d}$, $D_{lo}$, $l_{sl,0}$, $h_{c,L}$, $\overline{h_{c,L}}$. 
+
 
 
 \section{Zhou (2020)}
 
-Content
+The last HFP model we will look through in this Chapter was proposed by Zhou \etal \cite{zhou}. It is one of the most recent available in the literature and was built along with associated experiments for validation. In particular they compute separate heat flux contributions for static ($st$) or sliding bubbles ($sl$), yielding a total heat flux:
+
+\begin{equation}
+\phi_{w} = \phi_{c,L} + \parth{\phi_{e,st}+ \phi_{e,st}} + \parth{\phi_{e,sl}+\phi_{q,sl}}
+\end{equation}
+
+An interesting aspect of Zhou \etal work is the presence of a condensation term in the evaporation heat fluxes, written as:
+
+\begin{align}
+\phi_{e,st} =& \rho_{V}h_{LV}\frac{4}{3}\pi R_{d}^{3} N_{sit,a} f  + h_{cond}\parth{T_{sat}-T_{L}}A_{cond} N_{sit,a} f \parth{t_{g}-t_{s}} \\
+%
+\phi_{e,sl} =& \frac{\pi}{6}\rho_{V}h_{LV}\parth{D_{lo}^{3}-D_{d}^{3}}fN_{sit}^{*} + h_{cond} \parth{T_{sat}-T_{L}}A_{cond}N_{sit}^{*}t_{sl}f\\
+%
+A_{cond} =& \pi D_{d} \mathrm{max}\parth{R_{d}\parth{1+\cos{\theta}}-y_{sat}\ ;\ 0}
+\end{align}
+where $y_{sat}$ is the wall distance where the liquid is at saturation temperature, $t_{s}$ the moment when $D_{b}=y_{sat}$ and $N_{sit}^{*}$ the number of sliding bubbles.
+
+The condensation heat transfer coefficient is computed using the correlation from Ranz \& Marshall:
+
+\begin{equation}
+h_{cond} = \frac{\lambda_{L}}{D_{d}}\parth{2+0.6\Re_{b}^{0.5}}\Pr_{L}^{0.3}
+\end{equation}
+
+Following similar approaches to HFP models from Basu or Gilman, the quenching heat flux for static bubbles is expressed as:
+
+\begin{align}
+\phi_{q,st}&=
+\begin{dcases}
+t_{w}f\frac{2\lambda_{L}\parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}t_{w}}}A_{b}N_{sit} & \text{if } t^{*} \geq t_{w}\\
+%
+t^{*}f\frac{2\lambda_{L}\parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}t^{*}}}A_{b}N_{sit} + h_{c,L}\parth{T_{w}-T_{L}}A_{b}N_{sit}^{*}f\parth{t_{w}-t^{*}} & \text{if } t^{*}<t_{w}
+\end{dcases}
+\end{align}
+with $A_{b}= \underbrace{K_{b}}_{=2} \pi R_{d}^{2}$.
+
+And for the sliding bubbles:
+
+\begin{align}
+\phi_{q,sl}&=
+\begin{dcases}
+\frac{2\lambda_{L}\parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}\parth{t_{g}+t_{w}}}}A_{sl}N_{sit}^{*} & \text{if } t^{*} \geq t_{g}+t_{w}\\
+%
+t^{*}f \frac{2\lambda_{L}\parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}t^{*}}}A_{b}N_{sit}^{*} + h_{c,L}\parth{T_{w}-T_{L}}A_{sl}N_{sit}^{*}f\parth{t_{g}+t_{w}-t^{*}} & \text{if } t^{*}<t_{w}
+\end{dcases}
+\end{align}
+with $A_{sl}=\underbrace{K_{sl}}_{=2}\dfrac{D_{d}+D_{lo}}{2}l_{sl}$ and $l_{sl}=\mathrm{min}\parth{l_{sl,0}\ ;\ \dfrac{1}{\sqrt{t_{g}fN_{sit}}} }$.
+
+Finally, the forced liquid convective heat flux is computed:
+
+\begin{equation}
+\phi_{c,L} = h_{c,L}\parth{1-A_{b}N_{sit}-A_{sl}N_{sit}^{*}}\parth{T_{w}-T_{L}}
+\end{equation}
+
+\npar
+
+\textbf{\underline{Needed closure relationships : }} $N_{sit}$, $t_{w}$, $t_{g}$, $D_{d}$, $D_{lo}$, $l_{sl,0}$, $h_{c,L}$. 
+
+
+\section{Closure Laws for Remaining Parameters}
+
+In each of the 4 presented HFP models, there is a number of parameters that still need to be computed in order for the model to be fully expressed. Those parameters are often the nucleation site density, bubble diameters, etc. To do so, closure relationships are used and differ from one model to another. Here we want to sum up the different choices of the authors to point the variety of possibilities that exist.
+
+\subsection{Nucleation Site Density : $N_{sit}$}
+
+The value of the nucleation site density is a very sensitive parameter that controls the intensity of the boiling heat transfer. Unfortunately, its value can vary over a very large range of value depending on the operating conditions and heater material and is thus expressed using experimental correlations.
+
+In their work, Kurul \& Podowski used the law of Lemmert and Chawla \cite{Lemmert}:
+
+\begin{align}
+N_{sit}=\crocht{210\parth{T_{w}-T_{sat}}}^{1.8}
+\end{align}
+
+
+Later, Basu \cite{Basu} correlated her own experimental results to obtain:
+
+\begin{align}
+N_{sit}=&
+\begin{dcases}
+0.34\crocht{1-\cos{\theta}}\Delta T_{w}^{2} & \text{if } \Delta T_{w,ONB}<\Delta T_{w} < 15\ K\\
+3.4\times 10^{-5}\crocht{1-\cos{\theta}}\Delta T_{w}^{5.3} & \text{if } \Delta T_{w} > 15\ K
+\end{dcases}
+\end{align}
+
+In 2003, Hibiki \& Ishii \cite{HI} came up with a new correlation to estimate the nucleation site density that includes a pressure dependence, which has been used by Gilman \& Baglietto \cite{Gilman} and many other authors \cite{HI_others}:
+
+\begin{align}
+N_{sit} =& N_{0}\parth{1-\exp{-\dfrac{\theta^{2}}{8\mu^{2}} } }\crocht{\exp{ \mathrm{f}\parth{\rho^{+}}\dfrac{\lambda '}{R_{c}} } -1}\\
+%
+R_{c} =& \dfrac{2\sigma\parth{1+\dfrac{\rho_{V}}{\rho_{L}}} / P }{\exp{\dfrac{h_{LV} \Delta T_{w}}{R_{g}T_{w}T_{sat}} } -1}\\
+%
+\mathrm{f}\parth{\rho^{+}} =& -0.01064 + 0.48246\rho^{+} - 0.22712 \rho^{+^{2}} + 0.05468 \rho^{+^{3}}
+\end{align}
+with $R_{g}$ the perfect gas constant times the molar mass of the fluid,  $N_{0}=4.72\times 10^{5}\ \mathrm{m}^{-2}$, $\mu = 0.722\ \mathrm{rad}$, $\lambda ' = 2.5 \times 10^{-3} \ \mathrm{m}$ and $\rho^{+}=\mathrm{log}_{10}\parth{\dfrac{\rho_{L}-\rho_{V}}{\rho_{V}}}$.
+
+Finally, Zhou \etal followed a approach similar to Basu \etal by correlating their own experimental data:
+
+\begin{align}
+N_{sit} =& N_{0}\parth{1-\cos{\theta}}\crocht{\exp{\mathrm{f}\parth{P} \Delta T_{w} } -1 }
+\mathrm{f}\parth{P} = 0.218\ln{\dfrac{P}{P_{0}}}+0.1907
+\end{align}
+with $N_{0}=55~395.26\ \mathrm{m}^{-2}$ and $P_{0}=1.01\ \mathrm{bar}$.
