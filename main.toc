@@ -23,136 +23,138 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.6}Wall function for dispersed boiling flows}{6}{subsection.1.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {DEBORA Cases}}{8}{chapter.2}%
+\contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {DEBORA Cases}}{7}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Boiling freon in a simple tube : DEBORA experiments}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.1}Boiling freon in a simple tube : DEBORA experiments}{7}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Description of the experiment}{8}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.1}Description of the experiment}{7}{subsection.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.2}NEPTUNE\_CFD simulations of DEBORA cases}{9}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.2}NEPTUNE\_CFD simulations of DEBORA cases}{8}{subsection.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Investigating the nucleation site density modeling $N_{sit}$}{10}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.3}Investigating the nucleation site density modeling $N_{sit}$}{8}{subsection.2.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Development of a New Wall Heat Flux Partitioning Model}}{12}{part.3}%
+\contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Development of a New Wall Heat Flux Partitioning Model}}{11}{part.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Existing Heat Flux Partitioning Models}}{13}{chapter.3}%
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Existing Heat Flux Partitioning Models}}{12}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Kurul \& Podowski (1990)}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Kurul \& Podowski (1990)}{12}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Basu (2000)}{13}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Basu (2000)}{13}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Yeoh (2006)}{13}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2.1}Case 1 : Bubble sliding, $D_{d}<s$}{14}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Gilman (2017)}{13}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.2}Case 2 : Bubble coalesence without sliding, $D_{d}\geq s$}{15}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Kommajosyula (2020)}{13}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Gilman (2017)}{16}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Boiling Bubble Dynamics}}{14}{chapter.4}%
+\contentsline {section}{\numberline {3.4}Zhou (2020)}{16}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Force Balance Modeling}{14}{section.4.1}%
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Boiling Bubble Dynamics}}{17}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}General Considerations}{14}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.1}Force Balance Modeling}{17}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Buoyancy and Body Forces}{14}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.1}General Considerations}{17}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Capillary Force}{14}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.2}Buoyancy and Body Forces}{17}{subsection.4.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.4}Contact Pressure Force}{15}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.3}Capillary Force}{17}{subsection.4.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.5}Drag and Lift Forces}{15}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.4}Contact Pressure Force}{18}{subsection.4.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.6}Added Mass Force}{16}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.5}Drag and Lift Forces}{18}{subsection.4.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.7}Force Balance Summary}{18}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.1.6}Added Mass Force}{19}{subsection.4.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.8}Bubble Growth}{18}{subsection.4.1.8}%
+\contentsline {subsection}{\numberline {4.1.7}Force Balance Summary}{21}{subsection.4.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.9}Liquid Velocity}{18}{subsection.4.1.9}%
+\contentsline {subsection}{\numberline {4.1.8}Bubble Growth}{21}{subsection.4.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Departure by Sliding}{19}{section.4.2}%
+\contentsline {subsection}{\numberline {4.1.9}Liquid Velocity}{21}{subsection.4.1.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Non-Dimensional Analysis}{19}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.2}Departure by Sliding}{22}{section.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1.1}Influence of Pressure}{20}{subsubsection.4.2.1.1}%
+\contentsline {subsection}{\numberline {4.2.1}Non-Dimensional Analysis}{22}{subsection.4.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.2.1.2}Comparison between Fluids}{20}{subsubsection.4.2.1.2}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}Influence of Pressure}{23}{subsubsection.4.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Low Pressure Data}{20}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}Comparison between Fluids}{23}{subsubsection.4.2.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.3}High Pressure Data}{21}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.2}Low Pressure Data}{23}{subsection.4.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.4}Departure Diameter Prediction}{21}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.3}High Pressure Data}{23}{subsection.4.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Sliding phase}{23}{section.4.3}%
+\contentsline {subsection}{\numberline {4.2.4}Departure Diameter Prediction}{24}{subsection.4.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Modeling}{23}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.3}Sliding phase}{25}{section.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Low Pressure Sliding}{23}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.1}Modeling}{25}{subsection.4.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.3}High Pressure}{23}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.2}Low Pressure Sliding}{26}{subsection.4.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Conclusion}{24}{section.4.4}%
+\contentsline {subsection}{\numberline {4.3.3}High Pressure}{26}{subsection.4.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Establishment of the force balance for a bubble on a vertical wall }{34}{section.4.5}%
+\contentsline {section}{\numberline {4.4}Conclusion}{26}{section.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Bubble shape : Geometrical definitions}{35}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.5}Establishment of the force balance for a bubble on a vertical wall }{38}{section.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}Buoyancy force}{36}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.1}Bubble shape : Geometrical definitions}{38}{subsection.4.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.3}Contact Pressure force}{37}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.2}Buoyancy force}{40}{subsection.4.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.4}Capillary force}{37}{subsection.4.5.4}%
+\contentsline {subsection}{\numberline {4.5.3}Contact Pressure force}{40}{subsection.4.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.5}Added Mass force of a growing bubble}{37}{subsection.4.5.5}%
+\contentsline {subsection}{\numberline {4.5.4}Capillary force}{41}{subsection.4.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Added mass in $x$ direction}{38}{equation.4.5.54}%
+\contentsline {subsection}{\numberline {4.5.5}Added Mass force of a growing bubble}{41}{subsection.4.5.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Added mass in $y$ direction}{39}{equation.4.5.65}%
+\contentsline {paragraph}{Added mass in $x$ direction}{42}{equation.4.5.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.6}Added Mass from Duhar \textit {et al.}\xspace }{41}{subsection.4.5.6}%
+\contentsline {paragraph}{Added mass in $y$ direction}{43}{equation.4.5.65}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.7}Lift and drag forces}{42}{subsection.4.5.7}%
+\contentsline {subsection}{\numberline {4.5.6}Added Mass from Duhar \textit {et al.}\xspace }{45}{subsection.4.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.5.7.1}Drag and lift coefficient from Shi \textit {et al.}\xspace }{42}{subsubsection.4.5.7.1}%
+\contentsline {subsection}{\numberline {4.5.7}Lift and drag forces}{45}{subsection.4.5.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Drag coefficient :}{43}{table.caption.35}%
+\contentsline {subsubsection}{\numberline {4.5.7.1}Drag and lift coefficient from Shi \textit {et al.}\xspace }{46}{subsubsection.4.5.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Lift coefficient :}{43}{equation.4.5.115}%
+\contentsline {paragraph}{Drag coefficient :}{46}{table.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.8}Dominant Forces at Departure by Sliding}{44}{subsection.4.5.8}%
+\contentsline {paragraph}{Lift coefficient :}{47}{equation.4.5.115}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.9}Application to Low Pressure Data}{46}{subsection.4.5.9}%
+\contentsline {subsection}{\numberline {4.5.8}Dominant Forces at Departure by Sliding}{47}{subsection.4.5.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.10}Application to High Pressure Data}{46}{subsection.4.5.10}%
+\contentsline {subsection}{\numberline {4.5.9}Application to Low Pressure Data}{49}{subsection.4.5.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.6}Prediction of bubble departure diameter}{48}{section.4.6}%
+\contentsline {subsection}{\numberline {4.5.10}Application to High Pressure Data}{50}{subsection.4.5.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Towards the Industrial Geometry}}{50}{part.4}%
+\contentsline {section}{\numberline {4.6}Prediction of bubble departure diameter}{51}{section.4.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Promoteur}}{51}{chapter.5}%
+\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Towards the Industrial Geometry}}{53}{part.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Boiling freon in a tube with mixing vanes : DEBORA-Promoteur experiments}{51}{section.5.1}%
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Promoteur}}{54}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Description of the experiment}{51}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.1}Boiling freon in a tube with mixing vanes : DEBORA-Promoteur experiments}{54}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}NEPTUNE\_CFD simulations of DEBORA-Promoteur cases}{52}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.1}Description of the experiment}{54}{subsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Liquid water flow in a tube with mixing vanes : AGATE-PROMOTEUR experiment}{52}{section.5.2}%
+\contentsline {subsection}{\numberline {5.1.2}NEPTUNE\_CFD simulations of DEBORA-Promoteur cases}{55}{subsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Description of the experiment}{53}{subsection.5.2.1}%
+\contentsline {section}{\numberline {5.2}Liquid water flow in a tube with mixing vanes : AGATE-PROMOTEUR experiment}{55}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}NEPTUNE\_CFD simulations of AGATE-Promoteur case}{53}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.1}Description of the experiment}{56}{subsection.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Conclusion}}{55}{part.5}%
+\contentsline {subsection}{\numberline {5.2.2}NEPTUNE\_CFD simulations of AGATE-Promoteur case}{56}{subsection.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{\numberline {vi}\spacedlowsmallcaps {Appendix}}{56}{part.6}%
+\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Conclusion}}{58}{part.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Details on the Bubble Force Balance}}{57}{appendix.A}%
+\contentsline {part}{\numberline {vi}\spacedlowsmallcaps {Appendix}}{59}{part.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Appendix Section Test}{58}{section.A.1}%
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Details on the Bubble Force Balance}}{60}{appendix.A}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Another Appendix Section Test}{58}{section.A.2}%
+\contentsline {section}{\numberline {A.1}Appendix Section Test}{61}{section.A.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Another Appendix Section Test}{61}{section.A.2}%
 \defcounter {refsection}{0}\relax 
 \vspace {\beforebibskip }
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{60}{dummy.7}%
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{63}{dummy.7}%
