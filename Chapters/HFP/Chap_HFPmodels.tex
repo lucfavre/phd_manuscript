@@ -82,8 +82,9 @@ Their approach consist of separating the boiling flow in three regions (Figure \
 Basu \etal define the ONB as:
 
 \begin{align}
-&T_{w, ONB}= T_{sat} + \frac{4 \sigma T_{sat}}{D_{v}\rho_{V} h_{LV}}\\
-&D_{c}= \sqrt{\frac{8 \sigma T_{sat} \lambda_{L}}{\rho_{V} h_{LV} \phi_{w}}}\parth{ 1- \exp{ -\parth{\frac{\pi \theta}{180}}^{3} - 0.5 \parth{\frac{\pi \theta}{180}}  } }
+&T_{w, ONB}= T_{sat} + \frac{4 \sigma T_{sat}}{D_{c}\rho_{V} h_{LV}}\\
+%
+&D_{c}= \sqrt{\frac{8 \sigma T_{sat} \lambda_{L}}{\rho_{V} h_{LV} \phi_{w}}}\parth{ 1- \exp{ - \theta^{3} - 0.5 \theta}  }
 \label{eq:HFP_B_ONB}
 \end{align}
 
@@ -122,7 +123,7 @@ Those two cases are distinguished using the average distance between nucleation 
 
 \subsection{Case 1 : Bubble sliding, $D_{d}<s$}
 
-In this situation, the bubble will grow up to its departure diameter $D_{d}$ and slide over a length $l_{sl,0}$ before lifting-off. If $l_{sl,0}<s$, the bubble will slide up to its lift-off diameter $D_{l}$ and leave the wall withouth colliding with other bubbles. On the contrary, if $l_{sl,0}>=s$ the sliding bubble will merge with bubbles growing on their nucleation site, inducing a sudden growth of the bubble diameter that can exceed $D_{lo}$ and thus lift-off after sliding over a reduced length $l_{sl}<l_{sl,0}$. Those assumptions are summarized on Figure \ref{fig:Basu_sliding}.
+In this situation, the bubble will grow up to its departure diameter $D_{d}$ and slide over a length $l_{sl,0}$ before lifting-off. If $l_{sl,0}<s$, the bubble will slide up to its lift-off diameter $D_{l}$ and leave the wall withouth colliding with other bubbles. On the contrary, if $l_{sl,0}\geq s$ the sliding bubble will merge with bubbles growing on their nucleation site, inducing a sudden growth of the bubble diameter that can exceed $D_{lo}$ and thus lift-off after sliding over a reduced length $l_{sl}<l_{sl,0}$. Those assumptions are summarized on Figure \ref{fig:Basu_sliding}.
 
 \begin{figure}[h]
 \centering
