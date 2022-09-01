@@ -1,0 +1,84 @@
+
+\fbox{
+\begin{tikzpicture}[scale=5.0, every node/.style={scale=1.0}]
+
+
+\coordinate (O) at (0,0);
+\coordinate (A2) at (1.4,0);
+\coordinate (A) at (2,0);
+
+
+%Sections and wall
+\draw (O) -- (A);
+\draw ($(O)-(0,0.05)$) -- ($(A)-(0,0.05)$);
+\foreach \i in {0,...,9}
+{
+\draw (\i*0.2,0) -- (\i*0.2+0.1,-0.05);
+}
+
+%\draw[dashed, gray!70!white] (A2) --++ (0,1);
+
+
+%Non-tilded bubble
+\coordinate (Ob) at (1.3,0);
+
+\tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.5; \rw=\ray * sin(\alphrad r);};
+
+
+\coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
+\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+%%Right angle
+\draw (Oarc) --++(\alph:0.3);
+\draw ($(Oarc)+(0.15,0)$) arc(0:\alph:0.15) node[near end, right]{$\alpha$};
+
+%%Left angle
+%\coordinate (Oarc2) at ($(Oarc) - (2*\rw,0)$);
+%\draw (Oarc2) --++(180-\alph:0.3);
+%\draw ($(Oarc2)+(-0.15,0)$) arc(180:180-\alph:0.15) node[near end, left]{$\alpha$};
+
+%Center and radius
+
+\coordinate (Cb) at ($(Ob)+(0,{\ray*cos(\alphrad r)} )$);
+\draw (Cb) node{$\times$} node[above right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc) node[midway, above right]{$R$};
+
+
+
+
+%Flow arrows
+\foreach \i in {2,...,14} 
+{
+\coordinate (Oloc) at ($(O)+(-0.1,\i/15)$);
+\draw[->,>=latex, gray!70!blue] (Oloc)--++({ln(1+0.03*\i)},0);
+}
+
+%Liquid flow
+
+\coordinate (TopB) at ($(Cb)+(0,{\ray+0.05})$);
+\coordinate (TopLeftB) at ($(Cb) + ({90+\alph}:{\ray+0.05})$);
+\coordinate (LeftB) at ($(Cb)+({-\ray-0.05},0)$);
+
+%\draw (TopB) -- (LeftB);
+
+\draw [->, >=latex, blue!70!black] plot [smooth, tension=1.0] coordinates {(TopB) (TopLeftB) (LeftB)}; \draw (TopB) node[above]{$T_{l}(y^{+}_{b})$};
+
+\coordinate (Sp1) at (0.5,{\ray/2});
+\coordinate (Sp2) at (0.75,{\ray/2});
+
+\tikzmath{\rayspi=0.1;};
+
+\draw[->,>=stealth,blue!70!black] plot[domain=0:3.2,smooth,xshift=9,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+\draw[->,>=stealth,blue!70!black] plot[domain=0:3.2,smooth,xshift=17,yshift=8] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+
+%\draw [orange] plot [smooth] coordinates {(1,1) (2,2) (4,-2) (3,2)};
+
+%Bubble velocity
+
+\draw[red,->, >=latex] (Cb)--++({\ray+0.07},0) node[above]{ $\redmath{\vect{U_{b}}}$ };
+
+
+\end{tikzpicture}
+
+}

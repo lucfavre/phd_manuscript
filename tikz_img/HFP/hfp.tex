@@ -1,0 +1,135 @@
+\fbox{
+
+\begin{tikzpicture}[scale=3.0]
+
+\coordinate (O) at (0,0);
+\coordinate (A1) at (1,0);
+\coordinate (A2) at (2,0);
+\coordinate (A3) at (3,0);
+\coordinate (A) at (4,0);
+
+
+%Sections and wall
+\draw (O) -- (A);
+\draw ($(O)-(0,0.03)$) -- ($(A)-(0,0.03)$);
+\foreach \i in {0,...,19}
+{
+\draw (\i*0.2,0) -- (\i*0.2+0.05,-0.03);
+}
+
+
+
+%\draw[dashed, gray!70!white] (A1) --++ (0,1);
+%\draw[dashed, gray!70!white] (A2) --++ (0,1);
+%\draw[dashed, gray!70!white] (A3) --++ (0,1);
+
+
+
+%Flow arrows
+\foreach \i in {1,...,12} 
+{
+\coordinate (Oloc) at ($(O)+(-0.1,\i/13)$);
+\draw[->,>=latex, gray!50!blue] (Oloc)--++({ln(1+0.05*\i)},0);
+}
+
+\draw ($(Oloc) + ({ln(1+0.05*12)},0)$) node[below right]{${\overline{U_{L}}}$};
+
+
+%Liquid heat flux
+
+\coordinate (Ophi) at (0.4,0);
+
+\draw[->,>=latex, thick, blue!70!gray] ($(Ophi)+(0,-0.1)$)--($(Ophi)+(0,+0.1)$);
+\draw ($(Ophi)+(0,-0.15)$) node{${\phi_{c,L}}$};
+
+
+%Boiling heat flux
+\coordinate (Ob) at (1.0,0);
+
+\tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.15; \rayw = sin(\alphrad r) * \ray;}; %Geom values
+
+\coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
+\shade[ball color = gray!40, opacity = 0.4] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+
+\draw[->,>=latex, thick, brown!80!black] plot [smooth, tension=0.5] coordinates {($(Oarc)+(0,-0.1)$) ($(Oarc)+(0.05,+0.03)$) ($(Oarc)+(-0.05,+0.1)$)};
+
+\coordinate (Oarc2) at ($(Oarc) + (-2*\rayw,0)$);
+\draw[->,>=latex, thick, brown!80!black] plot [smooth, tension=0.5] coordinates {($(Oarc2)+(0,-0.1)$) ($(Oarc2)+(-0.05,+0.03)$) ($(Oarc2)+(+0.05,+0.1)$)};
+
+\draw ($(Ob)+(0,-0.15)$) node{${\phi_{e}}$};
+
+
+
+%Vapor convective flux
+\coordinate (Ob) at (1.75,0);
+
+\tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.2; \rw=\ray * sin(\alphrad r);};
+
+\coordinate (Oarc) at ($(Ob)+(\rw,0)$);
+\shade[ball color = gray!40, opacity = 0.4] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+\draw[red, thick, densely dashed] (Oarc) --++ (-2*\rw, 0);
+
+\draw[->,>=latex, thick, red!80!black] ($(Ob)+(0,-0.1)$)--($(Ob)+(0,+0.1)$);
+\draw ($(Ob)+(0,-0.15)$) node{${\phi_{c,V}}$};
+
+
+
+%Quenching heat flux
+\coordinate (Ob2) at (2.75,0);
+
+\tikzmath{\alph = 40; \alphrad= \alph * pi / 180;
+\dalph=20; \dalphrad=\dalph*pi/180;
+\alphadvrad=\alphrad - \dalphrad;
+\alphrecrad=\alphrad + \dalphrad;
+\ray=0.2; 
+\rayadv=\ray *(1+cos(\alphrad r))/(1+ cos(\alphadvrad r);
+\rayrec=\ray *(1+cos(\alphrad r))/(1+ cos(\alphrecrad r);};
+
+
+\coordinate (Cb2) at ($(Ob2)+(0.03,{\ray * cos(\alphrad r)})$);
+\draw[green!50!black,->, >=latex] (Cb2)--++({\ray+0.08},0); \draw ($(Cb2)+({\ray+0.08},0)$) node[above]{$\overline{U_{b}}$ }; %Bubble velocity
+
+
+\coordinate (Oarc) at ($(Ob2)+({\ray * sin(\alphrad r)},0)$);
+
+\shade[ball color = gray!40, opacity = 0.4] (Oarc) arc ({-(pi/2-(\alphadvrad)) r}:{(pi/2) r}:\rayadv) arc ({(pi/2) r}:{(pi+pi/2-(\alphrecrad)) r}:\rayrec);
+
+\draw (Oarc) arc ({-(pi/2-(\alphadvrad)) r}:{(pi/2) r}:\rayadv) arc ({(pi/2) r}:{(pi+pi/2-(\alphrecrad)) r}:\rayrec);
+
+\coordinate (Ob2) at (3.5,0.5);
+\tikzmath{\ray=0.25;};
+
+\shade[ball color = gray!40, opacity = 0.4] (Ob2) circle(\ray);
+\draw (Ob2) circle(\ray);
+
+
+
+\tikzmath{\rayspi=0.07;};
+
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=65,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=70,yshift=5] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+
+\coordinate (Ophisl) at ($(Oarc) - (\rayadv+\rayrec+0.05,0)$);
+\draw[->,>=latex, thick, orange!90!gray] ($(Ophisl)+(0,-0.1)$)--($(Ophisl)+(0,+0.1)$);
+\draw ($(Ophisl)+(0,-0.15)$) node{${\phi_{q,sl}}$};
+
+
+\tikzmath{\rayspi=0.08;};
+
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=94,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=105,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+
+
+\coordinate (Ophiq) at ($(Ob2) - (0,0.5)$);
+\draw[->,>=latex, thick, orange!90!gray] ($(Ophiq)+(0,-0.1)$)--($(Ophiq)+(0,+0.1)$);
+\draw ($(Ophiq)+(0,-0.15)$) node{${\phi_{q,lo}}$};
+
+\end{tikzpicture}
+
+}
