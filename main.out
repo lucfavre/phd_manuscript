@@ -1,0 +1,94 @@
+\BOOKMARK [1][-]{Dedication.1}{Dedication}{}% 1
+\BOOKMARK [1][-]{Abstract.1}{Abstract}{}% 2
+\BOOKMARK [1][-]{Publications.1}{Publications}{}% 3
+\BOOKMARK [1][-]{Acknowledgements.1}{Acknowledgements}{}% 4
+\BOOKMARK [1][-]{tableofcontents.1}{Contents}{}% 5
+\BOOKMARK [1][-]{lof.1}{List of Figures}{}% 6
+\BOOKMARK [1][-]{lot.1}{List of Tables}{}% 7
+\BOOKMARK [1][-]{lol.1}{Listings}{}% 8
+\BOOKMARK [1][-]{acronyms.1}{Acronyms}{}% 9
+\BOOKMARK [-1][]{part.1}{Introduction}{}% 10
+\BOOKMARK [-1][]{part.2}{Modeling and simulation of boiling flows using CFD}{}% 11
+\BOOKMARK [0][]{chapter.1}{1 NEPTUNE\137CFD Code}{part.2}% 12
+\BOOKMARK [1][-]{section.1.1}{1.1 The NEPTUNE\137CFD code and physical modeling}{chapter.1}% 13
+\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Simulation framework}{section.1.1}% 14
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 Governing equations for turbulent boiling bubbly flows}{section.1.1}% 15
+\BOOKMARK [2][-]{subsection.1.1.3}{1.1.3 Interfacial transfers closure laws}{section.1.1}% 16
+\BOOKMARK [2][-]{subsection.1.1.4}{1.1.4 Turbulence modeling}{section.1.1}% 17
+\BOOKMARK [2][-]{subsection.1.1.5}{1.1.5 Wall boiling model}{section.1.1}% 18
+\BOOKMARK [2][-]{subsection.1.1.6}{1.1.6 Wall function for dispersed boiling flows}{section.1.1}% 19
+\BOOKMARK [0][]{chapter.2}{2 DEBORA Cases}{part.2}% 20
+\BOOKMARK [1][-]{section.2.1}{2.1 Boiling freon in a simple tube : DEBORA experiments}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Description of the experiment}{section.2.1}% 22
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 NEPTUNE\137CFD simulations of DEBORA cases}{section.2.1}% 23
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Investigating the nucleation site density modeling Nsit}{section.2.1}% 24
+\BOOKMARK [-1][]{part.3}{Development of a New Wall Heat Flux Partitioning Model}{}% 25
+\BOOKMARK [0][]{chapter.3}{3 Existing Heat Flux Partitioning Models}{part.3}% 26
+\BOOKMARK [1][-]{section.3.1}{3.1 Kurul \046 Podowski \(1990\)}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.2}{3.2 Basu \(2000\)}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Case 1 : Bubble sliding, Dd<s}{section.3.2}% 29
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Case 2 : Bubble coalesence without sliding, Dds}{section.3.2}% 30
+\BOOKMARK [1][-]{section.3.3}{3.3 Gilman \(2017\)}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.4}{3.4 Zhou \(2020\)}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.5}{3.5 Closure Laws for Remaining Parameters}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 Nucleation Site Density : Nsit}{section.3.5}% 34
+\BOOKMARK [2][-]{subsection.3.5.2}{3.5.2 Bubble Departure Frequency f, Growth Time tg and Wait Time tw}{section.3.5}% 35
+\BOOKMARK [0][]{chapter.4}{4 Boiling Bubble Dynamics}{part.3}% 36
+\BOOKMARK [1][-]{section.4.1}{4.1 Force Balance Modeling}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.2}{4.2 Establishment of the force balance for a bubble on a vertical wall }{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Bubble shape : Geometrical definitions}{section.4.2}% 39
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Buoyancy force}{section.4.2}% 40
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Contact Pressure force}{section.4.2}% 41
+\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 Capillary force}{section.4.2}% 42
+\BOOKMARK [2][-]{subsection.4.2.5}{4.2.5 Added Mass force of a growing bubble}{section.4.2}% 43
+\BOOKMARK [2][-]{subsection.4.2.6}{4.2.6 Added Mass from Duhar et al.}{section.4.2}% 44
+\BOOKMARK [2][-]{subsection.4.2.7}{4.2.7 Lift and drag forces}{section.4.2}% 45
+\BOOKMARK [1][-]{section.4.3}{4.3 Force Balance Modeling}{chapter.4}% 46
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 General Considerations}{section.4.3}% 47
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Buoyancy Force}{section.4.3}% 48
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Capillary Force}{section.4.3}% 49
+\BOOKMARK [2][-]{subsection.4.3.4}{4.3.4 Contact Pressure Force}{section.4.3}% 50
+\BOOKMARK [2][-]{subsection.4.3.5}{4.3.5 Drag and Lift Forces}{section.4.3}% 51
+\BOOKMARK [2][-]{subsection.4.3.6}{4.3.6 Inertia Force}{section.4.3}% 52
+\BOOKMARK [2][-]{subsection.4.3.7}{4.3.7 Force Balance Summary}{section.4.3}% 53
+\BOOKMARK [2][-]{subsection.4.3.8}{4.3.8 Bubble Growth}{section.4.3}% 54
+\BOOKMARK [2][-]{subsection.4.3.9}{4.3.9 Liquid Velocity}{section.4.3}% 55
+\BOOKMARK [1][-]{section.4.4}{4.4 Departure by Sliding}{chapter.4}% 56
+\BOOKMARK [2][-]{subsection.4.4.1}{4.4.1 Non-Dimensional Analysis}{section.4.4}% 57
+\BOOKMARK [2][-]{subsection.4.4.2}{4.4.2 Application to Experimental Data}{section.4.4}% 58
+\BOOKMARK [2][-]{subsection.4.4.3}{4.4.3 Departure Diameter Prediction}{section.4.4}% 59
+\BOOKMARK [2][-]{subsection.4.4.4}{4.4.4 Discussion and accounting for parameters uncertainties}{section.4.4}% 60
+\BOOKMARK [1][-]{section.4.5}{4.5 Sliding phase}{chapter.4}% 61
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 Modeling}{section.4.5}% 62
+\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 Low Pressure Sliding}{section.4.5}% 63
+\BOOKMARK [2][-]{subsection.4.5.3}{4.5.3 High Pressure Sliding}{section.4.5}% 64
+\BOOKMARK [1][-]{section.4.6}{4.6 Conclusion}{chapter.4}% 65
+\BOOKMARK [0][]{chapter.5}{5 Assembling of a new Heat Flux Partitioning Model}{part.3}% 66
+\BOOKMARK [1][-]{section.5.1}{5.1 New model}{chapter.5}% 67
+\BOOKMARK [1][-]{section.5.2}{5.2 General description of the model}{chapter.5}% 68
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Convective heat fluxes}{section.5.2}% 69
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Boiling heat flux}{section.5.2}% 70
+\BOOKMARK [2][-]{subsection.5.2.3}{5.2.3 Quenching heat flux}{section.5.2}% 71
+\BOOKMARK [2][-]{subsection.5.2.4}{5.2.4 Needed closure relationships}{section.5.2}% 72
+\BOOKMARK [2][-]{subsection.5.2.5}{5.2.5 Single Bubble Quenching Area}{section.5.2}% 73
+\BOOKMARK [2][-]{subsection.5.2.6}{5.2.6 Bubble Growth Time}{section.5.2}% 74
+\BOOKMARK [2][-]{subsection.5.2.7}{5.2.7 Bubble Wait Time}{section.5.2}% 75
+\BOOKMARK [2][-]{subsection.5.2.8}{5.2.8 Nucleation Site Density}{section.5.2}% 76
+\BOOKMARK [2][-]{subsection.5.2.9}{5.2.9 Considerations on bubble interaction and nucleation sites deactivation}{section.5.2}% 77
+\BOOKMARK [2][-]{subsection.5.2.10}{5.2.10 Nucleation Sites and Bubbles Interactions}{section.5.2}% 78
+\BOOKMARK [-1][]{part.4}{Towards the Industrial Geometry}{}% 79
+\BOOKMARK [0][]{chapter.6}{6 Promoteur}{part.4}% 80
+\BOOKMARK [1][-]{section.6.1}{6.1 Boiling freon in a tube with mixing vanes : DEBORA-Promoteur experiments}{chapter.6}% 81
+\BOOKMARK [2][-]{subsection.6.1.1}{6.1.1 Description of the experiment}{section.6.1}% 82
+\BOOKMARK [2][-]{subsection.6.1.2}{6.1.2 NEPTUNE\137CFD simulations of DEBORA-Promoteur cases}{section.6.1}% 83
+\BOOKMARK [1][-]{section.6.2}{6.2 Liquid water flow in a tube with mixing vanes : AGATE-PROMOTEUR experiment}{chapter.6}% 84
+\BOOKMARK [2][-]{subsection.6.2.1}{6.2.1 Description of the experiment}{section.6.2}% 85
+\BOOKMARK [2][-]{subsection.6.2.2}{6.2.2 NEPTUNE\137CFD simulations of AGATE-Promoteur case}{section.6.2}% 86
+\BOOKMARK [-1][]{part.5}{Conclusion}{}% 87
+\BOOKMARK [-1][]{part.6}{Appendix}{}% 88
+\BOOKMARK [0][]{appendix.A}{A Details on the Bubble Force Balance}{part.6}% 89
+\BOOKMARK [1][-]{section.A.1}{A.1 Appendix Section Test}{appendix.A}% 90
+\BOOKMARK [1][-]{section.A.2}{A.2 Another Appendix Section Test}{appendix.A}% 91
+\BOOKMARK [0][]{dummy.7}{Bibliography}{part.6}% 92
+\BOOKMARK [0][]{declaration.0}{Declaration}{part.6}% 93
+\BOOKMARK [0][]{colophon.0}{Colophon}{part.6}% 94

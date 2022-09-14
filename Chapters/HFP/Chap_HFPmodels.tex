@@ -378,6 +378,7 @@ In each of the 4 presented HFP models, there is a number of parameters that stil
 
 The value of the nucleation site density is a very sensitive parameter that controls the intensity of the boiling heat transfer. Unfortunately, its value can vary over a very large range of value depending on the operating conditions and heater material and is thus expressed using experimental correlations.
 
+\npar
 In their work, Kurul \& Podowski used the law of Lemmert and Chawla \cite{Lemmert}:
 
 \begin{align}
@@ -385,16 +386,18 @@ N_{sit}=\crocht{210\parth{T_{w}-T_{sat}}}^{1.8}
 \end{align}
 
 
+\npar
 Later, Basu \cite{Basu} correlated her own experimental results to obtain:
 
 \begin{align}
 N_{sit}=&
 \begin{dcases}
-0.34\crocht{1-\cos{\theta}}\Delta T_{w}^{2} & \text{if } \Delta T_{w,ONB}<\Delta T_{w} < 15\ K\\
-3.4\times 10^{-5}\crocht{1-\cos{\theta}}\Delta T_{w}^{5.3} & \text{if } \Delta T_{w} > 15\ K
+0.34\crocht{1-\cos{\theta}} {\Delta T_{w}}^{2} & \text{if } \Delta T_{w,ONB}<\Delta T_{w} < 15\ K\\
+3.4\times 10^{-5}\crocht{1-\cos{\theta}} {\Delta T_{w}}^{5.3} & \text{if } \Delta T_{w} > 15\ K
 \end{dcases}
 \end{align}
 
+\npar
 In 2003, Hibiki \& Ishii \cite{HI} came up with a new correlation to estimate the nucleation site density that includes a pressure dependence, which has been used by Gilman \& Baglietto \cite{Gilman} and many other authors \cite{HI_others}:
 
 \begin{align}
@@ -406,10 +409,56 @@ R_{c} =& \dfrac{2\sigma\parth{1+\dfrac{\rho_{V}}{\rho_{L}}} / P }{\exp{\dfrac{h_
 \end{align}
 with $R_{g}$ the perfect gas constant times the molar mass of the fluid,  $N_{0}=4.72\times 10^{5}\ \mathrm{m}^{-2}$, $\mu = 0.722\ \mathrm{rad}$, $\lambda ' = 2.5 \times 10^{-3} \ \mathrm{m}$ and $\rho^{+}=\mathrm{log}_{10}\parth{\dfrac{\rho_{L}-\rho_{V}}{\rho_{V}}}$.
 
+\npar
 Finally, Zhou \etal followed a approach similar to Basu \etal by correlating their own experimental data:
 
 \begin{align}
 N_{sit} =& N_{0}\parth{1-\cos{\theta}}\crocht{\exp{\mathrm{f}\parth{P} \Delta T_{w} } -1 }
-\mathrm{f}\parth{P} = 0.218\ln{\dfrac{P}{P_{0}}}+0.1907
+\mathrm{f}\parth{P} = 0.218~\ln{\dfrac{P}{P_{0}}}+0.1907
 \end{align}
 with $N_{0}=55~395.26\ \mathrm{m}^{-2}$ and $P_{0}=1.01\ \mathrm{bar}$.
+
+
+
+\subsection{Bubble Departure Frequency $f$, Growth Time $t_{g}$ and Wait Time $t_{w}$}
+
+
+Historically, Kurul \& Podowski modeled the BDF according to Cole \cite{Cole} which derived an expression using photographic observations of bubble nucleation, further verified by Ceumern \& Lindenstjerna for pool boiling of water at pressures up to 8 bar. :
+
+\begin{align}
+f = \sqrt{\frac{4}{3} \frac{g \parth{\rho_{L}-\rho_{V}}}{\rho_{L}D_{d}} }
+\label{eq:f_Cole}
+\end{align}
+
+Then, assuming that the growth time of the bubble before departure is small compared to the wait time before a new bubble nucleates ($t_{g,d} \ll t_{w}$) gives :
+
+\begin{align}
+t_{w} \approx \frac{1}{f}
+\end{align}
+
+
+Although the assumption of a negligible growth time is true in different cases, notably when bubble departure diameter is small \ie they leave their nucleation site nearly instantly, this is not generally true and the value of the ratio $\dfrac{t_{g,d}}{t_{w}}$ can vary by decades depending on the thermal-hydraulics conditions.
+
+Thus, later models considered separate modeling of the growth and wait time in order to compute the BDF as :
+
+\begin{align}
+f = \frac{1}{t_{g,d} + t_{w} }
+\label{eq:frequency}
+\end{align}
+
+
+In this scope, Basu \etal \cite{Basu} correlated their own exprimental results to obtain :
+
+\begin{align}
+t_{g} =& \frac{D_{d}^{2} }{45~e^{-0.02~\Ja_{L}} \eta_{L} \Ja_{w}} \label{eq:tg_Basu}
+ \\
+t_{w} =&  139.1\ {\Delta T_{w}}^{-4.1}
+\label{eq:tw_Basu}
+\end{align}
+
+
+Gilman \& Baglietto \cite{Gilman} chose use the growth law of Zuber \cite{Zuber1961} and the total BDF of Cole (Eq. \ref{eq:f_Cole}) to close the relation \ref{eq:frequency}.
+
+\begin{align}
+t_{g,d} = \frac{\pi {R_{d}}^{2}}{4b^{2} \Ja_{w} \eta{L}},\ \ b=1.56
+\end{align}
