@@ -1,20 +1,10 @@
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
+\babel@toc {english}{}\relax 
 \deactivateaddvspace 
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {A.1}A floating example (\texttt {listings} manual)}{69}{lstlisting.A.1}
+\contentsline {lstlisting}{\numberline {A.1}{\ignorespaces A floating example (\texttt {listings} manual)}}{68}{lstlisting.A.1}%

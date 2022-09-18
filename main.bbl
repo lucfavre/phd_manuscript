@@ -1,0 +1,2445 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nyt/global//global/global}
+  \entry{bucci_not-so-subtle_2021}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BM}{%
+         family={Bucci},
+         familyi={B\bibinitperiod},
+         given={Mattia},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Buongiorno},
+         familyi={B\bibinitperiod},
+         given={Jacopo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bucci},
+         familyi={B\bibinitperiod},
+         given={Matteo},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BMBJBM1}
+    \strng{fullhash}{BMBJBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1063/5.0036956
+    \endverb
+    \field{issn}{1070-6631}
+    \field{note}{Publisher: American Institute of Physics}
+    \field{number}{1}
+    \field{pages}{017110}
+    \field{title}{The not-so-subtle flaws of the force balance approach to
+  predict the departure of bubbles in boiling heat transfer}
+    \verb{url}
+    \verb https://aip.scitation.org/doi/abs/10.1063/5.0036956
+    \endverb
+    \field{volume}{33}
+    \verb{file}
+    \verb Version soumise:C\:\\Users\\Luczer\\Zotero\\storage\\5I6P5XBJ\\Bucci
+    \verb et al. - 2021 - The not-so-subtle flaws of the force balance appro.pd
+    \verb f:application/pdf
+    \endverb
+    \field{journaltitle}{Physics of Fluids}
+    \field{month}{01}
+    \field{year}{2021}
+    \field{urlday}{20}
+    \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{bures_modelling_2021}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BL}{%
+         family={Bureš},
+         familyi={B\bibinitperiod},
+         given={Lubomír},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SY}{%
+         family={Sato},
+         familyi={S\bibinitperiod},
+         given={Yohei},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{boiling, contact lines, multiphase flow}
+    \strng{namehash}{BLSY1}
+    \strng{fullhash}{BLSY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    , Formation of a microlayer in nucleate boiling results in substantial
+  changes to the heat-transfer dynamics of the process, and establishing a
+  criterion to distinguish between the microlayer and contact-line regimes
+  encountered is necessary to obtain a quantitative description of the
+  nucleate-boiling phenomenon. In this work, we describe microlayer formation
+  as a dewetting transition in the presence of phase change. We derive a
+  specific criterion for modelling the transition based on a synthesis of
+  existing theoretical, experimental and numerical data. As a result, a new
+  formulation of the transition criterion is developed, and applied to (i)
+  reference data from a dewetting experiment of a volatile liquid, and (ii)
+  results derived from a high-resolution direct numerical simulation of
+  nucleate boiling. In both cases, very good agreement is found for Jakob
+  numbers ≲≲{\textbackslash}lesssim75, a range which covers many important
+  boiling situations.%
+    }
+    \verb{doi}
+    \verb 10.1017/jfm.2021.204
+    \endverb
+    \field{issn}{0022-1120, 1469-7645}
+    \field{note}{Publisher: Cambridge University Press}
+    \field{title}{On the modelling of the transition between contact-line and
+  microlayer evaporation regimes in nucleate boiling}
+    \verb{url}
+    \verb https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/ar
+    \verb ticle/on-the-modelling-of-the-transition-between-contactline-and-micr
+    \verb olayer-evaporation-regimes-in-nucleate-boiling/05713699070C2B3DE6F9BB
+    \verb 36E5E0ADF3
+    \endverb
+    \field{volume}{916}
+    \verb{file}
+    \verb Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\Y87QPB7G\\Bureš e
+    \verb t Sato - 2021 - On the modelling of the transition between contact.pd
+    \verb f:application/pdf;Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\IQ3UQ
+    \verb MAP\\05713699070C2B3DE6F9BB36E5E0ADF3.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Fluid Mechanics}
+    \field{month}{06}
+    \field{year}{2021}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{chen_prediction_2012}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CD}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Deqi},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PLm}{%
+         family={Pan},
+         familyi={P\bibinitperiod},
+         given={Liang-ming},
+         giveni={L\bibinithyphendelim m\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Ren},
+         familyi={R\bibinitperiod},
+         given={Song},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{CDPLmRS1}
+    \strng{fullhash}{CDPLmRS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    Bubble detachment diameter is one of the key parameters in the study of
+  bubble dynamics and boiling heat transfer, and it is hard to be measured in a
+  boiling system. In order to predict the bubble detachment diameter, a
+  theoretical model is proposed based on forces analysis in this paper. All the
+  forces acting on a bubble are taken into account to establish a model for
+  different flow boiling configurations, including narrow and conventional
+  channels, upward, downward and horizontal flows. A correlation of bubble
+  contact circle diameter is adopted in this study, and it is found that the
+  bubble contact circle diameter has significant effect on bubble detachment. A
+  new correlation taking the bubble contact circle diameter into account for
+  the evaluation of bubble growth force is proposed in this study, and it is
+  found that the bubble growth force and surface tension force are more
+  significant in narrow channel when comparing with that in conventional
+  channel. A visual experiment was carried out in order to verify present
+  model; and the experimental data from published literature are used also. A
+  good agreement between predicted and measured results is achieved.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.nucengdes.2011.11.022
+    \endverb
+    \field{issn}{0029-5493}
+    \field{pages}{263\bibrangedash 271}
+    \field{title}{Prediction of bubble detachment diameter in flow boiling
+  based on force analysis}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0029549311009952
+    \endverb
+    \field{volume}{243}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\8MJRBVBT\
+    \verb \S0029549311009952.html:text/html
+    \endverb
+    \field{journaltitle}{Nuclear Engineering and Design}
+    \field{month}{02}
+    \field{year}{2012}
+    \field{urlday}{18}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{colombo_prediction_2015}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CM}{%
+         family={Colombo},
+         familyi={C\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Fairweather},
+         familyi={F\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{Bubble departure diameter, Bubble growth equation, Forced convection
+  boiling, Mechanistic model, Multi-phase flow, Sub-cooled boiling}
+    \strng{namehash}{CMFM1}
+    \strng{fullhash}{CMFM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    In the context of computational fluid dynamic simulations of boiling flows
+  using time-averaged Eulerian multi-phase approaches, the many sub-models
+  required to describe such a complex phenomena are of particular importance.
+  Of interest here, wall boiling requires calculation of the contribution of
+  evaporation to global heat transfer, which in turn relies on determination of
+  the active nucleation site density, bubble departure diameter and frequency
+  of bubble departure. In this paper, an improved mechanistic model for the
+  bubble departure diameter during flow boiling is developed. The model is
+  based on the balance of forces acting on a bubble at a single nucleation
+  site, with a new equation governing bubble growth proposed. The formulation
+  accounts for evaporation of the micro-layer under the bubble, heat transfer
+  from superheated liquid around the bubble surface, and condensation on the
+  bubble cap due to the presence of sub-cooled liquid. Validation of the growth
+  equation is provided through comparison against experiments in both pool
+  boiling and flow boiling conditions. Introduction of condensation on the
+  bubble cap allows reproduction of the growth of the bubble for different
+  sub-cooling temperatures of the surrounding liquid. In addition, a
+  sensitivity study guarantees dependency of the bubble departure diameter on
+  relevant physical quantities such as mass flow rate, heat flux, liquid
+  sub-cooling and pressure, with any inclination of the channel walls correctly
+  accounted for. Predictions of bubble departure diameter and bubble lift-off
+  are validated against three different databases on sub-cooled flow boiling
+  with water and an additional database on saturated boiling with refrigerant
+  R113. The whole data set guarantees validation is performed over a range of
+  parameters and operating conditions as broad as possible. Satisfactory
+  predictive accuracy is obtained in all conditions. The present formulation
+  provides an appropriate starting point for prediction of the behaviour of
+  vapour bubbles under more general conditions which include lift-off after
+  sliding, the frequency of bubble departure, bubble merging and bubble
+  shrinking and collapse due to condensation.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2015.01.103
+    \endverb
+    \field{issn}{0017-9310}
+    \field{pages}{135\bibrangedash 146}
+    \field{shorttitle}{Prediction of bubble departure in forced convection
+  boiling}
+    \field{title}{Prediction of bubble departure in forced convection boiling:
+  {A} mechanistic model}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931015001118
+    \endverb
+    \field{volume}{85}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\QYKANQBH\
+    \verb \S0017931015001118.html:text/html;Version acceptée:C\:\\Users\\Lucze
+    \verb r\\Zotero\\storage\\U6PG2KYG\\Colombo et Fairweather - 2015 - Predict
+    \verb ion of bubble departure in forced convectio.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{month}{06}
+    \field{year}{2015}
+    \field{urlday}{20}
+    \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{frost_extension_1967}{book}{}
+    \name{author}{3}{}{%
+      {{hash=FW}{%
+         family={Frost},
+         familyi={F\bibinitperiod},
+         given={W},
+         giveni={W},
+      }}%
+      {{hash=DGS}{%
+         family={Dzakowic},
+         familyi={D\bibinitperiod},
+         given={G.\bibnamedelima S},
+         giveni={G\bibinitperiod\bibinitdelim S},
+      }}%
+      {{hash=A}{%
+         family={{American Society of Mechanical Engineers}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {ASME}%
+    }
+    \strng{namehash}{FWDGSA1}
+    \strng{fullhash}{FWDGSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{note}{OCLC: 459788171}
+    \field{title}{An extension of the method for predicting incipient boiling
+  on commercially finished surfaces}
+    \list{location}{1}{%
+      {New York, N.Y.}%
+    }
+    \field{year}{1967}
+  \endentry
+
+  \entry{garnier_local_2001}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GJ}{%
+         family={Garnier},
+         familyi={G\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=ME}{%
+         family={Manon},
+         familyi={M\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Cubizolles},
+         familyi={C\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \strng{namehash}{GJMECG1}
+    \strng{fullhash}{GJMECG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    This paper presents in detail some measurements on R12 flow boiling in a
+  vertical channel. Detailed descriptions are given of the measurement methods
+  (and in pa...%
+    }
+    \verb{doi}
+    \verb 10.1615/MultScienTechn.v13.i1-2.10
+    \endverb
+    \field{issn}{0276-1459, 1943-6181}
+    \field{note}{Publisher: Begel House Inc.}
+    \field{number}{1\&2}
+    \field{title}{{LOCAL} {MEASUREMENTS} {ON} {FLOW} {BOILING} {OF}
+  {REFRIGERANT} 12 {IN} {A} {VERTICAL} {TUBE}}
+    \verb{url}
+    \verb https://www.dl.begellhouse.com/journals/5af8c23d50e0a883,18c85f7f5866
+    \verb b59a,3dd586c1794b1dcf.html
+    \endverb
+    \field{volume}{13}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\XBDHVCXF\\5af8c23d50e0a
+    \verb 883,18c85f7f5866b59a,3dd586c1794b1dcf.html:text/html
+    \endverb
+    \field{journaltitle}{Multiphase Science and Technology}
+    \field{year}{2001}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{van_der_geld_dynamics_2009}{article}{}
+    \name{author}{1}{}{%
+      {{hash=vdGCWM}{%
+         prefix={van\bibnamedelima der},
+         prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Geld},
+         familyi={G\bibinitperiod},
+         given={C.\bibnamedelima W.\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{Drag Force, Lift Force, Mass Tensor, Plane Wall, Vorticity}
+    \strng{namehash}{GCWMvd1}
+    \strng{fullhash}{GCWMvd1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    An overview is given of prediction methods for motion and deformation of a
+  bubble that is created by boiling at a wall, at times before and after
+  detachment, with a focus on added mass forces in the vicinity of the wall.
+  The possibility to apply added mass coefficients derived in potential flows
+  also to flows with vorticity is examined. An introduction to Lagrangian
+  methods is given. Added mass tensors are derived for deforming bubbles at and
+  away from a plane wall. Expressions for induced hydrodynamic lift forces are
+  given, and validation experiments are briefly discussed.%
+    }
+    \verb{doi}
+    \verb 10.1007/s00231-007-0254-7
+    \endverb
+    \field{issn}{1432-1181}
+    \field{number}{7}
+    \field{pages}{831\bibrangedash 846}
+    \field{title}{The dynamics of a boiling bubble before and after detachment}
+    \verb{url}
+    \verb https://doi.org/10.1007/s00231-007-0254-7
+    \endverb
+    \field{volume}{45}
+    \field{journaltitle}{Heat and Mass Transfer}
+    \field{month}{05}
+    \field{year}{2009}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{guan_bubble_2015}{article}{}
+    \name{author}{4}{}{%
+      {{hash=GP}{%
+         family={Guan},
+         familyi={G\bibinitperiod},
+         given={Peng},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=JL}{%
+         family={Jia},
+         familyi={J\bibinitperiod},
+         given={Li},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=YL}{%
+         family={Yin},
+         familyi={Y\bibinitperiod},
+         given={Liaofei},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=TZ}{%
+         family={Tan},
+         familyi={T\bibinitperiod},
+         given={Zetao},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{Annular Channel, Bubble Diameter, Bubble Growth, Bubble Radius, Vapor
+  Quality}
+    \strng{namehash}{GP+1}
+    \strng{fullhash}{GPJLYLTZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Flow boiling experiments were conducted in a vertical annular channel to
+  study bubble departure characteristics. Deionized water was used as the
+  working fluid, and the tests were performed at atmospheric pressure. Bubble
+  departure diameters were obtained from the images which were captured by a
+  high-speed digital camera. The relationship between bubble contact diameter
+  and departure diameter was discussed. A new model base on force balance
+  analysis, taking bubble contact diameter into account for predicting bubble
+  departure diameter is proposed in this study. A good agreement between
+  predicted and measured results is achieved.%
+    }
+    \verb{doi}
+    \verb 10.1007/s00231-014-1461-7
+    \endverb
+    \field{issn}{1432-1181}
+    \field{number}{7}
+    \field{pages}{921\bibrangedash 930}
+    \field{title}{Bubble departure size in flow boiling}
+    \verb{url}
+    \verb https://doi.org/10.1007/s00231-014-1461-7
+    \endverb
+    \field{volume}{51}
+    \field{journaltitle}{Heat and Mass Transfer}
+    \field{month}{07}
+    \field{year}{2015}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{kandlikar_contact_2002}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KSG}{%
+         family={Kandlikar},
+         familyi={K\bibinitperiod},
+         given={Satish\bibnamedelima G.},
+         giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=SME}{%
+         family={Steinke},
+         familyi={S\bibinitperiod},
+         given={Mark\bibnamedelima E.},
+         giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{KSGSME1}
+    \strng{fullhash}{KSGSME1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Photographic observations of the boiling phenomena have played an important
+  role in gaining insight into the boiling mechanism. This paper presents a
+  brief historical review of the available literature on the photographic
+  studies in pool and flow boiling. This is followed by the results of the
+  photographic studies conducted in the authors' laboratory on liquid droplets
+  impinging on a heated surface. Liquid–vapor interface and contact line
+  movements are observed through a high speed camera at high resolution. The
+  effect of surface roughness and surface temperature on dynamic advancing and
+  receding contact angles has been studied. In addition, the effects of rapid
+  evaporation on advancing and receding contact angles, liquid–vapor
+  interface motion, and the dryout front propagation have been investigated.%
+    }
+    \verb{doi}
+    \verb 10.1016/S0017-9310(02)00090-X
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{18}
+    \field{pages}{3771\bibrangedash 3780}
+    \field{title}{Contact angles and interface behavior during rapid
+  evaporation of liquid on a heated surface}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S001793100200090X
+    \endverb
+    \field{volume}{45}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\E2S655CC\
+    \verb \S001793100200090X.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{month}{08}
+    \field{year}{2002}
+    \field{urlday}{18}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{klausner_vapor_1993}{article}{}
+    \name{author}{4}{}{%
+      {{hash=KJF}{%
+         family={Klausner},
+         familyi={K\bibinitperiod},
+         given={J.\bibnamedelima F.},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Mei},
+         familyi={M\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BDM}{%
+         family={Bernhard},
+         familyi={B\bibinitperiod},
+         given={D.\bibnamedelima M.},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=ZLZ}{%
+         family={Zeng},
+         familyi={Z\bibinitperiod},
+         given={L.\bibnamedelima Z.},
+         giveni={L\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{KJF+1}
+    \strng{fullhash}{KJFMRBDMZLZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    A forced convection boiling facility has been fabricated in which vapor
+  bubble departure can be investigated. It has been observed that once a vapor
+  bubble departs from its nucleation site, it typically slides along the
+  heating surface and lifts off at some finite distance downstream. The
+  probability density functions (pdfs) for bubble departure diameter, d, have
+  been obtained for mass flux, C, ranging from 112 to 287 kg m−2 s−1 and
+  heat flux, qw, ranging from 11.0 to 26.0 kW m−2. The data indicate a
+  systematic dependence of d on G and qw. A detailed analysis of various forces
+  acting on the bubble is presented and is used to predict the mean departure
+  diameter. The onset of imbalance between the quasi-steady drag, the unsteady
+  component of the drag due to asymmetrical bubble growth, and the surface
+  tension force in the flow direction is used as a criterion for departure and
+  yields satisfactory agreement between the measured and predicted values of
+  the mean departure diameter. The analytical prediction shows a strong
+  influence of mean liquid velocity and wall superheat on the bubble departure
+  diameter. At the point of departure the surface tension force in the flow
+  direction is generally small.%
+    }
+    \verb{doi}
+    \verb 10.1016/0017-9310(93)80041-R
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{3}
+    \field{pages}{651\bibrangedash 662}
+    \field{title}{Vapor bubble departure in forced convection boiling}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/001793109380041R
+    \endverb
+    \field{volume}{36}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\PTMTCGEW\
+    \verb \001793109380041R.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{month}{02}
+    \field{year}{1993}
+    \field{urlday}{20}
+    \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{kocamustafaogullari_pressure_1983}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KG}{%
+         family={Kocamustafaogullari},
+         familyi={K\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{KG1}
+    \strng{fullhash}{KG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Bubble departure diameters have been correlated for water over a wide range
+  of pressures. The averaged deviation of the experimental data from the
+  proposed correlation is approximately ±33\% and is typical of most boiling
+  correlations. Considering the variety of the natural surfaces used to obtain
+  experimental data gathered from different sources, it may be noted that the
+  correlation allows a fairly good representation of the available experimental
+  water data.%
+    }
+    \verb{doi}
+    \verb 10.1016/0735-1933(83)90057-X
+    \endverb
+    \field{issn}{0735-1933}
+    \field{number}{6}
+    \field{pages}{501\bibrangedash 509}
+    \field{title}{Pressure dependence of bubble departure diameter for water}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/073519338390057X
+    \endverb
+    \field{volume}{10}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\TFN7S9KE\
+    \verb \073519338390057X.html:text/html
+    \endverb
+    \field{journaltitle}{International Communications in Heat and Mass
+  Transfer}
+    \field{month}{11}
+    \field{year}{1983}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{kossolapov_experimental_2021}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=KA}{%
+         family={Kossolapov},
+         familyi={K\bibinitperiod},
+         given={Artyom},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KA1}
+    \strng{fullhash}{KA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{Experimental {Investigation} of {Subcooled} {Flow} {Boiling}
+  and {CHF} at {Prototypical} {Pressures} of {Light} {Water} {Reactors}}
+    \list{institution}{1}{%
+      {Massachusetts Institute of Technology}%
+    }
+    \field{type}{{PhD} {Thesis}}
+    \field{year}{2021}
+  \endentry
+
+  \entry{lamb_hydrodynamics_1895}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LSH}{%
+         family={Lamb},
+         familyi={L\bibinitperiod},
+         given={Sir\bibnamedelima Horace},
+         giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{1}{%
+      {University Press}%
+    }
+    \strng{namehash}{LSH1}
+    \strng{fullhash}{LSH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{isbn}{978-1-4086-1332-0}
+    \field{note}{Google-Books-ID: d\_AoAAAAYAAJ}
+    \field{title}{Hydrodynamics}
+    \field{year}{1895}
+  \endentry
+
+  \entry{legendre_thermal_1998}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LD}{%
+         family={Legendre},
+         familyi={L\bibinitperiod},
+         given={Dominique},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Borée},
+         familyi={B\bibinitperiod},
+         given={Jacques},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Magnaudet},
+         familyi={M\bibinitperiod},
+         given={Jacques},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LDBJMJ1}
+    \strng{fullhash}{LDBJMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1063/1.869654
+    \endverb
+    \field{issn}{1070-6631}
+    \field{note}{Publisher: American Institute of Physics}
+    \field{number}{6}
+    \field{pages}{1256\bibrangedash 1272}
+    \field{title}{Thermal and dynamic evolution of a spherical bubble moving
+  steadily in a superheated or subcooled liquid}
+    \verb{url}
+    \verb https://aip.scitation.org/doi/abs/10.1063/1.869654
+    \endverb
+    \field{volume}{10}
+    \field{journaltitle}{Physics of Fluids}
+    \field{month}{06}
+    \field{year}{1998}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{legendre_lift_1998}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LD}{%
+         family={Legendre},
+         familyi={L\bibinitperiod},
+         given={Dominique},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Magnaudet},
+         familyi={M\bibinitperiod},
+         given={Jacques},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{LDMJ1}
+    \strng{fullhash}{LDMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    The three-dimensional flow around a spherical bubble moving steadily in a
+  viscous linear shear flow is studied numerically by solving the full
+  Navier–Stokes equations. The bubble surface is assumed to be clean so that
+  the outer flow obeys a zero-shear-stress condition and does not induce any
+  rotation of the bubble. The main goal of the present study is to provide a
+  complete description of the lift force experienced by the bubble and of the
+  mechanisms responsible for this force over a wide range of Reynolds number
+  (0.1[les ]Re[les ]500, Re being based on the bubble diameter) and shear rate
+  (0[les ]Sr[les ]1, Sr being the ratio between the velocity difference across
+  the bubble and the relative velocity). For that purpose the structure of the
+  flow field, the influence of the Reynolds number on the streamwise vorticity
+  field and the distribution of the tangential velocities at the surface of the
+  bubble are first studied in detail. It is shown that the latter distribution
+  which plays a central role in the production of the lift force is
+  dramatically dependent on viscous effects. The numerical results concerning
+  the lift coefficient reveal very different behaviours at low and high
+  Reynolds numbers. These two asymptotic regimes shed light on the respective
+  roles played by the vorticity produced at the bubble surface and by that
+  contained in the undisturbed flow. At low Reynolds number it is found that
+  the lift coefficient depends strongly on both the Reynolds number and the
+  shear rate. In contrast, for moderate to high Reynolds numbers these
+  dependences are found to be very weak. The numerical values obtained for the
+  lift coefficient agree very well with available asymptotic results in the
+  low- and high-Reynolds-number limits. The range of validity of these
+  asymptotic solutions is specified by varying the characteristic parameters of
+  the problem and examining the corresponding evolution of the lift
+  coefficient. The numerical results are also used for obtaining empirical
+  correlations useful for practical calculations at finite Reynolds number. The
+  transient behaviour of the lift force is then examined. It is found that,
+  starting from the undisturbed flow, the value of the lift force at short time
+  differs from its steady value, even when the Reynolds number is high, because
+  the vorticity field needs a finite time to reach its steady distribution.
+  This finding is confirmed by an analytical derivation of the initial value of
+  the lift coefficient in an inviscid shear flow. Finally, a specific
+  investigation of the evolution of the lift and drag coefficients with the
+  shear rate at high Reynolds number is carried out. It is found that when the
+  shear rate becomes large, i.e. Sr=O(1), a small but consistent decrease of
+  the lift coefficient occurs while a very significant increase of the drag
+  coefficient, essentially produced by the modifications of the pressure
+  distribution, is observed. Some of the foregoing results are used to show
+  that the well-known equality between the added mass coefficient and the lift
+  coefficient holds only in the limit of weak shears and nearly steady flows.%
+    }
+    \verb{doi}
+    \verb 10.1017/S0022112098001621
+    \endverb
+    \field{issn}{1469-7645, 0022-1120}
+    \field{note}{Publisher: Cambridge University Press}
+    \field{pages}{81\bibrangedash 126}
+    \field{title}{The lift force on a spherical bubble in a viscous linear
+  shear flow}
+    \verb{url}
+    \verb https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/ar
+    \verb ticle/abs/lift-force-on-a-spherical-bubble-in-a-viscous-linear-shear-
+    \verb flow/6B8108A588A8E562EBB99A6558BAB774
+    \endverb
+    \field{volume}{368}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\5IBMZTDA\\6B8108A588A8E
+    \verb 562EBB99A6558BAB774.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Fluid Mechanics}
+    \field{month}{08}
+    \field{year}{1998}
+    \field{urlday}{18}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{levenspiel_collapse_1959}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LO}{%
+         family={Levenspiel},
+         familyi={L\bibinitperiod},
+         given={Octave},
+         giveni={O\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LO1}
+    \strng{fullhash}{LO1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1021/ie50594a045
+    \endverb
+    \field{issn}{0019-7866}
+    \field{note}{Publisher: American Chemical Society}
+    \field{number}{6}
+    \field{pages}{787\bibrangedash 790}
+    \field{title}{Collapse of {Steam} {Bubbles} in {Water}}
+    \verb{url}
+    \verb https://doi.org/10.1021/ie50594a045
+    \endverb
+    \field{volume}{51}
+    \verb{file}
+    \verb ACS Full Text Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\7RY8WNJC\
+    \verb \ie50594a045.html:text/html
+    \endverb
+    \field{journaltitle}{Industrial \& Engineering Chemistry}
+    \field{month}{06}
+    \field{year}{1959}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{magnaudet_motion_2000}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MJ}{%
+         family={Magnaudet},
+         familyi={M\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EI}{%
+         family={Eames},
+         familyi={E\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \keyw{added mass, bubbly flow, hydrodynamic force, shear-induced lift
+  force, surfactants}
+    \strng{namehash}{MJEI1}
+    \strng{fullhash}{MJEI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Predicting the motion of bubbles in dispersed flows is a key problem in
+  fluid mechanics that has a bearing on a wide range of applications from
+  oceanography to chemical engineering. In this review we synthesize the recent
+  progress made in describing bubble motion in inhomogeneous flow. A trident
+  approach consisting of experimental, analytical, and numerical work has given
+  a clearer description of the hydrodynamic forces experienced by isolated
+  bubbles moving either in inviscid flows or in slightly viscous laminar flows.
+  A significant part of the paper is devoted to a discussion of drag,
+  added-mass force, and shear-induced lift experienced by spheroidal bubbles
+  moving in inertially dominated, time-dependent, rotational, nonuniform flows.
+  The important influence of surfactants and shape distortion on bubble motion
+  in a quiescent liquid is highlighted. Examples of bubble motion in
+  inhomogeneous flows combining several of the effects mentioned above are
+  discussed.%
+    }
+    \verb{doi}
+    \verb 10.1146/annurev.fluid.32.1.659
+    \endverb
+    \field{note}{\_eprint: https://doi.org/10.1146/annurev.fluid.32.1.659}
+    \field{number}{1}
+    \field{pages}{659\bibrangedash 708}
+    \field{title}{The {Motion} of {High}-{Reynolds}-{Number} {Bubbles} in
+  {Inhomogeneous} {Flows}}
+    \verb{url}
+    \verb https://doi.org/10.1146/annurev.fluid.32.1.659
+    \endverb
+    \field{volume}{32}
+    \field{journaltitle}{Annual Review of Fluid Mechanics}
+    \field{year}{2000}
+    \field{urlday}{18}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{maity_effect_2000}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=MS}{%
+         family={Maity},
+         familyi={M\bibinitperiod},
+         given={Sandipan},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MS1}
+    \strng{fullhash}{MS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Effect of {Velocity} and {Gravity} on {Bubble} {Dynamics}}
+    \list{institution}{1}{%
+      {University of California Los Angeles}%
+    }
+    \field{type}{mathesis}
+    \field{year}{2000}
+  \endentry
+
+  \entry{mazzocco_reassessed_2018}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MT}{%
+         family={Mazzocco},
+         familyi={M\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=AW}{%
+         family={Ambrosini},
+         familyi={A\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Kommajosyula},
+         familyi={K\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BE}{%
+         family={Baglietto},
+         familyi={B\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{Heat partitioning, Bubble departure, Bubble lift-off, Critical heat
+  flux, Heat transfer}
+    \strng{namehash}{MT+1}
+    \strng{fullhash}{MTAWKRBE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Heat transfer models in multiphase flow with wall boiling rely on closure
+  relations for bubble departure and lift-off diameters. The approach proposed
+  in this paper reassesses the physical representation of each term of the
+  force balance model, eliminating inconsistent assumptions and redundant
+  calibration, leading to a more general methodology to predict lift-off and
+  departure diameters. The validation against available datasets shows improved
+  applicability when compared to existing models. The mechanistic model
+  proposed in this work is expected to be implemented in CFD codes, to improve
+  predictive performance of heat partitioning models.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2017.09.105
+    \endverb
+    \field{issn}{0017-9310}
+    \field{pages}{119\bibrangedash 124}
+    \field{title}{A reassessed model for mechanistic prediction of bubble
+  departure and lift off diameters}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931017318720
+    \endverb
+    \field{volume}{117}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\PYAB7P24\
+    \verb \S0017931017318720.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{month}{02}
+    \field{year}{2018}
+    \field{urlday}{20}
+    \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{mcadams_heat_1954}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MWH}{%
+         family={McAdams},
+         familyi={M\bibinitperiod},
+         given={William\bibnamedelima H},
+         giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \list{publisher}{1}{%
+      {McGraw-Hill}%
+    }
+    \strng{namehash}{MWH1}
+    \strng{fullhash}{MWH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{note}{OCLC: 683455}
+    \field{title}{Heat transmission}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \field{year}{1954}
+  \endentry
+
+  \entry{mei_unsteady_1992}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MR}{%
+         family={Mei},
+         familyi={M\bibinitperiod},
+         given={Renwei},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KJF}{%
+         family={Klausner},
+         familyi={K\bibinitperiod},
+         given={James\bibnamedelima F.},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MRKJF1}
+    \strng{fullhash}{MRKJF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.1063/1.858501
+    \endverb
+    \field{issn}{0899-8213}
+    \field{note}{Publisher: American Institute of Physics}
+    \field{number}{1}
+    \field{pages}{63\bibrangedash 70}
+    \field{title}{Unsteady force on a spherical bubble at finite {Reynolds}
+  number with small fluctuations in the free‐stream velocity}
+    \verb{url}
+    \verb https://aip.scitation.org/doi/abs/10.1063/1.858501
+    \endverb
+    \field{volume}{4}
+    \field{journaltitle}{Physics of Fluids A: Fluid Dynamics}
+    \field{month}{01}
+    \field{year}{1992}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{milne-thomson_theoretical_1938}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MTLM}{%
+         family={Milne-Thomson},
+         familyi={M\bibinithyphendelim T\bibinitperiod},
+         given={Louis\bibnamedelima Melville},
+         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{2}{%
+      {Macmillan}%
+      {Company, limited}%
+    }
+    \strng{namehash}{MTLM1}
+    \strng{fullhash}{MTLM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{note}{Google-Books-ID: A5hRAAAAMAAJ}
+    \field{title}{Theoretical {Hydrodynamics}}
+    \field{year}{1938}
+  \endentry
+
+  \entry{plesset_growth_1954}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PMS}{%
+         family={Plesset},
+         familyi={P\bibinitperiod},
+         given={M.\bibnamedelima S.},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=ZSA}{%
+         family={Zwick},
+         familyi={Z\bibinitperiod},
+         given={S.\bibnamedelima A.},
+         giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{PMSZSA1}
+    \strng{fullhash}{PMSZSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    The growth of a vapor bubble in a superheated liquid is controlled by three
+  factors: the inertia of the liquid, the surface tension, and the vapor
+  pressure. As the bubble grows, evaporation takes place at the bubble
+  boundary, and the temperature and vapor pressure in the bubble are thereby
+  decreased. The heat inflow requirement of evaporation, however, depends on
+  the rate of bubble growth, so that the dynamic problem is linked with a heat
+  diffusion problem. Since the heat diffusion problem has been solved, a
+  quantitative formulation of the dynamic problem can be given. A solution for
+  the radius of the vapor bubble as a function of time is obtained which is
+  valid for sufficiently large radius. This asymptotic solution covers the
+  range of physical interest since the radius at which it becomes valid is near
+  the lower limit of experimental observation. It shows the strong effect of
+  heat diffusion on the rate of bubble growth. Comparison of the predicted
+  radius-time behavior is made with experimental observations in superheated
+  water, and very good agreement is found.%
+    }
+    \field{issn}{0021-8979}
+    \field{note}{Number: 4}
+    \field{number}{4}
+    \field{pages}{493\bibrangedash 450}
+    \field{title}{The {Growth} of {Vapor} {Bubbles} in {Superheated} {Liquids}}
+    \verb{url}
+    \verb https://resolver.caltech.edu/CaltechAUTHORS:PLEjap54a
+    \endverb
+    \field{volume}{25}
+    \verb{file}
+    \verb Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\M4EBDBYY\\Plesset
+    \verb et Zwick - 1954 - The Growth of Vapor Bubbles in Superheated Liquids.
+    \verb pdf:application/pdf;Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\Z7T
+    \verb MBB7R\\9366.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Applied Physics}
+    \field{month}{04}
+    \field{year}{1954}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{reichardt_vollstandige_1951}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RH}{%
+         family={Reichardt},
+         familyi={R\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RH1}
+    \strng{fullhash}{RH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{doi}
+    \verb 10.1002/zamm.19510310704
+    \endverb
+    \field{issn}{0044-2267}
+    \field{note}{ADS Bibcode: 1951ZaMM...31..208R}
+    \field{pages}{208\bibrangedash 219}
+    \field{title}{Vollständige {Darstellung} der turbulenten
+  {Geschwindigkeitsverteilung} in glatten {Leitungen}}
+    \verb{url}
+    \verb https://ui.adsabs.harvard.edu/abs/1951ZaMM...31..208R
+    \endverb
+    \field{volume}{31}
+    \field{journaltitle}{Zeitschrift Angewandte Mathematik und Mechanik}
+    \field{month}{01}
+    \field{year}{1951}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{ren_development_2020}{article}{}
+    \name{author}{5}{}{%
+      {{hash=RT}{%
+         family={Ren},
+         familyi={R\bibinitperiod},
+         given={Tingting},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=ZZ}{%
+         family={Zhu},
+         familyi={Z\bibinitperiod},
+         given={Zhiqiang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=ZR}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Rui},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Jiangwu},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=YC}{%
+         family={Yan},
+         familyi={Y\bibinitperiod},
+         given={Changqi},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{Subcooled flow boiling, Bubble departure diameter, Bubble lift-off
+  diameter, Force balance model}
+    \strng{namehash}{RT+1}
+    \strng{fullhash}{RTZZZRSJYC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Visualization experiments are carried out and bubble departure diameter is
+  obtained for subcooled flow boiling in a vertical narrow rectangular channel.
+  Force balance analysis of a growing bubble is performed to determine the
+  criteria for bubble departure and lift-off. A new mechanistic force balance
+  model for predicting bubble departure and lift-off diameter is developed by
+  modifying the bubble growth rate, bubble contact diameter and bubble contact
+  angles. A detailed variation of forces with bubble size is presented, which
+  is used to explain the bubble behaviors intuitively. Compared with Klausner's
+  and Yun's force balance models, the present model shows a good agreement with
+  experimental data by Zhou, Guan, Okawa and Ren. The results also show that
+  the new model can be used to predict bubble diameters in various geometric
+  channels.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2020.120245
+    \endverb
+    \field{issn}{0017-9310}
+    \field{pages}{120245}
+    \field{title}{Development of force balance model for prediction of bubble
+  departure diameter and lift-off diameter in subcooled flow boiling}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931020331811
+    \endverb
+    \field{volume}{161}
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{month}{11}
+    \field{year}{2020}
+    \field{urlday}{20}
+    \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{scheiff_experimental_2021}{article}{}
+    \name{author}{5}{}{%
+      {{hash=SV}{%
+         family={Scheiff},
+         familyi={S\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=BF}{%
+         family={Bergame},
+         familyi={B\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sebilleau},
+         familyi={S\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Ruyer},
+         familyi={R\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Colin},
+         familyi={C\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{Bubble dynamics, Infrared thermography, Nucleate flow boiling,
+  Transient heating, Wall heat flux}
+    \strng{namehash}{SV+1}
+    \strng{fullhash}{SVBFSJRPCC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    This study aims to better characterize the heat transfer and flow structure
+  in the fully developed nucleate flow boiling regime in a semi-annular duct.
+  Experiments with a refrigerant HFE7000 were performed in the range of
+  Reynolds numbers from 13 000 to 40 500, subcoolings close to 15 ∘C, for
+  constant heating power, constant wall temperature and constant heating rates
+  (linear increase of the wall temperature). With constant heating power, the
+  wall heat flux is well predicted by a Chen-type correlation based on a
+  contribution due to the forced convection and a contribution due to nucleate
+  boiling, including the effect of the liquid subcooling. A thin layer of
+  bubbles sliding along the wall is observed. The characteristic diameter of
+  the bubbles increases with the heat flux and decreases with the liquid
+  velocity and its subcooling. The bubble diameters can be well predicted
+  versus 3 dimensionless numbers: the Reynolds number of the flow, the Jakob
+  number based on the liquid subcooling and the Boiling number. A drag
+  coefficient of the bubbles sliding on the wall is estimated from the
+  measurements of the bubble relative velocities and is in good agreement with
+  the recent numerical simulation of Shi et al. [1] for a spherical bubble
+  moving close to a wall in a shear flow. In the experiments with a constant
+  set temperature, a non-homogeneity of the surface temperatures is observed as
+  well as high fluctuations of temperatures and heat fluxes. The heat transfer
+  is strongly degraded ( ≃ 60\%) by comparison with heating with a set
+  power. Finally a transient nucleate boiling regime with a constant
+  temperature increase dT/dt is investigated. For
+  dT/dt {\textless} 50 ∘C.s−1, the results are similar to those of
+  Auracher and Marquardt and a correlation for the prediction of the wall heat
+  flux versus the wall temperature in the transient nucleate boiling regime is
+  provided.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2020.120548
+    \endverb
+    \field{issn}{0017-9310}
+    \field{pages}{120548}
+    \field{title}{Experimental study of steady and transient subcooled flow
+  boiling}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931020334840
+    \endverb
+    \field{volume}{164}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\AQQ548PS\
+    \verb \Scheiff et al. - 2021 - Experimental study of steady and transient s
+    \verb ubcool.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{month}{01}
+    \field{year}{2021}
+    \field{urlday}{01}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{shi_drag_2021}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SP}{%
+         family={Shi},
+         familyi={S\bibinitperiod},
+         given={Pengyu},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Rzehak},
+         familyi={R\bibinitperiod},
+         given={Roland},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Lucas},
+         familyi={L\bibinitperiod},
+         given={Dirk},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Magnaudet},
+         familyi={M\bibinitperiod},
+         given={Jacques},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{SP+1}
+    \strng{fullhash}{SPRRLDMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    We report on a series of fully resolved simulations of the flow around a
+  rigid sphere translating steadily near a wall, either in a fluid at rest or
+  in the presence of a uniform shear. Nonrotating and freely rotating spheres
+  subject to a torque-free condition are both considered to evaluate the
+  importance of spin-induced effects. The separation distance between the
+  sphere and wall is varied from values at which the wall influence is weak
+  down to gaps of half the sphere radius. The Reynolds number based on the
+  sphere diameter and relative velocity with respect to the ambient fluid spans
+  the range 0.1–250, and the relative shear rate defined as the ratio of the
+  shear-induced velocity variation across the sphere to the relative velocity
+  is varied from −0.5 to +0.5, so that the sphere either leads the fluid or
+  lags behind it. The wall-induced interaction mechanisms at play in the
+  various flow regimes are analyzed qualitatively by examining the flow
+  structure, especially the spanwise and streamwise vorticity distributions.
+  Variations of the drag and lift forces at low-but-finite and moderate
+  Reynolds number are compared with available analytical and semiempirical
+  expressions, respectively. In more inertial regimes, empirical expressions
+  for the two force components are derived based on the numerical data,
+  yielding accurate fits valid over a wide range of Reynolds number and
+  wall-sphere separations for both nonrotating and torque-free spheres.%
+    }
+    \field{issn}{2469-990X}
+    \field{note}{Number: 10 Publisher: American Physical Society}
+    \field{number}{10}
+    \field{pages}{104309}
+    \field{title}{Drag and lift forces on a rigid sphere immersed in a
+  wall-bounded linear shear flow}
+    \verb{url}
+    \verb https://doi.org/10.1103/physrevfluids.6.104309
+    \endverb
+    \field{volume}{6}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\QC6FW489\\28483.html:te
+    \verb xt/html
+    \endverb
+    \field{journaltitle}{Physical Review Fluids}
+    \field{month}{10}
+    \field{year}{2021}
+    \field{urlday}{23}
+    \field{urlmonth}{06}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{song_temperature_2021}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SJW}{%
+         family={Song},
+         familyi={S\bibinitperiod},
+         given={Jia-Wen},
+         giveni={J\bibinithyphendelim W\bibinitperiod},
+      }}%
+      {{hash=FLW}{%
+         family={Fan},
+         familyi={F\bibinitperiod},
+         given={Li-Wu},
+         giveni={L\bibinithyphendelim W\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{Critical heat flux, Boiling heat transfer, Contact angle, Metallic
+  surface, Surface wettability, Water}
+    \strng{namehash}{SJWFLW1}
+    \strng{fullhash}{SJWFLW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Contact angle, a quantitative measure of macroscopic surface wettability,
+  plays an important role in understanding liquid-vapor heterogeneous phase
+  change phenomena, e.g., boiling heat transfer. The contact angles of water at
+  elevated temperatures are of particular interest for understanding of
+  wettability-regulated boiling heat transfer in steam-based power generation.
+  From a more theoretical perspective, the temperature dependence of contact
+  angle of water is also essential to estimation of several key surface
+  thermodynamic properties, such as the solid surface tension, the surface
+  entropy, and the heats of immersion and adsorption. Here, a comprehensive
+  review of historical efforts in measuring the contact angles of water over a
+  wide temperature range on a variety of solids, not limited to metallic
+  surfaces, is presented. As suggested by the literature data, the temperature
+  dependence of contact angle of water may be classified into three regimes:
+  (a) low temperatures below the saturation point (i.e., 100 °C at
+  atmospheric pressure), (b) medium temperatures up to
+  {\textasciitilde}170 °C, and (c) high temperatures up to 300 °C at
+  pressurized conditions. A slightly-decreasing or nearly-invariant trend of
+  the contact angles of water on both non-metallic and metallic surfaces was
+  reported for the low-temperature regime. In contrast, a steeper linear
+  decline in water contact angle was demonstrated at temperatures above
+  100 °C. The few experimental data available on several metallic surfaces
+  showed that the contact angle of water either again becomes nearly
+  temperature-independent or further decreases with temperature above 210 °C.
+  A theoretical understanding of the temperature dependence is given based on
+  surface thermodynamic analysis, although the exact molecular mechanisms
+  underlying these experimental observations remain unclear. Consequently, the
+  theoretical model for predicting the variation of the contact angle of water
+  with temperature is not well-developed. As the critical point of water
+  (374 °C and 22.1 MPa) is approached, the surface tension, and hence the
+  contact angle, should become vanishingly small. However, this theoretical
+  expectation has not yet been verified due to the lack of experimental data at
+  such high temperatures/pressures. Finally, future research directions are
+  identified, including a systematic exploration of the contact angle at
+  near-critical temperatures, the effects of surface oxidation, corrosion, and
+  deposition on contact angle during operation of boilers and reactors, and the
+  particular effect of irradiation on contact angle in nuclear reactor
+  applications.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.cis.2020.102339
+    \endverb
+    \field{issn}{0001-8686}
+    \field{pages}{102339}
+    \field{shorttitle}{Temperature dependence of the contact angle of water}
+    \field{title}{Temperature dependence of the contact angle of water: {A}
+  review of research progress, theoretical understanding, and implications for
+  boiling heat transfer}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0001868620306084
+    \endverb
+    \field{volume}{288}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\ZVRZVRKT\
+    \verb \S0001868620306084.html:text/html
+    \endverb
+    \field{journaltitle}{Advances in Colloid and Interface Science}
+    \field{month}{02}
+    \field{year}{2021}
+    \field{urlday}{18}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{sugrue_modified_2016}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SR}{%
+         family={Sugrue},
+         familyi={S\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Buongiorno},
+         familyi={B\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{SRBJ1}
+    \strng{fullhash}{SRBJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Experimental data by Sugrue et al., Klausner et al., Zeng et al.,
+  Prodanovic et al., and Situ et al. for bubble departure diameter in subcooled
+  flow boiling in a wide range of orientation angle, subcooling, heat flux,
+  mass flux, and pressure conditions were used to assess the predictive
+  accuracy of the mechanistic force-balance models of Klausner et al. and Yun
+  et al. The results suggested that both models capture the experimental trends
+  correctly, but exhibit large average errors and standard deviations, i.e.
+  85.5\% (σ=49.7\%) and 43.9\% (σ=23.1\%) for Klausner’s and Yun’s
+  models, respectively. Since the cube of the bubble departure diameter is used
+  in subcooled flow boiling heat transfer models, such errors are unacceptable,
+  and underscore the need for greater accuracy in predictions. Therefore, the
+  databases were used to (i) identify the dominant forces determining bubble
+  departure at various operating conditions, and (ii) optimize the empirical
+  coefficients describing those forces in Klausner’s model. The modified
+  model considerably lowers prediction error to 22.4\% (σ=19.9\%) for all data
+  considered. Application of the modified model is demonstrated for the
+  subcooled flow boiling conditions present in the hot channel of a typical
+  Pressurized Water Reactor (PWR).%
+    }
+    \verb{doi}
+    \verb 10.1016/j.nucengdes.2016.04.017
+    \endverb
+    \field{issn}{0029-5493}
+    \field{pages}{717\bibrangedash 722}
+    \field{title}{A modified force-balance model for prediction of bubble
+  departure diameter in subcooled flow boiling}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0029549316300450
+    \endverb
+    \field{volume}{305}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\N2E3KXXZ\
+    \verb \S0029549316300450.html:text/html
+    \endverb
+    \field{journaltitle}{Nuclear Engineering and Design}
+    \field{month}{08}
+    \field{year}{2016}
+    \field{urlday}{20}
+    \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{sugrue_experimental_2014}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SR}{%
+         family={Sugrue},
+         familyi={S\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Buongiorno},
+         familyi={B\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={McKrell},
+         familyi={M\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{SRBJMT1}
+    \strng{fullhash}{SRBJMT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    The effects of orientation angle, subcooling, heat flux, mass flux, and
+  pressure on bubble departure diameter in the isolated bubble regime of
+  subcooled flow boiling were studied by high-speed video in a two-phase flow
+  loop that can accommodate a wide range of flow conditions. Specifically, the
+  following ranges were explored: orientation angles of 0° (downward-facing
+  horizontal), 30°, 45°, 60°, 90° (vertical), and 180° (upward-facing
+  horizontal); mass flux values of 250, 300, 350, and 400kg/m2s, corresponding
+  to Froude numbers between 0.42 and 1.06; pressures of 101 (atmospheric), 202,
+  and 505kPa; two values of the subcooling degrees (10 and 20°C); and two heat
+  fluxes (0.05 and 0.10MW/m2). The combination of the test section design,
+  high-speed video camera and LED lighting results in high accuracy (order of
+  20μm) in the determination of the bubble departure diameter. The data
+  indicate that the bubble departure diameter increases with increasing heat
+  flux, decreasing mass flux, decreasing subcooling, and decreasing pressure.
+  Also, the bubble departure diameter increases with decreasing orientation
+  angle, i.e. the largest bubbles are found to detach from a downward-facing
+  horizontal surface. The mechanistic bubble departure diameter model of
+  Klausner et al. and its recent modification by Yun et al. were found to
+  correctly predict all the observed parametric trends, but with large average
+  errors and standard deviation: 65.5±75.8\% for Klausner's and 37.9±51.2\%
+  for Yun's. Since the cube of the bubble departure diameter is used in
+  subcooled flow boiling heat transfer models, such large errors are clearly
+  unacceptable, and underscore the need for more accurate bubble departure
+  diameter models.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.nucengdes.2014.08.009
+    \endverb
+    \field{issn}{0029-5493}
+    \field{pages}{182\bibrangedash 188}
+    \field{series}{{SI} : {CFD4NRS}-4}
+    \field{title}{An experimental study of bubble departure diameter in
+  subcooled flow boiling including the effects of orientation angle,
+  subcooling, mass flux, heat flux, and pressure}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0029549314004646
+    \endverb
+    \field{volume}{279}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\MIM4HF3U\
+    \verb \S0029549314004646.html:text/html;Texte intégral:C\:\\Users\\Luczer\
+    \verb \Zotero\\storage\\SA3JVT5K\\Sugrue et al. - 2014 - An experimental st
+    \verb udy of bubble departure diameter.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Nuclear Engineering and Design}
+    \field{month}{11}
+    \field{year}{2014}
+    \field{urlday}{20}
+    \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{sugrue_effects_2012}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=SRM}{%
+         family={Sugrue},
+         familyi={S\bibinitperiod},
+         given={Rosemary\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SRM1}
+    \strng{fullhash}{SRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{The {Effects} of {Orientation} {Angle}, {Subcooling}, {Heat}
+  {Flux}, {Mass} {Flux}, and {Pressure} on {Bubble} {Growth} and {Detachment}
+  in {Subcooled} {Flow} {Boiling}}
+    \list{institution}{1}{%
+      {Massachusetts Institute of Technology}%
+    }
+    \field{type}{{PhD} {Thesis}}
+    \field{year}{2012}
+  \endentry
+
+  \entry{thorncroft_experimental_1998}{article}{}
+    \name{author}{3}{}{%
+      {{hash=TGE}{%
+         family={Thorncroft},
+         familyi={T\bibinitperiod},
+         given={G.\bibnamedelima E.},
+         giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=KJF}{%
+         family={Klausner},
+         familyi={K\bibinitperiod},
+         given={J.\bibnamedelima F.},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Mei},
+         familyi={M\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{TGEKJFMR1}
+    \strng{fullhash}{TGEKJFMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    A visual study of vapor bubble growth and departure in vertical upflow and
+  downflow forced convection boiling is presented. A vertical flow boiling
+  facility was constructed with a transparent, electrically-heated test section
+  in which the ebullition process could be observed. High-speed digital images
+  of flow boiling phenomena were obtained, which were used to measure bubble
+  growth, departure diameters, and lift-off diameters. Experiments were
+  conducted for flow of FC-87 over a commercially-finished nichrome heating
+  surface, with mass flux ranging from 190 to 666 kg m−2 s−1 and heat flux
+  ranging from 1.3 to 14.6 kW{\textbackslash}m2. The flow was slightly
+  subcooled (ΔTsub = 1.0–5.0°C), and boiling occurred at isolated
+  nucleation sites. A major conclusion of this work is that the observed vapor
+  bubble dynamics between upflow and downflow are significantly different. In
+  the upflow configuration, bubbles departing the nucleation site slide along
+  the heater wall, and typically do not lift off. In the downflow
+  configuration, bubbles either lift off directly from the nucleation site or
+  slide and then lift off, depending on flow and thermal conditions. The
+  process of vapor bubble sliding appears to be responsible for enhanced energy
+  transfer from the heating surface, as evidenced by larger heat transfer
+  coefficients for upflow than for downflow under otherwise identical operating
+  conditions.%
+    }
+    \verb{doi}
+    \verb 10.1016/S0017-9310(98)00092-1
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{23}
+    \field{pages}{3857\bibrangedash 3871}
+    \field{title}{An experimental investigation of bubble growth and detachment
+  in vertical upflow and downflow boiling}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931098000921
+    \endverb
+    \field{volume}{41}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\A7NX8446\
+    \verb \S0017931098000921.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{month}{12}
+    \field{year}{1998}
+    \field{urlday}{18}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{thorncroft_bubble_2001}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TG}{%
+         family={Thorncroft},
+         familyi={T\bibinitperiod},
+         given={G.E.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Klausner},
+         familyi={K\bibinitperiod},
+         given={J.F.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {English}%
+    }
+    \strng{namehash}{TGKJ1}
+    \strng{fullhash}{TGKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    The forces acting on growing and sliding vapor bubbles associated with
+  heterogeneous boiling are identified. Closed form expressions have been
+  suggested which approximate the magnitude of these forces. Beginning with
+  Newton's second law, a rational basis is proposed for predicting vapor bubble
+  detachment diameters and sliding trajectories in heterogeneous boiling. Model
+  closure is achieved without introducing arbitrary constants. The predicted
+  detachment diameters and sliding trajectories are compared with extensive
+  data for pool and flow boiling in both horizontal and vertical orientations.
+  Good agreement is observed for all cases considered.%
+    }
+    \verb{doi}
+    \verb 10.1615/multscientechn.v13.i3-4.20
+    \endverb
+    \field{issn}{0276-1459}
+    \field{number}{3-4}
+    \field{pages}{35\bibrangedash 76}
+    \field{title}{Bubble forces and detachment models}
+    \field{volume}{13}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\L7WF849I\\display.html:
+    \verb text/html
+    \endverb
+    \field{journaltitle}{Multiphase Science and Technology}
+    \field{annotation}{%
+    Cited By :100%
+    }
+    \field{year}{2001}
+  \endentry
+
+  \entry{urbano_direct_2018}{article}{}
+    \name{author}{4}{}{%
+      {{hash=UA}{%
+         family={Urbano},
+         familyi={U\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tanguy},
+         familyi={T\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Huber},
+         familyi={H\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Colin},
+         familyi={C\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{Direct numerical simulation, Micro-layer, Nucleate boiling}
+    \strng{namehash}{UA+1}
+    \strng{fullhash}{UATSHGCC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+    \field{abstract}{%
+    The physical mechanisms associated with the evolution of a micro-layer
+  beneath a bubble and the transition between contact line and micro-layer
+  regimes are investigated with fully resolved numerical simulations, in the
+  framework of nucleate pool boiling. Capturing the transition between these
+  two regimes has been possible for the first time using very refined grids and
+  parallel computations. Indeed, grids with a cell size under 1 μm must be
+  used in order to capture thermal and dynamical effects in the micro-layer.
+  Such multiscale computations require advanced code capabilities. The present
+  simulations are used to analyse the physical processes involved in the
+  formation and depletion of a micro-layer. A parametric study is carried out
+  to investigate the impact of the main parameters affecting the presence of
+  the micro-layer. From these results, the limit conditions between nucleate
+  boiling in micro-layer and contact line regimes are deduced. Neglecting the
+  micro-layer would lead to erroneous results because it has a strong influence
+  on the overall bubble growth. Therefore the present results could be of major
+  interest for designing models of nucleate pool boiling in larger scales
+  computations, when the micro-layer cannot be resolved.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2018.02.104
+    \endverb
+    \field{issn}{0017-9310}
+    \field{pages}{1128\bibrangedash 1137}
+    \field{title}{Direct numerical simulation of nucleate boiling in
+  micro-layer regime}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931017353619
+    \endverb
+    \field{volume}{123}
+    \verb{file}
+    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\H8FW
+    \verb 2ZH7\\Urbano et al. - 2018 - Direct numerical simulation of nucleate
+    \verb boiling in.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Luc
+    \verb zer\\Zotero\\storage\\Z962PXMP\\S0017931017353619.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{month}{08}
+    \field{year}{2018}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{wijngaarden_hydrodynamic_1976}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WLV}{%
+         family={Wijngaarden},
+         familyi={W\bibinitperiod},
+         given={L.\bibnamedelima Van},
+         giveni={L\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=JDJ}{%
+         family={Jeffrey},
+         familyi={J\bibinitperiod},
+         given={D.\bibnamedelima J.},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{WLVJDJ1}
+    \strng{fullhash}{WLVJDJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    A calculation is given of the velocity which a cloud of identical gas
+  bubbles acquires when the liquid in which the cloud is immersed is
+  impulsively accelerated. From the results an expression follows for the
+  effective virtual mass of a bubble in a gas-bubble/liquid mixture. Further
+  consideration is given to that part of the momentum flux in the mixture
+  associated with relative motion between liquid and bubbles. An expression for
+  this quantity is derived which appears to differ from the one used in
+  practice. It is shown that qualitative support for the expression obtained
+  here is provided by experimental observations reported in the literature.%
+    }
+    \verb{doi}
+    \verb 10.1017/S0022112076001110
+    \endverb
+    \field{issn}{1469-7645, 0022-1120}
+    \field{note}{Publisher: Cambridge University Press}
+    \field{number}{1}
+    \field{pages}{27\bibrangedash 44}
+    \field{title}{Hydrodynamic interaction between gas bubbles in liquid}
+    \verb{url}
+    \verb https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/ar
+    \verb ticle/abs/hydrodynamic-interaction-between-gas-bubbles-in-liquid/6319
+    \verb F8144BA585B0F2829036892D297E
+    \endverb
+    \field{volume}{77}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\RMPRYF2G\\6319F8144BA58
+    \verb 5B0F2829036892D297E.html:text/html;Version soumise:C\:\\Users\\Luczer
+    \verb \\Zotero\\storage\\9DBWES6B\\Wijngaarden et Jeffrey - 1976 - Hydrodyn
+    \verb amic interaction between gas bubbles in li.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Journal of Fluid Mechanics}
+    \field{month}{09}
+    \field{year}{1976}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{yoo_development_2018}{article}{}
+    \name{author}{3}{}{%
+      {{hash=YJ}{%
+         family={Yoo},
+         familyi={Y\bibinitperiod},
+         given={Junsoo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EPCE}{%
+         family={Estrada-Perez},
+         familyi={E\bibinithyphendelim P\bibinitperiod},
+         given={Carlos\bibnamedelima E.},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=HYA}{%
+         family={Hassan},
+         familyi={H\bibinitperiod},
+         given={Yassin\bibnamedelima A.},
+         giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{Subcooled boiling flow, Bubble growth model, Sliding bubble growth}
+    \strng{namehash}{YJEPCEHYA1}
+    \strng{fullhash}{YJEPCEHYA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{abstract}{%
+    A new mechanistic model for predicting the growth of sliding bubbles in
+  subcooled boiling flow has been developed. The basis of this model is the
+  assumption that the fundamental heat transfer mechanisms acting on a stagnant
+  bubble growing at a nucleation site can also be applied to the growth of
+  sliding bubbles. The physical assumptions of the existing bubble growth
+  models were modified to reflect the intrinsic physics associated with the
+  sliding bubble growth. The heat transfer mechanisms considered are microlayer
+  evaporation, evaporation of superheated liquid, and condensation. The present
+  model has been successfully validated against a broad set of subcooled flow
+  boiling data, generated by three separate research groups using different
+  working fluids and different heater surfaces. The model successfully
+  reproduced the sliding bubble growth dependencies on mass flux, wall
+  superheat, and liquid subcooling level as observed in the experiments. On the
+  other hand, in a few cases where the bubble growth inertia was substantially
+  involved in the sliding bubble growth, the predictive ability was limited.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.applthermaleng.2018.04.096
+    \endverb
+    \field{issn}{1359-4311}
+    \field{pages}{657\bibrangedash 667}
+    \field{title}{Development of a mechanistic model for sliding bubbles growth
+  prediction in subcooled boiling flow}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S1359431117369727
+    \endverb
+    \field{volume}{138}
+    \verb{file}
+    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\NIMZ
+    \verb KRV7\\Yoo et al. - 2018 - Development of a mechanistic model for slid
+    \verb ing bub.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Luczer
+    \verb \\Zotero\\storage\\TPYSL8P7\\S1359431117369727.html:text/html
+    \endverb
+    \field{journaltitle}{Applied Thermal Engineering}
+    \field{month}{06}
+    \field{year}{2018}
+    \field{urlday}{20}
+    \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{yun_prediction_2012}{article}{}
+    \name{author}{4}{}{%
+      {{hash=YBJ}{%
+         family={Yun},
+         familyi={Y\bibinitperiod},
+         given={Byong-Jo},
+         giveni={B\bibinithyphendelim J\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Splawski},
+         familyi={S\bibinitperiod},
+         given={Andrew},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lo},
+         familyi={L\bibinitperiod},
+         given={Simon},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SCH}{%
+         family={Song},
+         familyi={S\bibinitperiod},
+         given={Chul-Hwa},
+         giveni={C\bibinithyphendelim H\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{YBJ+1}
+    \strng{fullhash}{YBJSALSSCH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{abstract}{%
+    Prediction of bubble size which governs interfacial transfer terms between
+  the two phases is of importance for an accurate prediction of the subcooled
+  boiling flow. In the present work, a mechanistic bubbles size model, Sγ was
+  examined to enhance the prediction capability of subcooled boiling flows for
+  the CFD (computational fluid dynamics) code. In addition to this, advanced
+  subcooled boiling models such as new wall boiling and two-phase logarithmic
+  wall function models were also applied for an improvement of energy
+  partitioning and two-phase turbulence models, respectively. The benchmark
+  calculation against the DEBORA subcooled boiling data confirms that the Sγ
+  bubble size model with the two advanced subcooled boiling models shows good
+  prediction results and is applicable to the wide range of flow conditions
+  that are expected in the nominal and postulated accidental conditions of a
+  nuclear power plant.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.nucengdes.2011.08.067
+    \endverb
+    \field{issn}{0029-5493}
+    \field{pages}{351\bibrangedash 359}
+    \field{series}{{SI} : {CFD4NRS}-3}
+    \field{title}{Prediction of a subcooled boiling flow with advanced
+  two-phase flow models}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0029549311006923
+    \endverb
+    \field{volume}{253}
+    \verb{file}
+    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\T8I6
+    \verb EXFE\\Yun et al. - 2012 - Prediction of a subcooled boiling flow with
+    \verb  advanc.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Luczer
+    \verb \\Zotero\\storage\\TP45X2GT\\S0029549311006923.html:text/html
+    \endverb
+    \field{journaltitle}{Nuclear Engineering and Design}
+    \field{month}{12}
+    \field{year}{2012}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{zeng_unified_1993-1}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ZLZ}{%
+         family={Zeng},
+         familyi={Z\bibinitperiod},
+         given={L.\bibnamedelima Z.},
+         giveni={L\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=KJF}{%
+         family={Klausner},
+         familyi={K\bibinitperiod},
+         given={J.\bibnamedelima F.},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Mei},
+         familyi={M\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{ZLZKJFMR1}
+    \strng{fullhash}{ZLZKJFMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    A new model is proposed for the prediction of vapor bubble departure
+  diameters in saturated pool boiling. The model utilizes a force balance which
+  follows a similar form as that used by Klausner et al. (Int. J. Heat Mass
+  Transfer 36, 651–662 (1993)) for flow boiling. The vapor bubble growth rate
+  is a necessary input to the model, and its reliable estimation is required to
+  predict accurately departure diameters. The model has been tested over the
+  following range of conditions: pressure, 0.02–2.8 bar ; Jakob number,
+  4–869; and gravity, 1−0.014 g. It is demonstrated that over the wide
+  range of boiling data considered the departure diameter predicted using the
+  present model is significantly improved over existing
+  correlations.†Department of Aerospace Engineering, Mechanics and
+  Engineering Science.%
+    }
+    \verb{doi}
+    \verb 10.1016/S0017-9310(05)80111-5
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{9}
+    \field{pages}{2261\bibrangedash 2270}
+    \field{title}{A unified model for the prediction of bubble detachment
+  diameters in boiling systems— {I}. {Pool} boiling}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931005801115
+    \endverb
+    \field{volume}{36}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\YK62WXAS\
+    \verb \S0017931005801115.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{month}{01}
+    \field{year}{1993}
+    \field{urlday}{20}
+    \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{zeng_forces_2009}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ZL}{%
+         family={Zeng},
+         familyi={Z\bibinitperiod},
+         given={Lanying},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=NF}{%
+         family={Najjar},
+         familyi={N\bibinitperiod},
+         given={Fady},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Balachandar},
+         familyi={B\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=FP}{%
+         family={Fischer},
+         familyi={F\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZL+1}
+    \strng{fullhash}{ZLNFBSFP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \verb{doi}
+    \verb 10.1063/1.3082232
+    \endverb
+    \field{issn}{1070-6631}
+    \field{note}{Publisher: American Institute of Physics}
+    \field{number}{3}
+    \field{pages}{033302}
+    \field{title}{Forces on a finite-sized particle located close to a wall in
+  a linear shear flow}
+    \verb{url}
+    \verb https://aip.scitation.org/doi/abs/10.1063/1.3082232
+    \endverb
+    \field{volume}{21}
+    \field{journaltitle}{Physics of Fluids}
+    \field{month}{03}
+    \field{year}{2009}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{zhou_experimental_2020}{article}{}
+    \name{author}{5}{}{%
+      {{hash=ZP}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Pei},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Ronghua},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Sheng},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Yu},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=RX}{%
+         family={Rao},
+         familyi={R\bibinitperiod},
+         given={Xiaoxuan},
+         giveni={X\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{Subcooled flow boiling, Bubble departure diameter, Bubble contact
+  diameter, Force balance analysis}
+    \strng{namehash}{ZP+1}
+    \strng{fullhash}{ZPHRHSZYRX1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    An experiment is carried out using a high-speed camera to closely observe
+  the bubble behaviors on a horizontal aluminum heating surface under high mass
+  flux. Subcooled flow boiling experiments are conducted at Reynolds numbers of
+  61,850–124,041 for a range of density ratios (0.000647-0.001153), Jacob
+  numbers corresponding to wall superheat (0.012201-0.025096) and for Jacob
+  numbers corresponding to subcooling varying from 0.009549 to 0.02856. The
+  experimental results indicate that both bubble departure diameter (BDD) and
+  bubble contact diameter (BCD) reduce with increasing system pressure,
+  increasing flow velocity, increasing subcooling, and decreasing wall
+  superheat. The experiment confirms that the linear relationship between BCD
+  and BDD is still valid under high mass flux. The BCD is 0.4027 times of the
+  BDD. A force balance model based on the newly modified model of bubble growth
+  rate is used to calculate BDD and its predicted values are in good agreement
+  with the present measured values. The force balance model can be expressed by
+  a series of dimensionless parameters: density ratio, Jacob number
+  corresponding to wall superheat, Jacob number corresponding to subcooling,
+  Prandtl number, Reynolds number, and contact angle. A new empirical formula
+  of BDD in a horizontal channel is developed based on the dimensionless
+  parameters using the Buckingham theorem. The empirical formula considers more
+  comprehensive factors and predicts the BDD obtained in a horizontal channel
+  with an average relative error of 12.08\%.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2019.119105
+    \endverb
+    \field{issn}{0017-9310}
+    \field{pages}{119105}
+    \field{title}{Experimental investigation on bubble contact diameter and
+  bubble departure diameter in horizontal subcooled flow boiling}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931019348240
+    \endverb
+    \field{volume}{149}
+    \verb{file}
+    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\QESV
+    \verb K68I\\Zhou et al. - 2020 - Experimental investigation on bubble conta
+    \verb ct diame.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Lucze
+    \verb r\\Zotero\\storage\\LFHFJR3U\\S0017931019348240.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{month}{03}
+    \field{year}{2020}
+    \field{urlday}{20}
+    \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+\enddatalist
+\endinput
