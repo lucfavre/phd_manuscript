@@ -46,13 +46,18 @@
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\phi _{w}=0.613$~MW/m$^\mathrm {2}$, $G_{L}=1504~\text {kg/m$^{2}$/s}$}}}{50}{subfigure.13.3}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Sketch of the considered HFP {\color {red} A terminer, je dois ajouter des flèches pour indiquer les flux !}\relax }}{52}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Model from Lemmert \& Chawla\relax }}{56}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Model from Hibiki \& Ishii\relax }}{56}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Model from Li \textit {et al.}\xspace \relax }}{56}{figure.caption.40}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Model from Zhou \textit {et al.}\xspace \relax }}{56}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Studied geometry\relax }}{55}{figure.caption.36}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Comparison with single bubble growth measurement from \textsc {Maity} : Boiling water at $\Delta T_{sub}=0.2\degree $C, $\Delta T_{w}=5.9\degree $C, $U_{liq}=0.23\text {~m/s}$ and $P=1\text {~bar}$. Green : $\delta _{b}=10^{-5}~$m - Red : $\delta _{b}=\sqrt {\eta _{l}t}$ - Pink : $\delta _{b}=0.1\times R\left ( t \right )$ - Blue : \textsc {Plesset} solution $R\left ( t \right )=B\sqrt {t}$ with $B=\mathrm {Ja}_{w}\sqrt {12\eta _{l}/\pi }$. The liquid boundary layer size has been fixed to $\delta \approx 1~$mm according to the experimental measurements.\relax }}{59}{figure.caption.37}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Comparison with zero-gravity DNS data from \textsc {Urbano} \textit {et al.}\xspace : Water at $P=1.01\text {~bar}$, $\Delta T_{sub}=10\degree $C, $\Delta T_{w}=2\degree $C, $U_{liq}=0\text {~m/s}$ and $\alpha =50\degree $.\relax }}{60}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Comparison of the model (red) with results from Urbano \textit {et al.}\xspace (gray) at 3 different pairs of $\left ( \Delta T_{l}, \Delta T_{w} \right )$ - Left : $R_{\infty }$ from the model - Right : $R_{\infty }$ imposed equal to the DNS\relax }}{61}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Comparison of the proposed model and Kommajoyusla model against experimental data from Unal. Black lines represent the $\pm 50\%$ error bars.\relax }}{62}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Model from Lemmert \& Chawla\relax }}{64}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Model from Hibiki \& Ishii\relax }}{64}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Model from Li \textit {et al.}\xspace \relax }}{64}{figure.caption.45}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Model from Zhou \textit {et al.}\xspace \relax }}{64}{figure.caption.45}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Picture of the mixing device (left) and its fine meshing (right).\relax }}{61}{figure.caption.41}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces NCFD (lines) vs. Exp. (circles) - $\alpha $ profiles for two MV positions (23.5$D_{h}$ in blue, $10D_{h}$ in orange) - $T_{in}=65\degree $C (left), $T_{in}=69\degree $C (middle), $T_{in}=75\degree $C (right) - Simulations using two meshes M1 (coarse) and M2 (fine) for $T_{in}=69\degree $C.\relax }}{62}{figure.caption.42}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces NCFD vs. Exp. - Top \& Middle : Radial velocity and turbulent RMS ($z=30$mm \& $z=440$mm) - Bottom : Axial velocity and turbulent RMS ($z=440$mm).\relax }}{63}{figure.caption.43}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Picture of the mixing device (left) and its fine meshing (right).\relax }}{69}{figure.caption.46}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces NCFD (lines) vs. Exp. (circles) - $\alpha $ profiles for two MV positions (23.5$D_{h}$ in blue, $10D_{h}$ in orange) - $T_{in}=65\degree $C (left), $T_{in}=69\degree $C (middle), $T_{in}=75\degree $C (right) - Simulations using two meshes M1 (coarse) and M2 (fine) for $T_{in}=69\degree $C.\relax }}{70}{figure.caption.47}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces NCFD vs. Exp. - Top \& Middle : Radial velocity and turbulent RMS ($z=30$mm \& $z=440$mm) - Bottom : Axial velocity and turbulent RMS ($z=440$mm).\relax }}{71}{figure.caption.48}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

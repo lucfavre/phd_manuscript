@@ -47,8 +47,17 @@
 
 
 
+%%TO EXTRACT A FIGURE IN PDF PROPERLY CROPPED --> IN COMMAND LINE : pdflatex --jobname=forces draw.tex
+
+
+
+
+
+
 \begin{document}
 
+
+\beginpgfgraphicnamed{growth_analytical}
 
 
 \fbox{
@@ -93,7 +102,7 @@
 %Angle de contact
 \draw[color=gray!80] (A) --++(45:1) ;
 \draw[densely dotted] (A)++(0.3,0) arc (0:45:0.3) ;
-\draw (A)++(22.5:0.6) node{$\alpha$};
+\draw (A)++(22.5:0.6) node{$\theta$};
 
 %\draw (1.0,0) -- (1.530331, 0.53033) ;
 %\draw (1.45433, 0.22961) node {$\alpha$};
@@ -106,7 +115,7 @@
 \draw[dashed, orange] (CL) arc(180 : 110 : 1.7);
 \coordinate (Db) at ($(O) + (90+45:1.5)$);
 \draw[<->, orange, >=stealth] (Db) --++(90+45:0.2) node[midway, above right]{$\delta_{b}$}
-node[near end, above left,purple]{$T_{l}(y)$};
+node[near end, above left,purple]{$T_{L}(y)$};
 
 \draw (Db) node[below right,purple]{$T_{sat}$};
 
@@ -128,7 +137,7 @@ node[near end, above left,purple]{$T_{l}(y)$};
 \coordinate (Tw) at (-2,0);
 \coordinate (delta) at ($(Tinf)+(0,-3.5)$);
 
-\draw[purple] (Tinf) -- (Tw) node[midway, sloped, below]{$T_{l}(y)$};
+\draw[purple] (Tinf) -- (Tw) node[midway, sloped, below]{$T_{L}(y)$};
 \draw[purple] (Tinf) node[right]{$T_{\infty}<T_{sat}$};
 \draw[purple] (Tw) node[below]{$T_{w}>T_{sat}$};
 \draw[<->, orange, >=stealth, densely dashed] ($(Tinf)+(0,-0.03)$) -- (delta) node[midway, left]{$\delta$};
@@ -137,6 +146,8 @@ node[near end, above left,purple]{$T_{l}(y)$};
 \end{tikzpicture}
 }
 
+
+\endpgfgraphicnamed
 
 
 \fbox{
@@ -1129,7 +1140,7 @@ node[near end, above left,purple]{$T_{l}(y)$};
 
 
 
-\beginpgfgraphicnamed{shi_scheme}
+%\beginpgfgraphicnamed{shi_scheme}
 
 \fbox{
 
@@ -1204,7 +1215,7 @@ node[near end, above left,purple]{$T_{l}(y)$};
 }
 
 
-\endpgfgraphicnamed
+%\endpgfgraphicnamed
 
 
 %\beginpgfgraphicnamed{newbub_sugrue}

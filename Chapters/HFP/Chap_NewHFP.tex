@@ -164,6 +164,345 @@ This type of bubble growth has been widely used, and showed good agreement with 
 
 
 
+\subsubsection{Analytic derivation of bubble growth in a linear thermal boundary layer}
+
+To further study the bubble growth process, we will try to derive an analytic
+
+In this section, computations are conducted using the spherical coordinates $\left(\vect{e_{r}}, \vect{e_{\theta}}, \vect{e_{\varphi}}\right)$ with coordinates $(r, \theta, \phi)$. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\linewidth]{img/growth/growth_analytical.pdf}
+\caption{Studied geometry}
+\label{fig:anal_growth}
+\end{figure}
+
+\npar
+Geometrical definitions :
+\begin{itemize}
+\item $\Theta=\pi - \theta$ the angular portion of the truncated sphere in spherical coordinates ;
+\item $r_{w}=R\sin{\theta}=-R\sin{\Theta}$ the bubble foot radius ;
+\item $h=R\cos{\theta}=-R\cos{\Theta}$ the distance between the wall and the center of the bubble ($>0$ if $\theta < \pi/2$, $<0$ otherwise) ;
+\item $R$ and $V=\frac{4}{3}\pi R^{3} f_{V}\left(\theta\right)$ the radius and the volume of the bubble ;
+\item $\vect{d^{2}S}=R^{2}\sin{\theta}\dtheta d\varphi \vect{e_{r}}$ the surface vector in spherical coordinates ;
+\item $y=R\cos{\theta}+h = R\left(\cos{\theta} - \cos{\Theta}\right)$ the distance to the wall in cartesian coordinates.
+\end{itemize}
+
+
+\npar
+Thermal-hydraulics definitions :
+\begin{itemize}
+\item $\Delta T_{L} = T_{sat}-T_{\infty}$ et $\Delta T_{w}=T_{w}-T_{sat}$ the subcooling of the liquid and the wall superheat respectively ;
+\item $\delta$ et $\delta_{b}$ the flow boundary layer thickness and the bubble boundary layer thickness respectively ;
+\item $d^{2} Q_{b}$ the heat received by the bubble between $t$ and $t+dt$ through the surface $d^{2}S$ ;
+\item $\lambda$, $\rho$, $c_{p}$, $\eta$, $h$ the thermal conductivity, density, heat capacity, thermal diffusivity and mass enthalpy respectively ($l$ standing for liquid  and $g$ for gas) ;
+\item $\text{Ja}_{w}=\Delta T_{w} \rho_{L}c_{p,L}/(h_{LV}\rho_{V})$ the wall superheat (or boiling) Jakob number and $\text{Ja}_{L}=\Delta T_{L} \rho_{L}c_{p,L}/(h_{LV}\rho_{V})$ the subcooled liquid (or condensation) one.
+\end{itemize}
+
+\npar
+
+
+The thermal boundary layer of the flow is assumed to follow a linear profile, giving the the expression :
+
+\begin{align}
+T_{l}\left(y\right)=T_{w}+\frac{T_{\infty}-T_{w}}{\delta} y
+\end{align}
+
+
+If we consider that the bubble stays at a temperature close to $T_{sat}$, the radial component of the temperature gradient at the bubble's interface yields :
+
+\begin{align}
+\grad{T} \cdot \vect{er} = \dpartial{T}{r}\left(R, \theta, \phi\right)\approx\frac{T_{\l}(y)-T_{sat}}{\delta_{b}}
+\end{align}
+
+\npar
+
+
+
+Applying Fourier's law to the liquid close to the bubble : $\vect{j_{Q}}=-\lambda_{l} \grad{T}$, then the bubble receives between $t$ and $t+dt$ through $d^{2}S$ :
+
+\begin{align}
+d^{2}Q_{b}&=\vect{j_{Q}} \cdot \left(-\vect{d^{2}S}\right)\\
+&=\lambda_{l} \dpartial{T}{r}\left(R,\theta, \varphi\right) R^{2}\sin{\theta} d\theta d\varphi\\
+&\approx\lambda_{l} \frac{T_{l}\left(y\right)-T_{sat}}{\delta_{b}}R^{2}\sin{\theta}d\theta d\varphi\\
+&=\lambda_{l} \frac{1}{\delta_{b}}\left[T_{w}+\frac{T_{\infty}-T_{w}}{\delta}y - T_{sat}\right]R^{2}\sin{\theta}d\theta d\varphi\\
+&=\frac{\lambda_{l}}{\delta_{b}}\left[\Delta T_{w}-\frac{\Delta T_{w} + \Delta T_{l}}{\delta}R\left[\cos{\theta} - \cos{\Theta}\right]\right]R^{2}\sin{\theta}d\theta d\varphi\\
+&=\frac{\lambda_{l}}{\delta_{b}}\left[\Delta T_{w}R^{2}\sin{\theta}-\frac{\Delta T_{w}+\Delta T_{l}}{\delta}R^{3}\left[\cos{\theta}-\cos{\Theta}\right]\sin{\theta}\right] d\theta d\varphi
+\end{align}
+
+\npar
+The total heat flux received by the bubble can then be derived, supposing that $\delta_{b}$ is constant all around the bubble between $t$ and $t+dt$ :
+
+\begin{align}
+Q_{b}&=\int_{\varphi=0}^{\varphi=2\pi} \int_{\theta=0}^{\Theta}{d^{2}Q_{b}}\\
+&= \frac{2\pi \lambda_{l}}{\delta_{b}}\left[\int_{0}^{\Theta} \Delta T_{w} R^{2} \sin{\theta}d\theta + \int_{0}^{\Theta} \frac{\Delta T_{w} + \Delta T_{l}}{\delta} R^{3} \cos{\Theta}\sin{\theta}d\theta - \int_{0}^{\Theta} \frac{\Delta T_{w} + \Delta T_{l}}{\delta} R^{3} \cos{\theta}\sin{\theta}d\theta\right]\\
+&=\frac{2\pi \lambda_{l}}{\delta_{b}} \left[\Delta T_{w} R^{2} \left(1-\cos{\Theta}\right) + \frac{\Delta T_{w} + \Delta T_{l}}{\delta}R^{3}\left[\cos{\Theta}\left(1-\cos{\Theta}\right)- \frac{1}{4}\left(1 - \cos{2\Theta}\right)\right]\right]\\
+&=\frac{2\pi \lambda_{l} R^{2}}{\delta_{b}}\left[\frac{-R}{2\delta}\left(\Delta T_{w} + \Delta T_{l}\right)\left(1 + 2\cos{\alpha} + \cossq{\alpha}\right) + \Delta T_{w} \left(1 + \cos{\alpha } \right) \right]\\
+&=\frac{2\pi \lambda_{l} R^{2}}{\delta_{b}}\left(1+\cos{\alpha}\right)\left[\Delta T_{w} - \frac{R}{2\delta}\left(\Delta T_{w} + \Delta T_{l}\right) \left(1 + \cos {\alpha} \right )\right]
+\end{align}
+
+
+\npar
+Between $t$ and $t+dt$, the bubble receives a $Q_{b}dt$ energy amount through thermal diffusion. Assuming this energy solely contributes to evaporation of the surrounding liquid, the resulting mass of generated vapor is :
+
+\begin{align}
+&dm_{g} = \rho_{g} dV = \frac{Q_{b}dt}{h_{lg}}\\
+\text{then } &\frac{dV}{dt}=\frac{Q_{b}}{\rho_{g}h_{lg}}
+\end{align}
+
+Since $V=\frac{4}{3}\pi R^{3} f_{V}\left(\alpha\right)$, we can write : 
+
+\begin{align}
+\frac{dV}{dt}=\frac{4}{3}\pi f_{V}\left(\alpha\right) 3R^{2}\frac{dR}{dt}
+\end{align}
+
+Then :
+
+\begin{align}
+\frac{dR}{dt}&=\frac{1}{4\pi R^{2}f_{V}\left(\alpha\right)} \frac{1}{\rho_{g} h_{lg}} \frac{2 \pi \lambda_{l} R^{2}}{\delta_{b}}\left(1+\cos{\alpha}\right)\left[\Delta T_{w} - \frac{R}{2\delta}\left(\Delta T_{w} + \Delta T_{l}\right) \left(1 + \cos{\alpha} \right )\right]\\
+&= \frac{1}{2f_{V}\left(\alpha\right)}\frac{\Delta T_{w}}{h_{lg}\rho_{g}}\frac{\lambda_{l}}{\delta_{b}}\left(1+\cos{\alpha}\right)\left[1 - \frac{R}{2\delta}\left(1 + \frac{\Delta T_{l}}{\Delta T_{w}}\right) \left(1 + \cos {\alpha} \right )\right]\\
+&=\frac{\text{Ja}_{w} \eta_{l}}{2 \delta_{b} f_{V}\left(\alpha\right)}\left(1+\cos{\alpha}\right)\left[1 - \frac{R}{2\delta}\left(1 + \frac{\text{Ja}_{l}}{\text{Ja}_{w}}\right) \left(1 + \cos{\alpha} \right )\right]
+\end{align}
+
+If we define :
+
+\begin{align}
+a = \frac{\text{Ja}_{w}\eta_{l}}{4 \delta_{b} \delta f_{V} \left(\alpha\right)} \left(1 + \frac{\text{Ja}_{l}}{\text{Ja}_{w}}\right) \left(1 + \cos{\alpha}\right)^{2} \text{ et } b = \frac{\text{Ja}_{w}\eta_{l}}{2 \delta_{b} f_{V}\left(\alpha\right)}\left(1 + \cos{\alpha}\right)
+\end{align}
+
+Finally : 
+
+\begin{align}
+\frac{dR}{dt} + aR = b
+\end{align}
+
+
+\npar
+
+Solutions of this differential equation depend on the hypothesis over $\delta$ and $\delta_{b}$. In a first approach, we will consider that $\delta$ does not vary during the whole bubble growth. This thickness could be expressed using boundary layer thickness correlations for example (laminar or turbulent depending on the Reynolds number). 
+
+\npar
+
+On the other hand, we will consider 3 different choices to model $\delta_{b}$ :
+
+
+\npar
+\subsubsection{Case 1 : $\delta_{b}$ is constant}
+
+
+This is a \textbf{strong assumption} since it means that $\delta_{b}$ does not depend on the temperature and the flow shear rate facing the bubble. In this case, $a$ and be are constant, giving : 
+
+
+\begin{align}
+\frac{dR}{dt} + aR = b
+\end{align}
+
+
+With the initial condition $R(t=0)=0$ the solution of this differential equation is : 
+
+\begin{align}
+R\left(t\right)=\frac{b}{a}\left(1 - e^{-at}\right) \text{ where } \frac{b}{a} = \frac{2\delta}{\left(1 + \frac{\text{Ja}_{l}}{\text{Ja}_{w}}\right)\left(1 + \cos{\alpha} \right )}=R_{\infty} \text{ is the final bubble equilibrium radius.}
+\end{align}
+
+
+\subsubsection{Case 2 : $\delta_{b}=\sqrt{\eta_{l}t}$}
+\npar
+
+This expression derives from the growth of a boundary layer through pure diffusion, as studied by \textsc{Legendre} \etal
+
+Such a boundary layer thickness is also used when one writes the quenching heat flux (see Section \ref{sec:model} and \textsc{Del Valle \& Kenning} work).
+
+In this case, this means that the boundary layer around the bubble interface grows through diffusion only.
+
+\npar
+
+Thus, it yields :
+
+\begin{align}
+\frac{dR}{dt}\parth{t}+a\parth{t}R\parth{t}=b\parth{t}
+\end{align}
+
+\begin{align}
+\label{eq:coeff_expgrowth}
+a(t)=\frac{\Ja_{w}\sqrt{\eta_{l}}}{4\delta f_{V}\parth{\alpha}\sqrt{t}}\parth{1+\frac{\Ja_{l}}{\Ja_{w}}}\parth{1+\cos{\alpha}}^{2}=K_{a}t^{-1/2} \text{ and } b(t)=\frac{\Ja_{w}\sqrt{\eta_{l}}}{2f_{V}\parth{\alpha}\sqrt{t}}\parth{1+\cos{\alpha}}=K_ {b}t^{-1/2}
+\end{align}
+
+With the initial condition $R\parth{t=0}=0$, the solution is given by : 
+
+\begin{align}
+R\parth{t}=R_{\infty}\parth{1-e^{-2K_{a}\sqrt{t}}} \text{ avec } R_{\infty}=\frac{K_{b}}{K_{a}}
+\end{align}
+
+\npar
+\subsubsection{Case 3 : $\delta_{b}=CR$}
+\npar
+
+In this last case, the bubble boundary layer is assumed to by proportional to the bubble radius $R$, through a constant coefficient $C$. This yields :
+
+
+\begin{align}
+a(t)=\frac{\Ja_{w}\eta_{l}}{4\delta f_{V}\parth{\alpha}CR\parth{t}}\parth{1+\frac{\Ja_{l}}{\Ja_{w}}}\parth{1+\cos{\alpha}}^{2}=K'_{a}\frac{1}{R\parth{t}} \text{ et } b(t)=\frac{\Ja_{w}\eta_{l}}{2f_{V}\parth{\alpha}CR\parth{t}}\parth{1+\cos{\alpha}}=K'_ {b}\frac{1}{R\parth{t}}
+\end{align}
+
+Giving :
+
+\begin{align}
+&\frac{dR}{dt}\parth{t} + K'_{a} = K'_{b}\frac{1}{R\parth{t}}
+\end{align}
+
+Which the solution with the initial condition $R\parth{t=0}=0$ is :
+
+\begin{align}
+R\parth{t}=R_{\infty}\parth{ \text{W}\parth{-e^{-t{K'_{a}}^{2}/K'_{b}-1} } +1}
+\end{align}
+
+With $\text{W}$ being the \textsc{Lambert} function defined as the reciprocal function of $w \rightarrow we^{w}$ on $\mathbb{C}$.
+
+
+\subsection{Comparison with experimental data and DNS}
+
+To assess the three models presented above, we compared the time-dependent radius profile given by an experiment conducted by \textsc{Maity} as shown in Figure \ref{fig:growth_comp_Maity}.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\linewidth]{img/growth/growth_maity.png}
+\caption{Comparison with single bubble growth measurement from \textsc{Maity} : Boiling water at $\Delta T_{sub}=0.2\degree$C, $\Delta T_{w}=5.9\degree$C, $U_{liq}=0.23\text{~m/s}$ and $P=1\text{~bar}$. Green : $\delta_{b}=10^{-5}~$m - Red : $\delta_{b}=\sqrt{\eta_{l}t}$ - Pink : $\delta_{b}=0.1\times R\parth{t}$ - Blue : \textsc{Plesset} solution $R\parth{t}=B\sqrt{t}$ with $B=\Ja_{w}\sqrt{12\eta_{l}/\pi}$. The liquid boundary layer size has been fixed to $\delta \approx 1~$mm according to the experimental measurements.}
+\label{fig:growth_comp_Maity}
+\end{figure}
+
+As we can see, the \textsc{Plesset} solution overestimates both the growth and the size of the bubble as it could have been expected since this solutions is found for a uniformly superheated liquid. Concerning the three different approaches  previously developed :
+
+\begin{itemize}
+\item The constant $\delta_{b}$ hypothesis seems to better fit the first stage of bubble growth (with an optimal choice of $\delta_{b}$ value). However, the imposed growth regime seems to large when we compare to the moderate growth of the measured bubble. Moreover, this model yields a linear start of bubble growth, while it has been thoroughly validated that under a large range of thermal-hydraulics conditions, bubble growth begins with a $\sqrt{t}$ profile.
+\item The contrary is observed for the $\delta_{b}=CR$ model, with a growth being globaly too slow.
+\item Choosing $\delta_{b}=\sqrt{\eta_{l}t}$ seems to better reproduce the growth regime. Even though the bubble radius is slightly overestimated, the shape of the time-dependent profile looks similar to the experimental measurement, especially since the growth is progressively damped.
+\end{itemize}
+
+
+To further assess the modeling, we compare the derived profiles with DNS data from \textsc{Urbano} \etal\cite{Urbano2018} on Figure \ref{fig:growth_vs_DNS}.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\linewidth]{img/growth/modvsDNS.png}
+\caption{Comparison with zero-gravity DNS data from \textsc{Urbano} \etal : Water at $P=1.01\text{~bar}$, $\Delta T_{sub}=10\degree$C, $\Delta T_{w}=2\degree$C, $U_{liq}=0\text{~m/s}$ and $\alpha=50\degree$.}
+\label{fig:growth_vs_DNS}
+\end{figure}
+
+
+\npar
+First, it is important to note that the expression of the equilibrium radius $R_{\infty}$ matches the analytical derivation of \textsc{Urbano} \etal. Figure \ref{fig:growth_vs_DNS} shows a difference betwee, the computed equilibrium radius and the DNS equilibrium radius. This discrepancy may rely on the fact that Urbano \etal considered solid wall heat diffusion while our model considers a constant wall temperatue.
+
+However, comparing the shapes of the predicted growth, we can see that the $\delta_{b}=\sqrt{\eta_{l}t}$ hypothesis seems to give a growth regime in accordance with the DNS results. The other hypotheses do not greatly differ, but they result from an arbitrary choice for $\delta_{b}$ or $C$. Thus, it seems appropriate to consider that the $\delta_{b}=\sqrt{\eta_{l}t}$ hypothesis is reasonable to model the evolution of the boundary layer thickness at the liquid-vapor interface.
+
+\npar
+
+
+Finally, we present on Figure \ref{fig:growth_DNS_regime} the comparison between the $\delta_{b}=\sqrt{\eta_{l}t}$ model and 3 DNS profiles for a same Jakob number ratio, but at different subcoolings and superheats. 
+
+
+\begin{figure}[h!]
+\begin{multicols}{2}
+\includegraphics[width=1.0\linewidth]{img/tg/comp_Urbano.png}
+
+\includegraphics[width=1.0\linewidth]{img/tg/comp_Urbano_fixed_Req.png}
+\end{multicols}
+\caption{Comparison of the model (red) with results from Urbano \etal (gray) at 3 different pairs of $\parth{\Delta T_{l}, \Delta T_{w}}$ - Left : $R_{\infty}$ from the model - Right : $R_{\infty}$ imposed equal to the DNS}
+\label{fig:growth_DNS_regime}
+\end{figure}
+
+
+The difference between the 3 growth regime predicted by the model is really close to the difference captured by the DNS. A discrepancy over the final equilibrium radius is still observed, but imposing the final radius from the DNS in the model yields strongly matching profiles between both approaches. 
+
+It thus seems appropriate to consider the $\delta_{b}=\sqrt{\eta_{l}t}$ profile to represent the boundary layer thickness around the bubble.
+
+\npar
+
+
+In this case, the average radius of the bubble over a growth time $t_{g}$ (as needed in Subsection \ref{subsec:vap_area}) is :
+
+
+\begin{align}
+\overline{R\parth{t}}&=\frac{1}{t_{g}}\int_{0}^{t_{g}}R\parth{t} \text{d}t = \frac{R_{\infty}}{t_{g}}\crocht{ \frac{e^{-2K_{a}\sqrt{t}} \parth{2K_{a}\sqrt{t}+1}  }{2K_{a}^{2}}+ t}_{0}^{t_{g}}\\
+&=\frac{R_{\infty}}{2K_{a}^{2}t_{g}}\parth{ e^{-2K_{a}\sqrt{t_{g}}}\parth{2K_{a}\sqrt{t_{g}}+1} + 2K_{a}^{2}t_{g} -1  }
+\end{align}
+
+Moreover, if we consider a lift-off radius $R_{d}$, we can express the associated growth time $t_{g}$ :
+
+\begin{align}
+t_{g}=\crocht{ \frac{1}{K_{a}}\ln{\frac{1}{\sqrt{1-\frac{R_{d}}{R_{\infty}} } } } }^{2} = \crocht{\frac{1}{K_{a}}\ln { \sqrt{1-\frac{R_{d}}{R_{\infty}} } }   }^{2}
+\label{eq:growth_time}
+\end{align}
+
+This expression could then be used as a closure relationship for $t_{g}$ in the HFP model, meaning that this growth time will depend on the departure diameter closure for $R_{d}$.
+
+
+\subsection{Estimation of the thermal boundary layer thickness $\delta$}
+
+In order to fully close the modeling of the bubble growth, we have to compute the thermal boundary layer thickness $\delta$.
+
+To do so, we test a first approach based on the hydrodynamic boundary layer profile. In the turbulent layer, the non-dimensional liquids velocity $u_{l}^{+}$ is :
+
+\begin{align}
+u_{l}^{+}=\frac{1}{\kappa} \ln{y^{+}} +B,\ \text{with}\ \kappa=0.41\ \text{and}\ B=5.25
+\end{align}
+
+Since $u_{l}^{+}\parth{y^{+}}=u_{l}\parth{y}/u_{\tau}$ and $y^{+}=yu_{\tau}/\nu_{l}$, we can compute the height of the hydrodynamic boundary layer $\delta_{h}$ where $u_{l}\parth{\delta_{h}}=0.99u_{l,bulk}$ as :
+
+\begin{align}
+\delta_{h}=e^{\kappa \parth{0.99u_{l,bulk}\sqrt{\rho_{l}/\tau_{w}}-B}}\times \nu_{l}\sqrt{\frac{\rho_{l}}{\tau_{w}}}
+\end{align}
+
+where $\tau_{w}$ is computed using the Mac Adams correlation (Eq. \ref{eq:MacAdams}).
+
+\npar
+
+Finally, to get an approximation of the thermal boundary layer thickness, we consider a simple first approach as :
+
+\begin{align}
+\delta=\frac{1}{\Pr_{l}}\delta_{h}
+\end{align}
+
+Since the Prandtl number is the ratio of momentum diffusivity to thermal diffusivity, its inverse shall approximately scale the ratio between the thermal boundary layer and hydrodynamic boundary layer thickness. 
+
+\npar
+
+\subsection{Estimation of $t{g}$ against experimental data}
+
+In order to assess the proposed approach to compute $t_{g}$, we compare the yielded results with data taken from Unal of maximum bubble growth. 
+
+\npar
+
+Only 6 measurements of maximum growth time are available ({\color{red} Je vais en ajouter d'autres par la suite}) but they are associated with the bubble lift-off diameter. Since those measurements were conducted with boiling water on stainless steel, we set the contact angle at $\alpha=80\degree$.
+
+\npar
+
+We also compare the predictions with the model proposed by Kommajosyula :
+
+\begin{align}
+t_{g}&=\parth{ \frac{D_{d}}{4K}}^{2}\\
+K&=\frac{\sqrt{\eta_{l}} \Ja_{w}}{0.804\sqrt{\Pr_{l}}}+\chi 1.95\Ja_{w} \eta_{l},\ \text{with}\ \chi=A-B\zeta
+\end{align}
+where $\zeta=\Ja_{l}/\Ja_{w}$ and both $A=1.55$ and $B=0.05$ have been fitted over the data of Klausner by Mazzocco \etal.
+
+\npar
+
+The results are displayed on Figure \ref{fig:comp_modelKomm}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\linewidth]{img/tg/comp_tg_unal.png}
+\caption{Comparison of the proposed model and Kommajoyusla model against experimental data from Unal. Black lines represent the $\pm 50\%$ error bars.}
+\label{fig:comp_modelKomm}
+\end{figure}
+
+As we can see, the average error from our model is greater than Kommajosyula's one. However, this is mainly due to the highest measured growth time (upper right point). Without this measurement, the average error reaches $52.5\%$, indicating that a much greater number of experimental measurements should be needed properly evaluate each model.
+
+\npar
+On the other hand, we may consider that the proposed approach could be of interest since it is not based on data-fitted parameters while providing reasonable results.
+
+
 
 \begin{table}[h!]
 
@@ -215,16 +554,21 @@ Maity \cite{maity_effect_2000} \newline (2000) & Water & 20 & 1.01 & 0 - 239.6 &
 \end{tabular}
 }
 
-
 \caption{Bubble wait time data in vertical flow boiling}
 \label{tab:tw_exp_data}
+
 
 %\end{changemargin}
 
 \end{table}
 
 
+
 \subsection{Nucleation Site Density}
+
+The Nucleation Site Density is among the most influencing parameters over the HFP models predictions, particularly regarding wall temperature. Indeed, its value directly controls the density of bubbles generated at the heater and therefore impacts both the boiling ($\phi_{e}$) and quenching ($\phi_{q}$) heat fluxes to the first order. Being able to come up with correct predictions of the NSD is thus mandatory if one wishes to properly capture the thermal behavior of the boiling surface.
+
+However, the value of $N_{sit}$ is actually influenced by many parameters being either linked to thermal-hydraulics (wall temperature, pressure, operating fluid) or the heater material (roughness, wettability).
 
 
 \begin{table}[h!]
@@ -236,23 +580,33 @@ Maity \cite{maity_effect_2000} \newline (2000) & Water & 20 & 1.01 & 0 - 239.6 &
 \scriptsize
 \centering
 \begin{tabular}{p{20mm}|c c c c c c c c} 
-Author & Fluid & $D_{h}$ [mm] & $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K] & $\phi_{w}$ [kW/m\up{2}] & $\Delta T_{w}$ [K] & $D_{d}$ [mm] ($N_{mes}$)\\
+Author & Fluid &  $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K]  & $\Delta T_{w}$ [K] & $N_{mes}$ [-]\\
 \hline
 \\
 
-Maity \cite{maity_effect_2000} \newline (2000) & Water & 20 & 1.01 & 0 - 239.6 & 0.3 - 0.7 & N.A. & 5 - 5.9 & 0.788 - 1.71 (9) \\
+Zhou \cite{zhou_nsit} \newline (2020) & Water & 1.21 - 3.12 & 482.7 - 1930.6 & 8 - 15  & 6.7 - 20.2 & 60 \\
+\\
+
+Richenderfer \cite{richenderfer} \newline (2018) & Water & 1.01 & 500 - 1000 & 10 & 21.7 - 42.8 & 49 \\
+\\
+
+Kossolapov \cite{kossolapov} \newline (2021) & Water & 1.01 - 75.8 & 500 - 2000 & 10 & 0.13 - 30.1 & 63 & \\
+\\
+
+Borishanskii \cite{borishanskii} \newline (1966) & Water & 1.01 - 198 & 500 - 2000 & N.A. & 1.75 - 17.3 & 132 & \\
+\\
 
 \hline
 \end{tabular}
 }
 
-
-\caption{Nucleation Site Density data in vertical flow boiling}
+\caption{Nucleation Site Density data in flow boiling}
 \label{tab:nsit_exp_data}
 
-%\end{changemargin}
 
 \end{table}
+
+
 
 The choice of a nucleation site density correlation can be a complicated matter since many different laws exist in the literature (Lemmert \& Chawla, Hibiki \& Ishii, Basu \etal, etc.).
 
