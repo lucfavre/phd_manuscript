@@ -1,0 +1,1253 @@
+\documentclass[10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+
+\usepackage{enumitem}
+
+
+\usepackage{amsmath}
+\usepackage{bm}
+
+\usepackage{gensymb} 
+
+
+\usepackage[top=3cm, bottom=2cm, left=2cm, right=2cm]{geometry} %marges
+
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usetikzlibrary{math}
+\usepackage{pgfplots}
+\pgfrealjobname{draw}
+\usetikzlibrary{intersections}
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\npar}{\vspace{\baselineskip}}
+
+
+\newcommand{\vect}[1]{\overline{\boldsymbol{#1}}}
+%\newcommand{\dtime}[1]{\frac{\partial #1}{\partial t}}
+\newcommand{\dpartial}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\divg}[1]{\nabla\cdot\left(#1\right)}
+\newcommand{\grad}[1]{\overline{\boldsymbol{\nabla}}#1}
+\newcommand{\lapla}[1]{\overline{\boldsymbol{\Delta}}#1}
+%\newcommand{\tens}[1]{\overline{\overline{\boldsymbol{#1}}}}
+\newcommand{\gradtens}[1]{\overline{\overline{\boldsymbol{\nabla}}}#1}
+%\newcommand{\inv}[1]{\frac{1}{#1}}
+
+\newcommand{\dtheta}{\mathrm{d}\theta}
+
+\newcommand{\redmath}[1]{\begingroup\color{red}#1\endgroup}
+\newcommand{\orangemath}[1]{\begingroup\color{orange}#1\endgroup}
+\newcommand{\yellowmath}[1]{\begingroup\color{yellow}#1\endgroup}
+
+\newcommand{\etal}{\textit{et al.}}
+
+
+
+
+\begin{document}
+
+
+
+\fbox{
+\begin{tikzpicture}[scale=2.0, every node/.style={scale=1.0}]
+
+
+%wall
+\draw[thick] (-3.5,0) -- (2,0) ; 
+
+%right triple contact line point
+\coordinate (A) at (1,0) ; 
+\draw (A) arc (-45:180+45:1.5) ; %bubble draw angles from (-alpha) to (180+alpha)
+
+%bubble center
+\coordinate (O) at ($(A)+(45+90:1.5)$) ; 
+\draw (O) node[above left]{\footnotesize{$O$}};
+\draw[densely dashed, <->, >=stealth] ($(O)+(-45:0.05)$) -- (A) node[midway, above]{$R$};
+\draw (O) node[black]{$\times$};
+
+%Portion angulaire de la bulle
+\coordinate (T) at ($(O) + (0,1.5)$) ; %bubble top
+\draw[dashed] (O) -- (T);
+\coordinate(Tp) at ($(O) + (0, 1.0)$);%start for angle Theta
+\draw[densely dotted, ->, >=stealth] (Tp) arc(90:0-45:1) node[midway, right] {$\Theta$};
+
+%Hauteur coupe
+\coordinate (B) at ($(O) + (0,{-1.5*cos(45)})$);
+\draw[densely dashed, <->, >=stealth] ($(O) + (0,-0.05)$) -- (B) node[midway, left] {$h$};
+
+%Rayon du pied
+\coordinate (Bl) at ($(B) + (0,-0.1)$);
+\coordinate (Al) at ($(A) + (0,-0.1)$);
+\draw[densely dashed, <->, >=stealth] (Bl) -- (Al) node[midway, below]{$r_{w}$};
+
+%Vecteur surface
+\coordinate (S1) at ($(O) + (50:1.5)$);
+\draw[thick, green] (S1) arc(50:50+10:1.5);
+\coordinate (S2) at ($(O) + (55:1.5)$);
+\draw[thick, olive, ->, >=stealth] (S2)--++(50:0.4) node[midway, right]{$\textstyle{\vect{d^{2}S}}$};
+
+
+%Angle de contact
+\draw[color=gray!80] (A) --++(45:1) ;
+\draw[densely dotted] (A)++(0.3,0) arc (0:45:0.3) ;
+\draw (A)++(22.5:0.6) node{$\alpha$};
+
+%\draw (1.0,0) -- (1.530331, 0.53033) ;
+%\draw (1.45433, 0.22961) node {$\alpha$};
+
+%\draw (O) node[right] {$O$} ;
+%\draw(0,1) node{$\times$};
+
+%Couche limite interface liq/vap
+\coordinate (CL) at ($(O) + (-1.5-0.2,0)$);
+\draw[dashed, orange] (CL) arc(180 : 110 : 1.7);
+\coordinate (Db) at ($(O) + (90+45:1.5)$);
+\draw[<->, orange, >=stealth] (Db) --++(90+45:0.2) node[midway, above right]{$\delta_{b}$}
+node[near end, above left,purple]{$T_{l}(y)$};
+
+\draw (Db) node[below right,purple]{$T_{sat}$};
+
+%Repere spherique
+\coordinate (M) at ($(O) + (25:1.5)$);
+\draw (M) node[left, black]{$M$};
+\draw[->, olive, thick] (M)--++(25:0.2) node[right,olive]{$\vect{e_{r}}$};
+\draw[->, olive, thick] (M)--++(25-90:0.2) node[right,olive]{$\vect{e_{\theta}}$};
+\draw[olive, thick] ($(M)+(0:0.6)$) node{$\otimes$} node[right,olive]{$\vect{e_{\varphi}}$};
+\draw (M) node{$\bullet$};
+
+%Repere cartesien
+\coordinate (RC) at (-4.0, 3);
+\draw[->, olive, thick] (RC)--++(0.2,0) node[right, olive]{$\vect{e_{x}}$};
+\draw[->, olive, thick] (RC)--++(0,0.2) node[above, olive]{$\vect{e_{y}}$};
+
+%Profil Tliq
+\coordinate (Tinf) at (-3.0, 3.5);
+\coordinate (Tw) at (-2,0);
+\coordinate (delta) at ($(Tinf)+(0,-3.5)$);
+
+\draw[purple] (Tinf) -- (Tw) node[midway, sloped, below]{$T_{l}(y)$};
+\draw[purple] (Tinf) node[right]{$T_{\infty}<T_{sat}$};
+\draw[purple] (Tw) node[below]{$T_{w}>T_{sat}$};
+\draw[<->, orange, >=stealth, densely dashed] ($(Tinf)+(0,-0.03)$) -- (delta) node[midway, left]{$\delta$};
+
+
+\end{tikzpicture}
+}
+
+
+
+\fbox{
+\begin{tikzpicture}[scale=2.0, every node/.style={scale=1.0}]
+
+\coordinate (Od) at (0,0);
+\coordinate (Ol) at (3,0);
+\coordinate (Td) at ($(Od)+(0,0.3)$);
+\coordinate (Bd) at ($(Od)+(0,-0.3)$);
+\coordinate (Tl) at ($(Od)+(3,0.6)$);
+\coordinate (Bl) at ($(Od)+(3,-0.6)$);
+
+
+\draw[black, fill=orange!80!gray!20] (Td) arc(90:90+180:0.3) -- (Bl) arc(-90:-90+180:0.6) -- cycle;
+%\draw[black] (Tl) arc(90:90-180:0.6);
+
+
+\draw[dashed] (Td) arc(90:90-180:0.3);
+\draw[dashed] (Tl) arc(90:90+180:0.6);
+
+\draw[<->, >=stealth, dotted] (Td)--(Bd) node[midway, left]{$D_{d}$};
+\draw[<->, >=stealth, dotted] (Tl)--(Bl) node[midway, right]{$D_{l}$};
+
+
+\end{tikzpicture}
+}
+
+
+\fbox{
+\begin{tikzpicture}[scale=2.0, every node/.style={scale=1.0}]
+
+\coordinate (Od) at (0,0);
+\coordinate (Ol) at (3,0);
+\coordinate (Td) at ($(Od)+(0,0.3)$);
+\coordinate (Bd) at ($(Od)+(0,-0.3)$);
+\coordinate (Tl) at ($(Od)+(3,0.6)$);
+\coordinate (Bl) at ($(Od)+(3,-0.6)$);
+
+
+\draw [dashed](0,0,0)--(1,0,0)--(1,1,0)--(0,1,0)--cycle; % face arrière
+\draw (0,0,1)--(1,0,1)--(1,1,1)--(0,1,1)--cycle; % face avant%arêteshorizontales,del’arrièreversl’avant
+\draw (0,0,0) -- (0,0,1); % bas gauche
+\draw (1,0,0) -- (1,0,1); % bas droit
+\draw (1,1,0) -- (1,1,1); % haut droit
+\draw (0,1,0) -- (0,1,1); % haut gauche
+\end{tikzpicture}
+}
+
+\fbox{
+
+\begin{tikzpicture}[scale=2.0, every node/.style={scale=1.0}]
+
+\tikzmath{\alph = 70; \ray=1; \h=\ray*cos(\alph); \alphr= \alph*pi/180;};
+
+
+\draw (-2,0,-2)--(2,0,-2)--(2,0,2)--(-2,0,2)--cycle;
+%\draw (0.3,0) arc (-45:180+45:0.3);
+
+\foreach \t in {1,0.9,0.8,0.7,0.6,0.5,0.4,0.3,0.2,0.1,0,-0.1,-0.2,-0.3,-0.4,-0.5,-0.6,-0.7,-0.8,-0.9,-1} {
+\draw plot[domain=-(pi-\alphr):(pi-\alphr)] ({sqrt(1-(\t)*(\t))*sin(\x r)}, {sqrt(1-(\t)*(\t))*cos(\x r)+\h}, \t);
+}
+
+
+
+\end{tikzpicture}
+
+}
+
+
+\fbox{
+\begin{tikzpicture}
+
+\tikzmath{\alph = 30; \alphr= \alph*pi/180; \thetr=pi-\alphr; \thet= \thetr*180/pi; \betr=pi/2-\alphr; \bet=\betr*180/pi ; \ray=1;   \rw=\ray*sin(\alphr r); \h=\ray*cos(\alphr r);};
+
+\coordinate (O) at (0,0);
+\coordinate (BotRight) at ($(O)+(-\bet:\ray)$);
+\coordinate (BotLeft) at ($(O)+(180+\bet:\ray)$);
+
+\shade[ball color = gray!40, opacity = 0.4] (BotRight) arc (-\bet:180+\bet:\ray);
+\draw (BotRight) arc (-\bet:180+\bet:\ray);
+
+\draw[densely dashed] (BotRight) arc (0:180:{\rw} and {\rw/3});
+\draw (BotLeft) arc (180:360:{\rw} and {\rw/3});
+
+
+
+%\draw[dashed] (BotLeft) --++(1,1);
+%\draw[dashed] (BotRight) --++(1,1);
+
+
+%  %\shade[ball color = gray!40, opacity = 0.4] (0,0) circle (2cm);
+%  %\draw (0,0) circle (2cm);
+%  \draw (-2,0) arc (180:360:2 and 0.6);
+%  \draw[dashed] (2,0) arc (0:180:2 and 0.6);
+%  \fill[fill=black] (0,0) circle (1pt);
+%  \draw[dashed] (0,0 ) -- node[above]{$r$} (2,0);
+\end{tikzpicture}
+}
+
+
+\fbox{
+
+\begin{tikzpicture}
+
+
+
+\end{tikzpicture}
+
+}
+
+
+\newpage
+
+\begin{tikzpicture}
+
+
+\tikzmath{\alph=70; \alphrad=\alph*pi/180; \dalph=10; \dalphrad=\dalph*pi/180; \fV=0.25*(2-cos(\alphrad r)*((1+cos(\alphrad r))^2); \fSp=1-(\alphrad/pi)+(sin((2*\alphrad)r)/(2*pi)); \fspar=1.215*\dalphrad*(sin(\alphrad r)^2*(cos(\dalphrad r)^2)/((pi/2)^2-\dalphrad^2); \fGpar=(1-cos(\alphrad r)^2)*(sin(\dalphrad r));} %geometrical values
+
+\tikzmath{\rholiq=594.3786; \nuliq=1.148*(10^(-7));} %water properties at P=155bar - Tsat
+
+
+
+
+\begin{axis}[
+    xmode=log,
+    ymode=log,
+    log ticks with fixed point,
+    % for log axes, x filter operates on LOGS.
+    % and log(x * 1000) = log(x) + log(1000):
+    %x filter/.code=\pgfmathparse{#1 + 6.90775527898214},
+]
+\addplot table {
+1 10
+100 350
+10000 2500
+};
+\end{axis}
+\end{tikzpicture}
+
+
+\fbox{
+
+\begin{tikzpicture}[scale=3.0]
+
+\coordinate (O) at (0,0);
+\coordinate (A1) at (1,0);
+\coordinate (A2) at (2,0);
+\coordinate (A3) at (3,0);
+\coordinate (A) at (4,0);
+
+
+%Sections and wall
+\draw (O) -- (A);
+\draw ($(O)-(0,0.03)$) -- ($(A)-(0,0.03)$);
+\foreach \i in {0,...,19}
+{
+\draw (\i*0.2,0) -- (\i*0.2+0.05,-0.03);
+}
+
+
+
+%\draw[dashed, gray!70!white] (A1) --++ (0,1);
+%\draw[dashed, gray!70!white] (A2) --++ (0,1);
+%\draw[dashed, gray!70!white] (A3) --++ (0,1);
+
+
+
+%Flow arrows
+\foreach \i in {1,...,12} 
+{
+\coordinate (Oloc) at ($(O)+(-0.1,\i/13)$);
+\draw[->,>=latex, gray!50!blue] (Oloc)--++({ln(1+0.05*\i)},0);
+}
+
+\draw ($(Oloc) + ({ln(1+0.05*12)},0)$) node[below right]{${\overline{U_{L}}}$};
+
+
+%Liquid heat flux
+
+\coordinate (Ophi) at (0.4,0);
+
+\draw[->,>=latex, thick, blue!70!gray] ($(Ophi)+(0,-0.1)$)--($(Ophi)+(0,+0.1)$);
+\draw ($(Ophi)+(0,-0.15)$) node{${\phi_{c,L}}$};
+
+
+%Boiling heat flux
+\coordinate (Ob) at (1.0,0);
+
+\tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.15; \rayw = sin(\alphrad r) * \ray;}; %Geom values
+
+\coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
+\shade[ball color = gray!40, opacity = 0.4] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+
+\draw[->,>=latex, thick, brown!80!black] plot [smooth, tension=0.5] coordinates {($(Oarc)+(0,-0.1)$) ($(Oarc)+(0.05,+0.03)$) ($(Oarc)+(-0.05,+0.1)$)};
+
+\coordinate (Oarc2) at ($(Oarc) + (-2*\rayw,0)$);
+\draw[->,>=latex, thick, brown!80!black] plot [smooth, tension=0.5] coordinates {($(Oarc2)+(0,-0.1)$) ($(Oarc2)+(-0.05,+0.03)$) ($(Oarc2)+(+0.05,+0.1)$)};
+
+\draw ($(Ob)+(0,-0.15)$) node{${\phi_{e}}$};
+
+
+
+%Vapor convective flux
+\coordinate (Ob) at (1.75,0);
+
+\tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.2; \rw=\ray * sin(\alphrad r);};
+
+\coordinate (Oarc) at ($(Ob)+(\rw,0)$);
+\shade[ball color = gray!40, opacity = 0.4] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+\draw[red, thick, densely dashed] (Oarc) --++ (-2*\rw, 0);
+
+\draw[->,>=latex, thick, red!80!black] ($(Ob)+(0,-0.1)$)--($(Ob)+(0,+0.1)$);
+\draw ($(Ob)+(0,-0.15)$) node{${\phi_{c,V}}$};
+
+
+
+%Quenching heat flux
+\coordinate (Ob2) at (2.75,0);
+
+\tikzmath{\alph = 40; \alphrad= \alph * pi / 180;
+\dalph=20; \dalphrad=\dalph*pi/180;
+\alphadvrad=\alphrad - \dalphrad;
+\alphrecrad=\alphrad + \dalphrad;
+\ray=0.2; 
+\rayadv=\ray *(1+cos(\alphrad r))/(1+ cos(\alphadvrad r);
+\rayrec=\ray *(1+cos(\alphrad r))/(1+ cos(\alphrecrad r);};
+
+
+\coordinate (Cb2) at ($(Ob2)+(0.03,{\ray * cos(\alphrad r)})$);
+\draw[green!50!black,->, >=latex] (Cb2)--++({\ray+0.08},0); \draw ($(Cb2)+({\ray+0.08},0)$) node[above]{$\overline{U_{b}}$ }; %Bubble velocity
+
+
+\coordinate (Oarc) at ($(Ob2)+({\ray * sin(\alphrad r)},0)$);
+
+\shade[ball color = gray!40, opacity = 0.4] (Oarc) arc ({-(pi/2-(\alphadvrad)) r}:{(pi/2) r}:\rayadv) arc ({(pi/2) r}:{(pi+pi/2-(\alphrecrad)) r}:\rayrec);
+
+\draw (Oarc) arc ({-(pi/2-(\alphadvrad)) r}:{(pi/2) r}:\rayadv) arc ({(pi/2) r}:{(pi+pi/2-(\alphrecrad)) r}:\rayrec);
+
+\coordinate (Ob2) at (3.5,0.5);
+\tikzmath{\ray=0.25;};
+
+\shade[ball color = gray!40, opacity = 0.4] (Ob2) circle(\ray);
+\draw (Ob2) circle(\ray);
+
+
+
+\tikzmath{\rayspi=0.07;};
+
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=65,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=70,yshift=5] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+
+\coordinate (Ophisl) at ($(Oarc) - (\rayadv+\rayrec+0.05,0)$);
+\draw[->,>=latex, thick, orange!90!gray] ($(Ophisl)+(0,-0.1)$)--($(Ophisl)+(0,+0.1)$);
+\draw ($(Ophisl)+(0,-0.15)$) node{${\phi_{q,sl}}$};
+
+
+\tikzmath{\rayspi=0.08;};
+
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=94,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=105,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+
+
+\coordinate (Ophiq) at ($(Ob2) - (0,0.5)$);
+\draw[->,>=latex, thick, orange!90!gray] ($(Ophiq)+(0,-0.1)$)--($(Ophiq)+(0,+0.1)$);
+\draw ($(Ophiq)+(0,-0.15)$) node{${\phi_{q,lo}}$};
+
+\end{tikzpicture}
+
+}
+
+
+
+\fbox{
+
+\begin{tikzpicture}
+\draw [red] plot [smooth cycle] coordinates {(0,0) (1,1) (3,1) (1,0) (2,-1)};
+
+\draw [orange] plot [smooth] coordinates {(1,1) (2,2) (4,-2) (3,2)};
+
+\draw [olive] plot [smooth,tension=0.1] coordinates {(1,1) (2,2) (4,-2) (3,2)};
+
+\draw [blue] plot [smooth, tension=2] coordinates {(1,1) (2,2) (4,-2) (3,2)};
+\end{tikzpicture}
+
+}
+
+\fbox{
+
+\newcommand{\dalpha}{\text{d}\alpha}
+
+\begin{tikzpicture}[scale=3.0, every node/.style={scale=0.7}]
+
+
+\coordinate (O) at (0,0);
+\coordinate (A2) at (1.4,0);
+\coordinate (A) at (3.2,0);
+
+
+%Sections and wall
+\draw (O) -- (A);
+\draw ($(O)-(0,0.05)$) -- ($(A)-(0,0.05)$);
+\foreach \i in {0,...,15}
+{
+\draw (\i*0.2,0) -- (\i*0.2+0.1,-0.05);
+}
+
+\draw[dashed, gray!70!white] (A2) --++ (0,1);
+
+
+%Non-tilded bubble
+\coordinate (Ob) at (0.75,0);
+
+\tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.5; \rw=\ray * sin(\alphrad r);};
+
+
+\coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
+\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+%Right angle
+\draw (Oarc) --++(\alph:0.3);
+\draw ($(Oarc)+(0.15,0)$) arc(0:\alph:0.15) node[near end, right]{$\alpha$};
+
+%Left angle
+\coordinate (Oarc2) at ($(Oarc) - (2*\rw,0)$);
+\draw (Oarc2) --++(180-\alph:0.3);
+\draw ($(Oarc2)+(-0.15,0)$) arc(180:180-\alph:0.15) node[near end, left]{$\alpha$};
+
+%Center and radius
+
+\coordinate (Cb) at ($(Ob)+(0,{\ray*cos(\alphrad r)} )$);
+\draw (Cb) node{$\times$} node[above right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc2) node[midway, above left]{$R$};
+
+
+
+%Tilted bubble
+\coordinate (Ob2) at (2.25,0);
+
+\tikzmath{\alph = 40; \alphrad= \alph * pi / 180;
+\dalph=20; \dalphrad=\dalph*pi/180;
+\alphadvrad=\alphrad - \dalphrad;
+\alphrecrad=\alphrad + \dalphrad;
+\ray=0.5; 
+\rayadv=\ray *(1+cos(\alphrad r))/(1+ cos(\alphadvrad r);
+\rayrec=\ray *(1+cos(\alphrad r))/(1+ cos(\alphrecrad r);};
+
+\coordinate (Oarc) at ($(Ob2)+({\ray * sin(\alphrad r)},0)$);
+
+
+\draw (Oarc) arc({-(pi/2-(\alphadvrad)) r}:{(pi/2) r}:\rayadv) arc ({(pi/2) r}:{(pi+pi/2-(\alphrecrad)) r}:\rayrec);
+
+%Right angle
+\draw (Oarc) --++(\alphadvrad r:0.3);
+\draw ($(Oarc)+(0.15,0)$) arc(0:\alphadvrad r:0.15) node[very near end, right]{$\alpha - \dalpha$};
+
+%Left angle
+\coordinate (Oarc2) at ($(Oarc) - ({\rayadv * sin(\alphadvrad r) + \rayrec * sin(\alphrecrad r)},0)$);
+\draw (Oarc2) --++({180-(\alphrecrad r)}:0.3);
+\draw ($(Oarc2)+(-0.15,0)$) arc(180:{180-(\alphrecrad r)}:0.15) node[midway, left]{$\alpha + \dalpha $};
+
+
+
+%Center and radius
+
+\coordinate (Cb) at ($(Oarc)+( -{0.5 * (\rayadv * sin(\alphadvrad r) + \rayrec  * sin(\alphrecrad r) } , {\ray * cos(\alphrad r)} )$);
+\draw (Cb) node{$\times$} node[below right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc2) node[midway, above left]{$R$};
+
+
+%Inclination angle
+
+\draw[densely dotted] (Cb) --++ (0,0.7);
+\draw[densely dotted] (Cb) --++ ({90 - (1*\dalphrad r)}: 0.7 );
+\draw ($(Cb) + (0,0.3)$) arc(90: {90 - (\dalphrad r)}:0.3)  node[midway, above]{$\dalpha$};
+
+
+
+%Flow arrows
+\foreach \i in {2,...,14} 
+{
+\coordinate (Oloc) at ($(A2)+(0.05,\i/15)$);
+\draw[->,>=latex, gray!70!blue] (Oloc)--++({ln(1+0.03*\i)},0);
+}
+
+
+
+\end{tikzpicture}
+
+}
+
+
+
+
+\fbox{
+
+\newcommand{\dalpha}{\text{d}\alpha}
+
+\begin{tikzpicture}[scale=3.0, every node/.style={scale=0.7}]
+
+
+\coordinate (O) at (0,0);
+\coordinate (A2) at (1.4,0);
+\coordinate (A) at (2,0);
+
+
+%Sections and wall
+\draw (O) -- (A);
+\draw ($(O)-(0,0.05)$) -- ($(A)-(0,0.05)$);
+\foreach \i in {0,...,9}
+{
+\draw (\i*0.2,0) -- (\i*0.2+0.1,-0.05);
+}
+
+%\draw[dashed, gray!70!white] (A2) --++ (0,1);
+
+
+%Non-tilded bubble
+\coordinate (Ob) at (1.3,0);
+
+\tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.5; \rw=\ray * sin(\alphrad r);};
+
+
+\coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
+\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+%%Right angle
+\draw (Oarc) --++(\alph:0.3);
+\draw ($(Oarc)+(0.15,0)$) arc(0:\alph:0.15) node[near end, right]{$\alpha$};
+
+%%Left angle
+%\coordinate (Oarc2) at ($(Oarc) - (2*\rw,0)$);
+%\draw (Oarc2) --++(180-\alph:0.3);
+%\draw ($(Oarc2)+(-0.15,0)$) arc(180:180-\alph:0.15) node[near end, left]{$\alpha$};
+
+%Center and radius
+
+\coordinate (Cb) at ($(Ob)+(0,{\ray*cos(\alphrad r)} )$);
+\draw (Cb) node{$\times$} node[above right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc) node[midway, above right]{$R$};
+
+
+
+
+%Flow arrows
+\foreach \i in {2,...,14} 
+{
+\coordinate (Oloc) at ($(O)+(-0.1,\i/15)$);
+\draw[->,>=latex, gray!70!blue] (Oloc)--++({ln(1+0.03*\i)},0);
+}
+
+%Liquid flow
+
+\coordinate (TopB) at ($(Cb)+(0,{\ray+0.05})$);
+\coordinate (TopLeftB) at ($(Cb) + ({90+\alph}:{\ray+0.05})$);
+\coordinate (LeftB) at ($(Cb)+({-\ray-0.05},0)$);
+
+%\draw (TopB) -- (LeftB);
+
+\draw [->, >=latex, blue!70!black] plot [smooth, tension=1.0] coordinates {(TopB) (TopLeftB) (LeftB)}; \draw (TopB) node[above]{$T_{l}(y^{+}_{b})$};
+
+\coordinate (Sp1) at (0.5,{\ray/2});
+\coordinate (Sp2) at (0.75,{\ray/2});
+
+\tikzmath{\rayspi=0.1;};
+
+\draw[->,>=stealth,blue!70!black] plot[domain=0:3.2,smooth,xshift=9,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+\draw[->,>=stealth,blue!70!black] plot[domain=0:3.2,smooth,xshift=17,yshift=8] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+
+%\draw [orange] plot [smooth] coordinates {(1,1) (2,2) (4,-2) (3,2)};
+
+%Bubble velocity
+
+\draw[red,->, >=latex] (Cb)--++({\ray+0.07},0) node[above]{ $\overline{U_{b}}$ };
+
+
+\end{tikzpicture}
+
+}
+
+\fbox{
+
+\begin{tikzpicture}[scale=4.0]
+
+\tikzmath{\rayspi=0.2;};
+
+\coordinate (Cspi) at (0,0);
+\coordinate (Dspi) at ($(Cspi)+(0,\rayspi)$);
+
+\draw[->] plot[domain=0:3,smooth] ({(\x *pi) r}:{\rayspi*(1-\x/4)}) ;
+%{
+%\draw plot[domain=-(pi-\alphr):(pi-\alphr)] ({sqrt(1-(\t)*(\t))*sin(\x r)}, {sqrt(1-(\t)*(\t))*cos(\x r)+\h}, \t);
+%}
+
+
+
+\end{tikzpicture}
+}
+
+\fbox{
+
+\begin{tikzpicture}[scale=2.0]
+
+\tikzmath{\length=3; \diam=0.6;};
+
+\coordinate (A1) at (0,0);
+\coordinate (A2) at ($(A1) + (0,\length)$);
+\coordinate (B1) at (\diam,0);
+\coordinate (B2) at ($(B1)+(0,\length)$);
+
+\draw (A1) -- (A2);
+\draw (B1) -- (B2);
+
+\draw [->, >=latex, blue!70!black] ($(A1)+({\diam / 2},0)$) --++ (0,0.4) node[very near start, below right]{$U_{e}$};
+
+
+\foreach \z in {1,...,4}
+{
+\coordinate (P1) at (0,{\z * \length / 5});
+\coordinate (P2) at (\diam, {\z * \length / 5});
+
+\draw[->, >=latex, red!80!black] ($(P1)+(-0.4,0)$) -- (P1);
+\draw[->, >=latex, red!80!black] ($(P2)+(0.4,0)$) -- (P2);
+
+}
+
+
+\draw[red!80!black] (0,{\length / 2}) node[left]{$\phi_{w}$};
+\draw[red!80!black] (\diam,{\length / 2}) node[right]{$\phi_{w}$};
+
+\draw[orange!50!black, densely dotted] (P1)--(P2) node[very near end, above right]{\footnotesize{~Mesures}};
+
+\draw[green!50!black, densely dashed, <->,>=latex] ($(B1)+(0.5,0)$) -- ($(P2) + (0.5,0)$) node[midway,right]{$L_{heat}$};
+
+\tikzmath{\bubrad=0.03;};
+\foreach \i in {1,...,10}
+{
+
+\draw ({\bubrad+rnd*(\diam-2*\bubrad)}, {\length / 2 + rnd*\length /2}) circle(\bubrad);
+
+\draw ({\bubrad+rnd*(\diam-2*\bubrad)}, {\length / 2 + rnd*\length /2}) circle(\bubrad);
+
+\draw ({\bubrad+rnd*(\diam-2*\bubrad)}, {\length / 2 + rnd*\length /2}) circle(\bubrad);
+
+
+}
+
+
+\end{tikzpicture}
+
+
+}
+
+
+
+\fbox{
+
+\begin{tikzpicture}
+
+\node[draw] (phiw) at (0,0){$\phi_{w}$};
+
+%HFP
+\node[draw] (phicl) at (2,2){$\phi_{c,L}$};
+\node[draw] (phicv) at (2,1){$\phi_{c,V}$};
+\node[draw] (phiq) at (2,-1){$\phi_{q}$};
+\node[draw] (phie) at (2,-2){$\phi_{e}$};
+
+\draw[<-, >=latex] (phiw) to (phicl);
+\draw[<-, >=latex] (phiw) to (phicv);
+\draw[<-, >=latex] (phiw) to (phiq);
+\draw[<-, >=latex] (phiw) to (phie);
+
+%phicl
+\node[draw] (acl) at (,2){$\phi_{c,L}$};
+\node[draw] (hcl) at (2,1){$\phi_{c,V}$};
+\node[draw] (Tliq) at (2,-1){$\phi_{q}$};
+\node[draw] (Tw) at (2,-2){$\phi_{e}$};
+
+
+
+
+\end{tikzpicture}
+
+}
+
+
+
+
+
+
+
+\fbox{
+
+
+\begin{tikzpicture}[scale=3.0, every node/.style={scale=0.7}]
+
+
+%%%Truncated sphere on a vertical wall
+
+\coordinate (O1) at (0,0);
+\coordinate (O2) at (0,2);
+
+\draw (O1)--(O2);
+
+\coordinate (Ob) at (0,1.0);
+
+\tikzmath{\thet = 45; \thetrad= \thet * pi / 180; \ray=0.5; \rw=\ray * sin(\thetrad r);};
+
+
+\coordinate (Oarc) at ($(Ob)-(0,{\ray * sin(\thetrad r)})$);
+\draw (Oarc) arc({(-pi+\thetrad ) r}:{(pi-\thetrad ) r}:\ray);
+
+%Upstream angle
+\draw (Oarc) --++(-90+\thet:0.3);
+\draw ($(Oarc)+(0,-0.15)$) arc(-90:-90+\thet:0.15) node[near end, below]{$\theta$};
+
+%%Downstream angle
+%\coordinate (Oarc2) at ($(Oarc) - (2*\rw,0)$);
+%\draw (Oarc2) --++(180-\thet:0.3);
+%\draw ($(Oarc2)+(-0.15,0)$) arc(180:180-\thet:0.15) node[near end, left]{$\alpha$};
+
+%Center and radius
+
+\coordinate (Cb) at ($(Ob)+({\ray*cos(\thetrad r)},0 )$);
+\draw (Cb) node{$\times$} node[below right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc) node[midway, below right]{$R$};
+
+
+%%Forces
+
+\draw[->, >=latex, violet!70!black] (Ob)--++(\ray/2,0) node[near end, above]{$\vect{F_{CP}}$};
+
+\draw[->, >=latex, red!70!black!] ($(Cb)+(\ray,0)$)--++(\ray/2,0) node[very near end, above]{$\vect{F_{L}}$};
+\draw[->, >=latex, red!70!black!] ($(Cb)+(0,\ray)$)--++(0,\ray/2) node[very near end, right]{$\vect{F_{D}}$};
+
+\coordinate (Oarc2) at ($(Oarc)+(0,{2*\rw})$);
+\draw[->, >=latex, violet] (Oarc)--++(90+\thet:\ray/2) node[very near end, above]{$\vect{F_{C}}$};
+\draw[->, >=latex, violet] (Oarc2)--++(-90-\thet:\ray/2) node[very near end, below]{$\vect{F_{C}}$};
+
+\draw[->, >=latex, blue!70!black] (Cb)--++(0,\ray/1.5) node[very near end, right]{$\vect{F_{B}}$};
+
+
+\draw[->, >=latex, green!50!black!] (Cb)--++(90+\thet/1.5:\ray/1.5) node[very near end, above]{$\vect{F_{AM}}$};
+
+%Gravity
+
+\draw[->, >=latex, blue!30!black]  ($(Cb)+({1.5*\ray},{1.5*\ray})$)--++(0,-\ray/2) node[very near end, right]{$\vect{g}$};
+
+
+%Flow arrows
+\foreach \i in {2,...,14} 
+{
+\coordinate (Oloc) at ($(O1)+(\i/15,0.05)$);
+\draw[->,>=latex, gray!70!blue] (Oloc)--++(0,{ln(1+0.03*\i)});
+}
+
+
+
+
+
+%Tilted bubble
+\coordinate (Ob2) at (2.5,1.0);
+
+\coordinate (O1) at (2.5,0);
+\coordinate (O2) at (2.5,2);
+\draw (O1)--(O2);
+
+\tikzmath{\thet = 40; \thetrad= \thet * pi / 180;
+\dthet=10; \dthetrad=\dthet*pi/180;
+\thetadvrad=\thetrad - \dthetrad;
+\thetrecrad=\thetrad + \dthetrad;
+\thetadv=\thetadvrad*180/pi;
+\thetrec=\thetrecrad*180/pi;
+\ray=0.5; 
+\rayadv=\ray *(1+cos(\thetrad r))/(1+ cos(\thetadvrad r);
+\rayrec=\ray *(1+cos(\thetrad r))/(1+ cos(\thetrecrad r);};
+
+\coordinate (Oarc) at ($(Ob2)-(0,{\ray * sin(\thetrad r)})$);
+
+
+\draw (Oarc) arc({-pi+(\thetrecrad)) r}:{0 r}:\rayrec) arc ({0 r}:{pi-(\thetadvrad)) r}:\rayadv);
+
+%Upstream angle
+\draw (Oarc) --++(-90+\thetrecrad r:0.3) node[very near end, below]{$\theta + \dtheta$};
+\draw ($(Oarc)+(0,-0.15)$) arc(-90:-90+\thetrecrad r:0.15) ;
+
+%Downstream angle
+\coordinate (Oarc2) at ($(Oarc) + (0,{\rayadv * sin(\thetadvrad r) + \rayrec * sin(\thetrecrad r)})$);
+\draw (Oarc2) --++({90-(\thetadvrad r)}:0.3);
+\coordinate (angadv) at ($(Oarc2) +({90-(\thetadvrad r)}:0.3)$);
+\draw (angadv)  node[above]{$\theta - \dtheta $};
+\draw ($(Oarc2)+(0,+0.15)$) arc(90:{90-(\thetadvrad r)}:0.15);
+
+
+
+%Center and radius
+
+\coordinate (Cb) at ($(Oarc2)+( {\ray * cos(\thetrad r)} , {-0.5 * (\rayadv * sin(\thetadvrad r) + \rayrec  * sin(\thetrecrad r) )})$);
+\draw (Cb) node{$\times$} node[below right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc) node[midway, above left]{$R$};
+
+
+%Inclination angle
+
+%\draw[densely dotted] (Cb) --++ (0.7,0);
+%\draw[densely dotted] (Cb) --++ ({(1*\dthetrad r)}: 0.7 );
+%\draw ($(Cb) + (0.3,0)$) arc(0: {(\dthetrad r)}:0.3)  node[midway, right]{$\dtheta$};
+%
+%
+
+
+
+%%Forces
+
+\draw[->, >=latex, violet!70!black] (Ob2)--++(\ray/2,0) node[near end, above]{$\vect{F_{CP}}$};
+
+\draw[->, >=latex, red!70!black!] ($(Cb)+(\ray,0)$)--++(\ray/2,0) node[very near end, above]{$\vect{F_{L}}$};
+\draw[->, >=latex, red!70!black!] ($(Cb)+(0,-\rayadv*0.95)$)--++(0,-\ray/2) node[very near end, right]{$\vect{F_{D}}$};
+\draw[->, >=latex, red] ($(Cb)+(0,+\rayrec*1.04)$)--++(0,+\ray/2) node[very near end, right]{$\vect{U_{b}}$};
+
+
+\draw[->, >=latex, violet] (Oarc)--++(90+\thetrec:\ray/2) node[very near end, above]{$\vect{F_{C}}$};
+\draw[->, >=latex, violet] (Oarc2)--++(-90-\thetadv:\ray/2) node[very near end, below]{$\vect{F_{C}}$};
+
+\draw[->, >=latex, blue!70!black] (Cb)--++(0,\ray/1.5) node[very near end, right]{$\vect{F_{B}}$};
+
+
+\draw[->, >=latex, green!50!black!] (Cb)--++(90-\thet:-\ray/1.5) node[very near end, right]{$\vect{F_{AM}}$};
+
+%Gravity
+
+\draw[->, >=latex, blue!30!black]  ($(Cb)+({1.5*\ray},{1.5*\ray})$)--++(0,-\ray/2) node[very near end, right]{$\vect{g}$};
+
+
+
+%Flow arrows
+\foreach \i in {2,...,14} 
+{
+\coordinate (Oloc) at ($(O1)+(\i/15,0.05)$);
+\draw[->,>=latex, gray!70!blue] (Oloc)--++(0,{ln(1+0.03*\i)});
+}
+
+
+
+\end{tikzpicture}
+
+}
+
+
+
+
+\fbox{
+
+\begin{tikzpicture}[scale=3.0, every node/.style={scale=0.7}]
+
+
+\coordinate (O) at (0,0);
+\coordinate (A2) at (1.6,0);
+\coordinate (A) at (3.2,0);
+
+
+%Sections and wall
+\draw (O) -- (A2);
+\draw ($(O)-(0,0.05)$) -- ($(A2)-(0,0.05)$);
+\foreach \i in {0,...,7}
+{
+\draw (\i*0.2,0) -- (\i*0.2+0.1,-0.05);
+}
+
+
+%Non-tilded bubble
+\coordinate (Ob) at (0.75,0);
+
+\tikzmath{\alph = 0; \alphrad= \alph * pi / 180; \ray=0.5; \rw=\ray * sin(\alphrad r);};
+
+
+\coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
+\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+\tikzmath{\raybis= 0.8*\ray;}
+\coordinate (Oarc) at ($(Ob)+({\raybis * sin(\alphrad r)},0)$);
+\draw[loosely dashed] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\raybis);
+
+
+\coordinate (Oarc2) at ($(Oarc) - (2*\rw,0)$);
+
+%Center and radius
+
+\coordinate (Cb) at ($(Ob)+(0,{\ray*cos(\alphrad r)} )$);
+\draw (Cb) node{$\times$} node[above right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc2) node[midway, above left]{$R$};
+
+
+%Flow arrows
+\foreach \i in {2,...,14} 
+{
+\coordinate (Oloc) at ($(O)+(-0.1,\i/15)$);
+\draw[->,>=latex, gray!70!blue] (Oloc)--++({ln(1+0.03*10)},0);
+}
+
+\draw ($(Oloc) + ({ln(1+0.05*7)},0)$) node[below right]{${\overline{U_{L}}}$};
+
+\draw[red, thick, ->, >=stealth] (Cb)--++(0.35*\ray,-0.65*\ray) node[midway, right] {$\redmath{\vect{F_{AM}}}$};
+
+\end{tikzpicture}
+
+}
+
+
+
+
+
+\fbox{
+
+\begin{tikzpicture}[scale=3.0, every node/.style={scale=0.7}]
+
+
+\coordinate (O) at (0,0);
+\coordinate (A2) at (1.6,0);
+\coordinate (A) at (3.2,0);
+
+
+%Sections and wall
+\draw[dotted] (O) -- (A2);
+
+
+%Non-tilded bubble
+\coordinate (Ob) at (0.75,0);
+
+\tikzmath{\alph = 90; \alphrad= \alph * pi / 180; \ray=0.5; \rw=\ray * sin(\alphrad r);};
+
+
+\tikzmath{\raybis= 0.8*\ray;}
+\coordinate (Oarc) at ($(Ob)+({\raybis * sin(\alphrad r)},0)$);
+\draw[loosely dashed] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\raybis);
+
+\coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
+\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+
+
+
+\coordinate (Oarc2) at ($(Oarc) - (2*\rw,0)$);
+
+%Center and radius
+
+\coordinate (Cb) at ($(Ob)+(0,{\ray*cos(\alphrad r)} )$);
+\draw (Cb) node{$\times$} node[above right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Cb) --++($({\ray*sin(-45)},{\ray*cos(-45)})$) node[midway, below left]{$R$};
+
+\draw (Oarc)--++(-2*\ray,0);
+
+\draw[red, thick, ->, >=stealth] ($(Cb)+(0,\ray)$)--++(0,-0.75*\ray) node[midway, right] {$\redmath{\vect{F_{AM}}}$};
+
+
+\end{tikzpicture}
+
+}
+
+
+
+
+
+%\beginpgfgraphicnamed{forces} %%IN COMMAND LINE : pdflatex --jobname=forces draw.tex
+
+
+\fbox{
+
+
+\begin{tikzpicture}[scale=3.5, every node/.style={scale=0.9}]
+
+
+%%%%Truncated sphere on a vertical wall
+
+
+%Tilted bubble
+\coordinate (Ob2) at (2.5,1.0);
+
+\coordinate (O1) at (2.5,0);
+\coordinate (O2) at (2.5,2);
+\draw (O1)--(O2);
+
+\tikzmath{\thet = 40; \thetrad= \thet * pi / 180;
+\dthet=10; \dthetrad=\dthet*pi/180;
+\thetadvrad=\thetrad - \dthetrad;
+\thetrecrad=\thetrad + \dthetrad;
+\thetadv=\thetadvrad*180/pi;
+\thetrec=\thetrecrad*180/pi;
+\ray=0.5; 
+\rayadv=\ray *(1+cos(\thetrad r))/(1+ cos(\thetadvrad r);
+\rayrec=\ray *(1+cos(\thetrad r))/(1+ cos(\thetrecrad r);};
+
+\coordinate (Oarc) at ($(Ob2)-(0,{\ray * sin(\thetrad r)})$);
+
+
+\draw (Oarc) arc({-pi+(\thetrecrad)) r}:{0 r}:\rayrec) arc ({0 r}:{pi-(\thetadvrad)) r}:\rayadv);
+
+%Upstream angle
+\draw (Oarc) --++(-90+\thetrecrad r:0.3) node[very near end, below]{$\theta + \dtheta$};
+\draw ($(Oarc)+(0,-0.15)$) arc(-90:-90+\thetrecrad r:0.15) ;
+
+%Downstream angle
+\coordinate (Oarc2) at ($(Oarc) + (0,{\rayadv * sin(\thetadvrad r) + \rayrec * sin(\thetrecrad r)})$);
+\draw (Oarc2) --++({90-(\thetadvrad r)}:0.3);
+\coordinate (angadv) at ($(Oarc2) +({90-(\thetadvrad r)}:0.3)$);
+\draw (angadv)  node[above]{$\theta - \dtheta $};
+\draw ($(Oarc2)+(0,+0.15)$) arc(90:{90-(\thetadvrad r)}:0.15);
+
+
+
+%Center and radius
+
+\coordinate (Cb) at ($(Oarc2)+( {\ray * cos(\thetrad r)} , {-0.5 * (\rayadv * sin(\thetadvrad r) + \rayrec  * sin(\thetrecrad r) )})$);
+\draw (Cb) node{$\times$} node[below right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc) node[midway, above left]{$R$};
+
+
+\draw[densely dashed, <->, >=latex] ($(Oarc) + (-\ray/12,+\ray/15) $) -- ($(Oarc2) + (-\ray/12,-\ray/6) $) node[midway, left]{$d_{w}$};
+
+
+
+%Inclination angle
+
+\draw[densely dotted] (Cb) --++ (\ray,0);
+\draw[densely dotted] (Cb) --++ ({(1*\dthetrad r)}: \ray );
+\draw ($(Cb) + (0.3,0)$) arc(0: {(\dthetrad r)}:0.3)  node[very near end, above]{$\dtheta$};
+
+
+
+
+
+%%Forces
+
+\draw[->, >=latex, violet!70!black] (Ob2)--++(\ray/2,0) node[near end, above]{$\vect{F_{CP}}$};
+
+\draw[->, >=latex, red!70!black!] ($(Cb)+(\ray,0)$)--++(\ray/2,0) node[very near end, above]{$\vect{F_{L}}$};
+\draw[->, >=latex, red!70!black!] ($(Cb)+({sin(5)},{cos(5)*\rayrec*1.04})$)--++(0,+\ray/2) node[very near end, right]{$\vect{F_{D}}$};
+\draw[->, >=latex, red] ($(Cb)+(0,+\rayrec*1.04)$)--++(0,+\ray/1.5) node[very near end, left]{$\vect{U_{b}}$};
+
+
+\draw[->, >=latex, violet] (Oarc)--++(90+\thetrec:\ray/2) node[very near end, left]{$\vect{F_{C}}$};
+\draw[->, >=latex, violet] (Oarc2)--++(-90-\thetadv:\ray/2) node[very near end, left]{$\vect{F_{C}}$};
+
+\draw[->, >=latex, blue!70!black] (Cb)--++(0,\ray/1.5) node[very near end, right]{$\vect{F_{B}}$};
+
+
+\draw[->, >=latex, green!50!black!] (Cb)--++(160-\thet:\ray/1.5) node[very near end, above]{$\vect{F_{AM}}$};
+
+%Gravity
+
+\draw[->, >=latex, blue!30!black]  ($(Cb)+({1.5*\ray},{1.5*\ray})$)--++(0,-\ray/2) node[very near end, right]{$\vect{g}$};
+
+
+
+%Flow arrows
+\foreach \i in {2,...,14} 
+{
+\coordinate (Oloc) at ($(O1)+(\i/15,0.05)$);
+\draw[->,>=latex, gray!70!blue] (Oloc)--++(0,{ln(1+0.03*\i)});
+}
+\draw[gray!70!blue] ($(Oloc)+(0.1,0.1)$) node{$\vect{U_{L}}$};
+
+%%Referential vectors
+\coordinate (Ovect) at (4.0,0);
+\draw[->, >=latex] (Ovect)--++(0.3,0) node[very near end, above right]{$\vect{e_{y}}$};
+\draw[->, >=latex] (Ovect)--++(0,0.3) node[very near end, above right]{$\vect{e_{x}}$};
+
+
+
+\end{tikzpicture}
+
+}
+
+
+%\endpgfgraphicnamed
+
+
+
+
+\beginpgfgraphicnamed{shi_scheme}
+
+\fbox{
+
+\begin{tikzpicture}[scale=3.0, every node/.style={scale=0.7}]
+
+
+\coordinate (O) at (0,0);
+\coordinate (A2) at (2.0,0);
+\coordinate (A) at (3.2,0);
+
+
+%Sections and wall
+\draw (O) -- (A2);
+\draw ($(O)-(0,0.05)$) -- ($(A2)-(0,0.05)$);
+\foreach \i in {0,...,9}
+{
+\draw (\i*0.2,0) -- (\i*0.2+0.1,-0.05);
+}
+
+
+%Parameters
+\coordinate (Ob) at (1.2,0.6);
+
+\coordinate (Ow) at (1.2,0);
+
+
+\tikzmath{\alph = 0; \alphrad= \alph * pi / 180; \ray=0.5; \rw=\ray * sin(\alphrad r);};
+
+%Viscous influence zone
+
+\draw[dashed, black, very thick] (Ob) circle(\ray);
+
+\fill[color = blue!20!white, opacity=0.5] (Ob) circle(\ray);
+
+%bubble
+
+\draw[black, very thick] (Ob) circle({\ray/1.5});
+
+\fill[white] (Ob) circle({\ray/1.5});
+
+\draw (Ob) node{$\times$} ; % node[above right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Ob) --++ (0,+\ray/1.5) node[midway, left]{$R$};
+
+\draw[densely dashed, <->, >=latex] (Ob) -- (Ow) node[near end, right]{$y$};
+
+
+\draw[densely dashed, <->, >=latex] (Ob) --++ (-\ray,0) node[left]{$\dfrac{\nu_{L}}{\left| U_{rel} \right|}$};
+
+
+
+
+%Center and radius
+
+
+%Flow arrows
+\foreach \i in {2,...,14} 
+{
+\coordinate (Oloc) at ($(O)+(-0.1,\i/15)$);
+\draw[->,>=latex, gray!70!blue] (Oloc)--++({ln(1+0.03*\i)},0);
+}
+
+
+
+\draw[gray!70!blue] ($(Oloc)+(0.1,0.1)$) node{$\vect{U_{L}}$};
+
+
+
+
+\end{tikzpicture}
+
+}
+
+
+\endpgfgraphicnamed
+
+
+%\beginpgfgraphicnamed{newbub_sugrue}
+
+
+\fbox{
+
+
+\begin{tikzpicture}[scale=3.5, every node/.style={scale=0.9}]
+
+
+%%%%Truncated sphere on a vertical wall
+
+
+%Tilted bubble
+\coordinate (Ob2) at (2.5,1.0);
+
+\coordinate (O1) at (2.5,0);
+\coordinate (O2) at (2.5,2);
+\draw (O1)--(O2);
+
+\tikzmath{\thet = 30 ; \thetrad= \thet * pi / 180;
+\dthet= 25 ; \dthetrad=\dthet*pi/180;
+\thetadvrad=\thetrad - \dthetrad;
+\thetrecrad=\thetrad + \dthetrad;
+\thetadv=\thetadvrad*180/pi;
+\thetrec=\thetrecrad*180/pi;
+\ray=0.5; 
+\rayadv=\ray *(1+cos(\thetrad r))/(1+ cos(\thetadvrad r);
+\rayrec=\ray *(1+cos(\thetrad r))/(1+ cos(\thetrecrad r);};
+
+\coordinate (Oarc) at ($(Ob2)-(0,{\ray * sin(\thetrad r)})$);
+
+
+\draw (Oarc) arc({-pi+(\thetrecrad)) r}:{0 r}:\rayrec) arc ({0 r}:{pi-(\thetadvrad)) r}:\rayadv);
+
+
+
+
+\end{tikzpicture}
+
+}
+
+%\endpgfgraphicnamed
+
+\end{document}
