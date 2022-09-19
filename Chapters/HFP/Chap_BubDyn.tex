@@ -794,38 +794,6 @@ On Table \ref{tab:all_BdF}, we sum up some of the mentioned force balance approa
 \end{table}
 
 
-
-\subsection{Bubble Growth}\label{subsec:bub_growth}
-
-The question of the bubble growth law during its lifetime including sliding is still an open question that aims to cover various types of heat transfer mechanisms:
-
-\begin{itemize}
-\item Evaporation due to superheated liquid near the bubble base ;
-\item Evaporation of a liquid microlayer trapped between the base of the bubble and the wall ;
-\item Condensation on top of the bubble when it reaches subcooled liquid ;
-\item Convective heat transfer due to relative velocity between the bubble and the liquid.
-\end{itemize}
-
-To our knowledge, many authors that have been tackling this issue had to consider empirical or fitted parameters when trying to exhaustively account for all the above heat transfers. For instance, Zhou \cite{zhou_experimental_2020} and Yoo \cite{yoo_development_2018} have proposed growth models that consider all the previously mentioned mechanisms. However, to fully close their mathematical model, many empirical values were used such as:
-
-\begin{itemize}
-\item The ratio between the bubble projected area and the microlayer area ;
-\item The fraction of bubble area facing subcooling liquid ;
-\item Value of coefficients in the condensation law \cite{levenspiel_collapse_1959}.
-\end{itemize}
-
-Moreover, those models postulate the existence of a microlayer contributing to the growth while recent numerical and experimental investigations showed that the bubble may as well grow with a microlayer or in a pure contact line regime depending on the operating conditions \cite{urbano_direct_2018, bures_modelling_2021, kossolapov_experimental_2021}.
-
-In order to assess the force modeling proposed before, we choose a simpler growth law derived from heat conduction in the superheated liquid layer \cite{plesset_growth_1954}. 
-
-\begin{equation}
-R\parth{t} = K\Ja_{w} \sqrt{\eta_{L}t}
-\end{equation}
-where $K$ is an adjustable constant, with an upper bound around 2 for a spherical bubble in a quiescent unbounded superheated liquid \cite{plesset_growth_1954, yun_prediction_2012}. This value can thus be lower in the case of subcooled flow boiling. For instance, later comparisons with experimental measurements suggest values of $K$ slightly below 1 for subcooled flow boiling (Figure \ref{fig:slide_maity}).
-
-This type of bubble growth has been widely used, and showed good agreement with many experimental observations and is particularly valid for early growth stages or small bubbles at high pressure.
-
-
 \subsection{Liquid Velocity}\label{subsec:liq_vel}
 
 To compute the liquid velocity and shear rate at bubble center height, we use the wall law of Reichardt \cite{reichardt_vollstandige_1951}, which describes the velocity profile from the viscous sublayer to the logarithmic region.

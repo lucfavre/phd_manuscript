@@ -118,20 +118,52 @@ A_{q,1b} = &
 \end{dcases}
 \end{align}
 
-Which can be re-expressed by defining $l_{sl}^{*}=\dfrac{l_{sl}}{R_{lo}}$ and $A_{q,1b}^{*}=\dfrac{A_{q,1b}}{\pi R_{lo}^{2}}$
+Which can be re-expressed by defining ${l_{sl}}^{*}=\dfrac{l_{sl}}{R_{lo}}$ and ${A_{q,1b}}^{*}=\dfrac{A_{q,1b}}{\pi R_{lo}^{2}}$
 
 \begin{align}
-A_{q,1b}^{*} = &
+{A_{q,1b}}^{*} = &
 \begin{dcases}
-1 & \text{if } l_{sl}^{*}\leq 1- \frac{R_{d}}{R_{lo}} \\
+1 & \text{if } {l_{sl}}^{*}\leq 1- \frac{R_{d}}{R_{lo}} \\
 %
-\frac{1}{2}\parth{1+\parth{\frac{R_{d}}{R_{lo}}}^{2} } + \frac{l_{sl}^{*}}{\pi}\parth{1+\frac{R_{d}}{R_{lo}}} & \text{if } l_{sl}^{*} \geq 1 + \frac{R_{d}}{R_{lo}}
+\frac{1}{2}\parth{1+\parth{\frac{R_{d}}{R_{lo}}}^{2} } + \frac{{l_{sl}}^{*}}{\pi}\parth{1+\frac{R_{d}}{R_{lo}}} & \text{if } {l_{sl}}^{*} \geq 1 + \frac{R_{d}}{R_{lo}}
 \end{dcases}
 \end{align}
-and we linearly interpolate those two expressions for the region where $1-\dfrac{R_{d}}{R_{lo}}\geq l_{sl} \geq 1+\dfrac{R_{d}}{R_{lo}}$.
+and we linearly interpolate those two expressions for the region where $1-\dfrac{R_{d}}{R_{lo}}\geq {l_{sl}}^{*} \geq 1+\dfrac{R_{d}}{R_{lo}}$.
 
 
-\subsection{Bubble Growth Time}
+\subsection{Bubble Growth}
+
+
+The question of the bubble growth law during its lifetime including sliding is still an open question that aims to cover various types of heat transfer mechanisms:
+
+\begin{itemize}
+\item Evaporation due to superheated liquid near the bubble base ;
+\item Evaporation of a liquid microlayer trapped between the base of the bubble and the wall ;
+\item Condensation on top of the bubble when it reaches subcooled liquid ;
+\item Convective heat transfer due to relative velocity between the bubble and the liquid.
+\end{itemize}
+
+To our knowledge, many authors that have been tackling this issue had to consider empirical or fitted parameters when trying to exhaustively account for all the above heat transfers. For instance, Zhou \cite{zhou_experimental_2020} and Yoo \cite{yoo_development_2018} have proposed growth models that consider all the previously mentioned mechanisms. However, to fully close their mathematical model, many empirical values were used such as:
+
+\begin{itemize}
+\item The ratio between the bubble projected area and the microlayer area ;
+\item The fraction of bubble area facing subcooling liquid ;
+\item Value of coefficients in the condensation law \cite{levenspiel_collapse_1959}.
+\end{itemize}
+
+Moreover, those models postulate the existence of a microlayer contributing to the growth while recent numerical and experimental investigations showed that the bubble may as well grow with a microlayer or in a pure contact line regime depending on the operating conditions \cite{urbano_direct_2018, bures_modelling_2021, kossolapov_experimental_2021}.
+
+In order to assess the force modeling proposed before, we choose a simpler growth law derived from heat conduction in the superheated liquid layer \cite{plesset_growth_1954}. 
+
+\begin{equation}
+R\parth{t} = K\Ja_{w} \sqrt{\eta_{L}t}
+\end{equation}
+where $K$ is an adjustable constant, with a value around the unity depending on the boiling conditions, often expressed as $K=\dfrac{2b}{\sqrt{\pi}}$.  In the case of pool boiling in an uniformly superheated liquid, Plesset \& Zwick \cite{plesset_growth_1954} found $b=\sqrt{3}$, Forster \& Zuber \cite{forster_growth_1954} obtained $b=\pi / 2$ while Zuber  \cite{zuber_dynamics_1961} stated that values of $b$ should be lying between 1 and $\sqrt{3}$. More recently, Yun \etal \cite{yun_prediction_2012} used $b=1.56$. We can thus observe that $K=2$ is likely to be an upper bound value for the growth constant. This value can thus be lower in the case of subcooled flow boiling. For instance, later comparisons with experimental measurements suggest values of $K$ slightly below 1 for subcooled flow boiling (Figure \ref{fig:slide_maity}).
+
+This type of bubble growth has been widely used, and showed good agreement with many experimental observations and is particularly valid for early growth stages or small bubbles at high pressure \cite{kossolapov_experimental_2021, plesset_growth_1954, klausner_vapor_1993}.
+
+
+
 
 \begin{table}[h!]
 
@@ -147,6 +179,8 @@ Author & Fluid & $D_{h}$ [mm] & $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [
 \\
 
 Maity \cite{maity_effect_2000} \newline (2000) & Water & 20 & 1.01 & 0 - 239.6 & 0.3 - 0.7 & N.A. & 5 - 5.9 & 0.788 - 1.71 (9) \\
+
+Kossolapov \cite{kossolapov} \newline (2021) & Water & 20 & 20 - 40 & 500 - 1500 & 0.3 - 0.7 & N.A. & 5 - 5.9 & 0.788 - 1.71 (9) \\
 
 \hline
 \end{tabular}

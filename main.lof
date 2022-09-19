@@ -14,24 +14,24 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Representation of the shape functions\relax }}{23}{figure.caption.19}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Sketch of the forces applied to the bubble facing an upward flow $\overline {U_{L}}$ and sliding at velocity $\overline {U_{b}}$\relax }}{31}{figure.caption.21}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Drag correction from Shi \textit {et al.}\xspace \blx@tocontentsinit {0}\cite {shi_drag_2021}.\relax }}{34}{figure.caption.22}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Dominance map regarding departure by sliding. Boundaries plotted for water at 1 bar and $D_{d}=0.5$mm. ($K=2$)\relax }}{39}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Examples of qualitative analysis using the non-dimensional regime map\relax }}{40}{figure.caption.25}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Dominance map plotted for water at different pressures and bubble departure diameters. ($K=2$)}}}{40}{subfigure.6.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Dominance map for R12 as simulating fluid for PWR. $D_{d}=0.05$mm is chosen according to R12 measurements from Garnier \textit {et al.}\xspace \blx@tocontentsinit {0}\cite {garnier_local_2001} who observed bubbles of $\sim 0.1$mm diameter after lift-off. ($K=2$)}}}{40}{subfigure.6.2}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Dominance maps for each water data sets from Table \ref {tab:exp_data}.\relax }}{42}{figure.caption.27}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Maity data}}}{42}{subfigure.7.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Guan data}}}{42}{subfigure.7.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Sugrue data}}}{42}{subfigure.7.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Chen data}}}{42}{subfigure.7.4}%
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Ren data}}}{42}{subfigure.7.5}%
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Kossolapov data}}}{42}{subfigure.7.6}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Dominance map regarding departure by sliding. Boundaries plotted for water at 1 bar and $D_{d}=0.5$mm. ($K=2$)\relax }}{38}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Examples of qualitative analysis using the non-dimensional regime map\relax }}{39}{figure.caption.25}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Dominance map plotted for water at different pressures and bubble departure diameters. ($K=2$)}}}{39}{subfigure.6.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Dominance map for R12 as simulating fluid for PWR. $D_{d}=0.05$mm is chosen according to R12 measurements from Garnier \textit {et al.}\xspace \blx@tocontentsinit {0}\cite {garnier_local_2001} who observed bubbles of $\sim 0.1$mm diameter after lift-off. ($K=2$)}}}{39}{subfigure.6.2}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Dominance maps for each water data sets from Table \ref {tab:exp_data}.\relax }}{41}{figure.caption.27}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Maity data}}}{41}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Guan data}}}{41}{subfigure.7.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Sugrue data}}}{41}{subfigure.7.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Chen data}}}{41}{subfigure.7.4}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Ren data}}}{41}{subfigure.7.5}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Kossolapov data}}}{41}{subfigure.7.6}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Predicted bubble departure diameters\relax }}{44}{figure.caption.28}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Proposed model without accounting for contact angle uncertainties}}}{44}{subfigure.8.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mazzocco model}}}{44}{subfigure.8.2}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Initially assumed, real and reassessed bubble shape for Sugrue cases (picture adapted from \blx@tocontentsinit {0}\cite {sugrue_experimental_2014}).\relax }}{45}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Proposed model performance while accounting for contact angle uncertainties\relax }}{46}{figure.caption.30}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Modified contact angle and hysteresis values.}}}{46}{subfigure.10.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Predicted bubble departure diameters.}}}{46}{subfigure.10.2}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Proposed model performance while accounting for contact angle uncertainties\relax }}{45}{figure.caption.30}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Modified contact angle and hysteresis values.}}}{45}{subfigure.10.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Predicted bubble departure diameters.}}}{45}{subfigure.10.2}%
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Bubble sliding velocity predictions on Maity cases\relax }}{48}{figure.caption.32}%
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\Delta T_{w}=5.0$\degree C, $G_{L}=73.8~\text {kg/m$^{2}$/s}$}}}{48}{subfigure.11.1}%
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\Delta T_{w}=5.9$\degree C, $G_{L}=143.8~\text {kg/m$^{2}$/s}$}}}{48}{subfigure.11.2}%
@@ -46,13 +46,13 @@
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\phi _{w}=0.613$~MW/m$^\mathrm {2}$, $G_{L}=1504~\text {kg/m$^{2}$/s}$}}}{50}{subfigure.13.3}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Sketch of the considered HFP {\color {red} A terminer, je dois ajouter des flèches pour indiquer les flux !}\relax }}{52}{figure.caption.35}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Model from Lemmert \& Chawla\relax }}{55}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Model from Hibiki \& Ishii\relax }}{55}{figure.caption.39}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Model from Li \textit {et al.}\xspace \relax }}{55}{figure.caption.40}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Model from Zhou \textit {et al.}\xspace \relax }}{55}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Model from Lemmert \& Chawla\relax }}{56}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Model from Hibiki \& Ishii\relax }}{56}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Model from Li \textit {et al.}\xspace \relax }}{56}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Model from Zhou \textit {et al.}\xspace \relax }}{56}{figure.caption.40}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Picture of the mixing device (left) and its fine meshing (right).\relax }}{60}{figure.caption.41}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces NCFD (lines) vs. Exp. (circles) - $\alpha $ profiles for two MV positions (23.5$D_{h}$ in blue, $10D_{h}$ in orange) - $T_{in}=65\degree $C (left), $T_{in}=69\degree $C (middle), $T_{in}=75\degree $C (right) - Simulations using two meshes M1 (coarse) and M2 (fine) for $T_{in}=69\degree $C.\relax }}{61}{figure.caption.42}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces NCFD vs. Exp. - Top \& Middle : Radial velocity and turbulent RMS ($z=30$mm \& $z=440$mm) - Bottom : Axial velocity and turbulent RMS ($z=440$mm).\relax }}{62}{figure.caption.43}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Picture of the mixing device (left) and its fine meshing (right).\relax }}{61}{figure.caption.41}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces NCFD (lines) vs. Exp. (circles) - $\alpha $ profiles for two MV positions (23.5$D_{h}$ in blue, $10D_{h}$ in orange) - $T_{in}=65\degree $C (left), $T_{in}=69\degree $C (middle), $T_{in}=75\degree $C (right) - Simulations using two meshes M1 (coarse) and M2 (fine) for $T_{in}=69\degree $C.\relax }}{62}{figure.caption.42}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces NCFD vs. Exp. - Top \& Middle : Radial velocity and turbulent RMS ($z=30$mm \& $z=440$mm) - Bottom : Axial velocity and turbulent RMS ($z=440$mm).\relax }}{63}{figure.caption.43}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
