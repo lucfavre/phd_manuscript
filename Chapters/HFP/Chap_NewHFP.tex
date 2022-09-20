@@ -519,7 +519,7 @@ Author & Fluid & $D_{h}$ [mm] & $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [
 
 Maity \cite{maity_effect_2000} \newline (2000) & Water & 20 & 1.01 & 0 - 239.6 & 0.3 - 0.7 & N.A. & 5 - 5.9 & 0.788 - 1.71 (9) \\
 
-Kossolapov \cite{kossolapov} \newline (2021) & Water & 20 & 20 - 40 & 500 - 1500 & 0.3 - 0.7 & N.A. & 5 - 5.9 & 0.788 - 1.71 (9) \\
+Kossolapov \cite{kossolapov_experimental_2021} \newline (2021) & Water & 20 & 20 - 40 & 500 - 1500 & 0.3 - 0.7 & N.A. & 5 - 5.9 & 0.788 - 1.71 (9) \\
 
 \hline
 \end{tabular}
@@ -566,9 +566,107 @@ Maity \cite{maity_effect_2000} \newline (2000) & Water & 20 & 1.01 & 0 - 239.6 &
 
 \subsection{Nucleation Site Density}
 
-The Nucleation Site Density is among the most influencing parameters over the HFP models predictions, particularly regarding wall temperature. Indeed, its value directly controls the density of bubbles generated at the heater and therefore impacts both the boiling ($\phi_{e}$) and quenching ($\phi_{q}$) heat fluxes to the first order. Being able to come up with correct predictions of the NSD is thus mandatory if one wishes to properly capture the thermal behavior of the boiling surface.
+The Nucleation Site Density is among the most influencing parameters over the HFP models predictions, particularly regarding wall temperature. Indeed, its value directly controls the density of bubbles generated at the heater and therefore impacts both the boiling ($\phi_{e}$) and quenching ($\phi_{q}$) heat fluxes to the first order. Being able to come up with correct predictions of the NSD is thus critical if one wishes to properly capture the thermal behavior of the boiling surface.
 
-However, the value of $N_{sit}$ is actually influenced by many parameters being either linked to thermal-hydraulics (wall temperature, pressure, operating fluid) or the heater material (roughness, wettability).
+However, the value of $N_{sit}$ is actually influenced by many parameters being either linked to thermal-hydraulics (wall temperature, pressure, operating fluid) or the heater material (roughness, wettability). That is why its value is often estimated through empirical correlations, for which many different expression have been proposed over the years since the end of the XX\textsuperscript{th} century.
+
+\npar
+
+One of the firstly identified behavior of the NSD was its power dependency with the wall superheat ($N_{sit} \propto {\Delta T_{w}}^{m}$), which is form adopted in the correlation of Lemmert \& Chawla \cite{Lemmert} : 
+
+\begin{align}
+N_{sit}=\crocht{210\parth{T_{w}-T_{sat}}}^{1.8}
+\label{eq:nsit_lemmert}
+\end{align}
+
+\begin{remark*}{}
+This law is used in the HFP model of Kurul \& Podowski and NEPTUNE\_CFD to compute $N_{sit}$
+\end{remark*}
+
+However, such an expression misses the influence of other parameters such as pressure, which has been proven to be strongly impacting the range of active cavities that can generate bubbles as shown on Figure \ref{fig:nsd_P_koss} and induces a larger bubble density over the heater. 
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{img/NSD/nsd_press_koss.png}
+\caption{HSV Visualization of bubble density at various pressures adapted from Kossolapov \cite{kossolapov_experimental_2021} (left to right : 1.01 bar, 3 bar, 19.8 bar, 75.8 bar). }
+\label{fig:nsd_P_koss}
+\end{figure}
+
+\npar
+
+Moreover, experimental measurements such as in Borishanskii \cite{Borishanskii} showed that the power dependency on the wall superheat changes by increasing both with pressure and the superheat value itself. This was accounted for by Hibiki \& Ishii in 2003 \cite{hibiki_ishii} who came up with a new correlation that requires an estimation of the minimum activated cavity radius $R_{c}$ : 
+
+
+\begin{align}
+N_{sit} =& N_{0}\parth{1-\exp{-\dfrac{\theta^{2}}{8\mu^{2}} } }\crocht{\exp{ \mathrm{f}\parth{\rho^{+}}\dfrac{\lambda '}{R_{c}} } -1}
+\label{eq:nsit_hibiki} \\
+%
+R_{c} =& \dfrac{2\sigma\parth{1+\dfrac{\rho_{V}}{\rho_{L}}} / P }{\exp{\dfrac{h_{LV} \Delta T_{w}}{R_{g}T_{w}T_{sat}} } -1}\\
+%
+\mathrm{f}\parth{\rho^{+}} =& -0.01064 + 0.48246\rho^{+} - 0.22712 \rho^{+^{2}} + 0.05468 \rho^{+^{3}}
+\end{align}
+with $R_{g}$ the perfect gas constant times the molar mass of the fluid,  $N_{0}=4.72\times 10^{5}\ \mathrm{m}^{-2}$, $\mu = 0.722\ \mathrm{rad}$, $\lambda ' = 2.5 \times 10^{-3} \ \mathrm{m}$ and $\rho^{+}=\mathrm{log}_{10}\parth{\dfrac{\rho_{L}-\rho_{V}}{\rho_{V}}}$.
+
+
+\begin{remark*}{}
+This law is used in the HFP model of Gilman \& Baglietto \cite{gilman_baglietto}.
+\end{remark*}
+
+We can note that it also includes the value of the static contact angle $\theta$ which can be used as a parameter to accounts for wall properties, since it is dependent on the wall roughness, wettability and the operating fluid. 
+
+Indeed, a high-wetting material (low values of $\theta$) will allow smaller cavities to be flooded by the surrounding liquid, thus hindering non-condensable gases to be captured inside and become a potentially active nucleation site (Figure \ref{fig:nsd_theta_wet}).
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{img/NSD/wettability.pdf}
+\caption{Sketch of the link between contact angle and wettability / cavity flooding}
+\label{fig:nsd_theta_wet}
+\end{figure}
+
+This influence of the contact angle on the NSD was confirmed by experimental obervations of Basu \etal \cite{basu_nsit} and was also included in a law correlated on their own measurements :
+
+\begin{align}
+N_{sit}=&
+\begin{dcases}
+0.34\crocht{1-\cos{\theta}} {\Delta T_{w}}^{2} & \text{if } \Delta T_{w,ONB}<\Delta T_{w} < 15\ K\\
+3.4\times 10^{-5}\crocht{1-\cos{\theta}} {\Delta T_{w}}^{5.3} & \text{if } \Delta T_{w} > 15\ K
+\end{dcases}
+\label{eq:nsit_basu}
+\end{align}
+
+\npar
+
+Similarly, Zhou \etal \cite{zhou_nsd} correlated their measurements, including an influence of the pressure:
+
+\begin{align}
+N_{sit} =& N_{0}\parth{1-\cos{\theta}}\crocht{\exp{\mathrm{f}\parth{P} \Delta T_{w} } -1 }
+\label{eq:nsit_zhou}\\
+&\mathrm{f}\parth{P} = 0.218~\ln{\dfrac{P}{P_{0}}}+0.1907
+\end{align}
+with $N_{0}=55~395.26\ \mathrm{m}^{-2}$ and $P_{0}=1.01\ \mathrm{bar}$.
+
+\npar
+
+Finally, one of the most recent NSD correlation has been proposed by Li \etal in 2018 \cite{li_new_2018} and validated over a large range of measurements by including a more realistic power law for $\Delta T_{w}$. It avoids the divergence of $N_{sit}$ observed in Hibiki \& Ishii law (Eq. \ref{eq:nsit_hibiki}) when reaching high pressure and superheats. It also includes the impact of pressure and contact angle and its evolution with temperature \eg its decrease close to 0 $\degree$ when approaching the critical temperature \cite{song_fan_contact_angle}:
+
+
+\begin{align}
+N_{sit} &= N_{0}e^{\mathrm{f}\parth{P}} {\Delta T_{w}}^{A\Delta T_{w} + B} \parth{1- \cos{\theta}}
+\label{eq:nsit_li}\\
+%
+\mathrm{f}\parth{P} &= 26.006 - 3.678 e^{-2P} - 21.907e^{-P / 24.0.65}\\
+%
+A &= -2\times 10^{-4} P^{2} + 0.0108P + 0.0119\\
+%
+B &= 0.122P +1.988\\
+%
+&1-\cos{\theta} = \parth{1-\cos{\theta_{0}}}\parth{\frac{T_{c}-T_{sat}}{T_{c}-T_{0}}}^{\gamma}
+\end{align}
+with $P$ in MPa, $\theta_{0}$ the contact angle at room temperature $T_{0}$, and default value being for water $\theta_{0}=41.37 \degree$, $T_{c}=374 \degree$C $T_{0}=25\degree$C, $\gamma = 0.719$.
+
+\npar
+
+In order to assess existing NSD correlations and choose the most pertinent to include in a HFP model, we gather NSD measurements from 4 different authors. The different operating conditions of the chosen data sets are gathered on Table \ref{tab:nsit_exp_data}.
 
 
 \begin{table}[h!]
@@ -580,20 +678,20 @@ However, the value of $N_{sit}$ is actually influenced by many parameters being 
 \scriptsize
 \centering
 \begin{tabular}{p{20mm}|c c c c c c c c} 
-Author & Fluid &  $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K]  & $\Delta T_{w}$ [K] & $N_{mes}$ [-]\\
+Author & Fluid &  $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K]  & $\Delta T_{w}$ [K] & $\theta_{0}$ &  $N_{mes}$ [-]\\
 \hline
 \\
 
-Zhou \cite{zhou_nsit} \newline (2020) & Water & 1.21 - 3.12 & 482.7 - 1930.6 & 8 - 15  & 6.7 - 20.2 & 60 \\
+Zhou \cite{zhou_nsit} \newline (2020) & Water & 1.21 - 3.12 & 482.7 - 1930.6 & 8 - 15  & 6.7 - 20.2 & $51\degree$ & 60 \\
 \\
 
-Richenderfer \cite{richenderfer} \newline (2018) & Water & 1.01 & 500 - 1000 & 10 & 21.7 - 42.8 & 49 \\
+Richenderfer \cite{richenderfer} \newline (2018) & Water & 1.01 & 500 - 1000 & 10 & 21.7 - 42.8 & $80\degree$ & 49 \\
 \\
 
-Kossolapov \cite{kossolapov} \newline (2021) & Water & 1.01 - 75.8 & 500 - 2000 & 10 & 0.13 - 30.1 & 63 & \\
+Kossolapov \cite{kossolapov_experimental_2021} \newline (2021) & Water & 1.01 - 75.8 & 500 - 2000 & $80\degree$ &10 & 0.13 - 30.1 & 63 & \\
 \\
 
-Borishanskii \cite{borishanskii} \newline (1966) & Water & 1.01 - 198 & 500 - 2000 & N.A. & 1.75 - 17.3 & 132 & \\
+Borishanskii \cite{borishanskii} \newline (1966) & Water & 1.01 - 198 & N.A. & N.A. & 1.75 - 17.3 & $45\degree$ & 132 \\
 \\
 
 \hline
@@ -608,41 +706,50 @@ Borishanskii \cite{borishanskii} \newline (1966) & Water & 1.01 - 198 & 500 - 20
 
 
 
-The choice of a nucleation site density correlation can be a complicated matter since many different laws exist in the literature (Lemmert \& Chawla, Hibiki \& Ishii, Basu \etal, etc.).
-
-\npar
-
-In order to help us choosing an appropriate closure for $N_{sit}$, we compare 4 different correlations (Lemmert \& Chawla, Hibiki \& Ishii, Li \etal and Zhou \etal) to 4 different sets of experimental measurements of the NSD in various thermal-hydraulics conditions (Borishanskii \etal, Richenderfer \etal, Kossolapov, Zhou \etal). The results are presented on Figures 2.5 to 2.8 with error bars of $\pm 50 \%$.
+We then compare the predictions achieved by the model of Lemmert \& Chawla (Eq. \ref{eq:nsit_lemmert}), Hibiki \& Ishii (Eq. \ref{eq:nsit_hibiki}), Zhou \etal (Eq. \ref{eq:nsit_zhou}) and Li \etal (Eq. \ref{eq:nsit_li}).  The comparison with measurements are presented on Figure \ref{fig:pred_nsit_models}.
 
 
-\begin{figure}[h!]
-\begin{multicols}{2}
-\includegraphics[width=1.0\linewidth]{img/NSD/LC.png}
-\caption{Model from Lemmert \& Chawla}
 
-\includegraphics[width=1.0\linewidth]{img/NSD/HI_rtheta.png}
-\caption{Model from Hibiki \& Ishii}
-\end{multicols}
+
+\begin{figure}[!h]
+\centering
+\subfloat[Lemmert \& Chawla model]{
+\includegraphics[width=0.45\linewidth]{img/NSD/nsit_LC.pdf}
+\label{fig:pred_nsit_lemmert}
+} 
+\subfloat[Hibiki \& Ishii model]{
+\includegraphics[width=0.45\linewidth]{img/NSD/nsit_HI.pdf}
+\label{fig:pred_nsit_hibiki}
+}
+\\
+\subfloat[Zhou \etal model]{
+\includegraphics[width=0.45\linewidth]{img/NSD/nsit_Zhou.pdf}
+\label{fig:pred_nsit_zhou}
+} 
+\subfloat[Li \etal model]{
+\includegraphics[width=0.45\linewidth]{img/NSD/nsit_Li.pdf}
+\label{fig:pred_nsit_li}
+}
+
+\caption{Predictions of the chosen models against the experimental data of Table \ref{tab:nsit_exp_data} with $\pm 50\%$ error bars. The contact angles}
+\label{fig:pred_nsit_models}
 \end{figure}
 
-\begin{figure}[h!]
-\begin{multicols}{2}
-\includegraphics[width=1.0\linewidth]{img/NSD/Li_rtheta.png}
-\caption{Model from Li \etal }
+The Lemmert \& Chawla model appears to fail in predicting the NSD at high pressures. This is a logical drawback of its sole dependence on the wall superheat. More importantly it increasingly underestimates the NSD as pressure increases, which makes it a clearly unsuitable correlation to compute $N_{sit}$ particularly for pressurized flows such as in PWR.
 
-\includegraphics[width=1.0\linewidth]{img/NSD/Zhou_rtheta.png}
-\caption{Model from Zhou \etal}
-\end{multicols}
-\end{figure}
+Altough the model of Zhou \etal includes a pressure term, its partial calibration on data covering a low range of pressure may explain the large error observed when compared to higher pressure measurements.
+
+On the contrary, models from Hibiki \& Ishii and Li \etal seem to better reproduce the different trends with flow conditions, especially with pressure. The model from Li \etal achieves better predictions by avoiding to reach unphysically high values of $N_{sit}$ at higher wall superheat compared to Hibiki \& Ishii. This behavior is clear over Kossolapov data at high pressure, where both model lead to overestimations, the strongest discrepancy being associated to Hibiki \& Ishii model.
+
+Overall, the model of Li \etal is the most efficient with an acceptable agreement on most of the data of Borishanskii and Zhou \etal. The measurements of Richenderfer and Kossolapov fail to be precisely reproduced, but it shows a coherent trend and the most limited error when compared to other correlations.
+
+\begin{remark*}{}
+The coherency of NSD predictions is hard to ensure since we do not know the exact contact angle and boiling surface morphology in the experiments. In particular, the overpredictions on Richenderfer and Kossolapov data can be reduced by strongly diminishing the contact angle. On the other hand, the fact that the NSD measured by Kossolapov at $10.5$ bar is higher than any other pressure on his experiment is surprising and thus lead to underpredictions of the model of Li \etal.
+\end{remark*}
 
 
-As we can see, the model from Lemmert \& Chawla fails to correctly predict the nucleation site density at high pressures. Which is a direct consequence of its solely depedency on the wall superheat.
+All things considered, those comparisons show that the Nucleation Site Density remains among the most difficult quantity to evaluate because of its very large variations over experiments, boiling surfaces and flow conditions. Dedicated correlations are hardly precise outside of their establishment databases. However, it remains the best yet only way to compute $N_{sit}$. \textbf{In that regard, the NSD correlation of Li \etal appears to be the most coherent choice.}
 
-On the other hand, models such as those from Hibiki \& Ishii and Li \etal seem to better reproduce the different trends with flow conditions. 
-
-Finally, altough the model of Zhou \etal includes a pressure term, its partial calibration on onyl low pressure data may explain the huge difference observed when trying to reproduce other experimental measurements.
-
-{\color{red} Je vais ajouter un tableau des conditions TH de chacune des expériences + la formule détaillée de chacun des modèles.}
 
 \subsection{Considerations on bubble interaction and nucleation sites deactivation}
 

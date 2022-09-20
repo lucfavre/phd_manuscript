@@ -69,6 +69,8 @@
 % Includes the file which contains all the document configurations and packages - make sure to edit this file
 \input{classicthesis-config}
 
+\input{math_commands}
+
 \addbibresource{bib_test.bib} % The file housing your bibliography
 %\addbibresource[label=ownpubs]{Self_Publications.bib} % Uncomment for optional self-publications
 
@@ -89,7 +91,6 @@
 
 \pagestyle{plain} % Suppress headers for the pre-content pages
 
-\input{math_commands}
 
 %----------------------------------------------------------------------------------------
 %	PRE-CONTENT THESIS PAGES
@@ -150,9 +151,9 @@
 
 \include{Chapters/HFP/Chap_HFPmodels}
 
-\include{Chapters/HFP/Chap_BubDyn}
-
 \include{Chapters/HFP/Chap_NewHFP}
+
+\include{Chapters/HFP/Chap_BubDyn}
 
 
 \cleardoublepage % Empty page before the start of the next part

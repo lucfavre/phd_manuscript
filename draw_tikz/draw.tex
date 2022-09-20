@@ -1259,6 +1259,73 @@ node[near end, above left,purple]{$T_{L}(y)$};
 
 }
 
-%\endpgfgraphicnamed
+
+\beginpgfgraphicnamed{wettability}
+
+\fbox{
+
+\begin{tikzpicture}[scale=2.5]
+\coordinate (O) at (0,0);
+\coordinate (Oliq) at (0,0.1);
+\coordinate (cavL) at ($(O)+(0.5,0)$);
+\coordinate (cavC) at ($(cavL)+(-45:0.5)$);
+\coordinate (cavR) at ($(cavC)+(+45:0.5)$);
+\coordinate (Oend) at ($(cavR)+(0.5,0)$);
+
+%coordinates {(1,1) (2,2) (4,-2) (3,2)}
+
+
+\draw[thick] (O)--(cavL)--(cavC)--(cavR)--(Oend)--++(1.5,0);
+\draw[blue] plot [smooth, tension=0.3] coordinates {(Oliq) ($(cavL)+(0,0.1)$) ($(cavC)+(0,0.1)$) ($(cavR)+(0,0.1)$) ($(Oend)+(0,0.1)$)};
+
+\coordinate (Ob) at ($(O) + (2.5,0)$);
+
+\tikzmath{\alph = 20; \alphrad= \alph * pi / 180; \ray=0.6; \rw=\ray * sin(\alphrad r);};
+
+\coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
+\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+%%Right angle
+\draw (Oarc) --++(\alph:0.3) node[very near end, right]{$\theta$};
+\draw ($(Oarc)+(0.15,0)$) arc(0:\alph:0.15) ;
+
+\draw ($(cavC) + (0,1.2)$) node{High wettability, low $\theta$};
+
+\coordinate (sep) at ($(Oend)+(1.5,0)+(0.05,0)$);
+\draw[dashed] (sep)--++(0,2);
+
+
+
+
+\coordinate (O) at ($(sep)+(0.05,0)$);
+\coordinate (Oliq) at ($(O)+(0,0.1)$);
+\coordinate (cavL) at ($(O)+(0.5,0)$);
+\coordinate (cavC) at ($(cavL)+(-45:0.5)$);
+\coordinate (cavR) at ($(cavC)+(+45:0.5)$);
+\coordinate (Oend) at ($(cavR)+(0.5,0)$);
+
+%coordinates {(1,1) (2,2) (4,-2) (3,2)}
+
+\draw[thick] (O)--(cavL)--(cavC)--(cavR)--(Oend)--++(1.6,0);
+\draw[blue] plot [smooth, tension=0.3] coordinates {(Oliq) ($(cavL)+(0,0.1)$) ($(cavC)+(0,0.35)$) ($(cavR)+(0,0.1)$) ($(Oend)+(0,0.1)$)};
+
+\coordinate (Ob) at ($(O) + (2.6,0)$);
+
+\tikzmath{\alph = 120; \alphrad= \alph * pi / 180; \ray=0.6; \rw=\ray * sin(\alphrad r);};
+
+\coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
+\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+%%Right angle
+\draw (Oarc) --++(\alph:0.3) node[very near end, right]{$\theta$};
+\draw ($(Oarc)+(0.15,0)$) arc(0:\alph:0.15) ;
+
+\draw ($(cavC) + (0,1.2)$) node{Low wettability, high $\theta$};
+
+\end{tikzpicture}
+
+}
+
+\endpgfgraphicnamed
 
 \end{document}

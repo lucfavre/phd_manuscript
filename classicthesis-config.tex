@@ -121,6 +121,26 @@ natbib=true % natbib compatibility mode (\citep and \citet still work)
 \usepackage{etoolbox}
 
 
+%%%REMARKS
+
+\usepackage{blindtext}
+
+\usepackage[most]{tcolorbox}
+
+\newtcbtheorem{remark}{\textbf{Remark :} }{
+   coltitle=black,
+   colback=brown!10,
+   colframe=red!70!blue,
+   detach title,
+   boxrule=0pt,
+   leftrule=2pt,
+  attach title to upper,
+   sharp corners,
+   left=1mm,
+}{}
+%\newtheorem{remark}{Remark}
+
+
 %CLICKABLES LINKS
 \usepackage[colorlinks]{hyperref}
 %\hypersetup{
