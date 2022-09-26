@@ -1140,7 +1140,7 @@ node[near end, above left,purple]{$T_{L}(y)$};
 
 
 
-%\beginpgfgraphicnamed{shi_scheme}
+\beginpgfgraphicnamed{shi_scheme}
 
 \fbox{
 
@@ -1162,7 +1162,7 @@ node[near end, above left,purple]{$T_{L}(y)$};
 
 
 %Parameters
-\coordinate (Ob) at (1.2,0.6);
+\coordinate (Ob) at (1.2,0.7);
 
 \coordinate (Ow) at (1.2,0);
 
@@ -1185,10 +1185,10 @@ node[near end, above left,purple]{$T_{L}(y)$};
 
 \draw[densely dashed, <->, >=latex] (Ob) --++ (0,+\ray/1.5) node[midway, left]{$R$};
 
-\draw[densely dashed, <->, >=latex] (Ob) -- (Ow) node[near end, right]{$y$};
+\draw[densely dashed, <->, >=latex] (Ob) -- (Ow) node[very near end, right]{$y=R\times L_{R}$};
 
 
-\draw[densely dashed, <->, >=latex] (Ob) --++ (-\ray,0) node[left]{$\dfrac{\nu_{L}}{\left| U_{rel} \right|}$};
+\draw[densely dashed, <->, >=latex] (Ob) --++ (45:\ray) node[above right]{$\dfrac{\nu_{L}}{\left| U_{rel} \right|}=\dfrac{y}{L_{u}}$};
 
 
 
@@ -1215,7 +1215,7 @@ node[near end, above left,purple]{$T_{L}(y)$};
 }
 
 
-%\endpgfgraphicnamed
+\endpgfgraphicnamed
 
 
 %\beginpgfgraphicnamed{newbub_sugrue}
