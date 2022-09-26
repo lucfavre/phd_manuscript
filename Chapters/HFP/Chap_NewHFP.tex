@@ -28,9 +28,8 @@ In order to try to be as extensive as possible regarding the different heat tran
 \begin{figure}[h!]
 \centering
 \input{tikz_img/HFP/hfp}
-\caption{Sketch of the considered HFP  {\color{red} A terminer, je dois ajouter des flèches pour indiquer les flux !}}
-\label{fig:HFP}Listing of the different physics parameter involved in bubble departure phenomenon 
-
+\caption{Sketch of the considered HFP}
+\label{fig:HFP}
 \end{figure}
 
 
@@ -535,6 +534,7 @@ Kossolapov \cite{kossolapov_experimental_2021} \newline (2021) & Water & 20 & 20
 
 \subsection{Bubble Wait Time}
 
+The wait time between two nucleation events on an active site corresponds to the time needed for the thermal boundary layer to reconstruct after its disruption due do bubble departure from the nucleation site.  
 \begin{table}[h!]
 
 %\begin{changemargin}{-1cm}{0cm}
@@ -548,8 +548,8 @@ Author & Fluid & $D_{h}$ [mm] & $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [
 \hline
 \\
 
-Maity \cite{maity_effect_2000} \newline (2000) & Water & 20 & 1.01 & 0 - 239.6 & 0.3 - 0.7 & N.A. & 5 - 5.9 & 0.788 - 1.71 (9) \\
-
+Basu \etal \cite{maity_effect_2000} \newline (2000) & Water & 20 & 1.01 & 0 - 239.6 & 0.3 - 0.7 & N.A. & 5 - 5.9 & 0.788 - 1.71 (9) \\
+\\
 \hline
 \end{tabular}
 }
@@ -580,21 +580,21 @@ N_{sit}=\crocht{210\parth{T_{w}-T_{sat}}}^{1.8}
 \end{align}
 
 \begin{remark*}{}
-This law is used in the HFP model of Kurul \& Podowski and NEPTUNE\_CFD to compute $N_{sit}$
+This law is used in the HFP model of Kurul \& Podowski and NEPTUNE\_CFD to compute $N_{sit}$.
 \end{remark*}
 
 However, such an expression misses the influence of other parameters such as pressure, which has been proven to be strongly impacting the range of active cavities that can generate bubbles as shown on Figure \ref{fig:nsd_P_koss} and induces a larger bubble density over the heater. 
 
-\begin{figure}
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.7\linewidth]{img/NSD/nsd_press_koss.png}
-\caption{HSV Visualization of bubble density at various pressures adapted from Kossolapov \cite{kossolapov_experimental_2021} (left to right : 1.01 bar, 3 bar, 19.8 bar, 75.8 bar). }
+\caption{HSV Visualization of bubble density at various pressures adapted from Kossolapov \cite{kossolapov_experimental_2021} (left to right: 1.01 bar, 3 bar, 19.8 bar, 75.8 bar). }
 \label{fig:nsd_P_koss}
 \end{figure}
 
 \npar
 
-Moreover, experimental measurements such as in Borishanskii \cite{Borishanskii} showed that the power dependency on the wall superheat changes by increasing both with pressure and the superheat value itself. This was accounted for by Hibiki \& Ishii in 2003 \cite{hibiki_ishii} who came up with a new correlation that requires an estimation of the minimum activated cavity radius $R_{c}$ : 
+Moreover, experimental measurements such as in Borishanskii \cite{borishanskii} showed that the power dependency on the wall superheat changes by increasing both with pressure and the superheat value itself. This was accounted for by Hibiki \& Ishii in 2003 \cite{hibiki_ishii} who came up with a new correlation that requires an estimation of the minimum activated cavity radius $R_{c}$ : 
 
 
 \begin{align}
@@ -619,7 +619,7 @@ Indeed, a high-wetting material (low values of $\theta$) will allow smaller cavi
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.8]{img/NSD/wettability.pdf}
-\caption{Sketch of the link between contact angle and wettability / cavity flooding}
+\caption{Sketch of the link between bubble contact angle and wettability / cavity flooding}
 \label{fig:nsd_theta_wet}
 \end{figure}
 
@@ -660,7 +660,7 @@ A &= -2\times 10^{-4} P^{2} + 0.0108P + 0.0119\\
 %
 B &= 0.122P +1.988\\
 %
-&1-\cos{\theta} = \parth{1-\cos{\theta_{0}}}\parth{\frac{T_{c}-T_{sat}}{T_{c}-T_{0}}}^{\gamma}
+1-\cos{\theta} &= \parth{1-\cos{\theta_{0}}}\parth{\frac{T_{c}-T_{sat}}{T_{c}-T_{0}}}^{\gamma}
 \end{align}
 with $P$ in MPa, $\theta_{0}$ the contact angle at room temperature $T_{0}$, and default value being for water $\theta_{0}=41.37 \degree$, $T_{c}=374 \degree$C $T_{0}=25\degree$C, $\gamma = 0.719$.
 
@@ -744,7 +744,7 @@ On the contrary, models from Hibiki \& Ishii and Li \etal seem to better reprodu
 Overall, the model of Li \etal is the most efficient with an acceptable agreement on most of the data of Borishanskii and Zhou \etal. The measurements of Richenderfer and Kossolapov fail to be precisely reproduced, but it shows a coherent trend and the most limited error when compared to other correlations.
 
 \begin{remark*}{}
-The coherency of NSD predictions is hard to ensure since we do not know the exact contact angle and boiling surface morphology in the experiments. In particular, the overpredictions on Richenderfer and Kossolapov data can be reduced by strongly diminishing the contact angle. On the other hand, the fact that the NSD measured by Kossolapov at $10.5$ bar is higher than any other pressure on his experiment is surprising and thus lead to underpredictions of the model of Li \etal.
+The coherency of NSD predictions is hard to ensure since we do not know the exact contact angle and boiling surface morphology in the experiments. In particular, the overpredictions on Richenderfer and Kossolapov data can be reduced by strongly diminishing the contact angle. On the other hand, the fact that the NSD measured by Kossolapov at $10.5$ bar is higher than any other pressure on his experiment is surprising and thus lead to underpredictions of the model of Li \etal
 \end{remark*}
 
 
