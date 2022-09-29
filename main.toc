@@ -29,84 +29,83 @@
 \contentsline {section}{\numberline {3.5}Closure Laws for Remaining Parameters}{19}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Nucleation Site Density : $N_{sit}$}{19}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Bubble Departure Frequency $f$, Growth Time $t_{g}$ and Wait Time $t_{w}$}{19}{subsection.3.5.2}%
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Assembling of a new Heat Flux Partitioning Model}}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}New model}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}General description of the model}{21}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Convective heat fluxes}{22}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Boiling heat flux}{22}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Quenching heat flux}{22}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Needed closure relationships}{22}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Single Bubble Quenching Area}{23}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Bubble Growth}{23}{subsection.4.2.6}%
-\contentsline {subsubsection}{\numberline {4.2.6.1}Analytic derivation of bubble growth in a linear thermal boundary layer}{24}{subsubsection.4.2.6.1}%
-\contentsline {subsubsection}{\numberline {4.2.6.2}Case 1 : $\delta _{b}$ is constant}{26}{subsubsection.4.2.6.2}%
-\contentsline {subsubsection}{\numberline {4.2.6.3}Case 2 : $\delta _{b}=\sqrt {\eta _{l}t}$}{27}{subsubsection.4.2.6.3}%
-\contentsline {subsubsection}{\numberline {4.2.6.4}Case 3 : $\delta _{b}=CR$}{27}{subsubsection.4.2.6.4}%
-\contentsline {subsection}{\numberline {4.2.7}Comparison with experimental data and DNS}{27}{subsection.4.2.7}%
-\contentsline {subsection}{\numberline {4.2.8}Estimation of the thermal boundary layer thickness $\delta $}{30}{subsection.4.2.8}%
-\contentsline {subsection}{\numberline {4.2.9}Estimation of $t{g}$ against experimental data}{30}{subsection.4.2.9}%
-\contentsline {subsection}{\numberline {4.2.10}Bubble Wait Time}{31}{subsection.4.2.10}%
-\contentsline {subsection}{\numberline {4.2.11}Nucleation Site Density}{32}{subsection.4.2.11}%
-\contentsline {subsection}{\numberline {4.2.12}Considerations on bubble interaction and nucleation sites deactivation}{36}{subsection.4.2.12}%
-\contentsline {subsection}{\numberline {4.2.13}Nucleation Sites and Bubbles Interactions}{36}{subsection.4.2.13}%
-\contentsline {subsubsection}{\numberline {4.2.13.1}Static suppression}{36}{subsubsection.4.2.13.1}%
-\contentsline {subsubsection}{\numberline {4.2.13.2}Static coalescence}{37}{subsubsection.4.2.13.2}%
-\contentsline {subsubsection}{\numberline {4.2.13.3}Sliding coalescence}{37}{subsubsection.4.2.13.3}%
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Boiling Bubble Dynamics}}{39}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Force Balance Modeling}{39}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Establishment of the force balance for a bubble on a vertical wall }{40}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Bubble shape : Geometrical definitions}{40}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Buoyancy force}{41}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Contact Pressure force}{42}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Capillary force}{42}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Added Mass force of a growing bubble}{42}{subsection.5.2.5}%
-\contentsline {paragraph}{Added mass in $x$ direction}{43}{equation.5.2.17}%
-\contentsline {paragraph}{Added mass in $y$ direction}{44}{equation.5.2.28}%
-\contentsline {subsection}{\numberline {5.2.6}Added Mass from Duhar \textit {et al.}\xspace }{46}{subsection.5.2.6}%
-\contentsline {subsection}{\numberline {5.2.7}Lift and drag forces}{46}{subsection.5.2.7}%
-\contentsline {subsubsection}{\numberline {5.2.7.1}Drag and lift coefficient from Shi \textit {et al.}\xspace }{47}{subsubsection.5.2.7.1}%
-\contentsline {paragraph}{Drag coefficient :}{47}{table.caption.32}%
-\contentsline {paragraph}{Lift coefficient :}{48}{equation.5.2.78}%
-\contentsline {section}{\numberline {5.3}Force Balance Modeling}{48}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}General Considerations}{48}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Buoyancy Force}{49}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Capillary Force}{50}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Contact Pressure Force}{50}{subsection.5.3.4}%
-\contentsline {subsection}{\numberline {5.3.5}Drag and Lift Forces}{50}{subsection.5.3.5}%
-\contentsline {subsection}{\numberline {5.3.6}Inertia Force}{51}{subsection.5.3.6}%
-\contentsline {subsubsection}{\numberline {5.3.6.1}Former Approaches}{52}{subsubsection.5.3.6.1}%
-\contentsline {subsubsection}{\numberline {5.3.6.2}Proposed Approach}{53}{subsubsection.5.3.6.2}%
-\contentsline {subsection}{\numberline {5.3.7}Force Balance Summary}{54}{subsection.5.3.7}%
-\contentsline {subsection}{\numberline {5.3.8}Liquid Velocity}{54}{subsection.5.3.8}%
-\contentsline {section}{\numberline {5.4}Departure by Sliding}{55}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Non-Dimensional Analysis}{55}{subsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.1.1}Influence of Pressure}{56}{subsubsection.5.4.1.1}%
-\contentsline {subsubsection}{\numberline {5.4.1.2}Comparison between Fluids}{56}{subsubsection.5.4.1.2}%
-\contentsline {subsection}{\numberline {5.4.2}Application to Experimental Data}{57}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Departure Diameter Prediction}{60}{subsection.5.4.3}%
-\contentsline {subsubsection}{\numberline {5.4.3.1}About the Use of Empiricism}{60}{subsubsection.5.4.3.1}%
-\contentsline {subsubsection}{\numberline {5.4.3.2}Growth Constant Values}{60}{subsubsection.5.4.3.2}%
-\contentsline {subsubsection}{\numberline {5.4.3.3}Predictions}{61}{subsubsection.5.4.3.3}%
-\contentsline {subsection}{\numberline {5.4.4}Discussion and accounting for parameters uncertainties}{61}{subsection.5.4.4}%
-\contentsline {section}{\numberline {5.5}Sliding phase}{64}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Modeling}{64}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Low Pressure Sliding}{65}{subsection.5.5.2}%
-\contentsline {subsection}{\numberline {5.5.3}High Pressure Sliding}{65}{subsection.5.5.3}%
-\contentsline {section}{\numberline {5.6}Conclusion}{65}{section.5.6}%
-\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Towards the Industrial Geometry}}{70}{part.4}%
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Promoteur}}{71}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Boiling freon in a tube with mixing vanes : DEBORA-Promoteur experiments}{71}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Description of the experiment}{71}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Analysis of the Experimental Measurements}{71}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}NEPTUNE\_CFD simulations of DEBORA-Promoteur cases}{72}{subsection.6.1.3}%
-\contentsline {section}{\numberline {6.2}Liquid water flow in a tube with mixing vanes : AGATE-PROMOTEUR experiment}{72}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Description of the experiment}{73}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}NEPTUNE\_CFD simulations of AGATE-Promoteur case}{73}{subsection.6.2.2}%
-\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Conclusion}}{75}{part.5}%
-\contentsline {part}{\numberline {vi}\spacedlowsmallcaps {Appendix}}{76}{part.6}%
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Details on the Bubble Force Balance}}{77}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Appendix Section Test}{78}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Another Appendix Section Test}{78}{section.A.2}%
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Closure laws for the Heat Flux Partitioning model}}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Single-Phase Heat Transfer Coefficient}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Single Bubble Quenching Area}{23}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Bubble Growth}{23}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Analytic derivation of bubble growth in a linear thermal boundary layer}{24}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Case 1 : $\delta _{b}$ is constant}{27}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Case 2 : $\delta _{b}=\sqrt {\eta _{l}t}$}{27}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Case 3 : $\delta _{b}=CR$}{27}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Comparison with experimental data and DNS}{28}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Estimation of the thermal boundary layer thickness $\delta $}{30}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.7}Estimation of $t{g}$ against experimental data}{31}{subsection.4.3.7}%
+\contentsline {section}{\numberline {4.4}Bubble Wait Time}{32}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Nucleation Site Density}{33}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Considerations on bubble interaction and nucleation sites deactivation}{37}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Static suppression}{37}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Static coalescence}{38}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Sliding coalescence}{38}{subsection.4.6.3}%
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Boiling Bubble Dynamics}}{40}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Establishment of the force balance for a bubble on a vertical wall }{40}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Bubble shape : Geometrical definitions}{40}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Buoyancy force}{41}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Contact Pressure force}{42}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Capillary force}{42}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Added Mass force of a growing bubble}{42}{subsection.5.1.5}%
+\contentsline {paragraph}{Added mass in $x$ direction}{43}{equation.5.1.17}%
+\contentsline {paragraph}{Added mass in $y$ direction}{44}{equation.5.1.28}%
+\contentsline {subsection}{\numberline {5.1.6}Added Mass from Duhar \textit {et al.}\xspace }{46}{subsection.5.1.6}%
+\contentsline {subsection}{\numberline {5.1.7}Lift and drag forces}{46}{subsection.5.1.7}%
+\contentsline {subsubsection}{\numberline {5.1.7.1}Drag and lift coefficient from Shi \textit {et al.}\xspace }{47}{subsubsection.5.1.7.1}%
+\contentsline {paragraph}{Drag coefficient :}{47}{table.caption.35}%
+\contentsline {paragraph}{Lift coefficient :}{48}{equation.5.1.78}%
+\contentsline {section}{\numberline {5.2}Force Balance Modeling}{49}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}General Considerations}{49}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Buoyancy Force}{50}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Capillary Force}{50}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Contact Pressure Force}{50}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Drag and Lift Forces}{50}{subsection.5.2.5}%
+\contentsline {subsection}{\numberline {5.2.6}Inertia Force}{52}{subsection.5.2.6}%
+\contentsline {subsubsection}{\numberline {5.2.6.1}Former Approaches}{52}{subsubsection.5.2.6.1}%
+\contentsline {subsubsection}{\numberline {5.2.6.2}Proposed Approach}{53}{subsubsection.5.2.6.2}%
+\contentsline {subsection}{\numberline {5.2.7}Force Balance Summary}{54}{subsection.5.2.7}%
+\contentsline {subsection}{\numberline {5.2.8}Liquid Velocity}{55}{subsection.5.2.8}%
+\contentsline {section}{\numberline {5.3}Departure by Sliding}{56}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Non-Dimensional Analysis}{56}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.1}Influence of Pressure}{57}{subsubsection.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.2}Comparison between Fluids}{57}{subsubsection.5.3.1.2}%
+\contentsline {subsection}{\numberline {5.3.2}Application to Experimental Data}{57}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Departure Diameter Prediction}{59}{subsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.3.1}About the Use of Empiricism}{59}{subsubsection.5.3.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.3.2}Growth Constant Values}{61}{subsubsection.5.3.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3.3}Predictions}{61}{subsubsection.5.3.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Discussion and accounting for parameters uncertainties}{62}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5.4}Sliding phase}{65}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Modeling}{65}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Low Pressure Sliding}{65}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}High Pressure Sliding}{67}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Conclusion}{67}{section.5.5}%
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Assembling a new Heat Flux Partitioning Model}}{70}{chapter.6}%
+\contentsline {section}{\numberline {6.1}General description of the model}{70}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Convective heat fluxes}{70}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Boiling heat flux}{71}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Quenching heat flux}{71}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Needed closure relationships}{71}{subsection.6.1.4}%
+\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Towards the Industrial Geometry}}{72}{part.4}%
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Promoteur}}{73}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Boiling freon in a tube with mixing vanes : DEBORA-Promoteur experiments}{73}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Description of the experiment}{73}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}Analysis of the Experimental Measurements}{73}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}NEPTUNE\_CFD simulations of DEBORA-Promoteur cases}{74}{subsection.7.1.3}%
+\contentsline {section}{\numberline {7.2}Liquid water flow in a tube with mixing vanes : AGATE-PROMOTEUR experiment}{74}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Description of the experiment}{75}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}NEPTUNE\_CFD simulations of AGATE-Promoteur case}{75}{subsection.7.2.2}%
+\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Conclusion}}{77}{part.5}%
+\contentsline {part}{\numberline {vi}\spacedlowsmallcaps {Appendix}}{78}{part.6}%
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Details on the Bubble Force Balance}}{79}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Appendix Section Test}{80}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Another Appendix Section Test}{80}{section.A.2}%
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{80}{dummy.7}%
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{82}{dummy.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

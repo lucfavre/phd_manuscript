@@ -33,8 +33,6 @@ Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: Chapters/Chap_Promoteur.aux
 Reallocating 'name_of_file' (item size: 1) to 23 items.
 A level-1 auxiliary file: Chapters/Chapter0A.aux
-Reallocating 'name_of_file' (item size: 1) to 33 items.
-A level-1 auxiliary file: FrontBackMatter/Bibliography.aux
 Reallocating 'name_of_file' (item size: 1) to 32 items.
 A level-1 auxiliary file: FrontBackMatter/Declaration.aux
 Reallocating 'name_of_file' (item size: 1) to 29 items.
@@ -54,7 +52,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 18020 items.
+Reallocating 'field_info' (item size: 4) to 18860 items.
 Database file #1: main-blx.bib
 Database file #2: bib_test.bib
 Warning--I didn't find a database entry for "knuth:1974"
@@ -97,6 +95,11 @@ Warning--I didn't find a database entry for "Cole"
 Warning--I didn't find a database entry for "Gilman"
 Warning--I didn't find a database entry for "Zuber1961"
 Warning--I didn't find a database entry for "Urbano2018"
+Warning--I didn't find a database entry for "basu_heat"
+Warning--I didn't find a database entry for "richenderfer_investigations_2018"
+Warning--I didn't find a database entry for "basu_heat_2005"
+Warning--I didn't find a database entry for "Komma"
+Warning--I didn't find a database entry for "mikic"
 Warning--I didn't find a database entry for "borishanskii"
 Warning--I didn't find a database entry for "hibiki_ishii"
 Warning--I didn't find a database entry for "gilman_baglietto"
@@ -106,6 +109,7 @@ Warning--I didn't find a database entry for "li_new_2018"
 Warning--I didn't find a database entry for "song_fan_contact_angle"
 Warning--I didn't find a database entry for "zhou_nsit"
 Warning--I didn't find a database entry for "richenderfer"
+Warning--I didn't find a database entry for "Richen_phd"
 Warning--I didn't find a database entry for "eames_lift_2008"
 Biblatex version: 3.18
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
@@ -113,7 +117,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'str_pool' (item size: 1) to 130000 items.
 You've used 43 entries,
             6399 wiz_defined-function locations,
-            1733 strings with 63672 characters,
+            1740 strings with 63730 characters,
 and the built_in function-call counts, 510849 in all, are:
 = -- 28738
 > -- 35743
@@ -152,4 +156,4 @@ warning$ -- 0
 while$ -- 6572
 width$ -- 0
 write$ -- 2002
-(There were 50 warnings)
+(There were 56 warnings)

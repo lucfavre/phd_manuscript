@@ -71,8 +71,9 @@
 
 \input{math_commands}
 
-\addbibresource{bib_test.bib} % The file housing your bibliography
 %\addbibresource[label=ownpubs]{Self_Publications.bib} % Uncomment for optional self-publications
+\addbibresource{bib_test.bib}
+
 
 %\hyphenation{Put special hyphenation here}
 
@@ -151,9 +152,12 @@
 
 \include{Chapters/HFP/Chap_HFPmodels}
 
-\include{Chapters/HFP/Chap_NewHFP}
+\include{Chapters/HFP/Chap_Closures}
 
 \include{Chapters/HFP/Chap_BubDyn}
+
+\include{Chapters/HFP/Chap_NewHFP}
+
 
 
 \cleardoublepage % Empty page before the start of the next part
@@ -186,8 +190,24 @@
 %----------------------------------------------------------------------------------------
 %	POST-CONTENT THESIS PAGES
 %----------------------------------------------------------------------------------------
+ % The file housing your bibliography
 
-\cleardoublepage\include{FrontBackMatter/Bibliography} % Bibliography
+%\cleardoublepage\include{FrontBackMatter/Bibliography} % Bibliography
+
+% Bibliography
+
+\label{app:bibliography} % Reference the bibliography elsewhere with \autoref{app:bibliography}
+
+\manualmark % Work-around to have small caps also here in the headline
+\markboth{\spacedlowsmallcaps{\bibname}}{\spacedlowsmallcaps{\bibname}} % Work-around to have small caps also
+%\phantomsection
+\refstepcounter{dummy}
+
+\addtocontents{toc}{\protect\vspace{\beforebibskip}} % Place the bibliography slightly below the rest of the document content in the table of contents
+\addcontentsline{toc}{chapter}{\tocEntry{\bibname}}
+
+\printbibliography
+
 
 \cleardoublepage\include{FrontBackMatter/Declaration} % Declaration
 
