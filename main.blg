@@ -1,49 +1,28 @@
-This is BibTeX, Version 0.99d
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7350 64-bit)
+Capacity: max_strings=4000, hash_size=5000, hash_prime=4253
 The top-level auxiliary file: main.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: biblatex.bst
-Reallocating 'name_of_file' (item size: 1) to 9 items.
-Reallocating 'name_of_file' (item size: 1) to 9 items.
-Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: FrontBackMatter/Titlepage.aux
-Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: FrontBackMatter/Titleback.aux
-Reallocating 'name_of_file' (item size: 1) to 31 items.
 A level-1 auxiliary file: FrontBackMatter/Dedication.aux
-Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: FrontBackMatter/Abstract.aux
-Reallocating 'name_of_file' (item size: 1) to 33 items.
 A level-1 auxiliary file: FrontBackMatter/Publications.aux
-Reallocating 'name_of_file' (item size: 1) to 36 items.
 A level-1 auxiliary file: FrontBackMatter/Acknowledgments.aux
-Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: FrontBackMatter/Contents.aux
-Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: Chapters/NCFD/Chap_NCFD.aux
-Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: Chapters/NCFD/Chap_Debora.aux
-Reallocating 'name_of_file' (item size: 1) to 31 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_HFPIntro.aux
-Reallocating 'name_of_file' (item size: 1) to 32 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_HFPmodels.aux
-Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_BubDyn.aux
-Reallocating 'name_of_file' (item size: 1) to 31 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_Closures.aux
-Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_NewHFP.aux
-Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: Chapters/Chap_Promoteur.aux
-Reallocating 'name_of_file' (item size: 1) to 23 items.
 A level-1 auxiliary file: Chapters/Chapter0A.aux
-Reallocating 'name_of_file' (item size: 1) to 32 items.
 A level-1 auxiliary file: FrontBackMatter/Declaration.aux
-Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: FrontBackMatter/Colophon.aux
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
-Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'global_strs' (item size: 1) to 20000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
@@ -56,7 +35,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 20960 items.
+Reallocating 'field_info' (item size: 4) to 20707 items.
 Database file #1: main-blx.bib
 Database file #2: bib_test.bib
 Reallocating 'str_pool' (item size: 1) to 130000 items.
@@ -101,6 +80,7 @@ Warning--I didn't find a database entry for "Gilman"
 Warning--I didn't find a database entry for "Zuber1961"
 Warning--I didn't find a database entry for "prodanovic_2006"
 Warning--I didn't find a database entry for "march_1990"
+Warning--I didn't find a database entry for "tolubinsky_diam"
 Warning--I didn't find a database entry for "eames_lift_2008"
 Warning--I didn't find a database entry for "richenderfer_phd"
 Warning--I didn't find a database entry for "jens_lottes_data"
@@ -124,48 +104,48 @@ Warning--I didn't find a database entry for "song_fan_contact_angle"
 Warning--I didn't find a database entry for "zhou_nsit"
 Warning--I didn't find a database entry for "richenderfer"
 Warning--I didn't find a database entry for "Richen_phd"
-Biblatex version: 3.18
+Biblatex version: 3.13
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 50 entries,
-            6399 wiz_defined-function locations,
-            1823 strings with 77054 characters,
-and the built_in function-call counts, 612794 in all, are:
-= -- 35045
-> -- 42147
-< -- 3454
-+ -- 44167
-- -- 34598
-* -- 36346
-:= -- 83250
+You've used 48 entries,
+            6365 wiz_defined-function locations,
+            1791 strings with 73243 characters,
+and the built_in function-call counts, 503828 in all, are:
+= -- 23807
+> -- 40286
+< -- 3302
++ -- 38459
+- -- 33075
+* -- 29240
+:= -- 68004
 add.period$ -- 0
-call.type$ -- 50
-change.case$ -- 49
-chr.to.int$ -- 3020
-cite$ -- 98
-duplicate$ -- 51831
-empty$ -- 42473
-format.name$ -- 3617
-if$ -- 97138
+call.type$ -- 48
+change.case$ -- 47
+chr.to.int$ -- 2876
+cite$ -- 94
+duplicate$ -- 41101
+empty$ -- 34689
+format.name$ -- 3459
+if$ -- 77780
 int.to.chr$ -- 0
-int.to.str$ -- 107
+int.to.str$ -- 103
 missing$ -- 0
-newline$ -- 2423
-num.names$ -- 2221
-pop$ -- 17072
+newline$ -- 2315
+num.names$ -- 2139
+pop$ -- 15916
 preamble$ -- 1
-purify$ -- 961
+purify$ -- 928
 quote$ -- 0
-skip$ -- 13073
+skip$ -- 12535
 stack$ -- 0
-substring$ -- 72101
-swap$ -- 12886
-text.length$ -- 2793
-text.prefix$ -- 51
+substring$ -- 48223
+swap$ -- 12318
+text.length$ -- 2668
+text.prefix$ -- 49
 top$ -- 1
-type$ -- 1676
+type$ -- 1608
 warning$ -- 0
-while$ -- 7771
+while$ -- 6489
 width$ -- 0
-write$ -- 2374
-(There were 64 warnings)
+write$ -- 2268
+(There were 65 warnings)
