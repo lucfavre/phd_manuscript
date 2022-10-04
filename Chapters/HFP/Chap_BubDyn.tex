@@ -24,21 +24,18 @@ Consequently, many experimental investigations have been conducted to further un
 \end{itemize}
 
 
-This behavior has been supported by many experimental observations who clearly observed three stages (departure, sliding, lift-off) both at low pressure (Maity \cite{maity_effect_2000}, Situ \cite{situ_bubble_2005}, Thorncroft \cite{thorncroft_experimental_1998}, Prodanovic \cite{prodanovic_2006}, Chen \cite{chen_prediction_2012}, Ren \cite{ren_development_2020}, etc.) and high pressure (March \cite{march_1990}, Kossolapov \cite{kossolapov_experimental_2021}). Altogether, those works cover various flow conditions and operating fluids which insist on the generality of this bubble behavior in vertical flow boiling.
+This behavior has been supported by many experimental observations who clearly observed three stages (departure, sliding, lift-off) both at low pressure (Maity \cite{maity_effect_2000}, Situ \cite{situ_bubble_2005}, Thorncroft \cite{thorncroft_experimental_1998}, Prodanovic \cite{prodanovic_2006}, Chen \cite{chen_prediction_2012}, Ren \cite{ren_development_2020}, etc.) and high pressure (March \cite{march_1990}, Kossolapov \cite{kossolapov_experimental_2021}). Altogether, those works cover various flow conditions and operating fluids which insist on the generality of this bubble behavior in vertical flow boiling. Examples from the literature of visualizations of bubble sliding at atmospheric and high pressure are reproduced on Figure \ref{fig:slide_exp_vis}.
 
-
-Examples from the literature of visualizations of bubble sliding at atmospheric and high pressure are reproduced on Figure \ref{fig:slide_exp_vis}.
-
-\begin{figure}[h!]
+\begin{figure}[H]
 
 \begin{center}
 
 \subfloat[Bubble sliding visualized and adapted from Maity \cite{maity_effect_2000} at atmospheric pressure.]{
-\includegraphics[width=0.7\linewidth]{img/forces/slide_maity.png}
+\includegraphics[width=0.6\linewidth]{img/forces/slide_maity.png}
 } 
 \\
 \subfloat[Bubble sliding visualized and adapted from Kossolapov \cite{kossolapov_experimental_2021} at higher pressure.]{
-\includegraphics[width=0.7\linewidth]{img/forces/slide_koss.png}
+\includegraphics[width=0.6\linewidth]{img/forces/slide_koss.png}
 } 
 
 \end{center}
@@ -47,20 +44,19 @@ Examples from the literature of visualizations of bubble sliding at atmospheric 
 \label{fig:slide_exp_vis}
 \end{figure}
 
-\npar
 
 The bubble sliding process has also been thermally studied to quantify its impact over the wall heat transfer. Estrada-Perez \etal \cite{estrada-perez_time-resolved_2018} observed the significant thermal impact of sliding bubbles footprints. Kossolapov \cite{kossolapov_experimental_2021} also investigated the sliding of boiling bubbles and measured the magnitude of the transient heat transfer induced by the disruption of the liquid thermal boundary layer in the bubble's wake. Typical experimental observations from those works a reproduced on Figure \ref{fig:slide_thermal_exp}
 
-\begin{figure}[h!]
+\begin{figure}[H]
 
 \begin{center}
 \subfloat[Instantaneous and time-averaged wall temperature in boiling regime visualized and adapted from Estrada-Pérez \etal \cite{estrada-perez_time-resolved_2018}.]{
 \includegraphics[width=0.8\linewidth]{img/forces/slide_thermal_estrada.png}
-} 
+}
 \\
 \subfloat[Transient conduction induced by sliding bubbles visualized and adapted from Kossolapov \cite{kossolapov_experimental_2021}.]{
 \includegraphics[width=0.8\linewidth]{img/forces/slide_thermal_koss.png}
-} 
+}
 \end{center}
 
 \caption{Visualization of bubble sliding thermal impact.}
@@ -68,20 +64,86 @@ The bubble sliding process has also been thermally studied to quantify its impac
 \end{figure}
 
 
-The aforementioned observations are summed-up on Figure \ref{fig:sketch_bub_VFB}. 
+Those experimental observations highlight the significant magnitude of the transient heat transfer triggered by bubble movement on the wall that can represent up to 40\% of the total wall heat flux \cite{kossolapov_experimental_2021}. All the aforementioned observations are summed-up on Figure \ref{fig:sketch_bub_VFB}. 
 
-\begin{figure}
+\begin{figure}[H]
 \centering
 \includegraphics[width=0.65\linewidth]{img/forces/bub_life_VFB.pdf}
 \caption{Sketch of a typical bubble lifetime in vertical flow boiling. Left depicts a typical side view of the heater with identification of departure, sliding and lift-off. Right depicts a top view of the heater, exhibiting the area that will undergo transient heat transfer.}
 \label{fig:skecth_bub_VFB}
 \end{figure}
 
-Predicting the HFP in vertical flow boiling thus requires a descriptions of single bubble dynamics that includes accurate estimations of $R_{d}$, $\vect{U_{b}}$, $l_{sl}$ and $R_{lo}$.
+Predicting the HFP in vertical flow boiling thus requires a descriptions of single bubble dynamics that includes accurate estimations of bubble departure and lift-off radiuses $R_{d}$ and $R_{lo}$ as well as bubble sliding velocity $\vect{U_{b}}$ to predict the sliding length $l_{sl}$.
 
 \subsection{Existing Approaches}
 
-First approaches consisted of experimental-based correlations. For instance, we can refer to the work of Unal \cite{unal_maximum_1976} or Situ \etal \cite{situ_bubble_2005} for the lift-off / maximum bubble diameter $D_{lo}$, to Maity \cite{maity_effect_2000} or Basu \etal \cite{basu_wall_2005} for the sliding length $l_{sl}$ and to Klausner \etal \cite{klausner_vapor_1993}, Maity \cite{maity_effect_2000}, Brooks \& Hibiki \cite{brooks_wall_2015} or more recently Zhou \etal \cite{zhou_experimental_2020} for the departure diameter $D_{d}$. Those models mostly rely either on pure data regression or semi-analytic approaches. 
+Historically, first approaches to estimate the bubble diameter consisted of experimental-based correlations for pool boiling of horizontal surfaces through photographic studies. In those cases, departure from the nucleation site coincides with the bubble lift-off. Among the mainly used in HFP models and CFD, we can mention the law of Tolubinsky \& Kostanchuk (1970)\cite{tolubinsky_diam} which depends only on the local liquid subcooling:
+
+\begin{equation}
+D_{lo} = D_{0} e^{-\Delta T_{L}}/{45},\ D_{0}=15\mathrm{mm}
+\end{equation}
+
+On the other hand, authors such as Cole \& Rosenhow (1968) proposed relationships including the influence of pressure through the the capillary length $L_{c}=\sqrt{\frac{\sigma}{g\parth{\rho_{L}-\rho_{V}}}}$:
+
+\begin{align}
+D_{lo} =& C L_{c} \parth{\frac{\rho_{L}c_{p,L}T_{sat}}{\rho_{V}h_{LV}}}^{5/4}\\
+\nonumber C=&1.5\times 10^{-4}\ \text{for water and }4.65\times 10^{-4}\ \text{else}.
+\end{align}
+
+This equations provides a good trend for the evolution of bubble departure diameter with pressure as shown by Kossolapov \cite{kossolapov_experimental_2021}.
+
+\npar
+
+Later, \"Unal (1976)\cite{unal_maximum_1976} derived a correlation based on semi-analytical approach of the heat transfer mechanisms around a bubble to estimate its maximum diameter, including simultaneous influences of pressure, heater material, liquid velocity and subcooling:
+
+\begin{align}
+D_{lo}=&2.42\times 10^{-5} P^{0.709}\frac{a}{\sqrt{b\varphi}}\\
+\nonumber a =& \frac{\Delta T_{w}\lambda_{w}}{2\rho_{V}h_{LV}\sqrt{\pi \eta_{w}} }\\
+\nonumber b =& \frac{\Delta T_{L}}{2\parth{1-\rho_{V}/\rho_{L}}}\ \text{and}\ \varphi=\max{1\ ;\ \parth{\frac{U_{L}}{U_{0}}}^{0.47}},\ U_{0}=0.61~\mathrm{m/s}
+\end{align}
+
+\"Unal validated his law against several measurements from the literature covering pressures from 1 to 177 bars, liquid velocities from 0.08 to 9.15 m/s, subcoolings from 3 to 86K and heat fluxes from 0.47 to 10.64 MW/m\up{2}.
+
+
+\begin{remark*}{}
+The law of \"Unal is used in the HFP model of Kurul \& Podowski. It as also implemented in NEPTUNE\_CFD HFP and includes a correction of Borée \etal to avoid divergence in bubble diameter when reaching saturated conditions.
+\end{remark*}
+
+\npar
+
+More recently, the several developments around HFP models has lead meany researchers to propose dedicated correlations for bubble departure or lift-off diameter. For instance, Basu \etal fitted expressions for $D_{d}$ and $D_{lo}$ on their own measurements:
+
+\begin{align}
+\frac{D_{d}}{L_{c}} =& 1.3 \sin{\theta_{s}}^{0.4}\crocht{ 0.13 e^{-1.75\times 10^{-4} \Re_{L,D_{h}}}+0.005 }\Ja_{w}^{0.45}e^{-0.0065\Ja_{L}}\\
+%
+\frac{D_{lo}}{L_{c}} =& 1.3 \sin{\theta_{s}}^{0.4}\crocht{ 0.2 e^{-1.28\times 10^{-4} \Re_{L,D_{h}}}+0.005 }\Ja_{w}^{0.45}e^{-0.0065\Ja_{L}}
+\end{align}
+
+They were validated for $14 \leq \Ja_{w} \leq 56$, $1 \leq \Ja_{L} \leq 138$, $0\leq \Re_{L,D_{h}} \leq 7980$ and $30\degree \leq \theta_{s} \leq 90 \degree$.
+
+
+\begin{remark*}{}
+Basu \etal use these own-developed laws in their HFP formulation to estimate bubble diameters.
+\end{remark*}
+
+\npar
+
+Similarly, Kommajosyula gathered several bubble departure and lift-off diameter measurements from the literature and proposed the following reduced correlation:
+
+\begin{align}
+D_{d} = 18.9 \times 10^{-6} \parth{\frac{\rho_{L}-\rho_{V}}{\rho_{V}}}^{0.27} \Ja_{w}^{0.75} \parth{1+\Ja_{L}}^{-0.3} U_{L,bulk}^{-0.26}\\
+D_{lo} = 1.2 D_{d}
+\end{align}
+
+\begin{remark*}{}
+Although this law (used in Kommajosyula's HFP model) present coherent trends with flow conditions, the raw presence of $U_{L,bulk}$ in the expression is questionable because:
+
+\begin{itemize}
+\item The relationship is not dimensionless and the constant $18.9 \times 10^{-6}$ must be in m\up{1.26}.s\up{-0.26} ;
+\item The negative exponent will yield diverging values when reaching pool boiling conditions, which is not physically coherent.
+\end{itemize}
+\end{remark*}
+
 
 However, explicit correlations include limited range of application depending on the flow conditions over which they have been established. To overcome this drawback and try to come up with more generalized models, researchers have developed Mechanistic Models based on a force-balance approach to precisely depict the external efforts experienced by the growing bubble. The goal is to compute the sum of the forces applied to the bubble over its growing time and to detect departure and lift-off events using associated criteria such as a change in the force balance sign.
 
@@ -1004,7 +1066,7 @@ Now we want to apply this non-dimensional approach to experimental measurement i
 \begin{table}[h!]
 
 %\begin{changemargin}{-1cm}{0cm}
-
+%\rowcolors{1}{}{lightbrown}
 \noindent\makebox[\textwidth]{
 
 \scriptsize
