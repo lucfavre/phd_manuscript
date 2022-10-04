@@ -17,6 +17,152 @@
 \endgroup
 
 \datalist[entry]{nyt/global//global/global}
+  \entry{basu_wall_2005}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BN}{%
+         family={Basu},
+         familyi={B\bibinitperiod},
+         given={Nilanjana},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=WGR}{%
+         family={Warrier},
+         familyi={W\bibinitperiod},
+         given={Gopinath\bibnamedelima R.},
+         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=DVK}{%
+         family={Dhir},
+         familyi={D\bibinitperiod},
+         given={Vijay\bibnamedelima K.},
+         giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BNWGRDVK1}
+    \strng{fullhash}{BNWGRDVK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    In this work a mechanistic model has been developed for the wall heat flux
+  partitioning during subcooled flow boiling. The premise of the proposed model
+  is that the entire energy from the wall is first transferred to the
+  superheated liquid layer adjacent to the wall. A fraction of this energy is
+  then utilized for vapor generation, while the rest of the energy is utilized
+  for sensible heating of the bulk liquid. The contribution of each of the
+  mechanisms for transfer of heat to the liquid—forced convection and
+  transient conduction, as well as the energy transport associated with vapor
+  generation has been quantified in terms of nucleation site densities, bubble
+  departure and lift-off diameters, bubble release frequency, flow parameters
+  like velocity, inlet subcooling, wall superheat, and fluid and surface
+  properties including system pressure. To support the model development,
+  subcooled flow boiling experiments were conducted at pressures of 1.03–3.2
+  bar for a wide range of mass fluxes 124-926kg/m2 s, heat fluxes 2.5-90W/cm2
+  and for contact angles varying from 30° to 90°. The model developed shows
+  that the transient conduction component can become the dominant mode of heat
+  transfer at very high superheats and, hence, velocity does not have much
+  effect at high superheats. This is particularly true when boiling approaches
+  fully developed nucleate boiling. Also, the model developed allows prediction
+  of the wall superheat as a function of the applied heat flux or axial
+  distance along the flow direction.%
+    }
+    \verb{doi}
+    \verb 10.1115/1.1842784
+    \endverb
+    \field{issn}{0022-1481}
+    \field{number}{2}
+    \field{pages}{131\bibrangedash 140}
+    \field{shortjournal}{Journal of Heat Transfer}
+    \field{shorttitle}{Wall Heat Flux Partitioning During Subcooled Flow
+  Boiling}
+    \field{title}{Wall Heat Flux Partitioning During Subcooled Flow Boiling:
+  Part 1—Model Development}
+    \verb{url}
+    \verb https://doi.org/10.1115/1.1842784
+    \endverb
+    \field{volume}{127}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\XXKGXHJ2\\Wall-Heat-Flu
+    \verb x-Partitioning-During-Subcooled-Flow.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Heat Transfer}
+    \field{day}{15}
+    \field{month}{03}
+    \field{year}{2005}
+    \field{urlday}{23}
+    \field{urlmonth}{06}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{brooks_wall_2015}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BCS}{%
+         family={Brooks},
+         familyi={B\bibinitperiod},
+         given={Caleb\bibnamedelima S.},
+         giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hibiki},
+         familyi={H\bibinitperiod},
+         given={Takashi},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \keyw{Subcooled boiling, Departure diameter, Departure frequency,
+  Interfacial area concentration, Mini-channel, Refrigerants, Wall nucleation}
+    \strng{namehash}{BCSHT1}
+    \strng{fullhash}{BCSHT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    The bubble departure characteristics are studied in flow boiling
+  considering the available experimental data in the literature. The current
+  bubble departure diameter and departure frequency models are reviewed and
+  compared with the collected database, revealing the current modeling
+  shortcomings in forced convective flows. Based on an energy balance approach
+  at the heated surface, the important dimensionless groups are identified and
+  correlated for the bubble departure diameter and departure frequency. These
+  dimensionless groups are the Jakob number, Boiling number, density ratio, and
+  Prandtl number. The bubble departure diameter data also suggests some effect
+  of the flow geometry in mini-channels. The newly proposed semi-empirical
+  models for the bubble departure diameter and departure frequency are shown
+  based on the available database to be accurate to within ±22\% and ±35\%
+  respectively. This work also identifies important future experimental
+  considerations for the bubble departure characteristics including data at
+  elevated pressures, larger Prandtl numbers, and around the boundary between
+  mini and conventional channels.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2015.03.005
+    \endverb
+    \field{issn}{0017-9310}
+    \field{pages}{183\bibrangedash 196}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{Wall nucleation modeling in subcooled boiling flow}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S001793101500263X
+    \endverb
+    \field{volume}{86}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\XDM7
+    \verb T498\\Brooks et Hibiki - 2015 - Wall nucleation modeling in subcooled
+    \verb  boiling flow.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\
+    \verb Luczer\\Zotero\\storage\\4CDDFHMH\\S001793101500263X.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{07}
+    \field{year}{2015}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{bucci_not-so-subtle_2021}{article}{}
     \name{author}{3}{}{%
       {{hash=BM}{%
@@ -290,6 +436,134 @@
     \field{year}{2015}
     \field{urlday}{20}
     \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{duhar_dynamics_2006}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DG}{%
+         family={Duhar},
+         familyi={D\bibinitperiod},
+         given={Géraldine},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Colin},
+         familyi={C\bibinitperiod},
+         given={Catherine},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DGCC1}
+    \strng{fullhash}{DGCC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1063/1.2213638
+    \endverb
+    \field{issn}{1070-6631}
+    \field{note}{Publisher: American Institute of Physics}
+    \field{number}{7}
+    \field{pages}{077101}
+    \field{title}{Dynamics of bubble growth and detachment in a viscous shear
+  flow}
+    \verb{url}
+    \verb https://aip.scitation.org/doi/10.1063/1.2213638
+    \endverb
+    \field{volume}{18}
+    \field{journaltitle}{Physics of Fluids}
+    \field{month}{07}
+    \field{year}{2006}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{estrada-perez_time-resolved_2018}{article}{}
+    \name{author}{4}{}{%
+      {{hash=EPCE}{%
+         family={Estrada-Pérez},
+         familyi={E\bibinithyphendelim P\bibinitperiod},
+         given={Carlos\bibnamedelima E.},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=HYA}{%
+         family={Hassan},
+         familyi={H\bibinitperiod},
+         given={Yassin\bibnamedelima A.},
+         giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=AB}{%
+         family={Alkhudhiri},
+         familyi={A\bibinitperiod},
+         given={Bandar},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yoo},
+         familyi={Y\bibinitperiod},
+         given={Junsoo},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Bubble dynamics, Subcooled flow boiling, Infrared measurements,
+  Liquid–vapor thermal interaction, Sliding bubbles, Thermal footprint}
+    \strng{namehash}{EPCE+1}
+    \strng{fullhash}{EPCEHYAABYJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{abstract}{%
+    The local thermal response of the liquid phase to the presence of sliding
+  bubbles was measured with an infrared camera in subcooled flow-boiling
+  conditions. These measurements were complemented with two high-speed cameras
+  to capture the corresponding bubbles’ dynamics. The liquid–vapor
+  interactions were captured in detail over the full life-cycle of sliding
+  bubbles. Four distinctive phases for the bubble life-cycle were identified:
+  A) Spherical bubble growth with strong attachment, B) Deformed bubble growth
+  with weak attachment, C) Detachment with hot liquid quenching, and D) Cold
+  liquid quenching. To the best of the authors’ knowledge, it is the first
+  time that the “detachment with hot liquid quenching phase has been
+  observed. This phase is characterized by a “hot” thermal footprint during
+  the bubble detachment process. It is believed that this footprint is
+  constituted partially from hot liquid released during the condensation of the
+  recently detached bubble, and from released hot fluid previously collected by
+  the bubble during sliding. In addition, this work reveals that using
+  traditional high-speed visualization techniques (side-view camera only) can
+  lead to an underestimation of approximately 40\% of the actual bubble–wall
+  contact diameter (dc) which was inferred from the infrared camera
+  measurements.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijmultiphaseflow.2017.10.002
+    \endverb
+    \field{issn}{0301-9322}
+    \field{pages}{94\bibrangedash 110}
+    \field{shortjournal}{International Journal of Multiphase Flow}
+    \field{title}{Time-resolved measurements of liquid–vapor thermal
+  interactions throughout the full life-cycle of sliding bubbles at subcooled
+  flow boiling conditions}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0301932217303415
+    \endverb
+    \field{volume}{99}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\DK2D
+    \verb VW75\\Estrada-Pérez et al. - 2018 - Time-resolved measurements of li
+    \verb quid–vapor thermal.pdf:application/pdf;ScienceDirect Snapshot:C\:\\
+    \verb Users\\Luczer\\Zotero\\storage\\BJPHELGL\\S0301932217303415.html:text
+    \verb /html
+    \endverb
+    \field{journaltitle}{International Journal of Multiphase Flow}
+    \field{day}{01}
+    \field{month}{02}
+    \field{year}{2018}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
     \field{urlyear}{2022}
   \endentry
 
@@ -1567,6 +1841,82 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{situ_bubble_2005}{article}{}
+    \name{author}{4}{}{%
+      {{hash=SR}{%
+         family={Situ},
+         familyi={S\bibinitperiod},
+         given={Rong},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hibiki},
+         familyi={H\bibinitperiod},
+         given={Takashi},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=IM}{%
+         family={Ishii},
+         familyi={I\bibinitperiod},
+         given={Mamoru},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mori},
+         familyi={M\bibinitperiod},
+         given={Michitsugu},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \keyw{Bubble lift-off size, Flow visualization, Forced convection,
+  Subcooled boiling}
+    \strng{namehash}{SR+1}
+    \strng{fullhash}{SRHTIMMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Forced convective subcooled boiling flow experiments were conducted in a
+  {BWR}-scaled vertical upward annular channel. Water was used as the testing
+  fluid, and the tests were performed at atmospheric pressure. A high-speed
+  digital video camera was applied to capture the dynamics of the bubble
+  nucleation process. Bubble lift-off diameters were obtained from the images
+  for a total of 91 test conditions. A force balance analysis of a growing
+  bubble was performed to predict the bubble lift-off size. The dimensionless
+  form of the bubble lift-off diameter was formulated to be a function of Jacob
+  number and Prandtl number. The proposed model agreed well with the
+  experimental data within the averaged relative deviation of ±35.2\%.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2005.06.031
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{25}
+    \field{pages}{5536\bibrangedash 5548}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{Bubble lift-off size in forced convective subcooled boiling
+  flow}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S001793100500459X
+    \endverb
+    \field{volume}{48}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\84IKF6F7\
+    \verb \S001793100500459X.html:text/html;Texte intégral:C\:\\Users\\Luczer\
+    \verb \Zotero\\storage\\C55QNMMA\\Situ et al. - 2005 - Bubble lift-off size
+    \verb  in forced convective subcoole.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{12}
+    \field{year}{2005}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{song_temperature_2021}{article}{}
     \name{author}{2}{}{%
       {{hash=SJW}{%
@@ -2033,6 +2383,86 @@
     \field{year}{2018}
     \field{urlday}{02}
     \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{van_helden_forces_1995}{article}{}
+    \name{author}{3}{}{%
+      {{hash=VHWGJ}{%
+         family={Van\bibnamedelima Helden},
+         familyi={V\bibinitperiod\bibinitdelim H\bibinitperiod},
+         given={W.\bibnamedelima G.\bibnamedelima J.},
+         giveni={W\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  J\bibinitperiod},
+      }}%
+      {{hash=VDGCWM}{%
+         family={Van Der\bibnamedelima Geld},
+         familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim
+  G\bibinitperiod},
+         given={C.\bibnamedelima W.\bibnamedelima M.},
+         giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+      {{hash=BPGM}{%
+         family={Boot},
+         familyi={B\bibinitperiod},
+         given={P.\bibnamedelima G.\bibnamedelima M.},
+         giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{VHWGJVDGCWMBPGM1}
+    \strng{fullhash}{VHWGJVDGCWMBPGM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{abstract}{%
+    Experiments are performed on bubble detachment from an artificial cavity in
+  a plane wall of a vertical rectangular channel. Mean upward velocity is
+  varied. Steam bubbles are generated by local heating of the cavity, nitrogen
+  bubbles of about the same size by injection. The experiments show a
+  difference in take off direction between vapor and nitrogen bubbles. Steam
+  bubbles take off into the liquid, while nitrogen bubbles more or less slide
+  parallel to the wall. The bubble detachment radius decreases for increasing
+  bulk liquid velocity, in a way that merely depends on the detachment radius
+  without convection. Nitrogen bubbles, coming from a capillary with
+  approximately the same radius are larger than water vapor bubbles. A force
+  coefficient fit is performed on force components perpendicular to the wall.
+  By analyzing flow- and non-flow experiments separately, some of the forces
+  are quantified. By combining the results of nitrogen bubble and steam bubble
+  experiments, a force due to the temperature difference at the bubble foot is
+  studied. Such a force could explain the observed differences between steam
+  and nitrogen bubbles. It is found that either a vorticity lift force of the
+  type found by Auton [The dynamics of bubbles, drops and particles in motion
+  in liquids, Ph.D. thesis, University of Cambridge (1983)] is negligible, or
+  this temperature difference force may be important. A commonly used criterion
+  to predict detachment radii is found not to be satisfactory.%
+    }
+    \verb{doi}
+    \verb 10.1016/0017-9310(94)00319-Q
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{11}
+    \field{pages}{2075\bibrangedash 2088}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{Forces on bubbles growing and detaching in flow along a
+  vertical wall}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/001793109400319Q
+    \endverb
+    \field{volume}{38}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\Z8WFFZK3\
+    \verb \001793109400319Q.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{07}
+    \field{year}{1995}
+    \field{urlday}{19}
+    \field{urlmonth}{09}
     \field{urlyear}{2022}
   \endentry
 
@@ -2561,6 +2991,99 @@
     \field{year}{1961}
     \field{urlday}{16}
     \field{urlmonth}{09}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{unal_maximum_1976}{article}{}
+    \name{author}{1}{}{%
+      {{hash=�HC}{%
+         family={Ünal},
+         familyi={�\bibinitperiod},
+         given={H.\bibnamedelima C.},
+         giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{�HC1}
+    \strng{fullhash}{�HC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{�}
+    \field{sortinithash}{�}
+    \field{abstract}{%
+    A heat transfer controlled bubble model has yielded three semi-empirical
+  correlations to predict bubble-growth rate, maximum bubble diameter and
+  maximum bubble-growth time for the subcooled nucleate flow boiling of water.
+  Our data for maximum bubble diameter for 13.9, 15.8 and 17.7 {MN}/m2 obtained
+  by the use of a highspeed photographic technique and the data available in
+  the literature were found to fit the correlations. The range of data used is
+  as follows: pressure: 0.1–17.7 {MN}/m2; heat flux: 0.47–10.64 {MN}/m2;
+  velocity: 0.08–9.15m/s; subcooling: 3–86K; maximum bubble diameter:
+  0.08–1.24 mm; maximum bubble-growth time: 0.175–5 ms. Résumé Un modèle
+  mathématique d'une bulle contrôlé par le transport de chaleur a produit
+  trois corrélations semi-empiriques pour la prévision de la vitesse de
+  croissance d'une bulle, du diamètre maximal d'une bulle et de la durée
+  maximale de croissance d'une bulle pour l'ébullition en écoulement nuclée
+  sousrefroidie de l'eau. Nos résultats pour le diamètre maximal d'une bulle
+  pour 13,9, 15,8 et 17,7 {MN}/m2, obtenus au moyen de photographie
+  ultra-rapide et les données qui existent dans la littérature ont été
+  trouvés de convenir aux corrélations. La région de données corrélées
+  est la suivante: pression: 0,1–17,7 {MN}/m2; flux de chaleur 0,47–10,64
+  {MW}/m2; vitesse: 0,08–9,15 m/s; sous-refroidissement: 3–86K; diamètre
+  maximal d'une bulle: 0,08–1,24 mm; durée maximale de croissance d'une
+  bulle: 0,175–5 ms. Zusammenfassung Ein mathematisches Modell, das auf dem
+  Wärmetransportmechanismus basiert, ergibt drei semi-empirische
+  Korrelationen, welche es ermöglichen, die Blasenwachstumsgeschwindigkeit,
+  den maximalen Blasendurchmesser und die maximale Blasenwachstumsdauer für
+  die unterkühlte Siedeströmung von Wasser vorauszusagen. Es hat sich
+  herausgestellt, dasz unsere Ergebnisse für den maximalen Blasendurchmesser
+  für 13,9, 15,8 und 17,7 {MN}/m2, welche mittels
+  Hochgeschwindigkeitsphotographié ermittelt wurden und die aus der Literatur
+  erhaltenen Daten sich den Korrelationen gut anpassen. Die Daten liegen im
+  folgenden Bereich: Druck: 0,1–17,7 {MN}/m2; Wärmestromdichte: 0,47–10,64
+  {MW}/m2; Geschwindigkeit: 0,08–9,15 m/s; Unterkühlung: 3–86K; maximaler
+  Blasendurchmesser: 0,08–1,24 mm; maximale Blasenwachstumsdauer: 0,175–5
+  ms. Реферат C п{oMoщью} Moдeли pocтa пuзыpькoв
+  пoлuчeнo тpи п{oлuэMпиpичecкич} cooтнoшeния для
+  pacчeтa cкopocти pocтa, {MaкcиMaльнoгo} ди{aMeтpa} и
+  {MaкcиMaльнoгo} в{peMeни} pocтa пuзыpькoв пpи
+  п{uзыpькoвoM} кипeнии нeдoгpeтoй вoды в пoтoкe.
+  Haйдeнo, чтo п{oлuчeнныMи} {cooтнoшeнияMи}
+  oпиcывaютcя нaши дaнныe пo {MaкcиMaльнoMu} ди{aMeтpu}
+  пuзыpькoв пpи знaчeнияч тeплoвoгo пoтoкa, paвныч
+  13,9; 15,8 и 17,7 {MN}/M2, пoлuчeнныe c п{oMoщью} Meтoдa
+  cкopocтнoй {cъeMки}, и дaнныe, иMeющиecя в литepaтupe.
+  П{apaMeтpы} изMeнялиcь в cлeдuющич диaпaзoнaч:
+  дaвлeниe — oт 0,1 дo 17,7 {MN}/M2, тeплoвoй пoтoк —
+  0,47-10,64 Mвт/M2, cкopocть — 0,08–9,15 M/ceк, нeдoгpeв—
+  3–96 K, {MaкcиMaльный} ди{aMeтp} пuзыpькoв — 0,08–1,24
+  {MM}. {MaкcиMaльнoe} в{peMя} pocтa пuзыpькoв — 0,175–5
+  Mceк.%
+    }
+    \verb{doi}
+    \verb 10.1016/0017-9310(76)90047-8
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{6}
+    \field{pages}{643\bibrangedash 649}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{Maximum bubble diameter, maximum bubble-growth time and
+  bubble-growth rate during the subcooled nucleate flow boiling of water up to
+  17.7 {MN}/m2}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0017931076900478
+    \endverb
+    \field{volume}{19}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\RJ9RQFLI\
+    \verb \0017931076900478.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{06}
+    \field{year}{1976}
+    \field{urlday}{02}
+    \field{urlmonth}{08}
     \field{urlyear}{2022}
   \endentry
 \enddatalist

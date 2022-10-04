@@ -1328,4 +1328,130 @@ node[near end, above left,purple]{$T_{L}(y)$};
 
 \endpgfgraphicnamed
 
+
+
+
+
+\beginpgfgraphicnamed{bub_life_VFB}
+
+
+\fbox{
+
+
+\begin{tikzpicture}[scale=3.5, every node/.style={scale=0.9}]
+
+
+%%%%Bubble growth, sliding and lift-off in VFB
+
+
+%Tilted bubble
+\coordinate (Ow1) at (0,0.5);
+\coordinate (Ow2) at (0,3);
+
+\coordinate (Osit1) at (0,0.95);
+\coordinate (Osit) at (-0.05,1);
+\coordinate (Osit2) at (0,1.05);
+
+\coordinate (Oslide) at (0,1.5);
+\coordinate (Olo) at (0,2.5);
+
+
+\coordinate (Obsit) at (0,1.0);
+
+\draw (Ow1)--(Osit1)--(Osit)--(Osit2)--(Ow2);
+
+\tikzmath{\thet = 30 ; \thetrad= \thet * pi / 180;
+\dthet= 10 ; \dthetrad=\dthet*pi/180;
+\thetadvrad=\thetrad - \dthetrad;
+\thetrecrad=\thetrad + \dthetrad;
+\thetadv=\thetadvrad*180/pi;
+\thetrec=\thetrecrad*180/pi;
+\ray=0.15; 
+\rayadv=\ray *(1+cos(\thetrad r))/(1+ cos(\thetadvrad r);
+\rayrec=\ray *(1+cos(\thetrad r))/(1+ cos(\thetrecrad r);};
+
+\coordinate (Oarc) at ($(Obsit)-(0,{\ray * sin(\thetrad r)})$);
+
+%Flow arrows
+\foreach \i in {2,...,14} 
+{
+\coordinate (Oloc) at ($(Ow1)+(\i/15,0.05)$);
+\draw[->,>=latex, gray!70!blue] (Oloc)--++(0,{ln(1+0.03*\i)});
+}
+
+\draw (Oloc) node[gray!70!blue, above right]{${\vect{U_{L}}}$};
+
+\draw[densely dashed, black, <->] (Osit)--($(Olo)-(0.05,0)$) node[midway, left]{$l_{sl}$};
+
+%Static growth
+
+\draw (Oarc) arc({-pi+(\thetrecrad)) r}:{0 r}:\rayrec) arc ({0 r}:{pi-(\thetadvrad)) r}:\rayadv);
+
+\fill[color = gray!10!white, opacity=0.5] (Oarc) arc({-pi+(\thetrecrad)) r}:{0 r}:\rayrec) arc ({0 r}:{pi-(\thetadvrad)) r}:\rayadv);
+
+\draw[<->, densely dashed] ($(Osit) + ({\ray * cos(\thetadvrad r)+0.05},0)$) --++ (\rayadv, 0) node[very near end, right]{$R_{d}$};
+
+%Sliding
+\coordinate (Oarc) at ($(Oslide)+(0,{\ray * sin(\thetrad r)})$);
+\tikzmath{\ray=0.2;};
+
+\draw (Oarc) arc({(-pi+\thetrad) r}:{(pi-\thetrad) r}:\ray);
+\fill[color = gray!10!white, opacity=0.5] (Oarc) arc({(-pi+\thetrad) r}:{(pi-\thetrad) r}:\ray);
+
+\draw[->, red] ($(Oslide) + ({\ray * cos(\thetadvrad r)},\ray)$) --++ (0, {1.5*\ray}) node[very near end, right]{$\redmath{\vect{U_{b}}}$};
+
+
+%Lift-off
+
+\coordinate (Ob) at ($(Olo)+(0.6, 0)$);
+\tikzmath{\ray=0.3;};
+
+\draw (Ob) circle(\ray);
+\fill[color = gray!10!white, opacity=0.5] (Ob) circle(\ray);
+
+\draw[<->, densely dashed] (Ob) --++ (\ray, 0) node[midway, above]{$R_{lo}$};
+
+\draw ($(Ob)+(0,0.7)$) node{Side view};
+
+
+%%Quenched Area
+
+\tikzmath{\rayd=0.15; \raylo=0.3;}; 
+
+\coordinate (Od) at (2, 1);
+\coordinate (Ol) at (2, 2.5);
+\coordinate (Rd) at ($(Od)+(\rayd,0.0)$);
+\coordinate (Ld) at ($(Od)+(- \rayd,0)$);
+\coordinate (Rl) at ($(Ol)+(\raylo,0.0)$);
+\coordinate (Ll) at ($(Ol)+(- \raylo, 0.0)$);
+%arc(-90:-90+180:0.6)
+
+\draw[black] (Ld) arc(180:360:\rayd) -- (Rl) arc(360:360+180:\raylo) -- cycle;
+\shade[bottom color=orange!90!blue, top color=red!90!blue, opacity=0.3] (Ld) arc(180:360:\rayd) -- (Rl) arc(360:360+180:\raylo) -- cycle;
+%\draw[black] (Tl) arc(90:90-180:0.6);
+
+
+\draw[densely dotted] (Ld) arc(180:0:\rayd);
+\draw[densely dotted] (Ll) arc(180:360:\raylo);
+
+\draw[<->, >=stealth, densely dashed] (Od)--(Rd) node[midway, below]{$R_{d}$};
+\draw[<->, >=stealth, densely dashed] (Ol)--(Rl) node[midway, above]{$R_{lo}$};
+
+\draw[<->, >=stealth, densely dashed] (Od)--(Ol) node[midway, left]{$l_{sl}$};
+
+\coordinate (Ow1) at (1.5,0.5);
+\coordinate (Ow2) at (1.5,3);
+\coordinate (Ow3) at (2.5,3);
+\coordinate (Ow4) at (2.5,0.5);
+
+\draw (Ow1) -- (Ow2) -- (Ow3) -- (Ow4) -- cycle;
+\draw ($(Ol)+(0,0.7)$) node{Top view};
+
+\end{tikzpicture}
+
+}
+
+
+\endpgfgraphicnamed
+
 \end{document}

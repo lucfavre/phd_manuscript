@@ -2,12 +2,97 @@
 
 \chapter{Boiling Bubble Dynamics} % Chapter title
 
-\label{ch:name} % For referencing the chapter elsewhere, use \autoref{ch:name} 
+\label{ch:bub_dyn} % For referencing the chapter elsewhere, use \autoref{ch:name} 
 
 %----------------------------------------------------------------------------------------
 
+\section{Introduction}
 
-\section{Establishment of the force balance for a bubble on a vertical wall }
+Boiling bubble parameters are playing an important role in the Heat Flux Partitioning models. For instance, the evaporation heat flux $\phi_{e}$ is directly proportional to the bubble lift-off radius $R_{lo}$ \ref{eq:phie_KP} while the quenching heat flux $\phi_{q}$ depends on the wall area visited by a bubble $A_{q,1b}$ (Eq. \ref{eq:phiq_Basu}) which depends on the bubble sliding length $l_{sl}$, departure raidus $R_{d}$ and lift-off radius $R_{lo}$.
+
+\subsection{Experimental Insights}
+
+Consequently, many experimental investigations have been conducted to further understand the behavior of nucleated bubbles on a wall while facing a liquid flow. In the case of vertical flow boiling, a typical bubble life cycle can be described as follows:
+
+\begin{itemize}
+\item Beginning of nucleation, growth while attached to the nucleation site ;
+
+\item Detachment occurring at radius $R_{d}$, from which the bubble will start to slide and accelerate along the wall ;
+
+\item Lift-off from the wall at radius $R_{lo}$ after sliding over a length $l_{sl}$.
+
+\end{itemize}
+
+
+This behavior has been supported by many experimental observations who clearly observed three stages (departure, sliding, lift-off) both at low pressure (Maity \cite{maity_effect_2000}, Situ \cite{situ_bubble_2005}, Thorncroft \cite{thorncroft_experimental_1998}, Prodanovic \cite{prodanovic_2006}, Chen \cite{chen_prediction_2012}, Ren \cite{ren_development_2020}, etc.) and high pressure (March \cite{march_1990}, Kossolapov \cite{kossolapov_experimental_2021}). Altogether, those works cover various flow conditions and operating fluids which insist on the generality of this bubble behavior in vertical flow boiling.
+
+
+Examples from the literature of visualizations of bubble sliding at atmospheric and high pressure are reproduced on Figure \ref{fig:slide_exp_vis}.
+
+\begin{figure}[h!]
+
+\begin{center}
+
+\subfloat[Bubble sliding visualized and adapted from Maity \cite{maity_effect_2000} at atmospheric pressure.]{
+\includegraphics[width=0.7\linewidth]{img/forces/slide_maity.png}
+} 
+\\
+\subfloat[Bubble sliding visualized and adapted from Kossolapov \cite{kossolapov_experimental_2021} at higher pressure.]{
+\includegraphics[width=0.7\linewidth]{img/forces/slide_koss.png}
+} 
+
+\end{center}
+
+\caption{Visualization of bubble sliding at various pressures.}
+\label{fig:slide_exp_vis}
+\end{figure}
+
+\npar
+
+The bubble sliding process has also been thermally studied to quantify its impact over the wall heat transfer. Estrada-Perez \etal \cite{estrada-perez_time-resolved_2018} observed the significant thermal impact of sliding bubbles footprints. Kossolapov \cite{kossolapov_experimental_2021} also investigated the sliding of boiling bubbles and measured the magnitude of the transient heat transfer induced by the disruption of the liquid thermal boundary layer in the bubble's wake. Typical experimental observations from those works a reproduced on Figure \ref{fig:slide_thermal_exp}
+
+\begin{figure}[h!]
+
+\begin{center}
+\subfloat[Instantaneous and time-averaged wall temperature in boiling regime visualized and adapted from Estrada-Pérez \etal \cite{estrada-perez_time-resolved_2018}.]{
+\includegraphics[width=0.8\linewidth]{img/forces/slide_thermal_estrada.png}
+} 
+\\
+\subfloat[Transient conduction induced by sliding bubbles visualized and adapted from Kossolapov \cite{kossolapov_experimental_2021}.]{
+\includegraphics[width=0.8\linewidth]{img/forces/slide_thermal_koss.png}
+} 
+\end{center}
+
+\caption{Visualization of bubble sliding thermal impact.}
+\label{fig:slide_thermal_exp}
+\end{figure}
+
+
+The aforementioned observations are summed-up on Figure \ref{fig:sketch_bub_VFB}. 
+
+\begin{figure}
+\centering
+\includegraphics[width=0.65\linewidth]{img/forces/bub_life_VFB.pdf}
+\caption{Sketch of a typical bubble lifetime in vertical flow boiling. Left depicts a typical side view of the heater with identification of departure, sliding and lift-off. Right depicts a top view of the heater, exhibiting the area that will undergo transient heat transfer.}
+\label{fig:skecth_bub_VFB}
+\end{figure}
+
+Predicting the HFP in vertical flow boiling thus requires a descriptions of single bubble dynamics that includes accurate estimations of $R_{d}$, $\vect{U_{b}}$, $l_{sl}$ and $R_{lo}$.
+
+\subsection{Existing Approaches}
+
+First approaches consisted of experimental-based correlations. For instance, we can refer to the work of Unal \cite{unal_maximum_1976} or Situ \etal \cite{situ_bubble_2005} for the lift-off / maximum bubble diameter $D_{lo}$, to Maity \cite{maity_effect_2000} or Basu \etal \cite{basu_wall_2005} for the sliding length $l_{sl}$ and to Klausner \etal \cite{klausner_vapor_1993}, Maity \cite{maity_effect_2000}, Brooks \& Hibiki \cite{brooks_wall_2015} or more recently Zhou \etal \cite{zhou_experimental_2020} for the departure diameter $D_{d}$. Those models mostly rely either on pure data regression or semi-analytic approaches. 
+
+However, explicit correlations include limited range of application depending on the flow conditions over which they have been established. To overcome this drawback and try to come up with more generalized models, researchers have developed Mechanistic Models based on a force-balance approach to precisely depict the external efforts experienced by the growing bubble. The goal is to compute the sum of the forces applied to the bubble over its growing time and to detect departure and lift-off events using associated criteria such as a change in the force balance sign.
+
+
+
+
+\section{Bubble Force Balance in Vertical Flow Boiling}
+
+One of the firstly introduced model of this kind was proposed by Klausner \etal in 1993 \cite{klausner_vapor_1993} validated on horizontal flow boiling of refrigerant. It was followed by several subsequent works among which Van Helden \etal \cite{van_helden_forces_1995} who assessed forces coefficients using injected air bubbled in a vertical flow or Thorncroft \cite{thorncroft_bubble_2001} who compared his predictions with vertical and horizontal flow boiling of R113. Later, Duhar \& Colin \cite{duhar_dynamics_2006} validated a force balance on bubbles created by air injection in a shear flow. Sugrue \etal \cite{sugrue_experimental_2014} studied water flow boiling with varying surface orientation with their results used by Mazzocco \etal \cite{mazzocco_reassessed_2018} who validated his model against several low pressure measurements from literature. For more recent works, we can mention Ren \etal \cite{ren_development_2020} who used own measurements of vertical flow boiling of water up to 5 bar. Each of those models proposed different upgrades and modifications to the force balance depending on the aimed experimental conditions.
+
+Unfortunately, all the aforementioned works were validated using low pressure experiments due to the lack of pressurized measurements in the literature. In addition, the common use of several empirical parameters makes it difficult to reach a general validation of those models. The present study, anchored in this framework, aims to propose an update of the bubble force balance for vertical boiling flows with a reduced empiricism and to study the sliding phenomenon by both conducting a non-dimensional analysis of the departure by sliding as well as predicting the subsequent departure diameter and sliding velocity of the bubble. By focusing on the force balance parallel to the wall, the approach is validated against measurements in various flow conditions, including pressure up to 40 bar thanks to the recent work of Kossolapov \cite{kossolapov_experimental_2021}. This ensures an encouraging generality of the proposed approach compared to previous models.
 
 
 In this section, we wish to detail expressions of the different forces experienced by the bubble and to compare their magnitude in order to assess which will be predominant in the departure and lift-off process.
@@ -1384,5 +1469,9 @@ The limitations of the developed approach lie mainly in the simple and empirical
 
 Finally, the precise estimation of the contact angle and hysteresis remains a critical parameter to predict departure by sliding as demonstrated throughout this study. Local measurements of those values and their evolution with operating conditions would be a very valuable information in that regard. The article of Song \& Fan \cite{song_temperature_2021} that sums up existing modeling and experimental measurements provides a good overview of the problem and identifies the associated challenges that are still to be tackled.
 
+
+
+
+\section{Bubble Lift-Off}
 
 

@@ -70,7 +70,22 @@ We tested different friction factor along with different values of wall roughnes
 \end{remark*}
 
 
-To estimate the error made over the HTC on Richenderfer, Kossolapov and Jens-Lottes cases, we display on Figure \ref{fig:ncfd_gniel_corr_htc} the predictions of Gnielisnki correlation including a constant correction factor for those cases.
+The error obtained on Richenderfer and Kossolapov data can be explained by the definition of the HTC computed by Gnielinski correlation. Indeed, Gnielinski correlated a Nusselt number associated to a forced convection coefficient $h_{fc,Gniel}$ in the case of a internal flow with a completely heated wall.
+
+However, only one side of the channel is heated in Richenderfer ans Kossolapov experiments. If $S_{heat}$ denotes this actual heated surface, then Gnielinski correlation estimates the HTC for a surface $4S_{heat}$. With the same imposed total heat flux $\Phi_{w}$ and bulk liquid temperature $T_{L}$, we have:
+
+\begin{align}
+h_{fc,Gniel} =& \frac{\Phi_{w}}{\parth{T_{w,Gniel}-T_{L}} 4S_{heat}} \\
+h_{fc,exp} =& \frac{\Phi_{w}}{\parth{T_{w,exp}-T_{L}} S_{heat}}
+\end{align}
+
+Writing $T_{w,Gniel}=T_{w,real}$ then yields:
+
+\begin{equation}
+h_{fc,exp}=4h_{fc,Gniel}
+\end{equation}
+
+On Figure \ref{fig:ncfd_gniel_corr_htc} we display the predictions of Gnielisnki correlation including this correction by a factor 4 on the HTC for Richenderfer and Kossolapov cases. We also test a $10\%$ reduction on the HTC for Jens-Lottes cases to assess the error made by Gnielinski correlation.
 
 On the same Figure, we also present predictions achieved with the local HTC estimation implemented in NCFD (Eq. \ref{eq:SP_HTC_NCFD}), using a value of $y^{+}=100$. 
 
@@ -81,7 +96,7 @@ On the same Figure, we also present predictions achieved with the local HTC esti
 \includegraphics[width=0.45\linewidth]{img/single_phase/comp_ncfd.pdf}
 \label{fig:ncfd_comp}
 } 
-\subfloat[Corrected Gnielinski correlation. We multiply the HTC by 3.5 on Richenderfer and Kossolapov cases and by 0.9 on Jens-Lotte cases.]{
+\subfloat[Corrected Gnielinski correlation. We multiply the HTC by 4 on Richenderfer and Kossolapov cases and by 0.9 on Jens-Lotte cases.]{
 \includegraphics[width=0.45\linewidth]{img/single_phase/comp_gniel_corr.pdf}
 \label{fig:gniel_corr_comp}
 } 
@@ -119,7 +134,7 @@ Gnielinski & 20.31 & 14.06 & 6.09 & 1.74 \\
 NCFD law & 15.52 & 9.25 & 23.69 & 3.36 \\
 \\
 
-Corrected Gnielisnki & 2.26 & 2.49 & 1.57 & 1.74 \\
+Corrected Gnielisnki & 1.34 & 3.08 & 1.57 & 1.74 \\
 \\
 
 \hline
