@@ -611,16 +611,63 @@ Shi \etal \cite{shi_drag_2021} conducted DNS for wall distances down to $L_{R}=1
 \end{figure}
 
 
-The lift force and the drag force represent the two components of the global hydrodynamic effort exerted by the surronding flow over a bubble. The lift force corresponds to the force directed orthogonally to the flow direction while the drag is the colinear one. 
+
+\subsubsection{Lift coefficient}
 
 
-In those two expressions, the main parameter remains $C_{D}$ and $C_{L}$ which modeling can be developed depending on the flow characteristics (uniform, shear, wall influence, etc.). For instance, one of the most recent and complete expression of those coefficients have been derived from DNS conducted by \textsc{Shi} \etal~ which takes into account the distance to the wall and the shear rate simultaneously.
+In 1998, Auton \etal \cite{auton_1998} analytically derived the lift force for an inviscid fluid in unstationnary motion in a weak velocity gradient and found $C_{L}=0.5$. Later, Legendre \& Magnaudet (1998) used numerical results to propose a dependency of $C_{L}$ on the bubble Reynolds number for a sphere in an infinite meidum facing a weakly sheared flows as:
+
+\begin{align}
+C_{L} =&\parth{ {C_{L,\Re_{b} \sim 1}}^{2} + {C_{L,\Re_{b} \gg 1}}^{2} }^{1/2}\\
+ =&\parth{ \crocht{\frac{6}{\pi^{2}} \frac{2.255 \parth{\Re_{b}\Omega^{*}}^{-1/2}}{ \parth{1+0.2\dfrac{\Re_{b}}{\Omega^{*}}}^{3/2} }}^{2} + \crocht{ \frac{1}{2} \frac{1+16\ {\Re_{b}}^{-1}}{1+29\ {\Re_{b}}^{-1}} }^{2} }^{1/2}
+\end{align} 
 
 
 
-\subsubsection{Drag and lift coefficient from Shi \etal}
 
-In this section, we detail the expression of the drag and lift coefficient derived by Shi \etal from multiple DNS simulations.
+
+
+
+
+Shi \etal:
+
+
+
+
+\begin{align}
+C_{L}^{W} =C_{Lu}^{W} + C_{L\omega}^{W}
+\end{align}
+
+which corresponds to the superposition of two contributions being the uniform flow and the shear rate, both in presence of the wall.
+
+\npar
+\begin{align}
+\nonumber C_{Lu}^{W} =&\  e^{-0.22\ \varepsilon^{0.8}L_{\omega}^{2.5}} \frac{ \crocht{1 + \tanh{0.012\ {\Re_{b}}^{0.8}} + \tanh{0.07\ {\Re_{b}}^{0.8}} }^{2} } {1+0.13\ L_{u} \parth{L_{u}+0.53} } \\
+%
+\nonumber			&\times  \parth{\frac{L_{R}}{3}}^{-2.0\ \tanh{0.01\Re_{b}}}  C_{Lu}^{\text{W-in}}\\
+%
+&+\parth{1-e^{-0.22\ {\Re_{b}}^{0.6}} } \crocht{ C_{Lu,\Re_{b}\to \infty}^{W} + 15\ \tanh{ 0.01\ \Re_{b} }{\Re_{b}}^{-1} L_{R}^{-4} }
+%
+\end{align}
+Where:
+\begin{align}
+C_{Lu}^{\text{W-in}}=&\frac{1}{2}\left(1+\frac{1}{8}L_{R}^{-1}-\frac{33}{64}L_{R}^{-2}\right)\\
+%
+C_{Lu, \Re_{b} \to \infty}^{W} = & -\frac{3}{8}L_{R}^{-4}\left[1+\frac{1}{8}L_{R}^{-3}+\frac{1}{6}L_{R}^{-5}\right] + O\left(L_{R}^{-10}\right)
+\end{align}
+
+
+\npar
+\begin{align}
+C_{L\omega}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right) &\approx h'_{L}C_{L\omega}^{U}\left(\text{Re}\ll 1\right) + c_{T3}\left(\text{Re}\right)\left(1+I_{WS}\right)C_{L\omega}^{U}\left(\text{Re}\gg 1\right) \\
+\text{ with } c_{T3}\left(\text{Re}\right) &= 1-e^{-0.3\text{Re}}\\
+h'_{L}\left(L_{\omega}, \varepsilon, L_{R}\right)&=1-e^{ -\frac{11}{96}\pi^{2}\frac{L_{\omega}}{J_{L}(\varepsilon)}\left(1+\frac{9}{8}L_{R}^{-1}-\frac{1271}{3520}L_{R}^{-2}\right)} \\
+J_{L}(\varepsilon)&=J_{L}\left(\infty\right)\left(1+0.2\varepsilon^{-2}\right)^{-3/2} \text{ with } J_{L}\left(\infty\right)=2.254 \\
+C_{L \omega}^{U}\left(\text{Re}\ll 1\right) &= \frac{8}{\pi^{2}} \frac{Sr}{\left|Sr\right|}\varepsilon J_{L}(\varepsilon)\\
+I_{WS}&=a_{G}L_{R}^{-7/2}\left(1+b_{G}\text{Re}^{-1/2}\right) \text{ with } a_{G}=0.23 \text { and } b_{G}=13\\
+C_{L \omega}^{U}\left(\text{Re}\gg 1 \right)&=\frac{2}{3}\text{Sr}\left(1-0.07\left|\text{Sr}\right|\right)\frac{1+16\text{Re}^{-1}}{1+29\text{Re}^{-1}}
+\end{align}
+
 
 \npar
 
@@ -667,70 +714,10 @@ The drag and lift coefficient are computed from their DNS results by integrating
 
 \npar
 
-\paragraph{Drag coefficient :}
-
-The total drag coefficient is expressed as a correction $\Delta C_{D}^{W}$ of a uniform drag coefficient $C_{D0}^{U}$ to account for shear and wall effects :
-
-
-\begin{align}
-&C_{D}^{W}=\Delta C_{D}^{W} C_{D0}^{U} + C_{D0}^{U} = C_{D0}^{U} \left( 1 + \Delta C_{D}^{W}\right)\\
-\text{with}\  &C_{D0}^{U}\left(\text{Re} \gg 1 \right) = \frac{48}{\text{Re}} \text{ (Kang and Leal, 1988)}\\
-&\Delta C_{D}^{W} \left(\text{Re}\right) \approx \Delta C_{D}^{W}\left[\text{Re}=O(1)\right] + c_{D\omega\infty}\Delta C_{D}^{W}\left(\text{Re}\gg1\right)\\
-\text{with}\  &c_{D\omega\infty}=1-e^{-0.07\text{Re}}
-\end{align}
-
-\npar
-\begin{align}
-\Delta C_{D}^{W}\left[\text{Re}=O(1)\right] &\approx f'_{D}\left(L_{u}\right)b^{2}\left(\text{Re}\right)\Delta C_{D}^{\text{W-in}}\\
-f'_{D}\left(L_{u}\right)&\approx \frac{1}{1+0.16L_{u}\left(L_{u}+4\right)} \\
-b\left(\text{Re}\right)&= 1 + \tanh\left(0.012\text{Re}^{0.8}\right)+\tanh\left(0.07\text{Re}^{0.8}\right) \\
-\Delta C_{D}^{\text{W-in}}\left(\text{Sr},L_{R}\right)&=\left(\frac{3}{8}L_{R}^{-1} + \frac{3}{64}L_{R}^{-4}\right) \left(1- \frac{3}{8}L_{R}^{-1}-\frac{3}{64}L_{R}^{-4}\right)^{-1} - \frac{1}{16}\left(L_{R}^{-2}+\frac{3}{8}L_{R}^{-3}\right)\text{Sr}
-\end{align}
-
-They actually operate a blending between a high Reynolds and a low Reynolds expression, which have both been derived from their numerical results :
-
-\npar
-\begin{align}
-\Delta C_{D}^{W}\left(\text{Re}\gg1 \right) &\approx \Delta C_{Du}^{W}\left(\text{Re}\gg1\right) + \Delta C_{D\omega}^{U}\left(\text{Re}\gg1\right) + \Delta C_{D\omega}^{W-U}\left(\text{Re}\gg1\right)\\
-\Delta C_{Du}^{W}\left(\text{Re}\gg1\right) &\approx 0.47L_{R}^{-4}+5.5\times 10^{-3}L_{R}^{-6}\text{Re}^{3/4} \\
-\Delta C_{D\omega}^{U}\left(\text{Re}\gg1\right) &\approx 2 \times 10^{-3} \left|\text{Sr}\right|^{1.9}\text{Re} \\
-\Delta C_{D\omega}^{W-U}\left(\text{Re}\gg1\right)&\approx 0.05L_{R}^{-7/2}\text{Sr}\text{Re}^{1/3}
-\end{align}
-
 
 \paragraph{Lift coefficient :} The total lift coefficient $C_{L}^{W}$ is expressed as :
 
 
-\begin{align}
-C_{L}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right)=C_{Lu}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right) + C_{L\omega}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right)
-\end{align}
-
-which corresponds to the superposition of two contributions being the uniform flow and the shear rate, both in presence of the wall.
-
-\npar
-\begin{align}
-C_{Lu}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right) &\approx f_{L} f'_{L} b^{2}\left(L_{R}/3\right)^{g}C_{Lu}^{\text{W-in}}+c_{T1}\left[C_{Lu}^{W}\left(\text{Re} \rightarrow \infty\right) + c_{T2}\text{Re}^{-1}L_{R}^{-4}\right]\\
-f_{L}\left(L_{\omega},\varepsilon\right) &= e^{-0.22 \varepsilon^{0.8}L_{\omega}^{2.5}} \\
-f'_{L}\left(L_{u}\right)&\approx\frac{1}{1+0.13L_{u}\left(L_{u}+0.53\right)}\\
-b\left(\text{Re}\right)&= 1 + \tanh\left(0.012\text{Re}^{0.8}\right)+\tanh\left(0.07\text{Re}^{0.8}\right) \\
-g&= -2.0\tanh\left(0.01\text{Re}\right)\\
-C_{Lu}^{\text{W-in}}&=\frac{1}{2}\left(1+\frac{1}{8}L_{R}^{-1}-\frac{33}{64}L_{R}^{-2}\right)\\
-c_{T1}\left(\text{Re}\right)&=1-e^{-0.22\text{Re}^{0.6}} \\
-C_{Lu}^{W}\left(\text{Re}\rightarrow \infty \right)&\approx -\frac{3}{8}L_{R}^{-4}\left[1+\frac{1}{8}L_{R}^{-3}+\frac{1}{6}L_{R}^{-5}\right] + O\left(L_{R}^{-10}\right)\\
-c_{T2}&=15 \tanh\left( 0.01\text{Re} \right)
-\end{align}
-
-
-\npar
-\begin{align}
-C_{L\omega}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right) &\approx h'_{L}C_{L\omega}^{U}\left(\text{Re}\ll 1\right) + c_{T3}\left(\text{Re}\right)\left(1+I_{WS}\right)C_{L\omega}^{U}\left(\text{Re}\gg 1\right) \\
-\text{ with } c_{T3}\left(\text{Re}\right) &= 1-e^{-0.3\text{Re}}\\
-h'_{L}\left(L_{\omega}, \varepsilon, L_{R}\right)&=1-e^{ -\frac{11}{96}\pi^{2}\frac{L_{\omega}}{J_{L}(\varepsilon)}\left(1+\frac{9}{8}L_{R}^{-1}-\frac{1271}{3520}L_{R}^{-2}\right)} \\
-J_{L}(\varepsilon)&=J_{L}\left(\infty\right)\left(1+0.2\varepsilon^{-2}\right)^{-3/2} \text{ with } J_{L}\left(\infty\right)=2.254 \\
-C_{L \omega}^{U}\left(\text{Re}\ll 1\right) &= \frac{8}{\pi^{2}} \frac{Sr}{\left|Sr\right|}\varepsilon J_{L}(\varepsilon)\\
-I_{WS}&=a_{G}L_{R}^{-7/2}\left(1+b_{G}\text{Re}^{-1/2}\right) \text{ with } a_{G}=0.23 \text { and } b_{G}=13\\
-C_{L \omega}^{U}\left(\text{Re}\gg 1 \right)&=\frac{2}{3}\text{Sr}\left(1-0.07\left|\text{Sr}\right|\right)\frac{1+16\text{Re}^{-1}}{1+29\text{Re}^{-1}}
-\end{align}
 
 
 
