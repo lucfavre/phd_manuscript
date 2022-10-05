@@ -1,28 +1,49 @@
-This is BibTeX, Version 0.99d (MiKTeX 2.9.7350 64-bit)
-Capacity: max_strings=4000, hash_size=5000, hash_prime=4253
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: FrontBackMatter/Titlepage.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: FrontBackMatter/Titleback.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
 A level-1 auxiliary file: FrontBackMatter/Dedication.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: FrontBackMatter/Abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 33 items.
 A level-1 auxiliary file: FrontBackMatter/Publications.aux
+Reallocating 'name_of_file' (item size: 1) to 36 items.
 A level-1 auxiliary file: FrontBackMatter/Acknowledgments.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: FrontBackMatter/Contents.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: Chapters/NCFD/Chap_NCFD.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: Chapters/NCFD/Chap_Debora.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_HFPIntro.aux
+Reallocating 'name_of_file' (item size: 1) to 32 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_HFPmodels.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_BubDyn.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_Closures.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_NewHFP.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: Chapters/Chap_Promoteur.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
 A level-1 auxiliary file: Chapters/Chapter0A.aux
+Reallocating 'name_of_file' (item size: 1) to 32 items.
 A level-1 auxiliary file: FrontBackMatter/Declaration.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: FrontBackMatter/Colophon.aux
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
-Reallocating 'global_strs' (item size: 1) to 20000 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
@@ -35,7 +56,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 20707 items.
+Reallocating 'field_info' (item size: 4) to 20820 items.
 Database file #1: main-blx.bib
 Database file #2: bib_test.bib
 Reallocating 'str_pool' (item size: 1) to 130000 items.
@@ -104,48 +125,48 @@ Warning--I didn't find a database entry for "song_fan_contact_angle"
 Warning--I didn't find a database entry for "zhou_nsit"
 Warning--I didn't find a database entry for "richenderfer"
 Warning--I didn't find a database entry for "Richen_phd"
-Biblatex version: 3.13
+Biblatex version: 3.18
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 48 entries,
-            6365 wiz_defined-function locations,
-            1791 strings with 73243 characters,
-and the built_in function-call counts, 503828 in all, are:
-= -- 23807
-> -- 40286
-< -- 3302
-+ -- 38459
-- -- 33075
-* -- 29240
-:= -- 68004
+            6399 wiz_defined-function locations,
+            1801 strings with 73331 characters,
+and the built_in function-call counts, 585748 in all, are:
+= -- 33483
+> -- 40298
+< -- 3306
++ -- 42271
+- -- 33083
+* -- 34656
+:= -- 79592
 add.period$ -- 0
 call.type$ -- 48
 change.case$ -- 47
 chr.to.int$ -- 2876
 cite$ -- 94
-duplicate$ -- 41101
-empty$ -- 34689
-format.name$ -- 3459
-if$ -- 77780
+duplicate$ -- 49673
+empty$ -- 40557
+format.name$ -- 3463
+if$ -- 92832
 int.to.chr$ -- 0
 int.to.str$ -- 103
 missing$ -- 0
 newline$ -- 2315
 num.names$ -- 2139
-pop$ -- 15916
+pop$ -- 16392
 preamble$ -- 1
 purify$ -- 928
 quote$ -- 0
-skip$ -- 12535
+skip$ -- 12547
 stack$ -- 0
-substring$ -- 48223
-swap$ -- 12318
-text.length$ -- 2668
+substring$ -- 68683
+swap$ -- 12322
+text.length$ -- 2672
 text.prefix$ -- 49
 top$ -- 1
 type$ -- 1608
 warning$ -- 0
-while$ -- 6489
+while$ -- 7441
 width$ -- 0
 write$ -- 2268
 (There were 65 warnings)

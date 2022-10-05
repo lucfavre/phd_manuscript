@@ -81,18 +81,23 @@ Predicting the HFP in vertical flow boiling thus requires a descriptions of sing
 
 \subsection{Existing Approaches}
 
+\subsubsection{Departure / Lift-Off Diameters}
+
 Historically, first approaches to estimate the bubble diameter consisted of experimental-based correlations for pool boiling of horizontal surfaces through photographic studies. In those cases, departure from the nucleation site coincides with the bubble lift-off. Among the mainly used in HFP models and CFD, we can mention the law of Tolubinsky \& Kostanchuk (1970)\cite{tolubinsky_diam} which depends only on the local liquid subcooling:
 
 \begin{equation}
-D_{lo} = D_{0}~e^{-\Delta T_{L}}/{45},\ D_{0}=15\mathrm{mm}
+D_{lo} = D_{0}~e^{-\Delta T_{L}/{45}},\ D_{0}=15\mathrm{mm}
+\label{eq:dlo_tolubinsky}
 \end{equation}
 
 \npar
-On the other hand, authors such as Cole \& Rosenhow (1968) proposed relationships including the influence of pressure through the the capillary length $L_{c}=\sqrt{\frac{\sigma}{g\parth{\rho_{L}-\rho_{V}}}}$:
+On the other hand, authors such as Cole \& Rohsenow (1968) proposed relationships including the influence of pressure through the the capillary length $L_{c}=\sqrt{\frac{\sigma}{g\parth{\rho_{L}-\rho_{V}}}}$:
 
 \begin{align}
-D_{lo} =& C L_{c} \parth{\frac{\rho_{L}c_{p,L}T_{sat}}{\rho_{V}h_{LV}}}^{5/4}\\
-\nonumber C=&1.5\times 10^{-4}\ \text{for water and }4.65\times 10^{-4}\ \text{else}.
+D_{lo} =& C L_{c} \parth{\frac{\rho_{L}c_{p,L}T_{sat}}{\rho_{V}h_{LV}}}^{5/4}
+\label{eq:dlo_cole_rohsenow}
+\\
+\nonumber C=&1.5\times 10^{-4}\ \text{for water and }4.65\times 10^{-4}\ \text{otherwise}.
 \end{align}
 
 This equations provides a good trend for the evolution of bubble departure diameter with pressure as shown by Kossolapov \cite{kossolapov_experimental_2021}.
@@ -102,7 +107,9 @@ This equations provides a good trend for the evolution of bubble departure diame
 Later, \"Unal (1976)\cite{unal_maximum_1976} derived a correlation based on semi-analytical approach of the heat transfer mechanisms around a bubble to estimate its maximum diameter, including simultaneous influences of pressure, heater material, liquid velocity and subcooling:
 
 \begin{align}
-D_{lo}=& 2.42\times 10^{-5} P^{0.709}\frac{a}{\sqrt{b\varphi}}\\
+D_{lo}=& 2.42\times 10^{-5} P^{0.709}\frac{a}{\sqrt{b\varphi}}
+\label{eq:dlo_unal}
+\\
 \nonumber a =& \frac{\Delta T_{w}\lambda_{w}}{2\rho_{V}h_{LV}\sqrt{\pi \eta_{w}} }\\
 \nonumber b =& \frac{\Delta T_{L}}{2\parth{1-\rho_{V}/\rho_{L}}}\\
 \nonumber \varphi=& \max{1\ ;\ \parth{\frac{U_{L}}{U_{0}}}^{0.47}},\ U_{0}=0.61~\mathrm{m/s}
@@ -112,7 +119,7 @@ D_{lo}=& 2.42\times 10^{-5} P^{0.709}\frac{a}{\sqrt{b\varphi}}\\
 
 
 \begin{remark*}{}
-The law of \"Unal is used in the HFP model of Kurul \& Podowski. It as also implemented in NEPTUNE\_CFD and includes a correction of Borée \etal to avoid divergence in bubble diameter when reaching saturated conditions.
+The law of \"Unal is used in the HFP model of Kurul \& Podowski. It as also implemented in NEPTUNE\_CFD and includes a correction of Borée \etal (Eq. \ref{eq:unal_boree_NCFD} to avoid divergence in bubble diameter when reaching saturated conditions.
 \end{remark*}
 
 \npar
@@ -120,9 +127,11 @@ The law of \"Unal is used in the HFP model of Kurul \& Podowski. It as also impl
 More recently, the several developments around HFP models has lead meany researchers to propose dedicated correlations for bubble departure or lift-off diameter. For instance, Basu \etal fitted expressions for $D_{d}$ and $D_{lo}$ on their own measurements:
 
 \begin{align}
-\frac{D_{d}}{L_{c}} =& 1.3~\sin{\theta_{s}}^{0.4}\crocht{ 0.13\ e^{-1.75\times 10^{-4} \Re_{L,D_{h}}}+0.005 }\Ja_{w}^{0.45}e^{-0.0065\Ja_{L}}\\
+\frac{D_{d}}{L_{c}} =& 1.3~\sin{\theta_{s}}^{0.4}\crocht{ 0.13\ e^{-1.75\times 10^{-4} \Re_{L,D_{h}}}+0.005 }\Ja_{w}^{0.45}e^{-0.0065\Ja_{L}}
+\label{eq:dd_basu}\\
 %
 \frac{D_{lo}}{L_{c}} =& 1.3~ \sin{\theta_{s}}^{0.4}\crocht{ 0.2\ e^{-1.28\times 10^{-4} \Re_{L,D_{h}}}+0.005 }\Ja_{w}^{0.45}e^{-0.0065\Ja_{L}}
+\label{eq:dlo_basu}
 \end{align}
 
 They were validated for $14 \leq \Ja_{w} \leq 56$, $1 \leq \Ja_{L} \leq 138$, $0\leq \Re_{L,D_{h}} \leq 7980$ and $30\degree \leq \theta_{s} \leq 90 \degree$.
@@ -137,8 +146,10 @@ Basu \etal use these own-developed laws in their HFP formulation to estimate bub
 Similarly, Kommajosyula gathered several bubble departure and lift-off diameter measurements from the literature and proposed the following reduced correlation:
 
 \begin{align}
-D_{d} =& 18.9 \times 10^{-6} \parth{\frac{\rho_{L}-\rho_{V}}{\rho_{V}}}^{0.27} \Ja_{w}^{0.75} \parth{1+\Ja_{L}}^{-0.3} {U_{L,bulk}}^{-0.26}\\
+D_{d} =& 18.9 \times 10^{-6} \parth{\frac{\rho_{L}-\rho_{V}}{\rho_{V}}}^{0.27} \Ja_{w}^{0.75} \parth{1+\Ja_{L}}^{-0.3} {U_{L,bulk}}^{-0.26}
+\label{eq:dd_komma} \\
 D_{lo} =& 1.2 D_{d}
+\label{eq:dlo_komma}
 \end{align}
 
 \begin{remark*}{}
@@ -152,22 +163,26 @@ Although this law (used in Kommajosyula's HFP model) present coherent trends wit
 
 \npar
 
-The same type of approach is conducted by Zhou \etal:
+The same type of approach is conducted by Zhou \etal \cite{zhou_mechanistic_2021} by correlating low pressure measurements:
 
 \begin{align}
-\frac{D_{d}}{L_{o}} =& 10^{2.4086}\ \parth{\frac{\rho_{V}}{\rho_{L}}}^{-0.6613} \Ja_{w}^{0.1557} \Ja_{L}^{-0.01592} \Re_{L_{o}}^{-0.6647} \Pr_{L}^{-1.8477} \sin{\theta_{s}}^{0.4}\\
+\frac{D_{d}}{L_{o}} =& 10^{2.4086}\ \parth{\frac{\rho_{V}}{\rho_{L}}}^{-0.6613} {\Ja^{*}_{w}}^{0.1557} {\Ja^{*}_{L}}^{-0.01592} \Re_{L_{o}}^{-0.6647} \Pr_{L}^{-1.8477} \sin{\theta_{s}}^{0.4}
+\label{eq:dd_zhou}
+\\
 %
-\frac{D_{lo}}{L_{c}} =& 10^{-1.1990}\ \parth{\frac{\rho_{V}}{\rho_{L}}}^{-0.9785} \Ja_{w}^{0.1435} \Ja_{L}^{-0.0119} \Re_{L_{c}}^{-0.5129} \Pr_{L}^{-1.8784}
+\frac{D_{lo}}{L_{c}} =& 10^{-1.1990}\ \parth{\frac{\rho_{V}}{\rho_{L}}}^{-0.9785} {\Ja^{*}_{w}}^{0.1435} {\Ja^{*}_{L}}^{-0.0119} \Re_{L_{c}}^{-0.5129} \Pr_{L}^{-1.8784}
+\label{eq:dlo_zhou}
 \end{align}
-with the Reynolds numbers based on $L_{o} = \frac{\rho_{L}\nu_{L}^{2}}{\sigma}$ and $L_{c}$ the capillary length.
-
-\npar
+with the Reynolds numbers based on $L_{o} = \frac{\rho_{L}\nu_{L}^{2}}{\sigma}$ and $L_{c}$ the capillary length, and $\Ja^{*} = \frac{\rho_{L}c_{p,L}}{h_{LV}}$ reduced Jakob numbers that do not inclued the density ratio. 
 
 
-Regarding bubble sliding phase, one of the most used correlations to predict bubble diameter evolution has been developed by Maity \cite{maity_effect_2000} using atmospheric pressure visualization of single bubbles. Given a sliding time $t_{sl}$ and initial diameter $D_{in}$, it predicts the resulting sliding diameter $D_{sl}$ through:
+\subsubsection{Sliding Length and Velocity}
+
+Regarding bubble sliding phase, one of the most used correlations to predict bubble diameter evolution has been developed by Maity \cite{maity_effect_2000}. Based on atmospheric pressure visualization of boiling single bubbles in water, it predicts the resulting sliding diameter $D_{sl}$ provided a sliding time $t_{sl}$ and initial diameter $D_{in}$ through:
 
 \begin{equation}
 \frac{\parth{D_{sl}^{2} - D_{in}^{2}} }{t_{sl} \eta_{L} \Ja_{w}} = \frac{1}{15\parth{0.015+0.023\ {\Re_{b}}^{0.5} } \parth{0.04+0.023\ \Ja_{L}^{0.5}} }
+\label{eq:dsl_maity}
 \end{equation}
 where $\Re_{b}=\dfrac{U_{L}D_{b}}{\nu_{L}}$
 
@@ -176,10 +191,11 @@ This correlation is used in Basu \etal and Gilman \& Baglietto HFP model.
 \end{remark*}
 
 
-In the same framework, Maity also proposed an estimation of the sliding distance for a single bubble $l_{sl,0}$:
+Using Maity measurements of bubble sliding velocity, Basu \etal proposed an estimation of the sliding distance for a single bubble $l_{sl,0}$:
 
 \begin{align}
-l_{sl,0}=& \int_{0}^{t_{sl}} U_{b}\ \mathrm{d}t = \int_{0}^{t_{sl}}C_{U} \sqrt{t}\ \mathrm{d}t =  \frac{2}{3}C_{U}{t_{sl}}^{3/2} \\ 
+l_{sl,0}=& \int_{0}^{t_{sl}} U_{b}\ \mathrm{d}t = \int_{0}^{t_{sl}}C_{U} \sqrt{t}\ \mathrm{d}t =  \frac{2}{3}C_{U}{t_{sl}}^{3/2}
+\label{eq:lsl_basu}\\
 %
 C_{U} =& 3.2\ U_{L}+1
 \end{align}
@@ -196,132 +212,643 @@ Other assumptions regarding the sliding length relies on the value of the bubble
 
 \begin{equation}
 l_{sl} = \frac{1}{\sqrt{N_{bub}}}
+\label{eq:lsl_avgdist_bub}
 \end{equation}
 
 \begin{remark*}{}
-This modeling choice is made by Zhou \etal and Kommajosyula.
+This modeling choice is made by Kommajosyula. Zhou \etal choose the minimum value between the $l_{sl,0}$ of Basu (Eq. \ref{eq:lsl_basu}) and this average distance between bubbles.
 \end{remark*}
+
+\subsubsection{Conclusion on Correlations}
+
+Albeit proposing coherent trend with the flow boiling conditions along with good estimations of the desired parameters on given experimental datasets, explicit correlations inherently include a limited range of application. Moreover, the constant increase of the number of works proposing data-fitted laws makes the selection of a proper relationship a complicated matter due to their potential lack of generality.
 
 \npar
 
-However, explicit correlations include limited range of application depending on the flow conditions over which they have been established. To overcome this drawback and try to come up with more generalized models, researchers have developed Mechanistic Models based on a force-balance approach to precisely depict the external efforts experienced by the growing bubble. The goal is to compute the sum of the forces applied to the bubble over its growing time and to detect departure and lift-off events using associated criteria such as a change in the force balance sign.
+To try to overcome this drawback and come up with more generalized models, researchers have explored an alternative approach by developing Mechanistic Models based on a force-balance to precisely depict the external efforts experienced by the growing bubble. The goal is to compute the sum of the forces applied to the bubble over its growing time and to detect departure and lift-off events using associated criteria such as a change in the force balance sign. This will be the subject of the next section.
+
+\npar
+
+As a summary, we gather the presented correlations on Table \ref{tab:correl_bubdyn}.
+
+
+\begin{table}[H]
+
+\scriptsize
+\centering
+
+\begin{tabular}{p{35mm}|p{100mm}}
+%
+\multicolumn{2}{c}{Bubble Departure Diameter} \\
+\hline
+%
+Author (Year) & Correlation\\
+\hline
+\\
+%
+\multirow{2}*{Basu \etal (2005)} & $\dfrac{D_{d}}{L_{c}} = 1.3~\sin{\theta_{s}}^{0.4}\crocht{ 0.13\ e^{-1.75\times 10^{-4} \Re_{L,D_{h}}}+0.005 }\Ja_{w}^{0.45}e^{-0.0065\ \Ja_{L}}$\newline $L_{c} = \sqrt{\dfrac{\sigma}{g\parth{\rho_{L}-\rho_{V}}}}$\\
+%%
+\hline
+\\
+%
+{Kommajosyula (2020)} & $D_{d} = 18.9 \times 10^{-6} \parth{\dfrac{\rho_{L}-\rho_{V}}{\rho_{V}}}^{0.27} \Ja_{w}^{0.75} \parth{1+\Ja_{L}}^{-0.3} {U_{L,bulk}}^{-0.26}$\\
+%%
+\\
+\hline
+\\
+%
+{Zhou (2021)} & $\dfrac{D_{d}}{L_{o}} = 10^{2.4086}\ \parth{\dfrac{\rho_{V}}{\rho_{L}}}^{-0.6613} {\Ja^{*}_{w}}^{0.1557} {\Ja^{*}_{L}}^{-0.01592} \Re_{L_{o}}^{-0.6647} \Pr_{L}^{-1.8477} \sin{\theta_{s}}^{0.4}$\newline $L_{o} = \dfrac{\rho_{L}\nu_{L}^{2}}{\sigma}$\\
+%%
+\hline
+\end{tabular}
+
+\npar
+
+\begin{tabular}{p{35mm}|p{100mm}}
+%
+\multicolumn{2}{c}{Bubble Lift-Off Diameter} \\
+\hline
+%
+Author (Year) & Correlation\\
+\hline
+\\
+{Tolubinsky \& Kostanchuk (1970)} & $D_{lo} = D_{0}~e^{-\Delta T_{L}/{45}},\ D_{0}=15\mathrm{mm}
+$\\
+%%
+\\
+\hline
+\\
+%
+\multirow{2}*{Cole \& Rohsenow (1968)} & $D_{lo} = C L_{c} \parth{\dfrac{\rho_{L}c_{p,L}T_{sat}}{\rho_{V}h_{LV}}}^{5/4}$\newline
+$\nonumber C=1.5\times 10^{-4}$ (water) or $4.65\times 10^{-4}$ (other), $L_{c} = \sqrt{\dfrac{\sigma}{g\parth{\rho_{L}-\rho_{V}}}}$\\
+%%
+\hline
+\\
+%
+\multirow{2}*{\"Unal (1976)} & $D_{lo}= 2.42\times 10^{-5} P^{0.709}\dfrac{a}{\sqrt{b\varphi}}$, $ a = \dfrac{\Delta T_{w}\lambda_{w}}{2\rho_{V}h_{LV}\sqrt{\pi \eta_{w}} }$
+\newline
+$b = \dfrac{\Delta T_{L}}{2\parth{1-\rho_{V}/\rho_{L}}}$, $\varphi= \max{1\ ;\ \parth{\dfrac{U_{L}}{U_{0}}}^{0.47}},\ U_{0}=0.61~\mathrm{m/s}$\\
+%%
+\hline
+\\
+%
+\multirow{2}*{Basu \etal (2005)} & $\dfrac{D_{lo}}{L_{c}} = 1.3~ \sin{\theta_{s}}^{0.4}\crocht{ 0.2\ e^{-1.28\times 10^{-4} \Re_{L,D_{h}}}+0.005 }\Ja_{w}^{0.45}e^{-0.0065\Ja_{L}}$\newline $L_{c} = \sqrt{\dfrac{\sigma}{g\parth{\rho_{L}-\rho_{V}}}}$\\
+%%
+\hline
+\\
+%
+{Kommajosyula (2020)} & $D_{lo}=1.2\ D_{d}$\\
+%%
+\hline
+\\
+%
+{Zhou (2021)} & $\dfrac{D_{lo}}{L_{c}} = 10^{-1.1990}\ \parth{\frac{\rho_{V}}{\rho_{L}}}^{-0.9785} {\Ja^{*}_{w}}^{0.1435} {\Ja^{*}_{L}}^{-0.0119} \Re_{L_{c}}^{-0.5129} \Pr_{L}^{-1.8784}$\newline  $L_{c} = \sqrt{\dfrac{\sigma}{g\parth{\rho_{L}-\rho_{V}}}}$\\
+%
+\hline
+\end{tabular}
+
+\npar
+
+\begin{tabular}{p{35mm}|p{100mm}}
+%
+\multicolumn{2}{c}{Sliding Length, Diameter and Velocity} \\
+\hline
+%
+Author (Year) & Correlation\\
+\hline
+\\
+\multirow{2}*{Maity (2000)} & $\dfrac{\parth{D_{sl}^{2} - D_{in}^{2}} }{t_{sl} \eta_{L} \Ja_{w}} = \crocht{ {15\parth{0.015+0.023\ {\Re_{b}}^{0.5} } \parth{0.04+0.023\ \Ja_{L}^{0.5}} } }^{-1}$ \newline $\Re_{b} = \dfrac{U_{L}D_{b}}{\nu_{L}}$
+\\
+%%
+\\
+\hline
+\\
+%
+{Basu \etal (2005)} & $l_{sl,0}= \frac{2}{3}C_{U}{t_{sl}}^{3/2}$, $C_{U} = 3.2\ U_{L}+1$\\
+%%
+\\
+\hline
+\\
+%
+{Bubble Density Average Distance} & $l_{sl} = \dfrac{1}{\sqrt{N_{bub}}}$\\
+%
+\\
+\hline
+\end{tabular}
+
+
+\caption{Summary of the presented correlations}
+\label{tab:correl_bubdyn}
+\end{table}
 
 
 
+\npar
 
 \section{Bubble Force Balance in Vertical Flow Boiling}
 
-One of the firstly introduced model of this kind was proposed by Klausner \etal in 1993 \cite{klausner_vapor_1993} validated on horizontal flow boiling of refrigerant. It was followed by several subsequent works among which Van Helden \etal \cite{van_helden_forces_1995} who assessed forces coefficients using injected air bubbled in a vertical flow or Thorncroft \cite{thorncroft_bubble_2001} who compared his predictions with vertical and horizontal flow boiling of R113. Later, Duhar \& Colin \cite{duhar_dynamics_2006} validated a force balance on bubbles created by air injection in a shear flow. Sugrue \etal \cite{sugrue_experimental_2014} studied water flow boiling with varying surface orientation with their results used by Mazzocco \etal \cite{mazzocco_reassessed_2018} who validated his model against several low pressure measurements from literature. For more recent works, we can mention Ren \etal \cite{ren_development_2020} who used own measurements of vertical flow boiling of water up to 5 bar. Each of those models proposed different upgrades and modifications to the force balance depending on the aimed experimental conditions.
+\subsection{Introduction}
 
-Unfortunately, all the aforementioned works were validated using low pressure experiments due to the lack of pressurized measurements in the literature. In addition, the common use of several empirical parameters makes it difficult to reach a general validation of those models. The present study, anchored in this framework, aims to propose an update of the bubble force balance for vertical boiling flows with a reduced empiricism and to study the sliding phenomenon by both conducting a non-dimensional analysis of the departure by sliding as well as predicting the subsequent departure diameter and sliding velocity of the bubble. By focusing on the force balance parallel to the wall, the approach is validated against measurements in various flow conditions, including pressure up to 40 bar thanks to the recent work of Kossolapov \cite{kossolapov_experimental_2021}. This ensures an encouraging generality of the proposed approach compared to previous models.
+The derivation of the force balance over a growing bubble on a wall in a liquid flow is a very complicated problem that many researchers have tried to tackle over the past decades. Many theroetical and numerical approaches have been conducted to estimate the forces at stake in bubble dynamics and sometimes compared to experimental visualization of bubbles in movement. 
 
 
-In this section, we wish to detail expressions of the different forces experienced by the bubble and to compare their magnitude in order to assess which will be predominant in the departure and lift-off process.
+\npar 
+Among the first propositions of the whole force-balance closure, the work of Klausner \etal in 1993 \cite{klausner_vapor_1993} is probably among the most referred to. They proposed a tentatively complete force-balance for a growing bubble in a boiling flow and supposed that departure from the nucleation site is reached when the force balance becomes positive either in the direction of the flow or perpendicular to the wall. They validated their approach against measurements for horizontal flow boiling of refrigerant R113.
 
-\subsection{Bubble shape : Geometrical definitions}
-
-\label{subsec:geom_bub}
-
-In order to clearly express each of the considered forces, assumptions regarding the shape of the bubble nucleating at the wall are needed.
 
 \npar
 
-Here, we assume that the bubbles will mostly have the shape of a truncated sphere with respect to the contact angle $\theta_{s}$ (Fig. \ref{fig:bub_shape}), being a thermophysical property of the fluid and the  wall. This assumption can thoroughly be discussed since many experimental measurements and visualizations have shown that in the case of low pressure boiling, bubbles tend te be strongly deformed depending on the flow conditions (\textsc{Maity}, \textsc{Estrada-Pérez} \etal, etc.) thus casting doubts on spherical or quasi-spherical hypotheses.
+In the same framework, many subsequent works were published such as:
+
+\begin{itemize}
+\item Van Helden \etal \cite{van_helden_forces_1995} (1995) who assessed forces coefficients using injected air bubbles in a vertical flow ;
+
+\item Thorncroft \etal \cite{thorncroft_experimental_1998, thorncroft_bubble_2001} (1998, 2001) who conducted experiments on horizontal and vertical flow boiling of R113 while proposing more general formulations of the force balance that were used to predict bubble diameter measurements ;
+
+\item Duhar \& Colin \cite{duhar_dynamics_2006} (2006) who validated a force balance on bubbles created by air injection in a shear flow. They extended their work with boiling N-pentane experiments and studied the growth and detachment of single bubbles  \cite{duhar_npentane} ;
+
+\item Van Der Geld (2009) \cite{van_der_geld_dynamics_2009} used potential flow theory to analytically derive the force balance for deforming bubbles near a plane ;
+
+\item Sugrue \etal (2014) \cite{sugrue_experimental_2014} conducted measurements on boiling bubble for water at atmospheric pressure and various surface orientations. Their measurements were then used to validate a force-balance approach predicting bubble departure by sliding \cite{sugrue_modified_2016} ;
+
+\item Mazzocco \etal (2018) \cite{mazzocco_reassessed_2018} gathered several measurements of bubble departure and lift-off diameters and proposed a reassessed force-balance approach including new drag coefficient and growth law to achieve predictions with a reasonable accuracy over the database ;
+
+\item Ren \etal (2020) \cite{ren_development_2020} measured bubble departure diameter for vertical flow boiling of water up to 5 bars which they used to validate a force-balance model.
+\end{itemize}
+
+While not exhaustive, this list aims to show that force-balance modeling has become an increasingly interesting approach for authors. It is though not exempted of limitations because each force requires a proper modeling which needs sometimes to go through empirical choices as we will later discuss. This drawback is particularly noted by Bucci \etal \cite{bucci_not-so-subtle_2021} who points out that traditional force balances are not equal to zero when the bubble is immobile. On the other hand, they show that this is not due to the absence of unknown forces in the balance but rather associated to the computation of well-known forces such as capillary forces. Moreover, Duhar \& Colin \cite{duhar_dynamics_2006} managed to reach a zero total balance for their air-injected bubbles, and emphasized the interest of force modeling to deeper understand the physical phenomena behind bubble dynamics.
 
 \npar
-On the other hand, experiments conducted by \textsc{Kossolapov} found that in vertical flow boiling, increasing pressure leads to smaller and less deformable bubbles. Thus, supposing a truncated spherical shape could be relevant to model nucleating bubbles on a heater surface. Moreover, working on highly deformed bubbles would undoubtedly imply complicated calculations and extra parameters to account for.
+Each of the previously listed models proposed different upgrades and modifications to the force balance over the bubble. Unfortunately, they were all validated using low pressure experiments due to the lack of pressurized measurements in the literature. In addition, the mentioned common use of empirical parameters makes it difficult to reach a general validation of those models as we will see. 
 
-\textsc{Kossolapov}'s measurements also concluded that bubbles' inclination due to the flow nearly disappears at high pressures. However, since bubble tilt plays a great role in the surface tension force, we consider an angle tilt $\dtheta$ compared to the static contact angle $\theta_{s}$.
+\npar
+In this section, we aim to propose an update of the bubble force balance for vertical  flow boiling with a reduced empiricism and to cover the whole bubble lifetime (departure, sliding, lift-off) while achieving a larger generality by including pressurized measurements up to 40 bar conducted by Kossolapov \cite{kossolapov_experimental_2021}.
+
+\subsection{General Considerations}
+
+
+When trying to derive the force balance over a bubble, the first step consists of splitting the whole effort experienced by the bubble between different contributions depending on their nature. In our case, we focus on a bubble growing on a vertical wall and facing an upward flow as depicted in Figure \ref{fig:bub_forces}. 
+
+\npar
+
+Static forces : 
+
+\begin{itemize}
+\item The buoyancy force $\vect{F_{B}}$, including Archimedes force and the weight of the bubble ;
+\item The capillary or surface tension force $\vect{F_{C}}$ ;
+\item The contact pressure force $\vect{F_{CP}}$.
+\end{itemize}
+
+
+Hydrodynamic forces :
+
+\begin{itemize}
+\item The drag and lift forces $\vect{F_{D}}$ and $\vect{F_{L}}$ ;
+\item The inertia force $\vect{F_{I}}$, including added-mass and Tchen force.
+\end{itemize}
+
+
 
 \begin{figure}[h!]
 \centering
-\input{tikz_img/bubble_shape/bub_shape}
-\caption{Sketch of the supposed bubble shape with (right) and without inclination (left).}
-\label{fig:bub_shape}
-
+%\include{tikz_img/forces}
+\includegraphics[width=0.6\linewidth]{img/forces/bub_bdf.pdf}
+\caption{Sketch of the forces applied to the bubble facing an upward flow $\vect{U_{L}}$ and sliding at velocity $\vect{U_{b}}$}
+\label{fig:bub_forces}
 \end{figure}
 
 
 
-The resulting bubble's volume $V_{b}$ and projected area in the direction of the flow $S_{p}$ can then be computed using the spherical coordinates system and defining the total angular portion covered by the bubble as $\Theta = \pi - \theta_{s}$, the bubble foot radius $r_{w}=R \sin{\theta_{s}}$ and the distance between the center of the bubble and the surface $h=R\parth{1+\cos{\theta_{s}}}$, we have :
+Regarding the bubble shape, we consider a quasi-spherical bubble of radius $R$ with a circular contact area with the wall of radius $r_{w}$. It has a static contact angle $\theta$ and is tilted under the influence of the flow by an inclination angle $\dtheta$ (half the total angle hysteresis). The resulting downstream and upstream contact angles are therefore $\theta_{d}=\theta-\dtheta$ and $\theta_{u}=\theta+\dtheta$. If the bubble has a shape close to a truncated sphere, we can approximate the bubble foot radius as:
+
+\begin{equation}
+r_{w} \approx R~ \sin{\frac{\theta_{u}+\theta_{d}}{2}}=R~ \sin{\theta}
+\label{eq:rw}
+\end{equation}
+
+Some authors rather take $r_{w}\approx \dfrac{1}{2} R~\parth{\sin{\theta_{u}} + \sin{\theta_{d}} }=R~\sin{\theta}\cos{\dtheta}$, however this expression tends to zero when reaching $\dtheta \to 90\degree$ which is undesirable regarding the expression of forces such as Contact Pressure and Surface Tension.
+
+
+We suppose $V_{b}\approx\frac{4}{3}\pi R^{3}$ for the bubble volume.
+
+
+
+
+
+\subsection{Buoyancy Force}
+
+
+The buoyancy force results from both the weight of the bubble and the integration of the hydrostatic liquid pressure over its surface which naturally yields:
+\begin{equation}
+\vect{F_{B}}= \rho_{V}V_{b}\ \vect{g} + \parth{\iint_{S_{b}} \rho_{L} g z\ \mathrm{d}^{2}S}\vect{e_{x}} = V_{b}\parth{\rho_{V}-\rho_{L}}\vect{g}=\frac{4}{3}\pi R^{3}\parth{\rho_{L}-\rho_{V}}g \ \vect{e_{x}}
+\label{eq:force_buoyancy}
+\end{equation}
+
+\subsection{Contact Pressure Force}
+
+The contact pressure force arises due to the pressure difference between the center of the bubble and the surrounding liquid.  Combined with the Archimedes force, it can be expressed versus the difference of liquid and vapor pressure at the bubble foot using Laplace's equation $\Delta P = 2\sigma / R_{c}$ as:
 
 \begin{align}
-V_{b} &= \underbrace{ \int_{r=0}^{R} \int_{\theta=0}^{\Theta} \int_{\varphi=0}^{2\pi} r^{2}\sin{\theta} \text{d}r ~\text{d}\theta~ \text{d}\varphi }_{\text{Spherical volume}}+ \underbrace {\frac{1}{3}\pi r_{w}^{2}h}_{\text{Conic volume}}
-=\frac{4}{3}\pi R^{3} \crocht{ \frac{1}{4} \parth{2-\cos{\theta_{s}}}\parth{1+\cos{\theta_{s}}}^{2} } \\
-S_{p}&= \underbrace{\int_{r=0}^{R}\int_{\theta=-\Theta}^{\Theta}r \text{d}r ~ \text{d}\theta}_{\text{Circular area}} + \underbrace{r_{w}h}_{\text{Triangular area}} = \pi R^{2} \crocht{1-\frac{\theta_{s}}{\pi} + \frac{\sin{2\theta_{s}}}{2\pi} } 
+\vect{F_{CP}}  \approx \frac{2\sigma}{R_{c}} \pi r_{w}^{2}\  \vect{e_{y}}
+\approx \pi R \sigma\ 2\ \sin{\theta}^{2}\ \vect{e_{y}}
+\label{eq:FCP}
 \end{align}
 
+Here, $R_{c}$ is the curvature radius of the bubble which is often assumed to be equal to $5R$ \cite{klausner_vapor_1993, sugrue_modified_2016, mazzocco_reassessed_2018} without other explanation than avoiding an overestimation of the contact pressure force. To avoid this arbitrary choice, following the hypothesis of a nearly spherical bubble shape gives $R_{c}=R$.
 
-Thus, we can define shape factors that represent the ratio between the volume and projected areas of the truncated sphere compared to a complete sphere : 
+
+\subsection{Capillary Force}
+
+The capillary force acts at the triple contact line at the bubble's foot and is an important adhesive force maintaining the bubble attached to the wall. Its derivation can be done by integration of the effort exerted over the triple contact line. Noting $\Phi$ the polar angle around the bubble foot, we have :
+
+
+\begin{equation}
+\vect{F_{C}} = 2 \int_{0}^{\pi} \sigma r_{w} \vect{\tau}\parth{\Phi} \mathrm{d}\Phi
+\end{equation}
+where $\vect{\tau}$ is the unit vector tangent to the interface.
+
+To compute the resulting components parallel and tangent to the wall, Klausner \etal \cite{klausner_vapor_1993} account for a contact angle difference between the upstream (receeding) contact angle $\theta_{u}$ and downstream (advancing) contact angle $\theta_{d}$. If the local contact angle is noted $\gamma$, then:
+
+\begin{equation}
+\vect{\tau}\parth{\Phi} = \cos{\gamma} \cos{\Phi} \vect{e_{x}} + \sin{\gamma} \vect{e_{y}}
+\end{equation}
+
+Then representing the evolution of the local contact angle $\gamma$ from $\theta_{u}$ to $\theta_{d}$ using a polynomial expression of degree 3:
+
+
+\begin{equation}
+\gamma\parth{\Phi} = \theta_{d} + \parth{\theta_{u} - \theta_{d}} \crocht{3\parth{\frac{\Phi}{ \pi}}^{2} - 2\parth{\frac{\Phi}{\pi}}^{3}},\ 0 \leq \Phi \leq \pi
+\label{eq:forces_klausner_poly_deg3}
+\end{equation}
+which verifies symmetry conditions:
+
+\begin{equation}
+\gamma'\parth{0} = \theta_{d},\ \gamma\parth{\pi} = \theta_{u},\ \gamma'\parth{0}=\gamma'\parth{\pi}=0
+\end{equation}
+
+To obtain analytic expression, Klausner \etal also consider a first order linear interpolation:
+
+\begin{equation}
+\gamma\parth{\Phi} = \theta_{d} + \parth{\theta_{u}-\theta_{d}}\frac{\Phi}{\pi}
+\end{equation}
+
+This yields:
+
+\begin{equation}
+\vect{F_{C}}=-2r_{w}\sigma \frac{\pi\parth{\theta_{u}-\theta_{d}}}{\pi^{2}-\parth{\theta_{u}-\theta_{d}}^{2}}\parth{\sin{\theta_{u}}+\sin{\theta_{d}} }\vect{e_{x}} - 2r_{w} \sigma \frac{\pi}{\theta_{u}-\theta_{d}}\parth{\cos{\theta_{d}}- \cos{\theta_{u}}}\vect{e_{y}}
+\label{eq:forces_FC_klausner_deg1}
+\end{equation}
+
+By comparing the analytic expression of Eq. \ref{eq:forces_FC_klausner_deg1} with the values obtained by numerical integration of Eq.\ref{eq:forces_klausner_poly_deg3}, Klausner \etal introduce a correction factor of $1.25$ over the $x$ component, finally giving :
 
 \begin{align}
-f_{V}\left(\theta_{s}\right)=\frac{V_{ts}}{V_{s}}=\frac{1}{4}\left(2-\cos{\theta_{s}}\right)\left(1+\cos{\theta_{s}}\right)^{2}\\
-f_{S_{p}}\left(\theta_{s}\right)=\frac{S_{p,ts}}{S_{p,s}}=1-\frac{\theta_{s}}{\pi}+\frac{\sin{2\theta_{s}}}{2\pi}
+\vect{F_{C}}&=-2.5r_{w}\sigma \frac{\pi\parth{\theta_{u}-\theta_{d}}}{\pi^{2}-\parth{\theta_{u}-\theta_{d}}^{2}}\parth{\sin{\theta_{u}}+\sin{\theta_{d}} }\vect{e_{x}} - 2r_{w} \sigma \frac{\pi}{\theta_{u}-\theta_{d}}\parth{\cos{\theta_{d}}- \cos{\theta_{u}}}\vect{e_{y}}\\
+%
+&=-\pi R \sigma \underbrace{\crocht{2.5~ \frac{r_{w}}{R} \frac{\dtheta}{\parth{\frac{\pi}{2}}^{2}-\dtheta^{2}}\sin{\theta}\cos{\dtheta}}}_{f_{C,x}} \vect{e_{x}} - \pi R \sigma \underbrace{\crocht{2\ \frac{r_{w}}{R} \sin{\theta} \frac{\sin{\dtheta}}{\dtheta}}}_{f_{C,y}} \vect{e_{y}}
+\label{eq:forces_FC}
 \end{align}
 
-Subscripts $s$ and $ts$ respectively denoting spherical and truncated spherical shapes.
+\begin{remark*}{}
+We can see that $f_{C,x} \to 0$ and $f_{C,y} \to 2\dfrac{r_{w}}{R}\sin{\theta}$  when $\dtheta \to 0$. In that case, $\vect{F_{C}} = -\vect{F_{CP}}$.
+\end{remark*}
 
+
+
+
+
+\subsection{Drag and Lift Forces}
+
+
+The external liquid flow over the bubble induces the well-known drag and lift forces, acting respectively in the flow direction and perpendicular to the flow. They are usually expressed using associated coefficients $C_{D}$ and $C_{L}$ defined by:
+\begin{align}
+\vect{F_{D}}=&\frac{1}{2}C_{D}\rho_{L}S_{p} \norm{ \vect{U_{L}}-\vect{U_{b}} } \parth{\vect{U_{L}}-\vect{U_{b}}} \\
+\vect{F_{L}}=&\frac{1}{2}C_{L}\rho_{L}S_{p}\norm{\vect{U_{L}}-\vect{U_{b}}}^{2}\ \vect{e_{y}}
+\end{align}
+with $S_{p}=\pi R^{2}$ the projected area of the bubble in the direction of the flow.
+
+\subsubsection{Drag Coefficient}
+
+Derivations of analytic expressions for the drag coefficient in an infinite fluid medium exist for more than a century, starting with Hadamard-Rybzinski (1911) \cite{hadamard_1911}:
+
+\begin{equation}
+C_{D} = \frac{16}{\Re_{b}},\ \text{if}\ \Re_{b}<1
+\end{equation}
+where $\Re_{b} = \frac{\bars{U_{rel}}D_{B}}{\nu_{L}}$ is the bubble Reynolds number and $U_{rel}$ the relative velocity between the bubble and the surrounding fluid.
+
+For $\Re_{b} \gg 1$, Levich (1962) \cite{levich_1962} found for a potential flow:
+
+\begin{equation}
+C_{D} = \frac{48}{\Re_{b}}
+\end{equation}
+
+
+For intermediate values of $\Re_{b}$, traditional approaches rely on expressions of the drag force for a bubble in an infinite medium based on numerical correlations as proposed by Mei \& Klausner \cite{mei_unsteady_1992}, used in many different mechanistic approaches \cite{zeng_unified_1993-1, thorncroft_bubble_2001, chen_prediction_2012, sugrue_modified_2016, ren_development_2020}:
+
+\begin{equation}
+C_{D,U} = \frac{16}{\Re_{b}}\crocht{1 + \parth{\frac{8}{\Re_{b}}+ \frac{1}{2}\parth{1+\frac{3.315}{\sqrt{\Re_{b}}} }}^{-1} }
+\label{eq:CD_mei}
+\end{equation}
+
+
+Results from DNS conducted by Legendre \etal \cite{legendre_lift_1998} proposed expressions of the drag and lift forces for a hemispherical bubble on a wall facing a viscous shear flow. Earlier, Legendre \& Magnaudet \cite{legendre_lift_1998} analytically derived coefficients to transpose drag and lift expressions for a particle to the case of a bubble. This was applied by Mazzocco \etal \cite{mazzocco_reassessed_2018} to the Drag for a solid particle near a wall in a shear flow proposed by Zeng \etal \cite{zeng_forces_2009}.
 
 \npar
 
-Using those assomptions, we can thus express the volume of vapor generated for a single bubble up to its lift-off diameter $D_{lo}=2R_{lo}$ (Eq. \ref{eq:boil_vol}) :
+In this work, we propose to rely on the recent work of Shi \etal \cite{shi_drag_2021} who conducted DNS of a shear flow over a spherical bubble of constant radius close to a wall for bubble Reynolds number between $10^{-1}$ and $10^{3}$ and non-dimensional shear rates between -0.5 and 0.5. A sketch of the situation simulated by Shi \etal is depicted on Figure \ref{fig:shi_scheme}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.55\linewidth]{img/forces/shi_scheme.pdf}
+\caption{Physical situation considered by Shi \etal \cite{shi_drag_2021}.}
+\label{fig:shi_scheme}
+\end{figure}
+
+
+They computed the resulting drag and lift coefficients for each simulations and proposed correlations fitting their numerical results. The total Drag coefficient is expressed as a correction of the Drag coefficient for a bubble in an unbounded uniform flow  $C_{D,U}$. The total drag is given by:
+
+\begin{equation}
+C_{D}=\parth{1+\Delta C_{D}}C_{D,U}
+\end{equation}
+where $\Delta C_{D}$ accounts for both the effect of the shear flow and the wall vicinity. 
+
+\npar
+To cover the whole range of bubble Reynolds numbers, correlations at low and high $\Re_{b}$ are smoothly connected using an exponential term.
+
+\begin{equation}
+\Delta C_{D}=\Delta C_{D,\Re_{b}=O\parth{1}}+\parth{1-e^{-0.07\Re_{b}}}\Delta C_{D,{\Re_{b}\gg 1}}
+\label{eq:drag_corr_shi}
+\end{equation}
+
+
+Each of those corrections is computed depending on $\Re_{b}$,  the non-dimensional shear rate $\Sr$, the non dimensional wall distance $L_{R} = \dfrac{y}{R}$   ($L_{R}=1$ being a spherical bubble laying on a wall) and non-dimensional viscous (or Stokes) length $L_{u}=\dfrac{y}{\nu_{L}/\bars{U_{rel}}}$. 
+
 
 \begin{align}
-\label{eq:boil_vol}
-V_{b}=\frac{4}{3}\pi \bluemath{R_{lo}}^{3} f_{V}\parth{\theta_{s}} = \frac{\pi \bluemath{D_{lo}}^{3}}{6} f_{V}\parth{\theta_{s}}
+\nonumber \Delta C_{D,\Re_{b}=O\parth{1}} = & \frac{1+\mathrm{tanh}\parth{0.012\Re_{b}^{0.8}} + \mathrm{tanh}\parth{0.07\Re_{b}^{0.8}}^{2}}{1+0.16L_{u}\parth{L_{u}+4}}\\
+& \times \left[ \left(\frac{3}{8}L_{R}^{-1} + \frac{3}{64}L_{R}^{-4}\right) \left(1- \frac{3}{8}L_{R}^{-1}-\frac{3}{64}L_{R}^{-4}\right)^{-1} - \frac{1}{16}\left(L_{R}^{-2}+\frac{3}{8}L_{R}^{-3}\right)\text{Sr} \right]
 \end{align}
 
-As described in Section \ref{subsec:geom_bub}, we consider a bubble with a potential inclination $\dalpha$ from the static contact angle $\theta_{s}$. Thus, the downstream contact angle is $\theta_{d}=\theta_{s} - \dtheta$ and the upstream contact angle is $\theta_{u}=\theta_{s} + \dtheta$ (Figure \ref{fig:bub_shape}).
+
+
+\begin{align}
+\Delta C_{D,{\Re_{b}\gg 1}} =& ~0.47L_{R}^{-4}+0.0055L_{R}^{-6}\Re_{b}^{3/4} 
++0.002 \bars{\mathrm{Sr}}^{1.9} \Re_{b} + 0.05 L_{R}^{-7/2} \mathrm{Sr} \Re_{b}^{1/3}
+\end{align}
+
+
+Figure \ref{fig:CD_shi} shows the evolution of the Drag correction $\Delta C_{D}$ against the bubble Reynolds number for different distances to the wall $L_{R}$ and two values of $\Sr$.  We can see that as the distance between the wall and the bubble increases the Drag correction logically approaches zero and that increasing the shear rate $\Sr$ increases $\Delta C_{D}$ for higher values of $\Re_{b}$.
 
 \npar
 
-To estimate the bubble foot radius $r_{w}$ of such a bubble, we can express it as the average between the two foot diameters for the advancing and receding contact angles :
-
-\begin{align}
-r_{w} &= \frac{1}{2}\parth{\sin{\theta_{d}}R + \sin{\theta_{u}}R} = R~\sin{\theta_{s}}\cos{\dtheta}
-\end{align}
-
-\npar
-
-In the following subsections, the vectors $\vect{e_{\|}}$ and $\vect{e_{\bot}}$ respectively represent the colinear and orthogonal vector to the wall surface.
+Shi \etal \cite{shi_drag_2021} conducted DNS for wall distances down to $L_{R}=1.5$. However, Scheiff \etal \cite{scheiff_experimental_2021} compared the values obtained for $L_{R}=1$  with measured Drag coefficients of bubbles sliding on a wall and observed a good agreement, which legitimates the use of this new Drag correlation by extending its application to the case of a bubble laying on a wall and using the uniform drag coefficient of Eq.~\ref{eq:CD_mei}.
 
 
 \begin{figure}[h!]
-
-\input{tikz_img/shape_func/shape_func}
-\caption{Representation of the shape functions}
+\centering
+\includegraphics[width=0.6\linewidth]{img/forces/corr_drag.pdf}
+\caption{Drag correction from Shi \etal \cite{shi_drag_2021}.}
+\label{fig:CD_shi}
 \end{figure}
 
 
-\subsection{Buoyancy force}
+The lift force and the drag force represent the two components of the global hydrodynamic effort exerted by the surronding flow over a bubble. The lift force corresponds to the force directed orthogonally to the flow direction while the drag is the colinear one. 
 
-The well-known buoyancy force, also called Archimedes force, is computed by integration of the hydrostatic pressure exterted by the liquid over the bubble's surface and results in the difference between the gravity forces experienced by the vapour bubble and the equivalent liquid volume. The expression of this force $\vect{F_{B}}$ is aligned with the gravity vector $\vect{g}=-g\vect{e_{x}}$.
+
+In those two expressions, the main parameter remains $C_{D}$ and $C_{L}$ which modeling can be developed depending on the flow characteristics (uniform, shear, wall influence, etc.). For instance, one of the most recent and complete expression of those coefficients have been derived from DNS conducted by \textsc{Shi} \etal~ which takes into account the distance to the wall and the shear rate simultaneously.
+
+
+
+\subsubsection{Drag and lift coefficient from Shi \etal}
+
+In this section, we detail the expression of the drag and lift coefficient derived by Shi \etal from multiple DNS simulations.
+
+\npar
+
+The following notations are proper to this sub-section of the document. Variables used by Shi \etal to describe drag and lift are detailed on Table \ref{tab:var_shi}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Name & Definition & Unit\\
+\hline
+\hline
+
+$d$ & Bubble diameter & m\\
+\hline
+$\gamma$ & Flow shear rate & s\up{-1}\\
+\hline
+$\tilde{L}$& Distance to the wall & m\\
+\hline
+$\tilde{L_{u}}$ & $\nu_{l}/\bars{U_{rel}}$ & m\\ 
+\hline
+$\tilde{L_{\omega}}$ & $\sqrt{\nu_{l}/\omega}$ & m\\
+\hline
+\hline
+$L_{u}$ & $\tilde{L}/\tilde{L_{u}}$ & (-)\\
+\hline
+$L_{\omega}$ & $\tilde{L}/\tilde{L_{\omega}}$ & (-)\\
+\hline
+$L_{R}$ & $2\tilde{L}/d$ & (-)\\
+\hline
+$\Re$ & $\bars{U_{rel}}d/\nu_{l}$ & (-)\\
+\hline
+$\mathrm{Sr}$ & $\gamma d / U_{rel}$ & (-)\\
+\hline
+$\varepsilon$ & $\tilde{L_{u}}/\tilde{L_{\omega}}=\sqrt{\bars{\mathrm{Sr}}/\Re}$ & (-)\\
+\hline
+\end{tabular}
+\caption{Variables used by Shi \etal}
+\label{tab:var_shi}
+\end{table}
+
+
+The drag and lift coefficient are computed from their DNS results by integrating the hydrodynamic effort over the bubble's surface. The axial and radial component respectively yielding the drag and lift coefficient when divided by $\pi d^{2}\rho_{l}U_{rel}^{2}/8$.
+
+\npar
+
+\paragraph{Drag coefficient :}
+
+The total drag coefficient is expressed as a correction $\Delta C_{D}^{W}$ of a uniform drag coefficient $C_{D0}^{U}$ to account for shear and wall effects :
+
 
 \begin{align}
-\vect{F_{B}}&=V_{b}\parth{\rho_{V}-\rho_{L}}\vect{g}=\frac{4}{3}\pi R^{3}f_{V}\parth{\theta_{s}}\parth{\rho_{L}-\rho_{V}}g\vect{e_{x}}
-\end{align}
-
-\subsection{Contact Pressure force}
-
-The contact pressure force arises due to the pressure difference between the center of the bubble and the surrounding liquid. This pressure jump can be computed using \textsc{Laplace}'s expression $\Delta P = 2\sigma / R_{c}$ where $R_{c}$ is the curvature radius of the bubble's interface, being equal to $R$ in the case of a spherical bubble. This pressure difference is then applied over the bubble foot area and results in a repelling force from the bubble's point of view, giving the resulting expression of $\vect{F_{CP}}$.
-
-\begin{align}
-\vect{F_{CP}}&=\frac{2\sigma}{R_{c}}\frac{\pi d_{w}^{2}}{4}\vect{e_{y}} \approx 2\sigma \pi R \underbrace{\sinsq{\theta} \cossq{\dtheta}}_{f_{CP}}\vect{e_{\bot}} =2\pi R \sigma f_{CP}\parth{\theta, \dtheta}\vect{e_{x}}\\
-\end{align}
-
-\subsection{Capillary force}
-
-The capillary or surface tension force results from the integration of the effort exerted over the triple contact line between the vapor inside the bubble, the surrounding liquid and the wall. This force has been derived by \textsc{Klausner}[CITE] for a inclined bubble, yielding for each direction regarding the wall :
-
-\begin{align}
-\vect{F_{C}}&=-1.25 d_{w}\sigma \frac{\pi\parth{\theta_{u}-\theta_{d}}}{\pi^{2}-\parth{\theta_{u}-\theta_{d}}^{2}}\parth{\sin{\theta_{u}}+\sin{\theta_{d}} }\vect{e_{x}} -d_{w} \sigma \frac{\pi}{\theta_{u}-\theta_{d}}\parth{\cos{\alpha_{d}}- \cos{\alpha_{u}}}\vect{e_{y}} \\
-%
-&\approx -\pi R \sigma \underbrace{\crocht{1.25\ \frac{2\dtheta}{\parth{\frac{\pi}{2}}^{2}-\dtheta^{2}}\sin{\theta_{s}}^{2}\cos{\dtheta}^{2}}}_{f_{C,x}} \vect{e_{x}} - \pi R \sigma \underbrace{\crocht{2\ \sin{\theta_{s}}^{2}\frac{\sin{2\dtheta}}{2\dtheta}}}_{f_{C,y}}\vect{e_{y}}\\
-%
-&= -\pi R \sigma f_{C,x}\parth{\theta_{s}, \dtheta}\vect{e_{x}} - \pi R \sigma f_{C,y}\parth{\theta_{s}, \dtheta} \vect{e_{y}}
+&C_{D}^{W}=\Delta C_{D}^{W} C_{D0}^{U} + C_{D0}^{U} = C_{D0}^{U} \left( 1 + \Delta C_{D}^{W}\right)\\
+\text{with}\  &C_{D0}^{U}\left(\text{Re} \gg 1 \right) = \frac{48}{\text{Re}} \text{ (Kang and Leal, 1988)}\\
+&\Delta C_{D}^{W} \left(\text{Re}\right) \approx \Delta C_{D}^{W}\left[\text{Re}=O(1)\right] + c_{D\omega\infty}\Delta C_{D}^{W}\left(\text{Re}\gg1\right)\\
+\text{with}\  &c_{D\omega\infty}=1-e^{-0.07\text{Re}}
 \end{align}
 
 \npar
+\begin{align}
+\Delta C_{D}^{W}\left[\text{Re}=O(1)\right] &\approx f'_{D}\left(L_{u}\right)b^{2}\left(\text{Re}\right)\Delta C_{D}^{\text{W-in}}\\
+f'_{D}\left(L_{u}\right)&\approx \frac{1}{1+0.16L_{u}\left(L_{u}+4\right)} \\
+b\left(\text{Re}\right)&= 1 + \tanh\left(0.012\text{Re}^{0.8}\right)+\tanh\left(0.07\text{Re}^{0.8}\right) \\
+\Delta C_{D}^{\text{W-in}}\left(\text{Sr},L_{R}\right)&=\left(\frac{3}{8}L_{R}^{-1} + \frac{3}{64}L_{R}^{-4}\right) \left(1- \frac{3}{8}L_{R}^{-1}-\frac{3}{64}L_{R}^{-4}\right)^{-1} - \frac{1}{16}\left(L_{R}^{-2}+\frac{3}{8}L_{R}^{-3}\right)\text{Sr}
+\end{align}
+
+They actually operate a blending between a high Reynolds and a low Reynolds expression, which have both been derived from their numerical results :
+
+\npar
+\begin{align}
+\Delta C_{D}^{W}\left(\text{Re}\gg1 \right) &\approx \Delta C_{Du}^{W}\left(\text{Re}\gg1\right) + \Delta C_{D\omega}^{U}\left(\text{Re}\gg1\right) + \Delta C_{D\omega}^{W-U}\left(\text{Re}\gg1\right)\\
+\Delta C_{Du}^{W}\left(\text{Re}\gg1\right) &\approx 0.47L_{R}^{-4}+5.5\times 10^{-3}L_{R}^{-6}\text{Re}^{3/4} \\
+\Delta C_{D\omega}^{U}\left(\text{Re}\gg1\right) &\approx 2 \times 10^{-3} \left|\text{Sr}\right|^{1.9}\text{Re} \\
+\Delta C_{D\omega}^{W-U}\left(\text{Re}\gg1\right)&\approx 0.05L_{R}^{-7/2}\text{Sr}\text{Re}^{1/3}
+\end{align}
+
+
+\paragraph{Lift coefficient :} The total lift coefficient $C_{L}^{W}$ is expressed as :
+
+
+\begin{align}
+C_{L}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right)=C_{Lu}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right) + C_{L\omega}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right)
+\end{align}
+
+which corresponds to the superposition of two contributions being the uniform flow and the shear rate, both in presence of the wall.
+
+\npar
+\begin{align}
+C_{Lu}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right) &\approx f_{L} f'_{L} b^{2}\left(L_{R}/3\right)^{g}C_{Lu}^{\text{W-in}}+c_{T1}\left[C_{Lu}^{W}\left(\text{Re} \rightarrow \infty\right) + c_{T2}\text{Re}^{-1}L_{R}^{-4}\right]\\
+f_{L}\left(L_{\omega},\varepsilon\right) &= e^{-0.22 \varepsilon^{0.8}L_{\omega}^{2.5}} \\
+f'_{L}\left(L_{u}\right)&\approx\frac{1}{1+0.13L_{u}\left(L_{u}+0.53\right)}\\
+b\left(\text{Re}\right)&= 1 + \tanh\left(0.012\text{Re}^{0.8}\right)+\tanh\left(0.07\text{Re}^{0.8}\right) \\
+g&= -2.0\tanh\left(0.01\text{Re}\right)\\
+C_{Lu}^{\text{W-in}}&=\frac{1}{2}\left(1+\frac{1}{8}L_{R}^{-1}-\frac{33}{64}L_{R}^{-2}\right)\\
+c_{T1}\left(\text{Re}\right)&=1-e^{-0.22\text{Re}^{0.6}} \\
+C_{Lu}^{W}\left(\text{Re}\rightarrow \infty \right)&\approx -\frac{3}{8}L_{R}^{-4}\left[1+\frac{1}{8}L_{R}^{-3}+\frac{1}{6}L_{R}^{-5}\right] + O\left(L_{R}^{-10}\right)\\
+c_{T2}&=15 \tanh\left( 0.01\text{Re} \right)
+\end{align}
+
+
+\npar
+\begin{align}
+C_{L\omega}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right) &\approx h'_{L}C_{L\omega}^{U}\left(\text{Re}\ll 1\right) + c_{T3}\left(\text{Re}\right)\left(1+I_{WS}\right)C_{L\omega}^{U}\left(\text{Re}\gg 1\right) \\
+\text{ with } c_{T3}\left(\text{Re}\right) &= 1-e^{-0.3\text{Re}}\\
+h'_{L}\left(L_{\omega}, \varepsilon, L_{R}\right)&=1-e^{ -\frac{11}{96}\pi^{2}\frac{L_{\omega}}{J_{L}(\varepsilon)}\left(1+\frac{9}{8}L_{R}^{-1}-\frac{1271}{3520}L_{R}^{-2}\right)} \\
+J_{L}(\varepsilon)&=J_{L}\left(\infty\right)\left(1+0.2\varepsilon^{-2}\right)^{-3/2} \text{ with } J_{L}\left(\infty\right)=2.254 \\
+C_{L \omega}^{U}\left(\text{Re}\ll 1\right) &= \frac{8}{\pi^{2}} \frac{Sr}{\left|Sr\right|}\varepsilon J_{L}(\varepsilon)\\
+I_{WS}&=a_{G}L_{R}^{-7/2}\left(1+b_{G}\text{Re}^{-1/2}\right) \text{ with } a_{G}=0.23 \text { and } b_{G}=13\\
+C_{L \omega}^{U}\left(\text{Re}\gg 1 \right)&=\frac{2}{3}\text{Sr}\left(1-0.07\left|\text{Sr}\right|\right)\frac{1+16\text{Re}^{-1}}{1+29\text{Re}^{-1}}
+\end{align}
+
+
+
+
+
+
+
+
+
+
+\subsection{Inertia Force}
+\label{subsec:AM}
+
+The Inertia force originates from various effects (bubble growth, freestream and bubble acceleration, etc.) that includes both Added Mass and Tchen forces and is expressed as \cite{magnaudet_motion_2000}:
+
+\begin{equation}
+\vect{F_{I}} = \underbrace{ \rho_{L}V_{b}\parth{\dtime{\vect{U_{L}}}+\vecgrad{U_{L}}\cdot \vect{U_{L}}} }_{\text{Liquid inertia or Tchen force}} + \underbrace{ \derive{}{t}\parth{\rho_{L}C_{AM}V_{b}\parth{\vect{U_{L}}-\vect{U_{b}}}} }_{\text{Added Mass force } \vect{F_{AM}}}
+\label{eq:F_inertia}
+\end{equation}
+
+Since we consider a steady and quasi-parallel liquid flow, the inertia term is equal to zero.
+
+
+
+\subsubsection{Former Approaches}
+\label{subsubsec:former_AM}
+
+In previous Mechanistic Models, the derivation of the Added Mass force was conducted with different approaches. In particular, some authors have chosen to rely on the Rayleigh-Plesset Equation for a growing hemispherical bubble in a quiescent flow to obtain the reaction force from the liquid, oriented perpendicularly to the wall.
+
+\begin{equation}
+\vect{F_{AM,RPE}}=- \rho_{L}\pi R^{2}\crocht{R\ddot{R}+\frac{3}{2}\dot{R}^{2}}\vect{e_{y}}
+\end{equation}
+
+Then, assuming a bubble inclination angle $\theta_{i}$, this force is projected along the $x$ axis to obtain an Added Mass force parallel to the wall that hinders departure. The inclination angle value is often empiricial and used for data fitting \cite{zeng_unified_1993-1, colombo_prediction_2015, mazzocco_reassessed_2018, ren_development_2020}.
+
+\begin{equation}
+\vect{F_{AM,RPE}}=- \rho_{L}\pi R^{2}\crocht{R\ddot{R}+\frac{3}{2}\dot{R}^{2}}\parth{\sin{\theta_{i}}\vect{e_{x}} + \cos{\theta_{i}}\vect{e_{y}}}
+\label{eq:AM_RPE}
+\end{equation}
+
+
+This approach is questionable on different aspects. First, the RPE assumes a moving boundary in a quiescent unbounded liquid, which is physically far from the real situation of a bubble growing on a wall in a boiling flow. Moreover, the subsequent projection along the different directions regarding an unknown angle is hardly reasonable if $\theta_{i}$ is chosen arbitrarily.
+
+
+
+On the other hand, some authors \cite{klausner_vapor_1993, thorncroft_bubble_2001, guan_bubble_2015} considered two distinct contributions: 
+
+\begin{itemize}
+
+\item Hemispherical bubble growth in a stagnant liquid, leading to Eq.~\ref{eq:AM_RPE} including the inclination angle $\theta_{i}$ ;
+\item Spherical bubble growth in an uniform unbounded and inviscid liquid flow, which yields a detaching Added Mass term  due to the interaction of bubble growth with the external flow: 
+\begin{equation}
+\vect{F_{AM,U}}= \frac{3}{2}\rho_{L}V_{b}\frac{\dot{R}}{R}U_{L} \vect{e_{x}} 
+\label{eq:AM_bulk}
+\end{equation} 
+
+\end{itemize}
+
+By including the effect of the liquid flow, this approach can be considered as closer to the reality. However, it relies on two separate derivations associated to different physical considerations.
+
+\subsubsection{Proposed Approach}
+\label{subsubsec:new_AM}
+
+To tackle the Added Mass derivation in a proper way, we propose to follow the approach of Lamb \cite{lamb_hydrodynamics_1895} (also presented by Milne Thomson \cite{milne-thomson_theoretical_1938} or Van Winjgaarden \cite{wijngaarden_hydrodynamic_1976}). By solving the potential flow around a bubble and its image, we can obtain the total liquid kinetic energy $E_{L}$ that corresponds to a situation where a bubble is at a given distance from a wall (represented by the line normal to the line of centers of the bubbles). 
+
+Then, using Lagrange's equations to compute the resulting forces in each direction:
+
+
+\begin{align}
+\label{eq:Lag_x}
+F_{AM,x}&=-\dpartial{}{t}\parth{\dpartial{E_{L}}{\dot{x}}}+\dpartial{E_{L}}{x}\\
+\label{eq:Lag_y}
+F_{AM,y}&=-\dpartial{}{t}\parth{\dpartial{E_{L}}{\dot{y}}}+\dpartial{E_{L}}{y}
+\end{align}
+
+
+To express the liquid kinetic energy, we can rely on the work of Van Der Geld \cite{van_der_geld_dynamics_2009} who derived $E_{L}$ in the case of a full or truncated spherical bubble laying on a wall and facing an uniform flow parallel to the wall of velocity $U_{L}$ (Eq.~\ref{eq:EL_VdG}). If the bubble slides at a velocity $U_{b}=\dot{x}$, it sees a liquid velocity $U_{rel}=U_{L}-\dot{x}$.
+
+\begin{align}
+E_{L}=\frac{\rho_{L}V_{b}}{2}\parth{\alpha \dot{y}^{2} +\trb\dot{R}^{2}+\psi \dot{R}\dot{y} +\alpha_{2} \parth{U_{L}-\dot{x}}^{2} }
+\label{eq:EL_VdG}
+\end{align}
+where $(x,y)$ are the coordinates of the bubble's center and $\alpha$, $\trb$, $\psi$, $\alpha_{2}$ are polynomials of $R/y = 1/L_{R}$ derived by Van Der Geld for $1<R/y<2$ \ie $0.5<L_{R}<1$.
+
+
+
+Injecting $E_{L}$ in Eq.~\ref{eq:Lag_x} and \ref{eq:Lag_y} and computing the values for the sphere case ($y=R$ and $\dot{y} = \dot{R}$) yields:
+
+\begin{align}
+F_{AM,x}=\rho_{L}V_{b}\crocht{3C_{AM,x}\frac{\dot{R}}{R}U_{rel} - C_{AM,x}\dtime{U_{b}}}
+\label{eq:AMx}
+\end{align}
+with $C_{AM,x} \approx 0.636$.
+
+
+\begin{align}
+F_{AM,y}=\rho_{L}V_{b}\crocht{-\parth{3 C_{AM,y1} + C_{AM,y2}}\frac{\dot{R}^{2}}{R}-C_{AM,y1}\ddot{R} + C_{AM,y3}\frac{U_{rel}^{2}}{R}}
+\label{eq:AMy}
+\end{align}
+with $C_{AM,y1} \approx 0.27$, $C_{AM,y2}\approx 0.326$ and $C_{AM,y3}\approx 8.77\times  10^{-3}$.
+
+
+\npar
+ 
+ 
+
+
+Parallel to the wall, the coupled term $\frac{\dot{R}}{R}U_{rel}$ in Eq.~\ref{eq:AMx} promotes detachment and sliding of the bubble if $U_{rel}>0$ \eg if the bubble is attached to its nucleation site. This relatively agrees with the detaching term of the "two situations" derivations detailed in \ref{subsubsec:former_AM} and clearly contradicts the aforementioned approach where solely projecting the RPE on both axes lead to an Added-Mass term related to bubble growth that only hinders the departure by sliding. 
+
+Moreover, Eq.~\ref{eq:AMy} exhibits a term induced by the relative velocity that acts as a lift force, which seems to rarely appear in other approaches.
+
+\npar
+Here we want to insist on the importance on conducting an approach as rigorous as possible when deriving those transient aspects of the force balance. Otherwise, some terms may be missing and lead to contradictory physical conclusions. Although the proposed method has already been used in different works, we obtained revisited values of the Added Mass coefficients based on the derivation of the liquid kinetic energy by Van Der Geld.
+
+In the spirit of avoiding to introduce extra empirical terms, we keep the Added Mass force as presented in Eq.~\ref{eq:AMx} and \ref{eq:AMy}. No projection of the $y$ term along the $x$ axis to account for asymmetric bubble growth is considered in this study.
+
+
+
 
 \subsection{Added Mass force of a growing bubble}
 
@@ -516,411 +1043,6 @@ Yielding :
 %
 &\frac{\rho_{L}V_{b}}{2}\crocht{\frac{3}{4} \parth{\frac{R}{y}}^{2}\parth{\ddot{R}+3\frac{\dot{R}^{2}}{R}} } + \frac{\rho_{L}V_{b}}{2} \crocht{\frac{3}{4}\parth{\frac{R}{y}}^{4}\parth{\frac{3}{8}\frac{U_{rel}^{2}}{R} + \frac{3}{4}\frac{U_{b,y}}{R}}}
 \end{align}
-
-
-\subsection{Lift and drag forces}
-
-The lift force and the drag force represent the two components of the global hydrodynamic effort exerted by the surronding flow over a bubble. The lift force corresponds to the force directed orthogonally to the flow direction while the drag is the colinear one. 
-
-\npar
-Those forces are usually expressed using bot the projected area of the bubble facing the flow and the relative velocity along with a lift coefficient $C_{L}$ and a drag coefficient $C_{D}$ respectively.
-
-
-\begin{align}
-\vect{F_{D}}&=\frac{1}{2}C_{D}S_{p}\rho_{l}U_{rel}^{2}\vect{e_{\|}}\\
-&=\frac{1}{2}C_{D}\pi R^{2}f_{S_{p}}\parth{\alpha}\rho_{l}U_{rel}^{2}\vect{e_{\|}}
-\end{align}
-
-
-\begin{align}
-\vect{F_{L}}&=\frac{1}{2}C_{L}S_{p}\rho_{l}U_{rel}^{2}\vect{e_{\bot}}\\
-&=\frac{1}{2}C_{L}\pi R^{2}f_{S_{p}}\parth{\alpha}\rho_{l}U_{rel}^{2}\vect{e_{\bot}}
-\end{align}
-
-In those two expressions, the main parameter remains $C_{D}$ and $C_{L}$ which modeling can be developed depending on the flow characteristics (uniform, shear, wall influence, etc.). For instance, one of the most recent and complete expression of those coefficients have been derived from DNS conducted by \textsc{Shi} \etal~ which takes into account the distance to the wall and the shear rate simultaneously.
-
-
-
-\subsubsection{Drag and lift coefficient from Shi \etal}
-
-In this section, we detail the expression of the drag and lift coefficient derived by Shi \etal from multiple DNS simulations.
-
-\npar
-
-The following notations are proper to this sub-section of the document. Variables used by Shi \etal to describe drag and lift are detailed on Table \ref{tab:var_shi}
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
-Name & Definition & Unit\\
-\hline
-\hline
-
-$d$ & Bubble diameter & m\\
-\hline
-$\gamma$ & Flow shear rate & s\up{-1}\\
-\hline
-$\tilde{L}$& Distance to the wall & m\\
-\hline
-$\tilde{L_{u}}$ & $\nu_{l}/\bars{U_{rel}}$ & m\\ 
-\hline
-$\tilde{L_{\omega}}$ & $\sqrt{\nu_{l}/\omega}$ & m\\
-\hline
-\hline
-$L_{u}$ & $\tilde{L}/\tilde{L_{u}}$ & (-)\\
-\hline
-$L_{\omega}$ & $\tilde{L}/\tilde{L_{\omega}}$ & (-)\\
-\hline
-$L_{R}$ & $2\tilde{L}/d$ & (-)\\
-\hline
-$\Re$ & $\bars{U_{rel}}d/\nu_{l}$ & (-)\\
-\hline
-$\mathrm{Sr}$ & $\gamma d / U_{rel}$ & (-)\\
-\hline
-$\varepsilon$ & $\tilde{L_{u}}/\tilde{L_{\omega}}=\sqrt{\bars{\mathrm{Sr}}/\Re}$ & (-)\\
-\hline
-\end{tabular}
-\caption{Variables used by Shi \etal}
-\label{tab:var_shi}
-\end{table}
-
-
-The drag and lift coefficient are computed from their DNS results by integrating the hydrodynamic effort over the bubble's surface. The axial and radial component respectively yielding the drag and lift coefficient when divided by $\pi d^{2}\rho_{l}U_{rel}^{2}/8$.
-
-\npar
-
-\paragraph{Drag coefficient :}
-
-The total drag coefficient is expressed as a correction $\Delta C_{D}^{W}$ of a uniform drag coefficient $C_{D0}^{U}$ to account for shear and wall effects :
-
-
-\begin{align}
-&C_{D}^{W}=\Delta C_{D}^{W} C_{D0}^{U} + C_{D0}^{U} = C_{D0}^{U} \left( 1 + \Delta C_{D}^{W}\right)\\
-\text{with}\  &C_{D0}^{U}\left(\text{Re} \gg 1 \right) = \frac{48}{\text{Re}} \text{ (Kang and Leal, 1988)}\\
-&\Delta C_{D}^{W} \left(\text{Re}\right) \approx \Delta C_{D}^{W}\left[\text{Re}=O(1)\right] + c_{D\omega\infty}\Delta C_{D}^{W}\left(\text{Re}\gg1\right)\\
-\text{with}\  &c_{D\omega\infty}=1-e^{-0.07\text{Re}}
-\end{align}
-
-\npar
-\begin{align}
-\Delta C_{D}^{W}\left[\text{Re}=O(1)\right] &\approx f'_{D}\left(L_{u}\right)b^{2}\left(\text{Re}\right)\Delta C_{D}^{\text{W-in}}\\
-f'_{D}\left(L_{u}\right)&\approx \frac{1}{1+0.16L_{u}\left(L_{u}+4\right)} \\
-b\left(\text{Re}\right)&= 1 + \tanh\left(0.012\text{Re}^{0.8}\right)+\tanh\left(0.07\text{Re}^{0.8}\right) \\
-\Delta C_{D}^{\text{W-in}}\left(\text{Sr},L_{R}\right)&=\left(\frac{3}{8}L_{R}^{-1} + \frac{3}{64}L_{R}^{-4}\right) \left(1- \frac{3}{8}L_{R}^{-1}-\frac{3}{64}L_{R}^{-4}\right)^{-1} - \frac{1}{16}\left(L_{R}^{-2}+\frac{3}{8}L_{R}^{-3}\right)\text{Sr}
-\end{align}
-
-They actually operate a blending between a high Reynolds and a low Reynolds expression, which have both been derived from their numerical results :
-
-\npar
-\begin{align}
-\Delta C_{D}^{W}\left(\text{Re}\gg1 \right) &\approx \Delta C_{Du}^{W}\left(\text{Re}\gg1\right) + \Delta C_{D\omega}^{U}\left(\text{Re}\gg1\right) + \Delta C_{D\omega}^{W-U}\left(\text{Re}\gg1\right)\\
-\Delta C_{Du}^{W}\left(\text{Re}\gg1\right) &\approx 0.47L_{R}^{-4}+5.5\times 10^{-3}L_{R}^{-6}\text{Re}^{3/4} \\
-\Delta C_{D\omega}^{U}\left(\text{Re}\gg1\right) &\approx 2 \times 10^{-3} \left|\text{Sr}\right|^{1.9}\text{Re} \\
-\Delta C_{D\omega}^{W-U}\left(\text{Re}\gg1\right)&\approx 0.05L_{R}^{-7/2}\text{Sr}\text{Re}^{1/3}
-\end{align}
-
-
-\paragraph{Lift coefficient :} The total lift coefficient $C_{L}^{W}$ is expressed as :
-
-
-\begin{align}
-C_{L}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right)=C_{Lu}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right) + C_{L\omega}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right)
-\end{align}
-
-which corresponds to the superposition of two contributions being the uniform flow and the shear rate, both in presence of the wall.
-
-\npar
-\begin{align}
-C_{Lu}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right) &\approx f_{L} f'_{L} b^{2}\left(L_{R}/3\right)^{g}C_{Lu}^{\text{W-in}}+c_{T1}\left[C_{Lu}^{W}\left(\text{Re} \rightarrow \infty\right) + c_{T2}\text{Re}^{-1}L_{R}^{-4}\right]\\
-f_{L}\left(L_{\omega},\varepsilon\right) &= e^{-0.22 \varepsilon^{0.8}L_{\omega}^{2.5}} \\
-f'_{L}\left(L_{u}\right)&\approx\frac{1}{1+0.13L_{u}\left(L_{u}+0.53\right)}\\
-b\left(\text{Re}\right)&= 1 + \tanh\left(0.012\text{Re}^{0.8}\right)+\tanh\left(0.07\text{Re}^{0.8}\right) \\
-g&= -2.0\tanh\left(0.01\text{Re}\right)\\
-C_{Lu}^{\text{W-in}}&=\frac{1}{2}\left(1+\frac{1}{8}L_{R}^{-1}-\frac{33}{64}L_{R}^{-2}\right)\\
-c_{T1}\left(\text{Re}\right)&=1-e^{-0.22\text{Re}^{0.6}} \\
-C_{Lu}^{W}\left(\text{Re}\rightarrow \infty \right)&\approx -\frac{3}{8}L_{R}^{-4}\left[1+\frac{1}{8}L_{R}^{-3}+\frac{1}{6}L_{R}^{-5}\right] + O\left(L_{R}^{-10}\right)\\
-c_{T2}&=15 \tanh\left( 0.01\text{Re} \right)
-\end{align}
-
-
-\npar
-\begin{align}
-C_{L\omega}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right) &\approx h'_{L}C_{L\omega}^{U}\left(\text{Re}\ll 1\right) + c_{T3}\left(\text{Re}\right)\left(1+I_{WS}\right)C_{L\omega}^{U}\left(\text{Re}\gg 1\right) \\
-\text{ with } c_{T3}\left(\text{Re}\right) &= 1-e^{-0.3\text{Re}}\\
-h'_{L}\left(L_{\omega}, \varepsilon, L_{R}\right)&=1-e^{ -\frac{11}{96}\pi^{2}\frac{L_{\omega}}{J_{L}(\varepsilon)}\left(1+\frac{9}{8}L_{R}^{-1}-\frac{1271}{3520}L_{R}^{-2}\right)} \\
-J_{L}(\varepsilon)&=J_{L}\left(\infty\right)\left(1+0.2\varepsilon^{-2}\right)^{-3/2} \text{ with } J_{L}\left(\infty\right)=2.254 \\
-C_{L \omega}^{U}\left(\text{Re}\ll 1\right) &= \frac{8}{\pi^{2}} \frac{Sr}{\left|Sr\right|}\varepsilon J_{L}(\varepsilon)\\
-I_{WS}&=a_{G}L_{R}^{-7/2}\left(1+b_{G}\text{Re}^{-1/2}\right) \text{ with } a_{G}=0.23 \text { and } b_{G}=13\\
-C_{L \omega}^{U}\left(\text{Re}\gg 1 \right)&=\frac{2}{3}\text{Sr}\left(1-0.07\left|\text{Sr}\right|\right)\frac{1+16\text{Re}^{-1}}{1+29\text{Re}^{-1}}
-\end{align}
-
-
-
-
-\section{Force Balance Modeling}\label{sec:forces}
-
-\subsection{General Considerations}\label{subsec:general}
-
-When trying to derive the force balance over a bubble, the first step consists of splitting the whole effort experienced by the bubble between different contributions depending on their nature. In our case, we focus on a bubble growing on a vertical wall and facing an upward flow as depicted in Figure \ref{fig:bub_forces}. The considered forces are:
-
-
-
-\begin{itemize}
-\item The Buoyancy force $\vect{F_{B}}$, including Archimedes force and the weight of the bubble ;
-\item The Capillary or Surface Tension force $\vect{F_{C}}$ ;
-\item The Contact Pressure force $\vect{F_{CP}}$ ;
-\item The Drag and Lift forces $\vect{F_{D}}$ and $\vect{F_{L}}$ ;
-\item The Inertia force, including Added-Mass and Tchen force $\vect{F_{I}}$.
-\end{itemize}
-
-
-
-
-
-\begin{figure}[h!]
-\centering
-%\include{tikz_img/forces}
-\includegraphics[width=0.6\linewidth]{img/forces/bub_bdf.pdf}
-\caption{Sketch of the forces applied to the bubble facing an upward flow $\vect{U_{L}}$ and sliding at velocity $\vect{U_{b}}$}
-\label{fig:bub_forces}
-\end{figure}
-
-
-
-
-Regarding the bubble shape, we consider a quasi-spherical bubble of radius $R$ with a circular contact area with the wall of radius $r_{w}$. It has a static contact angle $\theta$ and is tilted under the influence of the flow by an inclination angle $\dtheta$ (half the total angle hysteresis). The resulting downstream and upstream contact angles are therefore $\theta_{d}=\theta-\dtheta$ and $\theta_{u}=\theta+\dtheta$. If the bubble has a shape close to a truncated sphere, we can approximate the bubble foot radius as:
-
-\begin{equation}
-%r_{w}\approx \frac{1}{2} R~\parth{\sin{\theta_{u}} + \sin{\theta_{d}} }=R~\sin{\theta}\cos{\dtheta}
-r_{w} \approx R~ \sin{\frac{\theta_{u}+\theta_{d}}{2}}=R~ \sin{\theta}
-\label{eq:rw}
-\end{equation}
-
-We suppose $V_{b}\approx\frac{4}{3}\pi R^{3}$ for the bubble volume.
-
-\subsection{Buoyancy Force}
-
-The Buoyancy force results from both the weight of the bubble and the integration of the static liquid pressure over its surface which naturally yields:
-\begin{equation}
-\label{eq:buoyancy}
-\vect{F_{B}}=V_{b}\parth{\rho_{V}-\rho_{L}}\vect{g}=\frac{4}{3}\pi R^{3}\parth{\rho_{L}-\rho_{V}}g \ \vect{e_{x}}
-\end{equation}
-
-\subsection{Capillary Force}\label{subsec:FC}
-
-The most common and generally accepted expression of the capillary force has been derived by Klausner \cite{klausner_vapor_1993} by integrating the tangential effort at the triple contact line over the bubble foot radius while assuming an evolution of the contact angle from $\theta_{d}$ to $\theta_{u}$ as a polynomial expression of degree 3. This results in:
-
-\begin{align}
-\nonumber \vect{F_{C}}=&-\pi R \sigma \crocht{2.5~ \frac{r_{w}}{R} \frac{\dtheta}{\parth{\frac{\pi}{2}}^{2}-\dtheta^{2}}\sin{\theta}\cos{\dtheta}} \vect{e_{x}}\\
-%
-& - \pi R \sigma \crocht{2\ \frac{r_{w}}{R} \sin{\theta} \frac{\sin{\dtheta}}{\dtheta}}\vect{e_{y}}
-\label{eq:FC_klausner}
-\end{align}
-%where $\sigma$ is the surface tension and $\displaystyle r_{w}\approx R\  \frac{\sin{\theta_{u}}+\sin{\theta_{d}}}{2}=R\ \sin{\theta}\cos{\dtheta}$.
-%&\int_{0}^{2\pi} r_{w} \sigma \vect{\tau} \mathrm{d}\alpha\\
-%=& -1.25\ \frac{2\pi r_{w}\sigma \parth{\theta_{u} - \theta_{d}} }{\pi^{2} - \parth{\theta_{u} - \theta_{d}}^{2} }\crocht{\sin{\theta_{u}} + \sin{\theta_{d}}}\ \vect{e_{x}} +\frac{2\pi r_{w} \sigma}{\theta_{u} - \theta_{d}}\crocht{\cos{\theta_{u}} - \cos{\theta_{d}}}\ \vect{e_{y}}\\
-
-
-\subsection{Contact Pressure Force}\label{subsec:FCP}
-
-The Contact Pressure force is linked to the overpressure inside the bubble. Combined with the Archimedes force, it can be expressed versus the difference of liquid and vapor pressure at the bubble foot using Laplace's equation as:
-\begin{align}
-\vect{F_{CP}}  \approx \frac{2\sigma}{R_{c}} \pi r_{w}^{2}\  \vect{e_{y}}
-\approx \pi R \sigma\ 2\ \sin{\theta}^{2}\ \vect{e_{y}}
-\label{eq:FCP}
-\end{align}
-
-Here, $R_{c}$ is the curvature radius of the bubble which is often assumed to be equal to $5R$ \cite{klausner_vapor_1993, sugrue_modified_2016, mazzocco_reassessed_2018} without other explanation than avoiding an overestimation of the Contact Pressure force. To avoid this arbitrary choice, following the hypothesis of a nearly spherical bubble shape gives $R_{c}=R$.
-% apart that it helps the model to fit experimental measurements by ponderating the magnitude of the contact pressure force.
-
-\subsection{Drag and Lift Forces}\label{subsec:FD}
-
-The external liquid flow over the bubble induces the well-known Drag and Lift forces, acting respectively in the flow direction and perpendicular to the flow. They are usually expressed using associated coefficients $C_{D}$ and $C_{L}$ defined by:
-\begin{align}
-\vect{F_{D}}=&\frac{1}{2}C_{D}\rho_{L}S_{p} \norm{ \vect{U_{L}}-\vect{U_{b}} } \parth{\vect{U_{L}}-\vect{U_{b}}} \\
-\vect{F_{L}}=&\frac{1}{2}C_{L}\rho_{L}S_{p}\norm{\vect{U_{L}}-\vect{U_{b}}}^{2}\ \vect{e_{y}}
-\end{align}
-with $S_{p}=\pi R^{2}$ the projected area of the bubble in the direction of the flow.
-
-
-Traditional approaches rely on expressions of the Drag force for a bubble in an infinite medium based on numerical correlations as proposed by Mei \cite{mei_unsteady_1992}: 
-
-\begin{equation}
-C_{D,U} = \frac{16}{\Re_{b}}\crocht{1 + \parth{\frac{8}{\Re_{b}}+ \frac{1}{2}\parth{1+\frac{3.315}{\sqrt{\Re_{b}}} }}^{-1} }
-\label{eq:CD_mei}
-\end{equation}
-
-
-Results from DNS conducted by Eames \etal \cite{eames_lift_2008} proposed expressions of the Drag and Lift forces for a hemispherical bubble on a wall facing a viscous shear flow. Earlier, Legendre \& Magnaudet \cite{legendre_lift_1998} analytically derived coefficients to transpose Drag and Lift expressions for a particle to the case of a bubble. This was applied by Mazzocco \etal \cite{mazzocco_reassessed_2018} to the Drag for a solid particle near a wall in a shear flow proposed by Zeng \etal \cite{zeng_forces_2009}.
-
-In this work, we propose to rely on the recent work of Shi \etal \cite{shi_drag_2021} who conducted DNS of a shear flow over a spherical bubble of constant radius close to a wall for bubble Reynolds number between $10^{-1}$ and $10^{3}$ and shear rates between -0.5 and 0.5.
-
-They computed the resulting Drag and Lift coefficients for each simulations and proposed correlations fitting their numerical results. The total Drag coefficient is expressed as a correction of the Drag coefficient for a bubble in an unbounded uniform flow  $C_{D,U}$. The total drag is given by:
-
-\begin{equation}
-C_{D}=\parth{1+\Delta C_{D}}C_{D,U}
-\end{equation}
-where $\Delta C_{D}$ accounts for both the effect of the shear flow and the wall vicinity. 
-
-To cover the whole range of bubble Reynolds numbers, correlations at low and high $\Re_{b}$ are smoothly connected using an exponential term.
-
-\begin{equation}
-\Delta C_{D}=\Delta C_{D,\Re_{b}=O\parth{1}}+\parth{1-e^{-0.07\Re_{b}}}\Delta C_{D,{\Re_{b}\gg 1}}
-\label{eq:drag_corr_shi}
-\end{equation}
-
-
-Each of those corrections is computed depending on $\Re_{b}$,  the non-dimensional shear rate $\Sr$, the non dimensional distances $L_{R} = \frac{y}{R}$ and $L_{u}= y \frac{\bars{U_{rel}}}{\nu_{L}}$  ($L_{R}=1$ being a spherical bubble laying on a wall). 
-
-
-\begin{align}
-\nonumber \Delta C_{D,\Re_{b}=O\parth{1}} = & \frac{1+\mathrm{tanh}\parth{0.012\Re_{b}^{0.8}} + \mathrm{tanh}\parth{0.07\Re_{b}^{0.8}}^{2}}{1+0.16L_{u}\parth{L_{u}+4}}
- \\
-%
-\nonumber &\times \left[ \left(\frac{3}{8}L_{R}^{-1} + \frac{3}{64}L_{R}^{-4}\right) \left(1- \frac{3}{8}L_{R}^{-1}-\frac{3}{64}L_{R}^{-4}\right)^{-1} \right.\\
-&\left. \quad - \frac{1}{16}\left(L_{R}^{-2}+\frac{3}{8}L_{R}^{-3}\right)\text{Sr} \right]
-\end{align}
-
-
-
-\begin{align}
-\nonumber \Delta C_{D,{\Re_{b}\gg 1}} =& ~0.47L_{R}^{-4}+0.0055L_{R}^{-6}\Re_{b}^{3/4} 
-+0.002 \bars{\mathrm{Sr}}^{1.9} \Re_{b} \\
-%
-&+ 0.05 L_{R}^{-7/2} \mathrm{Sr} \Re_{b}^{1/3}
-\end{align}
-
-
-Figure \ref{fig:CD_shi} shows the evolution of the Drag correction $\Delta C_{D}$ against the bubble Reynolds number for different distances to the wall $L_{R}$ and two values of $\Sr$.  We can see that as the distance between the wall and the bubble increases the Drag correction logically approaches zero and that increasing the shear rate $\Sr$ increases $\Delta C_{D}$ for higher values of $\Re_{b}$.
-
-
-Shi \etal \cite{shi_drag_2021} conducted DNS for wall distances down to $L_{R}=1.5$. However, Scheiff \etal \cite{scheiff_experimental_2021} compared the values obtained for $L_{R}=1$  with measured Drag coefficients of bubbles sliding on a wall and observed a good agreement, which legitimates the use of this new Drag correlation by extending its application to the case of a bubble laying on a wall and using the uniform drag coefficient of Eq.~\ref{eq:CD_mei}.
-
-
-
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.8\linewidth]{img/forces/corr_drag.pdf}
-\caption{Drag correction from Shi \etal \cite{shi_drag_2021}.}
-\label{fig:CD_shi}
-\end{figure}
-
-
-\npar
-
-Since this work focuses on the sliding, the total force balance will be studied along the $x$ axis, parallel to the wall. Thus, we do not detail the whole expression of Shi \etal for $C_{L}$. For further work, it is though interesting to mention that their expression of $C_{L}$ is based on the sum of three contributions (wall presence, shear and a coupled term) and changes sign when reaching negative values or $\Sr$ for instance.
-
-
-
-
-
-\subsection{Inertia Force}
-\label{subsec:AM}
-
-The Inertia force originates from various effects (bubble growth, freestream and bubble acceleration, etc.) that includes both Added Mass and Tchen forces and is expressed as \cite{magnaudet_motion_2000}:
-
-\begin{equation}
-\vect{F_{I}} = \underbrace{ \rho_{L}V_{b}\parth{\dtime{\vect{U_{L}}}+\vecgrad{U_{L}}\cdot \vect{U_{L}}} }_{\text{Liquid inertia or Tchen force}} + \underbrace{ \derive{}{t}\parth{\rho_{L}C_{AM}V_{b}\parth{\vect{U_{L}}-\vect{U_{b}}}} }_{\text{Added Mass force } \vect{F_{AM}}}
-\label{eq:F_inertia}
-\end{equation}
-
-Since we consider a steady and quasi-parallel liquid flow, the inertia term is equal to zero.
-
-
-
-\subsubsection{Former Approaches}
-\label{subsubsec:former_AM}
-
-In previous Mechanistic Models, the derivation of the Added Mass force was conducted with different approaches. In particular, some authors have chosen to rely on the Rayleigh-Plesset Equation for a growing hemispherical bubble in a quiescent flow to obtain the reaction force from the liquid, oriented perpendicularly to the wall.
-
-\begin{equation}
-\vect{F_{AM,RPE}}=- \rho_{L}\pi R^{2}\crocht{R\ddot{R}+\frac{3}{2}\dot{R}^{2}}\vect{e_{y}}
-\end{equation}
-
-Then, assuming a bubble inclination angle $\theta_{i}$, this force is projected along the $x$ axis to obtain an Added Mass force parallel to the wall that hinders departure. The inclination angle value is often empiricial and used for data fitting \cite{zeng_unified_1993-1, colombo_prediction_2015, mazzocco_reassessed_2018, ren_development_2020}.
-
-\begin{equation}
-\vect{F_{AM,RPE}}=- \rho_{L}\pi R^{2}\crocht{R\ddot{R}+\frac{3}{2}\dot{R}^{2}}\parth{\sin{\theta_{i}}\vect{e_{x}} + \cos{\theta_{i}}\vect{e_{y}}}
-\label{eq:AM_RPE}
-\end{equation}
-
-
-This approach is questionable on different aspects. First, the RPE assumes a moving boundary in a quiescent unbounded liquid, which is physically far from the real situation of a bubble growing on a wall in a boiling flow. Moreover, the subsequent projection along the different directions regarding an unknown angle is hardly reasonable if $\theta_{i}$ is chosen arbitrarily.
-
-
-
-On the other hand, some authors \cite{klausner_vapor_1993, thorncroft_bubble_2001, guan_bubble_2015} considered two distinct contributions: 
-
-\begin{itemize}
-
-\item Hemispherical bubble growth in a stagnant liquid, leading to Eq.~\ref{eq:AM_RPE} including the inclination angle $\theta_{i}$ ;
-\item Spherical bubble growth in an uniform unbounded and inviscid liquid flow, which yields a detaching Added Mass term  due to the interaction of bubble growth with the external flow: 
-\begin{equation}
-\vect{F_{AM,U}}= \frac{3}{2}\rho_{L}V_{b}\frac{\dot{R}}{R}U_{L} \vect{e_{x}} 
-\label{eq:AM_bulk}
-\end{equation} 
-
-\end{itemize}
-
-By including the effect of the liquid flow, this approach can be considered as closer to the reality. However, it relies on two separate derivations associated to different physical considerations.
-
-\subsubsection{Proposed Approach}
-\label{subsubsec:new_AM}
-
-To tackle the Added Mass derivation in a proper way, we propose to follow the approach of Lamb \cite{lamb_hydrodynamics_1895} (also presented by Milne Thomson \cite{milne-thomson_theoretical_1938} or Van Winjgaarden \cite{wijngaarden_hydrodynamic_1976}). By solving the potential flow around a bubble and its image, we can obtain the total liquid kinetic energy $E_{L}$ that corresponds to a situation where a bubble is at a given distance from a wall (represented by the line normal to the line of centers of the bubbles). 
-
-Then, using Lagrange's equations to compute the resulting forces in each direction:
-
-
-\begin{align}
-\label{eq:Lag_x}
-F_{AM,x}&=-\dpartial{}{t}\parth{\dpartial{E_{L}}{\dot{x}}}+\dpartial{E_{L}}{x}\\
-\label{eq:Lag_y}
-F_{AM,y}&=-\dpartial{}{t}\parth{\dpartial{E_{L}}{\dot{y}}}+\dpartial{E_{L}}{y}
-\end{align}
-
-
-To express the liquid kinetic energy, we can rely on the work of Van Der Geld \cite{van_der_geld_dynamics_2009} who derived $E_{L}$ in the case of a full or truncated spherical bubble laying on a wall and facing an uniform flow parallel to the wall of velocity $U_{L}$ (Eq.~\ref{eq:EL_VdG}). If the bubble slides at a velocity $U_{b}=\dot{x}$, it sees a liquid velocity $U_{rel}=U_{L}-\dot{x}$.
-
-\begin{align}
-E_{L}=\frac{\rho_{L}V_{b}}{2}\parth{\alpha \dot{y}^{2} +\trb\dot{R}^{2}+\psi \dot{R}\dot{y} +\alpha_{2} \parth{U_{L}-\dot{x}}^{2} }
-\label{eq:EL_VdG}
-\end{align}
-where $(x,y)$ are the coordinates of the bubble's center and $\alpha$, $\trb$, $\psi$, $\alpha_{2}$ are polynomials of $R/y = 1/L_{R}$ derived by Van Der Geld for $1<R/y<2$ \ie $0.5<L_{R}<1$.
-
-
-
-Injecting $E_{L}$ in Eq.~\ref{eq:Lag_x} and \ref{eq:Lag_y} and computing the values for the sphere case ($y=R$ and $\dot{y} = \dot{R}$) yields:
-
-\begin{align}
-F_{AM,x}=\rho_{L}V_{b}\crocht{3C_{AM,x}\frac{\dot{R}}{R}U_{rel} - C_{AM,x}\dtime{U_{b}}}
-\label{eq:AMx}
-\end{align}
-with $C_{AM,x} \approx 0.636$.
-
-
-\begin{align}
-F_{AM,y}=\rho_{L}V_{b}\crocht{-\parth{3 C_{AM,y1} + C_{AM,y2}}\frac{\dot{R}^{2}}{R}-C_{AM,y1}\ddot{R} + C_{AM,y3}\frac{U_{rel}^{2}}{R}}
-\label{eq:AMy}
-\end{align}
-with $C_{AM,y1} \approx 0.27$, $C_{AM,y2}\approx 0.326$ and $C_{AM,y3}\approx 8.77\times  10^{-3}$.
-
-
-\npar
- 
- 
-
-
-Parallel to the wall, the coupled term $\frac{\dot{R}}{R}U_{rel}$ in Eq.~\ref{eq:AMx} promotes detachment and sliding of the bubble if $U_{rel}>0$ \eg if the bubble is attached to its nucleation site. This relatively agrees with the detaching term of the "two situations" derivations detailed in \ref{subsubsec:former_AM} and clearly contradicts the aforementioned approach where solely projecting the RPE on both axes lead to an Added-Mass term related to bubble growth that only hinders the departure by sliding. 
-
-Moreover, Eq.~\ref{eq:AMy} exhibits a term induced by the relative velocity that acts as a lift force, which seems to rarely appear in other approaches.
-
-\npar
-Here we want to insist on the importance on conducting an approach as rigorous as possible when deriving those transient aspects of the force balance. Otherwise, some terms may be missing and lead to contradictory physical conclusions. Although the proposed method has already been used in different works, we obtained revisited values of the Added Mass coefficients based on the derivation of the liquid kinetic energy by Van Der Geld.
-
-In the spirit of avoiding to introduce extra empirical terms, we keep the Added Mass force as presented in Eq.~\ref{eq:AMx} and \ref{eq:AMy}. No projection of the $y$ term along the $x$ axis to account for asymmetric bubble growth is considered in this study.
 
 
 \subsection{Force Balance Summary}\label{subsec:BdF}
