@@ -580,27 +580,24 @@ To cover the whole range of bubble Reynolds numbers, correlations at low and hig
 \end{equation}
 
 
-Each of those corrections is computed depending on $\Re_{b}$,  the non-dimensional shear rate $\Sr$, the non dimensional wall distance $L_{R} = \dfrac{y}{R}$   ($L_{R}=1$ being a spherical bubble laying on a wall) and non-dimensional viscous (or Stokes) length $L_{u}=\dfrac{y}{\nu_{L}/\bars{U_{rel}}}$. 
+Each of those corrections is computed depending on $\Re_{b}$,  the non-dimensional shear rate $\Sr = \dfrac{2 \gamma R}{\bars{U_{rel}} }$ where $\gamma = \dpartial{U_{L,x}}{y}$, the non dimensional wall distance $L_{R} = \dfrac{y}{R}$   ($L_{R}=1$ being a spherical bubble laying on a wall) and non-dimensional viscous (or Stokes) length $L_{u}=\dfrac{y}{\nu_{L}/\bars{U_{rel}}}$. 
 
 
 \begin{align}
 \nonumber \Delta C_{D,\Re_{b}=O\parth{1}} = & \frac{1+\mathrm{tanh}\parth{0.012\Re_{b}^{0.8}} + \mathrm{tanh}\parth{0.07\Re_{b}^{0.8}}^{2}}{1+0.16L_{u}\parth{L_{u}+4}}\\
-& \times \left[ \left(\frac{3}{8}L_{R}^{-1} + \frac{3}{64}L_{R}^{-4}\right) \left(1- \frac{3}{8}L_{R}^{-1}-\frac{3}{64}L_{R}^{-4}\right)^{-1} - \frac{1}{16}\left(L_{R}^{-2}+\frac{3}{8}L_{R}^{-3}\right)\text{Sr} \right]
-\end{align}
-
-
-
-\begin{align}
+& \times \left[ \left(\frac{3}{8}L_{R}^{-1} + \frac{3}{64}L_{R}^{-4}\right) \left(1- \frac{3}{8}L_{R}^{-1}-\frac{3}{64}L_{R}^{-4}\right)^{-1} - \frac{1}{16}\left(L_{R}^{-2}+\frac{3}{8}L_{R}^{-3}\right)\text{Sr} \right] \\
+%
+\nonumber\\
 \Delta C_{D,{\Re_{b}\gg 1}} =& ~0.47L_{R}^{-4}+0.0055L_{R}^{-6}\Re_{b}^{3/4} 
 +0.002 \bars{\mathrm{Sr}}^{1.9} \Re_{b} + 0.05 L_{R}^{-7/2} \mathrm{Sr} \Re_{b}^{1/3}
 \end{align}
 
 
-Figure \ref{fig:CD_shi} shows the evolution of the Drag correction $\Delta C_{D}$ against the bubble Reynolds number for different distances to the wall $L_{R}$ and two values of $\Sr$.  We can see that as the distance between the wall and the bubble increases the Drag correction logically approaches zero and that increasing the shear rate $\Sr$ increases $\Delta C_{D}$ for higher values of $\Re_{b}$.
+Figure \ref{fig:CD_shi} shows the evolution of the drag correction $\Delta C_{D}$ against the bubble Reynolds number for different distances to the wall $L_{R}$ and two values of $\Sr$.  We can see that as the distance between the wall and the bubble increases the drag correction logically approaches zero and that increasing the shear rate $\Sr$ increases $\Delta C_{D}$ for higher values of $\Re_{b}$.
 
 \npar
 
-Shi \etal \cite{shi_drag_2021} conducted DNS for wall distances down to $L_{R}=1.5$. However, Scheiff \etal \cite{scheiff_experimental_2021} compared the values obtained for $L_{R}=1$  with measured Drag coefficients of bubbles sliding on a wall and observed a good agreement, which legitimates the use of this new Drag correlation by extending its application to the case of a bubble laying on a wall and using the uniform drag coefficient of Eq.~\ref{eq:CD_mei}.
+Shi \etal \cite{shi_drag_2021} conducted DNS for wall distances down to $L_{R}=1.5$. However, Scheiff \etal \cite{scheiff_experimental_2021} compared the values obtained for $L_{R}=1$  with measured drag coefficients of bubbles sliding on a wall and observed a good agreement, which legitimates the use of this new drag correlation by extending its application to the case of a bubble laying on a wall and using the uniform drag coefficient of Eq.~\ref{eq:CD_mei}.
 
 
 \begin{figure}[h!]
@@ -611,36 +608,75 @@ Shi \etal \cite{shi_drag_2021} conducted DNS for wall distances down to $L_{R}=1
 \end{figure}
 
 
+\begin{remark*}{}
+In PWR conditions, a static bubble of radius $0.01$\ mm on a wall with a bulk liquid velocity of $5$\ m/s leads to a non-dimensional shear rate $\Sr \approx 0.7$ with $\Re_{b} \approx 500$. In this case, the drag correction can reach 180\% compared to the unbounded uniform flow formulation.
+\end{remark*}
 
-\subsubsection{Lift coefficient}
+
+\subsubsection{Lift Coefficient}
 
 
-In 1998, Auton \etal \cite{auton_1998} analytically derived the lift force for an inviscid fluid in unstationnary motion in a weak velocity gradient and found $C_{L}=0.5$. Later, Legendre \& Magnaudet (1998) used numerical results to propose a dependency of $C_{L}$ on the bubble Reynolds number for a sphere in an infinite meidum facing a weakly sheared flows as:
+In 1987, Auton \etal \cite{auton_1998} analytically derived the lift force for an inviscid fluid in unstationnary motion in a weak velocity gradient and found $C_{L}=0.5$, with the lift force defined as:
+
+\begin{equation}
+\vect{F_{L}} = - \rho_{L} C_{L} V_{b} \parth{\vect{U_{L}} - \vect{U_{b}}} \wedge \vect{\omega} 
+\end{equation} 
+where $\vect{\omega}$ is the flow vorticity.
+
+\npar
+This result was enriched by Legendre \& Magnaudet (1998) \cite{legendre_lift_1998bis} who used numerical results to propose a dependency of $C_{L}$ on the bubble Reynolds number for a sphere in an infinite medium facing a weakly sheared flows as:
 
 \begin{align}
 C_{L} =&\parth{ {C_{L,\Re_{b} \sim 1}}^{2} + {C_{L,\Re_{b} \gg 1}}^{2} }^{1/2}\\
- =&\parth{ \crocht{\frac{6}{\pi^{2}} \frac{2.255 \parth{\Re_{b}\Omega^{*}}^{-1/2}}{ \parth{1+0.2\dfrac{\Re_{b}}{\Omega^{*}}}^{3/2} }}^{2} + \crocht{ \frac{1}{2} \frac{1+16\ {\Re_{b}}^{-1}}{1+29\ {\Re_{b}}^{-1}} }^{2} }^{1/2}
+ =&\parth{ \crocht{\frac{6}{\pi^{2}} \frac{2.255 \parth{\Re_{b}\omega^{*}}^{-1/2}}{ \parth{1+0.2\dfrac{\Re_{b}}{\omega^{*}}}^{3/2} }}^{2} + \crocht{ \frac{1}{2} \frac{1+16\ {\Re_{b}}^{-1}}{1+29\ {\Re_{b}}^{-1}} }^{2} }^{1/2}
 \end{align} 
+where $\omega^{*} = \dfrac{2R\bars{\vect{\omega}}}{\bars{U_{rel}}}$ is the non-dimensional vorticity of the flow.
+
+\begin{remark*}{}
+In the case of a steady linear shear flow near a wall, the vorticity is $\vect{\omega}=\overline{\nabla} \wedge \vect{U_{L}}=-\gamma\ \vect{e_{y}}$. In that case, the non-dimensional vorticity becomes the non-dimensional shear rate : $\omega^{*} = \dfrac{2R\gamma}{\bars{U_{rel}}} = \Sr$.
+\end{remark*}
 
 
+\npar
+
+Later, Mei \& Klausner (1994) \cite{mei_klausner_lift} derived the lift force induced by the shear for a spherical bubble in an unbounded flow for low Reynolds numbers, based on the expression of Saffmann \cite{saffman_lift_particle}. By interpolating this result with the solution of Auton \cite{auton_lift_1987}, they obtained a formulation for a large range of $\Re_{b}$ :
+
+\begin{equation}
+C_{L} = 2.74 \sqrt{\Sr} \times \crocht{\Re_{b}^{-2} + \parth{0.24\sqrt{\Sr}}^{4}}^{1/4}
+\label{eq:lift_mei}
+\end{equation}
+
+This expression is actually used in many mechanistic force balance \cite{klausner_vapor_1993, chen_prediction_2012, sugrue_modified_2016, ren_development_2020} \cite{chen_prediction_2012} \cite{ren_development_2020} 
 
 
+\npar
+
+In his force-balance approach, Mazzocco \etal \cite{mazzocco_reassessed_2018} used a constant lift coefficient by using the upper bound for the lift of a solid particle touching a wall in a Stokes flow, multiplied by $\dfrac{4}{9}$ to transpose this value to the bubble case as suggested by Legendre \& Magnaudet \cite{legendre_lift_1997_coeff}. This resulted in:
+
+\begin{equation}
+C_{L} = 2.61
+\end{equation}
 
 
+\npar
 
+In accordance with the computation of the drag coefficient, our model will rely on the expression of the lift coefficient proposed by Shi \etal \cite{shi_drag_2021}. Their formulation includes extra parameters compared to the drag coefficient :
+\begin{itemize}
+\item The non-dimensional Saffman length $L_{\omega} = \dfrac{y}{\sqrt{\nu_{L} / \omega}}$ ;
+\item The Stokes (or Oseen) length to Saffman length ratio $\varepsilon = \dfrac{\nu_{L} / \bars{U_{rel}}}{\sqrt{\nu_{L} / \omega}}$, which quantifies the origin of inertial effects being either shear ($\varepsilon >1$) or the relative slip of the bubble ($\varepsilon < 1$).
 
-Shi \etal:
+\end{itemize}  
 
-
-
+The resulting formulation of $C_{L}$ corresponds to the superpositions of two contributions respectively associated to the uniform flow and the shear rate, both coupled with the wall presence. 
 
 \begin{align}
 C_{L}^{W} =C_{Lu}^{W} + C_{L\omega}^{W}
+\label{eq:lift_shi}
 \end{align}
 
-which corresponds to the superposition of two contributions being the uniform flow and the shear rate, both in presence of the wall.
 
-\npar
+
+The lift associated to the uniform flow near a wall is computed as follows:
 \begin{align}
 \nonumber C_{Lu}^{W} =&\  e^{-0.22\ \varepsilon^{0.8}L_{\omega}^{2.5}} \frac{ \crocht{1 + \tanh{0.012\ {\Re_{b}}^{0.8}} + \tanh{0.07\ {\Re_{b}}^{0.8}} }^{2} } {1+0.13\ L_{u} \parth{L_{u}+0.53} } \\
 %
@@ -658,100 +694,88 @@ C_{Lu, \Re_{b} \to \infty}^{W} = & -\frac{3}{8}L_{R}^{-4}\left[1+\frac{1}{8}L_{R
 
 
 \npar
+
+The lift associated to the vorticity near a wall is computed as follows:
+
 \begin{align}
-C_{L\omega}^{W}\left(\text{Re}, \text{Sr}, L_{R}\right) &\approx h'_{L}C_{L\omega}^{U}\left(\text{Re}\ll 1\right) + c_{T3}\left(\text{Re}\right)\left(1+I_{WS}\right)C_{L\omega}^{U}\left(\text{Re}\gg 1\right) \\
-\text{ with } c_{T3}\left(\text{Re}\right) &= 1-e^{-0.3\text{Re}}\\
-h'_{L}\left(L_{\omega}, \varepsilon, L_{R}\right)&=1-e^{ -\frac{11}{96}\pi^{2}\frac{L_{\omega}}{J_{L}(\varepsilon)}\left(1+\frac{9}{8}L_{R}^{-1}-\frac{1271}{3520}L_{R}^{-2}\right)} \\
-J_{L}(\varepsilon)&=J_{L}\left(\infty\right)\left(1+0.2\varepsilon^{-2}\right)^{-3/2} \text{ with } J_{L}\left(\infty\right)=2.254 \\
-C_{L \omega}^{U}\left(\text{Re}\ll 1\right) &= \frac{8}{\pi^{2}} \frac{Sr}{\left|Sr\right|}\varepsilon J_{L}(\varepsilon)\\
-I_{WS}&=a_{G}L_{R}^{-7/2}\left(1+b_{G}\text{Re}^{-1/2}\right) \text{ with } a_{G}=0.23 \text { and } b_{G}=13\\
-C_{L \omega}^{U}\left(\text{Re}\gg 1 \right)&=\frac{2}{3}\text{Sr}\left(1-0.07\left|\text{Sr}\right|\right)\frac{1+16\text{Re}^{-1}}{1+29\text{Re}^{-1}}
+C_{L\omega}^{W} =& \crocht{ 1-\exp{ -\frac{11}{96}\pi^{2}\frac{L_{\omega}}{J_{L}(\varepsilon)} \parth{1+\frac{9}{8}L_{R}^{-1}-\frac{1271}{3520}L_{R}^{-2}} } }C_{L\omega, \Re_{b} \ll 1}^{U}\\
+%
+ & + \parth{1-e^{-0.3\ \Re_{b}} } \crocht{1+0.23\ L_{R}^{-7/2} \parth{1+13\ {\Re_{b}}^{-1/2}}} C_{L\omega, \Re_{b} \gg 1}^{U}
+\end{align}
+
+Where:
+
+\begin{align}
+J_{L}(\varepsilon)&=2.254 \parth{1+0.2\varepsilon^{-2}}^{-3/2} \\
+%
+C_{L\omega, \Re_{b} \ll 1}^{U} &= \frac{8}{\pi^{2}} \frac{\Sr}{\bars{\Sr}}\varepsilon J_{L}(\varepsilon)\\
+%
+C_{L\omega, \Re_{b} \gg 1}^{U}&= \frac{2}{3}\Sr \parth{ 1-0.07\bars{\Sr} }\frac{1+16\Re_{b}^{-1}}{1+29\Re_{b}^{-1}}
 \end{align}
 
 
-\npar
+On Figure \ref{fig:lift_shi}, we plot the values of $C_{L}$ obtained by the formulation of Shi \etal different values of the non-dimensional wall distance $L_{R}$ (extending down to $L_{R}=1$) and non-dimensional shear rate $\Sr$.
 
-The following notations are proper to this sub-section of the document. Variables used by Shi \etal to describe drag and lift are detailed on Table \ref{tab:var_shi}
+\begin{figure}[h!]
 
-\begin{table}[h!]
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
-Name & Definition & Unit\\
-\hline
-\hline
+\subfloat[Positive values of $\Sr$]{
+\includegraphics[width=0.5\linewidth]{img/forces/lift_shi_srpos.pdf}
+}
+\subfloat[Negative values of $\Sr$]{
+\includegraphics[width=0.5\linewidth]{img/forces/lift_shi_srneg.pdf}
+}
 
-$d$ & Bubble diameter & m\\
-\hline
-$\gamma$ & Flow shear rate & s\up{-1}\\
-\hline
-$\tilde{L}$& Distance to the wall & m\\
-\hline
-$\tilde{L_{u}}$ & $\nu_{l}/\bars{U_{rel}}$ & m\\ 
-\hline
-$\tilde{L_{\omega}}$ & $\sqrt{\nu_{l}/\omega}$ & m\\
-\hline
-\hline
-$L_{u}$ & $\tilde{L}/\tilde{L_{u}}$ & (-)\\
-\hline
-$L_{\omega}$ & $\tilde{L}/\tilde{L_{\omega}}$ & (-)\\
-\hline
-$L_{R}$ & $2\tilde{L}/d$ & (-)\\
-\hline
-$\Re$ & $\bars{U_{rel}}d/\nu_{l}$ & (-)\\
-\hline
-$\mathrm{Sr}$ & $\gamma d / U_{rel}$ & (-)\\
-\hline
-$\varepsilon$ & $\tilde{L_{u}}/\tilde{L_{\omega}}=\sqrt{\bars{\mathrm{Sr}}/\Re}$ & (-)\\
-\hline
-\end{tabular}
-\caption{Variables used by Shi \etal}
-\label{tab:var_shi}
-\end{table}
+\caption{$C_{L}$ computed using Shi \etal correlation.}
+\label{fig:lift_shi}
+\end{figure}
 
+We can see that the magnitude of the lift coefficient globally increases with the wall distance when $\Sr >0$ and that negative lift values are easily reached when $\Sr <0$. This means that correlations for unbounded medium may overestimate the lift experienced by the bubble compared to the situation with a wall. 
 
-The drag and lift coefficient are computed from their DNS results by integrating the hydrodynamic effort over the bubble's surface. The axial and radial component respectively yielding the drag and lift coefficient when divided by $\pi d^{2}\rho_{l}U_{rel}^{2}/8$.
+The extension to the case $L_{R}=1$ may be more questionable compared to the drag since the bubble touching the wall will stop any flow in between, leading to inertial and shear regimes that would be significantly different due to the redirection of the liquid at the bubble's foot towards the bulk. In particular, we can see that the values reached for $L_{R}=1$ on Figure \ref{fig:lift_shi} are not following the general trend of simulated $L_{R}$ :
+
+\begin{itemize}
+\item Negative values of $C_{L}$ are reached with positive $\Sr$ at high $\Re_{b}$ while getting close to the wall seemed to tend to a value of $C_{L} \geq 0$ at high $\Re_{b}$ ;
+\item Magnitude of $C_{L}$ with negative $\Sr$ are not coherent with the observed trend down to $L_{R}=1.5$.
+\end{itemize}
+
+This observation suggest that we should include the effect of the wall using the lift of Shi \etal by limiting its use to $L_{R}=1.5$ contrary to the drag which extension to $L_{R}=1.0$ was coherent and validated.
 
 \npar
 
-
-\paragraph{Lift coefficient :} The total lift coefficient $C_{L}^{W}$ is expressed as :
-
-
-
-
-
-
-
-
-
-
+\begin{remark*}{}
+In PWR conditions, taking $\Sr \approx 0.7$ with $\Re_{b} \approx 500$ for the static bubble on a wall leads to $C_{L}\approx 0.45$ both with Mei \& Klausner (Eq. \ref{eq:lift_mei}) and Shi \etal (Eq. \ref{eq:lift_shi}). For a bubble that would slide at 90\% of the local liquid velocity, this gives $\Sr \approx 7$ and $\Re_{b} \approx 50$ yielding $C_{L,Mei} \approx 4$ and $C_{L,Shi} \approx 2.8$.
+\end{remark*}
 
 
 \subsection{Inertia Force}
 \label{subsec:AM}
 
-The Inertia force originates from various effects (bubble growth, freestream and bubble acceleration, etc.) that includes both Added Mass and Tchen forces and is expressed as \cite{magnaudet_motion_2000}:
+The Inertia force originates from various effects (bubble growth, freestream and bubble acceleration, etc.) and includes both added mass and Tchen forces and is expressed as presented in Magnaudet \& Eames (2000) \cite{magnaudet_motion_2000}:
 
 \begin{equation}
-\vect{F_{I}} = \underbrace{ \rho_{L}V_{b}\parth{\dtime{\vect{U_{L}}}+\vecgrad{U_{L}}\cdot \vect{U_{L}}} }_{\text{Liquid inertia or Tchen force}} + \underbrace{ \derive{}{t}\parth{\rho_{L}C_{AM}V_{b}\parth{\vect{U_{L}}-\vect{U_{b}}}} }_{\text{Added Mass force } \vect{F_{AM}}}
+\vect{F_{I}} = \underbrace{ \rho_{L}V_{b}\parth{\dtime{\vect{U_{L}}}+\vecgrad{\vect{U_{L}} }\cdot \vect{U_{L}}} }_{\text{Liquid inertia or Tchen force}} + \underbrace{ \derive{}{t}\parth{\rho_{L}C_{AM}V_{b}\parth{\vect{U_{L}}-\vect{U_{b}}}} }_{\text{Added Mass force } \vect{F_{AM}}}
 \label{eq:F_inertia}
 \end{equation}
 
-Since we consider a steady and quasi-parallel liquid flow, the inertia term is equal to zero.
+Since we consider a steady and quasi-parallel liquid flow, we respectively have:
 
+\begin{equation}
+\dpartial{\vect{U_{L}} }{t}=0\ \text{and}\ \vecgrad{\vect{U_{L}} } cdot \vect{U_{L}}=0
+\end{equation}
+
+Thus only remains the added mass force to express in the considered force balance. In the next subsections, we detail former approaches to tackle the added mass derivation and propose a more rigorous to re-evaluate the added mass coefficients.
 
 
 \subsubsection{Former Approaches}
 \label{subsubsec:former_AM}
 
-In previous Mechanistic Models, the derivation of the Added Mass force was conducted with different approaches. In particular, some authors have chosen to rely on the Rayleigh-Plesset Equation for a growing hemispherical bubble in a quiescent flow to obtain the reaction force from the liquid, oriented perpendicularly to the wall.
+In previous mechanistic models, the derivation of the added mass force was conducted with different approaches. In particular, some authors chose to rely on the Rayleigh-Plesset Equation (RPE) for a growing hemispherical bubble in a quiescent flow to obtain the reaction force from the liquid, oriented perpendicularly to the wall:
 
 \begin{equation}
 \vect{F_{AM,RPE}}=- \rho_{L}\pi R^{2}\crocht{R\ddot{R}+\frac{3}{2}\dot{R}^{2}}\vect{e_{y}}
 \end{equation}
 
-Then, assuming a bubble inclination angle $\theta_{i}$, this force is projected along the $x$ axis to obtain an Added Mass force parallel to the wall that hinders departure. The inclination angle value is often empiricial and used for data fitting \cite{zeng_unified_1993-1, colombo_prediction_2015, mazzocco_reassessed_2018, ren_development_2020}.
+Then, assuming a bubble inclination angle $\theta_{i}$, this force was projected along the $x$ axis to obtain an Added Mass force parallel to the wall that hinders departure. The inclination angle value is often empiricial and used for data fitting \cite{zeng_unified_1993-1, colombo_prediction_2015, mazzocco_reassessed_2018, ren_development_2020}.
 
 \begin{equation}
 \vect{F_{AM,RPE}}=- \rho_{L}\pi R^{2}\crocht{R\ddot{R}+\frac{3}{2}\dot{R}^{2}}\parth{\sin{\theta_{i}}\vect{e_{x}} + \cos{\theta_{i}}\vect{e_{y}}}
@@ -759,9 +783,9 @@ Then, assuming a bubble inclination angle $\theta_{i}$, this force is projected 
 \end{equation}
 
 
-This approach is questionable on different aspects. First, the RPE assumes a moving boundary in a quiescent unbounded liquid, which is physically far from the real situation of a bubble growing on a wall in a boiling flow. Moreover, the subsequent projection along the different directions regarding an unknown angle is hardly reasonable if $\theta_{i}$ is chosen arbitrarily.
+This approach is questionable on different aspects. First, the RPE assumes a moving boundary in a quiescent unbounded liquid, which is physically far from the real situation of a bubble growing on a wall in a boiling flow. Moreover, the subsequent projection along the different directions regarding an unknown angle is hardly reasonable if $\theta_{i}$ is chosen arbitrarily. Values of $\theta_{i}$ selected by different authors are mentioned in Table \ref{tab:all_BdF}.
 
-
+\npar
 
 On the other hand, some authors \cite{klausner_vapor_1993, thorncroft_bubble_2001, guan_bubble_2015} considered two distinct contributions: 
 
@@ -776,35 +800,51 @@ On the other hand, some authors \cite{klausner_vapor_1993, thorncroft_bubble_200
 
 \end{itemize}
 
-By including the effect of the liquid flow, this approach can be considered as closer to the reality. However, it relies on two separate derivations associated to different physical considerations.
+This last term is usually called a "bulk growth force". By including the effect of the liquid flow, this approach can be considered as closer to the reality. However, it relies on two separate derivations associated to different physical considerations.
+
+
 
 \subsubsection{Proposed Approach}
 \label{subsubsec:new_AM}
 
-To tackle the Added Mass derivation in a proper way, we propose to follow the approach of Lamb \cite{lamb_hydrodynamics_1895} (also presented by Milne Thomson \cite{milne-thomson_theoretical_1938} or Van Winjgaarden \cite{wijngaarden_hydrodynamic_1976}). By solving the potential flow around a bubble and its image, we can obtain the total liquid kinetic energy $E_{L}$ that corresponds to a situation where a bubble is at a given distance from a wall (represented by the line normal to the line of centers of the bubbles). 
+To tackle the added mass derivation in a proper way, we propose to follow the approach of Lamb \cite{lamb_hydrodynamics_1895} (also presented by Milne Thomson \cite{milne-thomson_theoretical_1938} or Van Winjgaarden \cite{wijngaarden_hydrodynamic_1976}). By solving the potential flow around a bubble and its image, we can obtain the total liquid kinetic energy $E_{L}$ that corresponds to a situation where a bubble is at a given distance from a wall (represented by the line normal to the line of centers of the bubbles). 
 
-Then, using Lagrange's equations to compute the resulting forces in each direction:
+Then we can use Lagrange equation to compute the resulting forces along a given coordinate $q$:
 
 
 \begin{align}
 \label{eq:Lag_x}
-F_{AM,x}&=-\dpartial{}{t}\parth{\dpartial{E_{L}}{\dot{x}}}+\dpartial{E_{L}}{x}\\
-\label{eq:Lag_y}
-F_{AM,y}&=-\dpartial{}{t}\parth{\dpartial{E_{L}}{\dot{y}}}+\dpartial{E_{L}}{y}
+F_{AM,q}&=-\dpartial{}{t}\parth{\dpartial{E_{L}}{\dot{q}}}+\dpartial{E_{L}}{q}\\
 \end{align}
 
 
-To express the liquid kinetic energy, we can rely on the work of Van Der Geld \cite{van_der_geld_dynamics_2009} who derived $E_{L}$ in the case of a full or truncated spherical bubble laying on a wall and facing an uniform flow parallel to the wall of velocity $U_{L}$ (Eq.~\ref{eq:EL_VdG}). If the bubble slides at a velocity $U_{b}=\dot{x}$, it sees a liquid velocity $U_{rel}=U_{L}-\dot{x}$.
+This method was also used by Duhar \cite{duhar_dynamics_2006} who developed an asymptotic expression of $E_{L}$ to compute the addd mass coefficient when the bubble approaches the wall. Here, we express the liquid kinetic energy by relying on the work of Van Der Geld \cite{van_der_geld_dynamics_2009} who derived $E_{L}$ in the case of a full or truncated spherical bubble laying on a wall and facing an uniform flow parallel to the wall of velocity $U_{L}$ (Eq.~\ref{eq:EL_VdG}). If the bubble slides at a velocity $U_{b}=\dot{x}$, it sees a liquid velocity $U_{rel}=U_{L}-\dot{x}$.
 
 \begin{align}
 E_{L}=\frac{\rho_{L}V_{b}}{2}\parth{\alpha \dot{y}^{2} +\trb\dot{R}^{2}+\psi \dot{R}\dot{y} +\alpha_{2} \parth{U_{L}-\dot{x}}^{2} }
 \label{eq:EL_VdG}
 \end{align}
-where $(x,y)$ are the coordinates of the bubble's center and $\alpha$, $\trb$, $\psi$, $\alpha_{2}$ are polynomials of $R/y = 1/L_{R}$ derived by Van Der Geld for $1<R/y<2$ \ie $0.5<L_{R}<1$.
+where $(x,y)$ are the coordinates of the bubble's center and $\alpha$, $\trb$, $\psi$, $\alpha_{2}$ are polynomials of $R/y = 1/L_{R}$ derived by Van Der Geld for $1<R/y<2$ \ie $0.5<L_{R}<1$, corresponding to contact angles $0\degree < \theta \ 60\degree$.
+
+For each polynomial expression ($\alpha$ is used as an example), we note $n$ its degree and write:
+
+\begin{equation}
+\alpha = \sum_{k=0}^{n}\alpha_{k}\parth{\frac{R}{y} }^{k}\ \text{and}\ \tilde{\alpha}= \sum_{k=0}^{n}k\ \alpha_{k}\parth{\frac{R}{y} }^{k}
+\end{equation}
+
+This allows to express the following derivatives:
+
+\begin{equation}
+\dpartial{\alpha}{y} = -\frac{1}{y} \tilde{\alpha}\ \text{and}\ \dpartial{\alpha}{t} = \parth{\frac{\dot{R}}{R} - \frac{\dot{y}}{y}} \tilde{\alpha}
+\end{equation}
 
 
+Noticing that the derivatives of the polynomials along $x$ will be 0 and injecting $E_{L}$ in Eq.~\ref{eq:Lag_x} and \ref{eq:Lag_y} and computing the values for the sphere case ($y=R$ and $\dot{y} = \dot{R}$) yields:
 
-Injecting $E_{L}$ in Eq.~\ref{eq:Lag_x} and \ref{eq:Lag_y} and computing the values for the sphere case ($y=R$ and $\dot{y} = \dot{R}$) yields:
+\begin{align}
+F_{AM,x} = \rho_{L}V_{b}\crocht{3\frac{\dot{R}}{R} \alpha_{2}U_{rel} + \parth{\frac{\dot{R}}{R} - \frac{\dot{y}}{y} } \tilde{\alpha}U_{rel} - \alpha_{2} \dpartial{U_{b}}{t} }
+\end{align}
+
 
 \begin{align}
 F_{AM,x}=\rho_{L}V_{b}\crocht{3C_{AM,x}\frac{\dot{R}}{R}U_{rel} - C_{AM,x}\dtime{U_{b}}}
@@ -1138,7 +1178,7 @@ Now that the force balance has been established, we can write it parallel to the
 \end{align}
 
 \begin{equation}
- f_{C,x}=2.5\ \frac{\dtheta}{\parth{\pi/2}^{2}-\dtheta^{2}}\sin{\theta}^{2}\cos{\dtheta}
+ f_{C,x}=2.5\ \frac{\dtheta}{\parth{\pi/2}^{2}-\dtheta^{2}}\sin{\theta}\cos{\dtheta}
 \end{equation}
 with $f_{C,x} \to 0 $ if $\dtheta \to 0$.
 
