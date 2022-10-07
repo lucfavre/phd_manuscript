@@ -56,7 +56,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 20820 items.
+Reallocating 'field_info' (item size: 4) to 22080 items.
 Database file #1: main-blx.bib
 Database file #2: bib_test.bib
 Reallocating 'str_pool' (item size: 1) to 130000 items.
@@ -102,7 +102,15 @@ Warning--I didn't find a database entry for "Zuber1961"
 Warning--I didn't find a database entry for "prodanovic_2006"
 Warning--I didn't find a database entry for "march_1990"
 Warning--I didn't find a database entry for "tolubinsky_diam"
-Warning--I didn't find a database entry for "eames_lift_2008"
+Warning--I didn't find a database entry for "duhar_npentane"
+Warning--I didn't find a database entry for "hadamard_1911"
+Warning--I didn't find a database entry for "levich_1962"
+Warning--I didn't find a database entry for "auton_1998"
+Warning--I didn't find a database entry for "legendre_lift_1998bis"
+Warning--I didn't find a database entry for "mei_klausner_lift"
+Warning--I didn't find a database entry for "saffman_lift_particle"
+Warning--I didn't find a database entry for "auton_lift_1987"
+Warning--I didn't find a database entry for "legendre_lift_1997_coeff"
 Warning--I didn't find a database entry for "richenderfer_phd"
 Warning--I didn't find a database entry for "jens_lottes_data"
 Warning--I didn't find a database entry for "kennel_phd"
@@ -128,45 +136,45 @@ Warning--I didn't find a database entry for "Richen_phd"
 Biblatex version: 3.18
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 48 entries,
+You've used 49 entries,
             6399 wiz_defined-function locations,
-            1801 strings with 73331 characters,
-and the built_in function-call counts, 585748 in all, are:
-= -- 33483
-> -- 40298
-< -- 3306
-+ -- 42271
-- -- 33083
-* -- 34656
-:= -- 79592
+            1820 strings with 75629 characters,
+and the built_in function-call counts, 601904 in all, are:
+= -- 34497
+> -- 41265
+< -- 3388
++ -- 43425
+- -- 33868
+* -- 35655
+:= -- 81876
 add.period$ -- 0
-call.type$ -- 48
-change.case$ -- 47
-chr.to.int$ -- 2876
-cite$ -- 94
-duplicate$ -- 49673
-empty$ -- 40557
-format.name$ -- 3463
-if$ -- 92832
+call.type$ -- 49
+change.case$ -- 48
+chr.to.int$ -- 2948
+cite$ -- 96
+duplicate$ -- 51280
+empty$ -- 41592
+format.name$ -- 3573
+if$ -- 95392
 int.to.chr$ -- 0
-int.to.str$ -- 103
+int.to.str$ -- 106
 missing$ -- 0
-newline$ -- 2315
-num.names$ -- 2139
-pop$ -- 16392
+newline$ -- 2384
+num.names$ -- 2183
+pop$ -- 16784
 preamble$ -- 1
-purify$ -- 928
+purify$ -- 948
 quote$ -- 0
-skip$ -- 12547
+skip$ -- 12832
 stack$ -- 0
-substring$ -- 68683
-swap$ -- 12322
-text.length$ -- 2672
-text.prefix$ -- 49
+substring$ -- 70601
+swap$ -- 12645
+text.length$ -- 2743
+text.prefix$ -- 50
 top$ -- 1
-type$ -- 1608
+type$ -- 1642
 warning$ -- 0
-while$ -- 7441
+while$ -- 7696
 width$ -- 0
-write$ -- 2268
-(There were 65 warnings)
+write$ -- 2336
+(There were 73 warnings)

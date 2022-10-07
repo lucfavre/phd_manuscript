@@ -2653,6 +2653,97 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{zhou_mechanistic_2021}{article}{}
+    \name{author}{5}{}{%
+      {{hash=ZP}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Pei},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Hua},
+         familyi={H\bibinitperiod},
+         given={Shiyang},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={Gao},
+         familyi={G\bibinitperiod},
+         given={Cai},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SD}{%
+         family={Sun},
+         familyi={S\bibinitperiod},
+         given={Dongfang},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=HR}{%
+         family={Huang},
+         familyi={H\bibinitperiod},
+         given={Ronghua},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{Bubble dynamics, Bubble sliding, Subcooled flow boiling, Wall heat
+  flux partitioning model}
+    \strng{namehash}{ZP+1}
+    \strng{fullhash}{ZPHSGCSDHR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    This paper aimed to develop a mechanistic model for wall heat flux
+  partitioning based on bubble dynamics in horizontal subcooled flow boiling.
+  The model was established from two dimensions of space and time. In the space
+  dimension, the heating surface was divided into three regions based on the
+  motion characteristics of bubbles, including bubble nucleation region, bubble
+  sliding region, and non-boiling region. In the time dimension, the heat
+  transfer mechanism on the heating surface of the bubble nucleation region and
+  bubble sliding region could be divided into evaporation, condensation, and
+  transient heat transfer. An evaporation model for subcooled boiling was
+  developed based on condensation at the top of the bubble. A transient quench
+  heat transfer model for subcooled flow boiling was modified. The heat flux of
+  each region was obtained by the sum of the time-averaged heat fluxes of these
+  heat transfer mechanisms during a bubble periodic time. The total wall heat
+  flux was obtained by the sum of the area weights of the heat fluxes in these
+  three regions. The new wall heat flux partitioning model and the {RPI} model
+  were used to predict the experimental values at a variety of flow conditions.
+  The results showed that the new model could well predict the experimental
+  values and the deviation between the predicted heat flux and the experimental
+  results was within 25\%. The study also found that it was necessary to
+  consider the condensation at the top of the bubble and the heat transfer
+  mechanism caused by bubble sliding.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2021.121295
+    \endverb
+    \field{issn}{0017-9310}
+    \field{pages}{121295}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{A mechanistic model for wall heat flux partitioning based on
+  bubble dynamics during subcooled flow boiling}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931021003987
+    \endverb
+    \field{volume}{174}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\KFF2M7XT\
+    \verb \S0017931021003987.html:text/html;ScienceDirect Snapshot:C\:\\Users\\
+    \verb Luczer\\Zotero\\storage\\NFD8HXU4\\S0017931021003987.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{08}
+    \field{year}{2021}
+    \field{urlday}{23}
+    \field{urlmonth}{06}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{zhou_experimental_2020}{article}{}
     \name{author}{5}{}{%
       {{hash=ZP}{%

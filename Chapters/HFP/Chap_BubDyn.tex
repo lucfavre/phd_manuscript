@@ -29,11 +29,11 @@ Consequently, many experimental investigations have been conducted to further un
 \begin{center}
 
 \subfloat[Bubble sliding visualized and adapted from Maity \cite{maity_effect_2000} at atmospheric pressure.]{
-\includegraphics[width=0.6\linewidth]{img/forces/slide_maity.png}
+\includegraphics[width=0.6\linewidth]{img/bub_dyn/slide_maity.png}
 } 
 \\
 \subfloat[Bubble sliding visualized and adapted from Kossolapov \cite{kossolapov_experimental_2021} at higher pressure.]{
-\includegraphics[width=0.6\linewidth]{img/forces/slide_koss.png}
+\includegraphics[width=0.6\linewidth]{img/bub_dyn/slide_koss.png}
 } 
 
 \end{center}
@@ -53,11 +53,11 @@ The bubble sliding process has also been thermally studied to quantify its impac
 
 \begin{center}
 \subfloat[Instantaneous and time-averaged wall temperature in boiling regime visualized and adapted from Estrada-Pérez \etal \cite{estrada-perez_time-resolved_2018}.]{
-\includegraphics[width=0.8\linewidth]{img/forces/slide_thermal_estrada.png}
+\includegraphics[width=0.8\linewidth]{img/bub_dyn/slide_thermal_estrada.png}
 }
 \\
 \subfloat[Transient conduction induced by sliding bubbles visualized and adapted from Kossolapov \cite{kossolapov_experimental_2021}.]{
-\includegraphics[width=0.8\linewidth]{img/forces/slide_thermal_koss.png}
+\includegraphics[width=0.8\linewidth]{img/bub_dyn/slide_thermal_koss.png}
 }
 \end{center}
 
@@ -70,7 +70,7 @@ Those experimental observations highlight the significant magnitude of the trans
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.65\linewidth]{img/forces/bub_life_VFB.pdf}
+\includegraphics[width=0.65\linewidth]{img/bub_dyn/bub_life_VFB.pdf}
 \caption{Sketch of a typical bubble lifetime in vertical flow boiling. Left depicts a typical side view of the heater with identification of departure, sliding and lift-off. Right depicts a top view of the heater, exhibiting the area that will undergo transient heat transfer.}
 \label{fig:skecth_bub_VFB}
 \end{figure}
@@ -412,7 +412,7 @@ Hydrodynamic forces :
 \begin{figure}[h!]
 \centering
 %\include{tikz_img/forces}
-\includegraphics[width=0.6\linewidth]{img/forces/bub_bdf.pdf}
+\includegraphics[width=0.6\linewidth]{img/bub_dyn/bub_bdf.pdf}
 \caption{Sketch of the forces applied to the bubble facing an upward flow $\vect{U_{L}}$ and sliding at velocity $\vect{U_{b}}$}
 \label{fig:bub_forces}
 \end{figure}
@@ -558,7 +558,7 @@ In this work, we propose to rely on the recent work of Shi \etal \cite{shi_drag_
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.55\linewidth]{img/forces/shi_scheme.pdf}
+\includegraphics[width=0.55\linewidth]{img/bub_dyn/shi_scheme.pdf}
 \caption{Physical situation considered by Shi \etal \cite{shi_drag_2021}.}
 \label{fig:shi_scheme}
 \end{figure}
@@ -602,7 +602,7 @@ Shi \etal \cite{shi_drag_2021} conducted DNS for wall distances down to $L_{R}=1
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.6\linewidth]{img/forces/corr_drag.pdf}
+\includegraphics[width=0.6\linewidth]{img/bub_dyn/forces/corr_drag.pdf}
 \caption{Drag correction from Shi \etal \cite{shi_drag_2021}.}
 \label{fig:CD_shi}
 \end{figure}
@@ -719,10 +719,10 @@ On Figure \ref{fig:lift_shi}, we plot the values of $C_{L}$ obtained by the form
 \begin{figure}[h!]
 
 \subfloat[Positive values of $\Sr$]{
-\includegraphics[width=0.5\linewidth]{img/forces/lift_shi_srpos.pdf}
+\includegraphics[width=0.5\linewidth]{img/bub_dyn/forces/lift_shi_srpos.pdf}
 }
 \subfloat[Negative values of $\Sr$]{
-\includegraphics[width=0.5\linewidth]{img/forces/lift_shi_srneg.pdf}
+\includegraphics[width=0.5\linewidth]{img/bub_dyn/forces/lift_shi_srneg.pdf}
 }
 
 \caption{$C_{L}$ computed using Shi \etal correlation.}
@@ -826,6 +826,7 @@ E_{L}=\frac{\rho_{L}V_{b}}{2}\parth{\alpha \dot{y}^{2} +\trb\dot{R}^{2}+\psi \do
 \end{align}
 where $(x,y)$ are the coordinates of the bubble's center and $\alpha$, $\trb$, $\psi$, $\alpha_{2}$ are polynomials of $R/y = 1/L_{R}$ derived by Van Der Geld for $1<R/y<2$ \ie $0.5<L_{R}<1$, corresponding to contact angles $0\degree < \theta \ 60\degree$.
 
+\npar
 For each polynomial expression ($\alpha$ is used as an example), we note $n$ its degree and write:
 
 \begin{equation}
@@ -839,11 +840,46 @@ This allows to express the following derivatives:
 \end{equation}
 
 
-Noticing that the derivatives of the polynomials along $x$ will be 0 and injecting $E_{L}$ in Eq.~\ref{eq:Lag_x} and \ref{eq:Lag_y} and computing the values for the sphere case ($y=R$ and $\dot{y} = \dot{R}$) yields:
+Noticing that the derivatives of the polynomials along $x$ will be 0 and injecting $E_{L}$ in Eq.~\ref{eq:Lag_x} and \ref{eq:Lag_y} allows to express the added mass force in $x$ and $y$ directions. If we express it using geometrical ratios $\dfrac{R}{y}=\dfrac{1}{F_{1}}$, $\dfrac{\dot{y}}{\dot{R}}=F_{2}$ and $\dfrac{\ddot{y}}{\ddot{R}}=F_{3}$, we can obtain:
 
 \begin{align}
-F_{AM,x} = \rho_{L}V_{b}\crocht{3\frac{\dot{R}}{R} \alpha_{2}U_{rel} + \parth{\frac{\dot{R}}{R} - \frac{\dot{y}}{y} } \tilde{\alpha}U_{rel} - \alpha_{2} \dpartial{U_{b}}{t} }
+F_{AM,x} = \rho_{L}V_{b} \crocht{ \parth{ 3\alpha_{2} +\parth{1-\frac{F_{2}}{F_{1}}}\tilde{\alpha_{2}} } \frac{\dot{R}}{R}U_{rel} - \alpha_{2} \dtime{U_{b}} }
 \end{align}
+
+\begin{align}
+\nonumber F_{AM,y} = - \rho_{L} V_{b} & \left[ \parth{ 3 F_{2}\alpha + \frac{3}{2}\psi + \parth{1- \frac{F_{2}}{F_{1}}}F_{2} \tilde{\alpha} + \parth{1- \frac{F_{2}}{F_{1}}}\frac{\tilde{\psi}}{2}  + \frac{F_{2}}{F_{1}}\frac{\tilde{\alpha}}{2} + \frac{1}{F_{1}} \frac{\tilde{\trb}}{2} + \frac{F_{2}}{F_{1}} \frac{\tilde{\psi}}{2}}\frac{\dot{R}^{2}}{R} \right.\\
+& \left.  + \parth{F_{3}\alpha + \frac{\psi}{2}}\ddot{R} + \frac{1}{F_{1}}\frac{\tilde{\alpha_{2}}}{2} \frac{U_{rel}^{2}}{R}  \right] 
+\end{align}
+
+
+In the case of a truncated sphere, $F_{1} = \dfrac{y}{R} = \cos{\theta}=L_{R}$. If we suppose that the bubble keeps a nearly constant contact angle during its lifetime, we can further write $F_{1}=F_{2}=F_{3}=\cos{\theta}=L_{R}$, which simplifies the forces in:
+
+
+\begin{align}
+F_{AM,x} = \rho_{L}V_{b} \crocht{ 3\alpha_{2} \frac{\dot{R}}{R}U_{rel} - \underbrace{\alpha_{2}}_{C_{AM,x}} \dtime{U_{b}} }
+\label{eq:FAMx}
+\end{align}
+
+
+\begin{align}
+F_{AM,y} = \rho_{L} V_{b} & \left[  -\parth{ 3 \underbrace{\parth{L_{R}\alpha + \frac{\psi}{2} } }_{C_{AM,y1}} + \underbrace {\frac{\tilde{\alpha}}{2} + \frac{1}{L_{R}} \frac{\tilde{\trb}}{2} + \frac{\tilde{\psi}}{2}}_{C_{AM,y2}} } \frac{\dot{R}^{2}}{R} \right. \\
+%
+& \left. - \underbrace{ \parth{L_{R}\alpha + \frac{\psi}{2}} }_{C_{AM,y1}} \ddot{R} + \underbrace{ \frac{-1}{L_{R}}\frac{\tilde{\alpha_{2}}}{2} }_{C_{AM,y3}} \frac{U_{rel}^{2}}{R}  \right] 
+\label{eq:FAMy}
+\end{align}
+
+
+On Figure \ref{fig:AM_coeff}, we plot the values of the added mass coefficients against the values of $L_{R}$. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.65\linewidth]{img/bub_dyn/forces/CAM_plot.pdf}
+\caption{Values of the computed added mass coefficients in Eq. \ref{eq:FAMx} and \ref{eq:FAMy}. }
+\label{fig:AM_coeff}
+\end{figure}
+
+For the case of a spherical bubble laying on a wall ($L_{R}=1$), we finally have:
+
 
 
 \begin{align}
@@ -861,225 +897,50 @@ with $C_{AM,y1} \approx 0.27$, $C_{AM,y2}\approx 0.326$ and $C_{AM,y3}\approx 8.
 
 
 \npar
- 
- 
 
+Parallel to the wall, the coupled term $\frac{\dot{R}}{R}U_{rel}$ in Eq.~\ref{eq:AMx} promotes detachment and sliding of the bubble if $U_{rel}>0$ \eg if the bubble is attached to its nucleation site. This contradicts the aforementioned approach where solely projecting the RPE on both axes lead to an Added-Mass term related to bubble growth that only hinders the departure by sliding. Moreover, Eq.~\ref{eq:AMy} exhibits a term induced by the relative velocity that acts as a lift force, which seems to rarely appear in other approaches.
 
-Parallel to the wall, the coupled term $\frac{\dot{R}}{R}U_{rel}$ in Eq.~\ref{eq:AMx} promotes detachment and sliding of the bubble if $U_{rel}>0$ \eg if the bubble is attached to its nucleation site. This relatively agrees with the detaching term of the "two situations" derivations detailed in \ref{subsubsec:former_AM} and clearly contradicts the aforementioned approach where solely projecting the RPE on both axes lead to an Added-Mass term related to bubble growth that only hinders the departure by sliding. 
+\begin{remark*}{}
+The derived values of the added mass coefficients are only valid for $0.5 < L_{R} < 1$ as previously mentioned. When the bubble leaves the wall, added mass calculations of Duhar \cite{duhar_phd} would be more appropriate.
+\end{remark*}
 
-Moreover, Eq.~\ref{eq:AMy} exhibits a term induced by the relative velocity that acts as a lift force, which seems to rarely appear in other approaches.
-
-\npar
-Here we want to insist on the importance on conducting an approach as rigorous as possible when deriving those transient aspects of the force balance. Otherwise, some terms may be missing and lead to contradictory physical conclusions. Although the proposed method has already been used in different works, we obtained revisited values of the Added Mass coefficients based on the derivation of the liquid kinetic energy by Van Der Geld.
-
-In the spirit of avoiding to introduce extra empirical terms, we keep the Added Mass force as presented in Eq.~\ref{eq:AMx} and \ref{eq:AMy}. No projection of the $y$ term along the $x$ axis to account for asymmetric bubble growth is considered in this study.
-
-
-
-
-\subsection{Added Mass force of a growing bubble}
-
-Added mass effects are experienced by the bubble :
-
-\begin{itemize}
-\item when its boundary is moving during its growth
-\item when accelerating while sliding on the wall 
-\item when the surrounding liquid is accelerating
-\end{itemize}
-
-We consider a spherical cap shaped bubble standing on a plane wall and facing an uniform liquid velocity $U$. In this situation, Van Der Geld derived the potential flow around the bubble and expressed the liquid kinetic energy, obtaining : 
-
-\begin{align}
-T_{L}=\rho_{L}V_{b}\parth{ \frac{1}{2}\alpha \dot{y}^{2} + \frac{1}{2} \trb\dot{R}^{2}+\frac{1}{2}\psi \dot{R}\dot{y} + \frac{1}{2} \alpha_{2} U^{2} }
-\end{align}
-where $\alpha$, $\mathrm{tr}\parth{\beta}$, $\psi$ and $\alpha_{2}$ are polynomimals of $\lambda = \frac{R}{2h}$. We also have $x$ and $y=h$ denoting the coordinates of the geometrical center of the bubble.
-
-Therefore, we can write those coefficients in the following form : 
-
-\begin{align}
-\alpha = \sum_{k=0}^{n}\alpha_{k}\frac{R^{k}}{2^{k}y^{k}}
-\end{align}
-
-If we suppose that the generalized coordinates and velocities $x$, $\dot{x}$, $y$, $\dot{y}$, $R$, and $\dot{R}$, we can use the expression of the kinetic energy of the fluid to apply Lagrange's equations to derive the added mass forces on the bubble in both direction parallel and normal to the wall :
-
-\begin{align}
-F_{AM,x}&=-\dpartial{}{t}\parth{\dpartial{T_{L}}{\dot{x}}}+\dpartial{T_{L}}{x}\\
-F_{AM,y}&=-\dpartial{}{t}\parth{\dpartial{T_{L}}{\dot{y}}}+\dpartial{T_{L}}{y}
-\end{align}
-
-In the case of the sliding bubble, we replace the uniform liquid velocity $U$ by the relative velocity experienced by the bubble $U_{rel}=U_{liq}-\dot{x}$ where $U_{liq}$ is the uniform surrounding liquid velocity and $\dot{x}$ the velocity of the center of the bubble, which is the sliding velocity of the bubble. Yielding :
-
-
-
-\begin{align}
-T_{L}=\frac{\rho_{L}V_{b}}{2}\parth{\alpha \dot{y}^{2} +\mathrm{tr}\parth{\beta}\dot{R}^{2}+\psi \dot{R}\dot{y} +\alpha_{2} \parth{U_{liq}-\dot{x}}^{2} }
-\end{align}
- 
-
-\paragraph{Added mass in $x$ direction}
-
-Parallel to the wall, since $\lambda$ depends on $y$ and $R$, it is independent of $\dot{x}$, yielding zero-derivatives for the added mass coefficients. We can write :
-
-\begin{align}
-\dpartial{T_{L}}{\dot{x}}&=\frac{\rho_{L}V_{b}}{2}\alpha_{2} \dpartial{\parth{ \parth{U_{liq}-\dot{x}}^{2}} }{\dot{x}}\\
-&= \rho_{L}V_{b}\alpha_{2}\parth{\dot{x}-U_{liq}}\\
-\end{align}\\
-
-As for the time derivatives, we have : 
-
-\begin{align}
-\dpartial{V_{b}}{t}&=\dpartial{\frac{4}{3}\pi R^{3}}{t} = 4\pi R^{2} \dot{R}\\
-\dpartial{\lambda}{t}&=\frac{\dot{R}~2y-R~2\dot{y}}{4y^{2}}=\lambda\parth{ \frac{\dot{R}}{R} - \frac{\dot{y}}{y}  }=\lambda \parth{\frac{\dot{R}}{R}-2\lambda \frac{\dot{y}}{R}}=\frac{\lambda}{R}\parth{\dot{R}-2\lambda \dot{y}}\\
-\dpartial{\alpha}{t}&=\sum_{k=0}^{n}\alpha_{k}\dpartial{\lambda ^{k}}{t} = \sum_{k=0}^{n}\alpha_{k}~k\lambda ^{k-1} \dpartial{\lambda}{t} = \parth{ \frac{\dot{R}}{R} - \frac{\dot{y}}{y}  }\underbrace{ \sum_{k=0}^{n}\alpha_{k}~k\lambda^{k} }_{\tilde{\alpha}} = \frac{1}{R}\parth{\dot{R}-2\lambda \dot{y}}\tilde{\alpha}
-\end{align}
-
-Yielding : 
-
-\begin{align}
-\dpartial{}{t}\parth{ \dpartial{T_{L}}{\dot{x}}}&=\rho_{L}\crocht{ 4\pi R^{2} \dot{R} \alpha_{2}\parth{\dot{x}-U_{liq}}+\frac{4}{3}\pi R^{3}\parth{ \frac{\dot{R}}{R} - \frac{\dot{y}}{y} }\tilde{\alpha_{2}}\parth{\dot{x}-U_{liq}}+\frac{4}{3}\pi R^{3}\alpha_{2} \ddot{x} } \\
-&=4\pi R^{2} \rho_{L}\crocht{ \alpha_{2}\dot{R}\parth{\dot{x}-U_{liq}}+\frac{\tilde{\alpha_{2}}}{3}\parth{\dot{R}- 2\lambda \dot{y} }\parth{\dot{x}-U_{liq}} + \frac{R}{3}\alpha_{2}\ddot{x} }\\
-&=4 \pi R^{2} \rho_{L}\crocht{\parth{\alpha_{2}+\frac{\tilde{\alpha_{2}}}{3}}\dot{R}\parth{\dot{x}-U_{liq}}-\frac{2}{3}\lambda \tilde{\alpha_{2}}\dot{y}\parth{\dot{x}-U_{liq}}+\frac{R}{3}\alpha_{2}\ddot{x} }
-\end{align}
-
-We also have, with the independence of the variables :
-
-\begin{align}
-\dpartial{T_{L}}{x}&=0
-\end{align}
-
-
-Finally yielding, 
-
-\begin{align}
-F_{AM,x}=4\pi R^{2}\rho_{L} \crocht{\parth{\alpha_{2}+\frac{\tilde{\alpha_{2}}}{3}}\dot{R}U_{rel}-\frac{2}{3}\lambda \tilde{\alpha_{2}}\dot{y}U_{rel}-\frac{R}{3}\alpha_{2}\ddot{x} }
-\end{align}
-
-We can immediately observe that the added mass related to the bubble growth will promote detachment when the bubble is still attached to its nucleation site ($\dot{x}=0$). This contradicts the often-used approach using solely the Rayleigh-Plesset equation projected in both direction using the inclination angle of the bubble. 
-
-The other part of this added-mass force is naturally linked to the acceleration of the bubble and the mass of displaced liquid. 
-
-
-\paragraph{Added mass in $y$ direction}
-
-Following the same approach normal to the wall, we obtain : 
-
-\begin{align}
-\dpartial{T_{L}}{\dot{y}}&=\frac{1}{2}\rho_{L}\frac{4}{3}\pi R^{3}\parth{\alpha 2\dot{y}+\psi\dot{R}}=\rho_{L}\frac{4}{3}\pi R^{3}\parth{\alpha \dot{y} + \frac{\psi}{2}\dot{R}}\\
-\nonumber \\
-\dpartial{}{t}\parth{\dpartial{T_{L}}{\dot{y}}}&=\rho_{L}4\pi R^{2}\dot{R}\parth{\alpha \dot{y} + \frac{1}{2} \psi \dot{R}}+\rho_{L}\frac{4}{3}\pi R^{3}\parth{\frac{1}{R}\parth{\dot{R}-2\lambda \dot{y}}\tilde{\alpha}\dot{y} +\alpha\ddot{y}+\frac{1}{2}\tilde{\psi}\frac{1}{R}\parth{\dot{R}-2\lambda \dot{y}}\dot{R} +\frac{1}{2}\psi \ddot{R}}\\
-&=\rho_{L}4\pi R^{2}\crocht{\frac{\alpha}{3}R\ddot{y}+\frac{\psi}{6}R \ddot{R} + \parth{\frac{\psi}{2} +\frac{\tilde{\psi}}{6}}\dot{R}^{2} -\frac{2}{3}\lambda \tilde{\alpha} \dot{y}^{2} + \parth{ \alpha + \frac{\tilde{\alpha}}{3} - \frac{\tilde{\psi}}{3} }\dot{R}\dot{y} }\\
-\nonumber \\
-\dpartial{T_{L}}{y}&=\rho_{L}\frac{4}{3}\pi R^{3} \parth{ \frac{1}{2} \dpartial{\alpha}{y}\dot{y}^{2} + \frac{1}{2} \dpartial{\mathrm{tr}\parth{\beta}}{y}\dot{R}^{2}+\frac{1}{2}\dpartial{\psi}{y}\dot{R}\dot{y}+\frac{1}{2}\dpartial{\alpha_{2}}{y}\parth{U_{liq}-\dot{x}}^{2} } 
-\end{align}
-
-Where we can write :
-
-\begin{align}
-\dpartial{\alpha}{y}=\sum_{k=0}^{n}\alpha_{k}\dpartial{\lambda^{k}}{y} = \sum_{k=0}^{n}\alpha_{k}\frac{R^{k}}{2^{k}}\dpartial{}{y}\parth{\frac{1}{y^{k}}}=\sum_{k=0}^{n}\alpha_{k}\frac{R^{k}}{2^{k}}~\parth{-k}\frac{1}{y^{k+1}}=\frac{1}{y}\sum_{k=0}^{n}\parth{-k}\alpha_{k}\lambda^{k}=-\frac{1}{y}\tilde{\alpha}
-\end{align} 
-
-Giving : 
-
-\begin{align}
-\dpartial{T_{L}}{y}&=\rho_{L}4\pi R^{2}\frac{R}{6y}\crocht{-\tilde{\alpha}\dot{y}^{2}-\tilde{\mathrm{tr}\parth{\beta}}\dot{R}^{2}-\tilde{\psi}\dot{R}\dot{y}-\tilde{\alpha_{2}}U_{rel}^{2}}\\
-&=-\rho_{L}4\pi R^{2}\frac{\lambda}{3}\crocht{\tilde{\alpha}\dot{y}^{2}+\tilde{\mathrm{tr}\parth{\beta}}\dot{R}^{2}+\tilde{\psi}\dot{R}\dot{y}+\tilde{\alpha_{2}}U_{rel}^{2}}
-\end{align}
-
-Which finally yields : 
-
-\begin{align}
-\nonumber F_{AM,y}=&-\rho_{L}4\pi R^{2}\crocht{\frac{\alpha}{3}R\ddot{y}+\frac{\psi}{6}R \ddot{R} + \parth{\frac{\psi}{2} +\frac{\tilde{\psi}}{6}}\dot{R}^{2} -\frac{2}{3}\lambda \tilde{\alpha} \dot{y}^{2} + \parth{ \alpha + \frac{\tilde{\alpha}}{3} - \frac{\tilde{\psi}}{3} }\dot{R}\dot{y} } \\
-&-\rho_{L}4\pi R^{2}\frac{\lambda}{3}\crocht{\tilde{\alpha}\dot{y}^{2}+\tilde{\mathrm{tr}\parth{\beta}}\dot{R}^{2}+\tilde{\psi}\dot{R}\dot{y}+\tilde{\alpha_{2}}U_{rel}^{2}}\\
-=&\rho_{L}4\pi R^{2}\crocht{\frac{\lambda}{3}\tilde{\alpha}\dot{y}^{2}+\parth{-\frac{\lambda}{3}\tilde{\mathrm{tr}\parth{\beta}}-\frac{\psi}{2}-\frac{\tilde{\psi}}{6}}\dot{R}^2+\parth{-\alpha - \frac{\tilde{\alpha}}{3}+\frac{1-\lambda}{3}\tilde{\psi}}\dot{R} \dot{y} - \frac{\alpha}{3}R\ddot{y} - \frac{\psi}{6}R \ddot{R}-\frac{\lambda}{3}\tilde{\alpha_{2}}U_{rel}^{2} }  
-\end{align}
-
-Where :
-
-\begin{align}
-\nonumber \alpha = &111.62137 - 844.131315 \lambda + 2678.058461 \lambda^{2} - 4534.349913 \lambda^{3} \\ &+ 4311.889654 \lambda^{4} - 2180.345705 \lambda^{5} + 457.591961 \lambda^{6}\\
-\nonumber \psi = &-220.824854 + 1639.114567 \lambda - 5130.691427 \lambda^{2} + 8625.857798 \lambda^{3} \\ &- 8169.91248 \lambda^{4} + 4121.492877 \lambda^{5} - 863.784836 \lambda^{6}\\
-\nonumber \mathrm{tr}\parth{\beta} = &104.601303 - 736.214699 \lambda + 2293.784611 \lambda^{2} - 3857.878559 \lambda^{3} \\ &+ 3659.95521 \lambda^{4} - 1849.854303 \lambda^{5} + 388.412909 \lambda^{6}\\
-\alpha_{2}= &0.359528 + 1.341274 \lambda - 1.973813 \lambda^{2} + 0.796613 \lambda^{3}
-\end{align}
-
-
-If we define added mass coefficients $C_{AM}$ as :
-
-\begin{align}
-F_{AM,x}&=\pi R^{2}\rho_{L}\parth{C_{AM,x1}\dot{R}U_{rel}+C_{AM,x2}\dot{y}U_{rel}+C_{AM,x3}R\ddot{x}}\\
-F_{AM,y}&=\pi R^{2}\rho_{L}\parth{C_{AM,y1}\dot{y}^{2}+C_{AM,y2}\dot{R}^{2}+C_{AM,y3}\dot{R}\dot{y}+C_{AM,y4}R\ddot{y} + C_{AM,y5}R\ddot{R}+C_{AM,y6}U_{rel}^{2}}
-\end{align}
-
-We obtain :
-
-\begin{align}
-C_{AM,x1}=&6.372904 \lambda^{3} - 13.1587533\lambda^{2} + 7.15346133\lambda + 1.438112\\
-C_{AM,x2}=&-6.372904\lambda^{4}+10.527002667\lambda^{3}-3.576730667\lambda^{2}\\
-C_{AM,x3}=&-1.062150667\lambda^{3} + 2.631750667\lambda^{2}-1.78836533\lambda-0.479370667\\
-\nonumber \\
-\nonumber C_{AM,y1}=& 3660.735688\lambda^{7} - 14535.638033\lambda^{6} + 22996.74482133\lambda^{5} - 18137.399652\lambda^{4} + 7141.48922933\lambda^{3}\\& - 1125.50842 \lambda^{2}\\
-\nonumber C_{AM,y2}=&-3107.303272\lambda^{7} + 17515.071036\lambda^{6} - 41501.056736\lambda^{5} + 53557.772476 \lambda^{4} - 40620.190154667\lambda^{3} \\& + 18083.92435533\lambda^{2} - 4370.972178667\lambda + 441.649708\\
-\nonumber C_{AM,y3}=&6910.278688 \lambda^7 - 39878.0014 \lambda^6 + 94306.5065933 \lambda^5 - 118320.60118933 \lambda^4 + 84460.07430133 \lambda^3\\ &- 33721.052968 \lambda^2 + 6687.51976933 \lambda - 446.48548 \\
-\nonumber C_{AM,y4}=&-610.122614667 \lambda^6 + 2907.12760667 \lambda^5 - 5749.18620533 \lambda^4 + 6045.799884 \lambda^3 \\&- 3570.744614667 \lambda^2 + 1125.50842 \lambda - 148.8284933 \\
-\nonumber C_{AM,y5}=&575.85655733 \lambda^6 - 2747.661918 \lambda^5 + 5446.60832 \lambda^4 - 5750.57186533 \lambda^3 \\& + 3420.46095133 \lambda^2 - 1092.743044667 \lambda + 147.21656933 \\
-C_{AM,y6}=& -3.186452 \lambda^4 + 5.26350133 \lambda^3 - 1.78836533 \lambda^2\\
-\end{align}
 
 
 \npar
+Those theoretical results highlight the importance of conducting a rigorous approach when possible to deriving those transient aspects of the force balance. Otherwise, some terms may be missing and lead to contradictory physical conclusions. 
 
-In the case of the full or truncated sphere on a wall, we can write $y=R\cos{\theta}$ and $\dot{y}=\dot{R}\cos{\theta}$ if we suppose a quasi-constant contact angle during bubble lifetime. Moreover, $\lambda=1/2\cos{\theta}$. 
+In the spirit of avoiding to introduce extra empirical terms, we keep the Added Mass force as presented in Eq.~\ref{eq:AMx} and \ref{eq:AMy} and consider no projection along the inclination angle.
 
-The added-mass forces then become :
-
-\begin{align}
-F_{AM,x}=&\rho_{L}\pi R^{2}\crocht{\parth{C_{AM,x1}+C_{AM,x2}\cos{\theta}}\dot{R}U_{rel}+C_{AM,x3}R\ddot{x}}\\
-F_{AM,y}=&\rho_{L}\pi R^{2}\crocht{\parth{C_{AM,y1}\cos{\theta}^{2}+C_{AM,y2} + C_{AM,y3}\cos{\theta}}\dot{R}^{2}+\parth{C_{AM,y4}\cos{\theta}+ C_{AM,y5}}R\ddot{R}+C_{AM,y6}U_{rel}^{2}}
-\end{align}
-
-\npar
-
-Finally, if we consider the full sphere case : $\theta=0$ and $\lambda=0.5$, we can estimate the numerical values of the sphere added mass coefficients $C_{AM,S}$:
-
-\begin{align}
-F_{AM,x}=&\rho_{L}\pi R^{2}\crocht{C_{AM,Sx1}\dot{R}U_{rel}+C_{AM,Sx2}R\ddot{x}}\\
-F_{AM,y}=&\rho_{L}\pi R^{2}\crocht{C_{AM,Sy1}\dot{R}^{2}+C_{AM,Sy2}R\ddot{R}+C_{AM,Sy3}U_{rel}^{2}}\\
-\nonumber \text{where}\ C_{AM,Sx1}&\approx 2.5451535\ ;\ C_{AM,Sx2}\approx-0.8483845 \\
-\nonumber C_{AM,Sy1}& \approx 4.774859833 \ ; \ C_{AM,Sy2}\approx -0.359872041667\ \text{and}\ C_{AM,Sy3}\approx 0.0116930833
-\end{align}
-
-
-\subsection{Added Mass from Duhar \etal}
-
-\begin{align}
-\vect{F_{AM}}=&-\rho_{L}\frac{d}{dt}\crocht{V_{b}\frac{1}{2}\parth{1+\frac{3}{16}\parth{\frac{R}{y}}^{3} } \parth{U_{b,x}-U_{L}} \vect{e_{x}} + V_{b}\frac{1}{2}\parth{1+\frac{3}{8} \parth{\frac{R}{y}}^{3} }U_{b,y}\vect{e_{y}} }\\
-%
-&+ \frac{3}{32}\rho_{L}\frac{d^{2}}{dt^{2}}\parth{RV_{b}} \parth{\frac{R}{y}}^{2}\vect{e_{y}} + \frac{\pi R^{2}}{2} \parth{\frac{R}{y}}^{4} \crocht{\frac{3}{8}U_{rel}^{2}+\frac{3}{4}U_{b,y}^{2}}\vect{e_{y}}
-\end{align}
-
-Yielding :
-
-\begin{align}
-\vect{F_{AM}}\cdot \vect{e_{x}} = \frac{\rho_{L}V_{b}}{2}\crocht{3\parth{1+\frac{3}{16}\parth{\frac{R}{y}}^{3} } \frac{\dot{R}}{R}U_{rel} + \frac{9}{16}\parth{\frac{R}{y}}^{3}\parth{\frac{\dot{R}}{R}-\frac{\dot{y}}{y}}U_{rel} - \parth{1+\frac{3}{16}\parth{\frac{R}{y}}^{3} }\dtime{U_{b,x}}}
-\end{align}
-
-
-
-\begin{align}
-\vect{F_{AM}}\cdot \vect{e_{y}} =& \frac{-\rho_{L}V_{b}}{2}\crocht{3\parth{1+\frac{3}{8}\parth{\frac{R}{y}}^{3} } \frac{\dot{R}}{R}U_{b,y} + \frac{3}{8}\parth{\frac{R}{y}}^{3}\parth{\frac{\dot{R}}{R}-\frac{\dot{y}}{y}}U_{b,y} + \parth{1+\frac{3}{8}\parth{\frac{R}{y}}^{3} }\dtime{U_{b,y}}}\\
-%
-&\frac{\rho_{L}V_{b}}{2}\crocht{\frac{3}{4} \parth{\frac{R}{y}}^{2}\parth{\ddot{R}+3\frac{\dot{R}^{2}}{R}} } + \frac{\rho_{L}V_{b}}{2} \crocht{\frac{3}{4}\parth{\frac{R}{y}}^{4}\parth{\frac{3}{8}\frac{U_{rel}^{2}}{R} + \frac{3}{4}\frac{U_{b,y}}{R}}}
-\end{align}
 
 
 \subsection{Force Balance Summary}\label{subsec:BdF}
 
 
-On Table \ref{tab:all_BdF}, we sum up some of the mentioned force balance approaches and their models.
+Writing Newton's second law, we have the total force balance over the bubble in both directions:
+
+\begin{align}
+\nonumber \rho_{V} \dtime{V_{b}U_{b,x}} = & -\pi R \sigma f_{C,x}\parth{\theta, \dtheta} + V_{b}\parth{\rho_{L}-\rho_{V}}g + \frac{1}{2}C_{D}\rho_{L}\pi R^{2} \bars{U_{L}-U_{b}}\parth{U_{L}-U_{b}}\\
+%
+& + \rho_{L}V_{b}\crocht{3C_{AM,x}\frac{\dot{R}}{R}\parth{U_{L}-U_{b}} - C_{AM,x} \dtime{U_{b}}}
+\label{eq:bdf_x}
+\end{align}
+
+\begin{align}
+\nonumber \rho_{V} \dtime{V_{b}U_{b,y}} = & -\pi R \sigma f_{C,y}\parth{\theta, \dtheta} + 2\pi R \sigma \sin{\theta}^{2} + \frac{1}{2}C_{L}\rho_{L}\pi R^{2} \parth{U_{L}-U_{b}}^{2}\\
+%
+& + \rho_{L}V_{b}\crocht{-\parth{3 C_{AM,y1} + C_{AM,y2}}\frac{\dot{R}^{2}}{R}-C_{AM,y1}\ddot{R} + C_{AM,y3}\frac{\parth{U_{L}-U_{b}}^{2}}{R}}
+\label{eq:bdf_y}
+\end{align}
+
+Those force balances will respectively be used later to study the departure by sliding (along $x$) and the lift-off from the wall (along $y$).
+
+\npar
+
+On Table \ref{tab:all_BdF}, we sum up some of the mentioned mechanistc approaches and their models along with the proposed force balance.
 
 
 
-\begin{table}[H]
+\begin{table}[h!]
 
 
 
@@ -1165,33 +1026,321 @@ U_{\tau} =& \sqrt{\frac{\tau_{w}}{\nu_{L}}}\\
 \tau_{w} =& 0.018~ \Re_{D_{h}}^{-0.182}~ \frac{G_{L}^{2}}{\rho_{L}}
 \end{align}
 
+\newpage
+
+
+\section{Bubble Growth}
+
+\subsection{Introduction}
+
+The question of the bubble growth law during its lifetime including sliding is still an open question that aims to cover various types of heat transfer mechanisms:
+
+\begin{itemize}
+\item Evaporation due to superheated liquid near the bubble base ;
+\item Evaporation of a liquid microlayer trapped between the base of the bubble and the wall ;
+\item Condensation on top of the bubble when it reaches subcooled liquid ;
+\item Convective heat transfer due to relative velocity between the bubble and the liquid.
+\end{itemize}
+
+To our knowledge, many authors that have been tackling this issue had to consider empirical or fitted parameters when trying to exhaustively account for all the above heat transfers. For instance, Zhou \cite{zhou_experimental_2020} and Yoo \cite{yoo_development_2018} have proposed growth models that consider all the previously mentioned mechanisms. However, to fully close their mathematical model, many empirical values were used such as:
+
+\begin{itemize}
+\item The ratio between the bubble projected area and the microlayer area ;
+\item The fraction of bubble area facing subcooling liquid ;
+\item Value of coefficients in the condensation law \cite{levenspiel_collapse_1959}.
+\end{itemize}
+
+Moreover, those models postulate the existence of a microlayer contributing to the growth while recent numerical and experimental investigations showed that the bubble may as well grow with a microlayer or in a pure contact line regime depending on the operating conditions \cite{urbano_direct_2018, bures_modelling_2021, kossolapov_experimental_2021}.
+
+In order to assess the force modeling proposed before, we choose a simpler growth law derived from heat conduction in the superheated liquid layer \cite{plesset_growth_1954}. 
+
+\begin{equation}
+R\parth{t} = K\Ja_{w} \sqrt{\eta_{L}t}
+\end{equation}
+where $K$ is an adjustable constant, with a value around the unity depending on the boiling conditions, often expressed as $K=\dfrac{2b}{\sqrt{\pi}}$.  In the case of pool boiling in an uniformly superheated liquid, Plesset \& Zwick \cite{plesset_growth_1954} found $b=\sqrt{3}$, Forster \& Zuber \cite{forster_growth_1954} obtained $b=\pi / 2$ while Zuber  \cite{zuber_dynamics_1961} stated that values of $b$ should be lying between 1 and $\sqrt{3}$. More recently, Yun \etal \cite{yun_prediction_2012} used $b=1.56$. We can thus observe that $K=2$ is likely to be an upper bound value for the growth constant. This value can thus be lower in the case of subcooled flow boiling. For instance, later comparisons with experimental measurements suggest values of $K$ slightly below 1 for subcooled flow boiling (Figure \ref{fig:slide_maity}).
+
+This type of bubble growth has been widely used, and showed good agreement with many experimental observations and is particularly valid for early growth stages or small bubbles at high pressure \cite{kossolapov_experimental_2021, plesset_growth_1954, klausner_vapor_1993}.
+
+
+
+\subsection{Analytic derivation of bubble growth in a linear thermal boundary layer}
+
+To further study the bubble growth process, we will try to derive an analytic
+
+In this section, computations are conducted using the spherical coordinates $\left(\vect{e_{r}}, \vect{e_{\theta}}, \vect{e_{\varphi}}\right)$ with coordinates $(r, \theta, \phi)$. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\linewidth]{img/growth/growth_analytical.pdf}
+\caption{Studied geometry}
+\label{fig:anal_growth}
+\end{figure}
+
+\npar
+Geometrical definitions :
+\begin{itemize}
+\item $\Theta=\pi - \theta$ the angular portion of the truncated sphere in spherical coordinates ;
+\item $r_{w}=R\sin{\theta}=-R\sin{\Theta}$ the bubble foot radius ;
+\item $h=R\cos{\theta}=-R\cos{\Theta}$ the distance between the wall and the center of the bubble ($>0$ if $\theta < \pi/2$, $<0$ otherwise) ;
+\item $R$ and $V=\frac{4}{3}\pi R^{3} f_{V}\left(\theta\right)$ the radius and the volume of the bubble ;
+\item $\vect{d^{2}S}=R^{2}\sin{\theta}\dtheta d\varphi \vect{e_{r}}$ the surface vector in spherical coordinates ;
+\item $y=R\cos{\theta}+h = R\left(\cos{\theta} - \cos{\Theta}\right)$ the distance to the wall in cartesian coordinates.
+\end{itemize}
+
+
+\npar
+Thermal-hydraulics definitions :
+\begin{itemize}
+\item $\Delta T_{L} = T_{sat}-T_{\infty}$ et $\Delta T_{w}=T_{w}-T_{sat}$ the subcooling of the liquid and the wall superheat respectively ;
+\item $\delta$ et $\delta_{b}$ the flow boundary layer thickness and the bubble boundary layer thickness respectively ;
+\item $d^{2} Q_{b}$ the heat received by the bubble between $t$ and $t+dt$ through the surface $d^{2}S$ ;
+\item $\lambda$, $\rho$, $c_{p}$, $\eta$, $h$ the thermal conductivity, density, heat capacity, thermal diffusivity and mass enthalpy respectively ($l$ standing for liquid  and $g$ for gas) ;
+\item $\text{Ja}_{w}=\Delta T_{w} \rho_{L}c_{p,L}/(h_{LV}\rho_{V})$ the wall superheat (or boiling) Jakob number and $\text{Ja}_{L}=\Delta T_{L} \rho_{L}c_{p,L}/(h_{LV}\rho_{V})$ the subcooled liquid (or condensation) one.
+\end{itemize}
+
+\npar
+
+
+The thermal boundary layer of the flow is assumed to follow a linear profile, giving the the expression :
+
+\begin{align}
+T_{l}\left(y\right)=T_{w}+\frac{T_{\infty}-T_{w}}{\delta} y
+\end{align}
+
+
+If we consider that the bubble stays at a temperature close to $T_{sat}$, the radial component of the temperature gradient at the bubble's interface yields :
+
+\begin{align}
+\grad{T} \cdot \vect{er} = \dpartial{T}{r}\left(R, \theta, \phi\right)\approx\frac{T_{\l}(y)-T_{sat}}{\delta_{b}}
+\end{align}
+
+\npar
+
+
+
+Applying Fourier's law to the liquid close to the bubble : $\vect{j_{Q}}=-\lambda_{l} \grad{T}$, then the bubble receives between $t$ and $t+dt$ through $d^{2}S$ :
+
+\begin{align}
+d^{2}Q_{b}&=\vect{j_{Q}} \cdot \left(-\vect{d^{2}S}\right)\\
+&=\lambda_{l} \dpartial{T}{r}\left(R,\theta, \varphi\right) R^{2}\sin{\theta} d\theta d\varphi\\
+&\approx\lambda_{l} \frac{T_{l}\left(y\right)-T_{sat}}{\delta_{b}}R^{2}\sin{\theta}d\theta d\varphi\\
+&=\lambda_{l} \frac{1}{\delta_{b}}\left[T_{w}+\frac{T_{\infty}-T_{w}}{\delta}y - T_{sat}\right]R^{2}\sin{\theta}d\theta d\varphi\\
+&=\frac{\lambda_{l}}{\delta_{b}}\left[\Delta T_{w}-\frac{\Delta T_{w} + \Delta T_{l}}{\delta}R\left[\cos{\theta} - \cos{\Theta}\right]\right]R^{2}\sin{\theta}d\theta d\varphi\\
+&=\frac{\lambda_{l}}{\delta_{b}}\left[\Delta T_{w}R^{2}\sin{\theta}-\frac{\Delta T_{w}+\Delta T_{l}}{\delta}R^{3}\left[\cos{\theta}-\cos{\Theta}\right]\sin{\theta}\right] d\theta d\varphi
+\end{align}
+
+\npar
+The total heat flux received by the bubble can then be derived, supposing that $\delta_{b}$ is constant all around the bubble between $t$ and $t+dt$ :
+
+\begin{align}
+Q_{b}&=\int_{\varphi=0}^{\varphi=2\pi} \int_{\theta=0}^{\Theta}{d^{2}Q_{b}}\\
+&= \frac{2\pi \lambda_{l}}{\delta_{b}}\left[\int_{0}^{\Theta} \Delta T_{w} R^{2} \sin{\theta}d\theta + \int_{0}^{\Theta} \frac{\Delta T_{w} + \Delta T_{l}}{\delta} R^{3} \cos{\Theta}\sin{\theta}d\theta - \int_{0}^{\Theta} \frac{\Delta T_{w} + \Delta T_{l}}{\delta} R^{3} \cos{\theta}\sin{\theta}d\theta\right]\\
+&=\frac{2\pi \lambda_{l}}{\delta_{b}} \left[\Delta T_{w} R^{2} \left(1-\cos{\Theta}\right) + \frac{\Delta T_{w} + \Delta T_{l}}{\delta}R^{3}\left[\cos{\Theta}\left(1-\cos{\Theta}\right)- \frac{1}{4}\left(1 - \cos{2\Theta}\right)\right]\right]\\
+&=\frac{2\pi \lambda_{l} R^{2}}{\delta_{b}}\left[\frac{-R}{2\delta}\left(\Delta T_{w} + \Delta T_{l}\right)\left(1 + 2\cos{\alpha} + \cossq{\alpha}\right) + \Delta T_{w} \left(1 + \cos{\alpha } \right) \right]\\
+&=\frac{2\pi \lambda_{l} R^{2}}{\delta_{b}}\left(1+\cos{\alpha}\right)\left[\Delta T_{w} - \frac{R}{2\delta}\left(\Delta T_{w} + \Delta T_{l}\right) \left(1 + \cos {\alpha} \right )\right]
+\end{align}
+
+
+\npar
+Between $t$ and $t+dt$, the bubble receives a $Q_{b}dt$ energy amount through thermal diffusion. Assuming this energy solely contributes to evaporation of the surrounding liquid, the resulting mass of generated vapor is :
+
+\begin{align}
+&dm_{g} = \rho_{g} dV = \frac{Q_{b}dt}{h_{lg}}\\
+\text{then } &\frac{dV}{dt}=\frac{Q_{b}}{\rho_{g}h_{lg}}
+\end{align}
+
+Since $V=\frac{4}{3}\pi R^{3} f_{V}\left(\alpha\right)$, we can write : 
+
+\begin{align}
+\frac{dV}{dt}=\frac{4}{3}\pi f_{V}\left(\alpha\right) 3R^{2}\frac{dR}{dt}
+\end{align}
+
+Then :
+
+\begin{align}
+\frac{dR}{dt}&=\frac{1}{4\pi R^{2}f_{V}\left(\alpha\right)} \frac{1}{\rho_{g} h_{lg}} \frac{2 \pi \lambda_{l} R^{2}}{\delta_{b}}\left(1+\cos{\alpha}\right)\left[\Delta T_{w} - \frac{R}{2\delta}\left(\Delta T_{w} + \Delta T_{l}\right) \left(1 + \cos{\alpha} \right )\right]\\
+&= \frac{1}{2f_{V}\left(\alpha\right)}\frac{\Delta T_{w}}{h_{lg}\rho_{g}}\frac{\lambda_{l}}{\delta_{b}}\left(1+\cos{\alpha}\right)\left[1 - \frac{R}{2\delta}\left(1 + \frac{\Delta T_{l}}{\Delta T_{w}}\right) \left(1 + \cos {\alpha} \right )\right]\\
+&=\frac{\text{Ja}_{w} \eta_{l}}{2 \delta_{b} f_{V}\left(\alpha\right)}\left(1+\cos{\alpha}\right)\left[1 - \frac{R}{2\delta}\left(1 + \frac{\text{Ja}_{l}}{\text{Ja}_{w}}\right) \left(1 + \cos{\alpha} \right )\right]
+\end{align}
+
+If we define :
+
+\begin{align}
+a = \frac{\text{Ja}_{w}\eta_{l}}{4 \delta_{b} \delta f_{V} \left(\alpha\right)} \left(1 + \frac{\text{Ja}_{l}}{\text{Ja}_{w}}\right) \left(1 + \cos{\alpha}\right)^{2} \text{ et } b = \frac{\text{Ja}_{w}\eta_{l}}{2 \delta_{b} f_{V}\left(\alpha\right)}\left(1 + \cos{\alpha}\right)
+\end{align}
+
+Finally : 
+
+\begin{align}
+\frac{dR}{dt} + aR = b
+\end{align}
+
+
+\npar
+
+Solutions of this differential equation depend on the hypothesis over $\delta$ and $\delta_{b}$. In a first approach, we will consider that $\delta$ does not vary during the whole bubble growth. This thickness could be expressed using boundary layer thickness correlations for example (laminar or turbulent depending on the Reynolds number). 
+
+\npar
+
+On the other hand, we will consider 3 different choices to model $\delta_{b}$ :
+
+
+\npar
+\subsection{Case 1 : $\delta_{b}$ is constant}
+
+
+This is a \textbf{strong assumption} since it means that $\delta_{b}$ does not depend on the temperature and the flow shear rate facing the bubble. In this case, $a$ and be are constant, giving : 
+
+
+\begin{align}
+\frac{dR}{dt} + aR = b
+\end{align}
+
+
+With the initial condition $R(t=0)=0$ the solution of this differential equation is : 
+
+\begin{align}
+R\left(t\right)=\frac{b}{a}\left(1 - e^{-at}\right) \text{ where } \frac{b}{a} = \frac{2\delta}{\left(1 + \frac{\text{Ja}_{l}}{\text{Ja}_{w}}\right)\left(1 + \cos{\alpha} \right )}=R_{\infty} \text{ is the final bubble equilibrium radius.}
+\end{align}
+
+
+\subsection{Case 2 : $\delta_{b}=\sqrt{\eta_{l}t}$}
+\npar
+
+This expression derives from the growth of a boundary layer through pure diffusion, as studied by \textsc{Legendre} \etal
+
+Such a boundary layer thickness is also used when one writes the quenching heat flux (see Section \ref{sec:model} and \textsc{Del Valle \& Kenning} work).
+
+In this case, this means that the boundary layer around the bubble interface grows through diffusion only.
+
+\npar
+
+Thus, it yields :
+
+\begin{align}
+\frac{dR}{dt}\parth{t}+a\parth{t}R\parth{t}=b\parth{t}
+\end{align}
+
+\begin{align}
+\label{eq:coeff_expgrowth}
+a(t)=\frac{\Ja_{w}\sqrt{\eta_{l}}}{4\delta f_{V}\parth{\alpha}\sqrt{t}}\parth{1+\frac{\Ja_{l}}{\Ja_{w}}}\parth{1+\cos{\alpha}}^{2}=K_{a}t^{-1/2} \text{ and } b(t)=\frac{\Ja_{w}\sqrt{\eta_{l}}}{2f_{V}\parth{\alpha}\sqrt{t}}\parth{1+\cos{\alpha}}=K_ {b}t^{-1/2}
+\end{align}
+
+With the initial condition $R\parth{t=0}=0$, the solution is given by : 
+
+\begin{align}
+R\parth{t}=R_{\infty}\parth{1-e^{-2K_{a}\sqrt{t}}} \text{ avec } R_{\infty}=\frac{K_{b}}{K_{a}}
+\end{align}
+
+\npar
+\subsection{Case 3 : $\delta_{b}=CR$}
+\npar
+
+In this last case, the bubble boundary layer is assumed to by proportional to the bubble radius $R$, through a constant coefficient $C$. This yields :
+
+
+\begin{align}
+a(t)=\frac{\Ja_{w}\eta_{l}}{4\delta f_{V}\parth{\alpha}CR\parth{t}}\parth{1+\frac{\Ja_{l}}{\Ja_{w}}}\parth{1+\cos{\alpha}}^{2}=K'_{a}\frac{1}{R\parth{t}} \text{ et } b(t)=\frac{\Ja_{w}\eta_{l}}{2f_{V}\parth{\alpha}CR\parth{t}}\parth{1+\cos{\alpha}}=K'_ {b}\frac{1}{R\parth{t}}
+\end{align}
+
+Giving :
+
+\begin{align}
+&\frac{dR}{dt}\parth{t} + K'_{a} = K'_{b}\frac{1}{R\parth{t}}
+\end{align}
+
+Which the solution with the initial condition $R\parth{t=0}=0$ is :
+
+\begin{align}
+R\parth{t}=R_{\infty}\parth{ \text{W}\parth{-e^{-t{K'_{a}}^{2}/K'_{b}-1} } +1}
+\end{align}
+
+With $\text{W}$ being the \textsc{Lambert} function defined as the reciprocal function of $w \rightarrow we^{w}$ on $\mathbb{C}$.
+
+
+\subsection{Comparison with experimental data and DNS}
+
+To assess the three models presented above, we compared the time-dependent radius profile given by an experiment conducted by \textsc{Maity} as shown in Figure \ref{fig:growth_comp_Maity}.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\linewidth]{img/growth/growth_maity.png}
+\caption{Comparison with single bubble growth measurement from \textsc{Maity} : Boiling water at $\Delta T_{sub}=0.2\degree$C, $\Delta T_{w}=5.9\degree$C, $U_{liq}=0.23\text{~m/s}$ and $P=1\text{~bar}$. Green : $\delta_{b}=10^{-5}~$m - Red : $\delta_{b}=\sqrt{\eta_{l}t}$ - Pink : $\delta_{b}=0.1\times R\parth{t}$ - Blue : \textsc{Plesset} solution $R\parth{t}=B\sqrt{t}$ with $B=\Ja_{w}\sqrt{12\eta_{l}/\pi}$. The liquid boundary layer size has been fixed to $\delta \approx 1~$mm according to the experimental measurements.}
+\label{fig:growth_comp_Maity}
+\end{figure}
+
+As we can see, the \textsc{Plesset} solution overestimates both the growth and the size of the bubble as it could have been expected since this solutions is found for a uniformly superheated liquid. Concerning the three different approaches  previously developed :
+
+\begin{itemize}
+\item The constant $\delta_{b}$ hypothesis seems to better fit the first stage of bubble growth (with an optimal choice of $\delta_{b}$ value). However, the imposed growth regime seems to large when we compare to the moderate growth of the measured bubble. Moreover, this model yields a linear start of bubble growth, while it has been thoroughly validated that under a large range of thermal-hydraulics conditions, bubble growth begins with a $\sqrt{t}$ profile.
+\item The contrary is observed for the $\delta_{b}=CR$ model, with a growth being globaly too slow.
+\item Choosing $\delta_{b}=\sqrt{\eta_{l}t}$ seems to better reproduce the growth regime. Even though the bubble radius is slightly overestimated, the shape of the time-dependent profile looks similar to the experimental measurement, especially since the growth is progressively damped.
+\end{itemize}
+
+
+To further assess the modeling, we compare the derived profiles with DNS data from \textsc{Urbano} \etal\cite{Urbano2018} on Figure \ref{fig:growth_vs_DNS}.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\linewidth]{img/growth/modvsDNS.png}
+\caption{Comparison with zero-gravity DNS data from \textsc{Urbano} \etal : Water at $P=1.01\text{~bar}$, $\Delta T_{sub}=10\degree$C, $\Delta T_{w}=2\degree$C, $U_{liq}=0\text{~m/s}$ and $\alpha=50\degree$.}
+\label{fig:growth_vs_DNS}
+\end{figure}
+
+
+\npar
+First, it is important to note that the expression of the equilibrium radius $R_{\infty}$ matches the analytical derivation of \textsc{Urbano} \etal. Figure \ref{fig:growth_vs_DNS} shows a difference betwee, the computed equilibrium radius and the DNS equilibrium radius. This discrepancy may rely on the fact that Urbano \etal considered solid wall heat diffusion while our model considers a constant wall temperatue.
+
+However, comparing the shapes of the predicted growth, we can see that the $\delta_{b}=\sqrt{\eta_{l}t}$ hypothesis seems to give a growth regime in accordance with the DNS results. The other hypotheses do not greatly differ, but they result from an arbitrary choice for $\delta_{b}$ or $C$. Thus, it seems appropriate to consider that the $\delta_{b}=\sqrt{\eta_{l}t}$ hypothesis is reasonable to model the evolution of the boundary layer thickness at the liquid-vapor interface.
+
+\npar
+
+
+Finally, we present on Figure \ref{fig:growth_DNS_regime} the comparison between the $\delta_{b}=\sqrt{\eta_{l}t}$ model and 3 DNS profiles for a same Jakob number ratio, but at different subcoolings and superheats. 
+
+
+\begin{figure}[h!]
+\begin{multicols}{2}
+\includegraphics[width=1.0\linewidth]{img/tg/comp_Urbano.png}
+
+\includegraphics[width=1.0\linewidth]{img/tg/comp_Urbano_fixed_Req.png}
+\end{multicols}
+\caption{Comparison of the model (red) with results from Urbano \etal (gray) at 3 different pairs of $\parth{\Delta T_{l}, \Delta T_{w}}$ - Left : $R_{\infty}$ from the model - Right : $R_{\infty}$ imposed equal to the DNS}
+\label{fig:growth_DNS_regime}
+\end{figure}
+
+
+The difference between the 3 growth regime predicted by the model is really close to the difference captured by the DNS. A discrepancy over the final equilibrium radius is still observed, but imposing the final radius from the DNS in the model yields strongly matching profiles between both approaches. 
+
+It thus seems appropriate to consider the $\delta_{b}=\sqrt{\eta_{l}t}$ profile to represent the boundary layer thickness around the bubble.
+
+
+
+
+
 \section{Departure by Sliding}\label{sec:departure}
 
 \subsection{Non-Dimensional Analysis}\label{subsec:adim_dep}
 
-Now that the force balance has been established, we can write it parallel to the wall before bubble departure by sliding \ie $U_{b}=\dtime{U_{b}}=0$.
+To tackle the departure by sliding, we rely on force balance parallel to the wall in Eq. \ref{eq:bdf_x}. Before departure, the bubble grows on its nucleation site while staying immobile, thus with a sliding velocity $U_{b} = \dfrac{\partial U_{b}}{t} =0$. The force balance parallel to the wall becomes:
 
 \begin{align}
-\label{eq:sum_dep}
-\nonumber - \pi R\sigma f_{C,x} + \frac{4}{3}\pi R^{3}\parth{\rho_{L}-\rho_{V}}g &+ \frac{1}{2}C_{D}\rho_{L}\pi R^{2} U_{L}^{2} \\
-& + \frac{4}{3}\pi R^{3}\rho_{L}~3C_{AM,x}\frac{\dot{R}}{R}U_{L} = 0
+- \pi R\sigma f_{C,x} + \frac{4}{3}\pi R^{3}\parth{\rho_{L}-\rho_{V}}g &+ \frac{1}{2}C_{D}\rho_{L}\pi R^{2} U_{L}^{2} + \frac{4}{3}\pi R^{3}\rho_{L}~3C_{AM,x}\frac{\dot{R}}{R}U_{L} = 0
+\label{eq:bdf_x_dep}
 \end{align}
 
-\begin{equation}
- f_{C,x}=2.5\ \frac{\dtheta}{\parth{\pi/2}^{2}-\dtheta^{2}}\sin{\theta}\cos{\dtheta}
-\end{equation}
-with $f_{C,x} \to 0 $ if $\dtheta \to 0$.
 
-
-We can note that the departure by sliding is promoted by the Buoyancy, the Drag and the Added Mass forces. Only the Capillary force keeps the bubble attached to its nucleation site, which will be discussed later.
+We can note that the departure by sliding is promoted by the buoyancy, the drag and the added mass forces. Only the capillary force keeps the bubble attached to its nucleation site, which will be discussed later.
 
 
 \npar
-Re-writing Eq.~\ref{eq:sum_dep} in non-dimensional form by dividing the LHS by the Added Mass force yields:
+Re-writing Eq.~\ref{eq:bdf_x_dep} in non-dimensional form by dividing the LHS by the Added Mass force yields:
 
 \begin{equation}
-\label{eq:adim_dep}
 -\frac{1}{2}\frac{f_{C,x}}{K^{2}C_{AM,x}}\frac{1}{\Ca}\frac{\Pr_{L}}{\Ja_{w}^{2}} +  \frac{1}{3}\frac{1}{K^{2}C_{AM,x}}\frac{\Re_{b}}{\Fr}\frac{\Pr_{L}}{\Ja_{w}^{2}} + \frac{1}{8}\frac{C_{D}}{K^{2}C_{AM,x}}\Re_{b}\frac{\Pr_{L}}{\Ja_{w}^{2}} +1 =0
+\label{eq:adim_dep}
 \end{equation}
 where we have the following non-dimensional numbers:
 \begin{align}
@@ -1219,7 +1368,7 @@ Those boundaries can be plotted on a $\parth{\Ja_{w}^{2}/\Pr\ ;\ \Re_{b}}$ map f
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=0.7\linewidth]{img/forces/ND_map1.pdf}
+\includegraphics[width=0.7\linewidth]{img/bub_dyn/dep_maps/ND_map1.pdf}
 \caption{Dominance map regarding departure by sliding. Boundaries plotted for water at 1 bar and $D_{d}=0.5$mm. ($K=2$)}
 \label{fig:ND_map1}
 \end{figure}
@@ -1248,12 +1397,12 @@ Assuming that the conservation of Weber and Boiling numbers may lead to similar 
 \begin{figure}[h!]
 \centering
 \subfloat[Dominance map plotted for water at different pressures and bubble departure diameters. ($K=2$)]{
-\includegraphics[width=0.7\linewidth]{img/forces/press_map.pdf}
+\includegraphics[width=0.7\linewidth]{img/bub_dyn/dep_maps/press_map.pdf}
 \label{fig:press_map}
 }
 \\
 \subfloat[Dominance map for R12 as simulating fluid for PWR. $D_{d}=0.05$mm is chosen according to R12 measurements from Garnier \etal \cite{garnier_local_2001} who observed bubbles of $\sim 0.1$mm diameter after lift-off. ($K=2$)]{
-\includegraphics[width=0.7\linewidth]{img/forces/R12_PWR.pdf}
+\includegraphics[width=0.7\linewidth]{img/bub_dyn/dep_maps/R12_PWR.pdf}
 \label{fig:R12_PWR}
 }
 \caption{Examples of qualitative analysis using the non-dimensional regime map}
@@ -1345,29 +1494,29 @@ However, we see that some measurements lie close to the Added Mass / Drag bounda
 \begin{figure}[h!]
 \begin{center}
 \subfloat[Maity data]{
-\includegraphics[width=0.45\linewidth]{img/forces/Maity_2.pdf}
+\includegraphics[width=0.45\linewidth]{img/bub_dyn/dep_maps/Maity_2.pdf}
 \label{fig:exp_maity}
 } 
 \subfloat[Guan data]{
-\includegraphics[width=0.45\linewidth]{img/forces/Guan_2.pdf}
+\includegraphics[width=0.45\linewidth]{img//bub_dyn/dep_maps/Guan_2.pdf}
 \label{fig:exp_guan}
 }
 \\
 \subfloat[Sugrue data]{
-\includegraphics[width=0.45\linewidth]{img/forces/Sugrue_2.pdf}
+\includegraphics[width=0.45\linewidth]{img//bub_dyn/dep_maps/Sugrue_2.pdf}
 \label{fig:exp_sugrue}
 } 
 \subfloat[Chen data]{
-\includegraphics[width=0.45\linewidth]{img/forces/Chen_2.pdf}
+\includegraphics[width=0.45\linewidth]{img//bub_dyn/dep_maps/Chen_2.pdf}
 \label{fig:exp_chen}
 }
 \\
 \subfloat[Ren data]{
-\includegraphics[width=0.45\linewidth]{img/forces/Ren_2.pdf}
+\includegraphics[width=0.45\linewidth]{img//bub_dyn/dep_maps/Ren_2.pdf}
 \label{fig:exp_ren}
 } 
 \subfloat[Kossolapov data]{
-\includegraphics[width=0.45\linewidth]{img/forces/Kossolapov_2.pdf}
+\includegraphics[width=0.45\linewidth]{img//bub_dyn/dep_maps/Kossolapov_2.pdf}
 \label{fig:exp_koss}
 }
 
@@ -1447,11 +1596,11 @@ Mazzocco's model provides a good accuracy on the data of Sugrue, Guan, Maity and
 \begin{figure}[h!]
 \centering
 \subfloat[Proposed model without accounting for contact angle uncertainties]{
-\includegraphics[width=0.7\textwidth]{img/forces/pred_nosensi.pdf}
+\includegraphics[width=0.7\textwidth]{img/bub_dyn/pred_nosensi.pdf}
 }
 \\
 \subfloat[Mazzocco model]{
-\includegraphics[width=0.7\textwidth]{img/forces/pred_mazzocco.pdf}
+\includegraphics[width=0.7\textwidth]{img/bub_dyn/pred_mazzocco.pdf}
 }
 
 \caption{Predicted bubble departure diameters}
@@ -1474,9 +1623,9 @@ The aforementioned errors observed for the proposed model may originate from var
 
 \begin{figure}[h!]
 \centering
-\includegraphics[height=0.4\linewidth]{img/forces/bub_sugrue.pdf}
-\includegraphics[width=0.45\linewidth]{img/forces/pic_sugrue.png}
-\includegraphics[height=0.4\linewidth]{img/forces/newbub_sugrue.pdf}
+\includegraphics[height=0.4\linewidth]{img/bub_dyn/bub_sugrue.pdf}
+\includegraphics[width=0.45\linewidth]{img/bub_dyn/pic_sugrue.png}
+\includegraphics[height=0.4\linewidth]{img/bub_dyn/newbub_sugrue.pdf}
 \caption{Initially assumed, real and reassessed bubble shape for Sugrue cases (picture adapted from \cite{sugrue_experimental_2014}).}
 \label{fig:bubshape_sugrue}
 \end{figure}
@@ -1547,7 +1696,7 @@ Koss. (1500$~\debm$) & 80 & 1.5 \\
 }
 \subfloat[Predicted bubble departure diameters.]{
 \centering
-\includegraphics[width=0.7\textwidth]{img/forces/pred_sensi.pdf}
+\includegraphics[width=0.7\textwidth]{img/bub_dyn/pred_sensi.pdf}
 }
 
 \caption{Proposed model performance while accounting for contact angle uncertainties}
@@ -1644,15 +1793,15 @@ We can note that values of $K$ between 0.5 and 1 were used to better fit the bub
 \begin{figure}[h!]
 \begin{center}
 \subfloat[$\Delta T_{w}=5.0$\degree C, $G_{L}=73.8~\debm$]{
-\includegraphics[width=0.9\linewidth]{img/forces/maity_V0p077.pdf}
+\includegraphics[width=0.9\linewidth]{img/bub_dyn/sliding/maity_V0p077.pdf}
 } 
 \\
 \subfloat[$\Delta T_{w}=5.9$\degree C, $G_{L}=143.8~\debm$]{
-\includegraphics[width=0.9\linewidth]{img/forces/maity_V0p15.pdf}
+\includegraphics[width=0.9\linewidth]{img/bub_dyn/sliding/maity_V0p15.pdf}
 }
 \\
 \subfloat[$\Delta T_{w}=5.9$\degree C, $G_{L}=239.6~\debm$]{
-\includegraphics[width=0.9\linewidth]{img/forces/maity_V0p25.pdf}
+\includegraphics[width=0.9\linewidth]{img/bub_dyn/sliding/maity_V0p25.pdf}
 }
 	\caption{Bubble sliding velocity predictions on Maity cases}
 	\label{fig:slide_maity}
@@ -1682,15 +1831,15 @@ Once the estimation of $\Delta T_{w}$ using Eq.~\ref{eq:frost} is corrected as m
 \begin{figure}[h!]
 \begin{center}
 \subfloat[$\phi_{w}=0.178$~MW/m\up{2}, $G_{L}=500~\debm$]{
-\includegraphics[width=0.9\linewidth]{img/forces/Koss_P20_G500.pdf}
+\includegraphics[width=0.9\linewidth]{img/bub_dyn/sliding/Koss_P20_G500.pdf}
 } 
 \\
 \subfloat[$\phi_{w}=0.495$~MW/m\up{2}, $G_{L}=994~\debm$]{
-\includegraphics[width=0.9\linewidth]{img/forces/Koss_P20_G1000.pdf}
+\includegraphics[width=0.9\linewidth]{img/bub_dyn/sliding/Koss_P20_G1000.pdf}
 } 
 \\
 \subfloat[$\phi_{w}=0.487$~MW/m\up{2}, $G_{L}=1504~\debm$]{
-\includegraphics[width=0.9\linewidth]{img/forces/Koss_P20_G1500.pdf}
+\includegraphics[width=0.9\linewidth]{img/bub_dyn/sliding/Koss_P20_G1500.pdf}
 } 
 	\caption{Bubble sliding length predictions on Kossolapov cases - $P=20$ bar}
 	\label{fig:slide_koss_20bar}	
@@ -1702,15 +1851,15 @@ Once the estimation of $\Delta T_{w}$ using Eq.~\ref{eq:frost} is corrected as m
 \begin{figure}[h!]
 \begin{center}
 \subfloat[$\phi_{w}=0.291$~MW/m\up{2}, $G_{L}=500~\debm$]{
-\includegraphics[width=0.9\linewidth]{img/forces/Koss_P40_G500.pdf}
+\includegraphics[width=0.9\linewidth]{img/bub_dyn/sliding/Koss_P40_G500.pdf}
 } 
 \\
 \subfloat[$\phi_{w}=0.361$~MW/m\up{2}, $G_{L}=994~\debm$]{
-\includegraphics[width=0.9\linewidth]{img/forces/Koss_P40_G1000.pdf}
+\includegraphics[width=0.9\linewidth]{img/bub_dyn/sliding/Koss_P40_G1000.pdf}
 } 
 \\
 \subfloat[$\phi_{w}=0.613$~MW/m\up{2}, $G_{L}=1504~\debm$]{
-\includegraphics[width=0.9\linewidth]{img/forces/Koss_P40_G1500.pdf}
+\includegraphics[width=0.9\linewidth]{img/bub_dyn/sliding/Koss_P40_G1500.pdf}
 } 
 	\caption{Bubble sliding length predictions on Kossolapov cases - $P=40$ bar}	
 	\label{fig:slide_koss_40bar}
