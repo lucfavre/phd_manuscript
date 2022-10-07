@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.1 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -1616,6 +1616,77 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{scriven_dynamics_1959}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SLE}{%
+         family={Scriven},
+         familyi={S\bibinitperiod},
+         given={L.\bibnamedelima E.},
+         giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SLE1}
+    \strng{fullhash}{SLE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    The equations governing spherically symmetric phase growth in an infinite
+  medium are first formulated for the general case and are then simplified to
+  describe growth controlled by the transport of heat and matter. All
+  assumptions and restrictions are recounted. Exact solutions of the equations
+  are obtained for conditions typical of bubble growth in the nucleate boiling
+  of (a) pure materials, and (b) binary mixtures. The effect of radial
+  convection resulting from unequal phase densities is established and the
+  regions of applicability of previously reported approximate solutions are
+  determined. Résumé Les équations régisaant le grossissement de phase,
+  sphériquement symétrique, dans un milieu infini, sont d'abord établies
+  pour le cas général et simplifiées pour décrire le grossissement réglé
+  par le transport thermique et le transport de matière. Il est tenu compte de
+  toutes les hypothèses et limitations. Des solutions exactes des équations
+  sont obtenues pour des conditions typiques de grossissement de bulles, dan
+  l'ébullition sous forme de bulles: 1.de substances pures2.de mélanges
+  binaires. L'influence de la convection radiale résultant de densités
+  inégales est établie, et les régions d'application des solutions
+  approchées, notées précédemment sont déterminées. Zusammenfassung Die
+  Gleichungen für das kugelsymmetrische Phasenwachstum in einem ausgedehnten
+  Medium werden zunächst allgemein formuliert und dann für jenen Fall
+  vereinfacht, bei dem das Wachstum durch den Transport von Wärme und Stoff
+  bestimmt ist. Alle Annahmen und Einschränkungen werden aufgezählt. Exakte
+  Lösungen der Gleichungen werden erhalten für Bedingungen, wie für das
+  Blasenwachstum bei Blasenverdampfung in (a) reinen Stoffen und (b)
+  Zweistoffgemischen typisch sind. Die Einflüsse radialer Konvektion,
+  hervorgerufen durch ungleiche Phasendichten, werden behandelt und die
+  Bereiche bestimmt, in denen die oben erwähnten Näherungslösungen anwendbar
+  sind.%
+    }
+    \verb{doi}
+    \verb 10.1016/0009-2509(59)80019-1
+    \endverb
+    \field{issn}{0009-2509}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 13}
+    \field{shortjournal}{Chemical Engineering Science}
+    \field{title}{On the dynamics of phase growth}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0009250959800191
+    \endverb
+    \field{volume}{10}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\4QJ3HWHT\
+    \verb \0009250959800191.html:text/html
+    \endverb
+    \field{journaltitle}{Chemical Engineering Science}
+    \field{day}{01}
+    \field{month}{04}
+    \field{year}{1959}
+    \field{urlday}{16}
+    \field{urlmonth}{09}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{shi_drag_2021}{article}{}
     \name{author}{4}{}{%
       {{hash=SP}{%
@@ -2941,19 +3012,19 @@
 
   \entry{unal_maximum_1976}{article}{}
     \name{author}{1}{}{%
-      {{hash=�HC}{%
+      {{hash=nHC}{%
          family={Ünal},
-         familyi={�\bibinitperiod},
+         familyi={n\bibinitperiod},
          given={H.\bibnamedelima C.},
          giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
       }}%
     }
-    \strng{namehash}{�HC1}
-    \strng{fullhash}{�HC1}
+    \strng{namehash}{nHC1}
+    \strng{fullhash}{nHC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{�}
-    \field{sortinithash}{�}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
     \field{abstract}{%
     A heat transfer controlled bubble model has yielded three semi-empirical
   correlations to predict bubble-growth rate, maximum bubble diameter and

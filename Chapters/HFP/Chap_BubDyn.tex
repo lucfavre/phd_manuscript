@@ -1245,7 +1245,7 @@ Q_{b}=\frac{2\pi \lambda_{l} R^{2}}{\delta_{b}}\left(1+\cos{\alpha}\right)\left[
 \begin{align}
 \frac{dV}{dt}=\frac{Q_{b}}{\rho_{g}h_{lg}}
 \end{align}
-}
+
 
 Then :
 
@@ -1305,6 +1305,38 @@ R\parth{t}=R_{\infty}\parth{1-e^{-2K_{a}\sqrt{t}}} \text{ avec } R_{\infty}=\fra
 
 \subsection{Comparison with DNS Results}
 
+\begin{figure}[h!]
+\subfloat[Results using $R_{\infty}$]{
+\includegraphics[width=0.5\linewidth]{img/growth/comp_urbano_nocorr.pdf}
+}
+\subfloat[Results using $C\times R_{\infty}$, $C=1.158$]{
+\includegraphics[width=0.5\linewidth]{img/growth/comp_urbano_corr.pdf}
+}
+\caption{Comparison with DNS results of Urbano \etal \cite{urbano_2019}}
+\label{fig:growth_comp_urbano}
+\end{figure}
+
+
+\subsection{Comparison with Experimental Measurements}
+
+
+\begin{figure}[h!]
+\subfloat[$G_{L}=0~ \debm$, $\Delta T_{w}=5.9K$, $\Delta T_{L}=0.7K$]{
+\includegraphics[width=0.5\linewidth]{img/growth/maity_V0.pdf}
+}
+\subfloat[$G_{L}=73.8~ \debm$, $\Delta T_{w}=5.9K$, $\Delta T_{L}=0.7K$]{
+\includegraphics[width=0.5\linewidth]{img/growth/maity_V0p077.pdf}
+}
+\\
+\subfloat[$G_{L}=143.8~ \debm$, $\Delta T_{w}=5.9K$, $\Delta T_{L}=0.7K$]{
+\includegraphics[width=0.5\linewidth]{img/growth/maity_V0p15.pdf}
+}
+\subfloat[$G_{L}=239.6~ \debm$, $\Delta T_{w}=5.9K$, $\Delta T_{L}=0.7K$]{
+\includegraphics[width=0.5\linewidth]{img/growth/maity_V0p25.pdf}
+}
+\caption{Comparison with experimental measurements of Maity  \cite{maity_effect_2000}}
+\label{fig:growth_comp_maity}
+\end{figure}
 
 \subsection{Comparison with experimental data and DNS}
 
