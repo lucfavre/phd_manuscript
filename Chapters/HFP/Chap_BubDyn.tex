@@ -1033,16 +1033,148 @@ U_{\tau} =& \sqrt{\frac{\tau_{w}}{\nu_{L}}}\\
 
 \subsection{Introduction}
 
-The question of the bubble growth law during its lifetime including sliding is still an open question that aims to cover various types of heat transfer mechanisms:
+In order to properly represent the bubble dynamics, it is mandatory to model the evolution of the bubble radius over time \ie the bubble growth law. Since the bubble radius $R$ and its derivatives $\dot{R}$ and $\ddot{R}$ appear in the force balance (notably in the expression of the added mass force \ref{eq:FAMy}), failing to predict the evolution of the bubble with time will definitely result in an erroneous force balance.
+
+\npar
+The problem of the bubble growth during its lifetime on the wall, including the sliding phase, is still an open question that aims to cover various types of heat transfer mechanisms. First, two growth regimes exist for a boiling bubble:
 
 \begin{itemize}
-\item Evaporation due to superheated liquid near the bubble base ;
-\item Evaporation of a liquid microlayer trapped between the base of the bubble and the wall ;
+\item Inertial growth, which occurs at the beginning of nucleation for low temperature difference between liquid and vapor. The evolution of the bubble size can be solved by the mass and momentum balances, through the solution of Rayleigh (1917) \cite{rayleigh_1917}. The form of the bubble growth is usually $R\parth{t} = A\times t$ (Mikic \& Rohsenow, \cite{mikic_1969}).
+
+\item Heat diffusion growth happening post the inertial phase. This type of bubble growth has been widely studied by different authors \cite{plesset_growth_1954, scriven_dynamics_1959, zuber_dynamics_1961, mikic_1969} and is usually of the form $R\parth{t} = B\sqrt{t}$, derivable using the energy balance around the bubble.
+\end{itemize}
+
+
+Those two regimes can be compared using the non-dimensional time $t^{+}$ defined as:
+
+\begin{align}
+t^{+} = \frac{A^{2}}{B^{2}}t
+\end{align}
+where
+\begin{equation}
+A=\sqrt{b \frac{h_{LV}\rho_{V}\parth{T_{L}-T_{V}}}{\rho_{L}T_{sat}} } \ \text{and}\ B=\sqrt{\frac{12}{\pi}\eta_{L}}\Ja
+\end{equation}
+with $b=\dfrac{2}{3}$ for a bubble in an infinite liquid medium and $b=\dfrac{\pi}{7}$ for a spherical bubble laying on a wall.
+
+So that when $t^{+} \ll 1$, $R\parth{t} = At$ (inertial growth) and when $t^{+} \gg 1$, $R\parth{t}=B\sqrt{t}$ (heat diffusion growth). A general solution asymptotically covering the two regimes has been derives by Mikic \& Rohsenhow:
+
+\begin{equation}
+R^{+} = \frac{2}{3}\crocht{\parth{t^{+}+1}^{3/2}+{t^{+}}^{3/2}-1},\ R^{+}=\frac{R}{B^{2}/A},\ t^{+}=\frac{t}{B^{2}/A^{2}}
+\end{equation}
+
+
+In most cases associated to wall nucleation and boiling flows, experimental observations showed that bubbles' lifetime is long enough to be mostly of heat conduction nature \cite{kossolapov_experimental_2021, maity_effect_2000, zhou_experimental_2020}.
+
+\subsection{Heat Diffusion in Uniformly Superheated Liquid}
+
+The analytic derivation of a bubble growth law in a pure heat diffusion regime has been tackled by various authors, mostly for the case of a bubble in a uniformly superheated and quiescent liquid. An often referred solution is the work of Plesset \& Zwick (1954) \cite{plesset_growth_1954} who found an asymptotic solution for high values of $\Ja$:
+
+\begin{equation}
+R\parth{t} = \frac{2\sqrt{3}}{\sqrt{\pi}}\Ja\sqrt{\eta_{L}t}
+\label{eq:growth_plesset}
+\end{equation}
+
+This result was generalized by Scriver (1959)\cite{scriven_dynamics_1959} who derived:
+
+\begin{equation}
+R\parth{t} = 2 \mathcal{F}\parth{\Ja}\Ja\sqrt{\eta_{L}t}
+\label{eq:growth_scriven}
+\end{equation} 
+where $\mathcal{F}$ is implicitly defined by assuming $\dfrac{\rho_{L}}{\rho_{V}} \gg 1$:
+
+\begin{equation}
+\mathcal{F}\parth{\Ja}=\frac{F}{2\Ja^{2}},\ \text{and}\ \Ja = F\exp{\frac{3}{2}F} \int_{1}^{\infty}\frac{1}{x^{2}}\exp{-\frac{F}{x}-\frac{F}{2}x^{2}}\mathrm{d}x
+\end{equation}
+which falls back to $\mathcal{F}\parth{\Ja} \to \frac{\sqrt{3}}{\sqrt{\pi}}$ when $\Ja \gg 1$.
+
+\npar
+The general formulation of $\mathcal{F}$ has been verified by Legendre \etal \cite{legendre_thermal_1998} with Direct Numerical Simulation of spherical bubble growth in a quiescent superheated liquid.
+
+\npar
+
+Usually, most authors are accepting $R\parth{t} = K \Ja_{w} \sqrt{\eta_{L}t}$ for the bubble growth. With $K$ usually expressed as $K=\dfrac{2b}{\sqrt{\pi}}$ with $b$ being used as an adjustable constant depending on the flow conditions and the fluid, or derived analytically as presented before ($b=\sqrt{3}$ \cite{plesset_growth_1954}, $b=\dfrac{\pi}{2}$ \cite{forster_growth_1954}, $1 \leq b \leq \sqrt{3}$ \cite{zuber_dynamics_1961}, $b=1.56$ \cite{yun_prediction_2012}, $b=0.24$ \cite{yoo_development_2018}, etc.). 
+
+\npar
+
+When the bubble presents a relative velocity with the ambient liquid, the disturbance of the thermal boundary layer around the liquid-vapor interface will impact its growth. This phenomenon has been numerically studied by Legendre \etal \cite{legendre_thermal_1998} who found that the ratio between the growth rate $\dot{R}$ and the relative velocity $U_{rel}$ was controlling the growth regime as follows:
+
+\begin{itemize}
+\item If $\dfrac{\dot{R}}{U_{rel}}\gg 1$, the regime is close to the static heat diffusion and correspond to the Scriven formulation (Eq. \ref{eq:growth_scriven}) ;
+
+\item If $\dfrac{\dot{R}}{U_{rel}}\gg 1$, the relative velocity impacts the thermal boundary layer formation and leads to a growth matching the solution of Ruckenstein (1958) \cite{ruckenstein_1958} where the Nusselt number is:
+\begin{equation}
+\Nu = 2\sqrt{\frac{\Pe\parth{t}}{\pi}},\ \Pe\parth{t} = \Pr_{L}\times \Re_{b}\parth{t}
+\end{equation}
+In this case, the bubble growth is accelerated and $R \propto t^{2/3}$. 
+\end{itemize}
+
+
+\subsection{Microlayer Evaporation}
+
+In addition to the traditional heat diffusion from superheated liquid to the bubble through the liquid-vapor interface, bubble growth can also be enhanced by the evaporation of a so-called "microlayer". This term denotes a very thin layer of liquid (typically $\sim \mu$m \cite{kossolapov_experimental_2021}) which is trapped between the heated wall and the bubble base, as shown on Figure \ref{fig:sketch_microlayer}. The existence of this microlayer has now been supported by both experimental visualizations \cite{kossolapov_experimental_2021, koffman_plesset_1983, chen_haginiwa_2017, chen_hu_2020} and numerical investigations \cite{urbano_direct_2018, guion, bures_modelling_2021}.
+
+Parallel to the heat diffusion approach, some authors computed the bubble growth by considering a pure microlayer evaporation regime. A well-known model of this type has been derived by Cooper \& Lloyd in 1969 \cite{cooper_lloyd_1969} and considers the wall thermal properties so that:
+
+\begin{itemize}
+\item $R\parth{t} = 2.5 \dfrac{\Ja}{\sqrt{\Pr_{L}}}\sqrt{\eta_{L}t}$ if $\lambda_{w} \gg \lambda_{L}$ ;
+\item $R\parth{t} = \dfrac{2}{\sqrt{\pi}} \sqrt{\dfrac{\lambda_{w}\rho_{w}c_{p,w}}{\lambda_{L}\rho_{L}c_{p,L}}}$ if $\lambda_{w} \ll \lambda_{L}$
+\end{itemize}
+
+\begin{remark*}{}
+The parameter $ \sqrt{\dfrac{\lambda_{w}\rho_{w}c_{p,w}}{\lambda_{L}\rho_{L}c_{p,L}}}$ that accounts for the wall properties is the same used in the correlation of \"Unal for the maximum bubble diameter (Eq. \ref{eq:dlo_unal}).
+\end{remark*}
+
+The microlayer is also often taken into account for HFP modeling by enhancing the boiling heat flux through a computation of the microlayer volume \cite{kommajosyula, demarly}. 
+
+\npar
+
+However, the presence of a liquid microlayer beneath the nucleated bubble is not assured for every boiling conditions. Indeed, experimental observations recently realized by Kossolapov \cite{kossolapov_experimental_2021} showed that the microlayer only existed for pressures below 3 bars when using water as working fluid. Moreover, Direct Numerical Simulations of Urbano \etal \cite{urbano_direct_2018} where a full coupling between mass, momentum and energy balance was achieved managed to detect wether if the bubble grows in a contact-line regime or if a microlayer appears. They proposed a criterion based on the capillary and Jakob numbers determining the formation of a microlayer :
+
+\begin{equation}
+\frac{\Ja \Ca}{\parth{\theta-\theta_{0}}^{3}} > \frac{1}{A^{3}},\ \theta_{0}=5\degree,\ A=313
+\end{equation}
+
+\begin{remark*}{}
+Computing the capillary number using $\dot{R}=\dfrac{K\Ja}{2}\sqrt{\dfrac{\eta_{L}}{t}}$ as the interface velocity, we use Urbano \etal criterion to compute the time $t_{max}$ after which the microlayer would cease to exist. Applying this to PWR conditions ($K=1$, $\Delta T_{w}=5K$) yields $t_{max}<10^{-11}$s for $6\degree \leq \theta \leq 90\degree$, meaning that there is no time during the bubble growth during which a microlayer could grow. This agrees with the observation that increasing pressure would lead to microlayer disappearance.
+\end{remark*}
+
+We will not further detail the study of the microlayer regime since its existence is very unlikely if not impossible in the pressurized conditions typical of a PWR.
+
+
+\subsection{Bubble Growth in Subcooled Flow Boiling}
+
+
+If we consider the full problem of bubble growth in subcooled flow boiling, the analytic expressions presented above may fall out of their validation range since extra physical phenomena will be at stake. This more generic type of growth lack of proper theoretical derivations due to the complexity of the considered system (turbulence, condensation, convection, etc.). That is why authors trying to represent such complex bubble growth often combine different heat transfer mechanisms such as: 
+
+\begin{itemize}
+\item Evaporation due to conduction from the superheated liquid near the bubble base ;
+\item Evaporation of the liquid microlayer ;
 \item Condensation on top of the bubble when it reaches subcooled liquid ;
 \item Convective heat transfer due to relative velocity between the bubble and the liquid.
 \end{itemize}
 
-To our knowledge, many authors that have been tackling this issue had to consider empirical or fitted parameters when trying to exhaustively account for all the above heat transfers. For instance, Zhou \cite{zhou_experimental_2020} and Yoo \cite{yoo_development_2018} have proposed growth models that consider all the previously mentioned mechanisms. However, to fully close their mathematical model, many empirical values were used such as:
+To our knowledge, tackling this issue requires to consider empirical or fitted parameters. For instance, Zhou \cite{zhou_experimental_2020} and Yoo \cite{yoo_development_2018} have proposed growth models that consider all the previously mentioned mechanisms.
+
+
+Zhou:
+
+\begin{align}
+\nonumber \dtime{R} = &\underbrace{ \frac{1}{C} \Pr_{L}^{-0.5}\Ja_{w} \sqrt{\dfrac{\eta_{L}}{t}} }_{\text{Microlayer}} + \underbrace{\sqrt{\dfrac{3}{\pi}}\Ja_{T} \sqrt{\dfrac{\eta_{L}}{t}}\min{\dfrac{y_{sat}}{2R},\ 1}}_{\text{Superheated liquid}}\\ 
+%
+& - \underbrace{\frac{\eta_{L}}{2R}\Ja_{L}\parth{2+0.6\Re_{b}^{0.5}\Pr_{L}^{0.3}}\max{\frac{H-y_{sat}}{2R},\ 0}}_{\text{Subcooled convection}}
+\end{align}
+where $C=1.45$, $\Ja_{T}$ is the Jakob number taken at $\min{\overline{T}-T_{sat},\ 0}$, $\overline{T}$ the average liquid temperature around the bubble, $H=R\parth{1+\cos{\theta}}$.
+
+
+
+\npar
+\begin{align}
+ \dtime{R} = &\underbrace{ \gamma \Pr_{L}^{-0.5}\Ja_{w} \sqrt{\dfrac{\eta_{L}}{t}} \frac{A_{ML}}{A_{b}} }_{\text{Microlayer}} + \underbrace{\parth{1-f} \frac{b}{\sqrt{\pi}} \Ja_{w} \sqrt{\dfrac{\eta_{L}}{t}}}_{\text{Superheated liquid}} - \underbrace{\frac{f\Delta T_{L}C}{1-\rho_{V}/\rho_{L}}R}_{\text{Subcooled convection}}
+\end{align}
+where $\gamma = \sqrt{\dfrac{\lambda_{w}\rho_{w}c_{p,w}}{\lambda_{L}\rho_{L}c_{p,L}}}$, $\dfrac{A_{ML}}{A_{b}}=1.22 \gamma^{-0.79}\exp{-0.204\Ja_{w}}$, $f=0.5$, $b=0.24$ and $C=0.1$.
+
+
+ However, to fully close their mathematical model, many empirical values were used such as:
 
 \begin{itemize}
 \item The ratio between the bubble projected area and the microlayer area ;
@@ -1053,13 +1185,6 @@ To our knowledge, many authors that have been tackling this issue had to conside
 Moreover, those models postulate the existence of a microlayer contributing to the growth while recent numerical and experimental investigations showed that the bubble may as well grow with a microlayer or in a pure contact line regime depending on the operating conditions \cite{urbano_direct_2018, bures_modelling_2021, kossolapov_experimental_2021}.
 
 In order to assess the force modeling proposed before, we choose a simpler growth law derived from heat conduction in the superheated liquid layer \cite{plesset_growth_1954}. 
-
-\begin{equation}
-R\parth{t} = K\Ja_{w} \sqrt{\eta_{L}t}
-\end{equation}
-where $K$ is an adjustable constant, with a value around the unity depending on the boiling conditions, often expressed as $K=\dfrac{2b}{\sqrt{\pi}}$.  In the case of pool boiling in an uniformly superheated liquid, Plesset \& Zwick \cite{plesset_growth_1954} found $b=\sqrt{3}$, Forster \& Zuber \cite{forster_growth_1954} obtained $b=\pi / 2$ while Zuber  \cite{zuber_dynamics_1961} stated that values of $b$ should be lying between 1 and $\sqrt{3}$. More recently, Yun \etal \cite{yun_prediction_2012} used $b=1.56$. We can thus observe that $K=2$ is likely to be an upper bound value for the growth constant. This value can thus be lower in the case of subcooled flow boiling. For instance, later comparisons with experimental measurements suggest values of $K$ slightly below 1 for subcooled flow boiling (Figure \ref{fig:slide_maity}).
-
-This type of bubble growth has been widely used, and showed good agreement with many experimental observations and is particularly valid for early growth stages or small bubbles at high pressure \cite{kossolapov_experimental_2021, plesset_growth_1954, klausner_vapor_1993}.
 
 
 
@@ -1076,26 +1201,12 @@ In this section, computations are conducted using the spherical coordinates $\le
 \label{fig:anal_growth}
 \end{figure}
 
-\npar
-Geometrical definitions :
-\begin{itemize}
-\item $\Theta=\pi - \theta$ the angular portion of the truncated sphere in spherical coordinates ;
-\item $r_{w}=R\sin{\theta}=-R\sin{\Theta}$ the bubble foot radius ;
-\item $h=R\cos{\theta}=-R\cos{\Theta}$ the distance between the wall and the center of the bubble ($>0$ if $\theta < \pi/2$, $<0$ otherwise) ;
-\item $R$ and $V=\frac{4}{3}\pi R^{3} f_{V}\left(\theta\right)$ the radius and the volume of the bubble ;
-\item $\vect{d^{2}S}=R^{2}\sin{\theta}\dtheta d\varphi \vect{e_{r}}$ the surface vector in spherical coordinates ;
-\item $y=R\cos{\theta}+h = R\left(\cos{\theta} - \cos{\Theta}\right)$ the distance to the wall in cartesian coordinates.
-\end{itemize}
 
 
 \npar
 Thermal-hydraulics definitions :
 \begin{itemize}
-\item $\Delta T_{L} = T_{sat}-T_{\infty}$ et $\Delta T_{w}=T_{w}-T_{sat}$ the subcooling of the liquid and the wall superheat respectively ;
 \item $\delta$ et $\delta_{b}$ the flow boundary layer thickness and the bubble boundary layer thickness respectively ;
-\item $d^{2} Q_{b}$ the heat received by the bubble between $t$ and $t+dt$ through the surface $d^{2}S$ ;
-\item $\lambda$, $\rho$, $c_{p}$, $\eta$, $h$ the thermal conductivity, density, heat capacity, thermal diffusivity and mass enthalpy respectively ($l$ standing for liquid  and $g$ for gas) ;
-\item $\text{Ja}_{w}=\Delta T_{w} \rho_{L}c_{p,L}/(h_{LV}\rho_{V})$ the wall superheat (or boiling) Jakob number and $\text{Ja}_{L}=\Delta T_{L} \rho_{L}c_{p,L}/(h_{LV}\rho_{V})$ the subcooled liquid (or condensation) one.
 \end{itemize}
 
 \npar
@@ -1121,46 +1232,25 @@ If we consider that the bubble stays at a temperature close to $T_{sat}$, the ra
 Applying Fourier's law to the liquid close to the bubble : $\vect{j_{Q}}=-\lambda_{l} \grad{T}$, then the bubble receives between $t$ and $t+dt$ through $d^{2}S$ :
 
 \begin{align}
-d^{2}Q_{b}&=\vect{j_{Q}} \cdot \left(-\vect{d^{2}S}\right)\\
-&=\lambda_{l} \dpartial{T}{r}\left(R,\theta, \varphi\right) R^{2}\sin{\theta} d\theta d\varphi\\
-&\approx\lambda_{l} \frac{T_{l}\left(y\right)-T_{sat}}{\delta_{b}}R^{2}\sin{\theta}d\theta d\varphi\\
-&=\lambda_{l} \frac{1}{\delta_{b}}\left[T_{w}+\frac{T_{\infty}-T_{w}}{\delta}y - T_{sat}\right]R^{2}\sin{\theta}d\theta d\varphi\\
-&=\frac{\lambda_{l}}{\delta_{b}}\left[\Delta T_{w}-\frac{\Delta T_{w} + \Delta T_{l}}{\delta}R\left[\cos{\theta} - \cos{\Theta}\right]\right]R^{2}\sin{\theta}d\theta d\varphi\\
-&=\frac{\lambda_{l}}{\delta_{b}}\left[\Delta T_{w}R^{2}\sin{\theta}-\frac{\Delta T_{w}+\Delta T_{l}}{\delta}R^{3}\left[\cos{\theta}-\cos{\Theta}\right]\sin{\theta}\right] d\theta d\varphi
+d^{2}Q_{b} \approx -\frac{\lambda_{l}}{\delta_{b}}\left[\Delta T_{w}R^{2}\sin{\theta}-\frac{\Delta T_{w}+\Delta T_{l}}{\delta}R^{3}\left[\cos{\theta}-\cos{\Theta}\right]\sin{\theta}\right] d\theta d\varphi
 \end{align}
 
 \npar
 The total heat flux received by the bubble can then be derived, supposing that $\delta_{b}$ is constant all around the bubble between $t$ and $t+dt$ :
 
 \begin{align}
-Q_{b}&=\int_{\varphi=0}^{\varphi=2\pi} \int_{\theta=0}^{\Theta}{d^{2}Q_{b}}\\
-&= \frac{2\pi \lambda_{l}}{\delta_{b}}\left[\int_{0}^{\Theta} \Delta T_{w} R^{2} \sin{\theta}d\theta + \int_{0}^{\Theta} \frac{\Delta T_{w} + \Delta T_{l}}{\delta} R^{3} \cos{\Theta}\sin{\theta}d\theta - \int_{0}^{\Theta} \frac{\Delta T_{w} + \Delta T_{l}}{\delta} R^{3} \cos{\theta}\sin{\theta}d\theta\right]\\
-&=\frac{2\pi \lambda_{l}}{\delta_{b}} \left[\Delta T_{w} R^{2} \left(1-\cos{\Theta}\right) + \frac{\Delta T_{w} + \Delta T_{l}}{\delta}R^{3}\left[\cos{\Theta}\left(1-\cos{\Theta}\right)- \frac{1}{4}\left(1 - \cos{2\Theta}\right)\right]\right]\\
-&=\frac{2\pi \lambda_{l} R^{2}}{\delta_{b}}\left[\frac{-R}{2\delta}\left(\Delta T_{w} + \Delta T_{l}\right)\left(1 + 2\cos{\alpha} + \cossq{\alpha}\right) + \Delta T_{w} \left(1 + \cos{\alpha } \right) \right]\\
-&=\frac{2\pi \lambda_{l} R^{2}}{\delta_{b}}\left(1+\cos{\alpha}\right)\left[\Delta T_{w} - \frac{R}{2\delta}\left(\Delta T_{w} + \Delta T_{l}\right) \left(1 + \cos {\alpha} \right )\right]
+Q_{b}=\frac{2\pi \lambda_{l} R^{2}}{\delta_{b}}\left(1+\cos{\alpha}\right)\left[\Delta T_{w} - \frac{R}{2\delta}\left(\Delta T_{w} + \Delta T_{l}\right) \left(1 + \cos {\alpha} \right )\right]
 \end{align}
-
-
-\npar
-Between $t$ and $t+dt$, the bubble receives a $Q_{b}dt$ energy amount through thermal diffusion. Assuming this energy solely contributes to evaporation of the surrounding liquid, the resulting mass of generated vapor is :
 
 \begin{align}
-&dm_{g} = \rho_{g} dV = \frac{Q_{b}dt}{h_{lg}}\\
-\text{then } &\frac{dV}{dt}=\frac{Q_{b}}{\rho_{g}h_{lg}}
+\frac{dV}{dt}=\frac{Q_{b}}{\rho_{g}h_{lg}}
 \end{align}
-
-Since $V=\frac{4}{3}\pi R^{3} f_{V}\left(\alpha\right)$, we can write : 
-
-\begin{align}
-\frac{dV}{dt}=\frac{4}{3}\pi f_{V}\left(\alpha\right) 3R^{2}\frac{dR}{dt}
-\end{align}
+}
 
 Then :
 
 \begin{align}
-\frac{dR}{dt}&=\frac{1}{4\pi R^{2}f_{V}\left(\alpha\right)} \frac{1}{\rho_{g} h_{lg}} \frac{2 \pi \lambda_{l} R^{2}}{\delta_{b}}\left(1+\cos{\alpha}\right)\left[\Delta T_{w} - \frac{R}{2\delta}\left(\Delta T_{w} + \Delta T_{l}\right) \left(1 + \cos{\alpha} \right )\right]\\
-&= \frac{1}{2f_{V}\left(\alpha\right)}\frac{\Delta T_{w}}{h_{lg}\rho_{g}}\frac{\lambda_{l}}{\delta_{b}}\left(1+\cos{\alpha}\right)\left[1 - \frac{R}{2\delta}\left(1 + \frac{\Delta T_{l}}{\Delta T_{w}}\right) \left(1 + \cos {\alpha} \right )\right]\\
-&=\frac{\text{Ja}_{w} \eta_{l}}{2 \delta_{b} f_{V}\left(\alpha\right)}\left(1+\cos{\alpha}\right)\left[1 - \frac{R}{2\delta}\left(1 + \frac{\text{Ja}_{l}}{\text{Ja}_{w}}\right) \left(1 + \cos{\alpha} \right )\right]
+\frac{dR}{dt}=\frac{\text{Ja}_{w} \eta_{l}}{2 \delta_{b} f_{V}\left(\alpha\right)}\left(1+\cos{\alpha}\right)\left[1 - \frac{R}{2\delta}\left(1 + \frac{\text{Ja}_{l}}{\text{Ja}_{w}}\right) \left(1 + \cos{\alpha} \right )\right]
 \end{align}
 
 If we define :
@@ -1183,25 +1273,6 @@ Solutions of this differential equation depend on the hypothesis over $\delta$ a
 \npar
 
 On the other hand, we will consider 3 different choices to model $\delta_{b}$ :
-
-
-\npar
-\subsection{Case 1 : $\delta_{b}$ is constant}
-
-
-This is a \textbf{strong assumption} since it means that $\delta_{b}$ does not depend on the temperature and the flow shear rate facing the bubble. In this case, $a$ and be are constant, giving : 
-
-
-\begin{align}
-\frac{dR}{dt} + aR = b
-\end{align}
-
-
-With the initial condition $R(t=0)=0$ the solution of this differential equation is : 
-
-\begin{align}
-R\left(t\right)=\frac{b}{a}\left(1 - e^{-at}\right) \text{ where } \frac{b}{a} = \frac{2\delta}{\left(1 + \frac{\text{Ja}_{l}}{\text{Ja}_{w}}\right)\left(1 + \cos{\alpha} \right )}=R_{\infty} \text{ is the final bubble equilibrium radius.}
-\end{align}
 
 
 \subsection{Case 2 : $\delta_{b}=\sqrt{\eta_{l}t}$}
@@ -1232,30 +1303,7 @@ With the initial condition $R\parth{t=0}=0$, the solution is given by :
 R\parth{t}=R_{\infty}\parth{1-e^{-2K_{a}\sqrt{t}}} \text{ avec } R_{\infty}=\frac{K_{b}}{K_{a}}
 \end{align}
 
-\npar
-\subsection{Case 3 : $\delta_{b}=CR$}
-\npar
-
-In this last case, the bubble boundary layer is assumed to by proportional to the bubble radius $R$, through a constant coefficient $C$. This yields :
-
-
-\begin{align}
-a(t)=\frac{\Ja_{w}\eta_{l}}{4\delta f_{V}\parth{\alpha}CR\parth{t}}\parth{1+\frac{\Ja_{l}}{\Ja_{w}}}\parth{1+\cos{\alpha}}^{2}=K'_{a}\frac{1}{R\parth{t}} \text{ et } b(t)=\frac{\Ja_{w}\eta_{l}}{2f_{V}\parth{\alpha}CR\parth{t}}\parth{1+\cos{\alpha}}=K'_ {b}\frac{1}{R\parth{t}}
-\end{align}
-
-Giving :
-
-\begin{align}
-&\frac{dR}{dt}\parth{t} + K'_{a} = K'_{b}\frac{1}{R\parth{t}}
-\end{align}
-
-Which the solution with the initial condition $R\parth{t=0}=0$ is :
-
-\begin{align}
-R\parth{t}=R_{\infty}\parth{ \text{W}\parth{-e^{-t{K'_{a}}^{2}/K'_{b}-1} } +1}
-\end{align}
-
-With $\text{W}$ being the \textsc{Lambert} function defined as the reciprocal function of $w \rightarrow we^{w}$ on $\mathbb{C}$.
+\subsection{Comparison with DNS Results}
 
 
 \subsection{Comparison with experimental data and DNS}
