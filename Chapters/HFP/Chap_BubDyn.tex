@@ -1114,7 +1114,15 @@ In this case, the bubble growth is accelerated and $R \propto t^{2/3}$.
 \subsection{Microlayer Evaporation}
 \label{subsec:microlayer}
 
-In addition to the traditional heat diffusion from superheated liquid to the bubble through the liquid-vapor interface, bubble growth can also be enhanced by the evaporation of a so-called "microlayer". This term denotes a very thin layer of liquid (typically $\sim \mu$m \cite{kossolapov_experimental_2021}) which is trapped between the heated wall and the bubble base, as shown on Figure \ref{fig:sketch_microlayer}. The existence of this microlayer has now been supported by both experimental visualizations \cite{kossolapov_experimental_2021, koffman_plesset_1983, chen_haginiwa_2017, chen_hu_2020} and numerical investigations \cite{urbano_direct_2018, guion, bures_modelling_2021}.
+In addition to the traditional heat diffusion from superheated liquid to the bubble through the liquid-vapor interface, bubble growth can also be enhanced by the evaporation of a so-called "microlayer". This term denotes a very thin layer of liquid (typically $\sim \mu$m \cite{kossolapov_experimental_2021}) which is trapped between the heated wall and the bubble base, as shown on Figure \ref{fig:ML_Urbano}. The existence of this microlayer has now been supported by both experimental visualizations \cite{kossolapov_experimental_2021, koffman_plesset_1983, chen_haginiwa_2017, chen_hu_2020} and numerical investigations \cite{urbano_direct_2018, guion, bures_modelling_2021}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\linewidth]{img/growth/ML_urbano.PNG}
+\caption{Microlayer appearing beneath the bubble in DNS conducted by and adapted from Urbano \etal \cite{urbano_direct_2018}.}
+\label{fig:ML_Urbano}
+\end{figure}
+
 
 Parallel to the heat diffusion approach, some authors computed the bubble growth by considering a pure microlayer evaporation regime. A well-known model of this type has been derived by Cooper \& Lloyd in 1969 \cite{cooper_lloyd_1969} and considers the wall thermal properties so that:
 
@@ -1162,7 +1170,7 @@ To our knowledge, such models always consider empirical or fitted parameters. Fo
 
 \begin{align}
  \dtime{R} = &\underbrace{ \gamma \Pr_{L}^{-0.5}\Ja_{w} \sqrt{\dfrac{\eta_{L}}{t}} \frac{A_{ML}}{A_{b}} }_{\text{Microlayer}} + \underbrace{\parth{1-f} \frac{b}{\sqrt{\pi}} \Ja_{w} \sqrt{\dfrac{\eta_{L}}{t}}}_{\text{Superheated liquid}} - \underbrace{\frac{f\Delta T_{L}C}{1-\rho_{V}/\rho_{L}}R}_{\text{Subcooled convection}}
-label{eq:growth_yoo}
+\label{eq:growth_yoo}
 \end{align}
 where $\gamma = \sqrt{\dfrac{\lambda_{w}\rho_{w}c_{p,w}}{\lambda_{L}\rho_{L}c_{p,L}}}$, $\dfrac{A_{ML}}{A_{b}}=1.22 \gamma^{-0.79}\exp{-0.204\Ja_{w}}$, $f=0.5$, $b=0.24$ and $C=0.1$.
 
@@ -1191,7 +1199,19 @@ While they consider a constant coefficient for the microlayer evaporation, they 
 As mentioned before, those model rely on numerous empirical parameters due to the variety of considered phenomena. In particular, microlayer evaporation is systematically considered which could be questioned regarding the observations made in Subsection \ref{subsec:microlayer}.
 \end{remark*}
 
+\npar
 
+Contrary to those models, Mazzocco \etal \cite{mazzocco_reassessed_2018} propose to keep the radius as $K\Ja_{w}\sqrt{\eta_{L}t}$ and to include subcooling and microlayer influence in the value of $K$:
+
+\begin{equation}
+K = \frac{1.243}{\sqrt{\Pr_{L}}} + 1.945*\chi,\ \chi = 1-B\frac{\Delta T_{L}}{\Delta T_{w}}
+\label{eq:Kgrowth_mazzocco}
+\end{equation}
+with $A=0.05$ and $B=1.55$ based on data-fitting.
+
+\begin{remark*}{}
+This approach in interesting because it keeps the simple growth law in $t^{1/2}$ but the definition of $\chi$ is hardly general since it can lead to $K\leq 0$ for high values of $\dfrac{\Delta T_{L}}{\Delta T_{w}}$ which would be unphysical.
+\end{remark*}
 
 
 \subsection{Analytic Approach of Bubble Growth in a Linear Thermal Boundary Layer}
@@ -1222,7 +1242,7 @@ T_{L}\parth{y}=T_{w}+\frac{T_{L,bulk}-T_{w}}{\delta} y
 Assuming that the vapor stays at a temperature close to $T_{sat}$, the radial component of the temperature gradient at the bubble's interface can be expressed as:
 
 \begin{align}
-\grad{T} \cdot \vect{e_{r}} = \dpartial{T}{r}\parth{R, \theta, \phi} \approx\frac{T_{\L}(y)-T_{sat}}{\delta_{b}}
+\grad{T} \cdot \vect{e_{r}} = \dpartial{T}{r}\parth{R, \vartheta, \varphi} \approx\frac{T_{L}(y)-T_{sat}}{\delta_{b}}
 \end{align}
 
 \npar
@@ -1232,11 +1252,11 @@ Assuming that the vapor stays at a temperature close to $T_{sat}$, the radial co
 Applying Fourier's law to the liquid close to the bubble to estimate the heat flux density vector $\vect{j_{Q}}=-\lambda_{L} \grad{T}$. Between $t$ and $t+dt$ the heat exchanged through $d^{2}S$ is:
 
 \begin{align}
-d^{2}Q_{b} \approx -\frac{\lambda_{L}}{\delta_{b}}\crocht{ \Delta T_{w}R^{2}\sin{\theta}-\frac{\Delta T_{w}+\Delta T_{L}}{\delta}R^{3}\crocht{ \cos{\theta}-\cos{\Theta} } \sin{\theta} } \mathrm{d}\theta \mathrm{d}\varphi
+d^{2}Q_{b} \approx -\frac{\lambda_{L}}{\delta_{b}}\crocht{ \Delta T_{w}R^{2}\sin{\vartheta}-\frac{\Delta T_{w}+\Delta T_{L}}{\delta}R^{3}\crocht{ \cos{\vartheta}-\cos{\varTheta} } \sin{\theta} } \mathrm{d}\vartheta \mathrm{d}\varphi
 \end{align}
 
 \npar
-Then assuming that $\delta_{b}$ is constant between $t$ and $t+dt$, the total heat flux can be expressed:
+Then assuming that $\delta_{b}$ is constant between $t$ and $t+dt$, the total heat flux can be expressed by integrating over the bubble's surface:
 
 \begin{align}
 Q_{b}=\frac{2\pi \lambda_{L} R^{2}}{\delta_{b}} \parth{1+\cos{\theta} } \crocht{\Delta T_{w} - \frac{R}{2\delta}\parth{ \Delta T_{w} + \Delta T_{L} }  \parth{1 + \cos {\theta}} }
@@ -1368,11 +1388,12 @@ Those results are encouraging and validate the modeling of $\delta_{b}$ with the
 
 \subsection{Comparison with Experimental Measurements}
 
+\subsubsection{Low Pressure Measurements}
 To further evaluate the proposed model, we compare the result with experimental measurements of bubble radius in vertical boiling of water at atmospheric pressure by Maity \cite{maity_effect_2000}. The choice of $\delta$ is adapted to each case and $\theta=45\degree$ is the average measured contact angle in the experiments.
 
 In addition, we also plot the predictions by the heat diffusion solution $R=K\Ja_{w}\sqrt{\eta_{L}t}$ with $K=\dfrac{2b}{\sqrt{\pi}}$ and $1 \leq b \leq \sqrt{\pi}$. A solution with an optimized value of $K$ is also represented. The models of Mazzocco and Yoo \etal are also compared. 
 
-The results are presented on Figure \ref{fig:growth_comp_Maity}.
+The results are presented on Figure \ref{fig:growth_comp_maity}.
 
 \begin{figure}[h!]
 \subfloat[$G_{L}=0~ \debm$, $\Delta T_{w}=5.9K$, $\Delta T_{L}=0.7K$]{
@@ -1401,15 +1422,82 @@ We can note that the optimal value of $\delta$ decreases as liquid mass flux inc
 
 \npar
 
-On the other hand, the fitted value of $K$ is often lower than the lower bound $\dfrac{2}{\sqrt{\pi}}$ suggested by Zuber \cite{zuber_dynamics_1961}. This is a consequence of the subcooled flow which deviates from the uniformly superheated liquid from which those values were derived. This fitted profile manages to capture some stages of bubble growth but can't predict the asymptotic behavior where bubble reaches a quasi-constant radius.
+On the other hand, the fitted value of $K$ is often smaller than the lower bound $\dfrac{2}{\sqrt{\pi}}$ suggested by Zuber \cite{zuber_dynamics_1961}. This is a consequence of the subcooled flow which deviates from the uniformly superheated liquid from which those values were derived. This fitted profile manages to capture some stages of bubble growth but can not predict the asymptotic behavior where bubble reaches a quasi-constant radius.
+
+We see that the growth constant computed by Mazzocco \etal (Eq. \ref{eq:Kgrowth_mazzocco}) produce slightly better results compared to the analytic values of $K$ but can lead to underestimations as for the pool boiling case.
 
 \npar
 
-Finally, we see that the model of Yoo \etal systematically underestimates the bubble radius. We suspect this could come from the assumption that half of the bubble faces subcooled liquid ($f=0.5$, Eq. \ref{eq:growth_yoo}), which is hardly reasonable especially at early growth stages.
+Finally, we see that the model of Yoo \etal underestimates the bubble radius. We suspect this could come from the assumption considering that half of the bubble faces subcooled liquid ($f=0.5$, Eq. \ref{eq:growth_yoo}), which is hardly reasonable especially at early growth stages.
 
 
 
+\subsubsection{High Pressure Measurements}
 
+The model is now compared to higher pressure measurement (20 bar and 40 bar) for water boiling by Kossolapov \cite{kossolapov_experimental_2021}. All the experiments are conducted with $10$K of subcooling, and we take a contact angle of $\theta=80\degree$ (typical for water and ITO). The range of the measured diameters over time are represented since Kossolapov observed the growth of thousands of bubbles over the heater surface. Results are presented on Figure \ref{fig:comp_growth_koss}. We could not compare the model of Mazzocco because the formulation of Eq. $\ref{eq:Kgrowth_mazzocco}$ yielded negative growth constant.
+
+
+
+\begin{figure}[h!]
+\begin{center}
+\subfloat[$P=20$ bar, $G_{L}=500\ \debm$, $\phi_{w} = 0.178$~MW/m\up{2}]{
+\includegraphics[width=0.5\linewidth]{img/growth/Koss_P20_G500.pdf}
+} 
+\subfloat[$P=40$ bar, $G_{L}=500\ \debm$, $\phi_{w} = 0.291$~MW/m\up{2}]{
+\includegraphics[width=0.5\linewidth]{img/growth/Koss_P40_G500.pdf}
+}
+\\
+\subfloat[$P=20$ bar, $G_{L}=994\ \debm$, $\phi_{w} = 0.495$~MW/m\up{2}]{
+\includegraphics[width=0.5\linewidth]{img/growth/Koss_P20_G1000.pdf}
+} 
+\subfloat[$P=40$ bar, $G_{L}=994\ \debm$, $\phi_{w} = 0.361$~MW/m\up{2}]{
+\includegraphics[width=0.5\linewidth]{img/growth/Koss_P40_G1000.pdf}
+}
+\\
+\subfloat[$P=20$ bar, $G_{L}=1504\ \debm$, $\phi_{w} = 0.487$~MW/m\up{2}]{
+\includegraphics[width=0.5\linewidth]{img/growth/Koss_P20_G1500.pdf}
+} 
+\subfloat[$P=40$ bar, $G=1504\ \debm$, $\phi_{w} = 0.613$~MW/m\up{2}]{
+\includegraphics[width=0.5\linewidth]{img/growth/Koss_P40_G1500.pdf}
+}
+
+
+	\caption{Comparison with experimental measurements of Kossolapov \cite{kossolapov_experimental_2021}.}
+	\label{fig:comp_growth_koss}
+\end{center}
+\end{figure}
+
+
+The values of $\delta$ needed to match the experimental measurements using Eq. \ref{eq:exp_growth} are much smaller than the low pressure case, with $\delta \leq 0.1$ mm. The higher mass fluxes in Kossolapov measurements could explain lower values of $\delta$, nevertheless they do not follow a particular trend with $G_{L}$.
+
+\npar
+
+Contrary to low pressure measurements, the Plesset \& Zwick solution with $\dfrac{2}{sqrt{\pi}} \leq K \leq \dfrac{2\sqrt{3}}{\sqrt{\pi}}$ provides an acceptable estimation of the bubble radius. This is probably due to the smaller bubble size in pressurized boiling (roughly 10 times smaller compared to atmospheric pressure).
+
+\begin{remark*}{}
+The non-dimensional distances associated to the bubble radius $R^{+}=\dfrac{R u_{\tau}}{\nu_{L}}$ rise up to 40 for Maity cases and 20 for Kossolapov cases while having way larger liquid mass fluxes. This supports the fact that bubbles are higher pressure are less likely to be impacted by subcooled liquid, spending most of their lifetime between the viscous and buffer layer.
+\end{remark*}
+
+
+\subsection{Conclusions on Bubble Growth Modeling}
+
+\begin{itemize}
+
+\item Recent experimental and numerical research have shown that the presence of a liquid microlayer contributing to the bubble growth strongly depends on the boiling conditions. In particular, disappearance of this microlayer ate pressures higher than $3$ bar have been observed by Kossolapov \cite{kossolapov_experimental_2021}. This microlayer should thus not be systematically taken into account.
+
+\item A new formulation derived from the heat diffusion in a linear temperature profile has been proposed (Eq. \ref{eq:exp_growth}). Provided a correct value of the thermal boundary thickness $\delta$, validation both on DNS and low pressure measurements shows that the model better captures the growth regime of bubbles in subcooled boiling compared to traditional models. However, this improvement appears limited at higher pressure when bubbles are smaller, where the Plesset \& Zwick treatment also proposes an acceptable estimation of the bubble growth.
+
+\item Mechanistic models that includes several heat transfer mechanisms require a certain number of empirical closures that limits the model generality, making them unsuitable for application to any boiling conditions.
+
+\item Whatever the conditions, a proper choice of the growth constant $K$ in the $R=K\Ja_{w} \sqrt{\eta_{L}t}$ solution for a uniform liquid superheat can yield reasonable results. Moreover, it presents interesting mathematical properties such as the time independence of the products $R \dot{R}$ and $R^{3}\ddot{R}$ that appear in the bubble force balance (Eq. \ref{eq:bdf_y}).
+
+\end{itemize}
+
+All things considered, it seems that the proposed new growth law of Eq. \ref{eq:exp_growth} can be of greater interest for low pressure boiling where larger bubbles are more impacted by the bulk flow. Although it provides finer physical representation of bubble radius evolution, its application is limited by the estimation of $\delta$ to which the model is strongly sensitive. \textbf{On the other hand, less precise yet acceptable predictions of bubble growth are achieved using the $t^{1/2}$ law with a growth constant $K$ close to unity.}
+
+
+
+\newpage
 
 
 \section{Departure by Sliding}\label{sec:departure}

@@ -81,7 +81,7 @@
 \coordinate (T) at ($(O) + (0,1.5)$) ; %bubble top
 \draw[dashed] (O) -- (T);
 \coordinate(Tp) at ($(O) + (0, 1.0)$);%start for angle Theta
-\draw[densely dotted, ->, >=stealth] (Tp) arc(90:0-45:1) node[midway, right] {$\Theta$};
+\draw[densely dotted, ->, >=stealth] (Tp) arc(90:0-45:1) node[midway, right] {$\varTheta$};
 
 %Hauteur coupe
 \coordinate (B) at ($(O) + (0,{-1.5*cos(45)})$);
@@ -123,7 +123,7 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \coordinate (M) at ($(O) + (25:1.5)$);
 \draw (M) node[left, black]{$M$};
 \draw[->, black, thick] (M)--++(25:0.45) node[right,black]{$\vect{e_{r}}$};
-\draw[->,black, thick] (M)--++(25-90:0.45) node[right,black]{$\vect{e_{\theta}}$};
+\draw[->,black, thick] (M)--++(25-90:0.45) node[right,black]{$\vect{e_{\vartheta}}$};
 \draw[black, thick] ($(M)+(0:0.6)$) node{$\otimes$} node[right,black]{$\vect{e_{\varphi}}$};
 \draw (M) node{$\bullet$};
 
