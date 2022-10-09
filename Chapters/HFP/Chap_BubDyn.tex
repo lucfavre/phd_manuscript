@@ -1056,6 +1056,8 @@ A=\sqrt{b \frac{h_{LV}\rho_{V}\parth{T_{L}-T_{V}}}{\rho_{L}T_{sat}} } \ \text{an
 \end{equation}
 with $b=\dfrac{2}{3}$ for a bubble in an infinite liquid medium and $b=\dfrac{\pi}{7}$ for a spherical bubble laying on a wall.
 
+\npar
+
 So that when $t^{+} \ll 1$, $R\parth{t} = At$ (inertial growth) and when $t^{+} \gg 1$, $R\parth{t}=B\sqrt{t}$ (heat diffusion growth). A general solution asymptotically covering the two regimes has been derives by Mikic \& Rohsenhow:
 
 \begin{equation}
@@ -1085,7 +1087,7 @@ where $\mathcal{F}$ is implicitly defined by assuming $\dfrac{\rho_{L}}{\rho_{V}
 \begin{equation}
 \mathcal{F}\parth{\Ja}=\frac{F}{2\Ja^{2}},\ \text{and}\ \Ja = F\exp{\frac{3}{2}F} \int_{1}^{\infty}\frac{1}{x^{2}}\exp{-\frac{F}{x}-\frac{F}{2}x^{2}}\mathrm{d}x
 \end{equation}
-which falls back to $\mathcal{F}\parth{\Ja} \to \frac{\sqrt{3}}{\sqrt{\pi}}$ when $\Ja \gg 1$.
+which falls back to $\mathcal{F}\parth{\Ja} \to \dfrac{\sqrt{3}}{\sqrt{\pi}}$ when $\Ja \gg 1$.
 
 \npar
 The general formulation of $\mathcal{F}$ has been verified by Legendre \etal \cite{legendre_thermal_1998} with Direct Numerical Simulation of spherical bubble growth in a quiescent superheated liquid.
@@ -1116,10 +1118,11 @@ In addition to the traditional heat diffusion from superheated liquid to the bub
 
 Parallel to the heat diffusion approach, some authors computed the bubble growth by considering a pure microlayer evaporation regime. A well-known model of this type has been derived by Cooper \& Lloyd in 1969 \cite{cooper_lloyd_1969} and considers the wall thermal properties so that:
 
-\begin{itemize}
-\item $R\parth{t} = 2.5 \dfrac{\Ja}{\sqrt{\Pr_{L}}}\sqrt{\eta_{L}t}$ if $\lambda_{w} \gg \lambda_{L}$ ;
-\item $R\parth{t} = \dfrac{2}{\sqrt{\pi}} \sqrt{\dfrac{\lambda_{w}\rho_{w}c_{p,w}}{\lambda_{L}\rho_{L}c_{p,L}}}$ if $\lambda_{w} \ll \lambda_{L}$
-\end{itemize}
+\begin{align} 
+R\parth{t} =& 2.5 \dfrac{\Ja}{\sqrt{\Pr_{L}}}\sqrt{\eta_{L}t}\ \text{if}\ \lambda_{w} \gg \lambda_{L} \\
+%
+R\parth{t} =& \dfrac{2}{\sqrt{\pi}} \sqrt{\dfrac{\lambda_{w}\rho_{w}c_{p,w}}{\lambda_{L}\rho_{L}c_{p,L}}}\ \text{if}\ \lambda_{w} \ll \lambda_{L}
+\end{align}
 
 \begin{remark*}{}
 The parameter $ \sqrt{\dfrac{\lambda_{w}\rho_{w}c_{p,w}}{\lambda_{L}\rho_{L}c_{p,L}}}$ that accounts for the wall properties is the same used in the correlation of \"Unal for the maximum bubble diameter (Eq. \ref{eq:dlo_unal}).
@@ -1159,6 +1162,7 @@ To our knowledge, such models always consider empirical or fitted parameters. Fo
 
 \begin{align}
  \dtime{R} = &\underbrace{ \gamma \Pr_{L}^{-0.5}\Ja_{w} \sqrt{\dfrac{\eta_{L}}{t}} \frac{A_{ML}}{A_{b}} }_{\text{Microlayer}} + \underbrace{\parth{1-f} \frac{b}{\sqrt{\pi}} \Ja_{w} \sqrt{\dfrac{\eta_{L}}{t}}}_{\text{Superheated liquid}} - \underbrace{\frac{f\Delta T_{L}C}{1-\rho_{V}/\rho_{L}}R}_{\text{Subcooled convection}}
+label{eq:growth_yoo}
 \end{align}
 where $\gamma = \sqrt{\dfrac{\lambda_{w}\rho_{w}c_{p,w}}{\lambda_{L}\rho_{L}c_{p,L}}}$, $\dfrac{A_{ML}}{A_{b}}=1.22 \gamma^{-0.79}\exp{-0.204\Ja_{w}}$, $f=0.5$, $b=0.24$ and $C=0.1$.
 
@@ -1364,7 +1368,7 @@ Those results are encouraging and validate the modeling of $\delta_{b}$ with the
 
 \subsection{Comparison with Experimental Measurements}
 
-To further evaluate the proposed model, we compare the result with experimental measurements of bubble radius in vertical boiling of water at atmospheric pressure by Maity \cite{maity_effect_2000}. The choice of $\delta$ is adapted to each case in order to observe the behavior of the model.
+To further evaluate the proposed model, we compare the result with experimental measurements of bubble radius in vertical boiling of water at atmospheric pressure by Maity \cite{maity_effect_2000}. The choice of $\delta$ is adapted to each case and $\theta=45\degree$ is the average measured contact angle in the experiments.
 
 In addition, we also plot the predictions by the heat diffusion solution $R=K\Ja_{w}\sqrt{\eta_{L}t}$ with $K=\dfrac{2b}{\sqrt{\pi}}$ and $1 \leq b \leq \sqrt{\pi}$. A solution with an optimized value of $K$ is also represented. The models of Mazzocco and Yoo \etal are also compared. 
 
@@ -1389,7 +1393,11 @@ The results are presented on Figure \ref{fig:growth_comp_Maity}.
 \end{figure}
 
 
-The model globally reproduces the experimental results better than the other models. In particular, the progressively damped growth rate when the bubble start to face colder liquid seems to correctly captures the nonlinear experimental growth. Values of $\delta$ needed to produce those results were between $0.85$ mm and $1.55$mm, which reasonably agrees with measurements of Maity in his experiment for horizontal flow giving $\delta$ roughly between $1$ mm and $1.5$ mm.
+The new formulation globally reproduces the experimental results better than the other models. In particular, the progressively damped growth rate when the bubble start to face colder liquid seems to correctly captures the nonlinear experimental growth. Values of $\delta$ needed to produce those results were between $0.85$ mm and $1.55$mm, which reasonably agrees with measurements of Maity in his experiment for horizontal flow giving $\delta$ roughly between $1$ mm and $1.5$ mm.
+
+\begin{remark*}{}
+We can note that the optimal value of $\delta$ decreases as liquid mass flux increases, which is physically coherent as the thermal boundary layer will diminish in size with the Reynolds number.
+\end{remark*}
 
 \npar
 
@@ -1397,7 +1405,7 @@ On the other hand, the fitted value of $K$ is often lower than the lower bound $
 
 \npar
 
-Finally, we see that the model of Yoo \etal systematically underestimates the bubble radius. We suspect this could come from the assumption that half of the bubble faces subcooled liquid, which is hardly reasonable especially at early growth stages.
+Finally, we see that the model of Yoo \etal systematically underestimates the bubble radius. We suspect this could come from the assumption that half of the bubble faces subcooled liquid ($f=0.5$, Eq. \ref{eq:growth_yoo}), which is hardly reasonable especially at early growth stages.
 
 
 
