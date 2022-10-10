@@ -519,6 +519,7 @@ We can see that $f_{C,x} \to 0$ and $f_{C,y} \to 2\dfrac{r_{w}}{R}\sin{\theta}$ 
 
 
 \subsection{Drag and Lift Forces}
+\label{subsec:drag_lift}
 
 
 The external liquid flow over the bubble induces the well-known drag and lift forces, acting respectively in the flow direction and perpendicular to the flow. They are usually expressed using associated coefficients $C_{D}$ and $C_{L}$ defined by:
@@ -1976,15 +1977,15 @@ Results are displayed on Figure \ref{fig:slide_maity}. The model seems to fairly
 \begin{figure}[h!]
 \begin{center}
 \subfloat[$\Delta T_{w}=5.0$\degree C, $G_{L}=73.8~\debm$]{
-\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/maity_V0p077.pdf}
+\includegraphics[width=0.85\linewidth]{img/bub_dyn/sliding/maity_V0p077.pdf}
 } 
 \\
 \subfloat[$\Delta T_{w}=5.9$\degree C, $G_{L}=143.8~\debm$]{
-\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/maity_V0p15.pdf}
+\includegraphics[width=0.85\linewidth]{img/bub_dyn/sliding/maity_V0p15.pdf}
 }
 \\
 \subfloat[$\Delta T_{w}=5.9$\degree C, $G_{L}=239.6~\debm$]{
-\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/maity_V0p25.pdf}
+\includegraphics[width=0.85\linewidth]{img/bub_dyn/sliding/maity_V0p25.pdf}
 }
 	\caption{Bubble sliding velocity predictions on Maity cases}
 	\label{fig:slide_maity}
@@ -2016,15 +2017,15 @@ In his work, Kossolapov \cite{kossolapov_experimental_2021} conducted measuremen
 \begin{figure}[h!]
 \begin{center}
 \subfloat[$\phi_{w}=0.178$~MW/m\up{2}, $\Delta T_{w}=12.6$K, $G_{L}=500~\debm$]{
-\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/Koss_P20_G500.pdf}
+\includegraphics[width=0.85\linewidth]{img/bub_dyn/sliding/Koss_P20_G500.pdf}
 } 
 \\
 \subfloat[$\phi_{w}=0.495$~MW/m\up{2}, $\Delta T_{w}=16.1$K, $G_{L}=994~\debm$]{
-\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/Koss_P20_G1000.pdf}
+\includegraphics[width=0.85\linewidth]{img/bub_dyn/sliding/Koss_P20_G1000.pdf}
 } 
 \\
 \subfloat[$\phi_{w}=0.487$~MW/m\up{2}, $\Delta T_{w}=16.2$K, $G_{L}=1504~\debm$]{
-\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/Koss_P20_G1500.pdf}
+\includegraphics[width=0.85\linewidth]{img/bub_dyn/sliding/Koss_P20_G1500.pdf}
 } 
 	\caption{Bubble sliding length predictions on Kossolapov cases - $P=20$ bar}
 	\label{fig:slide_koss_20bar}	
@@ -2036,15 +2037,15 @@ In his work, Kossolapov \cite{kossolapov_experimental_2021} conducted measuremen
 \begin{figure}[h!]
 \begin{center}
 \subfloat[$\phi_{w}=0.291$~MW/m\up{2}, $\Delta T_{w}=10.1$K, $G_{L}=500~\debm$]{
-\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/Koss_P40_G500.pdf}
+\includegraphics[width=0.85\linewidth]{img/bub_dyn/sliding/Koss_P40_G500.pdf}
 } 
 \\
 \subfloat[$\phi_{w}=0.361$~MW/m\up{2}, $\Delta T_{w}=10.8$K, $G_{L}=994~\debm$]{
-\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/Koss_P40_G1000.pdf}
+\includegraphics[width=0.85\linewidth]{img/bub_dyn/sliding/Koss_P40_G1000.pdf}
 } 
 \\
 \subfloat[$\phi_{w}=0.613$~MW/m\up{2}, $\Delta T_{w}=12.2$K, $G_{L}=1504~\debm$]{
-\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/Koss_P40_G1500.pdf}
+\includegraphics[width=0.85\linewidth]{img/bub_dyn/sliding/Koss_P40_G1500.pdf}
 } 
 	\caption{Bubble sliding length predictions on Kossolapov cases - $P=40$ bar}	
 	\label{fig:slide_koss_40bar}
@@ -2068,7 +2069,7 @@ We see that bubbles are rapidly reaching sliding velocities between 80\% and 95\
 In order to identify the main accelerating forces, we compare the amplitude of the forces during the sliding phase for one low pressure case of Maity and one high pressure case of Kossolapov (Figure \ref{fig:forces_sliding}).
 
 
-\begin{figure}[!ht]
+\begin{figure}[h!]
 \begin{center}
 \subfloat[Maity : $\Delta T_{w}=5.9 \degree$ C, $G_{L}=239.6~\debm$]{
 \includegraphics[width=0.5\linewidth]{img/bub_dyn/sliding/maity_V0p25_forces.pdf}
@@ -2092,7 +2093,52 @@ It appears that at high pressure and liquid velocity, the drag force is the main
 This comparison highlights the fact that the proposed model is able to represent different forces hierarchy depending on the flow conditions and to acceptably predict the associated bubble sliding velocity, which is an encouraging point regarding its generality.
 
 
+\clearpage
+
 \section{Bubble Lift-Off}
+
+The question of lift-off for a single bubble in vertical boiling is trickier than for horizontal boiling. Indeed, in horizontal boiling, lift-off is ensured thanks to the buoyancy force that will continuously increase as the bubble grows. It can also be promoted by the lift force if the bubble slides slower than the liquid. This facilitates the identification of the moment when bubble leaves the surface (Figure \ref{fig:exp_lift_hor_maity}).
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\linewidth]{img/bub_dyn/lift-off/lift_exp_hor_maity.PNG}
+\caption{Visualization of bubble lift-off in horizontal boiling conducted by and adapted from Maity \cite{maity_effect_2000}. The detachment the the bubble base from the surface is clear in the last frame.} 
+\label{fig:exp_lift_hor_maity}
+\end{figure}
+
+\npar
+
+However, in vertical boiling, the lift-off from the surface only results of the competition between the added mass force and lift force (capillary force and contact pressure compensating each other for a truncated sphere). The added mass force keeps the bubble attached and the lift force which can either promote lift-off or push the bubble against the wall depending on the value of the lift coefficient $C_{L}$. As seen in Subsection \ref{subsec:drag_lift}, the lift coefficient can become negative when reaching negative relative velocity $U_{rel}$, yielding negative non-dimensional shear rates $\Sr$ in Eq. \ref{eq:lift_shi}. In this case, the force balance perpendicular to the wall (Eq. \ref{eq:bdf_y}) will never become positive and thus never predict bubble lift-off using criterion based on the force balance sign.
+
+In addition, those two forces are difficult to precisely evaluate since they rely on complex phenomena such as the bubble growth ($R$, $\dot{R}$, $\ddot{R}$) and the fine hydrodynamics of a bubble attached to a wall. A small error on the evaluation of one of those forces can therefore lead to erroneous predictions of the lift-off phenomenon.
+
+\npar
+
+On the experimental side, different behavior for boiling bubbles in vertical boiling have been observed. Single bubble experiments such as those of Maity \cite{maity_effect_2000} and Situ \cite{situ_bubble_2005} observed bubble lift-off for single bubble at atmospheric pressure as shown on Figure \ref{fig:exp_lift}.
+
+
+\begin{figure}[h!]
+\begin{center}
+\subfloat[Lift-off observeed in Maity experiment \cite{maity_effect_2000}]{
+\includegraphics[width=0.7\linewidth]{img/bub_dyn/lift-off/lift_exp_maity.PNG}
+}
+\\
+\subfloat[Lift-off observeed in Situ experiment \cite{situ_bubble_2005}]{
+\includegraphics[width=0.7\linewidth]{img/bub_dyn/lift-off/lift_exp_situ.PNG}
+}
+\end{center}
+\caption{Visualization of bubble lift-off in vertical boiling. The moment when bubble leaves the surface appears less clearly than for horizontal boiling.} 
+\label{fig:exp_lift}
+\end{figure}
+
+\npar
+
+Although bubble lift-off is observed for those single bubble cases, the exact moment of lift-off 
+
+
+
+Contrary to those observations
+
 
 FORCE BALANCE : FAM + FLIFT
 
