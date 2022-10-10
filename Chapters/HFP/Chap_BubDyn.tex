@@ -347,6 +347,7 @@ Author (Year) & Correlation\\
 \npar
 
 \section{Bubble Force Balance in Vertical Flow Boiling}
+\label{sec:bub_forces}
 
 \subsection{Introduction}
 
@@ -1474,7 +1475,7 @@ The values of $\delta$ needed to match the experimental measurements using Eq. \
 
 \npar
 
-Contrary to low pressure measurements, the Plesset \& Zwick solution with $\dfrac{2}{sqrt{\pi}} \leq K \leq \dfrac{2\sqrt{3}}{\sqrt{\pi}}$ provides an acceptable estimation of the bubble radius. This is probably due to the smaller bubble size in pressurized boiling (roughly 10 times smaller compared to atmospheric pressure).
+Contrary to low pressure measurements, the Plesset \& Zwick solution with $\dfrac{2}{\sqrt{\pi}} \leq K \leq \dfrac{2\sqrt{3}}{\sqrt{\pi}}$ provides an acceptable estimation of the bubble radius. This is probably due to the smaller bubble size in pressurized boiling (roughly 10 times smaller compared to atmospheric pressure).
 
 \begin{remark*}{}
 The non-dimensional distances associated to the bubble radius $R^{+}=\dfrac{R u_{\tau}}{\nu_{L}}$ rise up to 40 for Maity cases and 20 for Kossolapov cases while having way larger liquid mass fluxes. This supports the fact that bubbles are higher pressure are less likely to be impacted by subcooled liquid, spending most of their lifetime between the viscous and buffer layer.
@@ -1788,10 +1789,11 @@ On Figure \ref{fig:pred_nosensi}, we show the predictions obtained with the prop
 \includegraphics[width=0.6\textwidth]{img/bub_dyn/pred_mazzocco.pdf}
 }
 
-\caption{Predicted bubble departure diameters}
+\caption{Predicted bubble departure diameters. $\pm 50\%$ error bars are indicated.}
 \label{fig:pred_nosensi}
 \end{figure}
 
+\npar
 
 
 The model have an acceptable trend on some experimental sets, but strong overestimation occur on the cases of Sugrue. Moreover, we observe significant underestimations on the data of Ren at 2 bar and Thorncroft.
@@ -1857,7 +1859,7 @@ Therefore, using modified values of $\theta$ and $\dtheta$ among experimental da
 Author & $\theta$ [$\degree$] & $\dtheta$ [$\degree$]\\
 \hline
 \\
-Thorncroft & 20 & 14 \\
+Thorncroft & 21 & 14 \\
 \\
 Maity & 45 & 10  \\
 \\
@@ -1867,7 +1869,7 @@ Sugrue & 20 & 15 \\
 \\
 Guan & 47.5 & 17.5 \\
 \\
-Ren (2 bar) & 45.5 & 8.5 \\
+Ren (2 bar) & 45.5 & 7.5 \\
 \\
 Ren (3 bar) & 37.5 & 3.5 \\
 \\
@@ -1911,23 +1913,21 @@ The proposed model achieves an overall better predictive capability even when ex
 Author & Mazzocco & Present model\\
 \hline
 \\
-Thorncroft & 4874\% & 60.6\% \\
+Thorncroft & 4874\% & 46.2\% \\
 \\
 Maity & 39.7\% & 13.8\%  \\
 \\
-Chen & 83.8\% & 69.9\% \\
+Chen & 83.8\% & 73.6\% \\
 \\
-Sugrue & 9.73\% & 26.22\% \\
+Sugrue & 9.73\% & 21\% \\
 \\
-Guan & 25.5\% & 36.8\% \\
+Guan & 25.5\% & 44.5\% \\
 \\
-Ren & 40.32\% & 44.1\% \\
+Ren & 40.32\% & 47\% \\
 \\
-Kossolapov & 78.3\% & 24.1\% \\
+Kossolapov & 78.3\% & 24.2\% \\
 \\
-Total & 442\% & 43\%\\
-\\
-Total \newline (without Thorncroft) & {46.58\%} & {41.4\%}\\
+Total \newline (without Thorncroft) & {46.58\%} & {43.3\%}\\
 \hline
 \end{tabular}
 \caption{Average relative error reached by the models.}
@@ -1937,7 +1937,7 @@ Total \newline (without Thorncroft) & {46.58\%} & {41.4\%}\\
 \npar
 
 
-The approach demonstrated the importance and the strong influence of the contact angle and hysteresis. A small change of their value (staying in the uncertainty range of $5\degree$) allowed to reach reasonable predictions over a large range of bubble departure diameters with the model of this paper, using a reduced number of empirical parameters.
+The approach demonstrated the importance and the strong influence of the contact angle and hysteresis. A small change of their value (staying in the uncertainty range of $5\degree$) allowed to reach reasonable predictions over a large range of bubble departure diameters with the proposed model, using a reduced number of empirical parameters.
 
 
 \section{Sliding phase}\label{sliding}
@@ -1945,7 +1945,7 @@ The approach demonstrated the importance and the strong influence of the contact
 
 \subsection{Modeling}
 
-After departure, bubbles slide over a distance $l_{sl}$ which scales the impact of the sliding phenomenon over the wall heat transfer. Achieving good prediction of bubble sliding velocity is then important if one wishes to correctly quantify its impact. Following the force balance framework presented in Section \ref{sec:forces}, we can write Newton's second law parallel to the wall for the sliding bubble.
+After departure, bubbles slide over a distance $l_{sl}$ which scales the impact of the sliding phenomenon over the wall heat transfer. Achieving good prediction of bubble sliding velocity is then important if one wishes to correctly quantify its impact. Following the force balance framework presented in Section \ref{sec:bub_forces}, we can write Newton's second law parallel to the wall for the sliding bubble.
 
 
 \begin{align}
@@ -1963,12 +1963,11 @@ This equation can be re-written to express the bubble acceleration.
 \label{eq:ub_dot}
 \end{align}
 
-Then, we numerically solve this equation from the moment when $R\geq R_{d}$ using a first order Euler scheme for a duration close to the experimental sliding time. Next sections compare obtained results against low and high pressure data. To assess the validity of Eq \ref{eq:ub_dot}, we modify the growth constant $K$ in order to roughly match experimental radius measurements. The goal is to verify if the force balance allows a good prediction of bubble velocity provided a correct bubble growth. The following subsections compare obtained results against low and high pressure data.
-
+Then, we numerically solve this equation from the moment when $R\geq R_{d}$ using a first order Euler scheme for a duration close to the experimental sliding time. To assess the validity of Eq \ref{eq:ub_dot}, we modify the growth constant $K$ in order to roughly match experimental radius measurements. The goal is to verify if the force balance allows a good prediction of bubble velocity provided a correct bubble growth.  Next sections compare obtained results against low and high pressure data.
 
 \subsection{Low Pressure Sliding}
 
-Maity \cite{maity_effect_2000} provided simultaneous measurements of bubble radius and velocity over time for three liquid mass fluxes in vertical boiling. To assess the validity of Eq.~\ref{eq:ub_dot}, we modify the growth constant $K$ in order to roughly match experimental radius measurements. The goal is to verify if the force balance allows a good prediction of bubble velocity provided a correct bubble growth. The contact angles were kept the same as in \ref{subsec:Dd_pred} since Maity provided average values over the bubble lifetime.
+Maity \cite{maity_effect_2000} provided simultaneous measurements of bubble radius and velocity over time in vertical boiling for three liquid mass fluxes near saturation conditions. The contact angles were kept the same as in \ref{subsec:Dd_pred} since Maity provided average values over the bubble lifetime.
 
 \npar
 
@@ -1977,15 +1976,15 @@ Results are displayed on Figure \ref{fig:slide_maity}. The model seems to fairly
 \begin{figure}[h!]
 \begin{center}
 \subfloat[$\Delta T_{w}=5.0$\degree C, $G_{L}=73.8~\debm$]{
-\includegraphics[width=0.8\linewidth]{img/bub_dyn/sliding/maity_V0p077.pdf}
+\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/maity_V0p077.pdf}
 } 
 \\
 \subfloat[$\Delta T_{w}=5.9$\degree C, $G_{L}=143.8~\debm$]{
-\includegraphics[width=0.8\linewidth]{img/bub_dyn/sliding/maity_V0p15.pdf}
+\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/maity_V0p15.pdf}
 }
 \\
 \subfloat[$\Delta T_{w}=5.9$\degree C, $G_{L}=239.6~\debm$]{
-\includegraphics[width=0.8\linewidth]{img/bub_dyn/sliding/maity_V0p25.pdf}
+\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/maity_V0p25.pdf}
 }
 	\caption{Bubble sliding velocity predictions on Maity cases}
 	\label{fig:slide_maity}
@@ -2000,6 +1999,9 @@ The biggest discrepancy is observed for the case at $G_{L}=143.8~ \debm$. The sl
 
 The $G_{L}=239.6~ \debm$ is well predicted regarding the velocity. However, the growth profile was difficult to match since measurements exhibit significant changes in growth regime after departure, which is probably due to the bubble being large enough to be impacted by the bulk flow. We can note that values of $K$ between 0.5 and 1 were used to better fit the bubble radius time profile.
 
+\npar
+
+Regarding the relative velocity between the bubble and the surrounding liquid, the ratio $\dfrac{U_{b}}{U_{L}}$ greatly overcomes 1 which means the bubble slides much faster than the liquid. This is a consequence of both the low values of $G_{L}$ along with the large bubble sizes inducing a great acceleration by the buoyancy force.
 
 
 
@@ -2013,16 +2015,16 @@ In his work, Kossolapov \cite{kossolapov_experimental_2021} conducted measuremen
 
 \begin{figure}[h!]
 \begin{center}
-\subfloat[$\phi_{w}=0.178$~MW/m\up{2}, $G_{L}=500~\debm$]{
-\includegraphics[width=0.8\linewidth]{img/bub_dyn/sliding/Koss_P20_G500.pdf}
+\subfloat[$\phi_{w}=0.178$~MW/m\up{2}, $\Delta T_{w}=12.6$K, $G_{L}=500~\debm$]{
+\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/Koss_P20_G500.pdf}
 } 
 \\
-\subfloat[$\phi_{w}=0.495$~MW/m\up{2}, $G_{L}=994~\debm$]{
-\includegraphics[width=0.8\linewidth]{img/bub_dyn/sliding/Koss_P20_G1000.pdf}
+\subfloat[$\phi_{w}=0.495$~MW/m\up{2}, $\Delta T_{w}=16.1$K, $G_{L}=994~\debm$]{
+\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/Koss_P20_G1000.pdf}
 } 
 \\
-\subfloat[$\phi_{w}=0.487$~MW/m\up{2}, $G_{L}=1504~\debm$]{
-\includegraphics[width=0.8\linewidth]{img/bub_dyn/sliding/Koss_P20_G1500.pdf}
+\subfloat[$\phi_{w}=0.487$~MW/m\up{2}, $\Delta T_{w}=16.2$K, $G_{L}=1504~\debm$]{
+\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/Koss_P20_G1500.pdf}
 } 
 	\caption{Bubble sliding length predictions on Kossolapov cases - $P=20$ bar}
 	\label{fig:slide_koss_20bar}	
@@ -2033,16 +2035,16 @@ In his work, Kossolapov \cite{kossolapov_experimental_2021} conducted measuremen
 
 \begin{figure}[h!]
 \begin{center}
-\subfloat[$\phi_{w}=0.291$~MW/m\up{2}, $G_{L}=500~\debm$]{
-\includegraphics[width=0.8\linewidth]{img/bub_dyn/sliding/Koss_P40_G500.pdf}
+\subfloat[$\phi_{w}=0.291$~MW/m\up{2}, $\Delta T_{w}=10.1$K, $G_{L}=500~\debm$]{
+\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/Koss_P40_G500.pdf}
 } 
 \\
-\subfloat[$\phi_{w}=0.361$~MW/m\up{2}, $G_{L}=994~\debm$]{
-\includegraphics[width=0.8\linewidth]{img/bub_dyn/sliding/Koss_P40_G1000.pdf}
+\subfloat[$\phi_{w}=0.361$~MW/m\up{2}, $\Delta T_{w}=10.8$K, $G_{L}=994~\debm$]{
+\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/Koss_P40_G1000.pdf}
 } 
 \\
-\subfloat[$\phi_{w}=0.613$~MW/m\up{2}, $G_{L}=1504~\debm$]{
-\includegraphics[width=0.8\linewidth]{img/bub_dyn/sliding/Koss_P40_G1500.pdf}
+\subfloat[$\phi_{w}=0.613$~MW/m\up{2}, $\Delta T_{w}=12.2$K, $G_{L}=1504~\debm$]{
+\includegraphics[width=1.0\linewidth]{img/bub_dyn/sliding/Koss_P40_G1500.pdf}
 } 
 	\caption{Bubble sliding length predictions on Kossolapov cases - $P=40$ bar}	
 	\label{fig:slide_koss_40bar}
@@ -2056,6 +2058,9 @@ Comparisons were done for cases at 20 bar and 40 bar and 3 different values of $
 \npar
 The obtained results are in good agreement with the sliding length profile vs. time, which means bubble sliding velocity is well predicted for those cases. Values of $K$ between 0.8 and 2 were needed to match the bubble radius measurements.
 
+\npar
+
+We see that bubbles are rapidly reaching sliding velocities between 80\% and 95\% of the local liquid velocity. Only the 20 bar case at $G_{L}=500\debm$ where the bubble departs slightly later, reaching approximately 55\% of the liquid velocity.
 
 
 \subsection{Comparison of Forces in Sliding Stage}
@@ -2066,11 +2071,10 @@ In order to identify the main accelerating forces, we compare the amplitude of t
 \begin{figure}[!ht]
 \begin{center}
 \subfloat[Maity : $\Delta T_{w}=5.9 \degree$ C, $G_{L}=239.6~\debm$]{
-\includegraphics[width=0.8\linewidth]{img/bub_dyn/sliding/maity_V0p25_forces.pdf}
+\includegraphics[width=0.5\linewidth]{img/bub_dyn/sliding/maity_V0p25_forces.pdf}
 } 
-\\
-\subfloat[Kossolapov : $\phi_{w}=0.613$~MW/m\up{2}, $G_{L}=1504~\debm$]{
-\includegraphics[width=0.8\linewidth]{img/bub_dyn/sliding/Koss_P40_G1500_forces.pdf}
+\subfloat[Kossolapov : $P=40$ bar, $\phi_{w}=0.613$~MW/m\up{2}, $G_{L}=1504~\debm$]{
+\includegraphics[width=0.5\linewidth]{img/bub_dyn/sliding/Koss_P40_G1500_forces.pdf}
 } 
 	\caption{Amplitude of each force during sliding}	
 	\label{fig:forces_sliding}
@@ -2078,8 +2082,12 @@ In order to identify the main accelerating forces, we compare the amplitude of t
 \end{figure}
 
 
+\npar
 
-It appears that at high pressure and liquid velocity, the Drag force is the main driving force and stays positive since the bubble do not slide faster than the rapid surrounding liquid (reaching approximately 80\% of the local liquid velocity). On the other hand, larger bubbles observed at low pressure and liquid velocity are accelerated by Buoyancy due to their larger volume, with a nearly negligible Drag force. In both cases, the Added Mass force can not be neglected especially when bubble velocity rises by limiting its acceleration induced by the larger force (Buoyancy or Drag in the presented cases). This further emphasizes the importance of a proper derivation of the Added Mass force regardless of the boiling conditions. The Capillary force seem to be a limited but constant slowing term in both cases. Finally, the amplitude of the forces involved can span from roughly $10\times 10^{-4}$ N at low pressure (much greater than the rate of change of bubble momentum laying around $10^{-9}$ N) down to a few nN at higher pressure (same order of magnitude as the rate of change of bubble momentum), especially due to the bubble size.
+
+It appears that at high pressure and liquid velocity, the drag force is the main driving force and stays positive since the bubble do not slide faster than the rapid surrounding liquid (reaching approximately 80\% of the local liquid velocity). On the other hand, larger bubbles observed at low pressure and liquid velocity are accelerated by buoyancy due to their larger volume, with a nearly negligible Drag force. In both cases, the added mass force can not be neglected especially when bubble velocity rises by limiting its acceleration induced by the larger force (buoyancy or drag in the presented cases). This further emphasizes the importance of a proper derivation of the added mass force regardless of the boiling conditions. The capillary force seem to be a limited but constant slowing term in both cases. Finally, the amplitude of the forces involved can span from roughly $10\times 10^{-4}$ N at low pressure (much greater than the rate of change of bubble momentum laying around $10^{-9}$ N) down to a few nN at higher pressure (same order of magnitude as the rate of change of bubble momentum), especially due to the bubble size.
+
+\npar
 
 This comparison highlights the fact that the proposed model is able to represent different forces hierarchy depending on the flow conditions and to acceptably predict the associated bubble sliding velocity, which is an encouraging point regarding its generality.
 
@@ -2095,6 +2103,7 @@ FORCE APPROACH : SITU WITH CR ?
 CORRELATION IF NEEDED + QUICK COMPARISON
 
 
+\newpage
 
 \section{Conclusion}\label{ccl}
 
