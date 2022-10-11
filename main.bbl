@@ -17,6 +17,52 @@
 \endgroup
 
 \datalist[entry]{nyt/global//global/global}
+  \entry{auton_lift_1987}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ATR}{%
+         family={Auton},
+         familyi={A\bibinitperiod},
+         given={T.\bibnamedelima R.},
+         giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ATR1}
+    \strng{fullhash}{ATR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    This paper concerns the flow about a sphere placed in a weak shear flow of
+  an inviscid fluid. The secondary velocity resulting from advection of
+  vorticity by the irrotational component of the flow is computed on the sphere
+  surface, and on the upstream axis. The resulting lift force on the sphere is
+  evaluated, and the result is confirmed by an analytical far-field
+  calculation. The displacement of the stagnation streamline, far upstream of
+  the sphere, is calculated more accurately than in previous papers.%
+    }
+    \verb{doi}
+    \verb 10.1017/S002211208700260X
+    \endverb
+    \field{issn}{1469-7645, 0022-1120}
+    \field{note}{Publisher: Cambridge University Press}
+    \field{pages}{199\bibrangedash 218}
+    \field{title}{The lift force on a spherical body in a rotational flow}
+    \verb{url}
+    \verb https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/ar
+    \verb ticle/abs/lift-force-on-a-spherical-body-in-a-rotational-flow/B350B8F
+    \verb C7F8D80990843483C3E6F5940#
+    \endverb
+    \field{volume}{183}
+    \field{langid}{french}
+    \field{journaltitle}{Journal of Fluid Mechanics}
+    \field{month}{10}
+    \field{year}{1987}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{bucci_not-so-subtle_2021}{article}{}
     \name{author}{3}{}{%
       {{hash=BM}{%
@@ -58,9 +104,9 @@
     \endverb
     \field{volume}{33}
     \verb{file}
-    \verb Version soumise:C\:\\Users\\Luczer\\Zotero\\storage\\5I6P5XBJ\\Bucci
-    \verb et al. - 2021 - The not-so-subtle flaws of the force balance appro.pd
-    \verb f:application/pdf
+    \verb Version soumise:C\:\\Users\\Luc\\Zotero\\storage\\5I6P5XBJ\\Bucci et
+    \verb al. - 2021 - The not-so-subtle flaws of the force balance appro.pdf:a
+    \verb pplication/pdf
     \endverb
     \field{journaltitle}{Physics of Fluids}
     \field{month}{01}
@@ -124,10 +170,10 @@
     \field{volume}{916}
     \field{langid}{english}
     \verb{file}
-    \verb Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\Y87QPB7G\\Bureš e
-    \verb t Sato - 2021 - On the modelling of the transition between contact.pd
-    \verb f:application/pdf;Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\IQ3UQ
-    \verb MAP\\05713699070C2B3DE6F9BB36E5E0ADF3.html:text/html
+    \verb Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\Y87QPB7G\\Bureš et S
+    \verb ato - 2021 - On the modelling of the transition between contact.pdf:a
+    \verb pplication/pdf;Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\IQ3UQMAP\\0
+    \verb 5713699070C2B3DE6F9BB36E5E0ADF3.html:text/html
     \endverb
     \field{journaltitle}{Journal of Fluid Mechanics}
     \field{month}{06}
@@ -196,8 +242,8 @@
     \field{volume}{243}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\8MJRBVBT\
-    \verb \S0029549311009952.html:text/html
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\8MJRBVBT\\S0
+    \verb 029549311009952.html:text/html
     \endverb
     \field{journaltitle}{Nuclear Engineering and Design}
     \field{day}{01}
@@ -205,6 +251,163 @@
     \field{year}{2012}
     \field{urlday}{18}
     \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{chen_detailed_2017}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CZ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Zhihao},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=HA}{%
+         family={Haginiwa},
+         familyi={H\bibinitperiod},
+         given={Atsushi},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=UY}{%
+         family={Utaka},
+         familyi={U\bibinitperiod},
+         given={Yoshio},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \keyw{Heat transfer, Laser interferometry, Microlayer, Nucleate pool
+  boiling, Phase change}
+    \strng{namehash}{CZHAUY1}
+    \strng{fullhash}{CZHAUY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    During nucleate pooling boiling, a microlayer forms on the heat transfer
+  surface beneath a growing bubble. In previous studies, the existence of a
+  microlayer was confirmed, and its structure was investigated by using several
+  different experimental methods. However, the characteristics and mechanism of
+  the formation of a microlayer have not been thoroughly elucidated to date. In
+  this study, in order to obtain further understanding on the microlayer
+  structure, a laser interferometric method was adopted for a more detailed
+  observation. As a result, it was observed that the special bended shape of
+  the microlayer forms near its outer margin when the microlayer radius is
+  close to its maximum value. By analyzing the variation of the ratio of bubble
+  height to diameter, it can be inferred that the detachment of a bubble causes
+  a decrease of the initial microlayer thickness when the microlayer thickness
+  is close to the maximum radius. This effect explains the formation of the
+  bended shape of initial microlayer.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2017.01.003
+    \endverb
+    \field{issn}{0017-9310}
+    \field{pages}{1285\bibrangedash 1291}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{Detailed structure of microlayer in nucleate pool boiling for
+  water measured by laser interferometric method}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931016328708
+    \endverb
+    \field{volume}{108}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\W9HP5LMW\\S0
+    \verb 017931016328708.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{05}
+    \field{year}{2017}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{chen_measurement_2020}{article}{}
+    \name{author}{5}{}{%
+      {{hash=CZ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Zhihao},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=HX}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Xiaocheng},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Kang},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=UY}{%
+         family={Utaka},
+         familyi={U\bibinitperiod},
+         given={Yoshio},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mori},
+         familyi={M\bibinitperiod},
+         given={Shoji},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{High heat flux, Initial microlayer thickness, Laser interferometry,
+  Microlayer structure, Nucleate pool boiling, Water}
+    \strng{namehash}{CZ+1}
+    \strng{fullhash}{CZHXHKUYMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    During nucleate boiling, a thin liquid film (microlayer) is formed beneath
+  a boiling bubble when the bubble undergoes rapid growth/expansion. The linear
+  distribution of the microlayer has been previously confirmed, and its crest
+  shape has been observed in the isolated bubble region of nucleate boiling.
+  However, the microlayer behavior in larger heat flux regions up to critical
+  heat flux has not yet been elucidated. In this study, to further understand
+  the microlayer structure in the whole heat flux range of nucleate boiling,
+  microlayer configuration was measured using laser interferometry. Water was
+  adopted as the test fluid, and it is confirmed that the microlayer can be
+  observed over a whole range of nucleate boiling containing the critical heat
+  flux point. It is also confirmed that the deformation of the microlayer from
+  axisymmetric shape was caused by complicated, irregular bubble motions such
+  as bubble coalescence, which was observed for relatively higher heat flux.
+  The crest shape of the microlayer, which appears near the periphery of its
+  maximum diameter under relatively smaller heat flux, was not observed at a
+  relatively higher heat flux. Finally, it is confirmed that heat flux does not
+  obviously influence the thickness distribution of the initial microlayer.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2019.118856
+    \endverb
+    \field{issn}{0017-9310}
+    \field{pages}{118856}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{Measurement of the microlayer characteristics in the whole
+  range of nucleate boiling for water by laser interferometry}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931019342656
+    \endverb
+    \field{volume}{146}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\AFZTH2NQ\\S0
+    \verb 017931019342656.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{01}
+    \field{year}{2020}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
     \field{urlyear}{2022}
   \endentry
 
@@ -279,10 +482,10 @@
     \field{volume}{85}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\QYKANQBH\
-    \verb \S0017931015001118.html:text/html;Version acceptée:C\:\\Users\\Lucze
-    \verb r\\Zotero\\storage\\U6PG2KYG\\Colombo et Fairweather - 2015 - Predict
-    \verb ion of bubble departure in forced convectio.pdf:application/pdf
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\QYKANQBH\\S0
+    \verb 017931015001118.html:text/html;Version acceptée:C\:\\Users\\Luc\\Zot
+    \verb ero\\storage\\U6PG2KYG\\Colombo et Fairweather - 2015 - Prediction of
+    \verb  bubble departure in forced convectio.pdf:application/pdf
     \endverb
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{day}{01}
@@ -290,6 +493,412 @@
     \field{year}{2015}
     \field{urlday}{20}
     \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{cooper_microlayer_1969}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CMG}{%
+         family={Cooper},
+         familyi={C\bibinitperiod},
+         given={M.\bibnamedelima G.},
+         giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=LAJP}{%
+         family={Lloyd},
+         familyi={L\bibinitperiod},
+         given={A.\bibnamedelima J.\bibnamedelima P.},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CMGLAJP1}
+    \strng{fullhash}{CMGLAJP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    Experiments are reported in which organic liquids underwent pool boiling at
+  low pressure, forming large vapour bubbles on the surface of a heater plate
+  consisting of glass or ceramic. The temperature at the surface of the heater
+  was measured, leading to support for the hypothesis that a thin layer of
+  liquid (the microlayer) forms beneath the vapour bubble. From the
+  experimental observations it is possible to deduce the thickness of the
+  microlayer, which can also be predicted from a simple theory for the
+  hydrodynamics of the formation of the layer. Experiment and theory agree
+  within ±25 per cent for the limited cases available. The rates of growth of
+  the bubbles are shown to be of the same order as the rates of evaporation
+  from the microlayers, which can be expressed in analytic form under certain
+  assumptions. A computer program for bubble growth allowing for the microlayer
+  and other factors has been developed and applied to two bubbles growing under
+  widely different bulk temperatures. The predicted radii are within ±15 per
+  cent of those observed. The relative magnitudes of stresses due to inertia,
+  surface tension, viscosity and gravitation are determined for a typical
+  bubble, and discussed in relation to bubble shape and microlayer formation.
+  It is stressed that these results may not apply to widely different
+  conditions of boiling. Résumé On décrit des expériences dans lesquelles
+  des liquides organiques subissent und ébullition en réservoir à faible
+  pression, en formant de grandes bulles de vapeur sur la surface d'une plaque
+  chauffante en verre ou en céramique. La température de la surface du
+  chauffoir a été mesurée, conduisant à confirmer l'hypothèse qu'une
+  couche mince de liquide (la microcouche) se forme sous la bulle de vapeur. Il
+  est possible de déduire, à partir des observations expérimentales,
+  l'épaisseur de la microcouche, qui peut aussi être prédite à partir d'une
+  théorie simple pour l'hydrodynamique de la formation de la couche.
+  L'expérience et la théorie sont d'accord à ±25 pour cent près pour les
+  cas limités disponibles. On montre que les vitesses de croissance des bulles
+  sont du même ordre que les vitesses d'évaporation à partir des
+  microcouches, qui peuvent être exprimées sous forme analytique avec
+  certaines hypothèses. Un programme de calculateur pour la croissance des
+  bulles tenant compte de la microcouche et d'autres facteurs a été exploité
+  et appliqué à deux bulles croissant avec des températures globales
+  largement différentes. Les rayons prévus sont à ±15 pour cent de ceux
+  observés. Les grandeurs relatives des contraintes dues à l'inertie, à la
+  tension superficielle, à la viscosité et à la gravitation sont
+  déterminées pour une bulle typique, et discutées en relation avec la forme
+  de la bulle et avec la formation de la microcouche. On a insisté sur le fait
+  que ces résultats ne peuvent pas s'appliquer à des conditions d'ébullition
+  largement différentes. Zusammenfassung Es wird über Versuche berichtet, bei
+  denen organische Flüssigkeiten unter Bildung von grossen Dampfblasen an der
+  Oberfläche einer beheizten Platte aus Glas oder Keramik dem Sieden in freier
+  Konvektion bei niederem Druck unterzogen wurden. Die Oberflächentemperatur
+  des Heizeelements wurde gemessen, weil sie massgebend für die
+  Aufrechterhaltung der Hypothese ist, dass dich unter der Blase eine dünne
+  Flüssigkeitsschicht (Mikroschicht) bildet. Aus experimentellen Beobachtungen
+  ist es möglich, auf die Dicke der Mikroschicht zu schliessen, die auch über
+  eine einfache Theorie für die Hydrodynamik der Schichtbildung berechnet
+  werden kann. Für die wenigen vorliegenden Fälle ergeben sich zwischen
+  Experiment und Theorie Abweichungen von ±25 Prozew. Es zeigt sich, dass die
+  Wachstumsraten der Blasen von derselben Grössenordnung wie die
+  Verdampfungsraten der Mikroschichten sind, die unter gewissen Voraussetzungen
+  in analytischer Form dargestellt werden können. Ein Rechenprogramm für das
+  Blasenwachstum wurde unter Berücksichtigung der Mikroschicht und anderer
+  Faktoren entwickelt und auf zwei Blasen, die bei sehr verschiedenen
+  Flüssigkeitstemperaturen entstehen, angewendet. Die berechneten Radien
+  stimmen auf ±15\% mit den beobachteten überein. Die bezogenen Grössen für
+  die Trägheitskraft, Oberflächenspannung, Zähigkeit und Schwerkraft werden
+  für eine typische Blase bestimmt und im Zusammenhang mit der Blasenform und
+  Mikroschichtbildung diskutiert. Es wird mit Nachdruck darauf hingewiesen,
+  dass diese Ergebnisse nicht auf zu sehr abweichende Seidezustände angewendet
+  werden dürfen.%
+    }
+    \verb{doi}
+    \verb 10.1016/0017-9310(69)90154-9
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{8}
+    \field{pages}{895\bibrangedash 913}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{The microlayer in nucleate pool boiling}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0017931069901549
+    \endverb
+    \field{volume}{12}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\CDVJQ3FQ\\00
+    \verb 17931069901549.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{08}
+    \field{year}{1969}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{del_valle_subcooled_1985}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DVVH}{%
+         family={Del\bibnamedelima Valle},
+         familyi={D\bibinitperiod\bibinitdelim V\bibinitperiod},
+         given={Victor\bibnamedelima H.},
+         giveni={V\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=KDBR}{%
+         family={Kenning},
+         familyi={K\bibinitperiod},
+         given={D.\bibnamedelima B.\bibnamedelima R.},
+         giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DVVHKDBR1}
+    \strng{fullhash}{DVVHKDBR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    In an experimental investigation of subcooled flow nucleate boiling of
+  water at atmospheric pressure on stainless steel it was found that the heat
+  transfer coefficient increased with increasing subcooling and also with
+  increasing wall thickness over the range 0.08–0.20 mm. Bubble size,
+  frequency and the distribution of nucleation sites were measured at 1.7 m
+  s−1 inlet velocity, 84 K subcooling, 0.08-mm wall thickness and heat fluxes
+  70–95\% of the critical flux. The observations were consistent with a model
+  for heat transfer primarily by surface quenching at the bubble frequency,
+  supplemented by single-phase convection and a small contribution from
+  microlayer evaporation. Although the total population of nucleation sites
+  increased with increasing wall superheat, the startup of new sites
+  deactivated many of the sites active at lower superheat. Résumé Dans une
+  recherche expérimentale de l'ébullition nucléée d'un écoulement
+  sous-refroidi d'eau à la pression atmosphérique sur l'acier inoxydable, il
+  est trouvé que le coefficient de transfert thermique croît avec
+  l'augmentation du sous-refroidissement et aussi avec l'accroissement de
+  l'épaisseur de la paroi dans le domaine 0,08–0,20 mm. La taille de bulle,
+  la fréquence et la distribution des sites de nucléation sont mesurées à
+  une vitesse d'entrée 1,7ms−1,à 84 K de sous-refroidissement, pour une
+  épaisseur de paroi de 0,08 mm et des flux thermiques à 70–95\% du flux
+  critique. Les observations s'accordent avec un modèle de transfert thermique
+  principalement dû à une trempe de la surface à la fréquence des bulles et
+  augmenté par une convection monophasique et par une petite contribution de
+  l'évaporation de micro-couche. Bien que la population totale de sites de
+  nucléation augmente avec la surchauffe de la paroi, le démarrage de
+  nouveaux sites désactive beaucoup de sites actifs à de plus faibles
+  surchauffes. Zusammenfassung Bei experimentellen Untersuchungen des
+  unterkühlten Strömungssiedens von Wasser bei Atmosphärendruck an
+  rostfreiem Stahl wurde festgestellt, daβ der Wärmeübergangskoeffizient mit
+  gröβer werdender Unterkühlung zunimmt und ebenso mit steigender
+  Wandstärke im Bereich von 0,08 bis 0,20 mm. Gemessen wurden Blasengröβe,
+  Frequenz und Verteilung der Siedekeime bei einer Eintrittsgeschwindigkeit von
+  1,7 m s−1, einer Unterkühlung von 84 K, einer Wandstärke von 0,08 mm und
+  bei Wärmestromdichten, die 70 bis 95\% der kritischen Wärmestromdichte
+  betragen. Die Beobachtungen stimmten mit einem Wärmeübertragungsmodell
+  überein, welches in erster Linie die Oberflächenwiederbenetzung mit der
+  Blasenfrequenz beschreibt, überlagert durch einphasige Konvektion und einen
+  kleinen Anteil ‘microlayer’-Verdampfung. Obwohl die Gesamtzahl der
+  Siedekeime mit gröβer werdender Wandüberhitzung zunimmt, deaktiviert der
+  Start neuer Keimstellen viele bei geringerer überhitzung aktive Keimstellen.
+  Реферат B peзyльтaтe {eкcпepимeHгaльHoгo}
+  и{ccлeдoBaHия} пpoцecca п{yзыpькoBoгo} кип{eHия}
+  Heдoгpeгoгo пoтoкa Boды пpи {aтмocфepHoм} д{aBлeHии} Ha
+  {HepжaBeющeй} cтaли {HaйдeHo}, чтo к{oeффициeHт}
+  т{eплoпepeHoca} {yBeличиBaeтcя} c pocтoм {HeдoгpeBa}, a
+  тaкжe c {yBeлHчeHиeм} т{oлщиHы} {cтeHки} B ди{aпaзoHe}
+  0,08–0,20 мм. paзмep пyзыpькa, чacгoгa
+  з{apoдышeoбpaзoBaHия} и {pacпpeдeлeHиe} мecт {oбpaзoBaHия}
+  п{yзыpькoB} измepялиcь пpи cкopocги Ha Bчoдe 1,7 м c−1,
+  {HeдoгpeBe} 84 К, т{oлщиHe} {cтeHки} 0,08 мм и пpи
+  т{eплoBыч} Hoтoкaч, {cocтaBляющич} 70–95\% oт
+  кpитичecкoгo пoтoкa. {eкcпepимeHгы} coглacyютcя c
+  мoдeлью т{eплoпepeHoca}, B п{epByю} oчepeдь, зa cчeт
+  peзкoгo {oчлaждeHия} п{oBepчHocти} c чacгoтoй
+  з{apoждeHия} п{yзыpькoB}, д{oпoлHяeмoй} {oдHoфaзHoй}
+  к{oHBeкциeй} и Heбoльшим Bклaдoм и{cпapeHия}
+  микpocлoя. Hecмoтpя Ha тo, чгo п{oлHoe} чиcлo з{oH}
+  з{apoждeHия} п{yзыpькoB} pacтeт c {yBeличeHиeм}
+  п{epeгpeBa} {cтeHки}, {BoзHикHoBeHиe} {HoBыч} з{oH}
+  д{eзaктиBиpyeг} м{HoжecтBo} {paHee} {aкгиBHыч} пpи
+  пeбoльшoм {HepeгpeBe}.%
+    }
+    \verb{doi}
+    \verb 10.1016/0017-9310(85)90213-3
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{10}
+    \field{pages}{1907\bibrangedash 1920}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{Subcooled flow boiling at high heat flux}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0017931085902133
+    \endverb
+    \field{volume}{28}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\5BCVUD4C\\00
+    \verb 17931085902133.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{10}
+    \field{year}{1985}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{demarly_new_2020}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=DE}{%
+         family={Demarly},
+         familyi={D\bibinitperiod},
+         given={Etienne},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DE1}
+    \strng{fullhash}{DE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    Accurate prediction of the Departure from Nucleate Boiling ({DNB}) type of
+  boiling crisis is essential for the design of Pressurized Water Reactors
+  ({PWR}) and their fuel. Recent advances in the instrumentation of boiling
+  experiments via infrared thermometry have provided new insights on {DNB}
+  physics that were ignored in past modeling efforts. The growing consensus
+  from experimental studies that {DNB} is caused by a microhydrodynamic
+  phenomenon at the boiling surface, instead of the classical macrohydrodynamic
+  scale effects, has yet to be formulated into a working model and applied for
+  simulation of high pressure conditions representative of {PWRs}. While the
+  idea of an energy imbalance between wetted (in contact with liquid) and dry
+  (in contact with vapor) areas has been suggested by multiple experimental
+  groups [1-6] as a triggering mechanism for {DNB}, incorporating this new
+  understanding into a functional boiling model remains an open challenge.%
+    }
+    \field{note}{Accepted: 2021-02-19T20:35:27Z {ISBN}: 9781237640528}
+    \field{title}{A new approach to predicting departure from Nucleate Boiling
+  ({DNB}) from direct representation of boiling heat transfer physics}
+    \verb{url}
+    \verb https://dspace.mit.edu/handle/1721.1/129879
+    \endverb
+    \list{institution}{1}{%
+      {Massachusetts Institute of Technology}%
+    }
+    \verb{file}
+    \verb Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\Y3G4Y7WT\\Demarly - 2
+    \verb 020 - A new approach to predicting departure from Nuclea.pdf:applicat
+    \verb ion/pdf;Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\PDSBLSPF\\129879.h
+    \verb tml:text/html
+    \endverb
+    \field{type}{Thesis}
+    \field{year}{2020}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{duhar_vapour_2009}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DG}{%
+         family={Duhar},
+         familyi={D\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=RG}{%
+         family={Riboux},
+         familyi={R\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Colin},
+         familyi={C\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{Bubble Growth, Drag Coefficient, Drag Force, Force Balance, Liquid
+  Velocity}
+    \strng{namehash}{DGRGCC1}
+    \strng{fullhash}{DGRGCC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    N-pentane micro-bubbles are created on a small heated film flushed-mounted
+  at the lower wall of a horizontal channel. The bubble growth and detachment
+  in the shear flow are filmed with a high-speed video camera. The time
+  evolutions of the bubble radius and bubble centre position are measured from
+  image processing. The growth rate is determined and compared to models of the
+  literature. The experimental results are also used to estimate the different
+  forces acting on the bubble during its growth and after its detachment.%
+    }
+    \verb{doi}
+    \verb 10.1007/s00231-007-0287-y
+    \endverb
+    \field{issn}{1432-1181}
+    \field{number}{7}
+    \field{pages}{847\bibrangedash 855}
+    \field{shortjournal}{Heat Mass Transfer}
+    \field{title}{Vapour bubble growth and detachment at the wall of shear
+  flow}
+    \verb{url}
+    \verb https://doi.org/10.1007/s00231-007-0287-y
+    \endverb
+    \field{volume}{45}
+    \field{langid}{english}
+    \field{journaltitle}{Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{05}
+    \field{year}{2009}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{duhar_croissance_2003}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=DG}{%
+         family={Duhar},
+         familyi={D\bibinitperiod},
+         given={Géraldine},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \name{editora}{1}{}{%
+      {{hash=CC}{%
+         family={Colin},
+         familyi={C\bibinitperiod},
+         given={Catherine},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \field{editoratype}{collaborator}
+    \keyw{Bulles -- Croissance, Dynamique, Ébullition, Traitement d'images}
+    \strng{namehash}{DG1}
+    \strng{fullhash}{DG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    La formation de bulles en paroi d'un écoulement cisaillé est une
+  situation physique rencontrée dans de nombreux problèmes pratiques comme
+  l'injection de bulles ou la formation de bulles de vapeur sur des parois
+  chauffées. Dans toutes ces situations, il est crucial de pouvoir prédire la
+  taille des bulles formées soit pour optimiser les transferts de masse entre
+  les phases gazeuse et liquide dans les cas d'injection, soit pour modéliser
+  les transferts de chaleur à la paroi en ébullition nucléée. Cette étude
+  à caractère expérimental comprend deux parties : une portant sur
+  l'injection de bulles d'air dans un écoulement visqueux, l'autre portant sur
+  la formation de bulles de pentane formées par vaporisation sur un élément
+  chauffant. Dans ces deux situations, la croissance et le détachement des
+  bulles sont filmés par caméra vidéo rapide. Les données cinématiques
+  obtenues par traitement d'images (évolutions temporelles du rayon de la
+  bulle et de la position de son centre de gravité) permettent de calculer le
+  taux de croissance des bulles et d'estimer les différentes forces
+  responsables de leur détachement. La force d'Archimède et la force de
+  traînée exercée par l'écoulement de liquide ont tendance à détacher la
+  bulle et la force capillaire à la maintenir à la paroi. En ébullition, en
+  raison de la croissance très rapide des bulles, la force d'inertie du
+  liquide joue un rôle dominant. Suite à l'analyse des différentes forces,
+  un modèle prédictif du diamètre des bulles au détachement en fonction du
+  taux de cisaillement de l'écoulement est proposé.%
+    }
+    \field{shorttitle}{Croissance et détachement de bulles en paroi d'un
+  écoulement cisaillé}
+    \field{title}{Croissance et détachement de bulles en paroi d'un
+  écoulement cisaillé : étude expérimentale de l'injection et de
+  l'ébullition nucléée}
+    \verb{url}
+    \verb https://www.theses.fr/2003INPT016H
+    \endverb
+    \list{institution}{1}{%
+      {Toulouse, {INPT}}%
+    }
+    \field{type}{These de doctorat}
+    \field{day}{01}
+    \field{month}{01}
+    \field{year}{2003}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
     \field{urlyear}{2022}
   \endentry
 
@@ -362,7 +971,7 @@
          giveni={J\bibinitperiod},
       }}%
     }
-    \keyw{Bubble dynamics, Subcooled flow boiling, Infrared measurements,
+    \keyw{Subcooled flow boiling, Bubble dynamics, Infrared measurements,
   Liquid–vapor thermal interaction, Sliding bubbles, Thermal footprint}
     \strng{namehash}{EPCE+1}
     \strng{fullhash}{EPCEHYAABYJ1}
@@ -406,11 +1015,10 @@
     \field{volume}{99}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\DK2D
-    \verb VW75\\Estrada-Pérez et al. - 2018 - Time-resolved measurements of li
-    \verb quid–vapor thermal.pdf:application/pdf;ScienceDirect Snapshot:C\:\\
-    \verb Users\\Luczer\\Zotero\\storage\\BJPHELGL\\S0301932217303415.html:text
-    \verb /html
+    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\DK2DVW7
+    \verb 5\\Estrada-Pérez et al. - 2018 - Time-resolved measurements of liqui
+    \verb d–vapor thermal.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Use
+    \verb rs\\Luc\\Zotero\\storage\\BJPHELGL\\S0301932217303415.html:text/html
     \endverb
     \field{journaltitle}{International Journal of Multiphase Flow}
     \field{day}{01}
@@ -546,8 +1154,8 @@
     \endverb
     \field{volume}{13}
     \verb{file}
-    \verb Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\XBDHVCXF\\5af8c23d50e0a
-    \verb 883,18c85f7f5866b59a,3dd586c1794b1dcf.html:text/html
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\XBDHVCXF\\5af8c23d50e0a883
+    \verb ,18c85f7f5866b59a,3dd586c1794b1dcf.html:text/html
     \endverb
     \field{journaltitle}{Multiphase Science and Technology}
     \field{year}{2001}
@@ -675,6 +1283,217 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{guion_simulations_2018}{article}{}
+    \name{author}{4}{}{%
+      {{hash=GA}{%
+         family={Guion},
+         familyi={G\bibinitperiod},
+         given={Alexandre},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Afkhami},
+         familyi={A\bibinitperiod},
+         given={Shahriar},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ZS}{%
+         family={Zaleski},
+         familyi={Z\bibinitperiod},
+         given={Stéphane},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Buongiorno},
+         familyi={B\bibinitperiod},
+         given={Jacopo},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Bubble growth, Hydrodynamics, Microlayer formation, Single bubble,
+  Volume-Of-Fluid ({VOF}) method}
+    \strng{namehash}{GA+1}
+    \strng{fullhash}{GAASZSBJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    As a bubble grows outside of a cavity during nucleate boiling, viscous
+  effects can be large enough compared to surface tension to impede liquid
+  motion and trap a thin liquid layer, referred to as the microlayer,
+  underneath the growing bubble. Numerical simulations of nucleate boiling
+  typically resolve the macroscopic liquid-vapor interface of the bubble, but
+  resort to subgrid models to account for micro scale effects, such as the
+  evaporation of the microlayer. Evaporation models require initialization of
+  the microlayer shape and extension, but models for microlayer formation are
+  either physically incomplete or purely empirical. In this work, the
+  Volume-Of-Fluid ({VOF}) method, implemented in the Gerris code, is used to
+  numerically reproduce the hydrodynamics of hemispherical bubble growth at the
+  wall, and resolve the formation of the microlayer with an unprecedented
+  resolution. The simulations are validated against the latest experimental
+  data and compared to existing analytical models. Lastly, remaining gaps in
+  building a generally applicable model for the formation of the microlayer are
+  presented.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2018.06.041
+    \endverb
+    \field{issn}{0017-9310}
+    \field{pages}{1271\bibrangedash 1284}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{Simulations of microlayer formation in nucleate boiling}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931018305817
+    \endverb
+    \field{volume}{127}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\AJSA7KZY\\S0
+    \verb 017931018305817.html:text/html;Texte intégral:C\:\\Users\\Luc\\Zoter
+    \verb o\\storage\\U6LU26TQ\\Guion et al. - 2018 - Simulations of microlayer
+    \verb  formation in nucleate bo.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{12}
+    \field{year}{2018}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{hadamard_mouvement_1911}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HJS}{%
+         family={Hadamard},
+         familyi={H\bibinitperiod},
+         given={J.\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HJS1}
+    \strng{fullhash}{HJS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{155}
+    \field{pages}{1735\bibrangedash 1738}
+    \field{title}{Mouvement permanent lent d’une sphère liquide et visqueuse
+  dans un liquide visqueux}
+    \verb{url}
+    \verb https://www.scienceopen.com/document?vid=8dfaf926-3fb7-4695-bd49-2d11
+    \verb d563c5eb
+    \endverb
+    \verb{file}
+    \verb Mouvement permanent lent d’une sphère liquide et visqueuse dans un
+    \verb  liquide visqueux – ScienceOpen:C\:\\Users\\Luc\\Zotero\\storage\\T
+    \verb UGZBABS\\document.html:text/html
+    \endverb
+    \field{journaltitle}{Comptes Rendus Hebdomadaires des Séances de
+  l'Académie des Sciences}
+    \field{year}{1911}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{kader_heat_1972}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KBA}{%
+         family={Kader},
+         familyi={K\bibinitperiod},
+         given={B.\bibnamedelima A},
+         giveni={B\bibinitperiod\bibinitdelim A},
+      }}%
+      {{hash=YAM}{%
+         family={Yaglom},
+         familyi={Y\bibinitperiod},
+         given={A.\bibnamedelima M},
+         giveni={A\bibinitperiod\bibinitdelim M},
+      }}%
+    }
+    \strng{namehash}{KBAYAM1}
+    \strng{fullhash}{KBAYAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    The general method of Izakson and Millikan for the derivation of the
+  well-known Prandtl-Nikuradse skin friction law is applied to the analysis of
+  turbulent heat and mass transfer in pipes, channels, and boundary layers. The
+  formula for the heat (or mass) transfer coefficient (or the Nusselt number)
+  is obtained which contains the dimensionless coefficients of the universal
+  logarithmic equations for the velocity and temperature profiles as parameters
+  of the formula. One of these parameters is a universal function of Prandtl
+  (or Schmidt) number and all the others are constants. The existing velocity
+  and temperature profile measurements in various turbulent wall flows permit
+  the determination of all the necessary coefficients with fair accuracy. The
+  resulting calculations are in satisfactory agreement with numerous
+  experiments on heat and mass transfer in pipes and boundary layers on a flat
+  plate over the Prandtl (or Schmidt) number range from 6 × 10−3 to 106 and
+  over two orders of magnitude of Reynolds (or Péclét) number variations.
+  Résumé La méthode générale d'Izakson et Millikan pour l'obtention de la
+  loi classique de Prandtl-Nikuradse pour le frottement superficiel est
+  appliquée á l'analyse du transfert thermique et massique turbulent dans des
+  tubes, des canaux et des couches limites. La formule donnant le coefficient
+  (ou le nombre de Nusselt) de transfert thermique (ou massique) contient, en
+  tant que paramétres, les coefficients sans dimension des équations
+  logarithmiques universelles des profils de vitesse et de température. Un de
+  ces paramétres est une fonction universelle du nombre de Prandtl (ou de
+  Schmidt) et tous les autres sont des constantes. Les profils de vitesse et de
+  température expérimentaux existants dans différents écoulements
+  pariétaux turbulents permettent avec une bonne précision la détermination
+  de tous les coefficients nécessaires. Les calculs qui en résultent sont en
+  accord satisfaisant avec les nombreuses expériences sur le transfert
+  thermique et massique dans des tubes et des couches limites sur plaque plane,
+  pour un domaine de nombre de Prandtl (ou de Schmidt) compris en 6. 10−3 et
+  106 et pour une variation du nombre de Reynolds (ou Péclét) couvrant deux
+  ordres de grandeur. Zusammenfassung Die allgemeine Methode von Izakson und
+  Millikan zur Ableitung des bekannten Prandtl-Nikuradse-Reibungsgesetzes wird
+  auf die Analyse der turbulenten Wärme- und Stoffübertragung in Rohren,
+  Kanälen und Grenzschichten angewandt. Die abgeleitete Formulierung des
+  Wärme (Stoff) übergangskoeffizienten (oder der Nusselt-Zahl) enthält als
+  Parameter die dimensionslosen Koeffizienten der universellen logarithmischen
+  Gleichung für die Geschwindigkeits- und Temperaturprofile. Einer dieser
+  Parameter ist eine universelle Funktion der Prandtl-(oder Schmidt)Zahl und
+  alle anderen sind Konstanten. Die vorhandenen Geschwindigkeits- und
+  Temperatur-Profil-Messungen in verschiedenen turbulenten Wandströmungen
+  erlauben die Festlegung aller notwendigen Koeffizienten mit guter
+  Genauigkeit. Die resultierenden Ergebnisse sind in zufriedenstellender
+  Übereinstimmung mit zahlreichen experimentellen Untersuchungen über den
+  Wärme- und Stofftransport in Rohren und an Grenzschichten an einer, ebenen
+  Platte für Prandtl-(oder Schmidt)Zahlen im Bereich von 6 × 10−3 bis 106
+  und über zwei Grössenordnungen der Reynolds-(oder Péclét)Zahl.%
+    }
+    \verb{doi}
+    \verb 10.1016/0017-9310(72)90131-7
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{12}
+    \field{pages}{2329\bibrangedash 2351}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{Heat and mass transfer laws for fully turbulent wall flows}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0017931072901317
+    \endverb
+    \field{volume}{15}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\XBWQE6C5\\00
+    \verb 17931072901317.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{12}
+    \field{year}{1972}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{kandlikar_contact_2002}{article}{}
     \name{author}{2}{}{%
       {{hash=KSG}{%
@@ -724,8 +1543,8 @@
     \field{volume}{45}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\E2S655CC\
-    \verb \S001793100200090X.html:text/html
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\E2S655CC\\S0
+    \verb 01793100200090X.html:text/html
     \endverb
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{day}{01}
@@ -802,8 +1621,8 @@
     \field{volume}{36}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\PTMTCGEW\
-    \verb \001793109380041R.html:text/html
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\PTMTCGEW\\00
+    \verb 1793109380041R.html:text/html
     \endverb
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{day}{01}
@@ -853,8 +1672,8 @@
     \field{volume}{10}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\TFN7S9KE\
-    \verb \073519338390057X.html:text/html
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\TFN7S9KE\\07
+    \verb 3519338390057X.html:text/html
     \endverb
     \field{journaltitle}{International Communications in Heat and Mass
   Transfer}
@@ -863,6 +1682,116 @@
     \field{year}{1983}
     \field{urlday}{02}
     \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{koffman_experimental_1983}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KLD}{%
+         family={Koffman},
+         familyi={K\bibinitperiod},
+         given={L.\bibnamedelima D.},
+         giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=PMS}{%
+         family={Plesset},
+         familyi={P\bibinitperiod},
+         given={M.\bibnamedelima S.},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KLDPMS1}
+    \strng{fullhash}{KLDPMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Experimental measurements of microlayer formation and of the time history
+  of microlayer thickness change have been obtained for nucleate boiling of
+  water and ethanol. These detailed measurements were obtained using laser
+  interferometry combined with high-speed cinematography. The measurement
+  technique is discussed in detail with emphasis on the difficulties
+  encountered in interpretation of the fringe patterns. The measurements for
+  water can be reasonably applied to the data of Gunther and Kreith, in which
+  case it is concluded that microlayer evaporation alone cannot account for the
+  increased heat transfer rates observed in highly subcooled nucleate boiling.
+  It appears that microconvection must play at least an equal role.%
+    }
+    \verb{doi}
+    \verb 10.1115/1.3245631
+    \endverb
+    \field{issn}{0022-1481}
+    \field{number}{3}
+    \field{pages}{625\bibrangedash 632}
+    \field{shortjournal}{Journal of Heat Transfer}
+    \field{title}{Experimental Observations of the Microlayer in Vapor Bubble
+  Growth on a Heated Solid}
+    \verb{url}
+    \verb https://doi.org/10.1115/1.3245631
+    \endverb
+    \field{volume}{105}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\MXHEU5QK\\Experimental-Obs
+    \verb ervations-of-the-Microlayer-in.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Heat Transfer}
+    \field{day}{01}
+    \field{month}{08}
+    \field{year}{1983}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{kommajosyula_development_2020}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=KR}{%
+         family={Kommajosyula},
+         familyi={K\bibinitperiod},
+         given={Ravikishore},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KR1}
+    \strng{fullhash}{KR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Boiling is an extremely efficient mode of heat transfer and is the
+  preferred heat removal mechanism in power systems in general and, more
+  recently, in electronics cooling. Physics-based models that describe boiling
+  heat transfer, when coupled with Computational Fluid Dynamics ({CFD}), can be
+  an invaluable tool to increase the performance of such systems. Existing
+  modeling approaches do not incorporate all relevant heat transfer mechanisms
+  at the wall, limiting their predictive capability and general applicability.
+  These shortcomings restrict the application of {CFD} in the design process.
+  For the nuclear industry, this means having to rely on expensive experimental
+  campaigns to develop and license new reactor designs. A second-generation
+  mechanistic heat flux partitioning framework developed in our group provides
+  an enhanced physical description of flow boiling.%
+    }
+    \field{note}{Accepted: 2021-01-05T23:15:30Z}
+    \field{title}{Development and assessment of a physics-based model for
+  subcooled flow boiling with application to {CFD}}
+    \verb{url}
+    \verb https://dspace.mit.edu/handle/1721.1/129051
+    \endverb
+    \list{institution}{1}{%
+      {Massachusetts Institute of Technology}%
+    }
+    \verb{file}
+    \verb Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\CFYKYEPE\\Kommajosyul
+    \verb a - 2020 - Development and assessment of a physics-based mode.pdf:app
+    \verb lication/pdf;Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\57WAC4Z6\\129
+    \verb 051.html:text/html
+    \endverb
+    \field{type}{Thesis}
+    \field{year}{2020}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
     \field{urlyear}{2022}
   \endentry
 
@@ -1045,8 +1974,8 @@
     \field{volume}{368}
     \field{langid}{english}
     \verb{file}
-    \verb Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\5IBMZTDA\\6B8108A588A8E
-    \verb 562EBB99A6558BAB774.html:text/html
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\5IBMZTDA\\6B8108A588A8E562
+    \verb EBB99A6558BAB774.html:text/html
     \endverb
     \field{journaltitle}{Journal of Fluid Mechanics}
     \field{month}{08}
@@ -1085,8 +2014,8 @@
     \endverb
     \field{volume}{51}
     \verb{file}
-    \verb ACS Full Text Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\7RY8WNJC\
-    \verb \ie50594a045.html:text/html
+    \verb ACS Full Text Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\7RY8WNJC\\ie
+    \verb 50594a045.html:text/html
     \endverb
     \field{journaltitle}{Industrial \& Engineering Chemistry}
     \field{day}{01}
@@ -1095,6 +2024,39 @@
     \field{urlday}{02}
     \field{urlmonth}{08}
     \field{urlyear}{2022}
+  \endentry
+
+  \entry{levich_physicochemical_1962}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LVG}{%
+         family={Levich},
+         familyi={L\bibinitperiod},
+         given={V.\bibnamedelima G.},
+         giveni={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Prentice-Hall}%
+    }
+    \keyw{Chemistry, Physical, Chemistry, Physical and theoretical, Chimie
+  physique et théorique, Hydrodynamics, Hydrodynamique, Mécanique des
+  fluides, physical chemistry, Physique, Thermochimie}
+    \strng{namehash}{LVG1}
+    \strng{fullhash}{LVG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{isbn}{978-0-13-674440-5}
+    \field{note}{{OCLC}: 1378432}
+    \field{pagetotal}{700}
+    \field{series}{Prentice-Hall international series in the physical and
+  chemical engineering sciences}
+    \field{title}{Physicochemical hydrodynamics}
+    \list{location}{1}{%
+      {Englewood Cliffs, N.J.}%
+    }
+    \field{year}{1962}
   \endentry
 
   \entry{magnaudet_motion_2000}{article}{}
@@ -1178,6 +2140,78 @@
     \field{year}{2000}
   \endentry
 
+  \entry{march_caracterisation_1999}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=MP}{%
+         family={March},
+         familyi={M\bibinitperiod},
+         given={Philippe\bibnamedelima (1970},
+         giveni={P\bibinitperiod\bibinitdelim \bibinitperiod},
+      }}%
+    }
+    \name{editora}{1}{}{%
+      {{hash=LJC}{%
+         family={Loraud},
+         familyi={L\bibinitperiod},
+         given={Jean-Claude},
+         giveni={J\bibinithyphendelim C\bibinitperiod},
+      }}%
+    }
+    \field{editoratype}{collaborator}
+    \keyw{Combustibles nucléaires -- Gaines, Corrosion, Ébullition,
+  Hydrodynamique, Modèles mathématiques, Réacteurs à eau sous pression,
+  Stéréologie}
+    \strng{namehash}{MP1}
+    \strng{fullhash}{MP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    L'etude du comportement en corrosion des materiaux de gainage du
+  combustible d'un reacteur nucleaire a eau sous pression en presence
+  d'ebullition necessite une connaissance precise de l'environnement
+  thermohydraulique et chimique des elements combustibles. Or, dans les
+  conditions de fonctionnement des rep (15,5 mpa et 340{\textbackslash}c), la
+  topologie de l'ecoulement diphasique a la paroi des gaines n'a jamais encore
+  ete caracterisee. Un dispositif de visualisation, adapte sur l'installation
+  experimentale reggae, permet d'obtenir de nouvelles donnees a la fois
+  qualitatives et quantitatives. Parmi les grandeurs accessibles figurent la
+  taille et la forme des inclusions de vapeur, le point de demarrage de
+  l'ebullition, les vitesses et les trajectoires des bulles. Une methode
+  d'analyse d'image originale est ensuite mise en uvre pour mesurer le taux de
+  vide et la concentration d'aire interfaciale dans un ecoulement diphasique a
+  bulles. Ainsi, le dispositif de visualisation permet de caracteriser la
+  topologie de l'ecoulement diphasique dans les conditions des rep en
+  ebullition nucleee sous-saturee. L'analyse des resultats experimentaux montre
+  la necessite d'une approche tres locale pour modeliser l'environnement
+  chimique des gaines en presence d'ebullition. Un nouveau modele
+  d'enrichissement en especes faiblement volatiles est donc propose puis
+  valide. Les bulles de vapeur sont desormais considerees comme des obstacles
+  physiques limitant l'acces du liquide a la paroi, et l'evaluation de leur
+  diametre joue un role determinant sur l'environnement chimique des gaines.
+  Cette etude confirme, tant au niveau experimental que theorique, l'existence
+  de fortes interactions entre la topologie de l'ebullition, la corrosion, les
+  caracteristiques de la paroi et la chimie de l'eau.%
+    }
+    \field{title}{Caractérisation et modélisation de l'environnement
+  thermohydraulique et chimique des gaines de combustible des réacteurs à eau
+  sous pression en présence d'ébullition}
+    \verb{url}
+    \verb https://www.theses.fr/1999AIX11068
+    \endverb
+    \list{institution}{1}{%
+      {Aix-Marseille 1}%
+    }
+    \field{type}{These de doctorat}
+    \field{day}{01}
+    \field{month}{01}
+    \field{year}{1999}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{mazzocco_reassessed_2018}{article}{}
     \name{author}{4}{}{%
       {{hash=MT}{%
@@ -1205,8 +2239,8 @@
          giveni={E\bibinitperiod},
       }}%
     }
-    \keyw{Heat partitioning, Bubble departure, Bubble lift-off, Critical heat
-  flux, Heat transfer}
+    \keyw{Bubble departure, Bubble lift-off, Critical heat flux, Heat
+  partitioning, Heat transfer}
     \strng{namehash}{MT+1}
     \strng{fullhash}{MTAWKRBE1}
     \field{labelnamesource}{author}
@@ -1238,8 +2272,8 @@
     \field{volume}{117}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\PYAB7P24\
-    \verb \S0017931017318720.html:text/html
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\PYAB7P24\\S0
+    \verb 017931017318720.html:text/html
     \endverb
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{day}{01}
@@ -1276,6 +2310,61 @@
     \field{year}{1954}
   \endentry
 
+  \entry{mei_shear_1994}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MR}{%
+         family={Mei},
+         familyi={M\bibinitperiod},
+         given={Renwei},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=KJF}{%
+         family={Klausner},
+         familyi={K\bibinitperiod},
+         given={J.\bibnamedelima F.},
+         giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+    }
+    \keyw{bubble, shear lift, sphere}
+    \strng{namehash}{MRKJF1}
+    \strng{fullhash}{MRKJF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    The shear lift force on a spherical bubble in an unbounded shear flow at
+  low Reynolds number is derived. It is two thirds of that for a solid sphere.
+  An approximate expression for the shear lift force at finite Reynolds number
+  and finite shear rate is obtained by an interpolation using the present
+  result and Auton's result at large Re and small shear rate.%
+    }
+    \verb{doi}
+    \verb 10.1016/0142-727X(94)90031-0
+    \endverb
+    \field{issn}{0142-727X}
+    \field{number}{1}
+    \field{pages}{62\bibrangedash 65}
+    \field{shortjournal}{International Journal of Heat and Fluid Flow}
+    \field{title}{Shear lift force on spherical bubbles}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0142727X94900310
+    \endverb
+    \field{volume}{15}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\YI9PL74W\\01
+    \verb 42727X94900310.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Fluid Flow}
+    \field{day}{01}
+    \field{month}{02}
+    \field{year}{1994}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{mei_unsteady_1992}{article}{}
     \name{author}{2}{}{%
       {{hash=MR}{%
@@ -1291,8 +2380,8 @@
          giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
       }}%
     }
-    \strng{namehash}{MRKJF1}
-    \strng{fullhash}{MRKJF1}
+    \strng{namehash}{MRKJF2}
+    \strng{fullhash}{MRKJF2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{M}
@@ -1315,6 +2404,88 @@
     \field{year}{1992}
     \field{urlday}{02}
     \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{mikic_bubble_1970}{article}{}
+    \name{author}{3}{}{%
+      {{hash=MBB}{%
+         family={Mikic},
+         familyi={M\bibinitperiod},
+         given={B.\bibnamedelima B},
+         giveni={B\bibinitperiod\bibinitdelim B},
+      }}%
+      {{hash=RWM}{%
+         family={Rohsenow},
+         familyi={R\bibinitperiod},
+         given={W.\bibnamedelima M},
+         giveni={W\bibinitperiod\bibinitdelim M},
+      }}%
+      {{hash=GP}{%
+         family={Griffith},
+         familyi={G\bibinitperiod},
+         given={P},
+         giveni={P},
+      }}%
+    }
+    \strng{namehash}{MBBRWMGP1}
+    \strng{fullhash}{MBBRWMGP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    A simple general relation for bubble growth rates in a uniformly
+  superheated liquid was derived. The relation is valid in both regions:
+  inertia controlled and heat diffusion controlled growth, respectively. The
+  derived relation is compared with the existing experimental results for
+  bubble growth in a uniformly superheated liquid with very good agreement. The
+  results are further extended to the bubble growth in a non-uniform
+  temperature field which approximates the conditions present in a nucleate
+  boiling from a heated surface. Résumé Une relation générale et simple
+  pour les vitesses de croissance des bulles a été obtenue dans un liquide
+  uniformément surchauffé. La relation est valable dans deux régions:
+  respectivement celle de la croissance contrôlée par l'inertie et celle de
+  la croissance contrôlée par la diffusion de la chaleur. La relation obtenue
+  est comparée avec un très bon accord avec les résultats expérimentaux
+  existant pour la croissance des bulles dans un liquide surchauffé
+  uniformément. Les résultats sont étendus plus loin à la croissance des
+  bulles dans un champ non uniforme de température qui rend compte d'une
+  façon approchée des conditions existant dans une ébullition nucléée à
+  partir d'une surface chauffée. Zusammenfassung Für die Blasenwachstumsraten
+  in einer gleichmässig überhitzten Flüssigkeit wurde eine einfache
+  allgemeine Beziehung abgeleitet. Die Beziehung ist für beide Gebiete, sowohl
+  für das Trägheitskraft-wie auch für das Wärmediffusions- geregelte
+  Wachstum gültig. Die abgeleitete Beziehung kann sehr gut mit den vorhandenen
+  experimentellen Ergebnissen für das Blasenwachstum in einer gleichmässig
+  überhitzten Flüssigkeit verglichen werden. Die Ergebnisse erstrecken sich
+  auch auf das Blasenwachstum in einem nicht einheitlichen Temperaturfeld, was
+  angenähert den Bedingungen für das Blasensieden an einer beheizten
+  Oberfläche entspricht.%
+    }
+    \verb{doi}
+    \verb 10.1016/0017-9310(70)90040-2
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{4}
+    \field{pages}{657\bibrangedash 666}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{On bubble growth rates}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0017931070900402
+    \endverb
+    \field{volume}{13}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\PPRL2DVN\\00
+    \verb 17931070900402.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{04}
+    \field{year}{1970}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
     \field{urlyear}{2022}
   \endentry
 
@@ -1342,6 +2513,91 @@
     \field{title}{Theoretical Hydrodynamics}
     \field{langid}{english}
     \field{year}{1938}
+  \endentry
+
+  \entry{okawa_bubble_2005}{article}{}
+    \name{author}{4}{}{%
+      {{hash=OT}{%
+         family={Okawa},
+         familyi={O\bibinitperiod},
+         given={Tomio},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=IT}{%
+         family={Ishida},
+         familyi={I\bibinitperiod},
+         given={Tatsuhiro},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=KI}{%
+         family={Kataoka},
+         familyi={K\bibinitperiod},
+         given={Isao},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=MM}{%
+         family={Mori},
+         familyi={M\bibinitperiod},
+         given={Michitsugu},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OT+1}
+    \strng{fullhash}{OTITKIMM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{abstract}{%
+    Rise characteristics of vapor bubbles after the departure from a nucleation
+  site in forced convective subcooled flow boiling were studied visually using
+  two synchronized high speed video cameras. The test section was a transparent
+  glass tube of 20mm in inside diameter, filtrated and deionized tap water was
+  used as a working fluid, and the flow direction adopted was vertical upward.
+  The outer surface of test section tube was electrically heated to generate
+  vapor bubbles inside of the tube. In the present experiments, the mass flux
+  and liquid subcooling were varied within 94–1435kg/m2s and 2.2–10K,
+  respectively. Since the observations were performed at low heat fluxes to
+  avoid the significant increase in the number of active nucleation sites, the
+  obtained bubble images were clear enough to carry out the detailed image
+  analysis for the rise characteristics of individual bubbles. The following
+  three different bubble rise paths were observed after the departure from
+  nucleation sites: some bubbles slid upward the vertical wall for long
+  distance, while other bubbles were detached from the wall after sliding for
+  several millimeters and then migrated toward the bulk liquid; after the
+  migration, some of the detached bubbles were collapsed in subcooled liquid
+  but others remained close to the wall and were reattached to the wall. The
+  results of detailed image analyses suggested that the variation in bubble
+  shape from flattened to more rounded was of primary importance for the
+  occurrence of bubble detachment from the wall.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.nucengdes.2005.02.012
+    \endverb
+    \field{issn}{0029-5493}
+    \field{number}{10}
+    \field{pages}{1149\bibrangedash 1161}
+    \field{series}{Festschrift Edition Celebrating the 65th Birthday of Prof.
+  Richard T. Lahey, Jr.}
+    \field{shortjournal}{Nuclear Engineering and Design}
+    \field{title}{Bubble rise characteristics after the departure from a
+  nucleation site in vertical upflow boiling of subcooled water}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0029549305000919
+    \endverb
+    \field{volume}{235}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\AAGR6FMZ\\S0
+    \verb 029549305000919.html:text/html
+    \endverb
+    \field{journaltitle}{Nuclear Engineering and Design}
+    \field{day}{01}
+    \field{month}{05}
+    \field{year}{2005}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{plesset_growth_1954}{article}{}
@@ -1393,16 +2649,156 @@
     \field{volume}{25}
     \field{langid}{english}
     \verb{file}
-    \verb Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\M4EBDBYY\\Plesset
-    \verb et Zwick - 1954 - The Growth of Vapor Bubbles in Superheated Liquids.
-    \verb pdf:application/pdf;Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\Z7T
-    \verb MBB7R\\9366.html:text/html
+    \verb Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\M4EBDBYY\\Plesset et
+    \verb Zwick - 1954 - The Growth of Vapor Bubbles in Superheated Liquids.pdf
+    \verb :application/pdf;Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\Z7TMBB7R\
+    \verb \9366.html:text/html
     \endverb
     \field{journaltitle}{Journal of Applied Physics}
     \field{month}{04}
     \field{year}{1954}
     \field{urlday}{02}
     \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{prodanovic_bubble_2002}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PV}{%
+         family={Prodanovic},
+         familyi={P\bibinitperiod},
+         given={V},
+         giveni={V},
+      }}%
+      {{hash=FD}{%
+         family={Fraser},
+         familyi={F\bibinitperiod},
+         given={D},
+         giveni={D},
+      }}%
+      {{hash=SM}{%
+         family={Salcudean},
+         familyi={S\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+    }
+    \keyw{Bubbles, Detachment, Photographic study, Subcooled flow boiling}
+    \strng{namehash}{PVFDSM1}
+    \strng{fullhash}{PVFDSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    This study presents experimental data for subcooled flow boiling of water
+  at pressures from 1.05 to 3 bar, bulk liquid velocities ranging from 0.08 to
+  0.8 m/s, and subcooling from 10 to 30 K. Experiments were carried out on a
+  vertical, annular test section with inner heating surface and upward water
+  flow. High-speed photography at rates of 6000–8000 frames/s captured bubble
+  behavior from inception to collapse, bubble shapes during lifetime,
+  detachment from the wall and typical bubble size. Bubble growth and
+  condensation rates, and variation of bubble lifetime and size with flow rate,
+  subcooling, heat flux and pressure were, further, examined and new
+  correlations proposed.%
+    }
+    \verb{doi}
+    \verb 10.1016/S0301-9322(01)00058-1
+    \endverb
+    \field{issn}{0301-9322}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 19}
+    \field{shortjournal}{International Journal of Multiphase Flow}
+    \field{title}{Bubble behavior in subcooled flow boiling of water at low
+  pressures and low flow rates}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0301932201000581
+    \endverb
+    \field{volume}{28}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\DRU7IQDV\\S0
+    \verb 301932201000581.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Multiphase Flow}
+    \field{day}{01}
+    \field{month}{01}
+    \field{year}{2002}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{ranz_evaporation_1952}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RWE}{%
+         family={Ranz},
+         familyi={R\bibinitperiod},
+         given={W.\bibnamedelima E.},
+         giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RWE1}
+    \strng{fullhash}{RWE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Every research begins here. Find papers from over 170m papers in major
+  {STEM} journals. Save time and never re-search.%
+    }
+    \field{issn}{0360-7275}
+    \field{shorttitle}{Evaporation from drops}
+    \field{title}{Evaporation from drops}
+    \verb{url}
+    \verb https://www.scinapse.io
+    \endverb
+    \field{journaltitle}{Chemical Engineering Progress}
+    \field{day}{01}
+    \field{month}{01}
+    \field{year}{1952}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{rayleigh_viii_1917}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RL}{%
+         family={Rayleigh},
+         familyi={R\bibinitperiod},
+         given={Lord},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RL1}
+    \strng{fullhash}{RL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \verb{doi}
+    \verb 10.1080/14786440808635681
+    \endverb
+    \field{issn}{1941-5982}
+    \field{note}{Publisher: Taylor \& Francis \_eprint:
+  https://doi.org/10.1080/14786440808635681}
+    \field{number}{200}
+    \field{pages}{94\bibrangedash 98}
+    \field{title}{{VIII}. On the pressure developed in a liquid during the
+  collapse of a spherical cavity}
+    \verb{url}
+    \verb https://doi.org/10.1080/14786440808635681
+    \endverb
+    \field{volume}{34}
+    \field{journaltitle}{The London, Edinburgh, and Dublin Philosophical
+  Magazine and Journal of Science}
+    \field{day}{01}
+    \field{month}{08}
+    \field{year}{1917}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
     \field{urlyear}{2022}
   \endentry
 
@@ -1475,7 +2871,7 @@
          giveni={C\bibinitperiod},
       }}%
     }
-    \keyw{Subcooled flow boiling, Bubble departure diameter, Bubble lift-off
+    \keyw{Bubble departure diameter, Subcooled flow boiling, Bubble lift-off
   diameter, Force balance model}
     \strng{namehash}{RT+1}
     \strng{fullhash}{RTZZZRSJYC1}
@@ -1516,6 +2912,122 @@
     \field{year}{2020}
     \field{urlday}{20}
     \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{ruckenstein_mass_1964}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RE}{%
+         family={Ruckenstein},
+         familyi={R\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RE1}
+    \strng{fullhash}{RE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    In this paper one establishes: (a) equations for the mass transfer
+  coefficient in the continuous phase from a single spherical bubble or drop,
+  valid for the whole range of values of the tangential component of velocity
+  at the interface; (b) equations for the mass transfer coefficient in the
+  continuous phase from a bubble which belongs to a group of bubbles. The
+  answer to the first problem is obtained for and using a simple interpolation
+  method. A comparison between the results given by this method and the
+  integral method is made. The second problem is investigated by means of a
+  cellular model. Résumé L'auteur établit d'abord des équations pour le
+  coefficient de transfert de masse dans la phase continue à partir d'une
+  bulle ou d'une goutte sphérique. Ces équations sont valable pour toutes les
+  valeurs de la composante tangentielle de la vitesse à l'interface. Les
+  résultats sont obtenus pour et en utilisant une méthode d'interpolation
+  simple. L'auteur établit ensuite des équations pour le transfert de masse
+  dans la phase continue d'une bulle, faisant partie d'un groupe de bulles. On
+  arrive à ces équations en considérant un modèle cellulaire.%
+    }
+    \verb{doi}
+    \verb 10.1016/0009-2509(64)85117-4
+    \endverb
+    \field{issn}{0009-2509}
+    \field{number}{2}
+    \field{pages}{131\bibrangedash 146}
+    \field{shortjournal}{Chemical Engineering Science}
+    \field{title}{On mass transfer in the continuous phase from spherical
+  bubbles or drops}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0009250964851174
+    \endverb
+    \field{volume}{19}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\7GGAPTC2\\00
+    \verb 09250964851174.html:text/html
+    \endverb
+    \field{journaltitle}{Chemical Engineering Science}
+    \field{day}{01}
+    \field{month}{02}
+    \field{year}{1964}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{saffman_lift_1965}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SPG}{%
+         family={Saffman},
+         familyi={S\bibinitperiod},
+         given={P.\bibnamedelima G.},
+         giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SPG1}
+    \strng{fullhash}{SPG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    It is shown that a sphere moving through a very viscous liquid with
+  velocity V relative to a uniform simple shear, the translation velocity being
+  parallel to the streamlines and measured relative to the streamline through
+  the centre, experiences a lift force 81·2μ Va 2 k ½ / v ½ + smaller terms
+  perpendicular to the flow direction, which acts to deflect the particle
+  towards the streamlines moving in the direction opposite to V . Here, a
+  denotes the radius of the sphere, κ the magnitude of the velocity gradient,
+  and μ and v the viscosity and kinematic viscosity, respectively. The
+  relevance of the result to the observations by Segrée \& Silberberg (1962)
+  of small spheres in Poiseuille flow is discussed briefly. Comments are also
+  made about the problem of a sphere in a parabolic velocity profile and the
+  functional dependence of the lift upon the parameters is obtained.%
+    }
+    \verb{doi}
+    \verb 10.1017/S0022112065000824
+    \endverb
+    \field{issn}{0022-1120, 1469-7645}
+    \field{number}{2}
+    \field{pages}{385\bibrangedash 400}
+    \field{shortjournal}{J. Fluid Mech.}
+    \field{title}{The lift on a small sphere in a slow shear flow}
+    \verb{url}
+    \verb https://www.cambridge.org/core/product/identifier/S0022112065000824/t
+    \verb ype/journal_article
+    \endverb
+    \field{volume}{22}
+    \field{langid}{english}
+    \verb{file}
+    \verb Saffman - 1965 - The lift on a small sphere in a slow shear flow.pdf:
+    \verb C\:\\Users\\Luc\\Zotero\\storage\\4PUIXU72\\Saffman - 1965 - The lift
+    \verb  on a small sphere in a slow shear flow.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Journal of Fluid Mechanics}
+    \field{month}{06}
+    \field{year}{1965}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
     \field{urlyear}{2022}
   \endentry
 
@@ -1603,9 +3115,9 @@
     \field{volume}{164}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\AQQ548PS\
-    \verb \Scheiff et al. - 2021 - Experimental study of steady and transient s
-    \verb ubcool.html:text/html
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\AQQ548PS\\Sc
+    \verb heiff et al. - 2021 - Experimental study of steady and transient subc
+    \verb ool.html:text/html
     \endverb
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{day}{01}
@@ -1613,6 +3125,116 @@
     \field{year}{2021}
     \field{urlday}{01}
     \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{scheiff_etude_2018}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=SV}{%
+         family={Scheiff},
+         familyi={S\bibinitperiod},
+         given={Valentin},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \name{editora}{2}{}{%
+      {{hash=CC}{%
+         family={Colin},
+         familyi={C\bibinitperiod},
+         given={Catherine},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sebilleau},
+         familyi={S\bibinitperiod},
+         given={Julien},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \field{editoratype}{collaborator}
+    \keyw{Accident d’insertion de réactivité ({RIA}), Accidents
+  nucléaires, Boiling crisis, Contrôle non destructif par thermographie
+  infrarouge, Convection, Crise d’ébullition, Critical heat flux ({CHF}),
+  Déclenchement de l’ébullition, Ébullition en film, Ébullition
+  nucléée, Échanges thermiques transitoires, Film boiling, Flux critique,
+  Infrared thermography, Nucleate boiling, Onset of nucleate boiling ({ONB}),
+  Reactivity Initiated Accident ({RIA}), Remouillage, Rewetting, {SCANAIR},
+  Thermographie infrarouge, Transfert de chaleur, Transient boiling}
+    \strng{namehash}{SV1}
+    \strng{fullhash}{SV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    L’étude de l’ébullition transitoire est un enjeu important pour la
+  sureté nucléaire. Un tel phénomène peut se produire lors d’un accident
+  de type {RIA} (Reactivity Initiated Accident)dans un réacteur nucléaire où
+  le pic de puissance au niveau d’un crayon de combustible peut déclencher
+  une ébullition transitoire conduisant à une forte augmentation de la
+  température de la gaine et à un risque de rupture. Plusieurs études en
+  conditions réacteurs ont permis d’obtenir des courbes d’ébullition
+  transitoires mais la modélisation qui en découle manque encore de
+  fiabilité. Dans le cadre d’une collaboration avec l’Institut de
+  Radioprotection et de Sûreté Nucléaire ({IRSN}), une expérience modèle a
+  été construite à l’Institut de Mécanique des Fluides de Toulouse
+  ({IMFT}). Elle génère un écoulement de réfrigérant {HFE}7000 dans un
+  canal de section semi-annulaire, simulant l’écoulement autour d’un
+  crayon de combustible, dont la partie intérieure, composée d’une feuille
+  de métal, est chauffée rapidement par effet Joule, simulant
+  l’échauffement de la gaine du crayon. La thermographie infra-rouge permet
+  de mesurer la température de la paroi externe du métal. L’application
+  d’une peinture noire sur le métal augmente son émissivité mais aussi la
+  résistance thermique de la paroi. La précision de la mesure de la
+  température d’intérêt a été optimisée en fonction de l’épaisseur
+  de peinture et une correction sur le bilan d’énergie prend en compte ce
+  paramètre. Ces mesures sont couplées avec une caméra rapide qui permet de
+  visualiser les régimes d’ébullition et d’obtenir des tailles de bulles
+  à l’aide de la mise en place d’algorithmes de traitement d’image. On
+  représente sur un diagramme flux-température les transferts thermiques lors
+  des différents régimes en stationnaire et en transitoire. Chaque régime
+  d’ébullition, en conditions stationnaire ou transitoire, est alors passé
+  en revue : la convection, le déclenchement de l’ébullition,
+  l’ébullition nucléée, la crise d’ébullition, l’ébullition en film
+  et le remouillage. Les régimes stationnaires sont correctement modélisés
+  par des corrélations usuelles. La convection transitoire est caractérisée
+  sur toute la paroi et son évolution se rapproche de la solution
+  quasistationnaire. Il est montré que les transferts thermiques lors du
+  passage vers l’ébullition nucléée sont dépendants de la formation
+  d’une importante poche de vapeur qui se propage sur la paroi. Une étude
+  locale de cette propagation est alors nécessaire. Afin de simuler des
+  transitoires de température durant l’ébullition nucléée, un système
+  d’asservissement de type P.I.D. permet d’imposer des créneaux ou des
+  rampes de températures (de 5 à 500 K.s 1 ). Les résultats en ébullition
+  nucléée sont conformes avec ceux de la littérature, tant en conditions
+  stationnaire que transitoire. L’expérience permet d’étudier le
+  transfert de chaleur lorsqu’un film de vapeur se forme et isole la paroi.
+  Ce régime d’ébullition en film, pendant la chauffe ou le refroidissement
+  de la paroi peut ainsi être stabilisée pendant plusieurs secondes avec ce
+  système. On caractérise ainsi les conditions de déclenchement de
+  l’ébullition en film, la dynamique de sa propagation et les transferts une
+  fois établi. Enfin, l’implémentation des caractéristiques physiques de
+  notre expérience dans le code {SCANAIR} de l’{IRSN}, permet de commencer
+  à calculer et comparer nos résultats expérimentaux avec les simulations
+  numériques. Des calculs de conduction instationnaire sont notamment
+  considérés en imposant la température mesurée pour analyser nos
+  résultats lors du régime de convection et après le déclenchement de
+  l’ébullition.%
+    }
+    \field{title}{Etude expérimentale et modélisation du transfert de chaleur
+  de l'ébullition transitoire}
+    \verb{url}
+    \verb https://www.theses.fr/2018INPT0145
+    \endverb
+    \list{institution}{1}{%
+      {Toulouse, {INPT}}%
+    }
+    \field{type}{These de doctorat}
+    \field{day}{13}
+    \field{month}{12}
+    \field{year}{2018}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
     \field{urlyear}{2022}
   \endentry
 
@@ -1675,8 +3297,8 @@
     \field{volume}{10}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\4QJ3HWHT\
-    \verb \0009250959800191.html:text/html
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\4QJ3HWHT\\00
+    \verb 09250959800191.html:text/html
     \endverb
     \field{journaltitle}{Chemical Engineering Science}
     \field{day}{01}
@@ -1754,8 +3376,8 @@
     \field{volume}{6}
     \field{langid}{english}
     \verb{file}
-    \verb Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\QC6FW489\\28483.html:te
-    \verb xt/html
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\QC6FW489\\28483.html:text/
+    \verb html
     \endverb
     \field{journaltitle}{Physical Review Fluids}
     \field{day}{28}
@@ -1793,8 +3415,8 @@
          giveni={M\bibinitperiod},
       }}%
     }
-    \keyw{Bubble lift-off size, Flow visualization, Forced convection,
-  Subcooled boiling}
+    \keyw{Subcooled boiling, Bubble lift-off size, Flow visualization, Forced
+  convection}
     \strng{namehash}{SR+1}
     \strng{fullhash}{SRHTIMMM1}
     \field{labelnamesource}{author}
@@ -1828,10 +3450,10 @@
     \field{volume}{48}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\84IKF6F7\
-    \verb \S001793100500459X.html:text/html;Texte intégral:C\:\\Users\\Luczer\
-    \verb \Zotero\\storage\\C55QNMMA\\Situ et al. - 2005 - Bubble lift-off size
-    \verb  in forced convective subcoole.pdf:application/pdf
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\84IKF6F7\\S0
+    \verb 01793100500459X.html:text/html;Texte intégral:C\:\\Users\\Luc\\Zoter
+    \verb o\\storage\\C55QNMMA\\Situ et al. - 2005 - Bubble lift-off size in fo
+    \verb rced convective subcoole.pdf:application/pdf
     \endverb
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{day}{01}
@@ -1920,8 +3542,8 @@
     \field{volume}{288}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\ZVRZVRKT\
-    \verb \S0001868620306084.html:text/html
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\ZVRZVRKT\\S0
+    \verb 001868620306084.html:text/html
     \endverb
     \field{journaltitle}{Advances in Colloid and Interface Science}
     \field{day}{01}
@@ -1987,8 +3609,8 @@
     \field{volume}{305}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\N2E3KXXZ\
-    \verb \S0029549316300450.html:text/html
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\N2E3KXXZ\\S0
+    \verb 029549316300450.html:text/html
     \endverb
     \field{journaltitle}{Nuclear Engineering and Design}
     \field{day}{15}
@@ -2068,10 +3690,10 @@
     \field{volume}{279}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\MIM4HF3U\
-    \verb \S0029549314004646.html:text/html;Texte intégral:C\:\\Users\\Luczer\
-    \verb \Zotero\\storage\\SA3JVT5K\\Sugrue et al. - 2014 - An experimental st
-    \verb udy of bubble departure diameter.pdf:application/pdf
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\MIM4HF3U\\S0
+    \verb 029549314004646.html:text/html;Texte intégral:C\:\\Users\\Luc\\Zoter
+    \verb o\\storage\\SA3JVT5K\\Sugrue et al. - 2014 - An experimental study of
+    \verb  bubble departure diameter.pdf:application/pdf
     \endverb
     \field{journaltitle}{Nuclear Engineering and Design}
     \field{day}{01}
@@ -2170,8 +3792,8 @@
     \field{volume}{41}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\A7NX8446\
-    \verb \S0017931098000921.html:text/html
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\A7NX8446\\S0
+    \verb 017931098000921.html:text/html
     \endverb
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{day}{01}
@@ -2183,7 +3805,7 @@
   \endentry
 
   \entry{thorncroft_bubble_2001}{article}{}
-    \name{author}{2}{}{%
+    \name{author}{3}{}{%
       {{hash=TG}{%
          family={Thorncroft},
          familyi={T\bibinitperiod},
@@ -2196,9 +3818,15 @@
          given={J.F.},
          giveni={J\bibinitperiod},
       }}%
+      {{hash=MR}{%
+         family={Mei},
+         familyi={M\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
     }
-    \strng{namehash}{TGKJ1}
-    \strng{fullhash}{TGKJ1}
+    \strng{namehash}{TGKJMR1}
+    \strng{fullhash}{TGKJMR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{T}
@@ -2223,11 +3851,131 @@
     \field{title}{Bubble forces and detachment models}
     \field{volume}{13}
     \verb{file}
-    \verb Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\L7WF849I\\display.html:
-    \verb text/html
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\L7WF849I\\display.html:tex
+    \verb t/html
     \endverb
     \field{journaltitle}{Multiphase Science and Technology}
     \field{year}{2001}
+  \endentry
+
+  \entry{tolubinsky_vapour_1970}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=TVI}{%
+         family={Tolubinsky},
+         familyi={T\bibinitperiod},
+         given={V.\bibnamedelima I.},
+         giveni={V\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=KDM}{%
+         family={Kostanchuk},
+         familyi={K\bibinitperiod},
+         given={D.\bibnamedelima M.},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Begel House Inc.}%
+    }
+    \strng{namehash}{TVIKDM1}
+    \strng{fullhash}{TVIKDM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \verb{doi}
+    \verb 10.1615/IHTC4.250
+    \endverb
+    \field{eventtitle}{International Heat Transfer Conference 4}
+    \field{title}{{VAPOUR} {BUBBLES} {GROWTH} {RATE} {AND} {HEAT} {TRANSFER}
+  {INTENSITY} {AT} {SUBCOOLED} {WATER} {BOILING}}
+    \verb{url}
+    \verb https://ihtcdigitallibrary.com/conferences/0c7302a61c102806,630fd64a6
+    \verb 415cdeb,4cba2d0851d6375d.html
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\CZYW3J6P\\0c7302a61c102806
+    \verb ,630fd64a6415cdeb,4cba2d0851d6375d.html:text/html
+    \endverb
+    \field{year}{1970}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{urbano_direct_2019}{article}{}
+    \name{author}{3}{}{%
+      {{hash=UA}{%
+         family={Urbano},
+         familyi={U\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TS}{%
+         family={Tanguy},
+         familyi={T\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Colin},
+         familyi={C\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{Direct numerical simulation, Micro-gravity, Nucleate boiling}
+    \strng{namehash}{UATSCC1}
+    \strng{fullhash}{UATSCC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{U}
+    \field{sortinithash}{U}
+    \field{abstract}{%
+    Understanding and controlling nucleate pool boiling phenomena in zero
+  gravity conditions is fundamental for space applications. An analytical model
+  for the equilibrium radius reached by a bubble nucleated in sub-cooled
+  conditions is established in this work and verified numerically. Indeed,
+  direct numerical simulations of two phase flows conjugated with the heat
+  conduction in the solid wall are carried out in order to verify and correct
+  the analytical model. Fine grids, with cells size of the order of the micron,
+  are mandatory in order to capture the subtle equilibrium between condensation
+  and evaporation that characterises stationary conditions. This has been
+  possible thanks to the house made solver {DIVA}, validated for nucleate pool
+  boiling simulations, and that permits to carry out parallel numerical
+  simulations. Results show that the equilibrium radius of the bubble is a
+  function of the thermal gradient, of the Jakob numbers associated with
+  condensation and evaporation and of the apparent contact angle. The analysis
+  of the thermal field is carried out and an interpretation of the physical
+  processes that characterise the equilibrium is given. In addition, useful
+  information on the heat transfer behaviour, reported in terms of Nu numbers,
+  completes the work.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2019.118521
+    \endverb
+    \field{issn}{0017-9310}
+    \field{pages}{118521}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{Direct numerical simulation of nucleate boiling in zero
+  gravity conditions}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931019315224
+    \endverb
+    \field{volume}{143}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\6BH9DZ2N\\S0
+    \verb 017931019315224.html:text/html;Version acceptée:C\:\\Users\\Luc\\Zot
+    \verb ero\\storage\\RTLDPP8L\\Urbano et al. - 2019 - Direct numerical simul
+    \verb ation of nucleate boiling in.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{11}
+    \field{year}{2019}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{urbano_direct_2018}{article}{}
@@ -2297,10 +4045,10 @@
     \field{volume}{123}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\H8FW
-    \verb 2ZH7\\Urbano et al. - 2018 - Direct numerical simulation of nucleate
-    \verb boiling in.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Luc
-    \verb zer\\Zotero\\storage\\Z962PXMP\\S0017931017353619.html:text/html
+    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\H8FW2ZH
+    \verb 7\\Urbano et al. - 2018 - Direct numerical simulation of nucleate boi
+    \verb ling in.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Luc\\Z
+    \verb otero\\storage\\Z962PXMP\\S0017931017353619.html:text/html
     \endverb
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{day}{01}
@@ -2379,8 +4127,8 @@
     \field{volume}{38}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\Z8WFFZK3\
-    \verb \001793109400319Q.html:text/html
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\Z8WFFZK3\\00
+    \verb 1793109400319Q.html:text/html
     \endverb
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{day}{01}
@@ -2439,16 +4187,193 @@
     \field{volume}{77}
     \field{langid}{english}
     \verb{file}
-    \verb Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\RMPRYF2G\\6319F8144BA58
-    \verb 5B0F2829036892D297E.html:text/html;Version soumise:C\:\\Users\\Luczer
-    \verb \\Zotero\\storage\\9DBWES6B\\Wijngaarden et Jeffrey - 1976 - Hydrodyn
-    \verb amic interaction between gas bubbles in li.pdf:application/pdf
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\RMPRYF2G\\6319F8144BA585B0
+    \verb F2829036892D297E.html:text/html;Version soumise:C\:\\Users\\Luc\\Zote
+    \verb ro\\storage\\9DBWES6B\\Wijngaarden et Jeffrey - 1976 - Hydrodynamic i
+    \verb nteraction between gas bubbles in li.pdf:application/pdf
     \endverb
     \field{journaltitle}{Journal of Fluid Mechanics}
     \field{month}{09}
     \field{year}{1976}
     \field{urlday}{02}
     \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{yoo_experimental_2016}{article}{}
+    \name{author}{3}{}{%
+      {{hash=YJ}{%
+         family={Yoo},
+         familyi={Y\bibinitperiod},
+         given={Junsoo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EPCE}{%
+         family={Estrada-Perez},
+         familyi={E\bibinithyphendelim P\bibinitperiod},
+         given={Carlos\bibnamedelima E.},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=HYA}{%
+         family={Hassan},
+         familyi={H\bibinitperiod},
+         given={Yassin\bibnamedelima A.},
+         giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \keyw{Reliability, Single nucleation site, Statistics, Subcooled boiling
+  flow}
+    \strng{namehash}{YJEPCEHYA1}
+    \strng{fullhash}{YJEPCEHYA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{abstract}{%
+    A novel experimental method and data acquisition/analysis strategy that
+  ensures reliable measurements of various subcooled flow boiling parameters is
+  discussed. In this study, all experiments were performed by keeping a single
+  active nucleation site within the entire heated area in a square upward flow
+  channel. This approach greatly facilitated the observation of bubble and wall
+  heat transfer features in subcooled boiling flow. Vapor bubbles originating
+  from the nucleation site were observed with both micro- and macroscopic views
+  from high-speed cameras while corresponding wall temperature was measured by
+  an infrared camera. This allowed simultaneously capturing various bubbles
+  characteristics with multiple scales (both space and time) as well as their
+  impact on wall heat transfer. In addition, efforts were made to characterize
+  the observed boiling behavior with high statistical accuracy by analyzing
+  numerous images taken at each test condition. This study proves that by
+  taking the current strategy excellent repeatability and thus reliability can
+  be achieved for a wide range of flow boiling parameters such as bubble size,
+  bubble velocity, statistical distribution of bubble size and time-averaged
+  wall heat transfer coefficients. Also, the major sources of uncertainty for
+  each measurement are thoroughly investigated, from which the final
+  uncertainties are determined. Overall, the present study suggests what we
+  must concern to achieve truly reliable and useful data from any boiling
+  experiments.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijmultiphaseflow.2016.04.018
+    \endverb
+    \field{issn}{0301-9322}
+    \field{pages}{315\bibrangedash 324}
+    \field{shortjournal}{International Journal of Multiphase Flow}
+    \field{shorttitle}{Experimental study on bubble dynamics and wall heat
+  transfer arising from a single nucleation site at subcooled flow boiling
+  conditions – Part 1}
+    \field{title}{Experimental study on bubble dynamics and wall heat transfer
+  arising from a single nucleation site at subcooled flow boiling conditions
+  – Part 1: Experimental methods and data quality verification}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0301932216302361
+    \endverb
+    \field{volume}{84}
+    \field{langid}{english}
+    \verb{file}
+    \verb Version acceptée:C\:\\Users\\Luc\\Zotero\\storage\\XZ5EF4DH\\Yoo et
+    \verb al. - 2016 - Experimental study on bubble dynamics and wall hea.pdf:a
+    \verb pplication/pdf
+    \endverb
+    \field{journaltitle}{International Journal of Multiphase Flow}
+    \field{day}{01}
+    \field{month}{09}
+    \field{year}{2016}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{yoo_experimental_2016-1}{article}{}
+    \name{author}{3}{}{%
+      {{hash=YJ}{%
+         family={Yoo},
+         familyi={Y\bibinitperiod},
+         given={Junsoo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EPCE}{%
+         family={Estrada-Perez},
+         familyi={E\bibinithyphendelim P\bibinitperiod},
+         given={Carlos\bibnamedelima E.},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=HYA}{%
+         family={Hassan},
+         familyi={H\bibinitperiod},
+         given={Yassin\bibnamedelima A.},
+         giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \keyw{Boiling heat transfer, Bubble coalescence, Bubble size distribution,
+  Bubble sliding, Single nucleation site, Sliding bubble velocity, Subcooled
+  flow boiling}
+    \strng{namehash}{YJEPCEHYA1}
+    \strng{fullhash}{YJEPCEHYA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{abstract}{%
+    This second of two companion papers presents an analysis of sliding bubble
+  and wall heat transfer parameters measured during subcooled boiling in a
+  square, vertical, upward flow channel. Bubbles were generated only from a
+  single nucleation site for better observation of both the sliding bubble
+  characteristics and their impact on wall heat transfer through optical
+  measurement techniques. Specific interests include: (i) bubbles departure and
+  subsequent growth while sliding, (ii) bubbles release frequency, (iii)
+  coalescence of sliding bubbles, (iv) sliding bubbles velocity, (v) bubbles
+  size distribution and (vi) wall heat transfer influenced by sliding bubbles.
+  The results showed that sliding bubbles involve two distinct growth
+  behaviors: (i) at low mass fluxes, sliding bubbles grew fast near the
+  nucleation site, subsequently shrank, and then grew again, (ii) as mass flux
+  increased, however, sliding bubbles grew more steadily. The bubbles
+  originating from the single nucleation site coalesced frequently while
+  sliding, which showed close relation with bubbles release frequency. The
+  sliding bubble velocity near the nucleation site consistently decreased by
+  increasing mass flux, while the observation often became reversed as the
+  bubbles slid downstream due to the effect of interfacial drag. The sliding
+  bubbles moved faster than the local liquid (i.e., ur{\textless}0) at low mass
+  flux conditions, but it became reversed as the mass flux increased. The size
+  distribution of sliding bubbles followed Gaussian distribution well both near
+  and far from the nucleation site. The standard deviation of bubble size
+  varied insignificantly through sliding compared to the changes in mean bubble
+  size. Lastly, the sliding bubbles enhanced the wall heat transfer and the
+  effect became more noticeable as inlet subcooling/mass flux decreased or wall
+  heat flux increased. In particular, the sliding bubble characteristics such
+  as bubble growth behavior observed near the nucleation site played a dominant
+  role in determining the ultimate level of wall heat transfer enhancement
+  within the test channel.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijmultiphaseflow.2016.04.019
+    \endverb
+    \field{issn}{0301-9322}
+    \field{pages}{292\bibrangedash 314}
+    \field{shortjournal}{International Journal of Multiphase Flow}
+    \field{shorttitle}{Experimental study on bubble dynamics and wall heat
+  transfer arising from a single nucleation site at subcooled flow boiling
+  conditions – Part 2}
+    \field{title}{Experimental study on bubble dynamics and wall heat transfer
+  arising from a single nucleation site at subcooled flow boiling conditions
+  – Part 2: Data analysis on sliding bubble characteristics and associated
+  wall heat transfer}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0301932215302251
+    \endverb
+    \field{volume}{84}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\ERKETZDM\\S0
+    \verb 301932215302251.html:text/html;Version acceptée:C\:\\Users\\Luc\\Zot
+    \verb ero\\storage\\SBYNPYFW\\Yoo et al. - 2016 - Experimental study on bub
+    \verb ble dynamics and wall hea.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{International Journal of Multiphase Flow}
+    \field{day}{01}
+    \field{month}{09}
+    \field{year}{2016}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
     \field{urlyear}{2022}
   \endentry
 
@@ -2473,7 +4398,7 @@
          giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
-    \keyw{Subcooled boiling flow, Bubble growth model, Sliding bubble growth}
+    \keyw{Bubble growth model, Sliding bubble growth, Subcooled boiling flow}
     \strng{namehash}{YJEPCEHYA1}
     \strng{fullhash}{YJEPCEHYA1}
     \field{labelnamesource}{author}
@@ -2511,10 +4436,10 @@
     \field{volume}{138}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\NIMZ
-    \verb KRV7\\Yoo et al. - 2018 - Development of a mechanistic model for slid
-    \verb ing bub.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Luczer
-    \verb \\Zotero\\storage\\TPYSL8P7\\S1359431117369727.html:text/html
+    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\NIMZKRV
+    \verb 7\\Yoo et al. - 2018 - Development of a mechanistic model for sliding
+    \verb  bub.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Luc\\Zote
+    \verb ro\\storage\\TPYSL8P7\\S1359431117369727.html:text/html
     \endverb
     \field{journaltitle}{Applied Thermal Engineering}
     \field{day}{25}
@@ -2588,10 +4513,10 @@
     \field{volume}{253}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\T8I6
-    \verb EXFE\\Yun et al. - 2012 - Prediction of a subcooled boiling flow with
-    \verb  advanc.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Luczer
-    \verb \\Zotero\\storage\\TP45X2GT\\S0029549311006923.html:text/html
+    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\T8I6EXF
+    \verb E\\Yun et al. - 2012 - Prediction of a subcooled boiling flow with ad
+    \verb vanc.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Luc\\Zote
+    \verb ro\\storage\\TP45X2GT\\S0029549311006923.html:text/html
     \endverb
     \field{journaltitle}{Nuclear Engineering and Design}
     \field{day}{01}
@@ -2603,7 +4528,7 @@
   \endentry
 
   \entry{zeng_unified_1993-1}{article}{}
-    \name{author}{3}{}{%
+    \name{author}{4}{}{%
       {{hash=ZLZ}{%
          family={Zeng},
          familyi={Z\bibinitperiod},
@@ -2616,6 +4541,12 @@
          given={J.\bibnamedelima F.},
          giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod},
       }}%
+      {{hash=BDM}{%
+         family={Bernhard},
+         familyi={B\bibinitperiod},
+         given={D.\bibnamedelima M.},
+         giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
       {{hash=MR}{%
          family={Mei},
          familyi={M\bibinitperiod},
@@ -2623,43 +4554,48 @@
          giveni={R\bibinitperiod},
       }}%
     }
-    \strng{namehash}{ZLZKJFMR1}
-    \strng{fullhash}{ZLZKJFMR1}
+    \strng{namehash}{ZLZ+1}
+    \strng{fullhash}{ZLZKJFBDMMR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
     \field{abstract}{%
-    A new model is proposed for the prediction of vapor bubble departure
-  diameters in saturated pool boiling. The model utilizes a force balance which
-  follows a similar form as that used by Klausner et al. (Int. J. Heat Mass
-  Transfer 36, 651–662 (1993)) for flow boiling. The vapor bubble growth rate
-  is a necessary input to the model, and its reliable estimation is required to
-  predict accurately departure diameters. The model has been tested over the
-  following range of conditions: pressure, 0.02–2.8 bar ; Jakob number,
-  4–869; and gravity, 1−0.014 g. It is demonstrated that over the wide
-  range of boiling data considered the departure diameter predicted using the
-  present model is significantly improved over existing
-  correlations.†Department of Aerospace Engineering, Mechanics and
-  Engineering Science.%
+    An improved model is proposed for the prediction of departure and lift-off
+  diameters in saturated forced convection boiling. The model utilizes a force
+  balance similar to that proposed by Klausner et al. (Int. J. Heat Mass
+  Transfer 36, 651–662 (1993)). One significant improvement is that the
+  inclination angle is determined on a dynamic basis and is not required as an
+  input. Furthermore, it is hypothesized that the surface tension force is
+  small compared to other forces acting on a vapor bubble at the points of
+  departure and lift-off, and thus information on the bubble contact diameter
+  and contact angles is not required. A new data set on mean vapor bubble
+  lift-off diameters and probability density functions (pdf's) for flow boiling
+  of refrigerant R113 on a nichrome heating strip has been obtained using the
+  experimental facility described by Klausner et al. (Int. J. Heat Mass
+  Transfer 36, 651–662 (1993)). The wall superheat and mean liquid velocity
+  respectively range from 5.5 to 12.0 °C and 0.35 to 1.0 m s−1. It is
+  demonstrated that over the limited range of flow boiling conditions
+  considered, the predicted departure and lift-off diameters agree well with
+  measured values.%
     }
     \verb{doi}
-    \verb 10.1016/S0017-9310(05)80111-5
+    \verb 10.1016/S0017-9310(05)80112-7
     \endverb
     \field{issn}{0017-9310}
     \field{number}{9}
-    \field{pages}{2261\bibrangedash 2270}
+    \field{pages}{2271\bibrangedash 2279}
     \field{shortjournal}{International Journal of Heat and Mass Transfer}
     \field{title}{A unified model for the prediction of bubble detachment
-  diameters in boiling systems— I. Pool boiling}
+  diameters in boiling systems—{II}. Flow boiling}
     \verb{url}
-    \verb https://www.sciencedirect.com/science/article/pii/S0017931005801115
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931005801127
     \endverb
     \field{volume}{36}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\YK62WXAS\
-    \verb \S0017931005801115.html:text/html
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\YA3NE8NE\\S0
+    \verb 017931005801127.html:text/html
     \endverb
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{day}{01}
@@ -2757,7 +4693,7 @@
          giveni={R\bibinitperiod},
       }}%
     }
-    \keyw{Bubble dynamics, Bubble sliding, Subcooled flow boiling, Wall heat
+    \keyw{Subcooled flow boiling, Bubble dynamics, Bubble sliding, Wall heat
   flux partitioning model}
     \strng{namehash}{ZP+1}
     \strng{fullhash}{ZPHSGCSDHR1}
@@ -2802,9 +4738,9 @@
     \field{volume}{174}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\KFF2M7XT\
-    \verb \S0017931021003987.html:text/html;ScienceDirect Snapshot:C\:\\Users\\
-    \verb Luczer\\Zotero\\storage\\NFD8HXU4\\S0017931021003987.html:text/html
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\NFD8HXU4\\S0
+    \verb 017931021003987.html:text/html;ScienceDirect Snapshot:C\:\\Users\\Luc
+    \verb \\Zotero\\storage\\KFF2M7XT\\S0017931021003987.html:text/html
     \endverb
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{day}{01}
@@ -2848,8 +4784,8 @@
          giveni={X\bibinitperiod},
       }}%
     }
-    \keyw{Subcooled flow boiling, Bubble departure diameter, Bubble contact
-  diameter, Force balance analysis}
+    \keyw{Bubble departure diameter, Force balance analysis, Subcooled flow
+  boiling, Bubble contact diameter}
     \strng{namehash}{ZP+1}
     \strng{fullhash}{ZPHRHSZYRX1}
     \field{labelnamesource}{author}
@@ -2893,10 +4829,10 @@
     \field{volume}{149}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\QESV
-    \verb K68I\\Zhou et al. - 2020 - Experimental investigation on bubble conta
-    \verb ct diame.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Lucze
-    \verb r\\Zotero\\storage\\LFHFJR3U\\S0017931019348240.html:text/html
+    \verb ScienceDirect Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\QESVK68
+    \verb I\\Zhou et al. - 2020 - Experimental investigation on bubble contact
+    \verb diame.pdf:application/pdf;ScienceDirect Snapshot:C\:\\Users\\Luc\\Zot
+    \verb ero\\storage\\LFHFJR3U\\S0017931019348240.html:text/html
     \endverb
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{day}{01}
@@ -2998,8 +4934,8 @@
     \field{volume}{2}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\ITY99KWC\
-    \verb \0017931061900163.html:text/html
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\ITY99KWC\\00
+    \verb 17931061900163.html:text/html
     \endverb
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{day}{01}
@@ -3091,8 +5027,8 @@
     \field{volume}{19}
     \field{langid}{english}
     \verb{file}
-    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\RJ9RQFLI\
-    \verb \0017931076900478.html:text/html
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\RJ9RQFLI\\00
+    \verb 17931076900478.html:text/html
     \endverb
     \field{journaltitle}{International Journal of Heat and Mass Transfer}
     \field{day}{01}

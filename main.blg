@@ -38,7 +38,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'field_info' (item size: 4) to 24321 items.
 Database file #1: main-blx.bib
-Database file #2: bib_test.bib
+Database file #2: bib_v3.bib
 Reallocating 'str_pool' (item size: 1) to 130000 items.
 Warning--I didn't find a database entry for "knuth:1974"
 Warning--I didn't find a database entry for "Guelfi2007"
@@ -79,35 +79,7 @@ Warning--I didn't find a database entry for "Basu"
 Warning--I didn't find a database entry for "Cole"
 Warning--I didn't find a database entry for "Gilman"
 Warning--I didn't find a database entry for "Zuber1961"
-Warning--I didn't find a database entry for "prodanovic_2006"
-Warning--I didn't find a database entry for "march_1990"
-Warning--I didn't find a database entry for "tolubinsky_diam"
-Warning--I didn't find a database entry for "duhar_npentane"
-Warning--I didn't find a database entry for "hadamard_1911"
-Warning--I didn't find a database entry for "levich_1962"
-Warning--I didn't find a database entry for "auton_1998"
-Warning--I didn't find a database entry for "legendre_lift_1998bis"
-Warning--I didn't find a database entry for "mei_klausner_lift"
-Warning--I didn't find a database entry for "saffman_lift_particle"
-Warning--I didn't find a database entry for "auton_lift_1987"
-Warning--I didn't find a database entry for "legendre_lift_1997_coeff"
-Warning--I didn't find a database entry for "duhar_phd"
-Warning--I didn't find a database entry for "rayleigh_1917"
-Warning--I didn't find a database entry for "mikic_1969"
-Warning--I didn't find a database entry for "ruckenstein_1958"
-Warning--I didn't find a database entry for "koffman_plesset_1983"
-Warning--I didn't find a database entry for "chen_haginiwa_2017"
-Warning--I didn't find a database entry for "chen_hu_2020"
-Warning--I didn't find a database entry for "guion"
-Warning--I didn't find a database entry for "cooper_lloyd_1969"
-Warning--I didn't find a database entry for "kommajosyula"
-Warning--I didn't find a database entry for "demarly"
-Warning--I didn't find a database entry for "yoo_exp_2016"
-Warning--I didn't find a database entry for "kader_wall_law_1969"
-Warning--I didn't find a database entry for "ranz_marshall"
-Warning--I didn't find a database entry for "delvalle_quenching"
-Warning--I didn't find a database entry for "mikic_1970"
-Warning--I didn't find a database entry for "urbano_2019"
+Warning--I didn't find a database entry for "prodanovic"
 Warning--I didn't find a database entry for "richenderfer_phd"
 Warning--I didn't find a database entry for "jens_lottes_data"
 Warning--I didn't find a database entry for "kennel_phd"
@@ -132,45 +104,46 @@ Warning--I didn't find a database entry for "Richen_phd"
 Biblatex version: 3.13
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 50 entries,
+Reallocating 'str_pool' (item size: 1) to 195000 items.
+You've used 78 entries,
             6365 wiz_defined-function locations,
-            1837 strings with 78070 characters,
-and the built_in function-call counts, 526070 in all, are:
-= -- 24806
-> -- 42115
-< -- 3451
-+ -- 40217
-- -- 34571
-* -- 30537
-:= -- 71055
+            2089 strings with 128677 characters,
+and the built_in function-call counts, 828026 in all, are:
+= -- 38828
+> -- 67071
+< -- 5530
++ -- 63699
+- -- 55017
+* -- 47553
+:= -- 111557
 add.period$ -- 0
-call.type$ -- 50
-change.case$ -- 49
-chr.to.int$ -- 3020
-cite$ -- 98
-duplicate$ -- 43037
-empty$ -- 36172
-format.name$ -- 3616
-if$ -- 81122
+call.type$ -- 78
+change.case$ -- 77
+chr.to.int$ -- 4868
+cite$ -- 154
+duplicate$ -- 67268
+empty$ -- 56959
+format.name$ -- 5570
+if$ -- 127324
 int.to.chr$ -- 0
-int.to.str$ -- 108
+int.to.str$ -- 181
 missing$ -- 0
-newline$ -- 2428
-num.names$ -- 2224
-pop$ -- 16592
+newline$ -- 3803
+num.names$ -- 3582
+pop$ -- 25907
 preamble$ -- 1
-purify$ -- 960
+purify$ -- 1544
 quote$ -- 0
-skip$ -- 13056
+skip$ -- 20694
 stack$ -- 0
-substring$ -- 50184
-swap$ -- 12896
-text.length$ -- 2791
-text.prefix$ -- 51
+substring$ -- 79007
+swap$ -- 20377
+text.length$ -- 4387
+text.prefix$ -- 87
 top$ -- 1
-type$ -- 1676
+type$ -- 2608
 warning$ -- 0
-while$ -- 6807
+while$ -- 10568
 width$ -- 0
-write$ -- 2379
-(There were 89 warnings)
+write$ -- 3726
+(There were 61 warnings)
