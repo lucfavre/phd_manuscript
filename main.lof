@@ -175,60 +175,74 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Boiling visualization by and adapted from Scheiff \textit {et al.}\xspace \cite {scheiff_experimental_2021}, highlighting the observed layer of sliding bubbles.}}}{63}{subfigure.27.2}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Evolution of $D_{lo} / L_{c}$ depending on the flow conditions.\relax }}{65}{figure.caption.50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Closure laws for the Heat Flux Partitioning model}}{65}{chapter.6}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Influence of superheat}}}{65}{subfigure.28.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Predictive capability of wall temperature by single-phase heat transfer correlations. $\pm 3K$ error bars indicated.\relax }}{65}{figure.caption.50}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Influence of subcooling}}}{65}{subfigure.28.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Dittus-Boelter correlation}}}{65}{subfigure.1.1}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Influence of density ratio}}}{65}{subfigure.28.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Gnielinski correlation}}}{65}{subfigure.1.2}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Influence of liquid Prandtl number}}}{65}{subfigure.28.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Predictive capability of wall temperature by NCFD law and Gnielinski correlation including corrections. $\pm 3K$ error bars indicated.\relax }}{66}{figure.caption.51}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Influence of Reynolds number}}}{65}{subfigure.28.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {NCFD law}}}{66}{subfigure.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Corrected Gnielinski correlation. We multiply the HTC by 4 on Richenderfer and Kossolapov cases and by 0.9 on Jens-Lotte cases.}}}{66}{subfigure.2.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Comparison of the proposed model and Kommajoyusla model against experimental data from Unal. Black lines represent the $\pm 50\%$ error bars.\relax }}{69}{figure.caption.53}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces HSV Visualization of bubble density at various pressures adapted from Kossolapov \cite {kossolapov_experimental_2021} (left to right: 1.01 bar, 3 bar, 19.8 bar, 75.8 bar). \relax }}{70}{figure.caption.56}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Sketch of the link between bubble contact angle and wettability / cavity flooding\relax }}{71}{figure.caption.57}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Predictions of the chosen models against the experimental data of Table \ref {tab:nsit_exp_data} with $\pm 50\%$ error bars. The contact angles\relax }}{73}{figure.caption.59}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Lemmert \& Chawla model}}}{73}{subfigure.6.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hibiki \& Ishii model}}}{73}{subfigure.6.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Zhou \textit {et al.}\xspace model}}}{73}{subfigure.6.3}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \textit {et al.}\xspace model}}}{73}{subfigure.6.4}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Influence of Capillary number}}}{65}{subfigure.28.6}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Assembling a new Heat Flux Partitioning Model}}{77}{chapter.7}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Closure laws for the Heat Flux Partitioning model}}{66}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Sketch of the considered HFP\relax }}{77}{figure.caption.60}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Predictive capability of wall temperature by single-phase heat transfer correlations. $\pm 3K$ error bars indicated.\relax }}{66}{figure.caption.52}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Dittus-Boelter correlation}}}{66}{subfigure.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Gnielinski correlation}}}{66}{subfigure.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Predictive capability of wall temperature by NCFD law and Gnielinski correlation including corrections. $\pm 3K$ error bars indicated.\relax }}{67}{figure.caption.53}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {NCFD law}}}{67}{subfigure.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Corrected Gnielinski correlation. We multiply the HTC by 4 on Richenderfer and Kossolapov cases and by 0.9 on Jens-Lotte cases.}}}{67}{subfigure.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Comparison of the proposed model and Kommajoyusla model against experimental data from Unal. Black lines represent the $\pm 50\%$ error bars.\relax }}{70}{figure.caption.55}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces HSV Visualization of bubble density at various pressures adapted from Kossolapov \cite {kossolapov_experimental_2021} (left to right: 1.01 bar, 3 bar, 19.8 bar, 75.8 bar). \relax }}{71}{figure.caption.58}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Sketch of the link between bubble contact angle and wettability / cavity flooding\relax }}{72}{figure.caption.59}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Predictions of the chosen models against the experimental data of Table \ref {tab:nsit_exp_data} with $\pm 50\%$ error bars. The contact angles\relax }}{74}{figure.caption.61}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Lemmert \& Chawla model}}}{74}{subfigure.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hibiki \& Ishii model}}}{74}{subfigure.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Zhou \textit {et al.}\xspace model}}}{74}{subfigure.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \textit {et al.}\xspace model}}}{74}{subfigure.6.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Promoteur}}{80}{chapter.8}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Assembling a new Heat Flux Partitioning Model}}{78}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Picture of the mixing device (left) and its fine meshing (right).\relax }}{80}{figure.caption.61}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.2}{\ignorespaces NCFD (lines) vs. Exp. (circles) - $\alpha $ profiles for two MV positions (23.5$D_{h}$ in blue, $10D_{h}$ in orange) - $T_{in}=65\degree $C (left), $T_{in}=69\degree $C (middle), $T_{in}=75\degree $C (right) - Simulations using two meshes M1 (coarse) and M2 (fine) for $T_{in}=69\degree $C.\relax }}{81}{figure.caption.62}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.3}{\ignorespaces NCFD vs. Exp. - Top \& Middle : Radial velocity and turbulent RMS ($z=30$mm \& $z=440$mm) - Bottom : Axial velocity and turbulent RMS ($z=440$mm).\relax }}{82}{figure.caption.63}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Sketch of the considered HFP\relax }}{78}{figure.caption.62}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{86}{appendix.A}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Promoteur}}{81}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Studied geometry\relax }}{86}{figure.caption.64}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Picture of the mixing device (left) and its fine meshing (right).\relax }}{81}{figure.caption.63}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.2}{\ignorespaces NCFD (lines) vs. Exp. (circles) - $\alpha $ profiles for two MV positions (23.5$D_{h}$ in blue, $10D_{h}$ in orange) - $T_{in}=65\degree $C (left), $T_{in}=69\degree $C (middle), $T_{in}=75\degree $C (right) - Simulations using two meshes M1 (coarse) and M2 (fine) for $T_{in}=69\degree $C.\relax }}{82}{figure.caption.64}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {8.3}{\ignorespaces NCFD vs. Exp. - Top \& Middle : Radial velocity and turbulent RMS ($z=30$mm \& $z=440$mm) - Bottom : Axial velocity and turbulent RMS ($z=440$mm).\relax }}{83}{figure.caption.65}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Force Balance}}{90}{appendix.B}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{87}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Studied geometry\relax }}{87}{figure.caption.66}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Force Balance}}{91}{appendix.B}%
