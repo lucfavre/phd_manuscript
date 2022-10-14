@@ -2322,18 +2322,48 @@ Moreover, we can observe that measurements from \"Unal do not follow the general
 
 
 
-\subsection{Predicting the Lift-Off with a Force Balance : The Approach of Situ \etal}
+\subsection{Predicting the Lift-Off with a Force Balance}
 
-As previously discussed, the 
+As previously discussed, the prediction of the lift-off using the force balance perpendicular to the wall (Eq. \ref{eq:bdf_y}) is complicated because:
 
+\begin{itemize}
+\item The spherical shape withouth tilt ($\dtheta = 0$) leads to exact compensation between contact pressure force and capillary force. Leaving only the added mass force and lift force to predict the lift-off.
+
+\item Those two forces can both be directed toward the wall depending on the flow conditions, making it impossible for a single bubble to lift-off by itself.
+
+\item The estimation of those forces rely on complicated description of thermal and hydrodynamic phenomena, making a simple mistake a source of large errors on lift-off prediction.
+\end{itemize}
+
+This difficulty has already been pointed out by Montout \cite{montout_phd} who faced difficulties in consistently using the force balance perpendicular to the wall for bubble lift-off.
+
+To demonstrate this uncertainty, we present on Figure \ref{fig:pred_dlo_bdfy} the predictions achieved when the lift-off is associated to a positive force balance perpendicular to the wall (Eq. \ref{eq:bdf_y}). 
+
+\npar
+
+FIGURE
+
+\npar
+
+The results are greatly dispersed and do not seem to demonstrate any coherent trend with the experimental measurements. 
+
+\npar
+
+%Alternatively, Situ
 
 \subsection{A Simple Non-Dimensional Correlation}
 
 
+As an alternative way to estimate the lift-off / maximum bubble diameter $D_{lo}$, we propose a simple correlation based on non-dimensional numbers as:
 
+\begin{equation}
+\frac{D_{lo}}{L_{c}} = e^{8.779} \Pr_{L}^{-0.065} \parth{\frac{\rho_{L}}{\rho_{V}}}^{-0.374} {\Ja_{w}^{*}}^{1.188} \parth{1+\Ja_{L}}^{-6.853} \parth{1+\Re_{\tau}}^{-0.547}
+\label{eq:correl_dlo}
+\end{equation}
 
 
 \subsection{Conclusion on the Lift-Off}
+
+
 
 
 

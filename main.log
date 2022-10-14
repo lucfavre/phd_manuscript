@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.18)  14 OCT 2022 14:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.18)  14 OCT 2022 18:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3978,10 +3978,18 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 2291--2296
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[64]) [65] [66 <./img/bub_dyn/lift-off/Dbar_Jaw.pdf> <./img//bub_dyn/lift-off/D
-bar_JaL.pdf> <./img/bub_dyn/lift-off/Dbar_rhost.pdf> <./img//bub_dyn/lift-off/D
-bar_Pr.pdf> <./img/bub_dyn/lift-off/Dbar_Retau.pdf> <./img//bub_dyn/lift-off/Db
-ar_Ca.pdf>]
+[64] [65]
+
+LaTeX Warning: Citation 'montout_phd' on page 66 undefined on input line 2337.
+
+[66 <./img/bub_dyn/lift-off/Dbar_Jaw.pdf> <./img//bub_dyn/lift-off/Dbar_JaL.pdf
+> <./img/bub_dyn/lift-off/Dbar_rhost.pdf> <./img//bub_dyn/lift-off/Dbar_Pr.pdf>
+ <./img/bub_dyn/lift-off/Dbar_Retau.pdf> <./img//bub_dyn/lift-off/Dbar_Ca.pdf>]
+
+LaTeX Warning: Reference `fig:pred_dlo_bdfy' on page 67 undefined on input line
+ 2339.
+
+) [67]
 \openout2 = `Chapters/HFP/Chap_Closures.aux'.
 
  (Chapters/HFP/Chap_Closures.tex
@@ -3998,7 +4006,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 
-LaTeX Warning: Citation 'richenderfer_phd' on page 67 undefined on input line 4
+LaTeX Warning: Citation 'richenderfer_phd' on page 68 undefined on input line 4
 2.
 
 
@@ -4012,7 +4020,7 @@ Overfull \hbox (17.34647pt too wide) in paragraph at lines 42--42
  []
 
 
-LaTeX Warning: Citation 'jens_lottes_data' on page 67 undefined on input line 4
+LaTeX Warning: Citation 'jens_lottes_data' on page 68 undefined on input line 4
 2.
 
 
@@ -4026,7 +4034,7 @@ Overfull \hbox (15.97581pt too wide) in paragraph at lines 42--42
  []
 
 
-LaTeX Warning: Citation 'kennel_phd' on page 67 undefined on input line 42.
+LaTeX Warning: Citation 'kennel_phd' on page 68 undefined on input line 42.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 42--42
@@ -4034,64 +4042,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--42
  []
 
 
-LaTeX Warning: Reference `eq:dittus' on page 67 undefined on input line 48.
+LaTeX Warning: Reference `eq:dittus' on page 68 undefined on input line 48.
 
 
-LaTeX Warning: Reference `eq:gnielinski' on page 67 undefined on input line 48.
+LaTeX Warning: Reference `eq:gnielinski' on page 68 undefined on input line 48.
 
 
-<img/single_phase/comp_dittus.pdf, id=2532, 436.25145pt x 324.41621pt>
+<img/single_phase/comp_dittus.pdf, id=2539, 436.25145pt x 324.41621pt>
 File: img/single_phase/comp_dittus.pdf Graphic file (type pdf)
 <use img/single_phase/comp_dittus.pdf>
 Package pdftex.def Info: img/single_phase/comp_dittus.pdf  used on input line 5
 5.
 (pdftex.def)             Requested size: 204.85847pt x 152.34198pt.
-<img/single_phase/comp_gniel.pdf, id=2533, 436.25145pt x 324.41621pt>
+<img/single_phase/comp_gniel.pdf, id=2540, 436.25145pt x 324.41621pt>
 File: img/single_phase/comp_gniel.pdf Graphic file (type pdf)
 <use img/single_phase/comp_gniel.pdf>
 Package pdftex.def Info: img/single_phase/comp_gniel.pdf  used on input line 59
 .
 (pdftex.def)             Requested size: 204.85847pt x 152.34198pt.
-[67
+[68
 
 
 
 
  <./img/single_phase/comp_dittus.pdf> <./img/single_phase/comp_gniel.pdf>]
 
-LaTeX Warning: Reference `eq:SP_HTC_NCFD' on page 68 undefined on input line 94
+LaTeX Warning: Reference `eq:SP_HTC_NCFD' on page 69 undefined on input line 94
 .
 
-<img/single_phase/comp_ncfd.pdf, id=2587, 436.25145pt x 324.41621pt>
+<img/single_phase/comp_ncfd.pdf, id=2594, 436.25145pt x 324.41621pt>
 File: img/single_phase/comp_ncfd.pdf Graphic file (type pdf)
 <use img/single_phase/comp_ncfd.pdf>
 Package pdftex.def Info: img/single_phase/comp_ncfd.pdf  used on input line 102
 .
 (pdftex.def)             Requested size: 204.85847pt x 152.34198pt.
-<img/single_phase/comp_gniel_corr.pdf, id=2588, 436.25145pt x 324.41621pt>
+<img/single_phase/comp_gniel_corr.pdf, id=2595, 436.25145pt x 324.41621pt>
 File: img/single_phase/comp_gniel_corr.pdf Graphic file (type pdf)
 <use img/single_phase/comp_gniel_corr.pdf>
 Package pdftex.def Info: img/single_phase/comp_gniel_corr.pdf  used on input li
 ne 106.
 (pdftex.def)             Requested size: 204.85847pt x 152.34198pt.
 
-LaTeX Warning: Reference `eq:utau_macadams' on page 68 undefined on input line 
+LaTeX Warning: Reference `eq:utau_macadams' on page 69 undefined on input line 
 114.
 
-[68 <./img/single_phase/comp_ncfd.pdf> <./img/single_phase/comp_gniel_corr.pdf>
+[69 <./img/single_phase/comp_ncfd.pdf> <./img/single_phase/comp_gniel_corr.pdf>
 ]
 
-LaTeX Warning: Reference `chap:debora' on page 69 undefined on input line 152.
+LaTeX Warning: Reference `chap:debora' on page 70 undefined on input line 152.
 
 
-LaTeX Warning: Citation 'kurul_podowski' on page 69 undefined on input line 161
+LaTeX Warning: Citation 'kurul_podowski' on page 70 undefined on input line 161
 .
 
 
-LaTeX Warning: Citation 'ncfd_hfp' on page 69 undefined on input line 161.
+LaTeX Warning: Citation 'ncfd_hfp' on page 70 undefined on input line 161.
 
 
-LaTeX Warning: Citation 'shaver_podowski' on page 69 undefined on input line 16
+LaTeX Warning: Citation 'shaver_podowski' on page 70 undefined on input line 16
 1.
 
 
@@ -4101,10 +4109,10 @@ Overfull \hbox (18.03673pt too wide) in paragraph at lines 161--162
  []
 
 
-LaTeX Warning: Reference `subsec:vap_area' on page 69 undefined on input line 1
+LaTeX Warning: Reference `subsec:vap_area' on page 70 undefined on input line 1
 98.
 
-[69]
+[70]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 216.
@@ -4118,7 +4126,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 216.
 
 
-LaTeX Warning: Reference `eq:MacAdams' on page 70 undefined on input line 232.
+LaTeX Warning: Reference `eq:MacAdams' on page 71 undefined on input line 232.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -4128,15 +4136,15 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 246.
 
-[70]
-<img/tg/comp_tg_unal.png, id=2665, 462.528pt x 346.896pt>
+[71]
+<img/tg/comp_tg_unal.png, id=2672, 462.528pt x 346.896pt>
 File: img/tg/comp_tg_unal.png Graphic file (type png)
 <use img/tg/comp_tg_unal.png>
 Package pdftex.def Info: img/tg/comp_tg_unal.png  used on input line 270.
 (pdftex.def)             Requested size: 273.14928pt x 204.87329pt.
 
 
-LaTeX Warning: Citation 'basu_heat' on page 71 undefined on input line 337.
+LaTeX Warning: Citation 'basu_heat' on page 72 undefined on input line 337.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 337--337
@@ -4144,7 +4152,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 337--337
  []
 
 
-LaTeX Warning: Citation 'richenderfer_investigations_2018' on page 71 undefined
+LaTeX Warning: Citation 'richenderfer_investigations_2018' on page 72 undefined
  on input line 337.
 
 
@@ -4171,20 +4179,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 337--337
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation 'basu_heat_2005' on page 71 undefined on input line 349
+LaTeX Warning: Citation 'basu_heat_2005' on page 72 undefined on input line 349
 .
 
 
-LaTeX Warning: Citation 'Komma' on page 71 undefined on input line 356.
+LaTeX Warning: Citation 'Komma' on page 72 undefined on input line 356.
 
-[71 <./img/tg/comp_tg_unal.png>]
+[72 <./img/tg/comp_tg_unal.png>]
 
-LaTeX Warning: Citation 'mikic' on page 72 undefined on input line 366.
+LaTeX Warning: Citation 'mikic' on page 73 undefined on input line 366.
 
 
-LaTeX Warning: Citation 'Lemmert' on page 72 undefined on input line 383.
+LaTeX Warning: Citation 'Lemmert' on page 73 undefined on input line 383.
 
-<img/NSD/nsd_press_koss.png, id=2678, 1209.51875pt x 296.60812pt>
+<img/NSD/nsd_press_koss.png, id=2685, 1209.51875pt x 296.60812pt>
 File: img/NSD/nsd_press_koss.png Graphic file (type png)
 <use img/NSD/nsd_press_koss.png>
 Package pdftex.def Info: img/NSD/nsd_press_koss.png  used on input line 398.
@@ -4193,37 +4201,37 @@ Package pdftex.def Info: img/NSD/nsd_press_koss.png  used on input line 398.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation 'borishanskii' on page 72 undefined on input line 405.
+LaTeX Warning: Citation 'borishanskii' on page 73 undefined on input line 405.
 
 
-LaTeX Warning: Citation 'hibiki_ishii' on page 72 undefined on input line 405.
+LaTeX Warning: Citation 'hibiki_ishii' on page 73 undefined on input line 405.
 
-[72]
+[73]
 
-LaTeX Warning: Citation 'gilman_baglietto' on page 73 undefined on input line 4
+LaTeX Warning: Citation 'gilman_baglietto' on page 74 undefined on input line 4
 20.
 
-<img/NSD/wettability.pdf, id=2689, 488.51007pt x 174.81712pt>
+<img/NSD/wettability.pdf, id=2696, 488.51007pt x 174.81712pt>
 File: img/NSD/wettability.pdf Graphic file (type pdf)
 <use img/NSD/wettability.pdf>
 Package pdftex.def Info: img/NSD/wettability.pdf  used on input line 429.
 (pdftex.def)             Requested size: 390.8086pt x 139.85387pt.
 
-LaTeX Warning: Citation 'basu_nsit' on page 73 undefined on input line 434.
+LaTeX Warning: Citation 'basu_nsit' on page 74 undefined on input line 434.
 
 
-LaTeX Warning: Citation 'zhou_nsd' on page 73 undefined on input line 447.
+LaTeX Warning: Citation 'zhou_nsd' on page 74 undefined on input line 447.
 
-[73 <./img/NSD/nsd_press_koss.png> <./img/NSD/wettability.pdf>]
+[74 <./img/NSD/nsd_press_koss.png> <./img/NSD/wettability.pdf>]
 
-LaTeX Warning: Citation 'li_new_2018' on page 74 undefined on input line 458.
+LaTeX Warning: Citation 'li_new_2018' on page 75 undefined on input line 458.
 
 
-LaTeX Warning: Citation 'song_fan_contact_angle' on page 74 undefined on input 
+LaTeX Warning: Citation 'song_fan_contact_angle' on page 75 undefined on input 
 line 458.
 
 
-LaTeX Warning: Citation 'zhou_nsit' on page 74 undefined on input line 511.
+LaTeX Warning: Citation 'zhou_nsit' on page 75 undefined on input line 511.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 511--511
@@ -4231,7 +4239,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 511--511
  []
 
 
-LaTeX Warning: Citation 'richenderfer' on page 74 undefined on input line 511.
+LaTeX Warning: Citation 'richenderfer' on page 75 undefined on input line 511.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 511--511
@@ -4239,29 +4247,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 511--511
  []
 
 
-LaTeX Warning: Citation 'borishanskii' on page 74 undefined on input line 511.
+LaTeX Warning: Citation 'borishanskii' on page 75 undefined on input line 511.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 511--511
 []|\T1/lmr/m/n/7 Borishanskii
  []
 
-<img/NSD/nsit_LC.pdf, id=2716, 419.82607pt x 321.17284pt>
+<img/NSD/nsit_LC.pdf, id=2723, 419.82607pt x 321.17284pt>
 File: img/NSD/nsit_LC.pdf Graphic file (type pdf)
 <use img/NSD/nsit_LC.pdf>
 Package pdftex.def Info: img/NSD/nsit_LC.pdf  used on input line 531.
 (pdftex.def)             Requested size: 204.85847pt x 156.72426pt.
-<img/NSD/nsit_HI.pdf, id=2717, 419.82607pt x 321.17284pt>
+<img/NSD/nsit_HI.pdf, id=2724, 419.82607pt x 321.17284pt>
 File: img/NSD/nsit_HI.pdf Graphic file (type pdf)
 <use img/NSD/nsit_HI.pdf>
 Package pdftex.def Info: img/NSD/nsit_HI.pdf  used on input line 535.
 (pdftex.def)             Requested size: 204.85847pt x 156.72426pt.
-<img/NSD/nsit_Zhou.pdf, id=2718, 419.82607pt x 321.17284pt>
+<img/NSD/nsit_Zhou.pdf, id=2725, 419.82607pt x 321.17284pt>
 File: img/NSD/nsit_Zhou.pdf Graphic file (type pdf)
 <use img/NSD/nsit_Zhou.pdf>
 Package pdftex.def Info: img/NSD/nsit_Zhou.pdf  used on input line 540.
 (pdftex.def)             Requested size: 204.85847pt x 156.72426pt.
-<img/NSD/nsit_Li.pdf, id=2719, 419.82607pt x 321.17284pt>
+<img/NSD/nsit_Li.pdf, id=2726, 419.82607pt x 321.17284pt>
 File: img/NSD/nsit_Li.pdf Graphic file (type pdf)
 <use img/NSD/nsit_Li.pdf>
 Package pdftex.def Info: img/NSD/nsit_Li.pdf  used on input line 544.
@@ -4269,11 +4277,11 @@ Package pdftex.def Info: img/NSD/nsit_Li.pdf  used on input line 544.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[74]
+[75]
 
-LaTeX Warning: Citation 'Richen_phd' on page 75 undefined on input line 559.
+LaTeX Warning: Citation 'Richen_phd' on page 76 undefined on input line 559.
 
-[75 <./img/NSD/nsit_LC.pdf> <./img/NSD/nsit_HI.pdf
+[76 <./img/NSD/nsit_LC.pdf> <./img/NSD/nsit_HI.pdf
 
 pdfTeX warning: pdflatex (file ./img/NSD/nsit_HI.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
@@ -4296,7 +4304,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[76] [77]) [78]
+[77] [78]) [79]
 \openout2 = `Chapters/HFP/Chap_NewHFP.aux'.
 
  (Chapters/HFP/Chap_NewHFP.tex
@@ -4319,38 +4327,38 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-) [79
+) [80
 
 
 
 
 ]
 
-LaTeX Warning: Reference `sec:geometry' on page 80 undefined on input line 98.
+LaTeX Warning: Reference `sec:geometry' on page 81 undefined on input line 98.
 
 
-LaTeX Warning: Reference `sec:HTC' on page 80 undefined on input line 99.
+LaTeX Warning: Reference `sec:HTC' on page 81 undefined on input line 99.
 
 
-LaTeX Warning: Reference `sec:NSD' on page 80 undefined on input line 100.
+LaTeX Warning: Reference `sec:NSD' on page 81 undefined on input line 100.
 
 
-LaTeX Warning: Reference `sec:bubble_growth' on page 80 undefined on input line
+LaTeX Warning: Reference `sec:bubble_growth' on page 81 undefined on input line
  101.
 
 
-LaTeX Warning: Reference `subsec:geom_bub' on page 80 undefined on input line 1
+LaTeX Warning: Reference `subsec:geom_bub' on page 81 undefined on input line 1
 02.
 
 
-LaTeX Warning: Reference `subsec:liq_temp' on page 80 undefined on input line 1
+LaTeX Warning: Reference `subsec:liq_temp' on page 81 undefined on input line 1
 03.
 
 
-LaTeX Warning: Reference `subsec:vap_temp' on page 80 undefined on input line 1
+LaTeX Warning: Reference `subsec:vap_temp' on page 81 undefined on input line 1
 03.
 
-) [80] [81
+) [81] [82
 
 
 
@@ -4372,41 +4380,41 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-<img/DEBORA-Promoteur/prom_pic.png, id=3024, 217.81375pt x 305.14pt>
+<img/DEBORA-Promoteur/prom_pic.png, id=3031, 217.81375pt x 305.14pt>
 File: img/DEBORA-Promoteur/prom_pic.png Graphic file (type png)
 <use img/DEBORA-Promoteur/prom_pic.png>
 Package pdftex.def Info: img/DEBORA-Promoteur/prom_pic.png  used on input line 
 22.
 (pdftex.def)             Requested size: 81.24123pt x 113.81102pt.
-<img/DEBORA-Promoteur/medium_mesh.PNG, id=3025, 902.6222pt x 514.17094pt>
+<img/DEBORA-Promoteur/medium_mesh.PNG, id=3032, 902.6222pt x 514.17094pt>
 File: img/DEBORA-Promoteur/medium_mesh.PNG Graphic file (type png)
 <use img/DEBORA-Promoteur/medium_mesh.PNG>
 Package pdftex.def Info: img/DEBORA-Promoteur/medium_mesh.PNG  used on input li
 ne 23.
 (pdftex.def)             Requested size: 199.7895pt x 113.81102pt.
-[82
+[83
 
 
  <./img/DEBORA-Promoteur/prom_pic.png> <./img/DEBORA-Promoteur/medium_mesh.PNG>
 ]
-<img/DEBORA-Promoteur/alpha_prom.png, id=3035, 743.6583pt x 296.307pt>
+<img/DEBORA-Promoteur/alpha_prom.png, id=3042, 743.6583pt x 296.307pt>
 File: img/DEBORA-Promoteur/alpha_prom.png Graphic file (type png)
 <use img/DEBORA-Promoteur/alpha_prom.png>
 Package pdftex.def Info: img/DEBORA-Promoteur/alpha_prom.png  used on input lin
 e 58.
 (pdftex.def)             Requested size: 446.19843pt x 177.78557pt.
- [83 <./img/DEBORA-Promoteur/alpha_prom.png>]
-<img/AGATE/test.png, id=3046, 1023.825pt x 1170.3725pt>
+ [84 <./img/DEBORA-Promoteur/alpha_prom.png>]
+<img/AGATE/test.png, id=3053, 1023.825pt x 1170.3725pt>
 File: img/AGATE/test.png Graphic file (type png)
 <use img/AGATE/test.png>
 Package pdftex.def Info: img/AGATE/test.png  used on input line 91.
 (pdftex.def)             Requested size: 307.14987pt x 351.11446pt.
-) [84 <./img/AGATE/test.png>]
-[85] [86
+) [85 <./img/AGATE/test.png>]
+[86] [87
 
 
 
-] [87
+] [88
 
 
 
@@ -4439,7 +4447,7 @@ ML/lmm/m/it/10 h[]^^Z[]\OT1/zplm/m/n/10 )$ \T1/lmr/m/n/10 the wall su-per-heat
 ]^^Z[]c[]\OT1/zplm/m/n/10 /(\OML/lmm/m/it/10 h[]^^Z[]\OT1/zplm/m/n/10 )$
  []
 
-[88
+[89
 
 
 ]
@@ -4454,7 +4462,7 @@ Overfull \hbox (22.63367pt too wide) detected at line 79
 []
  []
 
-[89]
+[90]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 127.
@@ -4499,7 +4507,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 145.
 
-[90]
+[91]
 Overfull \hbox (5.78172pt too wide) detected at line 165
 []
  []
@@ -4530,7 +4538,7 @@ LaTeX Font Info:    Trying to load font information for U+fplmbb on input line
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 ))
-[91]
+[92]
 \openout2 = `Chapters/Chapter0A.aux'.
 
  (Chapters/Chapter0A.tex
@@ -4546,7 +4554,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-[92
+[93
 
 
 
@@ -4557,7 +4565,7 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 77.
-) [93] [94]
+) [94] [95]
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -4605,7 +4613,7 @@ Overfull \hbox (290.79381pt too wide) in paragraph at lines 217--217
 -cal En-gi-neers. |   [].
  []
 
-[95
+[96
 
 
 
@@ -4626,7 +4634,7 @@ Overfull \hbox (70.72108pt too wide) in paragraph at lines 217--217
 46/annurev.fluid.32.1.659,
  []
 
-[96]
+[97]
 Overfull \hbox (41.25937pt too wide) in paragraph at lines 217--217
 \T1/lmr/m/n/10 tic pre-dic-tion of bub-ble de-par-ture and lift off di-am-e-ter
 s^^Q. In: |   []
@@ -4661,7 +4669,7 @@ Overfull \hbox (71.25291pt too wide) in paragraph at lines 217--217
 1..208R,
  []
 
-[97]
+[98]
 Overfull \hbox (26.39772pt too wide) in paragraph at lines 217--217
 \T1/lmr/m/n/10 de-tach-ment in ver-ti-cal up-flow and down-flow boil-ing^^Q. In
 : |   []
@@ -4679,7 +4687,7 @@ Overfull \hbox (27.43922pt too wide) in paragraph at lines 217--217
 tion^^Q. In: |   []
  []
 
-[98]
+[99]
 Overfull \hbox (71.21022pt too wide) in paragraph at lines 217--217
 \T1/lmr/m/n/10 ble de-tach-ment di-am-e-ters in boil-ing sys-tems^^VII. Flow bo
 il-ing^^Q. In: |   []
@@ -4703,7 +4711,7 @@ Overfull \hbox (89.50949pt too wide) in paragraph at lines 217--217
  MN/m2^^Q. In: |   []
  []
 
-[99]
+[100]
 \openout2 = `FrontBackMatter/Declaration.aux'.
 
  (FrontBackMatter/Declaration.tex
@@ -4718,7 +4726,7 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) [100
+) [101
 
 
 
@@ -4726,7 +4734,7 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 ]
 \openout2 = `FrontBackMatter/Colophon.aux'.
 
- (FrontBackMatter/Colophon.tex) [101
+ (FrontBackMatter/Colophon.tex) [102
 
 
 
@@ -4754,7 +4762,7 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the main.log file.
 
-[102
+[103
 
 
 ] (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Titleback.aux) (Fr
@@ -4766,7 +4774,12 @@ ontBackMatter/Dedication.aux) (FrontBackMatter/Abstract.aux)
 (Chapters/HFP/Chap_Closures.aux) (Chapters/HFP/Chap_NewHFP.aux)
 (Chapters/Chap_Promoteur.aux) (Appendix/App_BubGrowth.aux)
 (Chapters/Chapter0A.aux) (FrontBackMatter/Declaration.aux)
-(FrontBackMatter/Colophon.aux))
+(FrontBackMatter/Colophon.aux)
+
+Package mparhack Warning: Marginpars may have changed.
+(mparhack)                Rerun to get them right.
+
+)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
@@ -4789,10 +4802,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 65565 strings out of 477954
- 1498476 string characters out of 2825277
- 2714511 words of memory out of 3000000
- 82002 multiletter control sequences out of 15000+600000
+ 65576 strings out of 477954
+ 1498638 string characters out of 2825277
+ 2714345 words of memory out of 3000000
+ 82011 multiletter control sequences out of 15000+600000
  680869 words of font info for 230 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,23n,125p,10601b,3330s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -4865,9 +4878,9 @@ MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Luczer/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Luczer/AppData
 /Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users
 /Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on main.pdf (118 pages, 10208887 bytes).
+Output written on main.pdf (119 pages, 10211493 bytes).
 PDF statistics:
- 3995 PDF objects out of 4296 (max. 8388607)
- 758 named destinations out of 1000 (max. 500000)
+ 4002 PDF objects out of 4296 (max. 8388607)
+ 760 named destinations out of 1000 (max. 500000)
  60922 words of extra memory for PDF output out of 61914 (max. 10000000)
 
