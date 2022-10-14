@@ -1602,7 +1602,7 @@ This approach could easily be applied to comfort the confidence one may have in 
 
 \subsection{Application to Experimental Data}\label{subsec:data_map}
 
-Now we want to apply this non-dimensional approach to experimental measurement in order to determine the actual bubble departure by sliding regimes. We rely on 7 experiments in which bubble departure diameters in vertical flow boiling were measured. The operating conditions are gathered in Table~\ref{tab:exp_data}.
+Now we want to apply this non-dimensional approach to experimental measurement in order to determine the actual bubble departure by sliding regimes. We rely on 7 experiments in which bubble departure diameters in vertical flow boiling were measured. The operating conditions are gathered in Table~\ref{tab:exp_data_dd}.
 
 
 
@@ -1638,7 +1638,7 @@ Kossolapov \cite{kossolapov_experimental_2021} \newline (2021) & Water & 11.8 & 
 
 
 \caption{Bubble departure diameters data sets in vertical flow boiling}
-\label{tab:exp_data}
+\label{tab:exp_data_dd}
 
 %\end{changemargin}
 
@@ -2161,7 +2161,7 @@ Similar behaviors of bubbles sliding along the wall and not leaving it until a c
 \includegraphics[width=0.4\linewidth]{img/bub_dyn/lift-off/exp_scheiff.PNG}
 }
 \end{center}
-\caption{Visualization of bubble lift-off in vertical boiling. The moment when bubble leaves the surface appears less clearly than for horizontal boiling.} 
+\caption{Visualization of boiling surfaces in vertical boiling, where single bubble lift-off is not systematically observed.} 
 \label{fig:exp_nolift}
 \end{figure}
 
@@ -2177,8 +2177,25 @@ To further discuss this question, we will try to consider the bubble lift-off as
 
 \subsection{Experimental Measurements of Lift-Off Diameter}
 
+Observations and measurements of bubble diameter in various flow conditions have been conducted by numerous authors since the middle of the XX\up{th} century. Although recent experimental techniques allow to identify the moment at which bubble diameter is measured (departure from nucleation site, lift-off, etc.), older experiments could not ensure the nature of the bubbles that were observed. 
+
+\npar
+
+For instance, the work of \"Unal \cite{unal_maximum_1976} measured the maximum bubble diameter and used other experimental results (Gunther \cite{gunther}, Griffith \cite{griffith}, Treshchev \cite{treshchev} and Tolubinsky \cite{tolubinsky}) to build a correlation. However, it can not be clearly stated that those measurements were single bubbles lifting off the surface or bubbles resulting of coalescence. 
+
+\begin{remark*}{}
+As explained by \"Unal, their measurements (detailed in De Munk \cite{DeMunk_bubbles}) are based on enlarged photographic observations of the bubble population near the boiling surface from which they extracted the maximum diameter, meaning there is no evidence that it was actually a lift-off diameter of a single bubble.
+\end{remark*}
 
 
+
+\npar
+
+This was also pointed out by Kossolapov \cite{kossolapov_experimental_2021} who showed that at very high pressure, old measurements of bubble diameter were larger for flow boiling compared to pool boiling, which is intuitively unphysical. This could be explained as mentioned above if those measurements were actually coalesced bubbles which would naturally exhibit larger diameters than single bubbles at lift-off.  
+
+\npar
+
+However, those measurements can still be interesting since their evolution with the operating conditions should present trends similar to single bubble experiments. To do so, we gathered several experimental data sets of maximum / lift-off diameter from the literature for vertical subcooled flow boiling of water. The experimental conditions of the data set are presented on Table \ref{tab:exp_data_dlo}.
 
 
 
@@ -2194,27 +2211,27 @@ To further discuss this question, we will try to consider the bubble lift-off as
 Author & Fluid & $D_{h}$ [mm] & $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K] & $\phi_{w}$ [kW/m\up{2}] & $\Delta T_{w}$ [K] & $D_{d}$ [mm] ($N_{mes}$)\\
 \hline
 \\
-Situ \cite{situ_bubble_2005} \newline (2005)& Water & 19.1 & 1.01 & 471.8 - 910.8 & 1.5 - 20 & 0.06 - 0.2 & N.A. & 0.145 - 0.605  (90)\\
-\\
-Prodanovic \cite{prodanovic_bubble_2002} \newline (2002) & Water & 9.3 & 1.01 - 3 & 76.7 - 815.8 & 10 - 60 & 0.1 - 1.2 & N.A. & 0.366 - 2.68 (44) \\
-\\
-Tolubinsky \cite{tolubinsky_vapour_1970} \newline (1970) & Water & 10 & 1 - 10 & 72.6 - 198.4 & 5 - 60 & 0.47 & N.A. & 0.19 - 1.24 (9)\\
-\\
 Gunther \cite{gunther_bubblediam} \newline (1951) & Water & 6.92 & 1 - 1.7 & 1492 - 6070 & 33 - 86 & 2.3 - 10.64 & N.A. & 0.32 - 1.02 (12)\\
-\\
-Treshchev \cite{treshchev_1960} \newline (1969) & Water & 10.18 & 5 - 50 & 1643 - 1789 & 30 - 62 & 1.4 - 2.9 & N.A. & 0.12 - 0.26 (3) \\
 \\
 Griffith \cite{griffith_bubdiam} \newline (1958) & Water & 12.7 & 34.5 - 103 & 4651 - 7593 & 11 - 80 & 3.25 - 8.53 &  N.A. & 0.081 - 0.146 (6) \\
 \\
-Unal \cite{unal_maximum_1976} \newline (1976) & Water & 8 & 139 - 177 & 2082 - 2171 & 3 - 5.9 & 0.38 - 0.55 &  N.A. & 0.11 - 0.18 (7) \\
+Treshchev \cite{treshchev_1960} \newline (1969) & Water & 10.18 & 5 - 50 & 1643 - 1789 & 30 - 62 & 1.4 - 2.9 & N.A. & 0.12 - 0.26 (3) \\
+\\
+Tolubinsky \cite{tolubinsky_vapour_1970} \newline (1970) & Water & 10 & 1 - 10 & 72.6 - 198.4 & 5 - 60 & 0.47 & N.A. & 0.19 - 1.24 (9)\\
+\\
+\"Unal \cite{unal_maximum_1976} \newline (1976) & Water & 8 & 139 - 177 & 2082 - 2171 & 3 - 5.9 & 0.38 - 0.55 &  N.A. & 0.11 - 0.18 (7) \\
 \\
 Maity \cite{maity_effect_2000} \newline (2000) & Water & 20 & 1.01 & 0 - 239.6 & 0.3 - 0.7 & N.A. & 5 - 5.9 & 1.8 - 2.4 (4) \\
+\\
+Prodanovic \cite{prodanovic_bubble_2002} \newline (2002) & Water & 9.3 & 1.01 - 3 & 76.7 - 815.8 & 10 - 60 & 0.1 - 1.2 & N.A. & 0.366 - 2.68 (44)\\
+\\
+Situ \cite{situ_bubble_2005} \newline (2005)& Water & 19.1 & 1.01 & 471.8 - 910.8 & 1.5 - 20 & 0.06 - 0.2 & N.A. & 0.145 - 0.605  (90)\\
+\\
+Chu \cite{chu} \newline (2010) & Water & 22.25 & 1.45 & 301 - 702 & 3.4 - 22.6 & 0.135 - 0.201 &  N.A. & 0.51 - 1.71 (14) \\
 \\
 Ahmadi \cite{ahmadi} \newline (2012) & Water & 13.3 & 0.96 - 1.13 & 169 - 497 & 8.4 -20.6 & 0.16 - 0.318 &  11.4 - 18.4 & 0.12 - 3.9 (13) \\
 \\
 Okawa \cite{okawa_bubble_2018} \newline (2018) & Water & 14 & 1.27 - 1.86 & 252 - 490 & 10 - 39 & 0.161 - 0.487 &  N.A. & 0.64 - 0.188 (10) \\
-\\
-Chu \cite{chu} \newline (2010) & Water & 22.25 & 1.45 & 301 - 702 & 3.4 - 22.6 & 0.135 - 0.201 &  N.A. & 0.51 - 1.71 (14) \\
 \\
 \hline
 \end{tabular}
@@ -2222,7 +2239,7 @@ Chu \cite{chu} \newline (2010) & Water & 22.25 & 1.45 & 301 - 702 & 3.4 - 22.6 &
 
 
 \caption{Bubble lift-off diameters data sets in vertical flow boiling}
-\label{tab:exp_data}
+\label{tab:exp_data_dlo}
 
 %\end{changemargin}
 
@@ -2231,6 +2248,22 @@ Chu \cite{chu} \newline (2010) & Water & 22.25 & 1.45 & 301 - 702 & 3.4 - 22.6 &
 \subsection{Influence of the Flow Boiling Conditions}
 
 
+To evaluate the influence of the flow boiling conditions over the various experimental measurements, we have represented the values of the non-dimensional lift-off diameter $\dfrac{D_{lo}}{L_{c}}$ ($L_{c}$ is the capillary length) versus 6 non-dimensional flow parameters:
+
+\begin{itemize}
+\item The reduced Jakob numbers of superheat and subcooling $\Ja_{w}^{*}$ and $\Ja_{L}^{*}$. With $\Ja_{*} = \dfrac{c_{p,L}\Delta T}{h_{LV}}$ which excludes the impact of pressure through the density ratio.
+
+\item The density ratio $\rho^{*} = \dfrac{\rho_{L}}{\rho_{V}}$, scaling the operating pressure.
+
+\item The saturated liquid Prandtl number $\Pr_{L}$, quantifying the liquid thermal properties.
+
+\item The local wall Reynolds number $\Re_{\tau} = \dfrac{\rho_{L}U_{\tau}L_{c}}{\mu_{L}}$, evaluating the impact of the liquid flow.
+
+\item The capillary number $\Ca$ which can be related to bubble deformability under viscous effects.
+\end{itemize}
+
+
+The results are presented on Figure \ref{fig:exp_dlo_trends}.
 
 \begin{figure}[h!]
 \begin{center}
@@ -2261,19 +2294,43 @@ Chu \cite{chu} \newline (2010) & Water & 22.25 & 1.45 & 301 - 702 & 3.4 - 22.6 &
 \label{fig:dlo_ca}
 }
 
-	\caption{Evolution of $D_{lo} / L_{c}$ depending on the flow conditions.}	
-	\label{fig:exp_maps}
+	\caption{Evolution of $D_{lo} / L_{c}$ depending on the flow conditions. Gunther: $\bigtriangledown$ ;  Griffith: Pentagons -  Treshchev: $\star$  ;  Tolubinsky: $\bigtriangleup$ ;  \"Unal: $\diamond$ ;  Maity: $+$ ;  Prodanovic: $\square$ ;  Situ: $\bigcirc$ ;  Chu: $\triangleright$ ;  Ahmadi: $\triangleright$ ;  Okawa: $\times$} 	
+	\label{fig:exp_dlo_trends}
 \end{center}
 \end{figure}
 
 \npar
 
 
+The experimental values of $\dfrac{D_{lo}}{L_{c}}$ display the following trends:
+
+\begin{itemize}
+\item Increase with $\Ja_{w}^{*}$ ;
+\item Decrease with $\Ja_{L}^{*}$ ;
+\item Increase with $\rho^{*}$ ;
+\item Increase with $\Pr_{L}$ ;
+\item Decrease with $\Re_{\tau}$ and $\Ca$.
+\end{itemize}
+
+A great range of $D_{lo}$ values at low pressure (for which we have the larger number of measurements) are reached in the experiments. This further indicates the complicated behavior of bubble lift-off, for which similar flow conditions can lead to very different bubble diameters.
+
+\begin{remark*}{}
+This variation could be associated to the heater material and surface morphology, which are not quantified here.
+\end{remark*}
+
+Moreover, we can observe that measurements from \"Unal do not follow the general tendency of other data as on Figure \ref{fig:dlo_rhost}, with values of $D_{lo}/L_{c}$ above the trend, further supporting the assumption that those experimental values were actually those of coalesced bubbles.
+
+
+
 \subsection{Predicting the Lift-Off with a Force Balance : The Approach of Situ \etal}
 
+As previously discussed, the 
 
 
 \subsection{A Simple Non-Dimensional Correlation}
+
+
+
 
 
 \subsection{Conclusion on the Lift-Off}
