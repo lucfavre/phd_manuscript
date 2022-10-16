@@ -11,9 +11,16 @@
 
 \section{Introduction}
 
-NEPTUNE\_CFD is an eulerian multiphase CFD solver co-developed by EDF, CEA, IRSN and Framatome mostly for nuclear reactor applications.
+The NEPTUNE\_CFD project (started in 2001) is a reasearch program coordinated by four entities : EDF, CEA, IRSN and Framatome. The initial goals of the project were related to nuclear safety by developing a thermal-hydraulics simulation tool to :
+
+\begin{itemize}
+\item Predict the Boiling Crisis in PWR cores ;
+\item Study the Loss Of Coolant Accident (LOCA) to predict fuel rod cladding temperature.
+\end{itemize}
+
 The code consists of a local three-dimensional modeling based on a two-fluid one pressure approach combined with mass, momentum and energy conservation equations for each phase\cite{Guelfi2007}. 
 
+ is an eulerian multiphase CFD solver co-developed 
 
 \npar
 %The NEPTUNE\_CFD solver can handle several types of multiphase flows, \eg dispersed vapor-liquid flow of a same component, mixed gas-liquid-solid particles flow of different components, or multiple forms of a single component (dispersed vapor/continuous liquid, dispersed liquid/continuous vapor, continuous liquid/continuous vapor, etc.).
@@ -21,10 +28,16 @@ The constitutive equations are solved using a pressure correction, and is based 
 
 \npar
 
-In the next sections, we will detail the constitutive equations and closures laws of the code for the simulation of boiling bubbly flows
+The simulations presented in this thesis have all been conducted using the NEPTUNE\_CFD 7.0 modeling framework for dispersed bubbly flows. In the next sections, we will detail the constitutive equations and closures laws of the code for the simulation of boiling bubbly flows.
+
+
 \section{Governing Equations for Turbulent Boiling Bubbly Flows}
 
-To simulate two-phase dispersed boiling flows, NEPTUNE\_CFD solves the ensemble-averaged equations of mass conservation, momentum balance and energy conservation for each phase (total of 6 equations) : 
+To simulate two-phase dispersed boiling flows, NEPTUNE\_CFD solves the ensemble-averaged equations of mass conservation, momentum balance and energy conservation for each phase. As a reminder, the ensemble-averaging of a physical quantity $F_{k}$ for any phase $k$ in a multiphase flows is defined as:
+
+\widehat{•}
+
+
 
 
 \subsection{Mass Conservation :}
