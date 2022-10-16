@@ -58,7 +58,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 26000 items.
+Reallocating 'field_info' (item size: 4) to 26140 items.
 Database file #1: main-blx.bib
 Database file #2: bib_v3.bib
 Reallocating 'str_pool' (item size: 1) to 130000 items.
@@ -108,11 +108,12 @@ Warning--I didn't find a database entry for "treshchev"
 Warning--I didn't find a database entry for "tolubinsky"
 Warning--I didn't find a database entry for "DeMunk_bubbles"
 Warning--I didn't find a database entry for "gunther_bubblediam"
-Warning--I didn't find a database entry for "treshchev_1960"
 Warning--I didn't find a database entry for "griffith_bubdiam"
+Warning--I didn't find a database entry for "treshchev_1960"
+Warning--I didn't find a database entry for "chu"
 Warning--I didn't find a database entry for "ahmadi"
 Warning--I didn't find a database entry for "okawa_bubble_2018"
-Warning--I didn't find a database entry for "chu"
+Warning--I didn't find a database entry for "montout_phd"
 Warning--I didn't find a database entry for "richenderfer_phd"
 Warning--I didn't find a database entry for "jens_lottes_data"
 Warning--I didn't find a database entry for "kennel_phd"
@@ -140,7 +141,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'str_pool' (item size: 1) to 195000 items.
 You've used 78 entries,
             6399 wiz_defined-function locations,
-            2111 strings with 128901 characters,
+            2112 strings with 128912 characters,
 and the built_in function-call counts, 958650 in all, are:
 = -- 54250
 > -- 67095
@@ -179,4 +180,4 @@ warning$ -- 0
 while$ -- 12080
 width$ -- 0
 write$ -- 3726
-(There were 72 warnings)
+(There were 73 warnings)

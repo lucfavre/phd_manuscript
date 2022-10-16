@@ -6,25 +6,28 @@
 
 %----------------------------------------------------------------------------------------
 
+\minitoc
 
-\section{The NEPTUNE\_CFD code and physical modeling}
-\label{sec:ncfd}
 
-\subsection{Simulation framework}
+\section{Introduction}
 
 NEPTUNE\_CFD is an eulerian multiphase CFD solver co-developed by EDF, CEA, IRSN and Framatome mostly for nuclear reactor applications.
 The code consists of a local three-dimensional modeling based on a two-fluid one pressure approach combined with mass, momentum and energy conservation equations for each phase\cite{Guelfi2007}. 
 
+
+\npar
 %The NEPTUNE\_CFD solver can handle several types of multiphase flows, \eg dispersed vapor-liquid flow of a same component, mixed gas-liquid-solid particles flow of different components, or multiple forms of a single component (dispersed vapor/continuous liquid, dispersed liquid/continuous vapor, continuous liquid/continuous vapor, etc.).
 The constitutive equations are solved using a pressure correction, and is based on a finite-volume discretization along with a collocated arrangement of the variables. Moreover, NEPTUNE\_CFD allows the use of all type of meshes (hexahedra, tetrahedra, pyramids, etc.), even non-conforming ones, thanks to its face-based data structure. Finally, the code is well-suited for parallel computing, widening its computing capacity to very large meshes.
 
+\npar
 
-\subsection{Governing equations for turbulent boiling bubbly flows}
+In the next sections, we will detail the constitutive equations and closures laws of the code for the simulation of boiling bubbly flows
+\section{Governing Equations for Turbulent Boiling Bubbly Flows}
 
 To simulate two-phase dispersed boiling flows, NEPTUNE\_CFD solves the ensemble-averaged equations of mass conservation, momentum balance and energy conservation for each phase (total of 6 equations) : 
 
 
-\underline{Mass conservation :}
+\subsection{Mass Conservation :}
 \begin{equation}
 	\label{eq:mass}
 %MASS
@@ -34,7 +37,7 @@ To simulate two-phase dispersed boiling flows, NEPTUNE\_CFD solves the ensemble-
 Where $\alpha_{k}$, $\rho_{k}$, $\vect{U_{k}}$ are the time fraction, average density and velocity of phase $k$ ; $\Gamma_{k}=\Gamma_{k,i}+\Gamma_{k,w}$ the interfacial mass transfer term per unit of volume and time splitted between bulk and wall contribution.
 Subscripts $k= L$ or $G$ denotes the liquid or gas phase, $i$ the interfacial quantities and $w$ the wall contribution.
 
-\underline{Momentum balance :}
+\subsection{Momentum Balance :}
 
 \begin{equation}
 	\label{eq:momentum}
@@ -44,7 +47,7 @@ Subscripts $k= L$ or $G$ denotes the liquid or gas phase, $i$ the interfacial qu
 
 Where $P$ is the pressure, $\vect{g}$ the gravity, $\vect{F_{k,i}}$ the interfacial forces accounting for momentum transfer between phases per unit of volume and time, $\vect{U_{k,i}}$ the interfacial velocity, $\tens{\tau_{k,m}}$ and $\tens{\tau_{k,T}}$ respectively the viscous and turbulent (or Reynolds) stress tensor. Subscript $m$ and $T$ respectively denote the molecular (or laminar) and turbulent terms.
 
-\underline{Energy conservation :}
+\subsection{Energy Conservation :}
 
 \begin{equation}
 	\label{eq:energy}
@@ -60,12 +63,12 @@ Where $H_{k}=e_{k}+\frac{U_{k}^{2}}{2}+\frac{P}{\rho_{k}}=h_{k}+\frac{U_{k}^{2}}
 
 However, this ensemble-average approach requires a given number of closure laws since this operation removes most of the information about smaller scales physics such as interfacial exchanges between phases or wall-fluid interaction. Terms for which this modeling effort is needed are colored in orange in equations \ref{eq:mass}, \ref{eq:momentum} and \ref{eq:energy}. The chosen expressions for those terms are detailed in subsections \ref{subsec:int_transfers}, \ref{subsec:turbulence} and \ref{subsec:HFP}.
 
-\subsection{Interfacial transfers closure laws}
+\section{Interfacial transfers closure laws}
 \label{subsec:int_transfers}
 
 The interfacial transfers of mass, momentum and energy are respectively noted in equations \ref{eq:mass}, \ref{eq:momentum} and \ref{eq:energy} : $\Gamma_{k}$, $\vect{F_{k,i}}$ and $Q_{k,i}$.
 
-\underline{Heat and mass transfers :}
+\subsection{Heat and mass transfers :}
 
 
 The mass transfer term, can be written as : $\Gamma_{L,i} + \Gamma_{G,i} = 0$, $\Gamma_{L,w} + \Gamma_{G,w} = 0$ with $\Gamma_{G,w} \geq 0$ in the case of boiling flows. This finally gives $\Gamma_{L}=-\Gamma_{G}$.
@@ -121,7 +124,7 @@ C_{G,i}a_{i}=\frac{\alpha_{G}\rho_{v}c_{p,G}}{t_{c}}
 
 where $c_{p,G}$ is the gas heat capacity at constant pressure, and $t_{c}$ a characteristic (relaxation) time given by the user (default value being $t_{c}=0.01\text{s}$) .
 
-\underline{Interfacial forces :}
+\subsection{Interfacial Forces :}
 
 The interfacial momentum transfer (excluding transfer associated to transfer of mass $\Gamma_{k}$) is assumed to be composed of 4 different forces being the, drag $D$, the added mass $AM$, the lift $L$ and the turbulent dispersion $TD$ :
 
@@ -158,12 +161,17 @@ The turbulent dispersion force $\vect{F_{k,TD}}$ originates from the averaging o
 
 with $C_{D}$, $C_{AM}$, $C_{L}$ and $C_{TD}$ the associated forces coefficients, respectively taken from \textsc{Ishii}\cite{Ishii1967}, \textsc{Zuber}\cite{Zuber1964}, \textsc{Tomiyama}\cite{Tomiyama2002} and the Generalized Turbulent Dispersion model (GTD) from \textsc{Lavieville} \etal \cite{Lavieville2017}.
 
-\subsection{Turbulence modeling}
+\section{Turbulence Modeling}
 \label{subsec:turbulence}
 
 For bubbly flow simulations, only liquid phase turbulence is taken into account. The prescribed model is the Reynolds Stress Model (RSM) $R_{ij}-\varepsilon~SSG$ from \textsc{Speziale}, \textsc{Sarkar} and \textsc{Gatski}\cite{Speziale1991} adapted to two-phase boiling flows by \textsc{Mimouni} \etal\cite{Mimouni2011}.
 
-\subsection{Wall boiling model}
+\begin{equation}
+\dtime{R_{ij}} + U_{k}\dpartial{R_{ij}}{x_{k}} = - R_{ik} \dpartial{U_{j}}{x_{k}}
+\end{equation}
+
+
+\section{Wall Boiling Model}
 \label{subsec:HFP}
 
 The modeling of the heterogeneous boiling phenomenon at the wall is based on a Heat Flux Partioning (HFP) model, inspired by \textsc{Kurul} \& \textsc{Podowski} original work\cite{Kurul1990} who divided the wall heat flux density $\phi_{w}$ in three terms  :
@@ -205,7 +213,7 @@ where $\lambda_{w}$ and $\eta_{w}$ are the wall thermal conductivity and diffusi
 
 Finally, the quenching heat flux follows the approach of \textsc{Del Valle} \& \textsc{Kenning}\cite{DelValle1985} supposing that it follows a semi-infinite transient conduction regime : $\displaystyle \phi_{q}=A_{G}t_{q}f\frac{2\lambda_{L} \parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}t_{q}}}$ where $t_{q}$ is the quenching time, supposed to be equal to $1/f$.
 
-\subsection{Wall function for dispersed boiling flows}
+\section{Wall Function for Dispersed Boiling Flows}
 \label{subsec:wall_func}
 
 In boiling flows, the formation of bubbles at the wall may disturb the liquid velocity profile in the boundary layer. To take this phenomena into account, \textsc{Mimouni} \etal\cite{Mimouni2016} proposed a wall function for boiling flows which tends to the single-phase formulation when $\alpha_{G} \rightarrow 0$ and depends on the bubble diameter and density at the wall : 
