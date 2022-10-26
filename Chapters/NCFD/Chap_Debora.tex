@@ -1,46 +1,168 @@
 % Chapter 1
 
-\chapter{DEBORA Cases} % Chapter title
+\chapter{The DEBORA Database} % Chapter title
+
+\section{Introduction}
 
 \label{ch:debora} % For referencing the chapter elsewhere, use \autoref{ch:introduction} 
 
+The validation of any existing modeling of multiphase flows must rely on extensive databases from experimental investigations in operating conditions that are representative of industrial configurations in PWR. This naturally lead to an important demand for measurements of local phase-related properties of vertical pressurized subcooled boiling flows. 
+
+\npar
+To meet this need, CEA and EDF built a test facility called DEBORA in the 1990's. Its goal was to establish a consistent database of local measurements of the flow structure for vertical subcooled boiling freon Refrigerant 12 (R12) from the Onset of Nucleate Boiling to the Boiling Crisis.
+
+\npar
+
+In this chapter, we will describe the test section and analyze the available results from past measurements campaigns.
+
+
+\section{Simulating PWR water using R12}
+
+The choice of using R12 as the working fluid in the DEBORA loop emerged from the interesting properties that boiling freon presents when compared to the highly pressurized water in PWR cores. Indeed, the conditions for which the Boiling Crisis must be studied for water in PWR are :
+
+\begin{itemize}
+\item Pressure $P$ between 100 and 180 bar ;
+\item Liquid mass flux $G_{L}$ between 1000 and 5000~$\debm$ ;
+\item Wall heat flux $\phi_{w}$ between 0.5 and 6 MW/m\up{2} ;
+\item Inlet thermodynamic flow quality $x_{in}$ between -0.4 and 0.4.
+\end{itemize}
+
+In those ranges, sensors dedicated to local measurements are not suited to sustain such conditions. 
+
+\npar
+
+The experimental strategy is then to "simulate" the aimed industrial conditions using a different fluid. It has to present thermophysical properties that allow to reproduce non-dimensional numbers of the industrial flow using less constraining operating conditions.
+
+\npar
+
+This explains the choice of R12 as it permits to transpose relevant parameters for PWR as detailed below.
+
+\subsection{Conservation of the Phase Density Ratio}
+
+
+Freon 12 can reach the same density ratio as water in PWR using limited pressurized conditions no larger than 30 bars. It is an important parameter to mimic the behavior of the boiling two-phase flow since it has a strong influence over the bubble size for example \cite{kocamustafaogullari_pressure_1983}.
+
+\begin{equation}
+\parth{\frac{\rho_{V,sat}}{\rho_{L,sat}}}_{P_{1}}^{water} = \parth{\frac{\rho_{V,sat}}{\rho_{L,sat}}}_{P_{2}}^{R12}
+\end{equation} 
+with $P_{2} < P_{1}$.
+
+\npar
+
+The evolution of the density ratio of water and R12 with pressure are shown on Figure \ref{fig:PWR_R12_density}.
+
+FIGURE
+
+
+For instance, we can see that R12 at approximatively 26 bar ($T_{sat} \approx 87 \degree C$ has the same density ratio as water at 155 bar ($T_{sat} \approx 350 \degree C$).
+
+\npar
+
+\begin{note*}{}
+This tranposition criteria thus scales the operating pressure $P$ of the experiment.
+\end{note*}
+
+\subsection{Conservation of the Weber Number}
+
+The Weber number is also similar to those encountered in PWR.
+
+\begin{equation}
+\We = \dfrac{G_{L}^{2}R}{\rho_{L} \sigma}
+\end{equation}
+
+This number characterizes physical phenomena such as bubble break-up or deformation under the influence of the liquid inertia.
+
+\npar
+
+\begin{note*}{}
+For a same value of $R$, this transposition scales the inlet liquid mass flux $G_{L}$.
+\end{note*}
+
+\subsection{Conservation of the Boiling Number}
+
+The boiling number is defined as :
+
+\begin{equation}
+\Bo = \frac{\phi_{w}}{G_{L}h_{LV}}
+\end{equation}  
+
+It represents the comparison between the vapor mass flux $\phi_{w}/h_{LV}$ if all the heat flux contributes to phase change versus the inlet liquid mass flux. Thus, its value can be associated to the boiling and two-phase flow regime.
+
+\begin{note*}{}
+This transposition criteria scales the applied heat flux $\phi_{w}$.
+\end{note*}
+
+\subsection{Conservation of the Inlet Thermodynamic Quality}
+
+Water in PWR being highly subcooled to avoid boiling, reproducing the inlet subcooling in the DEBORA experiment allows to mimic the early stages of boiling between the ONB and OSV. It allows to reproduce Boiling Crisis by Departure from Nucleate Boiling for low quality flows. This is achieved through the inlet thermodynamic quality:
+
+
+\begin{equation}
+x_{in} = \frac{h_{L,in} - h_{L,sat}}{h_{LV}}
+\end{equation}
+
+\begin{note*}{}
+This transposition is achieved by scaling the R12 inlet temperature.
+\end{note*}
+
+\subsection{Same Geometry}
+
+The last similarity achieved in the DEBORA experiment is related to the geometry. The heated length $L_{ch}$ of the test section is similar to the height of a nuclear fuel assembly and the hydraulic diameter $D_{h}$ is equal to that of a subchannel.
+
+
+\subsection{Transposition ranges}
+
+As a result of those conservation criteria, Table \ref{tab:R12_PWR_transposition} sums up the transposition ranges for each parameters.
 
 
 
-\section{Boiling freon in a simple tube : DEBORA experiments}
-\label{sec:debora}
+\begin{table}[!h]
+\centering
+\begin{tabular}{c||c|c} 
 
-In this section, we simulate upward boiling flows of R12 in a vertical tube and compare the NEPTUNE\_CFD  (NCFD) results with experimental measurements conducted by CEA \& EDF on the DEBORA test facility.
+Fluid & Water & Freon R12 \\
+\hline \hline
+$P$ (bar) & 100 - 180 & 14 - 30\\
+%
+$G_{L}$ ($\debm$) & 1000 - 5000 & 1000 - 5000\\
+%
+$\phi_{w}$ (MW/m$^{2}$) & 0.5 - 6 & 0.05 - 0.65\\ 
+%
+$x_{in}$ (-) & (-0.4) - (+0.4) & (-0.4) - (+0.4)\\
+\hline
+\hline 
+${\rho_{V,sat}}/{\rho_{L,sat}}$ (-) & 0.08 - 0.25 & 0.07 - 0.22\\
+%
+$\We$ (-) & 2374 - 368~579 & 3319 - 438~966\\
+%
+$\Bo \times 10^{-3} $ (-) &  $3.67\times 10^{-2}$ - $2.39 $ & $2.65\times 10^{-2}$ - $1.74$ \\
+\hline
+\end{tabular}
 
-\subsection{Description of the experiment}
+\caption{Water R12 scaling, $R=0.01$mm for $\We$)}
+\label{tab:R12_PWR_transposition}
+
+\end{table}
+
+
+
+\section{Description of the Test Section}
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.5\linewidth]{img/DEBORA/debora_sketch.png}
+\caption{Sketch of the DEBORA test section. Adapted from \cite{garnier_local_2001}.}
+\label{fig:sketch_debora}
+\end{figure}
+
+
+
+
+
 
 In the end of 1990's, CEA and EDF built a test facility called DEBORA which goal was to conduct series of experiments and measurements to establish a database for boiling flows of freon R12. The choice of freon is justified because of its use as a simulating fluid for water in PWR conditions (very close phase density ratio, Weber number $\text{We}$, Boiling number $\text{Bo}$ and thermodynamic flow quality $x_{eq}$). Table \ref{tab:simul_fluid} sums up the flow conditions scaling between R12 and water.
 
-\begin{table}[!htb]
-\centering
-\caption{Water/R12 scaling (from {Garnier} \etal \cite{Garnier2001}, $D_{h}=19.2$mm for $\text{We}$)}
-\label{tab:simul_fluid}
-\begin{tabular}{|c||c|c|} 
-\hline
-Fluid & Water & Freon R12 \\
-\hline \hline
-Pressure $P$ (bar) & 100 - 180 & 14 - 30\\
-\hline
-Mass velocity $G$ (kg/m$^{2}$/s) & 1000 - 5000 & 1000 - 5000\\
-\hline
-Wall heat flux $\phi_{w}$ (MW/m$^{2}$) & 0.5 - 6 & 0.05 - 0.65\\ 
-\hline
-Thermodynamic flow quality $x_{eq}$ (-) & (-0.4) - (+0.4) & (-0.4) - (+0.4)\\
-\hline
-\hline 
-Density ratio $\rho_{G}/\rho_{L}$ (-) & 0.08 - 0.25 & 0.07 - 0.22 \\
-\hline
-Weber number $\text{We}$ (-) & 2374 - 368~579 & 3319 - 438~966\\
-\hline
-Boiling number $\text{Bo}$ (-) &  $3.67\times 10^{-5}$ - $2.39\times 10^{-3}$ & $2.65\times 10^{-5}$ - $1.74\times 10^{-3}$\\
-\hline
-\end{tabular}
-\end{table}
 
 
 The DEBORA experiment consists of an upward subcooled boiling flow of R12 in a 4m length pipe uniformally heated over 3.5m with an hydraulic diameter $D_{h}=19.2\text{mm}$. Measurements of void fraction ($\alpha$), interfacial velocity (\ie axial gas velocity $U_{G,z}$), bubble diameter ($d_{G}$), liquid temperature ($T_{L}$) and wall temperature ($T_{w}$) at the end of the heating length were conducted through different series of tests. Experimental apparatus is detailed in {Garnier} \etal\cite{Garnier2001} and {Manon}\cite{Manon2000}.
