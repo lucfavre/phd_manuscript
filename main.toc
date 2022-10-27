@@ -1,137 +1,272 @@
-\babel@toc {english}{}\relax 
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
 \vspace {-\cftbeforepartskip }
+\defcounter {refsection}{0}\relax 
 \contentsline {part}{\numberline {i}\spacedlowsmallcaps {Introduction}}{1}{part.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {part}{\numberline {ii}\spacedlowsmallcaps {Modeling and simulation of boiling flows using CFD}}{2}{part.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}\spacedlowsmallcaps {NEPTUNE\_CFD Code}}{3}{chapter.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Governing Equations for Turbulent Boiling Bubbly Flows}{3}{section.1.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.1}Mass Conservation :}{4}{subsection.1.2.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.2}Momentum Balance :}{4}{subsection.1.2.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.3}Energy Conservation :}{4}{subsection.1.2.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.3}Interfacial transfers closure laws}{4}{section.1.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3.1}Heat and mass transfers :}{4}{subsection.1.3.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.3.2}Interfacial Forces :}{5}{subsection.1.3.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}Turbulence Modeling}{6}{section.1.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.5}Wall Boiling Model}{6}{section.1.5}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.6}Wall Function for Dispersed Boiling Flows}{7}{section.1.6}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}\spacedlowsmallcaps {The DEBORA Database}}{8}{chapter.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Introduction}{8}{section.2.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Simulating PWR water using R12}{8}{section.2.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Conservation of the Phase Density Ratio}{8}{subsection.2.2.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Conservation of the Weber Number}{9}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Conservation of the Boiling Number}{9}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Conservation of the Inlet Thermodynamic Quality}{9}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Same Geometry}{9}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}Transposition ranges}{9}{subsection.2.2.6}%
-\contentsline {section}{\numberline {2.3}Description of the Test Section}{10}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Analysis of the Experimental Measurements}{11}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Comparison with One Dimensional Correlations}{11}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Experimental Heat Flux Corrections}{11}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}NEPTUNE\_CFD simulations of DEBORA cases}{11}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Investigating the nucleation site density modeling $N_{sit}$}{12}{subsection.2.3.5}%
-\contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Development of a New Wall Heat Flux Partitioning Model}}{14}{part.3}%
-\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Introduction}}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}First Approaches : Correlations}{15}{section.3.1}%
-\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Existing Heat Flux Partitioning Models}}{16}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Kurul \& Podowski (1990)}{16}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Basu (2000)}{16}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Case 1 : Bubble sliding, $D_{d}<s$}{18}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Case 2 : Bubble coalesence without sliding, $D_{d}\geq s$}{19}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Gilman (2017)}{20}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Zhou (2020)}{21}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Closure Laws for Remaining Parameters}{22}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Nucleation Site Density : $N_{sit}$}{22}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Bubble Departure Frequency $f$, Growth Time $t_{g}$ and Wait Time $t_{w}$}{23}{subsection.4.5.2}%
-\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Boiling Bubble Dynamics}}{24}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{25}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Experimental Insights}{25}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Existing Approaches}{27}{subsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.2.1}Departure / Lift-Off Diameters}{27}{subsubsection.5.1.2.1}%
-\contentsline {subsubsection}{\numberline {5.1.2.2}Sliding Length and Velocity}{28}{subsubsection.5.1.2.2}%
-\contentsline {subsubsection}{\numberline {5.1.2.3}Conclusion on Correlations}{29}{subsubsection.5.1.2.3}%
-\contentsline {section}{\numberline {5.2}Bubble Force Balance in Vertical Flow Boiling}{31}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Introduction}{31}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}General Considerations}{32}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Buoyancy Force}{32}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Contact Pressure Force}{33}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Capillary Force}{33}{subsection.5.2.5}%
-\contentsline {subsection}{\numberline {5.2.6}Drag and Lift Forces}{34}{subsection.5.2.6}%
-\contentsline {subsubsection}{\numberline {5.2.6.1}Drag Coefficient}{34}{subsubsection.5.2.6.1}%
-\contentsline {subsubsection}{\numberline {5.2.6.2}Lift Coefficient}{36}{subsubsection.5.2.6.2}%
-\contentsline {subsection}{\numberline {5.2.7}Inertia Force}{38}{subsection.5.2.7}%
-\contentsline {subsubsection}{\numberline {5.2.7.1}Former Approaches}{38}{subsubsection.5.2.7.1}%
-\contentsline {subsubsection}{\numberline {5.2.7.2}Proposed Approach}{39}{subsubsection.5.2.7.2}%
-\contentsline {subsection}{\numberline {5.2.8}Force Balance Summary}{41}{subsection.5.2.8}%
-\contentsline {subsection}{\numberline {5.2.9}Liquid Velocity}{41}{subsection.5.2.9}%
-\contentsline {section}{\numberline {5.3}Bubble Growth}{42}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Introduction}{42}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Heat Diffusion in Uniformly Superheated Liquid}{43}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Microlayer Evaporation}{44}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Bubble Growth in Subcooled Flow Boiling}{45}{subsection.5.3.4}%
-\contentsline {subsection}{\numberline {5.3.5}Analytic Approach of Bubble Growth in a Linear Thermal Boundary Layer}{46}{subsection.5.3.5}%
-\contentsline {subsection}{\numberline {5.3.6}Comparison with DNS Results}{48}{subsection.5.3.6}%
-\contentsline {subsection}{\numberline {5.3.7}Comparison with Experimental Measurements}{49}{subsection.5.3.7}%
-\contentsline {subsubsection}{\numberline {5.3.7.1}Low Pressure Measurements}{49}{subsubsection.5.3.7.1}%
-\contentsline {subsubsection}{\numberline {5.3.7.2}High Pressure Measurements}{50}{subsubsection.5.3.7.2}%
-\contentsline {subsection}{\numberline {5.3.8}Conclusions on Bubble Growth Modeling}{50}{subsection.5.3.8}%
-\contentsline {section}{\numberline {5.4}Departure by Sliding}{52}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Non-Dimensional Analysis}{52}{subsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.1.1}Influence of Pressure}{52}{subsubsection.5.4.1.1}%
-\contentsline {subsubsection}{\numberline {5.4.1.2}Comparison between Fluids}{53}{subsubsection.5.4.1.2}%
-\contentsline {subsection}{\numberline {5.4.2}Application to Experimental Data}{54}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Departure Diameter Prediction}{56}{subsection.5.4.3}%
-\contentsline {subsubsection}{\numberline {5.4.3.1}About the Use of Empiricism}{56}{subsubsection.5.4.3.1}%
-\contentsline {subsubsection}{\numberline {5.4.3.2}Growth Constant Value}{57}{subsubsection.5.4.3.2}%
-\contentsline {subsubsection}{\numberline {5.4.3.3}Predictions}{57}{subsubsection.5.4.3.3}%
-\contentsline {subsection}{\numberline {5.4.4}Discussion and accounting for parameters uncertainties}{57}{subsection.5.4.4}%
-\contentsline {section}{\numberline {5.5}Sliding phase}{60}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Modeling}{60}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Low Pressure Sliding}{60}{subsection.5.5.2}%
-\contentsline {subsection}{\numberline {5.5.3}High Pressure Sliding}{61}{subsection.5.5.3}%
-\contentsline {subsection}{\numberline {5.5.4}Comparison of Forces in Sliding Stage}{62}{subsection.5.5.4}%
-\contentsline {section}{\numberline {5.6}Bubble Lift-Off}{65}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Introduction}{65}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}Experimental Measurements of Lift-Off Diameter}{67}{subsection.5.6.2}%
-\contentsline {subsection}{\numberline {5.6.3}Influence of the Flow Boiling Conditions}{67}{subsection.5.6.3}%
-\contentsline {subsection}{\numberline {5.6.4}Predicting the Lift-Off with a Force Balance}{68}{subsection.5.6.4}%
-\contentsline {subsection}{\numberline {5.6.5}A Simple Non-Dimensional Correlation}{70}{subsection.5.6.5}%
-\contentsline {subsection}{\numberline {5.6.6}Conclusion on the Lift-Off}{70}{subsection.5.6.6}%
-\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Closure laws for the Heat Flux Partitioning model}}{71}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Single-Phase Heat Transfer Coefficient}{71}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Single Bubble Quenching Area}{73}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Growth time}{73}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Estimation of the thermal boundary layer thickness $\delta $}{74}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Estimation of $t{g}$ against experimental data}{74}{subsection.6.3.2}%
-\contentsline {section}{\numberline {6.4}Bubble Wait Time}{75}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Nucleation Site Density}{76}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Considerations on bubble interaction and nucleation sites deactivation}{80}{section.6.6}%
-\contentsline {subsection}{\numberline {6.6.1}Static suppression}{80}{subsection.6.6.1}%
-\contentsline {subsection}{\numberline {6.6.2}Static coalescence}{80}{subsection.6.6.2}%
-\contentsline {subsection}{\numberline {6.6.3}Sliding coalescence}{81}{subsection.6.6.3}%
-\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Assembling a new Heat Flux Partitioning Model}}{83}{chapter.7}%
-\contentsline {section}{\numberline {7.1}General description of the model}{83}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Convective heat fluxes}{83}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Boiling heat flux}{84}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}Quenching heat flux}{84}{subsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.1.4}Needed closure relationships}{84}{subsection.7.1.4}%
-\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Towards the Industrial Geometry}}{85}{part.4}%
-\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Promoteur}}{86}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Boiling freon in a tube with mixing vanes : DEBORA-Promoteur experiments}{86}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Description of the experiment}{86}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Analysis of the Experimental Measurements}{86}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}NEPTUNE\_CFD simulations of DEBORA-Promoteur cases}{87}{subsection.8.1.3}%
-\contentsline {section}{\numberline {8.2}Liquid water flow in a tube with mixing vanes : AGATE-PROMOTEUR experiment}{87}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Description of the experiment}{87}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}NEPTUNE\_CFD simulations of AGATE-Promoteur case}{88}{subsection.8.2.2}%
-\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Conclusion}}{90}{part.5}%
-\contentsline {part}{\numberline {vi}\spacedlowsmallcaps {Appendix}}{91}{part.6}%
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{92}{appendix.A}%
-\contentsline {subsection}{\numberline {A.0.1}Case 1 : $\delta _{b}$ is constant}{94}{subsection.A.0.1}%
-\contentsline {subsection}{\numberline {A.0.2}Case 2 : $\delta _{b}=\sqrt {\eta _{l}t}$}{94}{subsection.A.0.2}%
-\contentsline {subsection}{\numberline {A.0.3}Case 3 : $\delta _{b}=CR$}{95}{subsection.A.0.3}%
-\contentsline {chapter}{\numberline {B}\spacedlowsmallcaps {Details on the Bubble Force Balance}}{96}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Appendix Section Test}{97}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Another Appendix Section Test}{97}{section.B.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}Conservation of the Boiling Number}{10}{subsection.2.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.4}Conservation of the Inlet Thermodynamic Quality}{10}{subsection.2.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.5}Same Geometry}{10}{subsection.2.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.6}Transposition ranges}{10}{subsection.2.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Description of the Test Section}{11}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}Analysis of the Experimental Measurements}{12}{subsection.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}Comparison with One Dimensional Correlations}{12}{subsection.2.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}Experimental Heat Flux Corrections}{12}{subsection.2.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.4}NEPTUNE\_CFD simulations of DEBORA cases}{12}{subsection.2.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.5}Investigating the nucleation site density modeling $N_{sit}$}{13}{subsection.2.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Development of a New Wall Heat Flux Partitioning Model}}{15}{part.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}\spacedlowsmallcaps {Introduction}}{16}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}First Approaches : Correlations}{16}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}\spacedlowsmallcaps {Existing Heat Flux Partitioning Models}}{17}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Kurul \& Podowski (1990)}{17}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Basu (2000)}{17}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Case 1 : Bubble sliding, $D_{d}<s$}{19}{subsection.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Case 2 : Bubble coalesence without sliding, $D_{d}\geq s$}{20}{subsection.4.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Gilman (2017)}{21}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Zhou (2020)}{22}{section.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Closure Laws for Remaining Parameters}{23}{section.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.1}Nucleation Site Density : $N_{sit}$}{23}{subsection.4.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.2}Bubble Departure Frequency $f$, Growth Time $t_{g}$ and Wait Time $t_{w}$}{24}{subsection.4.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}\spacedlowsmallcaps {Boiling Bubble Dynamics}}{25}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Introduction}{26}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}Experimental Insights}{26}{subsection.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.2}Existing Approaches}{28}{subsection.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.2.1}Departure / Lift-Off Diameters}{28}{subsubsection.5.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.2.2}Sliding Length and Velocity}{29}{subsubsection.5.1.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.2.3}Conclusion on Correlations}{30}{subsubsection.5.1.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Bubble Force Balance in Vertical Flow Boiling}{32}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}Introduction}{32}{subsection.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}General Considerations}{33}{subsection.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.3}Buoyancy Force}{33}{subsection.5.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.4}Contact Pressure Force}{34}{subsection.5.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.5}Capillary Force}{34}{subsection.5.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.6}Drag and Lift Forces}{35}{subsection.5.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.6.1}Drag Coefficient}{35}{subsubsection.5.2.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.6.2}Lift Coefficient}{37}{subsubsection.5.2.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.7}Inertia Force}{39}{subsection.5.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.7.1}Former Approaches}{39}{subsubsection.5.2.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.7.2}Proposed Approach}{40}{subsubsection.5.2.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.8}Force Balance Summary}{42}{subsection.5.2.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.9}Liquid Velocity}{42}{subsection.5.2.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Bubble Growth}{43}{section.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}Introduction}{43}{subsection.5.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.2}Heat Diffusion in Uniformly Superheated Liquid}{44}{subsection.5.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.3}Microlayer Evaporation}{45}{subsection.5.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.4}Bubble Growth in Subcooled Flow Boiling}{46}{subsection.5.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.5}Analytic Approach of Bubble Growth in a Linear Thermal Boundary Layer}{47}{subsection.5.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.6}Comparison with DNS Results}{49}{subsection.5.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.7}Comparison with Experimental Measurements}{50}{subsection.5.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.3.7.1}Low Pressure Measurements}{50}{subsubsection.5.3.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.3.7.2}High Pressure Measurements}{51}{subsubsection.5.3.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.8}Conclusions on Bubble Growth Modeling}{51}{subsection.5.3.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Departure by Sliding}{53}{section.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.1}Non-Dimensional Analysis}{53}{subsection.5.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.4.1.1}Influence of Pressure}{53}{subsubsection.5.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.4.1.2}Comparison between Fluids}{54}{subsubsection.5.4.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.2}Application to Experimental Data}{55}{subsection.5.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.3}Departure Diameter Prediction}{57}{subsection.5.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.4.3.1}About the Use of Empiricism}{57}{subsubsection.5.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.4.3.2}Growth Constant Value}{58}{subsubsection.5.4.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.4.3.3}Predictions}{58}{subsubsection.5.4.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.4.4}Discussion and accounting for parameters uncertainties}{58}{subsection.5.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Sliding phase}{61}{section.5.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5.1}Modeling}{61}{subsection.5.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5.2}Low Pressure Sliding}{61}{subsection.5.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5.3}High Pressure Sliding}{62}{subsection.5.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.5.4}Comparison of Forces in Sliding Stage}{63}{subsection.5.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.6}Bubble Lift-Off}{66}{section.5.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.1}Introduction}{66}{subsection.5.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.2}Experimental Measurements of Lift-Off Diameter}{68}{subsection.5.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.3}Influence of the Flow Boiling Conditions}{68}{subsection.5.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.4}Predicting the Lift-Off with a Force Balance}{69}{subsection.5.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.5}A Simple Non-Dimensional Correlation}{71}{subsection.5.6.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.6.6}Conclusion on the Lift-Off}{71}{subsection.5.6.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}\spacedlowsmallcaps {Closure laws for the Heat Flux Partitioning model}}{72}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Single-Phase Heat Transfer Coefficient}{72}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Single Bubble Quenching Area}{74}{section.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Growth time}{74}{section.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}Estimation of the thermal boundary layer thickness $\delta $}{75}{subsection.6.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}Estimation of $t{g}$ against experimental data}{75}{subsection.6.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Bubble Wait Time}{76}{section.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.5}Nucleation Site Density}{77}{section.6.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.6}Considerations on bubble interaction and nucleation sites deactivation}{81}{section.6.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.6.1}Static suppression}{81}{subsection.6.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.6.2}Static coalescence}{81}{subsection.6.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.6.3}Sliding coalescence}{82}{subsection.6.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}\spacedlowsmallcaps {Assembling a new Heat Flux Partitioning Model}}{84}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}General description of the model}{84}{section.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.1}Convective heat fluxes}{84}{subsection.7.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.2}Boiling heat flux}{85}{subsection.7.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.3}Quenching heat flux}{85}{subsection.7.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.4}Needed closure relationships}{85}{subsection.7.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Towards the Industrial Geometry}}{86}{part.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}\spacedlowsmallcaps {Promoteur}}{87}{chapter.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Boiling freon in a tube with mixing vanes : DEBORA-Promoteur experiments}{87}{section.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1.1}Description of the experiment}{87}{subsection.8.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1.2}Analysis of the Experimental Measurements}{87}{subsection.8.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1.3}NEPTUNE\_CFD simulations of DEBORA-Promoteur cases}{88}{subsection.8.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Liquid water flow in a tube with mixing vanes : AGATE-PROMOTEUR experiment}{88}{section.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2.1}Description of the experiment}{88}{subsection.8.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2.2}NEPTUNE\_CFD simulations of AGATE-Promoteur case}{89}{subsection.8.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\numberline {v}\spacedlowsmallcaps {Conclusion}}{91}{part.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\numberline {vi}\spacedlowsmallcaps {Appendix}}{92}{part.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{93}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.0.1}Case 1 : $\delta _{b}$ is constant}{95}{subsection.A.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.0.2}Case 2 : $\delta _{b}=\sqrt {\eta _{l}t}$}{95}{subsection.A.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.0.3}Case 3 : $\delta _{b}=CR$}{96}{subsection.A.0.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}\spacedlowsmallcaps {Details on the Bubble Force Balance}}{97}{appendix.B}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}Appendix Section Test}{98}{section.B.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.2}Another Appendix Section Test}{98}{section.B.2}%
+\defcounter {refsection}{0}\relax 
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{99}{dummy.7}%
-\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{100}{dummy.7}%
