@@ -49,7 +49,7 @@ with $P_{2} < P_{1}$.
 
 \npar
 
-The evolution of the density ratio of water and R12 with pressure are shown on Figure \ref{fig:PWR_R12_density}.
+The evolution of the density ratio of water and R12 with pressure are shown on Figure \ref{fig:rhost_R12_PWR}.
 
 \begin{figure}[!h]
 \centering
@@ -84,6 +84,8 @@ This number characterizes physical phenomena such as bubble break-up or deformat
 \label{fig:We_R12_PWR}
 \end{figure}
 
+Similar to the phase density ratio, Figure \ref{fig:We_R12_PWR} shows that Weber number equivalent to water at 155 bar can be reached with  R12 around 23 bar.
+
 \npar
 
 \begin{note*}{}
@@ -103,9 +105,12 @@ It represents the comparison between the vapor mass flux $\phi_{w}/h_{LV}$ if al
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.6\linewidth]{img/DEBORA/Bo_R12_PWR.pdf}
-\caption{•}
+\caption{Boiling number for R12 and water at $G_{L} = 2000~\debm$}
 \label{fig:Bo_R12_PWR}
 \end{figure}
+
+Figure \ref{fig:Bo_R12_PWR} shows that Boiling number values similar to PWR can be reproduced using R12 with wall heat fluxes one order of magnitude lower and pressure around 23 bar.
+
 
 \begin{note*}{}
 This transposition criteria scales the applied heat flux $\phi_{w}$.
@@ -141,24 +146,24 @@ As a result of those conservation criteria, Table \ref{tab:R12_PWR_transposition
 
 Fluid & Water & Freon R12 \\
 \hline \hline
-$P$ (bar) & 100 - 180 & 14 - 30\\
+$P$ [bar] & 100 - 180 & 14 - 30\\
 %
-$G_{L}$ ($\debm$) & 1000 - 5000 & 1000 - 5000\\
+$G_{L}$ [$\debm$] & 1000 - 5000 & 1000 - 5000\\
 %
-$\phi_{w}$ (MW/m$^{2}$) & 0.5 - 6 & 0.05 - 0.65\\ 
+$\phi_{w}$ [MW/m$^{2}$] & 0.5 - 6 & 0.05 - 0.65\\ 
 %
-$x_{in}$ (-) & (-0.4) - (+0.4) & (-0.4) - (+0.4)\\
+$x_{in}$ [-] & (-0.4) - (+0.4) & (-0.4) - (+0.4)\\
 \hline
 \hline 
-${\rho_{V,sat}}/{\rho_{L,sat}}$ (-) & 0.08 - 0.25 & 0.07 - 0.22\\
+${\rho_{V,sat}}/{\rho_{L,sat}}$ [-] & 0.08 - 0.25 & 0.07 - 0.22\\
 %
-$\We$ (-) & 2374 - 368~579 & 3319 - 438~966\\
+$\We$ [-] & 49.5 - 307.1 & 69.1 - 365.8\\
 %
-$\Bo \times 10^{-3} $ (-) &  $3.67\times 10^{-2}$ - $2.39 $ & $2.65\times 10^{-2}$ - $1.74$ \\
+$\Bo \times 10^{-3} $ [-] &  $0.19$ - $3.86$ & $0.21$ - $4.33$ \\
 \hline
 \end{tabular}
 
-\caption{Water R12 scaling, $R=0.01$mm for $\We$)}
+\caption{Water R12 scaling, $R=0.01$mm for $\We$}
 \label{tab:R12_PWR_transposition}
 
 \end{table}
@@ -167,6 +172,15 @@ $\Bo \times 10^{-3} $ (-) &  $3.67\times 10^{-2}$ - $2.39 $ & $2.65\times 10^{-2
 
 \section{Description of the Test Section}
 
+\subsection{Geometrical Description}
+To apply the aforementioned transport criteria, four thermal-hydraulic control parameters are imposed in the test section :
+
+\begin{itemize}
+\item The outlet pressure $P$ ;
+\item The inlet mass flow rate $G_{L}\times S_{in}$ with $S_{in}$ the inlet area ;
+\item The inlet liquid temperature $T_{L,in}$ ;
+\item The electrical power transferred to the liquid $\phi_{w}\times S_{heat}$ with $S_{heat}$ the heated area. 
+\end{itemize}
 
 \begin{figure}[!h]
 \centering
@@ -176,7 +190,17 @@ $\Bo \times 10^{-3} $ (-) &  $3.67\times 10^{-2}$ - $2.39 $ & $2.65\times 10^{-2
 \end{figure}
 
 
+The test section in presented on Figure \ref{fig:sketch_debora}. It consists of an inconel tube with inner diameter $D_{h}=19.2$ mm, a 1 mm thickness and a heated length $L_{heat}$=3.5 m.
 
+A detailed description of the whole experimental loop is given in Garnier \etal \cite{garnier_local_2001}.
+
+\subsection{Measurement Instrumentation}
+
+The control parameters are adjusted and measured using pressure, temperature, flow rate and power measurements. They are further detailed in Cubizolles \cite{Cubizolles_1996}.
+
+\npar
+
+The local measurements are conducted at the end of the heating length, with a controllable probe that can cover the whole diameter of the test section. 
 
 
 
