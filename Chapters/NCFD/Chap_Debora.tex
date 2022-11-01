@@ -24,7 +24,7 @@ The choice of using R12 as the working fluid in the DEBORA loop emerged from the
 \item Pressure $P$ between 100 and 180 bar ;
 \item Liquid mass flux $G_{L}$ between 1000 and 5000~$\debm$ ;
 \item Wall heat flux $\phi_{w}$ between 0.5 and 6 MW/m\up{2} ;
-\item Inlet thermodynamic flow quality $x_{in}$ between -0.4 and 0.4.
+\item Inlet thermodynamic flow quality $x_{eq,in}$ between -0.4 and 0.4.
 \end{itemize}
 
 In those ranges, sensors dedicated to local measurements are not suited to sustain such conditions. 
@@ -122,7 +122,7 @@ Water in PWR being highly subcooled to avoid boiling, reproducing the inlet subc
 
 
 \begin{equation}
-x_{in} = \frac{h_{L,in} - h_{L,sat}}{h_{LV}}
+x_{eq,in} = \frac{h_{L,in} - h_{L,sat}}{h_{LV}}
 \end{equation}
 
 \begin{note*}{}
@@ -152,7 +152,7 @@ $G_{L}$ [$\debm$] & 1000 - 5000 & 1000 - 5000\\
 %
 $\phi_{w}$ [MW/m$^{2}$] & 0.5 - 6 & 0.05 - 0.65\\ 
 %
-$x_{in}$ [-] & (-0.4) - (+0.4) & (-0.4) - (+0.4)\\
+$x_{eq,in}$ [-] & (-0.4) - (+0.4) & (-0.4) - (+0.4)\\
 \hline
 \hline 
 ${\rho_{V,sat}}/{\rho_{L,sat}}$ [-] & 0.08 - 0.25 & 0.07 - 0.22\\
@@ -198,31 +198,171 @@ The control parameters are adjusted and measured using pressure, temperature, fl
 
 \npar
 
-The local measurements are conducted at the end of the heating length, with a controllable probe that can cover the whole diameter of the test section. Three type of measurements have been conducted over different experimental campaigns.
+The local measurements are conducted at the end of the heating length using a controllable probe that can cover the whole diameter of the test section with an accuracy of $10 \mu$m . Three type of measurements have been conducted over different experimental campaigns.
 
-\subsubsection{Single Optical Probe Measurements}
-
-
+\subsubsection{Mono-Optical Probe Measurements}
 
 
+Optical probe measurement rely on the difference of optical refractive index between the liquid and vapor phase. Using an optical fiber in which light is emitted towards the probe tip allows to detect the actual phase flowing on the probe. 
+
+\npar
+
+The resulting signal is called a Phase Indicator Function (PIF) which looks like to a square signal (Figure \ref{fig:FIP}) that can be post-processed to identify the average time spent by the probe in each phase and then estimate their volume fraction \eg the void fraction. 
 
 
-In the end of 1990's, CEA and EDF built a test facility called DEBORA which goal was to conduct series of experiments and measurements to establish a database for boiling flows of freon R12. The choice of freon is justified because of its use as a simulating fluid for water in PWR conditions (very close phase density ratio, Weber number $\text{We}$, Boiling number $\text{Bo}$ and thermodynamic flow quality $x_{eq}$). Table \ref{tab:simul_fluid} sums up the flow conditions scaling between R12 and water.
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.5\linewidth]{img/DEBORA/FIP.pdf}
+\caption{Example of Phase Indicator Function signal}
+\label{fig:FIP}
+\end{figure}
 
 
 
-The DEBORA experiment consists of an upward subcooled boiling flow of R12 in a 4m length pipe uniformally heated over 3.5m with an hydraulic diameter $D_{h}=19.2\text{mm}$. Measurements of void fraction ($\alpha$), interfacial velocity (\ie axial gas velocity $U_{G,z}$), bubble diameter ($d_{G}$), liquid temperature ($T_{L}$) and wall temperature ($T_{w}$) at the end of the heating length were conducted through different series of tests. Experimental apparatus is detailed in {Garnier} \etal\cite{Garnier2001} and {Manon}\cite{Manon2000}.
+If the PIF is measured over a period $T$, the void fraction $\alpha$ at the measurement point $x$ can be estimated by :
 
-Different test campaigns were conducted on this experimental setup, in particular :
+
+\begin{equation}
+\alpha\parth{x}\ = \nu\parth{x} \overline{t_{V}} = \frac{1}{T} \sum t_{V}
+\end{equation}
+where $\nu$ is called the interference frequency that represents the number of phase interface detection per second by the probe.
+
+\begin{remark*}{}
+This measurement technique was performed in the \textbf{measurement campaign C2900} where void fraction profiles at the outlet were obtained for various flow conditions.
+\end{remark*}
+
+\subsubsection{Bi-Optical Probe Measurements}
+
+
+Using the technology of the optical phase dectection, adding a second optical probe permits to measure more parameters of the two-phase flow. Indeed, the use of two probes placed close to each other with a small shift in the flow direction (Figure \ref{fig:optical_probe}) allows to estimate the velocity of the interface between the two probes by measuring the time difference between the two PIF.
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.65\linewidth]{img/DEBORA/optical_probe.png}
+\caption{Picture of the bi-optical probe with a zoom over the two optical fibers. Reproduced from \cite{gueguen_phd}.}
+\label{fig:optical_probe}
+\end{figure}
+
+\npar
+
+Considering the following assumptions :
 
 \begin{itemize}
-\item Campaign 2900 : measurements of $\alpha$, $U_{g,z}$ and $d_{G}$ using one optical probe
-\item Campaign 3000 : measurements of $\alpha$, $U_{g,z}$ and $d_{G}$ using two optical probes 
-\item Campaign 800 : measurements of $T_{L}$ and $T_{w}$ using thermocouples
+\item The flow is mainly one-directional in aligned with the probes ;
+\item The vapor phase is composed of spherical inclusions ;
+\item The velocity gradient and center density gradient are small along a bubble diameter length.
 \end{itemize}
 
-Each experimental case is named following this nomenclature : CccGgPppWwwTett with cc being the campaign number, g the inlet mass velocity ($G$), pp the outlet pressure ($P$), ww the total heat power applied ($W$) and tt the inlet temperature ($T_{in}$).
-For instance, C8G3P26W23Te69 refers to the case from the campaign 800 with $G\approx 3000~\debm$, $P\approx 26~\text{bar}$, $W\approx 23~\text{kW}$ and $T_{in}\approx 69\degree\text{C}$.
+Then we can estimate : 
+
+\begin{itemize}
+\item The vapor velocity $\vect{U_{V}}$ that can be supposed equal to the measured interface velocity between the probes ;
+\item The interfacial area density $a_{i}$ :
+\begin{equation}
+a_{i} = \frac{4 \nu }{U_{V}}
+\end{equation}
+\item The bubble Sauter diameter :
+\begin{equation}
+d_{V} = \frac{6 \alpha }{a_{i}}
+\end{equation}
+\end{itemize}
+
+
+\begin{remark*}{}
+This measurement technique was performed in the \textbf{measurement campaign C3000}.
+\end{remark*}
+
+
+\subsubsection{Thermocouples Measurements}
+
+Thermal measurements are conducted using chromel-alumel thermocouples. The liquid temperature is measured along the outlet diameter at the end of the heating length. Wall temperature measurements are conducted with 4 thermocouples placed at different heights (1.465 m, 2.465 m, 2.965 m, 3.485 m) on the outside of the tube.
+
+\begin{remark*}{}
+This measurement technique was performed in the \textbf{measurement campaign C800}.
+\end{remark*}
+
+
+
+\section{Measurements Campaigns and Results}
+
+\subsection{Cases Nomenclature and Test Series}
+
+As mentioned before, three different campaigns have been performed :
+
+\begin{itemize}
+\item Campaign C2900 with solely void fraction measurements using mono-optical probe ;
+
+\item Campaign C3000 with void fraction, vapor velocity, bubble Sauter diameter and interfacial area density measurements using bi-optical probe ;
+
+\item Campaign C800 with liquid and wall temperature measurements using thermocouples.
+\end{itemize}
+
+
+Each measurement series is conducted under fixed outlet pressure, liquid mass flux and electrical power. Inlet temperature is then changed to cover different inlet quality. Change in the inlet quality can also be associated to moving the probe along the axial direction following the relationship : 
+
+\begin{equation}
+x_{eq}\parth{z} = x_{eq,in} + \frac{4 \phi_{w} z }{G D_{h} h_{LV}}
+\end{equation}
+
+
+
+Each experimental case is named in the form C\textbf{cc}G\textbf{g}P\textbf{pp}W\textbf{ww}Te\textbf{tt} with \textbf{cc} the campaign number (29, 30 or 8), \textbf{g} the inlet mass velocity ($G$ in t/m\up{2}/s), \textbf{pp} the outlet pressure ($P$ in bars), \textbf{ww} the total heat power applied ($\Phi_{w}$ in kW) and \textbf{tt} the inlet temperature ($T_{L,in}$ in K).
+
+\begin{itemize}
+
+\item C800 : 8G2P14W16, 8G2P14W24, 8G2P26W16, 8G4P14W24, 8G5P26W16, 8G5P26W24
+
+\item C2900 : 29G1P30W12, 29G1P30W14, 29G2P14W16, 29G2P26W16, 29G3P26W23, 29G3P26W25, 29G3P26W27, 29G3P26W29, 29G3P26W31, 29G3P26W33, 29G3P26W36, 29G3P26W38, 29G3P26W39, 29G3P26W40, 29G3P26W42, 29G3P26W44, 29G5P14W29, 29G5P14W30, 29G5P14W33, 29G5P14W34, 29G5P14W36, 29G5P14W38, 29G5P14W40, 29G5P14W42
+
+\item C3000 : 30G2P14W16, 30G2P14W17, 30G2P26W16, 30G3P26W23, 30G3P26W27, 30G3P26W31, 30G3P26W36, 30G3P26W40, 30G3P26W44
+%
+\end{itemize}
+
+
+
+
+\begin{table}[!h]
+\scriptsize
+\centering
+
+
+\noindent\makebox[\textwidth]{
+\renewcommand{\arraystretch}{2.0}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+P                   & G & W12 & W14 & W16 & W17 & W23 & W24 & W25 & W27 & W29 & W30 & W31 & W33 & W34 & W36 & W38 & W39 & W40 & W42 & W44 \\
+\hline
+\hline
+\multirow{3}{*}{14} & 2 &     &     &  $\bigcirc$ $\bigtriangledown$ $\bigtriangleup$  & $\bigtriangleup$    &     &  $\bigcirc$   &     &     &     &     &     &     &     &     &     &     &     &     &     \\
+                    & 4 &     &     &     &     &     &  $\bigcirc$   &     &     &     &     &     &     &     &     &     &     &     &     &     \\
+                    & 5 &     &     &     &     &     &     &     &     & $\bigtriangledown$    &  $\bigtriangledown$   &     &  $\bigtriangledown$   &  $\bigtriangledown$   &  $\bigtriangledown$   &   $\bigtriangledown$  &    & $\bigtriangledown$   &  $\bigtriangledown$   &     \\
+                    \hline
+\multirow{3}{*}{26} & 2 &     &     &  $\bigcirc$ $\bigtriangledown$ $\bigtriangleup$  &     &     &     &     &     &     &     &     &     &     &     &     &     &     &     &     \\
+                    & 3 &     &     &     &     &  $\bigtriangledown$ $\bigtriangleup$  &     &  $\bigtriangledown$   &  $\bigtriangledown$ $\bigtriangleup$   &   $\bigtriangledown$  &     & $\bigtriangledown$  $\bigtriangleup$   &  $\bigtriangledown$   &     &  $\bigtriangledown$   $\bigtriangleup$ &  $\bigtriangledown$   &  $\bigtriangledown$   & $\bigtriangledown$ $\bigtriangleup$   & $\bigtriangledown$    &  $\bigtriangledown$ $\bigtriangleup$   \\
+                    & 5 &     &     & $\bigcirc$   &     &     &  $\bigcirc$   &     &     &     &     &     &     &     &     &     &     &     &     &     \\
+                    \hline
+30                  & 1 &  $\bigtriangledown$   &  $\bigtriangledown$   &     &     &     &     &     &     &     &     &     &     &     &     &     &     &     &     &    \\
+\hline
+\end{tabular}
+}
+\caption{Test matrix of the DEBORA cases. $\bigcirc$ : C800 - $\bigtriangledown$ : C2900 - $\bigtriangleup$ : C3000 \\ \scriptsize{Written at Plateau d'Auguste, Hyper U, Saintes} }
+\label{tab:debora_matrix}
+\end{table}
+
+
+If we want to obtain a full description of the two-phase flow from the DEBORA tests, we need to have measurements from campaigns C3000 and C800 with the same control parameters. 
+
+
+Table \ref{tab:debora_matrix} unfortunately shows that only very few test series between C3000 and C800 have common operating conditions, namely :
+
+\begin{itemize}
+\item Series 8G2P14W16 and 30G2P14W16 ;
+\item Series 8G2P26W16 and 30G2P26W16.
+\end{itemize}
+
+Other flow conditions have either been covered with thermal measurements or topology measurements but not altogether.
+
 
 \subsection{Analysis of the Experimental Measurements}
 
