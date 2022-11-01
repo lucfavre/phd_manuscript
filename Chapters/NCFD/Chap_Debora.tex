@@ -2,6 +2,8 @@
 
 \chapter{The DEBORA Database} % Chapter title
 
+\minitoc
+
 \section{Introduction}
 
 \label{ch:debora} % For referencing the chapter elsewhere, use \autoref{ch:introduction} 
@@ -177,7 +179,7 @@ To apply the aforementioned transport criteria, four thermal-hydraulic control p
 
 \begin{itemize}
 \item The outlet pressure $P$ ;
-\item The inlet mass flow rate $G_{L}\times S_{in}$ with $S_{in}$ the inlet area ;
+\item The inlet mass flow rate $G_{L}\times S_{in}$ with $S_{in} = \pi R^{2} \approx 2.9 \times 10^{-4}$ m\up{2} the inlet area ;
 \item The inlet liquid temperature $T_{L,in}$ ;
 \item The electrical power transferred to the liquid $\phi_{w}\times S_{heat}$ with $S_{heat}$ the heated area. 
 \end{itemize}
@@ -212,7 +214,7 @@ The resulting signal is called a Phase Indicator Function (PIF) which looks like
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.5\linewidth]{img/DEBORA/FIP.pdf}
+\includegraphics[width=0.65\linewidth]{img/DEBORA/FIP.pdf}
 \caption{Example of Phase Indicator Function signal}
 \label{fig:FIP}
 \end{figure}
@@ -257,14 +259,14 @@ Considering the following assumptions :
 Then we can estimate : 
 
 \begin{itemize}
-\item The vapor velocity $\vect{U_{V}}$ that can be supposed equal to the measured interface velocity between the probes ;
+\item The vapor axial velocity $U_{V,z}$ that can be supposed equal to the measured interface velocity between the probes ;
 \item The interfacial area density $a_{i}$ :
 \begin{equation}
-a_{i} = \frac{4 \nu }{U_{V}}
+a_{i} = \frac{4 \nu }{U_{V,z}}
 \end{equation}
 \item The bubble Sauter diameter :
 \begin{equation}
-d_{V} = \frac{6 \alpha }{a_{i}}
+D_{V} = \frac{6 \alpha }{a_{i}}
 \end{equation}
 \end{itemize}
 
@@ -299,27 +301,7 @@ As mentioned before, three different campaigns have been performed :
 \end{itemize}
 
 
-Each measurement series is conducted under fixed outlet pressure, liquid mass flux and electrical power. Inlet temperature is then changed to cover different inlet quality. Change in the inlet quality can also be associated to moving the probe along the axial direction following the relationship : 
-
-\begin{equation}
-x_{eq}\parth{z} = x_{eq,in} + \frac{4 \phi_{w} z }{G D_{h} h_{LV}}
-\end{equation}
-
-
-
-Each experimental case is named in the form C\textbf{cc}G\textbf{g}P\textbf{pp}W\textbf{ww}Te\textbf{tt} with \textbf{cc} the campaign number (29, 30 or 8), \textbf{g} the inlet mass velocity ($G$ in t/m\up{2}/s), \textbf{pp} the outlet pressure ($P$ in bars), \textbf{ww} the total heat power applied ($\Phi_{w}$ in kW) and \textbf{tt} the inlet temperature ($T_{L,in}$ in K).
-
-\begin{itemize}
-
-\item C800 : 8G2P14W16, 8G2P14W24, 8G2P26W16, 8G4P14W24, 8G5P26W16, 8G5P26W24
-
-\item C2900 : 29G1P30W12, 29G1P30W14, 29G2P14W16, 29G2P26W16, 29G3P26W23, 29G3P26W25, 29G3P26W27, 29G3P26W29, 29G3P26W31, 29G3P26W33, 29G3P26W36, 29G3P26W38, 29G3P26W39, 29G3P26W40, 29G3P26W42, 29G3P26W44, 29G5P14W29, 29G5P14W30, 29G5P14W33, 29G5P14W34, 29G5P14W36, 29G5P14W38, 29G5P14W40, 29G5P14W42
-
-\item C3000 : 30G2P14W16, 30G2P14W17, 30G2P26W16, 30G3P26W23, 30G3P26W27, 30G3P26W31, 30G3P26W36, 30G3P26W40, 30G3P26W44
-%
-\end{itemize}
-
-
+Each measurement series is conducted under fixed outlet pressure, liquid mass flux and electrical power. Inlet temperature is then changed to cover different inlet quality. Experimental cases are named in the form C\textbf{cc}G\textbf{g}P\textbf{pp}W\textbf{ww}Te\textbf{tt} with \textbf{cc} the campaign number (29, 30 or 8), \textbf{g} the inlet mass velocity ($G$ in t/m\up{2}/s), \textbf{pp} the outlet pressure ($P$ in bars), \textbf{ww} the total heat power applied ($\Phi_{w}$ in kW) and \textbf{tt} the inlet temperature ($T_{L,in}$ in K). For instance, the case named C30G2P26W16Te66 has been conducted with $P=26.2$ bar, $G=2049\ \debm$, $\Phi_{w}=15.6$ kW $\equiv$ $\phi_{w} =73.89$ kW/m\up{2} and $T_{L,in} = 66.59 \degC$.
 
 
 \begin{table}[!h]
@@ -329,48 +311,398 @@ Each experimental case is named in the form C\textbf{cc}G\textbf{g}P\textbf{pp}W
 
 \noindent\makebox[\textwidth]{
 \renewcommand{\arraystretch}{2.0}
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
 \hline
-P                   & G & W12 & W14 & W16 & W17 & W23 & W24 & W25 & W27 & W29 & W30 & W31 & W33 & W34 & W36 & W38 & W39 & W40 & W42 & W44 \\
+P                   & G & W16 & W17 & W23 & W24 & W25 & W27 & W29 & W30 & W31 & W33 & W34 & W36 & W38 & W39 & W40 & W42 & W44 \\
 \hline
 \hline
-\multirow{3}{*}{14} & 2 &     &     &  $\bigcirc$ $\bigtriangledown$ $\bigtriangleup$  & $\bigtriangleup$    &     &  $\bigcirc$   &     &     &     &     &     &     &     &     &     &     &     &     &     \\
-                    & 4 &     &     &     &     &     &  $\bigcirc$   &     &     &     &     &     &     &     &     &     &     &     &     &     \\
-                    & 5 &     &     &     &     &     &     &     &     & $\bigtriangledown$    &  $\bigtriangledown$   &     &  $\bigtriangledown$   &  $\bigtriangledown$   &  $\bigtriangledown$   &   $\bigtriangledown$  &    & $\bigtriangledown$   &  $\bigtriangledown$   &     \\
+\multirow{3}{*}{14} & 2 &  $\bigcirc$ $\bigtriangledown$ $\bigtriangleup$  & $\bigtriangleup$    &     &  $\bigcirc$   &     &     &     &     &     &     &     &     &     &     &     &     &     \\
+                    & 4  &     &     &     &  $\bigcirc$   &     &     &     &     &     &     &     &     &     &     &     &     &     \\
+                    & 5  &     &     &     &     &     &     & $\bigtriangledown$    &  $\bigtriangledown$   &     &  $\bigtriangledown$   &  $\bigtriangledown$   &  $\bigtriangledown$   &   $\bigtriangledown$  &    & $\bigtriangledown$   &  $\bigtriangledown$   &     \\
                     \hline
-\multirow{3}{*}{26} & 2 &     &     &  $\bigcirc$ $\bigtriangledown$ $\bigtriangleup$  &     &     &     &     &     &     &     &     &     &     &     &     &     &     &     &     \\
-                    & 3 &     &     &     &     &  $\bigtriangledown$ $\bigtriangleup$  &     &  $\bigtriangledown$   &  $\bigtriangledown$ $\bigtriangleup$   &   $\bigtriangledown$  &     & $\bigtriangledown$  $\bigtriangleup$   &  $\bigtriangledown$   &     &  $\bigtriangledown$   $\bigtriangleup$ &  $\bigtriangledown$   &  $\bigtriangledown$   & $\bigtriangledown$ $\bigtriangleup$   & $\bigtriangledown$    &  $\bigtriangledown$ $\bigtriangleup$   \\
-                    & 5 &     &     & $\bigcirc$   &     &     &  $\bigcirc$   &     &     &     &     &     &     &     &     &     &     &     &     &     \\
-                    \hline
-30                  & 1 &  $\bigtriangledown$   &  $\bigtriangledown$   &     &     &     &     &     &     &     &     &     &     &     &     &     &     &     &     &    \\
+\multirow{3}{*}{26} & 2  &  $\bigcirc$ $\bigtriangledown$ $\bigtriangleup$  &     &     &     &     &     &     &     &     &     &     &     &     &     &     &     &     \\
+                    & 3 &     &     &  $\bigtriangledown$ $\bigtriangleup$  &     &  $\bigtriangledown$   &  $\bigtriangledown$ $\bigtriangleup$   &   $\bigtriangledown$  &     & $\bigtriangledown$  $\bigtriangleup$   &  $\bigtriangledown$   &     &  $\bigtriangledown$   $\bigtriangleup$ &  $\bigtriangledown$   &  $\bigtriangledown$   & $\bigtriangledown$ $\bigtriangleup$   & $\bigtriangledown$    &  $\bigtriangledown$ $\bigtriangleup$   \\
+                    & 5  & $\bigcirc$   &     &     &  $\bigcirc$   &     &     &     &     &     &     &     &     &     &     &     &     &     \\
 \hline
 \end{tabular}
 }
-\caption{Test matrix of the DEBORA cases. $\bigcirc$ : C800 - $\bigtriangledown$ : C2900 - $\bigtriangleup$ : C3000 \\ \scriptsize{Written at Plateau d'Auguste, Hyper U, Saintes} }
+
+\npar
+
+\noindent\makebox[\textwidth]{
+\renewcommand{\arraystretch}{2.0}
+\begin{tabular}{|c|c|c|c|}
+\hline
+P                   & G & W12 & W14\\
+\hline
+\hline
+30                  & 1 &  $\bigtriangledown$   &  $\bigtriangledown$   \\
+\hline
+\end{tabular}
+}
+
+\caption{Test matrix of the DEBORA cases. $\bigcirc$ : C800 - $\bigtriangledown$ : C2900 - $\bigtriangleup$ : C3000 }%\newline \scriptsize{Written at Plateau d'Auguste, Hyper U, Saintes} }
 \label{tab:debora_matrix}
 \end{table}
 
 
-If we want to obtain a full description of the two-phase flow from the DEBORA tests, we need to have measurements from campaigns C3000 and C800 with the same control parameters. 
-
-
-Table \ref{tab:debora_matrix} unfortunately shows that only very few test series between C3000 and C800 have common operating conditions, namely :
+If we want to obtain a full description of the two-phase flow from the DEBORA tests, we need to have measurements from campaigns C3000 and C800 (flow topology and thermal) with the same control parameters. Table \ref{tab:debora_matrix} unfortunately shows that only very few test series between C3000 and C800 have common operating conditions, namely :
 
 \begin{itemize}
 \item Series 8G2P14W16 and 30G2P14W16 ;
 \item Series 8G2P26W16 and 30G2P26W16.
 \end{itemize}
 
-Other flow conditions have either been covered with thermal measurements or topology measurements but not altogether.
+Other flow conditions have either been covered with thermal measurements or topology measurements but not both. 
+
+\begin{remark*}{}
+Cases from the campaign C2900 would only be relevant for void fraction profiles comparison. Estimations of the bubble diameter can not be achieved except if one assumes a velocity profile as in Guéguen \cite{gueguen_phd} who supposes that $U_{V,z} \propto \parth{ \dfrac{R-r}{R} }^{1/7}$ with $R=9.6$ mm the test section radius.
+\end{remark*}
 
 
-\subsection{Analysis of the Experimental Measurements}
+\subsection{Verification of Control Parameters Coherency}
+
+For each case, the total heat heat input $\Phi_{w}$ is given along with the inlet mass flux, inlet liquid temperature and outlet quality. To verify the consistency of those values, we can recalculate the outlet quality :
+
+\begin{equation}
+x_{eq,out,calc} = \frac{h_{out,calc} - h_{L,sat}}{h_{LV}}
+\label{eq:xeq_out}
+\end{equation}
+with $h_{out,calc}$ the recalculated outlet enthalpy  :
+
+\begin{equation}
+h_{out,calc} = h_{in} + \frac{\Phi_{w}}{G_{L}S_{in}} = h_{in} + \frac{4\phi_{w}L_{heat}}{G_{L}D_{h}}
+\end{equation}
+with $h_{in}$ the inlet enthalpy calculated from the fluid properties using the inlet liquid temperature.
+
+\npar
+The difference between the given and recalculated outlet quality can also be converted to input power error by recalculating the heat needed to reach the given $x_{eq,out}$  :
+
+\begin{equation}
+\Phi_{w,calc} = \frac{G_{L} \pi R^{2}}{\underbrace{\crocht{x_{eq,out}h_{LV}+h_{L,sat}}}_{h_{out}} - h_{in}}
+\end{equation}
+
+\npar 
+
+
+Moreover, for a given set of experiments at the same $P$, $G$ and $\Phi_{w}$ changing the inlet quality can be associated to moving the measurement diameter along the axial direction following the relationship : 
+
+\begin{equation}
+x_{eq}\parth{z} = x_{eq,in} + \frac{4 \phi_{w} z }{G D_{h} h_{LV}}
+\end{equation}
+
+Thus, taking the maximum inlet quality case $x_{eq,in, max}$ as a reference ($z=3.5$ m), we can estimate the corresponding measurement height $z_{eq}$ of each other cases if the inlet quality was $x_{eq,in, max}$.
+
+\npar
+
+We calculated the equivalent heights and outlet quality / power input errors for two series of the C3000 campaigns. Results are displayed on Tables \ref{tab:30P14_recalc} and \ref{tab:30P26_recalc}.
+
+
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{c|c|c|c|c|c|c}
+$T_{L,in}$ {[}K{]} & $x_{eq,in,calc}$ {[}-{]} & $x_{eq,out,calc}$ {[}-{]} & $x_{eq,out}$ {[}-{]} & $z_{eq}$ {[}m{]} & $x_{eq,out}$ error {[}-{]} & $\Phi_{w}$ error {[}kW{]} \\
+\hline
+\hline
+22.39  &  -0.317  &  -0.0821  &  -0.0832  &  1.075  &  0.114 \% &  -0.078 \\
+%
+26.8  &  -0.28  &  -0.0422  &  -0.0431  &  1.653  &  0.089 \% &  -0.061\\
+%
+28.76  &  -0.263  &  -0.0267  &  -0.0273  &  1.896  &  0.056 \% &  -0.038\\
+%
+30.08  &  -0.252  &  -0.0152  &  -0.0157  &  2.065  &  0.05 \% &  -0.034\\
+%
+31.39  &  -0.241  &  -0.004  &  -0.0043  &  2.234  &  0.035 \% &  -0.023\\
+%
+38.95  &  -0.175  &  0.0674  &  0.0681  &  3.229  &  -0.072 \% &  0.049\\
+%
+39.96  &  -0.166  &  0.077  &  0.0776  &  3.357  &  -0.063 \% &  0.042\\
+%
+41.16  &  -0.155  &  0.0875  &  0.0882  &  3.509  &  -0.064 \% &  0.043
+\end{tabular}
+\caption{Recalculated control parameters for the 30G2P14W16 cases. ($T_{sat} = 58.07\degC$)}
+\label{tab:30P14_recalc}
+\end{table}
+
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{c|c|c|c|c|c|c}
+$T_{L,in}$ {[}K{]} & $x_{eq,in,calc}$ {[}-{]} & $x_{eq,out,calc}$ {[}-{]} & $x_{eq,out}$ {[}-{]} & $z_{eq}$ {[}m{]} & $x_{eq,out}$ error {[}-{]} & $\Phi_{w}$ error {[}kW{]} \\
+\hline
+\hline
+58.57              & -0.395                   & -0.0893                   & -0.0819              & 1.792            & -0.747 \%                  & 0.381                     \\
+60.54              & -0.370                   & -0.0650                   & -0.0578              & 2.072            & -0.722 \%                  & 0.369                     \\
+62.54              & -0.344                   & -0.0392                   & -0.0318              & 2.369            & -0.741 \%                  & 0.378                     \\
+64.6               & -0.318                   & -0.0123                   & -0.0050              & 2.674            & -0.736 \%                  & 0.376                     \\
+66.59              & -0.292                   & 0.0140                    & 0.0213               & 2.973            & -0.728 \%                  & 0.371                     \\
+68.57              & -0.266                   & 0.0402                    & 0.0473               & 3.271            & -0.716 \%                  & 0.365                     \\
+70.59              & -0.239                   & 0.0670                    & 0.0743               & 3.583            & -0.723 \%                  & 0.369                    
+\end{tabular}
+\caption{Recalculated control parameters for the 30G2P26W16 cases. ($T_{sat} = 86.81\degC$)}
+\label{tab:30P26_recalc}
+\end{table}
+
+As we can see, the given values of outlet quality for the 30G2P14W16 tests are coherent with the one-dimensional enthalpy balance with errors mostly less than 0.1\% on the recalculated quality and less than 100 W on the recalculated power input. This naturally leads to an equivalent height very close to $3.5$ m for the hottest case.
+
+
+However, a more significant error is observed on the 30G2P26W16 cases where errors up to 0.75\% on the outlet quality and close to 0.4 kW on the power input are found. Those values are significant especially for cases close to saturation where uncondensed vapor will start to appear in the bulk. Moreover, this results in an equivalent height 8.3 cm longer than the actually 3.5m heated length.
+
+\npar
+
+Since the inlet temperature, mass flux and power input are controlled parameters for each test, it is likely that the error may come from the given value of outlet quality $x_{eq,out}$ which is calculated and not imposed.
+
+
+\subsection{Analysis of the Experimental Results}
+
+On Figures \ref{fig:30G2P26W16_exp} and \ref{fig:8G2P26W16_exp} we plot the experimental measurements of cases 30G2P26W16 and 8G2P26W16. The colorbar representing the oulet quality of each test is based on the computed value of $x_{eq,out}$ (Eq. \ref{eq:xeq_out}).
+
+\begin{figure}[h!]
+\centering
+
+\subfloat[Void fraction measurements]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/30G2P26W16/30G2P26W16_alpha.pdf}
+}
+\subfloat[Bubble diameter measurements]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/30G2P26W16/30G2P26W16_dv.pdf}
+}
+\\
+\subfloat[Vapor velocity measurements]{
+\includegraphics[width=0.55\linewidth]{img/DEBORA/30G2P26W16/30G2P26W16_ugz.pdf}
+}
+
+
+\caption{30G2P26W16 results}
+\label{fig:30G2P26W16_exp}
+\end{figure}
+
+Void fraction profiles obtained in for C2900 (single optical probe) and C3000 (bi-optical probe) cases are compared to verify the consistency of the measurements. The two campaigns are in good agreement with each other, displaying a void fraction profile monotonously increasing with the outlet quality.  
+
+We observe that the void fraction naturally increases with the outlet quality and that we reach net vapor generation with $\alpha\parth{R=0} > 0$ for the three hottest cases.
+
+Every case have their maximum void fraction near the wall with values up to approximately $40\%$ when the outlet quality approaches 0.1.
+
+\begin{figure}[h!]
+\centering
+
+\subfloat[Liquid temperature profiles]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/8G2P26W16/8G2P26W16_TL.pdf}
+}
+\subfloat[Liquid temperature profiles (zoom)]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/8G2P26W16/8G2P26W16_TLSH.pdf}
+}
+\\
+\subfloat[Wall temperature vs. axial position]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/8G2P26W16/8G2P26W16_Tw_z.pdf}
+}
+\subfloat[Wall temperature vs. local flow quality]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/8G2P26W16/8G2P26W16_Tw_x.pdf}
+}
+
+
+\caption{8G2P26W16 results}
+\label{fig:8G2P26W16_exp}
+\end{figure}
+
+
+
+
+
+
+
+
+\begin{figure}[h!]
+\centering
+
+\subfloat[Void fraction measurements]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/30G2P14W16/30G2P14W16_alpha.pdf}
+}
+\subfloat[Bubble diameter measurements]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/30G2P14W16/30G2P14W16_dv.pdf}
+}
+\\
+\subfloat[Vapor velocity measurements]{
+\includegraphics[width=0.55\linewidth]{img/DEBORA/30G2P14W16/30G2P14W16_ugz.pdf}
+}
+
+
+\caption{30G2P14W16 results}
+\label{fig:30G2P14W16_exp}
+\end{figure}
+
+
+
+
+
+\begin{figure}[h!]
+\centering
+
+\subfloat[Liquid temperature profiles]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/8G2P14W16/8G2P14W16_TL.pdf}
+}
+\subfloat[Liquid temperature profiles (zoom)]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/8G2P14W16/8G2P14W16_TLSH.pdf}
+}
+\\
+\subfloat[Wall temperature vs. axial position]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/8G2P14W16/8G2P14W16_Tw_z.pdf}
+}
+\subfloat[Wall temperature vs. local flow quality]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/8G2P14W16/8G2P14W16_Tw_x.pdf}
+}
+
+
+\caption{8G2P14W16 results}
+\label{fig:8G2P14W16_exp}
+\end{figure}
+
+
+
+\subsection{Reconstruction of the Applied Heat Flux}
+
+To further quantify the coherency of the DEBORA database, we want to reconstruct the wall heat flux injected in the flow from the experimental measurements of void fraction and 
+
+
+\subsubsection{Approche théorique}
+\label{sec:analyt}
+
+On dispose de jeux de mesures de $\alpha_{g}$, $U_{g,z}$ et $T_{l}$ en sortie du tube dans des conditions expérimentales proches entre les campagnes 800 et 3000.
+
+\npar
+En supposant que ces mesures peuvent être rassemblées pour correspondre aux mêmes conditions expérimentales, on peut interpoler les profils expérimentaux jusqu'à la paroi pour obtenir un profil radial pour ces grandeurs. On suppose l'écoulement axisymétrique.
+
+\npar
+Dans la suite, les grandeurs d'opération expérimentales utilisées seront le débit massique $G$ et la température d'entrée $T_{l,in}$. L'écart final entre le bilan thermique issu des mesures, et le flux pariétal donné dans le rapport expérimental sera calculé afin de proposer une correction du flux réellement appliqué.
+
+\npar
+On note $S_{e}$ la section radiale du tuyau, $S_{h}$ la surface chauffante et $R$ le rayon du tuyau.
+
+\npar
+\`A l'aide des mesures de $\alpha_{g}$ et $U_{g,z}$, on peut estimer le titre massique de l'écoulement en sortie :
+
+\begin{equation}
+X_{exp}=\frac{\rho_{g} \left<\alpha_{g}U_{g,z}\right>_{2}}{G} \text{ avec } \left<\alpha_{g}U_{g,z}\right>_{2}=\frac{1}{S_{e}}\int_{\theta=0}^{2\pi}\int_{r=0}^{R}\alpha_{g}(r)U_{g,z}(r)~r~dr~d\theta=\frac{2\pi}{S_{e}}\int_{r=0}^{R}\alpha_{g}(r)U_{g,z}(r)~r~dr
+\end{equation}
+
+
+\npar
+
+\`A partir du profil de température liquide en sortie, on calcule sa température moyenne $\left<T_{l}\right>_{2}$ et on remonte à l'enthalpie massique moyenne en sortie $\left<h_{l}\right>_{2}$ par l'équation d'état du fluide. La vapeur est supposée à saturation.
+
+\npar
+
+On a ainsi accès à l'enthalpie du mélange en sortie de la section d'essai :
+
+\begin{equation}
+h_{M}=X_{exp}h_{g,sat}+\left(1-X_{exp}\right)\left<h_{l}\right>_{2}
+\end{equation}
+
+De même, avec la température d'entrée, on accède à l'enthalpie d'entrée du fluide $h_{in}$ via son équation d'état. Ainsi, on obtient l'écart d'enthalpie entrée-sortie : $\Delta h=h_{M}-h_{in}$
+
+\npar
+
+Un bilan d'enthalpie en écoulement donne :
+
+\begin{equation}
+G S_{e} \Delta h=\phi_{w}S_{h} \text{ donc } \phi_{w}=\frac{\Delta h G S_{e}}{S_{h}}
+\end{equation}
+
+On obtient ainsi une estimation reconstruite du flux pariétal appliqué à partir des résultats expérimentaux, à comparer avec le flux expérimental donné dans le rapport d'essais. 
+
+\clearpage
+
+\subsubsection{Démarche numérique et application aux cas étudiés avec NEPTUNE\_CFD}
+\label{sec:appli}
+
+Les deux jeux de cas expérimentaux étudiés sont présentés en Table \ref{tab:cond_exp}.
+
+\begin{table}[!h]
+\label{tab:cond_exp}
+\centering
+
+\begin{tabular}{|c||c|c|c|c|}
+\hline
+Cas & $G$ (kg/m$^{2}$/s) & $P$ (bar) & $\phi_{w}$ (kW/m$^{2}$& $T_{in}$ ($\degree$C) \\
+\hline
+\hline
+30G2P26W23Te66.6 & 2049 & 26.2 & 73.893 & 66.595\\
+8G2P26W23Te66.6 & 1982 & 26.2 & 73.893 & 66.57\\
+\hline
+\hline
+30G2P26W23Te70.6 & 2051.2 & 26.19 & 73.893 & 70.59\\
+8G2P26W23Te70.3 & 1983 & 26.2 & 73.893 & 70.31\\
+\hline
+\end{tabular}
+
+\caption{Conditions expérimentales des cas étudiés}
+
+\end{table}
+
+
+L'interpolation des profils expérimentaux est réalisée avec le module Python \texttt{scipy.interpolate} avec un schéma d'interpolation linéaire. Des exemples de profils d'intégration obtenus pour chacune des variables sont données ci-dessous pour les cas Te66.6.
+
+%\begin{figure}[!h]
+%\centering
+%
+%\includegraphics[width=0.49\linewidth]{img/alpha.png}
+%\hfill
+%\includegraphics[width=0.49\linewidth]{img/ug.png}
+%
+%\caption{Profils interpolés pour $\alpha_{g}$ et $U_{g,z}$ pour le cas 30G2P26W23Te66.6}
+%
+%\end{figure}
+%
+%\begin{figure}[!h]
+%\centering
+%
+%\includegraphics[width=0.49\linewidth]{img/tliq.png}
+%
+%\caption{Profil interpolé pour $T_{l}$ pour le cas 8G2P26W23Te66.6}
+%
+%\end{figure}
+
+
+\`A partir de ces fonctions d'interpolation, on calcule les grandeurs moyennes intégrées sur la section de l'écoulement : $\left<\alpha_{g}U_{g,z}\right>_{2}$ et $\left<T_{l}\right>_{2}$. Les fonctions d'intégration utilisées sont tirées du module \texttt{scipy.integrate} 
+
+\npar
+On ajoute une correction de température moyenne $\Delta T_{l}$ pour faire correspondre les écoulements entre les deux campagnes. Par exemple, on rajoute $\Delta T_{l} = +0.3\degree$ C à $\left<T_{l}\right>_{2}$ pour le cas 8G2P26W23Te70.3 afin de corriger l'écart sur la température d'entrée avec l'essai 30G2P26W23Te70.6.
+
+\npar 
+
+Les équations d'état du fluide (fréon 12) sont tirées du module Python \texttt{CoolProp} pour recalculer les enthalpies nécessaires.
+
+
+Enfin, on applique la démarche calculatoire présentée en Section \ref{sec:analyt} pour re-calculer un flux pariétal théorique. Les résultats obtenus pour les deux cas étudiés sont présentés en Table \ref{tab:resu}. Le flux pariétal recalculé est noté $\phi_{w,rec}$ et le flux donné dans le rapport expérimental est noté $\phi_{w,exp}$. L'écart (en \%) de flux entre $\phi_{w,rec}$ et $\phi_{w,exp}$ est noté $\Delta \phi_{w}=100 \times (\phi_{w,rec}-\phi_{w,exp})/\phi_{w,exp}$.
+
+\begin{table}[!h]
+\label{tab:resu}
+\centering
+
+\begin{tabular}{|c||c|c|c|c|c|}
+\hline
+Cas & $X_{exp}$ (\%) & $\left<T_{l}\right>_{2}$ & $\phi_{w,rec}$ (kW/m$^{2}$) & $\phi_{w_{exp}}$ (kW/m$^{2}$)  ($\degree$C) & $\Delta \phi_{w}$ (\%)  \\
+\hline
+\hline
+30G2P26W23Te66.6 & 1.931\% & 85.71 & 70.914 & 73.893 & -4.03\%\\
+\hline
+\hline
+30G2P26W23Te70.6 & 4.998\% & 86.73 & 69.482 & 73.893 & -5.97\%\\
+\hline
+\end{tabular}
+
+\caption{Résultats de l'étude sur les cas étudiés}
+
+\end{table}
+
+
+\section{Analysis of the Experimental Measurements}
 
 \subsection{Comparison with One Dimensional Correlations}
 
 \subsection{Experimental Heat Flux Corrections}
 
-\subsection{NEPTUNE\_CFD simulations of DEBORA cases}
+\chapter{NEPTUNE\_CFD simulations of DEBORA cases}
 
 In this work, we present the simulations of the following cases :
 \begin{itemize}
