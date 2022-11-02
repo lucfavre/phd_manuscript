@@ -713,7 +713,7 @@ for an axisymmetric profile such as the DEBORA measurements.
 From the mass quality we can compute the mixture enthalpy as:
 
 \begin{equation}
-h_{M} = x_{m} h_{V,sat} + \parth{1-x_{m}}h_{L}
+h_{M} = x_{m} h_{V,sat} + \parth{1-x_{m}} \frac{\spavg{\rho_{L}\parth{1-\alpha}U_{L,z}h_{L}}}{\spavg{\rho_{L}\parth{1-\alpha}U_{L,z}}}
 \end{equation}
 
 \npar
@@ -722,7 +722,12 @@ Similarly, the average liquid enthalpy at the outlet is estimated as:
 \begin{equation}
 \spavg{h_{L}} = \frac{2}{R^{2}}\frac{1}{G_{L}}\int_{r=0}^{R} \rho_{L}\parth{r} U_{L,z}\parth{r} h_{L}\parth{r} r \mathrm{d}r
 \end{equation}
-where $h_{L}$ is estimated using the local temperature measurements and $U_{L,z}$ is estimated using Eq. \ref{eq:ugz_C29}.
+
+where $h_{L}$ is estimated using the local temperature measurements and $U_{L,z}$ is estimated using the drift velocity of Ishii \cite{ishii_drift}:
+
+\begin{equation}
+U_{L,z} = U_{V,z} - U_{rel} = U_{V,z} - \sqrt{2} \parth{\frac{g \sigma \parth{\rho_{L}-\rho_{V}}}{\rho_{L}^{2}}}^{1/4} \parth{1-\spavg{\alpha}}^{1.75}
+\end{equation}
 
 
 
@@ -763,10 +768,10 @@ Case Name & $P$ [bar] & $G$ [kg/m$^{2}$/s]  & $\phi_{w}$ [kW/m$^{2}$]& $T_{L,in}
 \hline 
 30G2P26W16Te70  &  26.19  &  2051.2  &  73.893  &  70.59  &  -0.2386  &  0.067 \\
 8G2P26W16Te70.3  &  26.2  &  1983.0  &  73.9  &  70.31  &  -0.2428  &  0.0734 \\
-\hline
-\hline
-30G2P14W16Te40  &  14.59  &  2007.8  &  77.688  &  41.16  &  -0.1555  &  0.0875 \\
-8G2P14W16Te43.1  &  14.6  &  2014.0  &  72.9  &  43.08  &  -0.1387  &  0.0889 \\
+%\hline
+%\hline
+%30G2P14W16Te40  &  14.59  &  2007.8  &  77.688  &  41.16  &  -0.1555  &  0.0875 \\
+%8G2P14W16Te43.1  &  14.6  &  2014.0  &  72.9  &  43.08  &  -0.1387  &  0.0889 \\
 \end{tabular}
 
 \caption{Similar conditions cases between the C3000 and C800 campaigns. Outlet quality calculated with Eq. \ref{eq:xeq_out}.}
@@ -774,22 +779,43 @@ Case Name & $P$ [bar] & $G$ [kg/m$^{2}$/s]  & $\phi_{w}$ [kW/m$^{2}$]& $T_{L,in}
 \end{table}
 
 
+To actually compute the surface-averaged quantities, we need to interpolate the experimental profiles which is done using the \texttt{python} package \texttt{scipy}. Figure \ref{fig:debora_interpol} presents typical interpolation profiles used in this sections.
 
+
+\begin{figure}[h!]
+\centering
+
+\subfloat[Void fraction interpolation]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/corr_flux/interp_alpha.pdf}
+}
+\subfloat[Vapor velocity interpolation]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/corr_flux/interp_uvz.pdf}
+}
+\\
+\subfloat[Liquid temperature interpolation]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/corr_flux/interp_TL.pdf}
+}
+
+\caption{Interpolation profiles for cases Te66 (Table \ref{tab:debora_match_C8C30}).}
+\label{fig:debora_interpol}
+\end{figure}
+
+
+The results obtained for the heat flux recalculations are presented on Table \ref{tab:debora_flux_corr_res}.
 
 \begin{table}[!h]
 \centering
 
 \begin{tabular}{c||c|c|c|c|c}
-\hline
-Cas & $x_{eq,out}$ [-] & $\spavg{T_{L}}$ [$\degC$] & $\phi_{w,rec}$ [kW/m$^{2}$] & $\phi_{w,exp}$ [kW/m$^{2}$] & $\Delta \phi_{w}$ [\%]  \\
-\hline
-\hline
-30G2P26W23Te66.6 & 1.931\% & 85.71 & 70.914 & 73.893 & -4.03\%\\
-\hline
-30G2P26W23Te70.6 & 4.998\% & 86.73 & 69.482 & 73.893 & -5.97\%\\
+Case name & $x_{m}$ [-] & $\phi_{w,rec}$ [kW/m$^{2}$] & $\phi_{w,exp}$ [kW/m$^{2}$] & $\Delta \phi_{w}$ [\%]  \\
 \hline
 \hline
-30G2P14W16Te40 & 0 & 0 & 0 & 0 & 0
+30G2P26W23Te66.6 & 0.0193 & 70.432 & 73.893 & -4.68\%\\
+\hline
+30G2P26W23Te70.6 & 0.0500\% & 68.041 & 73.893 & -7.9\%\\
+%\hline
+%\hline
+%30G2P14W16Te40 & 0 & 0 & 0 & 0 & 0
 \end{tabular}
 
 \caption{Heat flux recalculation results}
@@ -797,10 +823,28 @@ Cas & $x_{eq,out}$ [-] & $\spavg{T_{L}}$ [$\degC$] & $\phi_{w,rec}$ [kW/m$^{2}$]
 
 \end{table}
 
+We see that reconstructing the heat flux yields values significantly lower than the experimental values given in the database. This underestimation was also noted in a similar approach conducted by Guéguen \cite{gueguen_phd} who found discrepancy of a few \%.
+
+In our case, these discrepancies can be partially explained by:
+\begin{itemize}
+\item The difference of inlet mass fluxes that are roughly 70 $\debm$ lower for the C800 cases ;
+\item The difference of inlet liquid temperature for the Te70 cases with a C800 case $0.3\degC$ lower than the C300 case.
+\end{itemize} 
+
+Those small discrepancies lead to outlet qualities (computed with Eq. \ref{eq:xeq_out} using the given $\phi_{w}$) that differ of approximately $1\%$. Even though boiling flows near saturation, such as those studied here, are very sensitive to the local quality and flow parameters, this would hardly suffice to explain differences in heat flux as much as $5\%$.
+
+\npar
+\begin{remark*}{}
+Unfortunately, our methodology do not rely on collocated measurements of all the variables of interest since the campaigns were conducted separately. The "correction" values presented in Table \ref{tab:debora_flux_corr_res} can not be considered as accurate estimations but still point out that an uncertainty over the heat flux can be considered in further work.
+\end{remark*}
+
+
 
 \subsection{Comparison with One Dimensional Correlations}
 
-\subsection{Experimental Heat Flux Corrections}
+
+
+
 
 \chapter{NEPTUNE\_CFD simulations of DEBORA cases}
 
