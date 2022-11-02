@@ -20,7 +20,7 @@ In this chapter, we will describe the test section and analyze the available res
 
 \section{Simulating PWR water using R12}
 
-The choice of using R12 as the working fluid in the DEBORA loop emerged from the interesting properties that boiling freon presents when compared to the highly pressurized water in PWR cores. Indeed, the conditions for which the Boiling Crisis must be studied for water in PWR are :
+The choice of using R12 as the working fluid in the DEBORA loop emerged from the interesting properties that boiling freon presents when compared to the highly pressurized water in PWR cores. Indeed, the conditions for which the Boiling Crisis must be studied for water in PWR are:
 
 \begin{itemize}
 \item Pressure $P$ between 100 and 180 bar ;
@@ -96,7 +96,7 @@ For a same value of $R$, this transposition scales the inlet liquid mass flux $G
 
 \subsection{Conservation of the Boiling Number}
 
-The boiling number is defined as :
+The boiling number is defined as:
 
 \begin{equation}
 \Bo = \frac{\phi_{w}}{G h_{LV}}
@@ -175,7 +175,7 @@ $\Bo \times 10^{-3} $ [-] &  $0.19$ - $3.86$ & $0.21$ - $4.33$ \\
 \section{Description of the Test Section}
 
 \subsection{Geometrical Description}
-To apply the aforementioned transport criteria, four thermal-hydraulic control parameters are imposed in the test section :
+To apply the aforementioned transport criteria, four thermal-hydraulic control parameters are imposed in the test section:
 
 \begin{itemize}
 \item The outlet pressure $P$ ;
@@ -186,7 +186,7 @@ To apply the aforementioned transport criteria, four thermal-hydraulic control p
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.5\linewidth]{img/DEBORA/debora_sketch.png}
+\includegraphics[width=0.7\linewidth]{img/DEBORA/debora_sketch.png}
 \caption{Sketch of the DEBORA test section. Adapted from \cite{garnier_local_2001}.}
 \label{fig:sketch_debora}
 \end{figure}
@@ -223,7 +223,7 @@ The resulting signal is called a Phase Indicator Function (PIF) which looks like
 
 
 
-If the PIF is measured over a period $T$, the void fraction $\alpha$ at the measurement point $x$ can be estimated by :
+If the PIF is measured over a period $T$, the void fraction $\alpha$ at the measurement point $x$ can be estimated by:
 
 
 \begin{equation}
@@ -250,7 +250,7 @@ Using the technology of the optical phase dectection, adding a second optical pr
 
 \npar
 
-Considering the following assumptions :
+Considering the following assumptions:
 
 \begin{itemize}
 \item The flow is mainly one-directional in aligned with the probes ;
@@ -258,15 +258,15 @@ Considering the following assumptions :
 \item The velocity gradient and center density gradient are small along a bubble diameter length.
 \end{itemize}
 
-Then we can estimate : 
+Then we can estimate: 
 
 \begin{itemize}
 \item The vapor axial velocity $U_{V,z}$ that can be supposed equal to the measured interface velocity between the probes ;
-\item The interfacial area density $a_{i}$ :
+\item The interfacial area density $a_{i}$:
 \begin{equation}
 a_{i} = \frac{4 \nu }{U_{V,z}}
 \end{equation}
-\item The bubble Sauter diameter :
+\item The bubble Sauter diameter:
 \begin{equation}
 D_{V} = \frac{6 \alpha }{a_{i}}
 \end{equation}
@@ -292,7 +292,7 @@ This measurement technique was performed in the \textbf{measurement campaign C80
 
 \subsection{Cases Nomenclature and Test Series}
 
-As mentioned before, three different campaigns have been performed :
+As mentioned before, three different campaigns have been performed:
 
 \begin{itemize}
 \item Campaign C2900 with solely void fraction measurements using mono-optical probe ;
@@ -343,12 +343,12 @@ P                   & G & W12 & W14\\
 \end{tabular}
 }
 
-\caption{Test matrix of the DEBORA cases. $\bigcirc$ : C800 - $\bigtriangledown$ : C2900 - $\bigtriangleup$ : C3000 }%\newline \scriptsize{Written at Plateau d'Auguste, Hyper U, Saintes} }
+\caption{Test matrix of the DEBORA cases. $\bigcirc$: C800 - $\bigtriangledown$: C2900 - $\bigtriangleup$: C3000 }%\newline \scriptsize{Written at Plateau d'Auguste, Hyper U, Saintes} }
 \label{tab:debora_matrix}
 \end{table}
 
 
-If we want to obtain a full description of the two-phase flow from the DEBORA tests, we need to have measurements from campaigns C3000 and C800 (flow topology and thermal) with the same control parameters. Table \ref{tab:debora_matrix} unfortunately shows that only very few test series between C3000 and C800 have common operating conditions, namely :
+If we want to obtain a full description of the two-phase flow from the DEBORA tests, we need to have measurements from campaigns C3000 and C800 (flow topology and thermal) with the same control parameters. Table \ref{tab:debora_matrix} unfortunately shows that only very few test series between C3000 and C800 have common operating conditions, namely:
 
 \begin{itemize}
 \item Series 8G2P14W16 and 30G2P14W16 ;
@@ -358,10 +358,10 @@ If we want to obtain a full description of the two-phase flow from the DEBORA te
 Other flow conditions have either been covered with thermal measurements or topology measurements but not both. 
 
 \begin{remark*}{}
-Cases from the campaign C2900 would only be relevant for void fraction profiles comparison. Estimations of the bubble diameter can not be achieved except if one assumes a velocity profile as suggested by Cubizolles \cite{cubizolles_phd} and re-used by Guéguen \cite{gueguen_phd} who supposes :
+Cases from the campaign C2900 would only be relevant for void fraction profiles comparison. Estimations of the bubble diameter can not be achieved except if one assumes a velocity profile as suggested by Cubizolles \cite{cubizolles_phd} and re-used by Guéguen \cite{gueguen_phd} who supposes:
 
 \begin{equation}
-U_{V,z} \approx U_{M,z} = 1.22 G \parth{ \frac{R-r}{R}}^{1/7}
+U_{V,z}\parth{r} \approx U_{M,z}\parth{r} = 1.22 \frac{G}{\spavg{\rho_{M}}} \parth{ \frac{R-r}{R}}^{1/7}
 \label{eq:ugz_C29}
 \end{equation}
 where $U_{M,z}$ is the mixture axial velocity, assuming a mechanical equilibrium between the phases.
@@ -374,13 +374,13 @@ For further studies, we will mainly focus on the G2P26W16 and G2P14W16 test seri
 
 \subsection{Verification of Control Parameters Coherency}
 
-For each case, the total heat heat input $\Phi_{w}$ is given along with the inlet mass flux $G$, inlet liquid temperature $T_{L,in}$ and outlet quality $x_{eq,out}$. To verify the consistency of those values, we can recalculate the outlet quality :
+For each case, the total heat heat input $\Phi_{w}$ is given along with the inlet mass flux $G$, inlet liquid temperature $T_{L,in}$ and outlet quality $x_{eq,out}$. To verify the consistency of those values, we can recalculate the outlet quality:
 
 \begin{equation}
 x_{eq,out,calc} = \frac{h_{M,out,calc} - h_{L,sat}}{h_{LV}}
 \label{eq:xeq_out}
 \end{equation}
-with $h_{M,out,calc}$ the recalculated outlet mixture enthalpy  :
+with $h_{M,out,calc}$ the recalculated outlet mixture enthalpy :
 
 \begin{equation}
 h_{M,out,calc} = h_{in} + \frac{\Phi_{w}}{G S_{in}} = h_{in} + \frac{4\phi_{w}L_{heat}}{G D_{h}}
@@ -388,7 +388,7 @@ h_{M,out,calc} = h_{in} + \frac{\Phi_{w}}{G S_{in}} = h_{in} + \frac{4\phi_{w}L_
 with $h_{in}$ the inlet enthalpy calculated from the fluid properties using the inlet liquid temperature.
 
 \npar
-The difference between the given and recalculated outlet quality can also be converted to input power error by recalculating the heat needed to reach the given $x_{eq,out}$  :
+The difference between the given and recalculated outlet quality can also be converted to input power error by recalculating the heat needed to reach the given $x_{eq,out}$ :
 
 \begin{equation}
 \Phi_{w,calc} = \frac{G  \pi R^{2}}{\underbrace{\crocht{x_{eq,out}h_{LV}+h_{L,sat}}}_{h_{M,out}} - h_{L,in}}
@@ -397,7 +397,7 @@ The difference between the given and recalculated outlet quality can also be con
 \npar 
 
 
-Moreover, for a given set of experiments at the same $P$, $G$ and $\Phi_{w}$ changing the inlet quality can be associated to moving the measurement diameter along the axial direction following the relationship : 
+Moreover, for a given set of experiments at the same $P$, $G$ and $\Phi_{w}$ changing the inlet quality can be associated to moving the measurement diameter along the axial direction following the relationship: 
 
 \begin{equation}
 x_{eq}\parth{z} = x_{eq,in} + \frac{4 \phi_{w} z }{G D_{h} h_{LV}}
@@ -466,7 +466,7 @@ However, a more significant error is observed on the 30G2P26W16 cases where erro
 Since the inlet temperature, mass flux and power input are controlled parameters for each test, it is likely that the error may come from the given value of outlet quality $x_{eq,out}$ which is calculated and not imposed.
 
 \begin{note*}{}
-Similar quality / input power errors were obtained on corresponding C29 and C8 campaigns :
+Similar quality / input power errors were obtained on corresponding C29 and C8 campaigns:
 
 \begin{itemize}
 \item Negligible errors on for 29G2P14W16 and 8G2P14W16 cases ;
@@ -515,7 +515,7 @@ We observe that the void fraction naturally increases with the outlet quality an
 
 \npar
 
-The bubble diameter displays different behaviors (Figure \ref{fig:G2P26W16_dv}) : 
+The bubble diameter displays different behaviors (Figure \ref{fig:G2P26W16_dv}): 
 
 \begin{itemize}
 \item It grows from the wall and reaches a maximum around $r/R \approx 0.6$, indicating bubble coalescence ;
@@ -663,7 +663,7 @@ The vapor velocity also increases with the outlet quality (Figure \ref{fig:G2P14
 
 \npar
 
-The liquid temperature profiles (Figure \ref{fig:G2P14W16_TL}) are behaving in a very similar way to the G2P26W16 cases (Figure \ref{fig:G2P26W16_TL}) : stable parabolic profile, linear shift with inlet quality and flattening when reaching superheated conditions ($x_{eq,out} \sim 0.1$).
+The liquid temperature profiles (Figure \ref{fig:G2P14W16_TL}) are behaving in a very similar way to the G2P26W16 cases (Figure \ref{fig:G2P26W16_TL}): stable parabolic profile, linear shift with inlet quality and flattening when reaching superheated conditions ($x_{eq,out} \sim 0.1$).
 
 We also have the huge temperature jump when approaching the wall which reduces when reaching boiling regimes. The measurements also detect superheated liquid near the wall for the hottest cases ($\Delta T_{L} \approx 0.1 \degree$). The case with the greatest outlet quality presents a surprisingly flat liquid temperature profile with measurements being nearly constant ($\Delta T_{L}=-0.3\degC$) over the whole measurement section. 
 
@@ -687,32 +687,48 @@ To further quantify the coherency of the DEBORA database, we want to reconstruct
 
 \subsubsection{Methodology}
 
-To do so, we will estimate the total enthalpy change between the inlet and outlet. The inlet liquid enthalpy $h_{L,in}$ is estimated using the inlet temperature and the outlet mixture enthalpy $h_{M,out}$ is computed as :
+To do so, we will estimate the total enthalpy change between the inlet and outlet. The inlet liquid enthalpy $h_{L,in}$ is estimated using the inlet temperature and the outlet mixture enthalpy $h_{M,out}$ is computed as:
 
 \begin{equation}
-h_{M,out}=x_{eq,out}h_{V,sat}+\parth{1-x_{eq,out}}\spavg{h_{L,out}}
+h_{M,out}=x_{m,out}h_{V,sat}+\parth{1-x_{m,out}}\spavg{h_{L,out}}
 \end{equation}
-supposing that the vapor is at saturation temperature.
+supposing that the vapor is at saturation temperature and where $x_{m,out}$ is the outlet mass quality.
 
 \npar
-Using the experimental values of $\alpha$ and $U_{V,z}$, we can recompute the outlet quality $x_{eq,out}$ as :
+Using the experimental values of $\alpha$ and $U_{V,z}$, we can compute the outlet mass quality $x_{m,out}$ as:
 
 \begin{equation}
-x_{eq,out} = \frac{\rho_{V}\spavg{\alpha U_{V,z}}}{G}
+x_{m,out} = \frac{\rho_{V}\spavg{\alpha U_{V,z}}}{G}
 \end{equation}
 
-where :
+where:
 
 \begin{equation}
 \spavg{\alpha U_{V,z}} = \frac{1}{\pi R^{2}}\int_{\vartheta=0}^{2\pi} \int_{r=0}^{R} \alpha\parth{r} U_{V,z}\parth{r} r \mathrm{d}r \mathrm{d}\vartheta = \frac{2}{R^{2}}\int_{r=0}^{R}  \alpha\parth{r} U_{V,z}\parth{r} r \mathrm{d}r
 \end{equation}
 for an axisymmetric profile such as the DEBORA measurements.
 
-Similarly, the average liquid enthaly at the outlet is estimated from the average liquid temperature $\spavg{T_{L}}$ and the R12 equation of state.
+\npar
+
+From the mass quality we can compute the mixture enthalpy as:
+
+\begin{equation}
+h_{M} = x_{m} h_{V,sat} + \parth{1-x_{m}}h_{L}
+\end{equation}
+
+\npar
+Similarly, the average liquid enthalpy at the outlet is estimated as:
+
+\begin{equation}
+\spavg{h_{L}} = \frac{2}{R^{2}}\frac{1}{G_{L}}\int_{r=0}^{R} \rho_{L}\parth{r} U_{L,z}\parth{r} h_{L}\parth{r} r \mathrm{d}r
+\end{equation}
+where $h_{L}$ is estimated using the local temperature measurements and $U_{L,z}$ is estimated using Eq. \ref{eq:ugz_C29}.
+
+
 
 \npar
 
-Then, writing the one-dimensional energy balance of the flow permits to express the actually applied heat flux : 
+Then, writing the one-dimensional energy balance of the flow permits to express the actually applied heat flux: 
 
 \begin{equation}
 G \pi R^{2} \parth{h_{M,out} - h_{L,in}} = \Phi_{w} = \phi_{w} 2\pi R L_{heat} \ \Rightarrow \phi_{w} = \frac{\parth{h_{M,out}-h_{L,in}}GR}{2L_{heat}}
@@ -721,7 +737,7 @@ which can be compared to the given control parameter for the experiment.
 
 \subsubsection{Application}
 
-To apply the presented reconstruction of the heat flux, we either need : 
+To apply the presented reconstruction of the heat flux, we either need: 
 
 \begin{itemize}
 \item A pure single-phase case with an outlet liquid temeprature profile (C800 case alone);
@@ -732,7 +748,7 @@ This means that for boiling cases, we need to "merge" cases from the C3000 and C
 
 \npar
 
-Such a constraint leaves us with very few boiling cases that can accommodate this conditions. They are summed up on Table \ref{tab:debora_match_C8C30}.
+Such a constraint leaves us with very few boiling cases that can accommodate those conditions. They are summed up on Table \ref{tab:debora_match_C8C30}.
 
 
 \begin{table}[!h]
@@ -788,14 +804,14 @@ Cas & $x_{eq,out}$ [-] & $\spavg{T_{L}}$ [$\degC$] & $\phi_{w,rec}$ [kW/m$^{2}$]
 
 \chapter{NEPTUNE\_CFD simulations of DEBORA cases}
 
-In this work, we present the simulations of the following cases :
+In this work, we present the simulations of the following cases:
 \begin{itemize}
 \item C8G2P26W16Te44.9 and C8G2P26W16Te49.6 (single-phase flow)
 \item C8G2P26W16Te66.6 and C8G2P26W16Te70.3 (two-phase flow)
 \item C30G2P26W16Te66.6 and C30G2P26W16Te70.6 (two-phase flow)
 \end{itemize}
 
-The pressure of $26~\text{bar}$ is chosen to match the pressure of the mixing vanes cases (DEBORA-Promoteur, Section \ref{sec:deb_prom}). Mesh sensitivity is performed over two meshes : a large mesh (M1) with $460~356\text{ cells }=338\text{ radial } \times 1362 \text{ axial cells}$ and a fine mesh (M2) with $3~157~952\text{ cells }=1568\text{ radial } \times 2014 \text{ axial cells}$.
+The pressure of $26~\text{bar}$ is chosen to match the pressure of the mixing vanes cases (DEBORA-Promoteur, Section \ref{sec:deb_prom}). Mesh sensitivity is performed over two meshes: a large mesh (M1) with $460~356\text{ cells }=338\text{ radial } \times 1362 \text{ axial cells}$ and a fine mesh (M2) with $3~157~952\text{ cells }=1568\text{ radial } \times 2014 \text{ axial cells}$.
 
 On Figure \ref{fig:th_1phi_res}, we present the results regarding liquid temperature at the outlet and wall temperature. The liquid temperature profile seems to be correctly reproduced by the simulations, though we see a slight overestimation close to the wall. Looking closer at boiling cases shows a difference of $\approx 0.5\degree$ C, which is close to the uncertainty of the measurements \cite{Garnier2001}. Concerning the wall temperature, it appears that it is underestimated before the \textbf{Onset of Nucleate Boiling} (ONB) ($T_{w}<T_{sat}$) and overestimated after the ONB ($\approx +5\degree$C). Post-ONB wall temperature is characterized by a stabilization of its value above the saturation temperature (here $T_{w,ONB}-T_{sat}\approx 2\degree\text{C}$).
 
