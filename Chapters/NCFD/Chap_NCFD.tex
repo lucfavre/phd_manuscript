@@ -18,7 +18,7 @@ The NEPTUNE\_CFD project (started in 2001) is a reasearch program coordinated by
 \item Study the Loss Of Coolant Accident (LOCA) to predict fuel rod cladding temperature.
 \end{itemize}
 
-The code consists of a local three-dimensional modeling based on a two-fluid one pressure approach combined with mass, momentum and energy conservation equations for each phase\cite{Guelfi2007}. 
+The code consists of a local three-dimensional modeling based on a two-fluid one pressure approach combined with mass, momentum and energy conservation equations for each phase\cite{guelfi2007}. 
 
  is an eulerian multiphase CFD solver co-developed 
 
@@ -96,9 +96,9 @@ The estimation of $h_{k,i}$ is not straightforward since it can either be suppos
 \label{eq:condensation_rate}
 \Gamma_{L,i}=\frac{a_{i}\parth{q''_{L,i}+q''_{G,i}}}{h_{G,sat}-h_{L,sat}}
 \end{equation}
-The interfacial heat flux densities $q''_{k,i}$ and interfacial area concentration $a_{i}$ are expressed as $q''_{k,i}=C_{k,i}\parth{T_{sat}(P)-T_{k}}$ and $a_{i}=6 \alpha_{G}/d_{G}$, $d_{G}$ being the gas phase Sauter mean bubble diameter. The interfacial area is computed using the transport equation of \textsc{Ruyer} \& \textsc{Seiler}\cite{Ruyer2009}.
+The interfacial heat flux densities $q''_{k,i}$ and interfacial area concentration $a_{i}$ are expressed as $q''_{k,i}=C_{k,i}\parth{T_{sat}(P)-T_{k}}$ and $a_{i}=6 \alpha_{G}/d_{G}$, $d_{G}$ being the gas phase Sauter mean bubble diameter. The interfacial area is computed using the transport equation of \textsc{Ruyer} \& \textsc{Seiler}\cite{ruyer2009}.
 
-For subcooled liquid, the following heat transfer coefficient is used \cite{Manon2000}:
+For subcooled liquid, the following heat transfer coefficient is used \cite{manon2000}:
 
 \begin{equation}
 \label{eq:subcooled_HT}
@@ -107,7 +107,7 @@ C_{L,i}=\frac{Nu_{L}\lambda_{L}}{d_{G}} \text{ and } Nu_{L}=2+0.6Re^{1/2}Pr_{L}^
 
 Where $Re$ is the bubble Reynolds number $Re=\norm{\vect{U_{G}}-\vect{U_{L}}}d_{G}/\nu_{L}$ and $Pr_{L}$ the liquid Prandtl number $Pr_{L}=\nu_{L}/\eta_{L}$ with $\nu_{L}$ and $\eta_{L}$ respectively being the liquid kinematic viscosity and thermal diffusivity.
 
-On the other hand, if the liquid is overheated, the maximum of three heat transfer coefficients accounting for different heat tranfer mechanisms is taken \cite{Berne1983}:
+On the other hand, if the liquid is overheated, the maximum of three heat transfer coefficients accounting for different heat tranfer mechanisms is taken \cite{berne1983}:
 
 \begin{equation}
 \label{eq:superheated_HT}
@@ -169,12 +169,12 @@ The turbulent dispersion force $\vect{F_{k,TD}}$ originates from the averaging o
 \vect{F_{G,TD}}=-\vect{F_{L,TD}}=-\frac{2}{3}\alpha_{L}\alpha_{G}C_{TD}\grad{\alpha_{G}}
 \end{equation}
 
-with $C_{D}$, $C_{AM}$, $C_{L}$ and $C_{TD}$ the associated forces coefficients, respectively taken from \textsc{Ishii}\cite{Ishii1967}, \textsc{Zuber}\cite{Zuber1964}, \textsc{Tomiyama}\cite{Tomiyama2002} and the Generalized Turbulent Dispersion model (GTD) from \textsc{Lavieville} \etal \cite{Lavieville2017}.
+with $C_{D}$, $C_{AM}$, $C_{L}$ and $C_{TD}$ the associated forces coefficients, respectively taken from \textsc{Ishii}\cite{ishii1967}, \textsc{Zuber}\cite{zuber1964}, \textsc{Tomiyama}\cite{tomiyama2002} and the Generalized Turbulent Dispersion model (GTD) from \textsc{Lavieville} \etal \cite{lavieville2017}.
 
 \section{Turbulence Modeling}
 \label{subsec:turbulence}
 
-For bubbly flow simulations, only liquid phase turbulence is taken into account. The prescribed model is the Reynolds Stress Model (RSM) $R_{ij}-\varepsilon~SSG$ from \textsc{Speziale}, \textsc{Sarkar} and \textsc{Gatski}\cite{Speziale1991} adapted to two-phase boiling flows by \textsc{Mimouni} \etal\cite{Mimouni2011}.
+For bubbly flow simulations, only liquid phase turbulence is taken into account. The prescribed model is the Reynolds Stress Model (RSM) $R_{ij}-\varepsilon~SSG$ from \textsc{Speziale}, \textsc{Sarkar} and \textsc{Gatski}\cite{speziale1991} adapted to two-phase boiling flows by \textsc{Mimouni} \etal\cite{mimouni2011}.
 
 \begin{equation}
 \dtime{R_{ij}} + U_{k}\dpartial{R_{ij}}{x_{k}} = - R_{ik} \dpartial{U_{j}}{x_{k}}
@@ -184,7 +184,7 @@ For bubbly flow simulations, only liquid phase turbulence is taken into account.
 \section{Wall Boiling Model}
 \label{subsec:HFP}
 
-The modeling of the heterogeneous boiling phenomenon at the wall is based on a Heat Flux Partioning (HFP) model, inspired by \textsc{Kurul} \& \textsc{Podowski} original work\cite{Kurul1990} who divided the wall heat flux density $\phi_{w}$ in three terms  :
+The modeling of the heterogeneous boiling phenomenon at the wall is based on a Heat Flux Partioning (HFP) model, inspired by \textsc{Kurul} \& \textsc{Podowski} original work\cite{kurul1990} who divided the wall heat flux density $\phi_{w}$ in three terms  :
 
 \begin{itemize}
 \item A single phase convective heat flux $\phi_{c,L}$ heating the liquid through the fraction of the wall area unaffected by the vapor bubbles
@@ -192,7 +192,7 @@ The modeling of the heterogeneous boiling phenomenon at the wall is based on a H
 \item A quenching heat flux $\phi_{q}$ to represent the thermal impact of bubbles departing from the wall and being replaced by cool liquid
 \end{itemize}
 
-A fourth flux is added to this HFP in NEPTUNE\_CFD, following \textsc{Mimouni} \etal\cite{Mimouni2016} who consider a convective heat flux heating the vapour $\phi_{c,G}$ when the wall area is covered by a dense accumulation of bubbles.
+A fourth flux is added to this HFP in NEPTUNE\_CFD, following \textsc{Mimouni} \etal\cite{mimouni2016} who consider a convective heat flux heating the vapour $\phi_{c,G}$ when the wall area is covered by a dense accumulation of bubbles.
 
 The model thus gives Equation \ref{eq:HFP} :
 
@@ -205,9 +205,9 @@ The convective heat fluxes are expressed as $\phi_{c,k}=A_{k}h_{k,log}\parth{T_{
 
 The vaporization heat flux is computed following $\phi_{e}=N_{sit}f\rho_{G}h_{lg}{\pi d_{d}^{2}}/{6}$ with :
 \begin{itemize}
-\item $N_{sit}$ the nucleation site density modeled as \cite{Lemmert1977} : $N_{sit}=\crocht{210\parth{T_{w}-T_{sat}} }^{1.8}$
-\item $f$ the bubble detachment frequency expressed as \cite{Cole1960} : $f=\sqrt{\frac{4}{3}\frac{g\bars{\rho_{v}-\rho_{l}} }{\rho_{l}d_{d}}}$
-\item $d_{d}$ the bubble detachment diameter given by Unal correlation\cite{Unal1976} corrected by Bor\'ee \etal[ref] (Equation \ref{eq:unal})
+\item $N_{sit}$ the nucleation site density modeled as \cite{lemmert1977} : $N_{sit}=\crocht{210\parth{T_{w}-T_{sat}} }^{1.8}$
+\item $f$ the bubble detachment frequency expressed as \cite{cole1960} : $f=\sqrt{\frac{4}{3}\frac{g\bars{\rho_{v}-\rho_{l}} }{\rho_{l}d_{d}}}$
+\item $d_{d}$ the bubble detachment diameter given by Unal correlation\cite{unal1976} corrected by Bor\'ee \etal[ref] (Equation \ref{eq:unal})
 \end{itemize}
 
 \begin{equation}
@@ -221,12 +221,12 @@ d_{d}=2.42\times 10^{-5} P^{0.709} \frac{a}{\sqrt{b\varphi}}\text{ with } a=\fra
 
 where $\lambda_{w}$ and $\eta_{w}$ are the wall thermal conductivity and diffusivity, $St=\displaystyle \frac{\phi_{c,L}+\phi_{e}+\phi_{q}}{\rho_{L}c_{p,L}\norm{\vect{U_{L}}}\parth{T_{sat}-T_{L} }}$ is the Stanton number and $\varphi=\displaystyle \max{1 ; \parth{\frac{\norm{\vect{U_{L}}}}{U_{0}} }^{0.47} }$ with $U_{0}=0.61\text{m/s}$
 
-Finally, the quenching heat flux follows the approach of \textsc{Del Valle} \& \textsc{Kenning}\cite{DelValle1985} supposing that it follows a semi-infinite transient conduction regime : $\displaystyle \phi_{q}=A_{G}t_{q}f\frac{2\lambda_{L} \parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}t_{q}}}$ where $t_{q}$ is the quenching time, supposed to be equal to $1/f$.
+Finally, the quenching heat flux follows the approach of \textsc{Del Valle} \& \textsc{Kenning}\cite{delvalle1985} supposing that it follows a semi-infinite transient conduction regime : $\displaystyle \phi_{q}=A_{G}t_{q}f\frac{2\lambda_{L} \parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}t_{q}}}$ where $t_{q}$ is the quenching time, supposed to be equal to $1/f$.
 
 \section{Wall Function for Dispersed Boiling Flows}
 \label{subsec:wall_func}
 
-In boiling flows, the formation of bubbles at the wall may disturb the liquid velocity profile in the boundary layer. To take this phenomena into account, \textsc{Mimouni} \etal\cite{Mimouni2016} proposed a wall function for boiling flows which tends to the single-phase formulation when $\alpha_{G} \rightarrow 0$ and depends on the bubble diameter and density at the wall : 
+In boiling flows, the formation of bubbles at the wall may disturb the liquid velocity profile in the boundary layer. To take this phenomena into account, \textsc{Mimouni} \etal\cite{mimouni2016} proposed a wall function for boiling flows which tends to the single-phase formulation when $\alpha_{G} \rightarrow 0$ and depends on the bubble diameter and density at the wall : 
 
 \begin{equation}
 \label{eq:wall_law}
@@ -239,7 +239,7 @@ u^{+}=\frac{1}{\kappa}\ln{ y^{+} } + B - \Delta u^{+} \text{ with }
 
 where $\kappa$=0.41 is the Von Karman constant, $B=5.3$ the standard single-phase logarithmic law constant. $\Delta u^{+}$ represents the offset of $u^{+}$ due to the wall roughness induced by the presence of bubble. We have $C_{kr}=0.5$ and $k_{r}=\displaystyle \frac{k_{r}\sqrt{u^{*}u_{T}}}{\nu_{L}}$ the "roughness Reynolds number" with $u_{T}=C_{\mu}^{1/4}\sqrt{k_{L}}$ defined from the $k-\varepsilon$ constant $C_{\mu}=0.09$ and $k_{L}$ the liquid turbulent kinetic energy. Finally, $k_{r}=\alpha_{G}d_{G}$.
 
-The non-dimensional wall liquid temperature $T_{L}^{+}$ is modeled according to \textsc{Leduc}\cite{Leduc1995}:
+The non-dimensional wall liquid temperature $T_{L}^{+}$ is modeled according to \textsc{Leduc}\cite{leduc1995}:
 
 \begin{equation}
 \label{eq:wall_law} 

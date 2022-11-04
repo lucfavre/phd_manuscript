@@ -42,7 +42,7 @@ The quenching heat flux occurring over the wait time $t_{w}$ between two nucleat
 \label{eq:HFP_KP_phiQ}
 \end{align}
 
-This expression corresponds to the average heat flux for semi-infinite conduction over a time $t_{w}$, as expressed by Del Valle and Kenning \cite{DelValle}.
+This expression corresponds to the average heat flux for semi-infinite conduction over a time $t_{w}$, as expressed by Del Valle and Kenning \cite{delValle}.
 
 They also estimate the portion of the surface affected by the bubbles as:
 
@@ -60,7 +60,7 @@ where $F_{A}=4$ accounts for the bubble influence area when leaving the surface.
 
 \section{Basu (2000)}
 
-In 2005, Basu \etal \cite{Basu2005, Basu2005a} proposed a new HFP model together with a series of experiments to further study the different needed closure relationships. This model was meant to account for finer descriptions of the multiple phenomena at stake in subcooled flow boiling. In particular, they account for bubble sliding and merging and thus distinguish bubble departure diameter $D_{d}$ (leaving the nucleation site) and lift-off diameter $D_{lo}$ (leaving the wall).
+In 2005, Basu \etal \cite{basu2005, basu2005a} proposed a new HFP model together with a series of experiments to further study the different needed closure relationships. This model was meant to account for finer descriptions of the multiple phenomena at stake in subcooled flow boiling. In particular, they account for bubble sliding and merging and thus distinguish bubble departure diameter $D_{d}$ (leaving the nucleation site) and lift-off diameter $D_{lo}$ (leaving the wall).
 
 Their approach consist of separating the boiling flow in three regions (Figure \ref{fig:Basu_zones}):
 
@@ -100,7 +100,7 @@ T_{L,OSV}=T_{sat}-0.7\exp{-0.065 \frac{D_{d}h_{c,L}}{\lambda_{L}}}\frac{\phi_{w}
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\linewidth]{img/HFP/Basu/zones.PNG}
-\caption{Sketch of the heat transfers zones considered by Basu \etal. (Adapted from \cite{Basu2005})}
+\caption{Sketch of the heat transfers zones considered by Basu \etal. (Adapted from \cite{basu2005})}
 \label{fig:Basu_zones}
 \end{figure}
 	
@@ -128,7 +128,7 @@ In this situation, the bubble will grow up to its departure diameter $D_{d}$ and
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\linewidth]{img/HFP/Basu/slide.PNG}
-\caption{Sliding bubble behavior considered by Basu \etal. (Adapted from \cite{Basu2005})}
+\caption{Sliding bubble behavior considered by Basu \etal. (Adapted from \cite{basu2005})}
 \label{fig:Basu_sliding}
 \end{figure}
 	
@@ -152,7 +152,7 @@ l_{sl}=N_{merg}s + l_{D_{N}\rightarrow D_{lo}}
 \end{equation}
 where $l_{D_{N}\rightarrow D_{lo}}$ is the remaining distance to slide if $D_{N}<D_{lo}$, being $0$ if $D_{N}>D_{lo}$.
 
-The surface swiped by the sliding bubble is then expressed as $A_{sl} = C\overline{D}l_{sl}$ with $\overline{D}$ the average bubble diameter during sliding and $C$ the ration between the bubble diameter and its foot, expressed correlating measurements from Maity \cite{Maity2000} as :
+The surface swiped by the sliding bubble is then expressed as $A_{sl} = C\overline{D}l_{sl}$ with $\overline{D}$ the average bubble diameter during sliding and $C$ the ration between the bubble diameter and its foot, expressed correlating measurements from Maity \cite{maity2000} as :
 
 \begin{equation}
 C=1-\exp{2-\theta ^{0.6}}
@@ -242,7 +242,7 @@ The total heat flux is partitioned between the liquid forced convection $\phi_{c
 \phi_{w} = \phi_{c,L} + \phi_{q,s} + \phi_{q,sl} + \phi_{e}
 \end{equation} 
 
-The convective term is computed in a way similar to Basu \etal \cite{Basu2005} in Eq. \ref{eq:HFP_B_phiCL}:
+The convective term is computed in a way similar to Basu \etal \cite{basu2005} in Eq. \ref{eq:HFP_B_phiCL}:
 
 \begin{align}
 \phi_{c,L} =& \phi_{c1,L} + \phi_{c2,L}\\
@@ -292,7 +292,7 @@ Regarding the boiling heat flux, Gilman splits it in two contributions respectiv
 %\
 \text{with } V_{ML} =& \frac{2}{3}\pi \parth{\frac{R_{d}}{2}}^{3}\delta_{max}
 \end{align}
-where $\delta_{max}=2\ \mu\text{m}$ based on experiments from Gerardi \cite{Gerardi}.
+where $\delta_{max}=2\ \mu\text{m}$ based on experiments from Gerardi \cite{gerardi}.
 
 
 Finally, the solid quenching term is written as:
@@ -302,7 +302,7 @@ Finally, the solid quenching term is written as:
 %
 & V_{q} = \frac{2}{3} \pi r_{w}^{2}
 \end{align}
-with $\Delta T_{q}=2\ K$ as suggested by Gerardi \etal \cite{Gerardi_etal}.
+with $\Delta T_{q}=2\ K$ as suggested by Gerardi \etal \cite{gerardi_etal}.
 
 \npar
 
@@ -379,7 +379,7 @@ In each of the 4 presented HFP models, there is a number of parameters that stil
 The value of the nucleation site density is a very sensitive parameter that controls the intensity of the boiling heat transfer. Unfortunately, its value can vary over a very large range of value depending on the operating conditions and heater material and is thus expressed using experimental correlations.
 
 \npar
-In their work, Kurul \& Podowski used the law of Lemmert and Chawla \cite{Lemmert}:
+In their work, Kurul \& Podowski used the law of Lemmert and Chawla \cite{lemmert}:
 
 \begin{align}
 N_{sit}=\crocht{210\parth{T_{w}-T_{sat}}}^{1.8}
@@ -387,7 +387,7 @@ N_{sit}=\crocht{210\parth{T_{w}-T_{sat}}}^{1.8}
 
 
 \npar
-Later, Basu \cite{Basu} correlated her own experimental results to obtain:
+Later, Basu \cite{basu} correlated her own experimental results to obtain:
 
 \begin{align}
 N_{sit}=&
@@ -413,7 +413,7 @@ with $N_{0}=55~395.26\ \mathrm{m}^{-2}$ and $P_{0}=1.01\ \mathrm{bar}$.
 \subsection{Bubble Departure Frequency $f$, Growth Time $t_{g}$ and Wait Time $t_{w}$}
 
 
-Historically, Kurul \& Podowski modeled the BDF according to Cole \cite{Cole} which derived an expression using photographic observations of bubble nucleation, further verified by Ceumern \& Lindenstjerna for pool boiling of water at pressures up to 8 bar. :
+Historically, Kurul \& Podowski modeled the BDF according to Cole \cite{cole} which derived an expression using photographic observations of bubble nucleation, further verified by Ceumern \& Lindenstjerna for pool boiling of water at pressures up to 8 bar. :
 
 \begin{align}
 f = \sqrt{\frac{4}{3} \frac{g \parth{\rho_{L}-\rho_{V}}}{\rho_{L}D_{d}} }
@@ -437,7 +437,7 @@ f = \frac{1}{t_{g,d} + t_{w} }
 \end{align}
 
 
-In this scope, Basu \etal \cite{Basu} correlated their own exprimental results to obtain :
+In this scope, Basu \etal \cite{basu} correlated their own exprimental results to obtain :
 
 \begin{align}
 t_{g} =& \frac{D_{d}^{2} }{45~e^{-0.02~\Ja_{L}} \eta_{L} \Ja_{w}} \label{eq:tg_Basu}
@@ -447,7 +447,7 @@ t_{w} =&  139.1\ {\Delta T_{w}}^{-4.1}
 \end{align}
 
 
-Gilman \& Baglietto \cite{Gilman} chose use the growth law of Zuber \cite{Zuber1961} and the total BDF of Cole (Eq. \ref{eq:f_Cole}) to close the relation \ref{eq:frequency}.
+Gilman \& Baglietto \cite{gilman} chose use the growth law of Zuber \cite{zuber1961} and the total BDF of Cole (Eq. \ref{eq:f_Cole}) to close the relation \ref{eq:frequency}.
 
 \begin{align}
 t_{g,d} = \frac{\pi {R_{d}}^{2}}{4b^{2} \Ja_{w} \eta{L}},\ \ b=1.56

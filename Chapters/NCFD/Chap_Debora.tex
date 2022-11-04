@@ -196,7 +196,7 @@ The test section in presented on Figure \ref{fig:sketch_debora}. It consists of 
 
 \subsection{Measurement Instrumentation}
 
-The control parameters are adjusted and measured using pressure, temperature, flow rate and power measurements. They are further detailed in Cubizolles \cite{Cubizolles_1996}.
+The control parameters are adjusted and measured using pressure, temperature, flow rate and power measurements. They are further detailed in Cubizolles \cite{cubizolles_etude_1996}.
 
 \npar
 
@@ -231,9 +231,9 @@ If the PIF is measured over a period $T$, the void fraction $\alpha$ at the meas
 \end{equation}
 where $\nu$ is called the interference frequency that represents the number of phase interface detection per second by the probe.
 
-\begin{remark*}{}
+\begin{note*}{}
 This measurement technique was performed in the \textbf{measurement campaign C2900} where void fraction profiles at the outlet were obtained for various flow conditions.
-\end{remark*}
+\end{note*}
 
 \subsubsection{Bi-Optical Probe Measurements}
 
@@ -244,7 +244,7 @@ Using the technology of the optical phase dectection, adding a second optical pr
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.65\linewidth]{img/DEBORA/optical_probe.png}
-\caption{Picture of the bi-optical probe with a zoom over the two optical fibers. Reproduced from \cite{gueguen_phd}.}
+\caption{Picture of the bi-optical probe with a zoom over the two optical fibers. Reproduced from \cite{gueguen_contribution_2013}.}
 \label{fig:optical_probe}
 \end{figure}
 
@@ -273,18 +273,18 @@ D_{V} = \frac{6 \alpha }{a_{i}}
 \end{itemize}
 
 
-\begin{remark*}{}
+\begin{note*}{}
 This measurement technique was performed in the \textbf{measurement campaign C3000}.
-\end{remark*}
+\end{note*}
 
 
 \subsubsection{Thermocouples Measurements}
 
 Thermal measurements are conducted using chromel-alumel thermocouples. The liquid temperature is measured along the outlet diameter at the end of the heating length. Wall temperature measurements are conducted with 4 thermocouples placed at different heights (1.465 m, 2.465 m, 2.965 m, 3.485 m) on the outside of the tube.
 
-\begin{remark*}{}
+\begin{note*}{}
 This measurement technique was performed in the \textbf{measurement campaign C800}.
-\end{remark*}
+\end{note*}
 
 
 
@@ -318,7 +318,7 @@ Each measurement series is conducted under fixed outlet pressure, liquid mass fl
 P                   & G & W16 & W17 & W23 & W24 & W25 & W27 & W29 & W30 & W31 & W33 & W34 & W36 & W38 & W39 & W40 & W42 & W44 \\
 \hline
 \hline
-\multirow{3}{*}{14} & 2 &  $\bigcirc$ $\bigtriangledown$ $\bigtriangleup$  & $\bigtriangleup$    &     &  $\bigcirc$   &     &     &     &     &     &     &     &     &     &     &     &     &     \\
+\multirow{3}{*}{14} & 2 &  $\bigcirc$ $\bigtriangledown$ $\bigtriangleup$  & $\bigtriangleup$    &     &    &     &     &     &     &     &     &     &     &     &     &     &     &     \\
                     & 4  &     &     &     &  $\bigcirc$   &     &     &     &     &     &     &     &     &     &     &     &     &     \\
                     & 5  &     &     &     &     &     &     & $\bigtriangledown$    &  $\bigtriangledown$   &     &  $\bigtriangledown$   &  $\bigtriangledown$   &  $\bigtriangledown$   &   $\bigtriangledown$  &    & $\bigtriangledown$   &  $\bigtriangledown$   &     \\
                     \hline
@@ -358,7 +358,7 @@ If we want to obtain a full description of the two-phase flow from the DEBORA te
 Other flow conditions have either been covered with thermal measurements or topology measurements but not both. 
 
 \begin{remark*}{}
-Cases from the campaign C2900 would only be relevant for void fraction profiles comparison. Estimations of the bubble diameter can not be achieved except if one assumes a velocity profile as suggested by Cubizolles \cite{cubizolles_phd} and re-used by Guéguen \cite{gueguen_phd} who supposes:
+Cases from the campaign C2900 would only be relevant for void fraction profiles comparison. Estimations of the bubble diameter can not be achieved except if one assumes a velocity profile as suggested by Cubizolles \cite{cubizolles_etude_1996} and re-used by Guéguen \cite{gueguen_contribution_2013} who supposes:
 
 \begin{equation}
 U_{V,z}\parth{r} \approx U_{M,z}\parth{r} = 1.22 \frac{G}{\spavg{\rho_{M}}} \parth{ \frac{R-r}{R}}^{1/7}
@@ -380,7 +380,7 @@ For each case, the total heat heat input $\Phi_{w}$ is given along with the inle
 x_{eq,out,calc} = \frac{h_{M,out,calc} - h_{L,sat}}{h_{LV}}
 \label{eq:xeq_out}
 \end{equation}
-with $h_{M,out,calc}$ the recalculated outlet mixture enthalpy :
+with $h_{M,out,calc}$ the recalculated outlet mixture enthalpy:
 
 \begin{equation}
 h_{M,out,calc} = h_{in} + \frac{\Phi_{w}}{G S_{in}} = h_{in} + \frac{4\phi_{w}L_{heat}}{G D_{h}}
@@ -388,7 +388,7 @@ h_{M,out,calc} = h_{in} + \frac{\Phi_{w}}{G S_{in}} = h_{in} + \frac{4\phi_{w}L_
 with $h_{in}$ the inlet enthalpy calculated from the fluid properties using the inlet liquid temperature.
 
 \npar
-The difference between the given and recalculated outlet quality can also be converted to input power error by recalculating the heat needed to reach the given $x_{eq,out}$ :
+The difference between the given and recalculated outlet quality can also be converted to input power error by recalculating the heat needed to reach the given $x_{eq,out}$:
 
 \begin{equation}
 \Phi_{w,calc} = \frac{G  \pi R^{2}}{\underbrace{\crocht{x_{eq,out}h_{LV}+h_{L,sat}}}_{h_{M,out}} - h_{L,in}}
@@ -434,7 +434,7 @@ $T_{L,in}$ {[}K{]} & $x_{eq,in,calc}$ {[}-{]} & $x_{eq,out,calc}$ {[}-{]} & $x_{
 41.16  &  -0.155  &  0.0875  &  0.0882  &  3.509  &  -0.064 \% &  0.043
 \end{tabular}
 \caption{Recalculated control parameters for the 30G2P14W16 cases. ($T_{sat} = 58.07\degC$)}
-\label{tab:30P14_recalc}
+\label{tab:xout_30P14_recalc}
 \end{table}
 
 
@@ -453,7 +453,7 @@ $T_{L,in}$ {[}K{]} & $x_{eq,in,calc}$ {[}-{]} & $x_{eq,out,calc}$ {[}-{]} & $x_{
 70.59              & -0.239                   & 0.0670                    & 0.0743               & 3.583            & -0.723 \%                  & 0.369                    
 \end{tabular}
 \caption{Recalculated control parameters for the 30G2P26W16 cases. ($T_{sat} = 86.81\degC$)}
-\label{tab:30P26_recalc}
+\label{tab:xout_30P26_recalc}
 \end{table}
 
 As we can see, the given values of outlet quality for the 30G2P14W16 tests are coherent with the one-dimensional enthalpy balance with errors mostly less than 0.1\% on the recalculated quality and less than 100 W on the recalculated power input. This naturally leads to an equivalent height very close to $3.5$ m for the hottest case.
@@ -723,7 +723,7 @@ Similarly, the average liquid enthalpy at the outlet is estimated as:
 \spavg{h_{L}} = \frac{2}{R^{2}}\frac{1}{G_{L}}\int_{r=0}^{R} \rho_{L}\parth{r} U_{L,z}\parth{r} h_{L}\parth{r} r \mathrm{d}r
 \end{equation}
 
-where $h_{L}$ is estimated using the local temperature measurements and $U_{L,z}$ is estimated using the drift velocity of Ishii \cite{ishii_drift}:
+where $h_{L}$ is estimated using the local temperature measurements and $U_{L,z}$ is estimated using the drift velocity of Ishii \cite{ishii_one-dimensional_1977}:
 
 \begin{equation}
 U_{L,z} = U_{V,z} - U_{rel} = U_{V,z} - \sqrt{2} \parth{\frac{g \sigma \parth{\rho_{L}-\rho_{V}}}{\rho_{L}^{2}}}^{1/4} \parth{1-\spavg{\alpha}}^{1.75}
@@ -823,7 +823,7 @@ Case name & $x_{m}$ [-] & $\phi_{w,rec}$ [kW/m$^{2}$] & $\phi_{w,exp}$ [kW/m$^{2
 
 \end{table}
 
-We see that reconstructing the heat flux yields values significantly lower than the experimental values given in the database. This underestimation was also noted in a similar approach conducted by Guéguen \cite{gueguen_phd} who found discrepancy of a few \%.
+We see that reconstructing the heat flux yields values significantly lower than the experimental values given in the database. This underestimation was also noted in a similar approach conducted by Guéguen \cite{gueguen_contribution_2013} who found discrepancy of a few \%.
 
 In our case, these discrepancies can be partially explained by:
 \begin{itemize}
@@ -840,8 +840,132 @@ Unfortunately, our methodology do not rely on collocated measurements of all the
 
 
 
-\subsection{Comparison with One Dimensional Correlations}
+\subsection{Verification of Wall Temperature Measurements}
 
+In order to test the coherency of wall temperature measurements both in single phase and boiling regions, we compare them to one-dimensional correlations along the ($\Delta T_{w}$, $x_{eq}$) curve.
+
+\npar
+
+Single-phase measurements are confronted to the estimations of Dittus-Boelter (Eq. \ref{eq:dittus}) correlation and Gnielinski correlation (Eq. \ref{eq:gnielinski}):
+
+\begin{equation}
+\Nu_{DB} = 0.023 \parth{\Re^{4/5}} \Pr^{0.4}
+\label{eq:dittus}
+\end{equation}
+
+\begin{equation}
+\Nu_{G} = \frac{\dfrac{C_{f}}{2} \parth{\Re - 1000} \Pr }{1+12.7\sqrt{\dfrac{C_{f}}{2}} \parth{\Pr^{2/3}-1}}
+\label{eq:gnielinski}
+\end{equation}
+where the friction coefficient $C_{f}$ is estimated following Churchill \cite{churchill_friction_1977} as recommended by Delhaye \cite{delhaye_thermohydraulique_2012} and Guéguen \cite{gueguen_contribution_2013}:
+
+\begin{align}
+C_{f} &= 2 \crocht{ \parth{\frac{8}{\Re}}^{12} + \frac{1}{\parth{A+B}^{1.5}} }^{1/12} \\
+\nonumber A &=\crocht{ 2.457 \ln{ \frac{1}{ \parth{\dfrac{7}{\Re}}^{0.9} + 0.27 \dfrac{\varepsilon}{D_{h}} } } }^{16}\ \ \text{($\varepsilon$=0 supposed here)}\\
+\nonumber B &= \parth{ \frac{37530}{\Re} }^{16}
+\end{align}
+
+\npar
+
+Wall superheat in boiling region is compared with the simple correlation of Frost \& Dzakowic \cite{frost_extension_1967}:
+
+\begin{equation}
+\Delta T_{w,FD} = \Pr_{L,sat} \sqrt{\frac{8 \sigma \phi_{w} T_{sat}}{\lambda_{L,sat} h_{LV} \rho_{V}}} 
+\label{eq:frost}
+\end{equation}
+where $T_{sat}$ is expressed in Kelvin.
+
+
+\npar
+
+The results are presented on Figure \ref{fig:debora_tw_correl_P26} for cases at 26 bar and Figure \ref{fig:debora_tw_correl_P14} for cases at 14 bar. Since we do not need combination with void fraction measurements, every cases of the C800 campaign were used for comparison.
+
+
+\begin{figure}[h!]
+\centering
+
+\subfloat[8G2P14W16 series, $\Delta T_{w,FD}=3.47\degC$]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/Tw/Tw_8G2P14W16_correl.pdf}
+}
+\subfloat[8G4P14W24 series, $\Delta T_{w,FD}=4.29\degC$]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/Tw/Tw_8G4P14W24_correl.pdf}
+}
+\caption{Correlations comparison with P14 cases.}
+\label{fig:debora_tw_correl_P14}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+
+\subfloat[8G2P26W16 series, $\Delta T_{w,FD}=2.14\degC$]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/Tw/Tw_8G2P26W16_correl.pdf}
+}
+\subfloat[8G5P26W16 series, $\Delta T_{w,FD}=2.13\degC$]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/Tw/Tw_8G5P26W16_correl.pdf}
+}
+\\
+\subfloat[8G2P26W24 series, $\Delta T_{w,FD}=2.64\degC$]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/Tw/Tw_8G5P26W24_correl.pdf}
+}
+
+\caption{Correlations comparison with P26 cases.}
+\label{fig:debora_tw_correl_P26}
+\end{figure}
+
+
+Wall temperature measurements for the liquid convective regime are in fairly good agreement with the predictions of the Gnielinski correlation. The slope of the model is very close to the experimental data in the single-phase region. It is particularly true for the P26 cases (Figure \ref{fig:debora_tw_correl_P26}) where a large range of subcooled conditions in the single-phase region was covered. 
+
+\npar
+Regarding the P14 cases (Figure \ref{fig:debora_tw_correl_P14}), very few measurements are available outside of the boiling region. However we can see that the Gnielinski correlation seem to consistently meet the boiling measurements and follow a trend that agrees with the experimental data.
+
+\npar
+On the other hand, the Dittus-Boelter correlation fails to predict the wall temperature with a constant overestimation of approximately $5\degC$ regardless of the case. 
+
+
+\begin{note*}{}
+The average liquid temperature at different heights was estimated using a one-dimensional energy balance before computing the local wall temperature predicted by correlations. The virtual length used for single-phase correlations was adjusted to cover the whole range of $x_{eq}$.
+\end{note*}
+
+\npar
+
+The nucleate boiling temperature predicted by Frost \& Dzakowic correlation are in good agreement with the exprimental observations where we saw the wall temperature stabilization. The prediction is better for the P26 cases than for the P14 cases where an underestimation of $1\degC$ is observed. We can also note that the measurements are more dispersed for the P14 cases and span over a range of more than $1\degC$ around the average temperature.
+
+\npar
+
+Those comparisons are comforting the consistency of the wall temperature database which correspond to traditional behavior of wall to fluid heat transfer in both single-phase and boiling two-phase regimes.
+
+
+\section{Conclusions}
+
+The DEBORA database is a very rich source of experimental insights for boiling flows representative of PWR industrial conditions. The large range of control parameters that was covered during the tests also is encouraging regarding the variety of flow regimes that can occur in PWR conditions
+
+\npar
+
+After a finer analysis of the data, in the continuation of the work of Cubizolles \cite{cubizolles_etude_1996}, Manon \cite{manon_contribution_2000} and Guéguen \cite{gueguen_contribution_2013}, we concluded that:
+
+\begin{itemize}
+\item The test matrix unfortunately shows that very few series were covered with both bi-optical probe (C3000) and thermocouples (C800) measurements, limiting the availability of a full boiling database to the series G2P26W16 and G2P14W16.
+
+\item Small but significant errors on the reported outlet quality could be observed when compared to a one-dimensional energy balance based on the control parameters (Table \ref{tab:xout_30P26_recalc}).
+
+\item Good agreement was found between the void fraction measurements with the mono (C2900) and bi-optical probe (C3000), which comforts the validity of the acquired data in close flow conditions.
+
+\item Extension of the C2900 data to estimate bubble diameter and interfacial area concentration using Eq. \ref{eq:ugz_C29} to compute vapor velocity was acceptable in subcooled conditions but showed increasing underestimations in the saturated region (Figures \ref{fig:G2P26W16_ugz} and \ref{fig:G2P14W16_ugz}).
+
+\item Void fraction measurements in the G2P14W16 series showed a particular behavior with a peak value moving from the wall to the bulk as the inlet temperature increases.
+
+\item Bubble diameter measurements clearly exhibited coalescence phenomena when leaving the wall with a maximum value reached at $r/R \approx 0.6$ before decreasing under condensation and / or break-up (Figure \ref{fig:G2P26W16_dv}). It was also observed that measurements closest to the wall were nearly constant among a given test series regardless of the inlet temperature.
+
+\item Liquid temperature can overcome the saturation temperature for the hottest cases close to the wall ($T_{L}-T_{sat}\approx 0.1\degC$) and flattens at the bulk with a subcooling roughly around $0.5\degC$.
+
+\item Wall temperature measurements followed a coherent linear profile in the single-phase region before stabilizing when boiling starts, which was further reproduced by comparison with one-dimensional correlations. Measurements were also overlapping each other when plotted versus the local quality, confirming the transposition between change of inlet temperature and axial translation of the measurement section.
+
+\item Reconstruction of the applied wall heat flux in the experiments by merging the values from very close C3000 and C800 cases (Table \ref{tab:debora_match_C8C30}) suggested that the heat flux values provided in the measurements were too large by $5\%$ to $8\%$. Such a large difference is surprising and could partially be explained by the small change of operating conditions between C3000 and C800 cases.
+\end{itemize}
+
+
+At last, the different evaluations conducted over the chosen experiments have reasonably validated the consistency and coherency of the measurements. Further comparisons with NEPTUNE\_CFD simulations will be conducted using the experimental results of the G2P26W16 series. \textbf{ Still, we keep in mind that an error of a few $\%$ is possible on $\phi_{w}$.}
 
 
 
@@ -857,7 +981,7 @@ In this work, we present the simulations of the following cases:
 
 The pressure of $26~\text{bar}$ is chosen to match the pressure of the mixing vanes cases (DEBORA-Promoteur, Section \ref{sec:deb_prom}). Mesh sensitivity is performed over two meshes: a large mesh (M1) with $460~356\text{ cells }=338\text{ radial } \times 1362 \text{ axial cells}$ and a fine mesh (M2) with $3~157~952\text{ cells }=1568\text{ radial } \times 2014 \text{ axial cells}$.
 
-On Figure \ref{fig:th_1phi_res}, we present the results regarding liquid temperature at the outlet and wall temperature. The liquid temperature profile seems to be correctly reproduced by the simulations, though we see a slight overestimation close to the wall. Looking closer at boiling cases shows a difference of $\approx 0.5\degree$ C, which is close to the uncertainty of the measurements \cite{Garnier2001}. Concerning the wall temperature, it appears that it is underestimated before the \textbf{Onset of Nucleate Boiling} (ONB) ($T_{w}<T_{sat}$) and overestimated after the ONB ($\approx +5\degree$C). Post-ONB wall temperature is characterized by a stabilization of its value above the saturation temperature (here $T_{w,ONB}-T_{sat}\approx 2\degree\text{C}$).
+On Figure \ref{fig:th_1phi_res}, we present the results regarding liquid temperature at the outlet and wall temperature. The liquid temperature profile seems to be correctly reproduced by the simulations, though we see a slight overestimation close to the wall. Looking closer at boiling cases shows a difference of $\approx 0.5\degree$ C, which is close to the uncertainty of the measurements \cite{garnier_local_2001}. Concerning the wall temperature, it appears that it is underestimated before the \textbf{Onset of Nucleate Boiling} (ONB) ($T_{w}<T_{sat}$) and overestimated after the ONB ($\approx +5\degree$C). Post-ONB wall temperature is characterized by a stabilization of its value above the saturation temperature (here $T_{w,ONB}-T_{sat}\approx 2\degree\text{C}$).
 
 %
 \begin{figure}[h!]
@@ -898,9 +1022,9 @@ Finally, the simulations reasonably agree with the experiments. The strongest di
 
 \subsection{Investigating the nucleation site density modeling $N_{sit}$}
 
-In NEPTUNE\_CFD, wall temperature is computed through the Heat Flux Partitioning model, which role is to find the appropriate $T_{w}$ which balances Equation $\ref{eq:HFP}$. However, some laws used to express parameters such as $N_{sit}$, $f$, or $d_{d}$ are quite old and simple. For instance, the {Lemmert} \& {Chawla}\cite{Lemmert1977} expression of $N_{sit}$ only depends on the wall superheat (Sub-section \ref{subsec:HFP}).%, meaning that it can not reproduce potential influence of the pressure on the nucleation site density.
+In NEPTUNE\_CFD, wall temperature is computed through the Heat Flux Partitioning model, which role is to find the appropriate $T_{w}$ which balances Equation $\ref{eq:HFP}$. However, some laws used to express parameters such as $N_{sit}$, $f$, or $d_{d}$ are quite old and simple. For instance, the {Lemmert} \& {Chawla}\cite{lemmert_influence_1977} expression of $N_{sit}$ only depends on the wall superheat (Sub-section \ref{subsec:HFP}).%, meaning that it can not reproduce potential influence of the pressure on the nucleation site density.
 
-A comparison of the {Lemmert} \& {Chawla} law\cite{Lemmert1977} with  the {Hibiki} \& {Ishii}\cite{Hibiki2003} law for $N_{sit}$ against 4 data sets from the literature is presentend on Figure \ref{fig:nsit}. The {Hibiki} \& {Ishii} correlation depends simultaneously on wall superheat, pressure and contact angle.  Experimental measurements of {Borishanskii} \etal\cite{Borishanskii1961}, {Richenderfer} \etal\cite{Richenderfer2018}, {Kossolapov} \etal\cite{Kossolapov2020} and {Zhou} \etal\cite{Zhou2020} are used to assess the two nucleation site density correlations.
+A comparison of the {Lemmert} \& {Chawla} law\cite{lemmert_influence_1977} with  the {Hibiki} \& {Ishii}\cite{hibiki_active_2003} law for $N_{sit}$ against 4 data sets from the literature is presentend on Figure \ref{fig:nsit}. The {Hibiki} \& {Ishii} correlation depends simultaneously on wall superheat, pressure and contact angle.  Experimental measurements of {Borishanskii} \etal\cite{borishanskii_heat_1969}, {Richenderfer} \etal\cite{richenderfer_investigation_2018}, {Kossolapov} \etal\cite{kossolapov_experimental_2021} and {Zhou} \etal\cite{zhou_experimental_2020-1} are used to assess the two nucleation site density correlations.
 %
 \begin{figure}[h!]
 \centering
@@ -922,7 +1046,7 @@ Figure \ref{fig:nsit} clearly shows that the {Lemmert} \& {Chawla} law lack of p
 %
 To assess the influence of nucleation site density law on NEPTUNE\_CFD computations, we compare results obtained with both correlations on Figure \ref{fig:NCFD_nsit}, which shows a remarkable impact of the modification of $N_{sit}$ correlation. Using {Hibiki} \& {Ishii} correlation reduces the error on $T_{w}$ by approximately $2\degree\text{C}$ while $\alpha$ and $T_{L}$ remain unchanged. This implies that the same heat flux partitioning is found with the two models, but that the pressure dependence of {Hibiki} \& {Ishii} law helped to balance Equation \ref{eq:HFP} using a lower $T_{w}$, thus closer to experimental measurements.
 
-Such a result indicates that the HFP model could be improved through a systematic analysis of each parameter's impact and modeling (bubble departure diameter, detachment frequency, etc.). Assembling a more recent and consistent model could provide better results regarding wall temperature prediction. Models such as the one developed by {Kommajosyula}\cite {Kommajosyula2020} could be interesting to apply for high-pressure flows.
+Such a result indicates that the HFP model could be improved through a systematic analysis of each parameter's impact and modeling (bubble departure diameter, detachment frequency, etc.). Assembling a more recent and consistent model could provide better results regarding wall temperature prediction. Models such as the one developed by {Kommajosyula}\cite{kommajosyula_development_2020} could be interesting to apply for high-pressure flows.
 
 
 Now that simple tube boiling flow has been assessed through the presented results, next section will focus on the simulation of boiling flow in a tube equipped with a mixing device.% using DEBORA-Promoteur experimental results.
