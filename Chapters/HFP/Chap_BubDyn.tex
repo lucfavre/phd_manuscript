@@ -763,7 +763,7 @@ The Inertia force originates from various effects (bubble growth, freestream and
 Since we consider a steady and quasi-parallel liquid flow, we respectively have:
 
 \begin{equation}
-\dpartial{\vect{U_{L}} }{t}=0\ \text{and}\ \vecgrad{\vect{U_{L}} } cdot \vect{U_{L}}=0
+\dpartial{\vect{U_{L}} }{t}=0\ \text{and}\ \vecgrad{\vect{U_{L}} } \cdot \vect{U_{L}}=0
 \end{equation}
 
 Thus only remains the added mass force to express in the considered force balance. In the next subsections, we detail former approaches to tackle the added mass derivation and propose a more rigorous to re-evaluate the added mass coefficients.
@@ -1501,7 +1501,8 @@ All things considered, it seems that the proposed new growth law of Eq. \ref{eq:
 
 
 
-\section{Departure by Sliding}\label{sec:departure}
+\section{Departure by Sliding}
+\label{sec:departure}
 
 The question of departure by sliding being central for bubble dynamics in vertical flow boiling, we will tackle the problem by starting with a non-dimensional analysis before moving to predictions of experimental measurements of departure diameters.
 
@@ -2095,8 +2096,6 @@ It appears that at high pressure and liquid velocity, the drag force is the main
 This comparison highlights the fact that the proposed model is able to represent different forces hierarchy depending on the flow conditions and to acceptably predict the associated bubble sliding velocity, which is an encouraging point regarding its generality.
 
 
-\clearpage
-
 \section{Bubble Lift-Off}
 
 \subsection{Introduction}
@@ -2172,7 +2171,7 @@ Generally speaking, it seems that single bubbles in vertical boiling are not lik
 
 \npar
 
-To further discuss this question, we will try to consider the bubble lift-off as a single event and therefore try to attribute a given lift-off diameter $D_{lo}$ based on available experimental measurements.
+To further discuss this question, we will nevertheless try to consider the bubble lift-off as a single event and therefore try to attribute a given lift-off diameter $D_{lo}$ based on available experimental measurements.
 
 
 \subsection{Experimental Measurements of Lift-Off Diameter}
@@ -2251,7 +2250,7 @@ Okawa \cite{okawa_bubble_2018} \newline (2018) & Water & 14 & 1.27 - 1.86 & 252 
 To evaluate the influence of the flow boiling conditions over the various experimental measurements, we have represented the values of the non-dimensional lift-off diameter $\dfrac{D_{lo}}{L_{c}}$ ($L_{c}$ is the capillary length) versus 6 non-dimensional flow parameters:
 
 \begin{itemize}
-\item The reduced Jakob numbers of superheat and subcooling $\Ja_{w}^{*}$ and $\Ja_{L}^{*}$. With $\Ja_{*} = \dfrac{c_{p,L}\Delta T}{h_{LV}}$ which excludes the impact of pressure through the density ratio.
+\item The reduced Jakob numbers of superheat and subcooling $\Ja_{w}^{*}$ and $\Ja_{L}^{*}$. With $\Ja^{*} = \dfrac{c_{p,L}\Delta T}{h_{LV}}$ which excludes the impact of pressure through the density ratio.
 
 \item The density ratio $\rho^{*} = \dfrac{\rho_{L}}{\rho_{V}}$, scaling the operating pressure.
 
@@ -2334,35 +2333,106 @@ As previously discussed, the prediction of the lift-off using the force balance 
 \item The estimation of those forces rely on complicated description of thermal and hydrodynamic phenomena, making a simple mistake a source of large errors on lift-off prediction.
 \end{itemize}
 
-This difficulty has already been pointed out by Montout \cite{montout_phd} who faced difficulties in consistently using the force balance perpendicular to the wall for bubble lift-off.
-
-To demonstrate this uncertainty, we present on Figure \ref{fig:pred_dlo_bdfy} the predictions achieved when the lift-off is associated to a positive force balance perpendicular to the wall (Eq. \ref{eq:bdf_y}). 
+This difficulty has already been pointed out by Montout \cite{montout_phd} who faced difficulties in consistently using the force balance perpendicular to the wall for bubble lift-off. Depending on the flow conditions, the force balance would sometimes predict an immediate lift-off right after or even before departure by sliding, which is in contradiction with aforementioned experimental observation.
 
 \npar
 
-FIGURE
+%To demonstrate this uncertainty, we present on Figure \ref{fig:pred_dlo_bdfy} the predictions achieved when the lift-off is associated to a positive force balance perpendicular to the wall. 
+
+Following a similar approach to the departure diameter (Section \ref{sec:departure}), we can rearrange Eq. \ref{eq:bdf_y} into the following non-dimensional force balance perpendicular to the wall, supposing that $U_{b,y} = \dot{R}$ :
+
+\begin{align}
+\underbrace{ \rho^{*} \parth{\frac{C_{L}}{8} + \frac{C_{AM,y3}}{3}} }_{\text{Promotes lift-off}} - \underbrace{ \frac{1}{3}\crocht{\rho^{*}\parth{2C_{AM,y1} + C_{AM,y2} } + \frac{2}{3} } \parth{\frac{K^{2} \Ja_{w}^{2}}{\Pr_{L}\Re_{b}}}^{2} }_{\text{Hinders lift-off}} > 0
+\label{eq:bdf_adim_lo}
+\end{align}
+
+This formulation sums up the competition between the lift-off promoted by the first term on the LHS combining effect of the lift force and the added mass force due to the external flow versus the growth terms that will hinder the lift-off by pushing the bubble against the wall.
+
+\begin{remark*}{}
+Eq. \ref{eq:bdf_adim_lo} mathematical formulation present some coherent trend with physical observations:
+
+\begin{itemize}
+\item The hindering term will increase with bubble growth rate (\ie $\Ja_{w}$ increase) thus increasing $R_{lo}$ ;
+\item The hindering term will reduce with the liquid velocity (\ie $\Re_{\tau}$ or $\Re_{b}$ increase), thus reducing $R_{lo}$.
+\end{itemize}
+
+Other influence of the flow parameters are less directly possible to anticipate.
+\end{remark*}
+
+The solving of the equation of bubble departure (Eq. \ref{eq:bdf_x_dep}) and sliding (Eq. \ref{eq:ub_dot}) while checking when Eq. \ref{eq:bdf_adim_lo} detects lift-off can be performed to estimate the lift-off diameter $D_{lo}$. Applied over the experimental database of Table \ref{tab:exp_data_dlo}, this yields the predictions of Figure \ref{fig:pred_bdf_lo}.
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.75\linewidth]{img/bub_dyn/lift-off/pred_bdf.pdf}
+\caption{Prediction of Eq. \ref{eq:bdf_adim_lo} versus data from Table \ref{tab:exp_data_dlo}. Value of $K=0.24$ was used and only converged points are presented.}
+\label{fig:pred_bdf_dlo}
+\end{figure}
+\npar
+
+First, it is important to note that among every experimental data used for comparisons, many points did not converge to a lift-off diameter value, Eq. \ref{eq:bdf_adim_lo} failing to become positive at any moment of the simulated bubble lifetime. As a consequence, 61 measurements (27 from Prodanovic, 5 from Tolubinsky, 3 from Maity, 13 from Ahmadi, 6 from Chu, 7 from Okawa) out of 211 could not be compared to the force balance approach.
+
+Moreover, we see that the converged cases yield an acceptable order of magnitude for low pressure data especially for Situ data. On the contrary, high pressure measurements are greatly underestimated with lift-off diameters lower than 1$\mu$m.
 
 \npar
 
-The results are greatly dispersed and do not seem to demonstrate any coherent trend with the experimental measurements. 
+At last, even though the force-balance approach for modeling grounds, its application to lift-off prediction seems a bit tricky contrary to departure. The sole competition based on fine hydrodynamics (lift and added mass) and the bubble growth (for which a proper complete modeling is still unavailable) makes it a very complicated solution to address the lift-off diameter estimation problem. 
 
-\npar
-
-%Alternatively, Situ
 
 \subsection{A Simple Non-Dimensional Correlation}
 
 
-As an alternative way to estimate the lift-off / maximum bubble diameter $D_{lo}$, we propose a simple correlation based on non-dimensional numbers as:
+Alternatively, in case it would prove to be necessary to define a lift-off diameter value for the HFP model, we propose a simple direct correlation based on non-dimensional parameters characterizing the boiling conditions. We chose to model the value of the non-dimensional lift-off diameter $D_{lo} / L_{c}$ using the liquid Prandtl number $\Pr_{L}$ at saturation, the density ratio $\rho^{*} = \rho_{L}/\rho_{V}$, the reduced Jakob numbers $\Ja_{w}^{*}$ and $\Ja_{L}^{*}$ and the wall Reynolds number $\Re_{\tau}$. Using the \texttt{sklearn} module to estimate the value of the coefficient for the multilinear regression over the data of Table \ref{tab:exp_data_dlo} yields: 
 
 \begin{equation}
-\frac{D_{lo}}{L_{c}} = e^{8.779} \Pr_{L}^{-0.065} \parth{\frac{\rho_{L}}{\rho_{V}}}^{-0.374} {\Ja_{w}^{*}}^{1.188} \parth{1+\Ja_{L}}^{-6.853} \parth{1+\Re_{\tau}}^{-0.547}
+\frac{D_{lo}}{L_{c}} = e^{8.43} \Pr_{L}^{-0.005} \parth{\frac{\rho_{L}}{\rho_{V}}}^{-0.36} {\Ja_{w}^{*}}^{1.15} \parth{1+\Ja_{L}}^{-6.68} \parth{1+\Re_{\tau}}^{-0.53}
 \label{eq:correl_dlo}
 \end{equation}
 
+We chose to use $\parth{1+\Ja_{L}}$ and $\parth{1+\Re_{\tau}}$ so that the correlation can be applied to saturated and pool boiling conditions. This simple care is often forgotten in many similar approaches \cite{kommajosyula_development_2020, zhou_experimental_2020-1} where the resulting correlation either diverges or tend to 0 when reaching those conditions.
+
+\npar
+
+The correlation is compared to Kommajosyula's correlation \cite{kommajosyula_development_2020} on Figure \ref{fig:performance_correl_dlo}. 
+
+\begin{figure}[!h]
+\centering
+\subfloat[Prediction with Kommajosyula correlation \cite{kommajosyula_development_2020}]{
+\includegraphics[width=0.75\linewidth]{img/bub_dyn/lift-off/komma_correl.pdf}
+\label{fig:dlo_komma_correl}
+}
+\\
+\subfloat[Prediction using Eq. \ref{eq:correl_dlo}]{
+\includegraphics[width=0.75\linewidth]{img/bub_dyn/lift-off/reduced_correl.pdf}
+\label{fig:dlo_new_correl}
+}
+\caption{Comparison of simple direct correlations with data from Table \ref{tab:exp_data_dlo}}
+\label{fig:performance_correl_dlo}
+\end{figure}
+
+The proposed formulation, though simple, allows to reach an average error of approximately 45\% over the whole data set. Even though the approach may lack of detailed physical modeling, it seems appropriate to yield an acceptable order of magnitude of the lift-off (or maximum observed) diameter over various flow conditions including high pressure. 
 
 \subsection{Conclusion on the Lift-Off}
 
+As discussed in this section, the question of the bubble lift-off in vertical flow boiling is very complicated and can not be answered in a straightforward way. First, we saw that the lift-off is not always observed for individual bubbles that can slide for a very long time before leaving the surface as a result of a coalescence by colliding with an other bubble. This difficulty was also experience when using the force-balance approach to predict the lift-off diameter, with bubble lifetime and sliding simulations that would not converge and yield a positive force balance perpendicular to the wall that would detach the bubble. 
+
+\npar
+
+Moreover, existing database though diverse are lacking of high pressure measurements using recent experimental techniques. The existing high-pressure data present a qualitative uncertainty regarding the measured bubbles which could result from coalescence events.
+
+\npar
+
+Finally, the question of lift-off in the framework of the HFP model can be answered in two ways:
+
+\begin{enumerate}
+\item[1)] No lift-off diameter value is attributed to single bubbles and is thus computed by solving the bubble sliding until the bubble collides and coalesces with an other bubble growing on its nucleation site. This approach is likely to be the most representative of the general behavior of bubbles in vertical boiling according to experiments. However, it may lead to very large, if not unphysical, values of sliding length at low heat fluxes values where the average distance between bubbles would increase greatly.
+
+\item[2)] A lift-off / maximum diameter is attributed for single bubble behaviors and sliding is computed between the fixed values of $D_{d}$ and $D_{lo}$, with coalescence that can be considered between those two events and trigger earlier lift-off. This choice would be in fewer concordance with experimental observations but would allow to consider distinct bubble lifetime scenario including full single bubbles.
+\end{enumerate}
+
+
+
+\section{Conclusion}
 
 
 
