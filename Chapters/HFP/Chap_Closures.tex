@@ -149,7 +149,7 @@ Corrected Gnielisnki & 1.34 & 3.08 & 1.57 & 1.74 \\
 \end{table}
 
 
-\textbf{Recalling that Gnielinski correlation was also providing good results on the DEBORA cases with R12 (Chapter \ref{chap:debora}), this further indicates it as a proper choice regarding single-phase HTC estimation in the HFP model.} However, we will later allow the use of the correction factors when needed to ensure a proper representation of the single-phase part when trying to assess the models associated to boiling.
+\textbf{Recalling that Gnielinski correlation was also providing good results on the DEBORA cases with R12 (Chapter \ref{chap:debora})further indicates it as a proper choice regarding single-phase HTC estimation in the HFP model.} We will later allow the use of the correction factors when needed to ensure a proper representation of the single-phase part when trying to assess the models associated to boiling.
 
 
 
@@ -310,7 +310,74 @@ Kossolapov \cite{kossolapov_experimental_2021} \newline (2021) & Water & 20 & 20
 
 \section{Bubble Wait Time}
 
-The wait time between two nucleation events on an active site corresponds to the time needed for the thermal boundary layer to reconstruct after its disruption due do bubble departure from the nucleation site.  
+The wait time between two nucleation events on an active site corresponds to the time needed for the thermal boundary layer to reconstruct after its disruption due to bubble departure from the nucleation site. This process is then intrinsically related to the heater properties and the transient heat transfer with the external liquid flow.
+
+\npar
+
+Traditional approaches of the wait time estimation rely on the analytic solution to the transient heat transfer in a semi-infinite medium:
+
+
+\begin{equation}
+T_{L}\parth{y,t} - T_{L,bulk} = \parth{\Delta T_{w} + \Delta T_{L}}\erfc{\frac{y}{2\sqrt{\eta_{L}t}}}
+\end{equation}
+
+For instance, Mikic \& Rohsenow \cite{mikic_bubble_1970} combine this solution with the assumption that a new nucleation will occur over a cavity of radius $R_{c}$ when the vapor temperature reaches:
+
+\begin{equation}
+T_{V,nuc} = T_{sat} + \frac{2\sigma T_{sat} \parth{\frac{1}{\rho_{V}} - \frac{1}{\rho_{L}} }}{R_{c}h_{LV}} 
+\end{equation} 
+
+The wait time is then assumed to be the time needed for the transient temperature field to reach $T_{V,nuc}$ at height $y=R_{c}$. Combining the two previous equations allow to write:
+
+\begin{equation}
+t_{w} = \frac{1}{4\eta_{L}}\crocht{ \frac{R_{c}}{\erfcrec{ \dfrac{\Delta T_{L}}{\Delta T_{L} + \Delta T_{w}} + \dfrac{2\sigma T_{sat} \parth{\dfrac{1}{\rho_{V}} - \dfrac{1}{\rho_{L}}} }{ \parth{\Delta T_{w} + \Delta T_{L}}h_{LV}R_{c} } } } }^{2} \approx \frac{1}{\pi \eta_{L}}\crocht{\frac{ \parth{\Delta T_{w} + \Delta T_{L}}R_{c} }{\Delta T_{w} - \dfrac{2\sigma T_{sat} \parth{\dfrac{1}{\rho_{V}} - \dfrac{1}{\rho_{L}}} }{R_{c} h_{LV}} } }^{2}
+\end{equation}
+
+This expression needs an estimation of the cavity radius where bubbles nucleate, for which the following expression is proposed by Gilman \cite{gilman_phd}:
+
+\begin{equation}
+R_{c} = \frac{2\sigma \parth{1 + \dfrac{\rho_{V}}{\rho_{L}} } / P}{\exp{h_{LV} \dfrac{\Delta T_{w}}{R_{g}T_{w}T_{sat}}} - 1}
+\end{equation}
+
+
+Similarly, Yeoh \etal \cite{yeoh_fundamental_2008} propose an improved expression that accounts for the contact angle value:
+
+\begin{align}
+t_{w} &= \frac{1}{\pi \eta_{L}}\crocht{ \frac{\Delta T_{L} C_{1} R_{c}}{\Delta T_{w} - \dfrac{2\sigma T_{sat}}{C_{2}\rho_{V}h_{LV}R_{c}}}  }^{2} \\
+%
+R_{c} &= \sqrt{\dfrac{1}{C_{1}C_{2}} \dfrac{2 \sigma T_{sat} \lambda_{L}}{\rho_{V}h_{LV}\phi_{w}}}\\
+%
+C_{1} &= \frac{1 + \cos{\theta} }{\sin{\theta}}\ ;\ C_{2} = \frac{1}{\sin{\theta}}
+\end{align}
+
+
+Formulation of Basu \etal \cite{basu_heat_2005}:
+
+\begin{equation}
+t_{w} = 139.1\Delta {T_{w}}^{-4.1}
+\end{equation}
+
+
+Formulation of Kommajosyula \cite{komma}:
+
+\begin{equation}
+t_{w} = 0.061\frac{{\Ja_{L}}^{0.63}}{\Delta T_{w}}
+\end{equation}
+
+\begin{remark*}
+Kommajosyula's correlation yields a zero wait time when bulk liquid approaches saturation. This behavior is questionable 
+\end{remark*}
+
+Mikic \& Rosenhow analytical expression \cite{mikic}:
+
+\begin{align}
+t_{w} = \frac{1}{\pi \eta_{L}}\crocht{ \frac{\parth{\Delta T_{w}+ \Delta T_{L}}R_{c}}{\Delta T_{w} - T_{sat} \parth{\dfrac{1}{\rho_{V}}-\dfrac{1}{\rho_{L}}} \dfrac{2\sigma}{h_{LV}R_{c}} } }^{2}
+\end{align}
+
+A relevant
+
+
+
 \begin{table}[h!]
 
 %\begin{changemargin}{-1cm}{0cm}
@@ -344,32 +411,6 @@ Kossolapov \etal \cite{kossolapov_experimental_2021} \newline (2021) & Water & 2
 
 \end{table}
 
-
-
-Formulation of Basu \etal \cite{basu_heat_2005}:
-
-\begin{equation}
-t_{w} = 139.1\Delta {T_{w}}^{-4.1}
-\end{equation}
-
-
-Formulation of Kommajosyula \cite{komma}:
-
-\begin{equation}
-t_{w} = 0.061\frac{{\Ja_{L}}^{0.63}}{\Delta T_{w}}
-\end{equation}
-
-\begin{remark*}
-Kommajosyula's correlation yields a zero wait time when bulk liquid approaches saturation. This behavior is questionable 
-\end{remark*}
-
-Mikic \& Rosenhow analytical expression \cite{mikic}:
-
-\begin{align}
-t_{w} = \frac{1}{\pi \eta_{L}}\crocht{ \frac{\parth{\Delta T_{w}+ \Delta T_{L}}R_{c}}{\Delta T_{w} - T_{sat} \parth{\dfrac{1}{\rho_{V}}-\dfrac{1}{\rho_{L}}} \dfrac{2\sigma}{h_{LV}R_{c}} } }^{2}
-\end{align}
-
-A relevant
 
 
 \section{Nucleation Site Density}
