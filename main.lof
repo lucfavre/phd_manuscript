@@ -291,44 +291,54 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Corrected Gnielinski correlation. We multiply the HTC by 4 on Richenderfer and Kossolapov cases and by 0.9 on Jens-Lotte cases.}}}{91}{subfigure.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Comparison of the proposed model and Kommajoyusla model against experimental data from Unal. Black lines represent the $\pm 50\%$ error bars.\relax }}{94}{figure.caption.81}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Evolution of the wait time values with the wall Jakob number.\relax }}{96}{figure.caption.82}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces HSV Visualization of bubble density at various pressures adapted from Kossolapov \cite {kossolapov_experimental_2021} (left to right: 1.01 bar, 3 bar, 19.8 bar, 75.8 bar). \relax }}{96}{figure.caption.84}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Evolution of the product $t_{w} \times f$ with the reduced Jakob number. Trend line is $t_{w} f = \genfrac {}{}{}0{1}{1+0.05\mathrm {exp}\left ( 35\mathrm {Ja}_{w}^{*} \right )}$.\relax }}{96}{figure.caption.83}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Sketch of the link between bubble contact angle and wettability / cavity flooding\relax }}{97}{figure.caption.85}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Predictions using the correlations. $\pm 50\%$ dashed lines are represented.\relax }}{97}{figure.caption.84}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Predictions of the chosen models against the experimental data of Table \ref {tab:nsit_exp_data} with $\pm 50\%$ error bars. The contact angles\relax }}{99}{figure.caption.87}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Basu \textit {et al.}\xspace correlation}}}{97}{subfigure.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Lemmert \& Chawla model}}}{99}{subfigure.6.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Kommajosyula correlation}}}{97}{subfigure.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hibiki \& Ishii model}}}{99}{subfigure.6.2}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Yeoh \textit {et al.}\xspace formulation of $t_{w}$ with Han \& Griffith cavity radius. $\pm 50\%$ dashed lines are represented.\relax }}{97}{figure.caption.85}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Zhou \textit {et al.}\xspace model}}}{99}{subfigure.6.3}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces HSV Visualization of bubble density at various pressures adapted from Kossolapov \cite {kossolapov_experimental_2021} (left to right: 1.01 bar, 3 bar, 19.8 bar, 75.8 bar). \relax }}{98}{figure.caption.86}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \textit {et al.}\xspace model}}}{99}{subfigure.6.4}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Sketch of the link between bubble contact angle and wettability / cavity flooding\relax }}{99}{figure.caption.87}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Predictions of the chosen models against the experimental data of Table \ref {tab:nsit_exp_data} with $\pm 50\%$ error bars. The contact angles\relax }}{101}{figure.caption.89}%
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Assembling a new Heat Flux Partitioning Model}}{103}{chapter.8}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Lemmert \& Chawla model}}}{101}{subfigure.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Sketch of the considered HFP\relax }}{103}{figure.caption.88}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hibiki \& Ishii model}}}{101}{subfigure.9.2}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Zhou \textit {et al.}\xspace model}}}{101}{subfigure.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Promoteur}}{106}{chapter.9}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Picture of the mixing device (left) and its fine meshing (right).\relax }}{106}{figure.caption.89}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.2}{\ignorespaces NCFD (lines) vs. Exp. (circles) - $\alpha $ profiles for two MV positions (23.5$D_{h}$ in blue, $10D_{h}$ in orange) - $T_{in}=65\degree $C (left), $T_{in}=69\degree $C (middle), $T_{in}=75\degree $C (right) - Simulations using two meshes M1 (coarse) and M2 (fine) for $T_{in}=69\degree $C.\relax }}{107}{figure.caption.90}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.3}{\ignorespaces NCFD vs. Exp. - Top \& Middle : Radial velocity and turbulent RMS ($z=30$mm \& $z=440$mm) - Bottom : Axial velocity and turbulent RMS ($z=440$mm).\relax }}{108}{figure.caption.91}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \textit {et al.}\xspace model}}}{101}{subfigure.9.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{112}{appendix.A}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Assembling a new Heat Flux Partitioning Model}}{104}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Studied geometry\relax }}{112}{figure.caption.92}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Sketch of the considered HFP\relax }}{104}{figure.caption.90}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Force Balance}}{116}{appendix.B}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Promoteur}}{107}{chapter.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Picture of the mixing device (left) and its fine meshing (right).\relax }}{107}{figure.caption.91}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.2}{\ignorespaces NCFD (lines) vs. Exp. (circles) - $\alpha $ profiles for two MV positions (23.5$D_{h}$ in blue, $10D_{h}$ in orange) - $T_{in}=65\degree $C (left), $T_{in}=69\degree $C (middle), $T_{in}=75\degree $C (right) - Simulations using two meshes M1 (coarse) and M2 (fine) for $T_{in}=69\degree $C.\relax }}{108}{figure.caption.92}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.3}{\ignorespaces NCFD vs. Exp. - Top \& Middle : Radial velocity and turbulent RMS ($z=30$mm \& $z=440$mm) - Bottom : Axial velocity and turbulent RMS ($z=440$mm).\relax }}{109}{figure.caption.93}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{113}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Studied geometry\relax }}{113}{figure.caption.94}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Force Balance}}{117}{appendix.B}%

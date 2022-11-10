@@ -193,190 +193,147 @@ and we linearly interpolate those two expressions for the region where $1-\dfrac
 \section{Growth time}
 
 
+As discussed in Section \ref{sec:bub_growth}, the bubble growth can be acceptably modeled as:
 
-
-In this case, the average radius of the bubble over a growth time $t_{g}$ (as needed in Subsection \ref{subsec:vap_area}) is :
-
-
-\begin{align}
-\overline{R\parth{t}}&=\frac{1}{t_{g}}\int_{0}^{t_{g}}R\parth{t} \text{d}t = \frac{R_{\infty}}{t_{g}}\crocht{ \frac{e^{-2K_{a}\sqrt{t}} \parth{2K_{a}\sqrt{t}+1}  }{2K_{a}^{2}}+ t}_{0}^{t_{g}}\\
-&=\frac{R_{\infty}}{2K_{a}^{2}t_{g}}\parth{ e^{-2K_{a}\sqrt{t_{g}}}\parth{2K_{a}\sqrt{t_{g}}+1} + 2K_{a}^{2}t_{g} -1  }
-\end{align}
-
-Moreover, if we consider a lift-off radius $R_{d}$, we can express the associated growth time $t_{g}$ :
-
-\begin{align}
-t_{g}=\crocht{ \frac{1}{K_{a}}\ln{\frac{1}{\sqrt{1-\frac{R_{d}}{R_{\infty}} } } } }^{2} = \crocht{\frac{1}{K_{a}}\ln { \sqrt{1-\frac{R_{d}}{R_{\infty}} } }   }^{2}
-\label{eq:growth_time}
-\end{align}
-
-This expression could then be used as a closure relationship for $t_{g}$ in the HFP model, meaning that this growth time will depend on the departure diameter closure for $R_{d}$.
-
-
-\subsection{Estimation of the thermal boundary layer thickness $\delta$}
-
-In order to fully close the modeling of the bubble growth, we have to compute the thermal boundary layer thickness $\delta$.
-
-To do so, we test a first approach based on the hydrodynamic boundary layer profile. In the turbulent layer, the non-dimensional liquids velocity $u_{l}^{+}$ is :
-
-\begin{align}
-u_{l}^{+}=\frac{1}{\kappa} \ln{y^{+}} +B,\ \text{with}\ \kappa=0.41\ \text{and}\ B=5.25
-\end{align}
-
-Since $u_{l}^{+}\parth{y^{+}}=u_{l}\parth{y}/u_{\tau}$ and $y^{+}=yu_{\tau}/\nu_{l}$, we can compute the height of the hydrodynamic boundary layer $\delta_{h}$ where $u_{l}\parth{\delta_{h}}=0.99u_{l,bulk}$ as :
-
-\begin{align}
-\delta_{h}=e^{\kappa \parth{0.99u_{l,bulk}\sqrt{\rho_{l}/\tau_{w}}-B}}\times \nu_{l}\sqrt{\frac{\rho_{l}}{\tau_{w}}}
-\end{align}
-
-where $\tau_{w}$ is computed using the Mac Adams correlation (Eq. \ref{eq:MacAdams}).
+\begin{equation}
+R\parth{t} = K\Ja_{w} \sqrt{\eta_{L}t}
+\end{equation}
+with value of $K$ laying roughly between 0.1 and 2 depending on the boiling conditions.
 
 \npar
 
-Finally, to get an approximation of the thermal boundary layer thickness, we consider a simple first approach as :
+With a given departure radius $R_{d}$, the bubble growth time until departure from nucleation site $t_{g,d}$ quan be estimated as:
 
-\begin{align}
-\delta=\frac{1}{\Pr_{l}}\delta_{h}
-\end{align}
+\begin{equation}
+t_{g,d} = \parth{\frac{R_{d}}{K \Ja_{w}}}^{2} \frac{1}{\pi \eta_{L}}
+\label{eq:tg_dep}
+\end{equation}
 
-Since the Prandtl number is the ratio of momentum diffusivity to thermal diffusivity, its inverse shall approximately scale the ratio between the thermal boundary layer and hydrodynamic boundary layer thickness. 
+\begin{note*}{}
+If precise estimations of the thermal boundary layer thickness is achievable, the new analytic expression of the bubble growth proposed in Eq. \ref{eq:exp_growth} can be used to express the growth time:
 
-\npar
-
-\subsection{Estimation of $t{g}$ against experimental data}
-
-In order to assess the proposed approach to compute $t_{g}$, we compare the yielded results with data taken from Unal of maximum bubble growth. 
-
-\npar
-
-Only 6 measurements of maximum growth time are available ({\color{red} Je vais en ajouter d'autres par la suite}) but they are associated with the bubble lift-off diameter. Since those measurements were conducted with boiling water on stainless steel, we set the contact angle at $\alpha=80\degree$.
+\begin{equation}
+t_{g,d} = \crocht{\frac{1}{K_{a}} \ln{1-\sqrt{1-\dfrac{R_{d}}{R_{\infty}}} } }^{2}
+\end{equation}
+with $K_{a}$ defined as in Eq. \ref{eq:coeff_expgrowth} and $R_{\infty}$ in Eq. \ref{eq:exp_growth}.
 
 \npar
-
-We also compare the predictions with the model proposed by Kommajosyula :
-
-\begin{align}
-t_{g}&=\parth{ \frac{D_{d}}{4K}}^{2}\\
-K&=\frac{\sqrt{\eta_{l}} \Ja_{w}}{0.804\sqrt{\Pr_{l}}}+\chi 1.95\Ja_{w} \eta_{l},\ \text{with}\ \chi=A-B\zeta
-\end{align}
-where $\zeta=\Ja_{l}/\Ja_{w}$ and both $A=1.55$ and $B=0.05$ have been fitted over the data of Klausner by Mazzocco \etal.
-
-\npar
-
-The results are displayed on Figure \ref{fig:comp_modelKomm}.
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.6\linewidth]{img/tg/comp_tg_unal.png}
-\caption{Comparison of the proposed model and Kommajoyusla model against experimental data from Unal. Black lines represent the $\pm 50\%$ error bars.}
-\label{fig:comp_modelKomm}
-\end{figure}
-
-As we can see, the average error from our model is greater than Kommajosyula's one. However, this is mainly due to the highest measured growth time (upper right point). Without this measurement, the average error reaches $52.5\%$, indicating that a much greater number of experimental measurements should be needed properly evaluate each model.
-
-\npar
-On the other hand, we may consider that the proposed approach could be of interest since it is not based on data-fitted parameters while providing reasonable results.
-
-
-
-\begin{table}[h!]
-
-%\begin{changemargin}{-1cm}{0cm}
-
-\noindent\makebox[\textwidth]{
-
-\scriptsize
-\centering
-\begin{tabular}{p{20mm}|c c c c c c c c} 
-Author & Fluid & $D_{h}$ [mm] & $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K] & $\phi_{w}$ [kW/m\up{2}] & $\Delta T_{w}$ [K] & $D_{d}$ [mm] ($N_{mes}$)\\
-\hline
-\\
-
-Maity \cite{maity_effect_2000} \newline (2000) & Water & 20 & 1.01 & 0 - 239.6 & 0.3 - 0.7 & N.A. & 5 - 5.9 & 0.788 - 1.71 (9) \\
-
-Kossolapov \cite{kossolapov_experimental_2021} \newline (2021) & Water & 20 & 20 - 40 & 500 - 1500 & 0.3 - 0.7 & N.A. & 5 - 5.9 & 0.788 - 1.71 (9) \\
-
-\hline
-\end{tabular}
-}
-
-
-\caption{Bubble growth time data in vertical flow boiling}
-\label{tab:tg_exp_data}
-
-%\end{changemargin}
-
-\end{table}
+This formulation requires $R_{d} < R_{\infty}$ the equilibrium radius in subcooled pool boiling. Though this condition seems logical physically speaking, it can't be ensured numerically due to the range of values attainable using correlations or other mechanistic models to estimate $R_{d}$.
+\end{note*}
 
 \section{Bubble Wait Time}
 
 The wait time between two nucleation events on an active site corresponds to the time needed for the thermal boundary layer to reconstruct after its disruption due to bubble departure from the nucleation site. This process is then intrinsically related to the heater properties and the transient heat transfer with the external liquid flow.
 
-\npar
 
-Traditional approaches of the wait time estimation rely on the analytic solution to the transient heat transfer in a semi-infinite medium:
+
+\subsection{Existing Models}
+
+\subsubsection{Analytic Approaches}
+
+Traditional approaches of the wait time estimation rely on the analytic solution to the transient heat transfer in a semi-infinite medium. Assuming that after bubble departure liquid at $T_{L,bulk}$ is displaced towards the wall at $T_{w}$, one can solve the the differential problem with the initial and boundary conditions:
+
+\begin{align}
+T_{L}\parth{y,0} &= T_{L,bulk},\ \forall y >0\\
+T_{L}\parth{0,0} &= T_{w},\ \forall t > 0
+\end{align}
+
+\begin{align}
+\left. \begin{array}{r} 
+T_{L}\parth{y,0} &= T_{L,bulk},\ \forall y >0\\[1ex]
+T_{L}\parth{0,0} &= T_{L,bulk},\ \forall y >0
+\end{array} \right\} 
+=\pi_b/2
+\end{align}
+
+The solution of this heat transfer problem if given by:
 
 
 \begin{equation}
-T_{L}\parth{y,t} - T_{L,bulk} = \parth{\Delta T_{w} + \Delta T_{L}}\erfc{\frac{y}{2\sqrt{\eta_{L}t}}}
+T_{L}\parth{y,t} = T_{L,bulk} + \parth{\Delta T_{w} + \Delta T_{L}}\erfc{\frac{y}{2\sqrt{\eta_{L}t}}}
+\label{eq:TL_transient}
 \end{equation}
 
 For instance, Mikic \& Rohsenow \cite{mikic_bubble_1970} combine this solution with the assumption that a new nucleation will occur over a cavity of radius $R_{c}$ when the vapor temperature reaches:
 
 \begin{equation}
-T_{V,nuc} = T_{sat} + \frac{2\sigma T_{sat} \parth{\frac{1}{\rho_{V}} - \frac{1}{\rho_{L}} }}{R_{c}h_{LV}} 
+T_{V,nuc} = T_{sat} + \frac{2\sigma T_{sat} \parth{\dfrac{1}{\rho_{V}} - \dfrac{1}{\rho_{L}} }}{R_{c}h_{LV}}
+\label{eq:TVnuc_Mikic} 
 \end{equation} 
 
-The wait time is then assumed to be the time needed for the transient temperature field to reach $T_{V,nuc}$ at height $y=R_{c}$. Combining the two previous equations allow to write:
-
-\begin{equation}
-t_{w} = \frac{1}{4\eta_{L}}\crocht{ \frac{R_{c}}{\erfcrec{ \dfrac{\Delta T_{L}}{\Delta T_{L} + \Delta T_{w}} + \dfrac{2\sigma T_{sat} \parth{\dfrac{1}{\rho_{V}} - \dfrac{1}{\rho_{L}}} }{ \parth{\Delta T_{w} + \Delta T_{L}}h_{LV}R_{c} } } } }^{2} \approx \frac{1}{\pi \eta_{L}}\crocht{\frac{ \parth{\Delta T_{w} + \Delta T_{L}}R_{c} }{\Delta T_{w} - \dfrac{2\sigma T_{sat} \parth{\dfrac{1}{\rho_{V}} - \dfrac{1}{\rho_{L}}} }{R_{c} h_{LV}} } }^{2}
-\end{equation}
-
-This expression needs an estimation of the cavity radius where bubbles nucleate, for which the following expression is proposed by Gilman \cite{gilman_phd}:
-
-\begin{equation}
-R_{c} = \frac{2\sigma \parth{1 + \dfrac{\rho_{V}}{\rho_{L}} } / P}{\exp{h_{LV} \dfrac{\Delta T_{w}}{R_{g}T_{w}T_{sat}}} - 1}
-\end{equation}
-
-
-Similarly, Yeoh \etal \cite{yeoh_fundamental_2008} propose an improved expression that accounts for the contact angle value:
+The wait time is then assumed to be the time needed for the transient temperature field to reach $T_{V,nuc}$ at height $y=R_{c}$ \ie $T_{L}\parth{R_{c},t_{w}}=T_{V,nuc}$. Combining Eq. \ref{eq:TL_transient} and \ref{eq:TVnuc_Mikic} allow to write:
 
 \begin{align}
-t_{w} &= \frac{1}{\pi \eta_{L}}\crocht{ \frac{\Delta T_{L} C_{1} R_{c}}{\Delta T_{w} - \dfrac{2\sigma T_{sat}}{C_{2}\rho_{V}h_{LV}R_{c}}}  }^{2} \\
+t_{w} &= \frac{1}{4\eta_{L}} \crocht{ \frac{R_{c}}{\erfcrec{ \dfrac{\Delta T_{L}}{\Delta T_{L} + \Delta T_{w}} + T_{sat} \parth{\dfrac{1}{\rho_{V}} - \dfrac{1}{\rho_{L}}}\dfrac{2\sigma }{ \parth{\Delta T_{w} + \Delta T_{L}}h_{LV}R_{c} } } } }^{2}\\
 %
-R_{c} &= \sqrt{\dfrac{1}{C_{1}C_{2}} \dfrac{2 \sigma T_{sat} \lambda_{L}}{\rho_{V}h_{LV}\phi_{w}}}\\
+& \approx \frac{1}{\pi \eta_{L}}\crocht{\frac{ \parth{\Delta T_{w} + \Delta T_{L}}R_{c} }{\Delta T_{w} - T_{sat} \parth{\dfrac{1}{\rho_{V}} - \dfrac{1}{\rho_{L}}}\dfrac{2\sigma  }{R_{c} h_{LV}} } }^{2}
+\label{eq:twait_mikic}
+\end{align}
+
+Using the same approach, Han \& Griffith \cite{han_griffith_tw} use the same expression of the transient liquid temperature field but consider $T_{L}\parth{\dfrac{3}{2}R_{c},t_{w}}=T_{V,nuc}$, which yields a wait time that is $\dfrac{9}{4}$ times Eq. \ref{eq:twait_mikic}.
+
+\npar
+
+Later, Yeoh \etal followed a similar derivation to propose an expression of the wait time that accounts for the contact angle value:
+
+\begin{align}
+t_{w} &= \frac{1}{\pi \eta_{L}}\crocht{ \frac{\parth{\Delta T_{L} + \Delta T_{w}} C_{1} R_{c}}{\Delta T_{w} - \dfrac{2\sigma T_{sat}}{C_{2}\rho_{V}h_{LV}R_{c}}}  }^{2}
+\label{eq:twait_yeoh}\\
 %
 C_{1} &= \frac{1 + \cos{\theta} }{\sin{\theta}}\ ;\ C_{2} = \frac{1}{\sin{\theta}}
 \end{align}
 
+\npar
 
-Formulation of Basu \etal \cite{basu_heat_2005}:
+All those analytical approaches present one pivotal parameter: the activated cavity radius $R_{c}$. It is a very complicated parameter to evaluate since it can vary by decades depending on the flow conditions and the boiling surface morphology. 
+
+\npar
+
+Among existing expressions of $R_{c}$, we have:
+
+\begin{align}
+R_{c} &= \frac{2\sigma T_{sat}}{\rho_{V}h_{LV}\Delta T_{w}},\ \text{used by Han \& Griffith}
+\label{eq:rc_han}\\
+%
+R_{c} &= \sqrt{\dfrac{1}{C_{1}C_{2}} \dfrac{2 \sigma T_{sat} \lambda_{L}}{\rho_{V}h_{LV}\phi_{w}}}, \ \text{used by Yeoh \etal}
+\label{eq:rc_yeoh}\\
+%
+R_{c} &= \frac{2\sigma\parth{1+ \dfrac{\rho_{V}}{\rho_{L}} } / P}{\exp{h_{LV} \dfrac{\Delta T_{w}}{R_{g}T_{w}T_{sat}} }}, \ \text{used by Hibiki \& Ishii}
+\label{eq:rc_hibiki}
+\end{align}
+
+\begin{remark*}{}
+Those analytic expressions do not include the influence of an external liquid velocity, which could have an impact over the wait time since it modifies the hydrodynamics controlling the reconstruction of the thermal boundary layer. In particular, turbulent flows could induce a larger mixing effect between the bulk and the wall thus increasing the time needed to reach sufficient superheat to allow a new nucleation to occur.
+\end{remark*}
+
+
+
+\subsubsection{Empirical Correlations}
+
+Alternatively, other authors considered the wait time estimation through empirical correlations based on data-fitting on given measurements. For instance, Basu \etal \cite{basu_wall_2005} proposed:
 
 \begin{equation}
 t_{w} = 139.1\Delta {T_{w}}^{-4.1}
 \end{equation}
+based on low pressure and low liquid velocity experiments.
 
 
-Formulation of Kommajosyula \cite{komma}:
+\npar
 
+More recently, Kommajosyula \cite{kommajosyula_development_2020} included the effect of the liquid subcooling through the liquid Jakob number $\Ja_{L}$ as:
 \begin{equation}
 t_{w} = 0.061\frac{{\Ja_{L}}^{0.63}}{\Delta T_{w}}
 \end{equation}
 
 \begin{remark*}
-Kommajosyula's correlation yields a zero wait time when bulk liquid approaches saturation. This behavior is questionable 
+This expression will yield $t_{w}=0$ for saturated boiling conditions, which is hardly reasonable since a non-zero wait time exists between two nucleation events even at saturation \cite{gerardi_ijhmt_2010}.
 \end{remark*}
 
-Mikic \& Rosenhow analytical expression \cite{mikic}:
-
-\begin{align}
-t_{w} = \frac{1}{\pi \eta_{L}}\crocht{ \frac{\parth{\Delta T_{w}+ \Delta T_{L}}R_{c}}{\Delta T_{w} - T_{sat} \parth{\dfrac{1}{\rho_{V}}-\dfrac{1}{\rho_{L}}} \dfrac{2\sigma}{h_{LV}R_{c}} } }^{2}
-\end{align}
-
-A relevant
 
 
+\subsection{Experimental Measurements}
+
+To try to assess the proposed expressions of the bubble wait time, we rely on some experimental measurements available in the literature from Basu \etal \cite{basu_wall_2005}, Richenderfer \cite{richenderfer_phd} and Kossolapov \cite{kossolapov_experimental_2021}. The boiling conditions of the data are summed up on Table \ref{tab:tw_exp_data}.
 
 \begin{table}[h!]
 
@@ -386,32 +343,119 @@ A relevant
 
 \scriptsize
 \centering
-\begin{tabular}{p{20mm}|c c c c c c c c} 
-Author & Fluid & $D_{h}$ [mm] & $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K] & $\phi_{w}$ [kW/m\up{2}] & $\Delta T_{w}$ [K] & $D_{d}$ [mm] ($N_{mes}$)\\
+\begin{tabular}{p{20mm}|c c c c c c c} 
+Author & Fluid & $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K] & $\phi_{w}$ [MW/m\up{2}] & $\Delta T_{w}$ [K] & $t_{w}$ [ms] ($N_{mes}$)\\
 \hline
 \\
 
-Basu \etal \cite{basu_heat} \newline (2005) & Water & 20 & 1.01 & 0 - 239.6 & 0.3 - 0.7 & N.A. & 5 - 5.9 & 0.788 - 1.71 (9) \\
+Basu \etal \cite{basu_wall_2005} \newline (2005) & Water & 1.01 & 346.0 & 8.35 - 46.5 & N.A. & 9.83 - 17.5 & 0.797 - 13.3 (19) \\
 \\
 
-Richenderfer \etal \cite{richenderfer_investigations_2018} \newline (2018) & Water & 20 & 1.01 & 0 - 239.6 & 0.3 - 0.7 & N.A. & 5 - 5.9 & 0.788 - 1.71 (9) \\
+Richenderfer \cite{richenderfer_phd} \newline (2018) & Water & 1 - 2 & 1000 - 2000 & 5 - 20 & 0.74 - 7.13 & N.A. & 0.914 - 6.02 (259) \\
 \\
 
-Kossolapov \etal \cite{kossolapov_experimental_2021} \newline (2021) & Water & 20 & 1.01 & 0 - 239.6 & 0.3 - 0.7 & N.A. & 5 - 5.9 & 0.788 - 1.71 (9) \\
+Kossolapov \cite{kossolapov_experimental_2021} \newline (2021) & Water & 10.5 & 500 - 2000 & 10 & N.A. & 0.12 - 25.9 & 6.13 - 85.9 (33) \\
 \\
 \hline
 \end{tabular}
 }
 
-\caption{Bubble wait time data in vertical flow boiling}
+\caption{Bubble wait time data in vertical flow boiling. Wall superheat for Richenderfer data are estimated using Frost \& Dzakowic correlation (Eq. \ref{eq:frost}).}
 \label{tab:tw_exp_data}
-
 
 %\end{changemargin}
 
 \end{table}
 
+The experimental data are all using water as working fluid. We can see at first glance that values measured by Kossolapov are nearly a decade larger compared to the other experiments. This may be an effect of pressure due to:
 
+\begin{itemize}
+\item The bubbles that are smaller and depart nearly right after nucleation, leaving wait time as the main part of the nucleation cycle ;
+\item The wall Jakob number values that are smaller ;
+\item The heterogeneity in nucleation sites behavior (their number increasing with pressure), with sites exhibiting very large wait time due to their very low nucleation frequency versus very active sites that contributes much more to the overall nucleation. Averaging over those events as done by Kossolapov \cite{kossolapov_experimental_2021} may result in a large wait time.
+\end{itemize}
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\linewidth]{img/tw/Jaw_tw.pdf}
+\caption{Evolution of the wait time values with the wall Jakob number.}
+\label{fig:tw_Jaw}
+\end{figure}
+
+On Figure \ref{fig:tw_Jaw}, we show the evolution of the measures wait times with the wall Jakob number. We can see that the lower values of Jakob number actually correspond to lower wait times, which seem to confirm the previous assumptions.
+
+\npar
+
+Moreover, we see that there is a steep decrease of the wait time with $\Ja_{w}$. The slope however changes depending on the data set, which would logically depend on the heater thermal properties as well as on the operating fluid. It seems that the slope followed by Kossolapov data at 10 bar seem to align with that of Richenderfer data at 2 bar, which would exhibit a sort of coherency between those two data sets.
+
+On the contrary, values at 1 bar from Basu do not clearly match with Richenderfer data at 1 bar.
+
+\npar
+
+The data sets from Kossolapov and Richenderfer also give the associated frequency to each wait time measurement. This allows to plot the product $t_{w} \times f$ to evaluate the proportion of the nucleation cycle occupied by wait time. The value of $t_{w} \times f$ would physically be expected to tend to $1$ when $\Delta T_{w} \to 0$ (higly reduced nucleation) and to $0$ when $\Delta T_{w} \to \infty$ due to the intense nucleation and increased transient heat transfer under the high temperature gradient between the wall and the fluid. Experimental values are plotted on Figure \ref{fig:twf_Jawred} versus the reduced Jakob number values to regroup the values by excluding the influence of the density ratio $\rho_{L}/\rho_{V}$.
+
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\linewidth]{img/tw/Jawred_twf.pdf}
+\caption{Evolution of the product $t_{w} \times f$ with the reduced Jakob number. Trend line is $t_{w} f = \dfrac{1}{1+0.05\exp{35\Ja_{w}^{*}}}$.}
+\label{fig:twf_Jawred}
+\end{figure}
+
+We can see that for lower values of $\Ja_{w}^{*}$, the product $t_{w} \times f$ starts to tend to $1$. For higher values, a linear decrease seem to be the general trend of the measurements. However, it can't decrease linearly forever, which is why the trend on Figure \ref{fig:twf_Jawred} extrapolated to higher values of $\Ja_{w}^{*}$ looks like a sigmoid in order to approach zero for large superheats. Nevertheless, we clearly lack of measurements at larger values of $\Ja_{w}^{*}$ to confirm this supposed trend.
+
+\begin{remark*}{}
+The range of values attained by the product $t_{w} \times f$ can vary from 1 down to 0.5 on the chosen experimental data. This clearly shows that the relation between the wait time and the growth time is not straightforward as assumed in some works who neglects the growth time or suppose a constant relationship such as $t_{w}=3t_{g}$\cite{han_griffith}.
+
+\npar
+Moreover the boiling conditions range covered by the data are not that exhaustive, leaving room for even larger ranges of $t_{w} \times f$ with different fluids and heater material for instance.
+\end{remark*}
+
+\subsection{Evaluation of the Models}
+
+Using the data of Table \ref{tab:tw_exp_data} to evaluate the different approaches presented above, we obtain the results presented on Figures \ref{fig:tw_pred_correl} and \ref{fig:tw_pred_anal}.
+
+
+\begin{figure}
+\centering
+\subfloat[Basu \etal correlation]{
+\includegraphics[width=0.5\linewidth]{img/tw/tw_Basu.pdf}
+}
+\subfloat[Kommajosyula correlation]{
+\includegraphics[width=0.5\linewidth]{img/tw/tw_Komma.pdf}
+}
+\caption{Predictions using the correlations. $\pm 50\%$ dashed lines are represented.}
+\label{fig:tw_pred_correl}
+\end{figure}
+
+\npar
+The correlation of Basu \etal naturally performs well on their own data but largely underestimates the wait time for Richenderfer and Kossolapov data. Kommajosyula's formulation produces better results on the low pressure cases, particularly on Richenderfer cases. However, it fails to capture the increase in $t_{w}$ for Kossolapov data and largely underestimates them.
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\linewidth]{img/tw/twYeoh_RcHan.pdf}
+\caption{Yeoh \etal formulation of $t_{w}$ with Han \& Griffith cavity radius. $\pm 50\%$ dashed lines are represented.}
+\label{fig:tw_pred_anal}
+\end{figure}
+
+\npar
+When testing the analytic formulations of the wait time, we tested different combinations of ($t_{w}$, $R_{c}$) expressions. Overall, we saw that the results were strongly dependent on the value of the cavity radius with values that can change by decades depending on the chosen formulation.
+
+\npar
+At last, it appeared that choosing the Yeoh \etal expression of $t_{w}$ (Eq. \ref{eq:twait_yeoh}) along with the cavity radius of Han \& Griffith (Eq. \ref{eq:rc_han}) resulted in good results in average over the three chosen datasets. As we can see on Figure \ref{fig:tw_pred_anal}, it produces overall better results compared to the correlation. Moreover, we used contact angle values that were representative of each experimental conditions according to each author:
+
+\begin{itemize}
+\item $\theta = 31 \degree$ for Basu \etal data \cite{basu_wall_2005-1} ;
+\item $\theta = 72 \degree$ for Richenderfer data \cite{richenderfer_phd};
+\item $\theta = 80 \degree$ for Kossolapov data \cite{kossolapov_experimental_2021}.
+\end{itemize} 
+
+The fact that the analytic expression is able to correctly predict the large range of $t_{w}$ values from the different experiments is encouraging since it is based on a physical approach contrary to correlations which mainly relies on data-fitting.
+
+\textbf{To conclude, it seems appropriate to use the wait time formulation of Yeoh \etal along with expressing cavity radius using Han \& Griffith estimation.}
 
 \section{Nucleation Site Density}
 
