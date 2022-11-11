@@ -6,6 +6,8 @@
 
 %----------------------------------------------------------------------------------------
 
+\minitoc
+
 
 \section{Single-Phase Heat Transfer Coefficient}
 
@@ -238,13 +240,13 @@ T_{L}\parth{y,0} &= T_{L,bulk},\ \forall y >0\\
 T_{L}\parth{0,0} &= T_{w},\ \forall t > 0
 \end{align}
 
-\begin{align}
-\left. \begin{array}{r} 
-T_{L}\parth{y,0} &= T_{L,bulk},\ \forall y >0\\[1ex]
-T_{L}\parth{0,0} &= T_{L,bulk},\ \forall y >0
-\end{array} \right\} 
-=\pi_b/2
-\end{align}
+%\begin{align}
+%\left. \begin{array}{r} 
+%T_{L}\parth{y,0} &= T_{L,bulk},\ \forall y >0\\[1ex]
+%T_{L}\parth{0,0} &= T_{L,bulk},\ \forall y >0
+%\end{array} \right\} 
+%=\pi_b/2
+%\end{align}
 
 The solution of this heat transfer problem if given by:
 
@@ -463,7 +465,7 @@ The Nucleation Site Density is among the most influencing parameters over the HF
 
 However, the value of $N_{sit}$ is actually influenced by many parameters being either linked to thermal-hydraulics (wall temperature, pressure, operating fluid) or the heater material (roughness, wettability). That is why its value is often estimated through empirical correlations, for which many different expression have been proposed over the years since the end of the XX\textsuperscript{th} century.
 
-\npar
+\subsection{Existing Correlations}
 
 One of the firstly identified behavior of the NSD was its power dependency with the wall superheat ($N_{sit} \propto {\Delta T_{w}}^{m}$), which is form adopted in the correlation of Lemmert \& Chawla \cite{lemmert} : 
 
@@ -561,7 +563,7 @@ with $P$ in MPa, $\theta_{0}$ the contact angle at room temperature $T_{0}$, and
 We can question the absence of bulk liquid velocity and temperature in the presented law since they should logically influence the nucleation process. However, this impact is rather limited as observed in experimental measurements of Zhou \etal and Kossolapov.
 \end{remark*}
 
-\npar
+\subsection{Comparison with Experimental Measurements}
 
 In order to assess existing NSD correlations and choose the most pertinent to include in a HFP model, we gather NSD measurements from 4 different authors. The different operating conditions of the chosen data sets are gathered on Table \ref{tab:nsit_exp_data}.
 
@@ -648,9 +650,11 @@ The coherency of NSD predictions is hard to ensure since we do not know the exac
 All things considered, those comparisons show that the Nucleation Site Density remains among the most difficult quantity to evaluate because of its very large variations over experiments, boiling surfaces and flow conditions. Dedicated correlations are hardly precise outside of their establishment databases. However, it remains the best yet only way to compute $N_{sit}$. \textbf{In that regard, the NSD correlation of Li \etal appears to be the most coherent choice.}
 
 
-\section{Considerations on bubble interaction and nucleation sites deactivation}
+\section{Considerations on Bubble Interactions and Nucleation Sites Deactivation}
 
-NSD correlation actually compute the total number of sites where bubbles can nucleate on a surface. However, they do not represent how important a nucleation site will be in term of bubbles generation compared to another. 
+NSD correlations actually estimate the total number of sites where bubbles can nucleate on a surface. However, experimental observations showed that nucleation sites exhibit different behavior 
+
+they do not represent how important a nucleation site will be in term of bubbles generation compared to another. 
 
 \npar
 In fact, Kossolapov has observed that each nucleation site has its own bubble nucleation frequency. Thus implying that some sites play a much greater role in wall nucleation compared to others. One can even consider that some nucleation sites can be neglected regarding their small impact on the whole phase change process.
