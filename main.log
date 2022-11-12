@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.18)  12 NOV 2022 16:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.18)  12 NOV 2022 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -777,7 +777,7 @@ Package epstopdf Warning: No graphics package `graphic{s,x}' loaded.
 Class scrreprt Warning: Usage of package `minitoc' together
 (scrreprt)              with a KOMA-Script class is not recommended.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `minitoc' on input line 118.
+(scrreprt)              package `minitoc' on input line 119.
 
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/minitoc\minitoc.sty
 Package: minitoc 2018/07/12 v62 Package minitoc
@@ -839,7 +839,7 @@ Package minitoc Info: I0010
 File: english.mld 2006/01/13
 ))
 Class scrreprt Info: Deactivating the `minitoc' workaround for `\@sect',
-(scrreprt)           because it is not needed on input line 118.
+(scrreprt)           because it is not needed on input line 119.
 
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
 \UL@box=\box104
@@ -1790,7 +1790,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks54
 \@floatcapt=\box136
 )
-Package scrhack Info: loading float hack on input line 233.
+Package scrhack Info: loading float hack on input line 234.
 
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\float.hak
 File: float.hak 2022/07/04 v3.37 KOMA-Script scrhack part (hacking package floa
@@ -1843,15 +1843,15 @@ File: lstlang3.sty 2020/03/24 1.8d listings language file
 ) (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 291.
-Package hyperref Info: Option `linktocpage' set `true' on input line 291.
-Package hyperref Info: Option `breaklinks' set `true' on input line 291.
-Package hyperref Info: Option `pageanchor' set `true' on input line 291.
-Package hyperref Info: Option `plainpages' set `false' on input line 291.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 291.
+Package hyperref Info: Option `colorlinks' set `true' on input line 292.
+Package hyperref Info: Option `linktocpage' set `true' on input line 292.
+Package hyperref Info: Option `breaklinks' set `true' on input line 292.
+Package hyperref Info: Option `pageanchor' set `true' on input line 292.
+Package hyperref Info: Option `plainpages' set `false' on input line 292.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 292.
 
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 291.
-Package hyperref Info: Option `hypertexnames' set `true' on input line 291.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 292.
+Package hyperref Info: Option `hypertexnames' set `true' on input line 292.
  (classicthesis.sty
 Package: classicthesis 2015/09/06 v4.2 Typographic style for a classic-looking 
 thesis
@@ -4372,227 +4372,103 @@ LaTeX Warning: Reference `eq:utau_macadams' on page 91 undefined on input line
 LaTeX Warning: Reference `chap:debora' on page 92 undefined on input line 155.
 
 
-LaTeX Warning: Citation 'kurul_podowski' on page 92 undefined on input line 165
-.
-
-
-LaTeX Warning: Citation 'ncfd_hfp' on page 92 undefined on input line 165.
-
-
-LaTeX Warning: Citation 'shaver_podowski' on page 92 undefined on input line 16
-5.
-
-
-Overfull \hbox (18.03673pt too wide) in paragraph at lines 165--166
-[]\T1/lmr/m/n/10 In wall boil-ing model that do not con-sider bub-ble slid-ing 
-[[], [], []]
- []
+LaTeX Warning: Citation 'lemmert' on page 92 undefined on input line 172.
 
 [92 <./img/single_phase/comp_ncfd.pdf> <./img/single_phase/comp_gniel_corr.pdf>
-] [93]
-
-LaTeX Warning: Citation 'han_griffith_tw' on page 94 undefined on input line 27
-9.
-
-[94]
-
-LaTeX Warning: Citation 'basu_wall_2005' on page 95 undefined on input line 319
-.
+]
+<img/NSD/nsd_press_koss.png, id=3769, 1209.51875pt x 296.60812pt>
+File: img/NSD/nsd_press_koss.png Graphic file (type png)
+<use img/NSD/nsd_press_koss.png>
+Package pdftex.def Info: img/NSD/nsd_press_koss.png  used on input line 187.
+(pdftex.def)             Requested size: 318.66953pt x 78.14366pt.
 
 
-LaTeX Warning: Citation 'gerardi_ijhmt_2010' on page 95 undefined on input line
- 335.
+LaTeX Warning: Citation 'borishanskii' on page 93 undefined on input line 194.
 
 
-LaTeX Warning: Citation 'basu_wall_2005' on page 95 undefined on input line 342
-.
+LaTeX Warning: Citation 'hibiki_ishii' on page 93 undefined on input line 194.
 
 
-LaTeX Warning: Citation 'richenderfer_phd' on page 95 undefined on input line 3
-42.
+LaTeX Warning: Citation 'gilman_baglietto' on page 93 undefined on input line 2
+09.
 
-
-LaTeX Warning: Citation 'basu_wall_2005' on page 95 undefined on input line 367
-.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--367
-[]|\T1/lmr/m/n/7 Basu \T1/lmr/m/it/7 et al.
- []
-
-
-Overfull \hbox (13.10219pt too wide) in paragraph at lines 367--367
-\T1/lmr/m/n/7 [[]] 
- []
-
-
-LaTeX Warning: Citation 'richenderfer_phd' on page 95 undefined on input line 3
-67.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--367
-[]|\T1/lmr/m/n/7 Richenderfer
- []
-
-
-Overfull \hbox (17.34647pt too wide) in paragraph at lines 367--367
-\T1/lmr/m/n/7 [[]] 
- []
-
-<img/tw/Jaw_tw.pdf, id=3810, 427.43353pt x 319.61363pt>
-File: img/tw/Jaw_tw.pdf Graphic file (type pdf)
-<use img/tw/Jaw_tw.pdf>
-Package pdftex.def Info: img/tw/Jaw_tw.pdf  used on input line 387.
-(pdftex.def)             Requested size: 273.14928pt x 204.2594pt.
+<img/NSD/wettability.pdf, id=3773, 488.51007pt x 174.81712pt>
+File: img/NSD/wettability.pdf Graphic file (type pdf)
+<use img/NSD/wettability.pdf>
+Package pdftex.def Info: img/NSD/wettability.pdf  used on input line 218.
+(pdftex.def)             Requested size: 390.8086pt x 139.85387pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[95]
-<img/tw/Jawred_twf.pdf, id=3820, 426.20534pt x 319.22775pt>
-File: img/tw/Jawred_twf.pdf Graphic file (type pdf)
-<use img/tw/Jawred_twf.pdf>
-Package pdftex.def Info: img/tw/Jawred_twf.pdf  used on input line 408.
-(pdftex.def)             Requested size: 273.14928pt x 204.59245pt.
- [96 <./img/tw/Jaw_tw.pdf> <./img/tw/Jawred_twf.pdf>]
 
-LaTeX Warning: Citation 'han_griffith' on page 97 undefined on input line 416.
-
-<img/tw/tw_Basu.pdf, id=3871, 435.77293pt x 319.55508pt>
-File: img/tw/tw_Basu.pdf Graphic file (type pdf)
-<use img/tw/tw_Basu.pdf>
-Package pdftex.def Info: img/tw/tw_Basu.pdf  used on input line 431.
-(pdftex.def)             Requested size: 227.62209pt x 166.91563pt.
-<img/tw/tw_Komma.pdf, id=3872, 435.77293pt x 319.55508pt>
-File: img/tw/tw_Komma.pdf Graphic file (type pdf)
-<use img/tw/tw_Komma.pdf>
-Package pdftex.def Info: img/tw/tw_Komma.pdf  used on input line 434.
-(pdftex.def)             Requested size: 227.62209pt x 166.91563pt.
-
-Overfull \hbox (13.33331pt too wide) in paragraph at lines 431--435
- [][][][] 
- []
-
-<img/tw/twYeoh_RcHan.pdf, id=3873, 435.77293pt x 319.55508pt>
-File: img/tw/twYeoh_RcHan.pdf Graphic file (type pdf)
-<use img/tw/twYeoh_RcHan.pdf>
-Package pdftex.def Info: img/tw/twYeoh_RcHan.pdf  used on input line 445.
-(pdftex.def)             Requested size: 227.62209pt x 166.91563pt.
-[97 <./img/tw/tw_Basu.pdf> <./img/tw/tw_Komma.pdf
-
-pdfTeX warning: pdflatex (file ./img/tw/tw_Komma.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
-> <./img/tw/twYeoh_RcHan.pdf
-
-pdfTeX warning: pdflatex (file ./img/tw/twYeoh_RcHan.pdf): PDF inclusion: multi
-ple pdfs with page group included in a single page
->]
-
-LaTeX Warning: Citation 'basu_wall_2005-1' on page 98 undefined on input line 4
-57.
+LaTeX Warning: Citation 'basu_nsit' on page 93 undefined on input line 223.
 
 
-LaTeX Warning: Citation 'richenderfer_phd' on page 98 undefined on input line 4
-58.
+LaTeX Warning: Citation 'zhou_nsd' on page 93 undefined on input line 236.
+
+[93 <./img/NSD/nsd_press_koss.png>]
+
+LaTeX Warning: Citation 'li_new_2018' on page 94 undefined on input line 247.
 
 
-LaTeX Warning: Citation 'lemmert' on page 98 undefined on input line 476.
-
-<img/NSD/nsd_press_koss.png, id=3934, 1209.51875pt x 296.60812pt>
-File: img/NSD/nsd_press_koss.png Graphic file (type png)
-<use img/NSD/nsd_press_koss.png>
-Package pdftex.def Info: img/NSD/nsd_press_koss.png  used on input line 491.
-(pdftex.def)             Requested size: 318.66953pt x 78.14366pt.
-
-LaTeX Warning: Citation 'borishanskii' on page 98 undefined on input line 498.
+LaTeX Warning: Citation 'song_fan_contact_angle' on page 94 undefined on input 
+line 247.
 
 
-LaTeX Warning: Citation 'hibiki_ishii' on page 98 undefined on input line 498.
-
-[98 <./img/NSD/nsd_press_koss.png>]
-
-LaTeX Warning: Citation 'gilman_baglietto' on page 99 undefined on input line 5
-13.
-
-<img/NSD/wettability.pdf, id=3944, 488.51007pt x 174.81712pt>
-File: img/NSD/wettability.pdf Graphic file (type pdf)
-<use img/NSD/wettability.pdf>
-Package pdftex.def Info: img/NSD/wettability.pdf  used on input line 522.
-(pdftex.def)             Requested size: 390.8086pt x 139.85387pt.
-
-LaTeX Warning: Citation 'basu_nsit' on page 99 undefined on input line 527.
+LaTeX Warning: Citation 'zhou_nsit' on page 94 undefined on input line 300.
 
 
-LaTeX Warning: Citation 'zhou_nsd' on page 99 undefined on input line 540.
-
-
-LaTeX Warning: Citation 'li_new_2018' on page 99 undefined on input line 551.
-
-
-LaTeX Warning: Citation 'song_fan_contact_angle' on page 99 undefined on input 
-line 551.
-
-[99 <./img/NSD/wettability.pdf>]
-
-LaTeX Warning: Citation 'zhou_nsit' on page 100 undefined on input line 604.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 604--604
+Underfull \hbox (badness 10000) in paragraph at lines 300--300
 []|\T1/lmr/m/n/7 Zhou
  []
 
 
-LaTeX Warning: Citation 'richenderfer' on page 100 undefined on input line 604.
+LaTeX Warning: Citation 'richenderfer' on page 94 undefined on input line 300.
 
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 604--604
+Underfull \hbox (badness 10000) in paragraph at lines 300--300
 []|\T1/lmr/m/n/7 Richenderfer
  []
 
 
-LaTeX Warning: Citation 'borishanskii' on page 100 undefined on input line 604.
+LaTeX Warning: Citation 'borishanskii' on page 94 undefined on input line 300.
 
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 604--604
+Underfull \hbox (badness 10000) in paragraph at lines 300--300
 []|\T1/lmr/m/n/7 Borishanskii
  []
 
-<img/NSD/nsit_LC.pdf, id=3973, 419.82607pt x 321.17284pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<img/NSD/nsit_LC.pdf, id=3794, 419.82607pt x 321.17284pt>
 File: img/NSD/nsit_LC.pdf Graphic file (type pdf)
 <use img/NSD/nsit_LC.pdf>
-Package pdftex.def Info: img/NSD/nsit_LC.pdf  used on input line 624.
+Package pdftex.def Info: img/NSD/nsit_LC.pdf  used on input line 320.
 (pdftex.def)             Requested size: 204.85847pt x 156.72426pt.
-<img/NSD/nsit_HI.pdf, id=3974, 419.82607pt x 321.17284pt>
+<img/NSD/nsit_HI.pdf, id=3795, 419.82607pt x 321.17284pt>
 File: img/NSD/nsit_HI.pdf Graphic file (type pdf)
 <use img/NSD/nsit_HI.pdf>
-Package pdftex.def Info: img/NSD/nsit_HI.pdf  used on input line 628.
+Package pdftex.def Info: img/NSD/nsit_HI.pdf  used on input line 324.
 (pdftex.def)             Requested size: 204.85847pt x 156.72426pt.
-<img/NSD/nsit_Zhou.pdf, id=3975, 419.82607pt x 321.17284pt>
+<img/NSD/nsit_Zhou.pdf, id=3796, 419.82607pt x 321.17284pt>
 File: img/NSD/nsit_Zhou.pdf Graphic file (type pdf)
 <use img/NSD/nsit_Zhou.pdf>
-Package pdftex.def Info: img/NSD/nsit_Zhou.pdf  used on input line 633.
+Package pdftex.def Info: img/NSD/nsit_Zhou.pdf  used on input line 329.
 (pdftex.def)             Requested size: 204.85847pt x 156.72426pt.
-<img/NSD/nsit_Li.pdf, id=3976, 419.82607pt x 321.17284pt>
+<img/NSD/nsit_Li.pdf, id=3797, 419.82607pt x 321.17284pt>
 File: img/NSD/nsit_Li.pdf Graphic file (type pdf)
 <use img/NSD/nsit_Li.pdf>
-Package pdftex.def Info: img/NSD/nsit_Li.pdf  used on input line 637.
+Package pdftex.def Info: img/NSD/nsit_Li.pdf  used on input line 333.
 (pdftex.def)             Requested size: 204.85847pt x 156.72426pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[94 <./img/NSD/wettability.pdf>]
 
-LaTeX Warning: Citation 'Richen_phd' on page 100 undefined on input line 652.
+LaTeX Warning: Citation 'Richen_phd' on page 95 undefined on input line 348.
 
-[100]
-<img/site_interaction/site_f_kossolapov.PNG, id=3990, 1586.17593pt x 675.27281p
-t>
-File: img/site_interaction/site_f_kossolapov.PNG Graphic file (type png)
-<use img/site_interaction/site_f_kossolapov.PNG>
-Package pdftex.def Info: img/site_interaction/site_f_kossolapov.PNG  used on in
-put line 667.
-(pdftex.def)             Requested size: 409.71696pt x 174.42307pt.
- [101 <./img/NSD/nsit_LC.pdf> <./img/NSD/nsit_HI.pdf
+[95 <./img/NSD/nsit_LC.pdf> <./img/NSD/nsit_HI.pdf
 
 pdfTeX warning: pdflatex (file ./img/NSD/nsit_HI.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
@@ -4604,60 +4480,201 @@ e pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./img/NSD/nsit_Li.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
->]
+>] [96]
 
-LaTeX Warning: Citation 'gaertner_1960' on page 102 undefined on input line 686
+LaTeX Warning: Citation 'han_griffith_tw' on page 97 undefined on input line 44
+9.
+
+[97]
+
+LaTeX Warning: Citation 'basu_wall_2005' on page 98 undefined on input line 489
 .
 
 
-LaTeX Warning: Citation 'sultan_1978' on page 102 undefined on input line 686.
+LaTeX Warning: Citation 'gerardi_ijhmt_2010' on page 98 undefined on input line
+ 505.
 
 
-LaTeX Warning: Citation 'kenning_boiling' on page 102 undefined on input line 6
-86.
+LaTeX Warning: Citation 'basu_wall_2005' on page 98 undefined on input line 512
+.
 
 
-Overfull \hbox (5.65184pt too wide) in paragraph at lines 686--687
+LaTeX Warning: Citation 'richenderfer_phd' on page 98 undefined on input line 5
+12.
+
+
+LaTeX Warning: Citation 'basu_wall_2005' on page 98 undefined on input line 537
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
+[]|\T1/lmr/m/n/7 Basu \T1/lmr/m/it/7 et al.
+ []
+
+
+Overfull \hbox (13.10219pt too wide) in paragraph at lines 537--537
+\T1/lmr/m/n/7 [[]] 
+ []
+
+
+LaTeX Warning: Citation 'richenderfer_phd' on page 98 undefined on input line 5
+37.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
+[]|\T1/lmr/m/n/7 Richenderfer
+ []
+
+
+Overfull \hbox (17.34647pt too wide) in paragraph at lines 537--537
+\T1/lmr/m/n/7 [[]] 
+ []
+
+<img/tw/Jaw_tw.pdf, id=4101, 427.43353pt x 319.61363pt>
+File: img/tw/Jaw_tw.pdf Graphic file (type pdf)
+<use img/tw/Jaw_tw.pdf>
+Package pdftex.def Info: img/tw/Jaw_tw.pdf  used on input line 557.
+(pdftex.def)             Requested size: 273.14928pt x 204.2594pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[98]
+<img/tw/Jawred_twf.pdf, id=4112, 426.20534pt x 319.22775pt>
+File: img/tw/Jawred_twf.pdf Graphic file (type pdf)
+<use img/tw/Jawred_twf.pdf>
+Package pdftex.def Info: img/tw/Jawred_twf.pdf  used on input line 578.
+(pdftex.def)             Requested size: 273.14928pt x 204.59245pt.
+ [99 <./img/tw/Jaw_tw.pdf> <./img/tw/Jawred_twf.pdf>]
+
+LaTeX Warning: Citation 'han_griffith' on page 100 undefined on input line 586.
+
+
+<img/tw/tw_Basu.pdf, id=4164, 435.77293pt x 319.55508pt>
+File: img/tw/tw_Basu.pdf Graphic file (type pdf)
+<use img/tw/tw_Basu.pdf>
+Package pdftex.def Info: img/tw/tw_Basu.pdf  used on input line 601.
+(pdftex.def)             Requested size: 227.62209pt x 166.91563pt.
+<img/tw/tw_Komma.pdf, id=4165, 435.77293pt x 319.55508pt>
+File: img/tw/tw_Komma.pdf Graphic file (type pdf)
+<use img/tw/tw_Komma.pdf>
+Package pdftex.def Info: img/tw/tw_Komma.pdf  used on input line 604.
+(pdftex.def)             Requested size: 227.62209pt x 166.91563pt.
+
+Overfull \hbox (13.33331pt too wide) in paragraph at lines 601--605
+ [][][][] 
+ []
+
+<img/tw/twYeoh_RcHan.pdf, id=4166, 435.77293pt x 319.55508pt>
+File: img/tw/twYeoh_RcHan.pdf Graphic file (type pdf)
+<use img/tw/twYeoh_RcHan.pdf>
+Package pdftex.def Info: img/tw/twYeoh_RcHan.pdf  used on input line 615.
+(pdftex.def)             Requested size: 227.62209pt x 166.91563pt.
+[100 <./img/tw/tw_Basu.pdf> <./img/tw/tw_Komma.pdf
+
+pdfTeX warning: pdflatex (file ./img/tw/tw_Komma.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+> <./img/tw/twYeoh_RcHan.pdf
+
+pdfTeX warning: pdflatex (file ./img/tw/twYeoh_RcHan.pdf): PDF inclusion: multi
+ple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Citation 'basu_wall_2005-1' on page 101 undefined on input line 
+627.
+
+
+LaTeX Warning: Citation 'richenderfer_phd' on page 101 undefined on input line 
+628.
+
+
+LaTeX Warning: Citation 'kurul_podowski' on page 101 undefined on input line 65
+0.
+
+
+LaTeX Warning: Citation 'ncfd_hfp' on page 101 undefined on input line 650.
+
+
+LaTeX Warning: Citation 'shaver_podowski' on page 101 undefined on input line 6
+50.
+
+
+Overfull \hbox (18.03673pt too wide) in paragraph at lines 650--651
+[]\T1/lmr/m/n/10 In wall boil-ing model that do not con-sider bub-ble slid-ing 
+[[], [], []]
+ []
+
+<img/site_interaction/site_f_kossolapov.PNG, id=4229, 1586.17593pt x 675.27281p
+t>
+File: img/site_interaction/site_f_kossolapov.PNG Graphic file (type png)
+<use img/site_interaction/site_f_kossolapov.PNG>
+Package pdftex.def Info: img/site_interaction/site_f_kossolapov.PNG  used on in
+put line 693.
+(pdftex.def)             Requested size: 409.71696pt x 174.42307pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[101]
+
+LaTeX Warning: Citation 'gaertner_1960' on page 102 undefined on input line 712
+.
+
+
+LaTeX Warning: Citation 'sultan_1978' on page 102 undefined on input line 712.
+
+
+LaTeX Warning: Citation 'kenning_boiling' on page 102 undefined on input line 7
+12.
+
+
+Overfull \hbox (5.65184pt too wide) in paragraph at lines 712--713
 []\T1/lmr/m/n/10 This has been sup-ported by dif-fer-ent ex-per-i-men-tal ob-se
 r-va-tions such as those of Gaert-ner [[]]
  []
 
-<img/site_interaction/sites_kenning_red.PNG, id=4230, 467.7475pt x 499.8675pt>
+<img/site_interaction/sites_kenning_red.PNG, id=4247, 467.7475pt x 499.8675pt>
 File: img/site_interaction/sites_kenning_red.PNG Graphic file (type png)
 <use img/site_interaction/sites_kenning_red.PNG>
 Package pdftex.def Info: img/site_interaction/sites_kenning_red.PNG  used on in
-put line 698.
+put line 724.
 (pdftex.def)             Requested size: 227.62209pt x 243.25157pt.
-<img/site_interaction/sites_zhou.PNG, id=4233, 1254.93843pt x 666.23906pt>
+<img/site_interaction/sites_zhou.PNG, id=4250, 1254.93843pt x 666.23906pt>
 File: img/site_interaction/sites_zhou.PNG Graphic file (type png)
 <use img/site_interaction/sites_zhou.PNG>
 Package pdftex.def Info: img/site_interaction/sites_zhou.PNG  used on input lin
-e 703.
+e 729.
 (pdftex.def)             Requested size: 318.66953pt x 169.18217pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
-711.
+737.
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
 
 LaTeX Warning: Citation 'Daley_vere-jones_point_processes' on page 102 undefine
-d on input line 711.
+d on input line 737.
 
 [102 <./img/site_interaction/site_f_kossolapov.PNG>] [103 <./img/site_interacti
 on/sites_kenning_red.PNG> <./img/site_interaction/sites_zhou.PNG>]
-<img/site_interaction/static_suppression.pdf, id=4258, 396.72818pt x 131.84258p
+<img/site_interaction/static_suppression.pdf, id=4277, 396.72818pt x 131.84258p
 t>
 File: img/site_interaction/static_suppression.pdf Graphic file (type pdf)
 <use img/site_interaction/static_suppression.pdf>
 Package pdftex.def Info: img/site_interaction/static_suppression.pdf  used on i
-nput line 769.
+nput line 795.
 (pdftex.def)             Requested size: 409.71696pt x 136.16147pt.
 
 
-LaTeX Warning: Citation 'gilman_phd' on page 104 undefined on input line 800.
+LaTeX Warning: Citation 'gilman_phd' on page 104 undefined on input line 827.
+
+
+LaTeX Warning: Reference `fig:NSD_supp' on page 104 undefined on input line 836
+.
+
+
+LaTeX Warning: Reference `eq:static_deact' on page 104 undefined on input line 
+836.
 
 [104 <./img/site_interaction/static_suppression.pdf>] [105]) [106]
 \openout2 = `Chapters/HFP/Chap_NewHFP.aux'.
@@ -4755,13 +4772,13 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-<img/DEBORA-Promoteur/prom_pic.png, id=4335, 217.81375pt x 305.14pt>
+<img/DEBORA-Promoteur/prom_pic.png, id=4358, 217.81375pt x 305.14pt>
 File: img/DEBORA-Promoteur/prom_pic.png Graphic file (type png)
 <use img/DEBORA-Promoteur/prom_pic.png>
 Package pdftex.def Info: img/DEBORA-Promoteur/prom_pic.png  used on input line 
 22.
 (pdftex.def)             Requested size: 81.24123pt x 113.81102pt.
-<img/DEBORA-Promoteur/medium_mesh.PNG, id=4336, 902.6222pt x 514.17094pt>
+<img/DEBORA-Promoteur/medium_mesh.PNG, id=4359, 902.6222pt x 514.17094pt>
 File: img/DEBORA-Promoteur/medium_mesh.PNG Graphic file (type png)
 <use img/DEBORA-Promoteur/medium_mesh.PNG>
 Package pdftex.def Info: img/DEBORA-Promoteur/medium_mesh.PNG  used on input li
@@ -4775,14 +4792,14 @@ LaTeX Warning: Reference `sec:debora' on page 111 undefined on input line 36.
 
  <./img/DEBORA-Promoteur/prom_pic.png> <./img/DEBORA-Promoteur/medium_mesh.PNG>
 ]
-<img/DEBORA-Promoteur/alpha_prom.png, id=4346, 743.6583pt x 296.307pt>
+<img/DEBORA-Promoteur/alpha_prom.png, id=4369, 743.6583pt x 296.307pt>
 File: img/DEBORA-Promoteur/alpha_prom.png Graphic file (type png)
 <use img/DEBORA-Promoteur/alpha_prom.png>
 Package pdftex.def Info: img/DEBORA-Promoteur/alpha_prom.png  used on input lin
 e 58.
 (pdftex.def)             Requested size: 446.19843pt x 177.78557pt.
  [112 <./img/DEBORA-Promoteur/alpha_prom.png>]
-<img/AGATE/test.png, id=4357, 1023.825pt x 1170.3725pt>
+<img/AGATE/test.png, id=4380, 1023.825pt x 1170.3725pt>
 File: img/AGATE/test.png Graphic file (type png)
 <use img/AGATE/test.png>
 Package pdftex.def Info: img/AGATE/test.png  used on input line 91.
@@ -5085,83 +5102,163 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 66406 strings out of 477954
- 1524992 string characters out of 2825277
- 2773740 words of memory out of 3000000
- 82586 multiletter control sequences out of 15000+600000
+ 66431 strings out of 477954
+ 1525362 string characters out of 2825277
+ 2774404 words of memory out of 3000000
+ 82590 multiletter control sequences out of 15000+600000
  654091 words of font info for 222 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,23n,125p,10601b,3330s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{
-C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:
-/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C
-:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/U
-sers/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/
-Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:
-/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Use
-rs/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.
-pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmbx7.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Luczer/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Luczer/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Luczer/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users
-/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pf
+
+pdfTeX warning (dest): name{equation.8.6.36} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.8.4.18} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.8.4.16} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.8.4.15} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.8.4.13} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.8.4.12} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.8.5.30} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.8.5.28} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.8.5.23} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.8.5.24} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.81} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.88} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.85} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.83} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.8.6.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.8.6.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.8.6.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.8.6.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.8.5.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.8.5.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+{C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:
+/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/U
+sers/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/
+Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Use
+rs/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Us
+ers/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/U
+sers/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users
+/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pf
 b><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-extra/cmmib7.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Luczer/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Luczer/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Luczer/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/
-Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
-C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-sy8.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmsy9.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/euler/eurb10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/mathpazo/fplmbb.pfb><C:/Users/Luczer/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/Luczer/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Luczer/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Luczer/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/Luczer/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/Luczer/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Luczer/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Luczer/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Luczer/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Luczer/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/Luczer/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Luczer/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Luczer/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Luczer/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/Luczer/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Luczer/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Luczer/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/Luczer/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Luczer/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Luczer/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Luczer/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/Luczer/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Luczer/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/lm/lmri7.pfb><C:/Users/Luczer/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Users/Luczer/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/Luczer/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/Luczer/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Luczer/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/lm/lmsy5.pfb><C:/Users/Luczer/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Luczer/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Luczer/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Luczer/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/Luczer/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Luczer/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/Luczer/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Lucz
-er/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on main.pdf (149 pages, 18182671 bytes).
+/cmbx12.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmbx7.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Luczer/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Luczer/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Luczer/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/L
+uczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb>
+<C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmex
+tra/cmmib7.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Luczer/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Luczer/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Luczer/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lu
+czer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:
+/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
+8.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsy9.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/euler/eurb10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/font
+s/type1/public/mathpazo/fplmbb.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/mathpazo/fplmr.pfb><C:/Users/Luczer/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Luczer/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Luczer/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/lm/lmbx7.pfb><C:/Users/Luczer/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/lm/lmbx9.pfb><C:/Users/Luczer/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/Luczer/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Luczer/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Luczer/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Luczer/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/Luczer/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Luczer/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Luczer/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Luczer/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/Luczer/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Luczer/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Luczer/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/Luczer/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Luczer/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Luczer/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Luczer/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/Luczer/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Luczer/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmri7.pfb><C:/Users/Luczer/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Users/Luczer/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/Luczer/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/Luczer/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Luczer/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/lm/lmsy5.pfb><C:/Users/Luczer/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Luczer/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Luczer/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Luczer/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/Luczer/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Luczer/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/Luczer/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Luczer
+/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on main.pdf (149 pages, 18186300 bytes).
 PDF statistics:
- 5429 PDF objects out of 6186 (max. 8388607)
- 936 named destinations out of 1000 (max. 500000)
- 55687 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 5460 PDF objects out of 6186 (max. 8388607)
+ 957 named destinations out of 1000 (max. 500000)
+ 55695 words of extra memory for PDF output out of 61914 (max. 10000000)
 

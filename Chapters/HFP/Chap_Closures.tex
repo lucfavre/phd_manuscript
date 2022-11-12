@@ -169,7 +169,7 @@ However, the value of $N_{sit}$ is actually influenced by many parameters being 
 
 \subsection{Existing Correlations}
 
-One of the firstly identified behavior of the NSD was its power dependency with the wall superheat ($N_{sit} \propto {\Delta T_{w}}^{m}$), which is form adopted in the correlation of Lemmert \& Chawla \cite{lemmert} : 
+One of the firstly identified behavior of the NSD was its power dependency with the wall superheat ($N_{sit} \propto {\Delta T_{w}}^{m}$), which is form adopted in the correlation of Lemmert \& Chawla \cite{lemmert_influence_1977} : 
 
 \begin{align}
 N_{sit}=\crocht{210\parth{T_{w}-T_{sat}}}^{1.8}
@@ -191,7 +191,7 @@ However, such an expression misses the influence of other parameters such as pre
 
 \npar
 
-Moreover, experimental measurements such as in Borishanskii \cite{borishanskii} showed that the power dependency on the wall superheat changes by increasing both with pressure and the superheat value itself. This was accounted for by Hibiki \& Ishii in 2003 \cite{hibiki_ishii} who came up with a new correlation that requires an estimation of the minimum activated cavity radius $R_{c}$ : 
+Moreover, experimental measurements such as in Borishanskii \cite{borishanskii_heat_1969} showed that the power dependency on the wall superheat changes by increasing both with pressure and the superheat value itself. This was accounted for by Hibiki \& Ishii in 2003 \cite{hibiki_active_2003} who came up with a new correlation that requires an estimation of the minimum activated cavity radius $R_{c}$ : 
 
 
 \begin{align}
@@ -206,7 +206,7 @@ with $R_{g}$ the perfect gas constant times the molar mass of the fluid,  $N_{0}
 
 
 \begin{remark*}{}
-This law is used in the HFP model of Gilman \& Baglietto \cite{gilman_baglietto}.
+This law is used in the HFP model of Gilman \& Baglietto \cite{gilman_self-consistent_2017}.
 \end{remark*}
 
 We can note that it also includes the value of the static contact angle $\theta$ which can be used as a parameter to accounts for wall properties, since it is dependent on the wall roughness, wettability and the operating fluid. 
@@ -220,7 +220,7 @@ Indeed, a high-wetting material (low values of $\theta$) will allow smaller cavi
 \label{fig:nsd_theta_wet}
 \end{figure}
 
-This influence of the contact angle on the NSD was confirmed by experimental obervations of Basu \etal \cite{basu_nsit} and was also included in a law correlated on their own measurements :
+This influence of the contact angle on the NSD was confirmed by experimental obervations of Basu \etal \cite{basu_wall_2005} and was also included in a law correlated on their own measurements :
 
 \begin{align}
 N_{sit}=&
@@ -233,7 +233,7 @@ N_{sit}=&
 
 \npar
 
-Similarly, Zhou \etal \cite{zhou_nsd} correlated their measurements, including an influence of the pressure:
+Similarly, Zhou \etal \cite{zhou_experimental_2020} correlated their measurements, including an influence of the pressure:
 
 \begin{align}
 N_{sit} =& N_{0}\parth{1-\cos{\theta}}\crocht{\exp{\mathrm{f}\parth{P} \Delta T_{w} } -1 }
@@ -244,7 +244,7 @@ with $N_{0}=55~395.26\ \mathrm{m}^{-2}$ and $P_{0}=1.01\ \mathrm{bar}$.
 
 \npar
 
-Finally, one of the most recent NSD correlation has been proposed by Li \etal in 2018 \cite{li_new_2018} and validated over a large range of measurements by including a more realistic power law for $\Delta T_{w}$. It avoids the divergence of $N_{sit}$ observed in Hibiki \& Ishii law (Eq. \ref{eq:nsit_hibiki}) when reaching high pressure and superheats. It also includes the impact of pressure and contact angle and its evolution with temperature \eg its decrease close to 0 $\degree$ when approaching the critical temperature \cite{song_fan_contact_angle}:
+Finally, one of the most recent NSD correlation has been proposed by Li \etal in 2018 \cite{li_new_2018} and validated over a large range of measurements by including a more realistic power law for $\Delta T_{w}$. It avoids the divergence of $N_{sit}$ observed in Hibiki \& Ishii law (Eq. \ref{eq:nsit_hibiki}) when reaching high pressure and superheats. It also includes the impact of pressure and contact angle and its evolution with temperature \eg its decrease close to 0 $\degree$ when approaching the critical temperature \cite{song_temperature_2021}:
 
 
 \begin{align}
@@ -283,7 +283,7 @@ Author & Fluid &  $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K]  & $\Delta 
 \hline
 \\
 
-Zhou \cite{zhou_nsit} \newline (2020) & Water & 1.21 - 3.12 & 482.7 - 1930.6 & 8 - 15  & 6.7 - 20.2 & $51$ & 60 \\
+Zhou \cite{zhou_experimental_2020} \newline (2020) & Water & 1.21 - 3.12 & 482.7 - 1930.6 & 8 - 15  & 6.7 - 20.2 & $51$ & 60 \\
 \\
 
 Richenderfer \cite{richenderfer} \newline (2018) & Water & 1.01 & 500 - 1000 & 10 & 21.7 - 42.8 & $80$ & 49 \\
@@ -292,7 +292,7 @@ Richenderfer \cite{richenderfer} \newline (2018) & Water & 1.01 & 500 - 1000 & 1
 Kossolapov \cite{kossolapov_experimental_2021} \newline (2021) & Water & 1.01 - 75.8 & 500 - 2000 & $80$ &10 & 80\degree & 63 & \\
 \\
 
-Borishanskii \cite{borishanskii} \newline (1966) & Water & 1.01 - 198 & N.A. & N.A. & 1.75 - 17.3 & $45$ & 132 \\
+Borishanskii \cite{borishanskii_heat_1969} \newline (1966) & Water & 1.01 - 198 & N.A. & N.A. & 1.75 - 17.3 & $45$ & 132 \\
 \\
 
 \hline
@@ -647,7 +647,7 @@ The fact that the analytic expression is able to correctly predict the large ran
 
 When computing the quenching heat flux, we need to provide the total wall area visited by a single bubble $A_{q,1b}$ that will undergo quenching.
 
-In wall boiling model that do not consider bubble sliding \cite{kurul_podowski, ncfd_hfp, shaver_podowski} the impacted area at bubble lift-off is often considered as :
+In wall boiling model that do not consider bubble sliding \cite{kurul_podowski, guelfi_neptune_2007, shaver_podowski} the impacted area at bubble lift-off is often considered as :
 
 \begin{equation}
 A_{q,1b} = F_{A} \pi R_{lo}^{2}
