@@ -1566,4 +1566,146 @@ coordinates
 }
 
 
+
+
+
+
+%%STATIC DEACTIVATION
+
+\beginpgfgraphicnamed{static_suppression}
+
+\begin{tikzpicture}[scale=4.0, every node/.style={scale=0.9}]
+
+
+%%%%Site deactivation
+
+\tikzmath{
+\ray=0.15;
+\xmin = -0.1;
+\xmax = 1.05;
+};
+
+\draw (\xmin,\xmin)--(\xmin,\xmax)--(\xmax,\xmax)--(\xmax,\xmin)--cycle;
+
+
+%%IMPOSSIBLE BUBBLES
+
+\draw[fill=red!15!white](0.21,0.77) circle(\ray) node{$\times$}; %node{$\redmath{\bm{\times}}$};
+
+\draw[fill=red!15!white](0.28,0.16) circle(\ray) node{$\times$};% node{$\redmath{\bm{\times}}$};
+
+%%OTHER BUBBLES
+
+\draw(0.17,0.69) circle(\ray);
+\fill[color = gray!15!white, opacity=0.5] (0.17,0.69) circle(\ray);
+\draw(0.17,0.69) node{$\times$};
+
+
+\draw(0.35,0.21) circle(\ray);
+\fill[color = gray!15!white, opacity=0.5] (0.35,0.21) circle(\ray);
+\draw(0.35,0.21) node{$\times$};
+
+
+\draw(0.49,0.61) circle(\ray);
+\fill[color = gray!15!white, opacity=0.5] (0.49,0.61) circle(\ray);
+\draw(0.49,0.61) node{$\times$};
+
+
+\draw(0.72,0.13) circle(\ray);
+\fill[color = gray!15!white, opacity=0.5] (0.72,0.13) circle(\ray);
+\draw(0.72,0.13) node{$\times$};
+
+
+\draw(0.73,0.82) circle(\ray);
+\fill[color = gray!15!white, opacity=0.5] (0.73,0.82) circle(\ray);
+\draw(0.73,0.82) node{$\times$};
+
+%%OTHER SITES
+
+\draw(0.02,0.13) node{$\times$};
+
+\draw(0.80,0.42) node{$\times$};
+
+\draw(0.5,0.90) node{$\times$};
+
+\draw(0.10,0.38) node{$\times$};
+
+
+%%ARROW
+
+\draw[->, >=latex,thick,black] (\xmax + 0.05, {\xmax/2})--++(0.3,0);
+
+
+%%RIGHT PICTURE
+
+\tikzmath{
+\ray=0.15;
+\xminb = {\xmax + 0.4};
+\delt = {(\xmax - \xmin)};
+\xshift = {\delt + 0.4};
+};
+
+\draw (\xminb,\xmin)--(\xminb,\xmax)--({\xminb+\delt},\xmax)--({\xminb+\delt},\xmin)--cycle;
+
+
+%%OTHER BUBBLES
+
+\draw(0.17+\xshift,0.69) circle(\ray);
+\fill[color = gray!15!white, opacity=0.5] (0.17+\xshift,0.69) circle(\ray);
+\draw(0.17+\xshift,0.69) node{$\times$};
+
+
+\draw(0.35+\xshift,0.21) circle(\ray);
+\fill[color = gray!15!white, opacity=0.5] (0.35+\xshift,0.21) circle(\ray);
+\draw(0.35+\xshift,0.21) node{$\times$};
+
+
+\draw(0.49+\xshift,0.61) circle(\ray);
+\fill[color = gray!15!white, opacity=0.5] (0.49+\xshift,0.61) circle(\ray);
+\draw(0.49+\xshift,0.61) node{$\times$};
+
+
+\draw(0.72+\xshift,0.13) circle(\ray);
+\fill[color = gray!15!white, opacity=0.5] (0.72+\xshift,0.13) circle(\ray);
+\draw(0.72+\xshift,0.13) node{$\times$};
+
+
+\draw(0.73+\xshift,0.82) circle(\ray);
+\fill[color = gray!15!white, opacity=0.5] (0.73+\xshift,0.82) circle(\ray);
+\draw(0.73+\xshift,0.82) node{$\times$};
+
+%%OTHER SITES
+
+\draw(0.02+\xshift,0.13) node{$\times$};
+
+\draw(0.80+\xshift,0.42) node{$\times$};
+
+\draw(0.5+\xshift,0.90) node{$\times$};
+
+\draw(0.10+\xshift,0.38) node{$\times$};
+
+
+
+%%DEACTIVATED BUBBLES
+
+\draw[fill=red!15!white](0.21+\xshift,0.77) node{$\redmath{\bm{\times}}$};
+
+\draw[fill=red!15!white](0.28+ \xshift,0.16) node{$\redmath{\bm{\times}}$};
+
+
+
+%%Legend
+\tikzmath{
+\legshift=0.1;
+}
+
+\draw(\xmax+\xshift, \xmax-0.05) circle(0) node[right]{$\times$ : Active site};
+\draw(\xmax+\xshift, \xmax-0.15) circle(0) node[right]{$\redmath{\bm{\times}}$ : Deactivated site};
+
+
+
+\end{tikzpicture}
+
+\endpgfgraphicnamed
+
 \end{document}
