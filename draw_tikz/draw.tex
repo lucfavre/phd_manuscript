@@ -1485,9 +1485,7 @@ coordinates
 %%%BUBBLE INTERACTIONS
 
 
-
-\fbox{
-
+\beginpgfgraphicnamed{static_coal}
 
 \begin{tikzpicture}[scale=4.0, every node/.style={scale=0.9}]
 
@@ -1505,9 +1503,6 @@ coordinates
 
 
 
-\draw(0.17,0.69) circle(\ray);
-\fill[color = gray!15!white, opacity=0.5] (0.17,0.69) circle(\ray);
-\draw(0.17,0.69) node{$\times$};
 
 
 \draw(0.35,0.21) circle(\ray);
@@ -1523,6 +1518,7 @@ coordinates
 \draw(0.72,0.13) circle(\ray);
 \fill[color = gray!15!white, opacity=0.5] (0.72,0.13) circle(\ray);
 \draw(0.72,0.13) node{$\times$};
+\draw[<->, >=latex](0.72, 0.13)--++(\ray,0) node[midway, below]{$R_{d}$};
 
 
 \draw(0.17,0.13) node{$\times$};
@@ -1534,9 +1530,16 @@ coordinates
 \draw(0.10,0.38) node{$\times$};
 
 
-\draw(0.21,0.77) node{$\redmath{\bm{\times}}$};
 
-\draw(0.28,0.16) node{$\redmath{\bm{\times}}$};
+\draw(0.17,0.69) circle(\ray);
+\fill[color = olive!25!white, opacity=0.5] (0.17,0.69) circle(\ray);
+\draw(0.17,0.69) node{$\times$};
+
+
+\draw(0.21,0.85) circle(\ray);
+\fill[color = olive!25!white, opacity=0.5] (0.21,0.85) circle(\ray);
+\draw(0.21,0.85) node{$\times$};
+
 
 
 
@@ -1554,17 +1557,15 @@ coordinates
 \legshift=0.1;
 }
 
-\draw(\xmax+0.05, \xmax-0.05) circle(0) node[right]{$\times$ : Active site};
-\draw(\xmax+0.05, \xmax-0.15) circle(0) node[right]{$\redmath{\bm{\times}}$ : Deactivated site};
-\draw[fill=gray!15!white](\xmax+0.05, \xmax-0.25) circle(0.02) node[right]{ : Nucleating bubble};
-\draw[fill=olive!25!white](\xmax+0.05, \xmax-0.35) circle(0.02) node[right]{ : Static coalescence};
+\draw[fill=gray!15!white](\xmax+0.05, \xmax-0.05) circle(0.02) node[right]{ : Single bubble};
+\draw[fill=olive!25!white](\xmax+0.05, \xmax-0.15) circle(0.02) node[right]{ : Static coalescence};
 
 
 
 \end{tikzpicture}
 
-}
 
+\endpgfgraphicnamed
 
 
 
@@ -1673,6 +1674,7 @@ coordinates
 \draw(0.73+\xshift,0.82) circle(\ray);
 \fill[color = gray!15!white, opacity=0.5] (0.73+\xshift,0.82) circle(\ray);
 \draw(0.73+\xshift,0.82) node{$\times$};
+\draw[<->, >=latex](0.73, 0.82)--++(\ray,0) node[midway, below]{$R_{d}$};
 
 %%OTHER SITES
 
@@ -1702,6 +1704,52 @@ coordinates
 \draw(\xmax+\xshift, \xmax-0.05) circle(0) node[right]{$\times$ : Active site};
 \draw(\xmax+\xshift, \xmax-0.15) circle(0) node[right]{$\redmath{\bm{\times}}$ : Deactivated site};
 
+
+
+\end{tikzpicture}
+
+\endpgfgraphicnamed
+
+
+\beginpgfgraphicnamed{slide_area}
+
+\begin{tikzpicture}[scale=4.0]
+
+
+%%Quenched Area
+
+\tikzmath{\rayd=0.15; \raylo=0.3; \lsl=1.0;}; 
+
+\coordinate (Od) at (2, 1);
+\coordinate (Ol) at ($(Od)+(0,\lsl)$);
+\coordinate (Rd) at ($(Od)+(\rayd,0.0)$);
+\coordinate (Ld) at ($(Od)+(- \rayd,0)$);
+\coordinate (Rl) at ($(Ol)+(\raylo,0.0)$);
+\coordinate (Ll) at ($(Ol)+(- \raylo, 0.0)$);
+%arc(-90:-90+180:0.6)
+
+\draw[black, dashed] (Ld) arc(180:360:\rayd) -- (Rl) arc(360:360+180:\raylo) -- cycle;
+\shade[bottom color=orange!90!blue, top color=red!90!blue, opacity=0.3] (Ld) arc(180:360:\rayd) -- (Rl) arc(360:360+180:\raylo) -- cycle;
+%\shade[bottom color=orange!90!blue, top color=red!90!blue, opacity=0.3](Ol) circle(\raylo);
+%\shade[bottom color=orange!90!blue, top color=red!90!blue, opacity=0.3](Od) circle(\rayd);
+%\draw[black] (Tl) arc(90:90-180:0.6);
+
+
+\draw[densely dotted] (Ld) arc(180:0:\rayd);
+\draw[densely dotted] (Ll) arc(180:360:\raylo);
+
+\draw[<->, >=stealth, densely dashed] (Od)--(Rd) node[midway, below]{$R_{d}$};
+\draw[<->, >=stealth, densely dashed] (Ol)--(Rl) node[midway, above]{$R_{lo}$};
+
+\draw[<->, >=stealth, densely dashed] (Od)--(Ol) node[midway, left]{$l_{sl}$};
+
+\coordinate (Ow1) at (1.5,0.5);
+\coordinate (Ow2) at (1.5,3);
+\coordinate (Ow3) at (2.5,3);
+\coordinate (Ow4) at (2.5,0.5);
+
+%\draw (Ow1) -- (Ow2) -- (Ow3) -- (Ow4) -- cycle;
+%\draw ($(Od)+(0,-0.5)$) node{Case 2 : $R_{lo} - R_{d} \leq l_{sl} \leq R_{lo}+R_{d}$};
 
 
 \end{tikzpicture}

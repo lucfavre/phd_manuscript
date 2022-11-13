@@ -38,8 +38,8 @@
          giveni={T\bibinitperiod},
       }}%
     }
-    \keyw{Bubble dynamics, Lift-off, Onset of nucleate boiling ({ONB}),
-  Sliding, Subcooled flow boiling}
+    \keyw{Subcooled flow boiling, Bubble dynamics, Onset of nucleate boiling
+  ({ONB}), Lift-off, Sliding}
     \strng{namehash}{ARUTOT1}
     \strng{fullhash}{ARUTOT1}
     \field{labelnamesource}{author}
@@ -133,6 +133,158 @@
     \field{year}{1987}
     \field{urlday}{10}
     \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{basu_wall_2005}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BN}{%
+         family={Basu},
+         familyi={B\bibinitperiod},
+         given={Nilanjana},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=WGR}{%
+         family={Warrier},
+         familyi={W\bibinitperiod},
+         given={Gopinath\bibnamedelima R.},
+         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=DVK}{%
+         family={Dhir},
+         familyi={D\bibinitperiod},
+         given={Vijay\bibnamedelima K.},
+         giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BNWGRDVK1}
+    \strng{fullhash}{BNWGRDVK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    A mechanistic model for wall heat flux partitioning during subcooled flow
+  boiling proposed in Part I of this two-part paper, is validated in this part.
+  As the first step of the validation process, the developed model was applied
+  to experimental data obtained as part of this study. Comparison of the model
+  predictions with the present data shows good agreement. In order to further
+  validate/exercise the model, it was then applied to several data sets
+  available in the literature. Though the data in the literature were for
+  experimental conditions vastly different from those from which the model was
+  originally developed, reasonable agreement between the model predictions and
+  the experimental data were observed. This indicates that the proposed model
+  can be extended to other flow conditions provided the submodels cover the
+  conditions of the experiments. Future work should be directed towards
+  improvement of the various submodels involved to extend their range of
+  applicability, especially the ones related to bubble dynamics. Additionally,
+  it must be kept in mind that the model as proposed is strictly only
+  applicable to vertical up-flow and may not be applicable to other
+  orientations.%
+    }
+    \verb{doi}
+    \verb 10.1115/1.1842785
+    \endverb
+    \field{issn}{0022-1481}
+    \field{number}{2}
+    \field{pages}{141\bibrangedash 148}
+    \field{shortjournal}{Journal of Heat Transfer}
+    \field{shorttitle}{Wall Heat Flux Partitioning During Subcooled Flow
+  Boiling}
+    \field{title}{Wall Heat Flux Partitioning During Subcooled Flow Boiling:
+  Part {II}—Model Validation}
+    \verb{url}
+    \verb https://doi.org/10.1115/1.1842785
+    \endverb
+    \field{volume}{127}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\YIWTGMNK\\Wall-Heat-Flux-P
+    \verb artitioning-During-Subcooled-Flow.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Heat Transfer}
+    \field{day}{15}
+    \field{month}{03}
+    \field{year}{2005}
+    \field{urlday}{23}
+    \field{urlmonth}{06}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{basu_wall_2005-1}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BN}{%
+         family={Basu},
+         familyi={B\bibinitperiod},
+         given={Nilanjana},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=WGR}{%
+         family={Warrier},
+         familyi={W\bibinitperiod},
+         given={Gopinath\bibnamedelima R.},
+         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=DVK}{%
+         family={Dhir},
+         familyi={D\bibinitperiod},
+         given={Vijay\bibnamedelima K.},
+         giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BNWGRDVK1}
+    \strng{fullhash}{BNWGRDVK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    In this work a mechanistic model has been developed for the wall heat flux
+  partitioning during subcooled flow boiling. The premise of the proposed model
+  is that the entire energy from the wall is first transferred to the
+  superheated liquid layer adjacent to the wall. A fraction of this energy is
+  then utilized for vapor generation, while the rest of the energy is utilized
+  for sensible heating of the bulk liquid. The contribution of each of the
+  mechanisms for transfer of heat to the liquid—forced convection and
+  transient conduction, as well as the energy transport associated with vapor
+  generation has been quantified in terms of nucleation site densities, bubble
+  departure and lift-off diameters, bubble release frequency, flow parameters
+  like velocity, inlet subcooling, wall superheat, and fluid and surface
+  properties including system pressure. To support the model development,
+  subcooled flow boiling experiments were conducted at pressures of 1.03–3.2
+  bar for a wide range of mass fluxes 124-926kg/m2 s, heat fluxes 2.5-90W/cm2
+  and for contact angles varying from 30° to 90°. The model developed shows
+  that the transient conduction component can become the dominant mode of heat
+  transfer at very high superheats and, hence, velocity does not have much
+  effect at high superheats. This is particularly true when boiling approaches
+  fully developed nucleate boiling. Also, the model developed allows prediction
+  of the wall superheat as a function of the applied heat flux or axial
+  distance along the flow direction.%
+    }
+    \verb{doi}
+    \verb 10.1115/1.1842784
+    \endverb
+    \field{issn}{0022-1481}
+    \field{number}{2}
+    \field{pages}{131\bibrangedash 140}
+    \field{shortjournal}{Journal of Heat Transfer}
+    \field{shorttitle}{Wall Heat Flux Partitioning During Subcooled Flow
+  Boiling}
+    \field{title}{Wall Heat Flux Partitioning During Subcooled Flow Boiling:
+  Part 1—Model Development}
+    \verb{url}
+    \verb https://doi.org/10.1115/1.1842784
+    \endverb
+    \field{volume}{127}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\XXKGXHJ2\\Wall-Heat-Flux-P
+    \verb artitioning-During-Subcooled-Flow.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Heat Transfer}
+    \field{day}{15}
+    \field{month}{03}
+    \field{year}{2005}
+    \field{urlday}{23}
+    \field{urlmonth}{06}
     \field{urlyear}{2022}
   \endentry
 
@@ -592,6 +744,105 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{chi-yeh_mechanism_1965}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CYH}{%
+         family={Chi-Yeh},
+         familyi={C\bibinithyphendelim Y\bibinitperiod},
+         given={Han},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Griffith},
+         familyi={G\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CYHGP1}
+    \strng{fullhash}{CYHGP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    A criterion is developed for bubble initiation from a gas filled cavity on
+  a surface in contact with a superheated layer of liquid. It is found that the
+  temperature of bubble initiation on a given surface is a function of the
+  temperature conditions in the liquid surrounding the cavity as well as the
+  surface properties themselves. It is also found that the delay time between
+  bubbles is a function of the bulk liquid temperature and the wall superheat,
+  and is not constant for a given surface. By consideration of the transient
+  conduction into a layer of liquid on the surface, a thermal layer thickness
+  is obtained. With this thickness and a critical wall superheat relation for
+  the cavity, a bubble growth rate is obtained. Bubble departure is considered
+  and it is found that the Jakob and Fritz relation works as long as the true
+  (non-equilibrium) bubble contact angle is used. At one gravity the primary
+  effect of bubble growth velocity on bubble departure size is found to be due
+  to contact angle changes. Résumé On expose un critère pour la formation de
+  bulles à partir d'une cavité remplie de gaz sur une surface en contact avec
+  une couche surchauffée de liquide. On trouve que la température de
+  formation de bulles sur une surface donnée est une fonction des conditions
+  de température dans le liquide entourant la cavité aussi bien que les
+  propriétés de surface elles-mêmes. On trouve aussi que la durée entre les
+  bulles successives est une fonction de la température globale du liquide et
+  de la surchauffe de la paroi et n'est pas constante pour une surface donnée.
+  En considérant la conduction transitoire dans une couche de liquide sur la
+  surface, on obtient une épaisseur de couche thermique. Avec cette épaisseur
+  et une relation critique de surchauffe de paroi pour la cavité, on obtient
+  une vitesse de croissance de bulle. On considère le détachement de la bulle
+  et on trouve que la relation de Jakob et Fritz est valable aussi longtemps
+  qu'on emploie le vrai angle de contact (en non-equilibre). Pour une gravité
+  unité, on trouve que le principal effet de la vitesse de croissance des
+  bulles sur la taille des bulles au détachement est due aux changements de
+  l'angle de contact. Zusammenfassung Für das Entstehen von Blasen aus einer
+  mit Gas gefüllten Vertiefung an einer Oberfläche in Berührung mit einer
+  überhitzten Flüssigkeitsschicht wird ein Kriterium entwickelt. Es ergab
+  sich, dass die Temperatur beim Blasenentstehen an einer gegebenen Oberfläche
+  eine Funktion der Temperaturbedingungen in der Flüssigkeit ist, die die
+  Vertiefung ebenso wie die Oberflächenbeschaffenheiten selbst umgibt. Es
+  zeigte sich ebenfalls, dass die Verzögerungszeit zwischen den Blasen eine
+  Funktion der Flüssigkeitstemperatur und der Wandüberhitzung und keine
+  Konstante für eine gegebene Oberfläche ist. Unter Berücksichtigung der
+  Ableitung in eine Flüssigkeitsschicht an der Oberfläche erhält man eine
+  thermische Schichtdicke. Mit dieser Dicke und einer Beziehung der kritischen
+  Wandüberhitzung für die Vertiefung erhält man eine
+  Blasenwachstumsgeschwindigkeit. Das Ablösen der Blasen wird beobachtet und
+  dabei gefunden, dass die Beziehung von Jakob und Fritz solange gilt, wie der
+  wahre (nicht im Gleichgewicht befindliche) Randwinkel der Blase eingesetzt
+  wird. Bei Normalschwere findet man, dass der primäre Einfluss der
+  Blasenwachstumsgeschwindigkeit auf die Ablösegrösse der Blasen von
+  Veränderungen des Randwinkels hervorgerufen wird.%
+    }
+    \verb{doi}
+    \verb 10.1016/0017-9310(65)90073-6
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{6}
+    \field{pages}{887\bibrangedash 904}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{shorttitle}{The mechanism of heat transfer in nucleate pool
+  boiling—Part I}
+    \field{title}{The mechanism of heat transfer in nucleate pool
+  boiling—Part I: Bubble initiaton, growth and departure}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0017931065900736
+    \endverb
+    \field{volume}{8}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\7P7VYBUL\\00
+    \verb 17931065900736.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{06}
+    \field{year}{1965}
+    \field{urlday}{12}
+    \field{urlmonth}{11}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{churchill_friction_1977}{article}{}
     \name{author}{1}{}{%
       {{hash=CS}{%
@@ -898,6 +1149,55 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{daley_introduction_2003}{book}{}
+    \name{author}{2}{}{%
+      {{hash=DDJ}{%
+         family={Daley},
+         familyi={D\bibinitperiod},
+         given={D.\bibnamedelima J.},
+         giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=VJD}{%
+         family={Vere-Jones},
+         familyi={V\bibinithyphendelim J\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer-Verlag}%
+    }
+    \keyw{Likelihood, Markov chain, point process, Poisson process, random
+  measure}
+    \strng{namehash}{DDJVJD1}
+    \strng{fullhash}{DDJVJD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \verb{doi}
+    \verb 10.1007/b97277
+    \endverb
+    \field{isbn}{978-0-387-95541-4}
+    \field{series}{Probability and its Applications}
+    \field{title}{An Introduction to the Theory of Point Processes}
+    \verb{url}
+    \verb http://link.springer.com/10.1007/b97277
+    \endverb
+    \field{langid}{english}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \verb{file}
+    \verb Texte intégral:C\:\\Users\\Luc\\Zotero\\storage\\GUYAN95Q\\2003 - An
+    \verb  Introduction to the Theory of Point Processes.pdf:application/pdf
+    \endverb
+    \field{year}{2003}
+    \field{urlday}{12}
+    \field{urlmonth}{11}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{del_valle_subcooled_1985}{article}{}
     \name{author}{2}{}{%
       {{hash=DVVH}{%
@@ -1114,6 +1414,182 @@
     \field{year}{2020}
     \field{urlday}{10}
     \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{dittus_heat_1985}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DFW}{%
+         family={Dittus},
+         familyi={D\bibinitperiod},
+         given={F.\bibnamedelima W.},
+         giveni={F\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=BLMK}{%
+         family={Boelter},
+         familyi={B\bibinitperiod},
+         given={L.\bibnamedelima M.\bibnamedelima K.},
+         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DFWBLMK1}
+    \strng{fullhash}{DFWBLMK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    In this work, a pilot-scale pressurized fluidized bed test rig was built to
+  test the heat transfer performance between the supercritical {CO}2 ({sCO}2)
+  loaded immersed tube with the dense bed. Results showed that the bed-to-tube
+  heat transfer coefficient ({HTC}) in {CO}2 atmosphere was slightly larger
+  than that in air atmosphere. The {HTC} increased with the increase of
+  pressure and bed temperature, respectively. The increase of pressure did not
+  change the circumferential distribution of {HTC}, but the increase of
+  fluidization number improved it. A bed-to-tube heat transfer model was
+  proposed on the basis of the partial heat penetration theory with the
+  accuracy in ±25 \%. For the heat transfer of {sCO}2 within the immersed tube
+  deteriorated due to the buoyancy effect. The direct-condensation
+  convection-radiation panel ({DCRP}) was authenticated to be competitive in
+  thermal performances and heating efficiencies, which contributed to energy
+  conservations in space heating. To promote the application of the heating
+  terminal, a comprehensive model of {DCRPs} with different connection modes
+  and panel numbers is established in this paper. The accuracies of the model
+  are validated with experimental data. The comparison results show that the
+  deviations of the refrigerant outlet temperature, outlet enthalpy, pressure
+  drop and heating capacity range from −10.8 \% to 6.2 \%, −2.4 \% to 5.3
+  \%, −10.9 \% to 11.5 \%, −8.4 \% to 3.0 \%, within the acceptable range.
+  Based on the comprehensive model, the flow and heat transfer potentials of
+  the {DCRPs} are investigated. Under the same structural parameters, the
+  heating capacity of the single panel is maximal, followed by the outermost
+  panel, the innermost panel and the middle panel of the {DCRP}. Meanwhile, the
+  heating capacity and flow resistance loss of the {DCRPs} in parallel mode are
+  superior to that in series mode. The average radiation proportion of the
+  {DCRPs} declined from 48.1 \% to 14.4 \% as the panel number increased from
+  one to three. As corroborated by application analysis, the {DCRP} with a
+  single panel is more suitable for a residential room with an area of less
+  than 15 m2, while the {DCRP} with three parallel panels is more appropriate
+  for a room higher than 20 m2. The flow boiling performance of R245fa was
+  investigated in a bare stainless-steel tube ({BT}) and a sintering and
+  electroplating modulated stainless-steel tube ({SET}). The test tubes had the
+  same inner diameters of 10.02 mm and effective heat transfer lengths of 800
+  mm. The mass fluxes, inlet vapor mass qualities and heat fluxes were in
+  ranges of 192.61–705.35 kg/(m2·s), 0.01–0.9 and 4.99–74.97 {kW}/m2,
+  respectively. Three flow patterns were identified in both {BT} and {SET}. The
+  annular flow pattern conversion line of {SET} was earlier than that of the
+  {BT}. With the increase in vapor quality, the boiling heat transfer
+  coefficient increased and then decreased at q ≤ 45 {kW}/m2, whereas it
+  decreased at q ≥ 60 {kW}/m2. For the {BT}, the heat transfer coefficient
+  was weakly affected by the mass flux, but it increased with the increase in
+  mass flux for the {SET}. For the {BT} and {SET}, the frictional pressure drop
+  increased and then decreased with the increase in mean vapor quality at a
+  certain heat flux. Owing to the strong wettability of {SET}, the thick liquid
+  film at the tube bottom in stratified flow was forced to the tube top and the
+  liquid droplets in annular flow were captured by the surface coating. Thus,
+  flow patterns were modulated to enhance heat transfer. The maximum of the
+  heat transfer enhancement ratio and performance evaluation parameter can
+  reach 2.87 and 2.79, respectively. {CO}2 capture from coal-fired power plants
+  ({CFPP}) with low cost is crucial for China to achieve carbon peaks in 2030.
+  The manuscript proposes a novel combined cycle of supercritical {CO}2 Brayton
+  cycle ({SCBC}) and organic Rankine cycle ({ORC}) in {CFPP} with {CO}2
+  capture. The novelty of the proposed scheme lies on its high-level thermal
+  integration which can efficiently complete the conversion of heat to
+  electricity, waste heat recovery, and {CO}2 capture. Exergy analysis and
+  levelized cost of electricity ({LCOE}) are employed to respectively evaluate
+  the thermodynamic and economic performance. The simulation results show that
+  the exergy efficiency of the combined cycle is 39.74\% as considering {CO}2
+  capture, resulting in a 3.41\% of efficiency penalty. The introduction of
+  {ORC} improves the exergy efficiency by 1.05\%. The {LCOE} of the combined
+  cycle is 79.03\$/{MWh}, almost 19.3\$/{MWh} (32.29\%) more expensive than the
+  base plant, and the costs of {CO}2 captured and avoided are respectively
+  21.81\$/{tCO}2 and 26.25\$/{tCO}2. The results indicate that the proposed
+  combined cycle has the potential to compete with other carbon capture
+  technologies from the views of exergy efficiency and cost. Coal combustion in
+  the S–{CO}2 boiler and the calciner is responsible for the maximum internal
+  exergy destructions, and increasing the cycle maximum temperature may reduce
+  the exergy destruction. The largest cost contributor to {LCOE} is associated
+  with capital expenditures (41.55\%), and the cost reduction efforts should be
+  aimed at capital expenditures. Organic Rankine cycle ({ORC}) can effectively
+  utilize the waste heat energy of internal combustion ({IC}) engine. The {ORC}
+  system has obvious large time-varying characteristic, strong fluctuation, and
+  hysteresis under the synergistic influence of frequent fluctuation of vehicle
+  speed and operating parameters in the system. The power system, waste heat
+  recovery system, transmission system, and other subsystem models are
+  constructed in this study. The key components are verified. An integrated
+  system model of {IC} engine–{ORC} for driving cycle is constructed on the
+  basis of the subsystem model. The dynamic response of {ORC} system is
+  evaluated under different road conditions. The synergistic influence of
+  multiple variables on system performance is analyzed. Obvious strong coupling
+  and nonlinear characteristics are observed among different performances of
+  {ORC} system under road conditions. Therefore, a multi-objective cooperative
+  optimization framework of {ORC} system considering actual road conditions is
+  proposed on the basis of multidimensional data. In the process of
+  collaborative optimization, thermal efficiency and emissions of {CO}2
+  equivalent show a clear trade-off under different road conditions. The limit
+  value of thermal efficiency under new European driving cycle is also 6.48\%
+  higher than that under worldwide harmonized light vehicles test cycle.
+  Frequent fluctuation of vehicle speed is not conducive to obtaining the limit
+  value of thermal efficiency. The evaluation and optimization of the
+  comprehensive performance of {ORC} system under complex road conditions can
+  provide a reference for the practical application of vehicle {ORC} system.
+  Supercritical heat transfer has already been applied for decades, as it has
+  several benefits such as improved thermal efficiency of the thermodynamic
+  cycle. Accurate knowledge about supercritical heat transfer and pressure drop
+  of the different working fluids is required to design the heat exchangers and
+  other components used in these systems. In literature, supercritical heat
+  transfer of water and {CO}2{\textless}math{\textgreater}{\textless}msub
+  is="true"{\textgreater}{\textless}mrow
+  is="true"{\textgreater}{\textless}/mrow{\textgreater}{\textless}mrow
+  is="true"{\textgreater}{\textless}mn
+  is="true"{\textgreater}2{\textless}/mn{\textgreater}{\textless}/mrow{\textgreater}{\textless}/msub{\textgreater}{\textless}/math{\textgreater}
+  has already been widely investigated, the research involving refrigerants
+  (for their application in low-temperature heat conversion systems) is however
+  rather scarce. This paper gives an overview of the existing research on
+  supercritical heat transfer. An overview of the applications, general
+  characteristics and the main findings for water and other fluids are
+  summarized. Due to the sharp variations in thermophysical properties, heat
+  transfer and pressure drop cannot be accurately predicted on a single-phase
+  based approach only. An in-detail review of the current research and status
+  of knowledge about supercritical heat transfer of refrigerants is presented.
+  The effect of the different investigated refrigerants and operating
+  parameters on heat transfer and pressure drop, both for heating and cooling
+  applications, is discussed. The remaining gaps in literature are highlighted,
+  which include studies involving larger diameter tubes, horizontal flow,
+  cooling heat transfer and pressure drop estimations and creation of a wider
+  database for a more general correlation development and measurements on newer
+  refrigerants (with low Global Warming Potentials) as these will become
+  increasingly important in the near future. In addition, advances in numerical
+  research should focus on development of suitable turbulence models. Overall,
+  further improving the basic understanding of the fluid structure and
+  occurrence of deteriorated heat transfer, as well as forming reliable models
+  for the thermophysical properties are key in future efforts.%
+    }
+    \verb{doi}
+    \verb 10.1016/0735-1933(85)90003-X
+    \endverb
+    \field{issn}{0735-1933}
+    \field{number}{1}
+    \field{pages}{3\bibrangedash 22}
+    \field{shortjournal}{International Communications in Heat and Mass
+  Transfer}
+    \field{title}{Heat transfer in automobile radiators of the tubular type}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/073519338590003X
+    \endverb
+    \field{volume}{12}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\YMUV27LP\\07
+    \verb 3519338590003X.html:text/html
+    \endverb
+    \field{journaltitle}{International Communications in Heat and Mass
+  Transfer}
+    \field{day}{01}
+    \field{month}{01}
+    \field{year}{1985}
+    \field{urlday}{12}
+    \field{urlmonth}{11}
     \field{urlyear}{2022}
   \endentry
 
@@ -1452,6 +1928,65 @@
     \field{year}{1967}
   \endentry
 
+  \entry{gaertner_population_1960}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GRF}{%
+         family={Gaertner},
+         familyi={G\bibinitperiod},
+         given={R.\bibnamedelima F.},
+         giveni={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=WJW}{%
+         family={Westwater},
+         familyi={W\bibinitperiod},
+         given={J.\bibnamedelima W.},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GRFWJW1}
+    \strng{fullhash}{GRFWJW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    {\textgreater}Counts of active bubble-producing sites were determined
+  throughout most of the nucleate region for a boiling liquid. An aqueous
+  solution of nickel salts containing 20\% solids was boiled at atmospheric
+  pressure on a horizontal, flat, copper surface 2 in. in diameter in a
+  71/2-in. vessel with no forced convection. The technique for determining
+  active sites consisted of plating a thin layer of nickel on the copper
+  surface during the boiling runs and subsequently counting the number of pin
+  holes in the plate. The heat flax was varied from 7,680 to 535,000 Btu/(hr)
+  (sq ft) and the {DELTA} t from 17.3 deg to 216.8 deg F. Counts of active
+  sites were obtained from zero to a maximum of 1,13O/sq in. at 317,000
+  Btu/(hr) (sq ft). A random geometrical distribution of active sites was
+  revealed by a photographic study of the nickel-plated heated surface. For
+  this system a linear relationship between the number of active sites and the
+  heat flux, as suggested by Jakob, is nonexistent. The heat flux was
+  proportional approximately to the square root of the number of sites. Widely
+  known theoretical analyses for nucleate-boiling heat transfer do not include
+  the functionality in the latter manner. (auth)%
+    }
+    \field{note}{Institution: General Electric Co., Schenectady, N.Y.}
+    \field{title}{Population of Active Sites in Nucleate Boiling Heat Transfer}
+    \verb{url}
+    \verb https://www.osti.gov/biblio/4034625
+    \endverb
+    \field{volume}{Vol: 56: Symposium Ser. No. 30}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\3FTHR4A8\\4034625.html:tex
+    \verb t/html
+    \endverb
+    \field{journaltitle}{Chem. Eng. Progr.}
+    \field{day}{01}
+    \field{month}{01}
+    \field{year}{1960}
+    \field{urlday}{12}
+    \field{urlmonth}{11}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{garnier_local_2001}{article}{}
     \name{author}{3}{}{%
       {{hash=GJ}{%
@@ -1635,6 +2170,53 @@
     \field{year}{2017}
     \field{urlday}{23}
     \field{urlmonth}{06}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{gnielinski_new_1975}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GV}{%
+         family={Gnielinski},
+         familyi={G\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \keyw{Channel Flow, Dimensionless Numbers, Flow Equations, Fluid Mechanics
+  and Heat Transfer, Heat Transfer, Heat Transfer Coefficients, Mass Transfer,
+  Nusselt Number, Pipe Flow, Prandtl Number, Reynolds Number, Roughness,
+  Transition Layers, Turbulent Flow, Turbulent Heat Transfer}
+    \strng{namehash}{GV1}
+    \strng{fullhash}{GV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    An equation was derived for the calculation of heat and mass transfer
+  coefficients in the case of pipe and channel flow, taking into account the
+  experimental data for high Reynolds and Prandtl numbers. The equation is
+  valid for the transition region and for the range of fully developed
+  turbulent flows. It is pointed out that it is not possible to obtain a
+  generally valid heat transfer equation in the form proposed by Nusselt
+  (1909). An equation of general validity can, however, be derived by making
+  use of the fundamental form developed by Prandtl (1944) on the basis of
+  momentum theory.%
+    }
+    \field{note}{{ADS} Bibcode: 1975STIA...7522028G}
+    \field{pages}{8\bibrangedash 16}
+    \field{title}{New equations for heat and mass transfer in the turbulent
+  flow in pipes and channels}
+    \verb{url}
+    \verb https://ui.adsabs.harvard.edu/abs/1975STIA...7522028G
+    \endverb
+    \field{volume}{41}
+    \field{journaltitle}{{NASA} {STI}/Recon Technical Report A}
+    \field{day}{01}
+    \field{month}{01}
+    \field{year}{1975}
+    \field{urlday}{12}
+    \field{urlmonth}{11}
     \field{urlyear}{2022}
   \endentry
 
@@ -1840,6 +2422,143 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{guelfi_neptune_2007}{article}{}
+    \name{author}{9}{}{%
+      {{hash=GA}{%
+         family={Guelfi},
+         familyi={G\bibinitperiod},
+         given={Antoine},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Bestion},
+         familyi={B\bibinitperiod},
+         given={Dominique},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Boucker},
+         familyi={B\bibinitperiod},
+         given={Marc},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BP}{%
+         family={Boudier},
+         familyi={B\bibinitperiod},
+         given={Pascal},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=FP}{%
+         family={Fillion},
+         familyi={F\bibinitperiod},
+         given={Philippe},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Grandotto},
+         familyi={G\bibinitperiod},
+         given={Marc},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HJM}{%
+         family={Hérard},
+         familyi={H\bibinitperiod},
+         given={Jean-Marc},
+         giveni={J\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=HE}{%
+         family={Hervieu},
+         familyi={H\bibinitperiod},
+         given={Eric},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=PP}{%
+         family={Péturaud},
+         familyi={P\bibinitperiod},
+         given={Pierre},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GA+1}
+    \strng{fullhash}{GABDBMBPFPGMHJMHEPP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    The {NEPTUNE} project constitutes the thermal-hydraulic part of the
+  long-term Electricité de France and Commissariat à l’Energie Atomique
+  joint research and development program for the next generation of nuclear
+  reactor simulation tools. This program is also financially supported by the
+  Institut de Radioprotection et Sûreté Nucléaire and {AREVA} {NP}. The
+  project aims at developing a new software platform for advanced two-phase
+  flow thermal hydraulics covering the whole range of modeling scales and
+  allowing easy multiscale and multidisciplinary calculations. {NEPTUNE} is a
+  fully integrated project that covers the following fields: software
+  development, research in physical modeling and numerical methods, development
+  of advanced instrumentation techniques, and performance of new experimental
+  programs.The analysis of the industrial needs points out that three main
+  simulation scales are involved. The system scale is dedicated to the overall
+  description of the reactor. The component or subchannel scale allows
+  three-dimensional computations of the main components of the reactors: cores,
+  steam generators, condensers, and heat exchangers. The current generation of
+  system and component codes has reached a very high level of maturity for
+  industrial applications. The third scale, computational fluid dynamics
+  ({CFD}) in open medium, allows one to go beyond the limits of the component
+  scale for a finer description of the flows. This scale opens promising
+  perspectives for industrial simulations, and the development and validation
+  of the {NEPTUNE} {CFD} module have been a priority since the beginning of the
+  project. It is based on advanced physical models (two-fluid or multifield
+  model combined with interfacial area transport and two-phase turbulence) and
+  modern numerical methods (fully unstructured finite volume solvers). For the
+  system and component scales, prototype developments have also started,
+  including new physical models and numerical methods.In addition to
+  scale-specific developments, the generalized use of multiscale calculations
+  is also expected to be a major means to meet the industrial needs. The
+  coexistence of different simulation scales together with the fast growth of
+  computing power multiplies the computation possibilities. In particular,
+  thanks to the recent progress of {CFD} tools, one can imagine local zooms in
+  some critical parts of the reactor components. The {NEPTUNE} multiscale
+  platform will offer advanced coupling functionalities based on
+  state-of-the-art software architecture and new numerical coupling
+  techniques.Finally, despite the existence of a huge worldwide database of
+  two-phase flow experiments, the validation of new physical models (more
+  local, more complex) requires new experimental data. That is the reason why
+  for several years we have been developing new instrumentation techniques such
+  as four-sensor optical probes, X-ray tomography, and hot-wire anemometry.
+  These techniques will be used for new experimental programs (currently being
+  launched) that have been defined in connection with the high-priority
+  industrial applications (departure from nucleate boiling, pressurized thermal
+  shock, loss-of-coolant accident, etc.).%
+    }
+    \verb{doi}
+    \verb 10.13182/NSE05-98
+    \endverb
+    \field{issn}{0029-5639}
+    \field{note}{Publisher: Taylor \& Francis \_eprint:
+  https://doi.org/10.13182/{NSE}05-98}
+    \field{number}{3}
+    \field{pages}{281\bibrangedash 324}
+    \field{shorttitle}{{NEPTUNE}}
+    \field{title}{{NEPTUNE}: A New Software Platform for Advanced Nuclear
+  Thermal Hydraulics}
+    \verb{url}
+    \verb https://doi.org/10.13182/NSE05-98
+    \endverb
+    \field{volume}{156}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\CAG39BZR\\NSE05-98.html:te
+    \verb xt/html
+    \endverb
+    \field{journaltitle}{Nuclear Science and Engineering}
+    \field{day}{01}
+    \field{month}{07}
+    \field{year}{2007}
+    \field{urlday}{31}
+    \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{guion_simulations_2018}{article}{}
     \name{author}{4}{}{%
       {{hash=GA}{%
@@ -1869,7 +2588,7 @@
     }
     \keyw{Bubble growth, Hydrodynamics, Microlayer formation, Single bubble,
   Volume-Of-Fluid ({VOF}) method}
-    \strng{namehash}{GA+1}
+    \strng{namehash}{GA+2}
     \strng{fullhash}{GAASZSBJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -2127,6 +2846,57 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{jens_analysis_1951}{report}{}
+    \name{author}{2}{}{%
+      {{hash=JWH}{%
+         family={Jens},
+         familyi={J\bibinitperiod},
+         given={W.\bibnamedelima H.},
+         giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=LPA}{%
+         family={Lottes},
+         familyi={L\bibinitperiod},
+         given={P.\bibnamedelima A.},
+         giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JWHLPA1}
+    \strng{fullhash}{JWHLPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{abstract}{%
+    The U.S. Department of Energy's Office of Scientific and Technical
+  Information%
+    }
+    \verb{doi}
+    \verb 10.2172/4421630
+    \endverb
+    \field{number}{{ANL}-4627}
+    \field{title}{Analysis of Heat Transfer, Burnout, Pressure Drop and Density
+  Data for High-Pressure Water}
+    \verb{url}
+    \verb https://www.osti.gov/biblio/4421630
+    \endverb
+    \list{institution}{1}{%
+      {Argonne National Lab.}%
+    }
+    \verb{file}
+    \verb Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\L6QZVZDT\\Jens et Lot
+    \verb tes - 1951 - ANALYSIS OF HEAT TRANSFER, BURNOUT, PRESSURE DROP .pdf:a
+    \verb pplication/pdf;Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\3ZGBQEW6\\4
+    \verb 421630.html:text/html
+    \endverb
+    \field{day}{01}
+    \field{month}{05}
+    \field{year}{1951}
+    \field{urlday}{12}
+    \field{urlmonth}{11}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{kader_heat_1972}{article}{}
     \name{author}{2}{}{%
       {{hash=KBA}{%
@@ -2280,6 +3050,48 @@
     \field{year}{2002}
     \field{urlday}{18}
     \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{kennel_local_1949}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=KWE}{%
+         family={Kennel},
+         familyi={K\bibinitperiod},
+         given={William\bibnamedelima E.},
+         giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KWE1}
+    \strng{fullhash}{KWE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Thesis (Sc.D.) Massachusetts Institute of Technology. Dept. of Chemical
+  Engineering, 1949.%
+    }
+    \field{note}{Accepted: 2020-09-25T21:06:56Z {ISSN}: 2933-0025}
+    \field{title}{Local boiling of water and superheating of high pressure
+  steam in annuli}
+    \verb{url}
+    \verb https://dspace.mit.edu/handle/1721.1/127744
+    \endverb
+    \field{langid}{english}
+    \list{institution}{1}{%
+      {Massachusetts Institute of Technology}%
+    }
+    \verb{file}
+    \verb Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\VX9KR9RI\\Kennel - 19
+    \verb 49 - Local boiling of water and superheating of high pr.pdf:applicati
+    \verb on/pdf;Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\AQHZVSXV\\127744.ht
+    \verb ml:text/html
+    \endverb
+    \field{type}{Thesis}
+    \field{year}{1949}
+    \field{urlday}{12}
+    \field{urlmonth}{11}
     \field{urlyear}{2022}
   \endentry
 
@@ -2545,6 +3357,51 @@
     }
     \field{type}{phdthesis}
     \field{year}{2021}
+  \endentry
+
+  \entry{kurul_multidimensional_1990}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=KN}{%
+         family={Kurul},
+         familyi={K\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=PMZ}{%
+         family={Podowski},
+         familyi={P\bibinitperiod},
+         given={Michael\bibnamedelima Z.},
+         giveni={M\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Begel House Inc.}%
+    }
+    \strng{namehash}{KNPMZ1}
+    \strng{fullhash}{KNPMZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \verb{doi}
+    \verb 10.1615/IHTC9.40
+    \endverb
+    \field{eventtitle}{International Heat Transfer Conference 9}
+    \field{isbn}{0-89116-909-1}
+    \field{title}{{MULTIDIMENSIONAL} {EFFECTS} {IN} {FORCED} {CONVECTION}
+  {SUBCOOLED} {BOILING}}
+    \verb{url}
+    \verb https://ihtcdigitallibrary.com/conferences/6ec9fdc764f29109,3b6668e93
+    \verb c4d03e5,1968e4d71e4e45b1.html
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\NR4VBE2B\\6ec9fdc764f29109
+    \verb ,3b6668e93c4d03e5,1968e4d71e4e45b1.html:text/html
+    \endverb
+    \field{year}{1990}
+    \field{urlday}{23}
+    \field{urlmonth}{06}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{lamb_hydrodynamics_1895}{book}{}
@@ -2825,6 +3682,104 @@
       {Englewood Cliffs, N.J.}%
     }
     \field{year}{1962}
+  \endentry
+
+  \entry{li_development_2018}{article}{}
+    \name{author}{7}{}{%
+      {{hash=LQ}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Quan},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=JY}{%
+         family={Jiao},
+         familyi={J\bibinitperiod},
+         given={Yongjun},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Avramova},
+         familyi={A\bibinitperiod},
+         given={Maria},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CP}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Ping},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Junchong},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Jie},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hou},
+         familyi={H\bibinitperiod},
+         given={Jason},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{Subcooled boiling, Contact angle, Active nucleation site density,
+  Pressure, Temperature, Void fraction}
+    \strng{namehash}{LQ+1}
+    \strng{fullhash}{LQJYAMCPYJCJHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    A new model for active nucleation site density in boiling systems has been
+  developed and preliminarily applied in Computational Fluid Dynamics ({CFD})
+  simulations of subcooled boiling in a vertical heated tube. The new model is
+  based on a parametric analysis of existing experimental data. It is a
+  function of three variables: wall superheat, pressure, and contact angle; and
+  is applicable in a wide range of pressures: 0.101 {MPa}–19.8 {MPa}. A
+  preliminary study of the temperature dependence of the contact angle has been
+  performed during the development process. The new model is intended to
+  improve the predictions of: (i) interfacial area concentration in two-fluid
+  models, and (ii) wall temperature in subcooled boiling simulations. For the
+  active nucleation site density itself, the verification results showed that
+  the values predicted by the newly developed model are in good agreement with
+  various published experimental data. The model also demonstrated improvements
+  of other existing models. The new model was utilized in {CFD} simulations of
+  subcooled boiling in a vertical heated tube. The predicted void fraction and
+  wall temperature in subcooled boiling flow agree well with the experimental
+  data.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.nucengdes.2017.12.027
+    \endverb
+    \field{issn}{0029-5493}
+    \field{pages}{1\bibrangedash 9}
+    \field{shortjournal}{Nuclear Engineering and Design}
+    \field{title}{Development, verification and application of a new model for
+  active nucleation site density in boiling systems}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0029549317306180
+    \endverb
+    \field{volume}{328}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\I4NH2ANJ\\S0
+    \verb 029549317306180.html:text/html
+    \endverb
+    \field{journaltitle}{Nuclear Engineering and Design}
+    \field{day}{01}
+    \field{month}{03}
+    \field{year}{2018}
+    \field{urlday}{12}
+    \field{urlmonth}{11}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{magnaudet_motion_2000}{article}{}
@@ -3376,10 +4331,9 @@
       }}%
     }
     \field{editoratype}{collaborator}
-    \keyw{Bilan des forces, Bulle, Décollage, Détachement, Detachment
-  diameter, Diamètres, Ebullition nucléée, Force balance, Glissement,
-  Lift-off diameter, Modélisation, Modelling, Nucleate boiling, Sliding
-  bubble}
+    \keyw{Sliding bubble, Nucleate boiling, Modélisation, Modelling, Bilan des
+  forces, Bulle, Décollage, Détachement, Detachment diameter, Diamètres,
+  Ebullition nucléée, Force balance, Glissement, Lift-off diameter}
     \strng{namehash}{MM1}
     \strng{fullhash}{MM1}
     \field{labelnamesource}{author}
@@ -3559,8 +4513,8 @@
          giveni={K\bibinitperiod},
       }}%
     }
-    \keyw{Bubble dynamics, Lagrangian simulation, Lift-off, Subcooled flow
-  boiling, Visualization}
+    \keyw{Subcooled flow boiling, Bubble dynamics, Lagrangian simulation,
+  Lift-off, Visualization}
     \strng{namehash}{OT+1}
     \strng{fullhash}{OTKKSSEK1}
     \field{labelnamesource}{author}
@@ -3668,6 +4622,67 @@
     \field{year}{1954}
     \field{urlday}{02}
     \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{podowski_mechanistic_2008}{article}{}
+    \name{author}{2}{}{%
+      {{hash=PMZ}{%
+         family={Podowski},
+         familyi={P\bibinitperiod},
+         given={Michael\bibnamedelima Z.},
+         giveni={M\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=PRM}{%
+         family={Podowski},
+         familyi={P\bibinitperiod},
+         given={Raf\bibnamedelima M.},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PMZPRM1}
+    \strng{fullhash}{PMZPRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    Due to the importance of boiling heat transfer in general, and boiling
+  crisis in particular, for the analysis of operation and safety of both
+  nuclear reactors and conventional thermal power systems, extensive efforts
+  have been made in the past to develop a variety of methods and tools to
+  evaluate the boiling heat transfer coefficient and to assess the onset of
+  temperature excursion and critical heat flux ({CHF}) at various operating
+  conditions of boiling channels. The objective of this paper is to present
+  mathematical modeling concepts behind the development of mechanistic
+  multidimensional models of low-quality forced convection boiling, including
+  the mechanisms leading to temperature excursion and the onset of {CHF}.%
+    }
+    \verb{doi}
+    \verb 10.1155/2009/387020
+    \endverb
+    \field{issn}{1687-6075}
+    \field{note}{Publisher: Hindawi}
+    \field{pages}{e387020}
+    \field{title}{Mechanistic Multidimensional Modeling of Forced Convection
+  Boiling Heat Transfer}
+    \verb{url}
+    \verb https://www.hindawi.com/journals/stni/2009/387020/
+    \endverb
+    \field{volume}{2009}
+    \field{langid}{english}
+    \verb{file}
+    \verb Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\XXGRTICQ\\Podowski et
+    \verb  Podowski - 2008 - Mechanistic Multidimensional Modeling of Forced Co
+    \verb .pdf:application/pdf;Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\QZRNY
+    \verb CVH\\387020.html:text/html
+    \endverb
+    \field{journaltitle}{Science and Technology of Nuclear Installations}
+    \field{day}{22}
+    \field{month}{12}
+    \field{year}{2008}
+    \field{urlday}{12}
+    \field{urlmonth}{11}
     \field{urlyear}{2022}
   \endentry
 
@@ -3921,6 +4936,75 @@
     \field{year}{2020}
     \field{urlday}{20}
     \field{urlmonth}{07}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{richenderfer_experimental_2018}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=RAJ}{%
+         family={Richenderfer},
+         familyi={R\bibinitperiod},
+         given={Andrew\bibnamedelima Jonathan},
+         giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RAJ1}
+    \strng{fullhash}{RAJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Understanding of subcooled flow boiling and the critical heat flux ({CHF})
+  is of the utmost importance for both safety and profitability of pressurized
+  water nuclear reactors since they are major factors in the determination of
+  the reactor power rating. Motivated by the emergence of a new wall boiling
+  model by Gilman [3] and previous experimental insights from Phillips [12], a
+  first-of-a-kind experimental investigation of pressurized steady-state
+  subcooled flow boiling was conducted using state-ofthe- art diagnostics to
+  gain a unique insight of the relevant mechanisms, including the partitioning
+  of the wall heat flux. Conditions up to 10 bar pressure, 2000 kg/m²s mass
+  flux and 20 K subcooling were explored. High-speed infrared thermometry tools
+  were developed and used to measure the local time-dependent 2-D temperature
+  and heat flux distributions on the boiling surface. These distributions were
+  analyzed to determine fundamental boiling heat transfer parameters such as
+  the nucleation site density, growth and wait times, nucleation frequency,
+  departure diameter as well as the partitioning of the wall heat flux. While
+  established mechanistic models can capture the trends of growth time and wait
+  time with relatively good accuracy, this work reveals current models do not
+  accurately predict the activation and interaction of nucleation sites on the
+  boiling surface. This is a major roadblock, since boiling curves and {CHF}
+  values obtained in nominally identical environments can be significantly
+  different depending upon the nucleation site density which in turn is
+  determined by the surface properties. The role of evaporation in the
+  partitioning of the heat flux increases monotonically as the average heat
+  flux increases, up to a maximum value of 70\%, and is the dominant mechanism
+  at high heat fluxes. At low and intermediate heat fluxes single-phase heat
+  transfer is the dominant mechanism. Traditional heat partitioning models fail
+  to capture these physics, but newer models with a comprehensive and
+  physically consistent framework show promise in predicting the wall heat
+  transfer. The data and understanding produced by this work will be essential
+  for the development and validation of these modeling tools.%
+    }
+    \field{note}{Accepted: 2018-11-15T15:51:52Z}
+    \field{title}{Experimental study of heat flux partitioning in pressurized
+  subcooled flow boiling}
+    \verb{url}
+    \verb https://dspace.mit.edu/handle/1721.1/119033
+    \endverb
+    \list{institution}{1}{%
+      {Massachusetts Institute of Technology}%
+    }
+    \verb{file}
+    \verb Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\EXRRCM2Y\\Richenderfe
+    \verb r - 2018 - Experimental study of heat flux partitioning in pr.pdf:app
+    \verb lication/pdf;Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\ULTABMF6\\119
+    \verb 033.html:text/html
+    \endverb
+    \field{type}{Thesis}
+    \field{year}{2018}
+    \field{urlday}{12}
+    \field{urlmonth}{11}
     \field{urlyear}{2022}
   \endentry
 
@@ -4855,6 +5939,70 @@
     \field{year}{2012}
   \endentry
 
+  \entry{sultan_spatial_1978}{article}{}
+    \name{author}{2}{}{%
+      {{hash=SM}{%
+         family={Sultan},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=JRL}{%
+         family={Judd},
+         familyi={J\bibinitperiod},
+         given={R.\bibnamedelima L.},
+         giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SMJRL1}
+    \strng{fullhash}{SMJRL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    An experimental investigation is presented concerning the boiling of water
+  at atmospheric pressure on a single copper surface in which the spatial
+  distribution of active nucleation sites was investigated at different levels
+  of heat flux and subcooling. The results obtained indicated that the active
+  sites were located randomly on the heating surface, since the distribution of
+  active sites followed the Poisson relationship. Changes in heat flux and
+  sub-cooling did not affect the distribution of active nucleation sites
+  although additional active sites formed among the sites which had already
+  been activated when heat flux was increased. The frequency of vapor bubble
+  emission and the bubble flux density have been studied as well. The results
+  obtained showed that the heat flux had a great effect on the vapor bubble
+  emission frequency although the influence of subcooling was of lesser
+  significance. However, the bubble flux density was found to be non-uniformly
+  distributed over the heating surface contrary to what had been expected.%
+    }
+    \verb{doi}
+    \verb 10.1115/1.3450504
+    \endverb
+    \field{issn}{0022-1481}
+    \field{number}{1}
+    \field{pages}{56\bibrangedash 62}
+    \field{shortjournal}{Journal of Heat Transfer}
+    \field{title}{Spatial Distribution of Active Sites and Bubble Flux Density}
+    \verb{url}
+    \verb https://doi.org/10.1115/1.3450504
+    \endverb
+    \field{volume}{100}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\TBW9YEAD\\Spatial-Distribu
+    \verb tion-of-Active-Sites-and-Bubble.html:text/html;Version soumise:C\:\\U
+    \verb sers\\Luc\\Zotero\\storage\\UHR2FBSJ\\Sultan et Judd - 1978 - Spatial
+    \verb  Distribution of Active Sites and Bubble Fl.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Journal of Heat Transfer}
+    \field{day}{01}
+    \field{month}{02}
+    \field{year}{1978}
+    \field{urlday}{12}
+    \field{urlmonth}{11}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{thorncroft_experimental_1998}{article}{}
     \name{author}{3}{}{%
       {{hash=TGE}{%
@@ -5353,6 +6501,87 @@
     \field{year}{1976}
     \field{urlday}{02}
     \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{yeoh_fundamental_2008}{article}{}
+    \name{author}{4}{}{%
+      {{hash=YGH}{%
+         family={Yeoh},
+         familyi={Y\bibinitperiod},
+         given={G.\bibnamedelima H.},
+         giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=CSCP}{%
+         family={Cheung},
+         familyi={C\bibinitperiod},
+         given={Sherman C.\bibnamedelima P.},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  P\bibinitperiod},
+      }}%
+      {{hash=TJY}{%
+         family={Tu},
+         familyi={T\bibinitperiod},
+         given={J.\bibnamedelima Y.},
+         giveni={J\bibinitperiod\bibinitdelim Y\bibinitperiod},
+      }}%
+      {{hash=HMKM}{%
+         family={Ho},
+         familyi={H\bibinitperiod},
+         given={Mark K.\bibnamedelima M.},
+         giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+    }
+    \keyw{Average bubble number density, Bubbly flow, {CFD}, Population
+  balance}
+    \strng{namehash}{YGH+1}
+    \strng{fullhash}{YGHCSCPTJYHMKM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{abstract}{%
+    Improved wall heat flux partitioning accounting sliding bubbles and a
+  mechanistic model that incorporates the fundamental consideration of bubble
+  frequency during low-pressure subcooled flow boiling is presented. A model
+  considering the forces acting on departing bubbles at the heated surface is
+  employed. Coupled with a three-dimensional two-fluid and population balance
+  equations based on the modified {MUSIG} ({MUltiple}-{SIze}-Group) model, the
+  behavior of an upward forced convective subcooled boiling flows in a vertical
+  annular channel is simulated. Comparison of model predictions against local
+  and axial measurements (heat fluxes ranged from 152.9 to 705.0kW/m2) is made
+  for the void fraction, Sauter mean bubble diameter and interfacial area
+  concentration covering a range of different mass and heat fluxes and inlet
+  subcoolings. Good agreement is achieved between the predicted and measured
+  profiles. Reasonable agreement with recent experimental measurements is also
+  attained for the predicted growth and waiting times of bubble frequency at
+  particular local wall superheat and subcooling temperatures.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2007.11.047
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{15}
+    \field{pages}{3840\bibrangedash 3853}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{Fundamental consideration of wall heat partition of vertical
+  subcooled boiling flows}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931008000264
+    \endverb
+    \field{volume}{51}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\KWDBAZLN\\S0
+    \verb 017931008000264.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{15}
+    \field{month}{07}
+    \field{year}{2008}
+    \field{urlday}{13}
+    \field{urlmonth}{11}
     \field{urlyear}{2022}
   \endentry
 

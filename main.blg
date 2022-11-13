@@ -9,6 +9,7 @@ A level-1 auxiliary file: FrontBackMatter/Abstract.aux
 A level-1 auxiliary file: FrontBackMatter/Publications.aux
 A level-1 auxiliary file: FrontBackMatter/Acknowledgments.aux
 A level-1 auxiliary file: FrontBackMatter/Contents.aux
+A level-1 auxiliary file: Chapters/intro_ccl/Intro.aux
 A level-1 auxiliary file: Chapters/NCFD/Chap_NCFD.aux
 A level-1 auxiliary file: Chapters/NCFD/Chap_Debora.aux
 A level-1 auxiliary file: Chapters/HFP/Chap_HFPIntro.aux
@@ -16,7 +17,9 @@ A level-1 auxiliary file: Chapters/HFP/Chap_HFPmodels.aux
 A level-1 auxiliary file: Chapters/HFP/Chap_BubDyn.aux
 A level-1 auxiliary file: Chapters/HFP/Chap_Closures.aux
 A level-1 auxiliary file: Chapters/HFP/Chap_NewHFP.aux
-A level-1 auxiliary file: Chapters/Chap_Promoteur.aux
+A level-1 auxiliary file: Chapters/HFP/Chap_ToCHF.aux
+A level-1 auxiliary file: Chapters/industrial/Chap_Promoteur.aux
+A level-1 auxiliary file: Chapters/intro_ccl/Conclusion.aux
 A level-1 auxiliary file: Appendix/App_BubGrowth.aux
 A level-1 auxiliary file: Chapters/Chapter0A.aux
 A level-1 auxiliary file: FrontBackMatter/Declaration.aux
@@ -36,9 +39,9 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 25989 items.
+Reallocating 'field_info' (item size: 4) to 25572 items.
 Database file #1: main-blx.bib
-Database file #2: bib_v5.bib
+Database file #2: bib_v6.bib
 Reallocating 'str_pool' (item size: 1) to 130000 items.
 Reallocating 'str_pool' (item size: 1) to 195000 items.
 Warning--I didn't find a database entry for "knuth:1974"
@@ -73,69 +76,51 @@ Warning--I didn't find a database entry for "basu"
 Warning--I didn't find a database entry for "cole"
 Warning--I didn't find a database entry for "gilman"
 Warning--I didn't find a database entry for "zuber1961"
-Warning--I didn't find a database entry for "richenderfer_phd"
-Warning--I didn't find a database entry for "jens_lottes_data"
-Warning--I didn't find a database entry for "kennel_phd"
-Warning--I didn't find a database entry for "kurul_podowski"
-Warning--I didn't find a database entry for "ncfd_hfp"
-Warning--I didn't find a database entry for "shaver_podowski"
-Warning--I didn't find a database entry for "basu_heat"
-Warning--I didn't find a database entry for "richenderfer_investigations_2018"
-Warning--I didn't find a database entry for "basu_heat_2005"
-Warning--I didn't find a database entry for "komma"
-Warning--I didn't find a database entry for "mikic"
-Warning--I didn't find a database entry for "borishanskii"
-Warning--I didn't find a database entry for "hibiki_ishii"
-Warning--I didn't find a database entry for "gilman_baglietto"
-Warning--I didn't find a database entry for "basu_nsit"
-Warning--I didn't find a database entry for "zhou_nsd"
-Warning--I didn't find a database entry for "li_new_2018"
-Warning--I didn't find a database entry for "song_fan_contact_angle"
-Warning--I didn't find a database entry for "zhou_nsit"
-Warning--I didn't find a database entry for "richenderfer"
-Warning--I didn't find a database entry for "Richen_phd"
+Warning--I didn't find a database entry for "gerardi_ijhmt_2010"
+Warning--I didn't find a database entry for "kenning_boiling"
 Biblatex version: 3.13
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 98 entries,
+Reallocating 'str_pool' (item size: 1) to 260000 items.
+You've used 114 entries,
             6365 wiz_defined-function locations,
-            2236 strings with 156854 characters,
-and the built_in function-call counts, 1041796 in all, are:
-= -- 49438
-> -- 83816
-< -- 7081
-+ -- 79799
-- -- 68555
-* -- 59143
-:= -- 139779
+            2382 strings with 190728 characters,
+and the built_in function-call counts, 1233530 in all, are:
+= -- 59308
+> -- 98392
+< -- 8309
++ -- 93854
+- -- 80478
+* -- 70496
+:= -- 165437
 add.period$ -- 0
-call.type$ -- 98
-change.case$ -- 97
-chr.to.int$ -- 6044
-cite$ -- 194
-duplicate$ -- 85209
-empty$ -- 71622
-format.name$ -- 6995
-if$ -- 160865
+call.type$ -- 114
+change.case$ -- 113
+chr.to.int$ -- 7100
+cite$ -- 226
+duplicate$ -- 100317
+empty$ -- 85034
+format.name$ -- 8233
+if$ -- 191028
 int.to.chr$ -- 0
-int.to.str$ -- 240
+int.to.str$ -- 281
 missing$ -- 0
-newline$ -- 4740
-num.names$ -- 4729
-pop$ -- 32764
+newline$ -- 5588
+num.names$ -- 5544
+pop$ -- 38221
 preamble$ -- 1
-purify$ -- 2127
+purify$ -- 2522
 quote$ -- 0
-skip$ -- 26646
+skip$ -- 31269
 stack$ -- 0
-substring$ -- 99491
-swap$ -- 25541
-text.length$ -- 5471
-text.prefix$ -- 107
+substring$ -- 120225
+swap$ -- 29970
+text.length$ -- 6388
+text.prefix$ -- 123
 top$ -- 1
-type$ -- 3272
+type$ -- 3808
 warning$ -- 0
-while$ -- 13288
+while$ -- 15675
 width$ -- 0
-write$ -- 4643
-(There were 53 warnings)
+write$ -- 5475
+(There were 34 warnings)

@@ -35,11 +35,11 @@ Author & $D_{h}$ [mm] & $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K] & $\p
 
 Kossolapov \cite{kossolapov_experimental_2021} \newline (2021) & 12 & 10.5 & 500 - 2000 & 10 & 0.1 - 0.6  & 0.22 - 9.5 & 12 \\
 
-Richenderfer \cite{richenderfer_phd} \newline (2018) & 15 & 1 - 5 & 1000 - 2000 & 10-20 & 0.1 - 0.63 & 1 - 18.7 & 13 \\
+Richenderfer \cite{richenderfer_experimental_2018} \newline (2018) & 15 & 1 - 5 & 1000 - 2000 & 10-20 & 0.1 - 0.63 & 1 - 18.7 & 13 \\
 
-Jens-Lottes \cite{jens_lottes_data} \newline (1951) & 5.74 & 137.9 & 2617.5 & 53.3 - 92.2 & 0.91 - 2.37 & 0.33 - 44.1 & 15 \\
+Jens-Lottes \cite{jens_analysis_1951} \newline (1951) & 5.74 & 137.9 & 2617.5 & 53.3 - 92.2 & 0.91 - 2.37 & 0.33 - 44.1 & 15 \\
 
-Kennel \cite{kennel_phd} \newline (1948) & 4.3 - 13.2 & 2 - 6.2 & 284 - 10~577 & 11.1 - 83.3 & 0.035 - 1.89 & 0.35 - 69 & 52 \\
+Kennel \cite{kennel_local_1949} \newline (1948) & 4.3 - 13.2 & 2 - 6.2 & 284 - 10~577 & 11.1 - 83.3 & 0.035 - 1.89 & 0.35 - 69 & 52 \\
 \hline
 \end{tabular}
 }
@@ -132,13 +132,13 @@ Model & Kossolapov err. [K] & Richenderfer err. [K] & Jens-Lottes err. [K] & Ken
 \hline
 \\
 
-Dittus-Boelter & 19.67 & 15.07 & 10.09 & 3.13 \\
+Dittus-Boelter \cite{dittus_heat_1985} & 19.67 & 15.07 & 10.09 & 3.13 \\
 \\
 
-Gnielinski & 20.31 & 14.06 & 6.09 & 1.74 \\
+Gnielinski \cite{gnielinski_new_1975} & 20.31 & 14.06 & 6.09 & 1.74 \\
 \\
 
-NCFD law & 15.52 & 9.25 & 23.69 & 3.36 \\
+NCFD law \cite{guelfi_neptune_2007} & 15.52 & 9.25 & 23.69 & 3.36 \\
 \\
 
 Corrected Gnielisnki & 1.34 & 3.08 & 1.57 & 1.74 \\
@@ -152,7 +152,7 @@ Corrected Gnielisnki & 1.34 & 3.08 & 1.57 & 1.74 \\
 \end{table}
 
 
-\textbf{Recalling that Gnielinski correlation was also providing good results on the DEBORA cases with R12 (Chapter \ref{chap:debora})further indicates it as a proper choice regarding single-phase HTC estimation in the HFP model.} We will later allow the use of the correction factors when needed to ensure a proper representation of the single-phase part when trying to assess the models associated to boiling.
+\textbf{Recalling that Gnielinski correlation was also providing good results on the DEBORA cases with R12 (Chapter \ref{chap:debora}) further indicates it as a proper choice regarding single-phase HTC estimation in the HFP model.} We will later allow the use of the correction factors when needed to ensure a proper representation of the single-phase part when trying to assess the models associated to boiling.
 
 
 
@@ -244,7 +244,7 @@ with $N_{0}=55~395.26\ \mathrm{m}^{-2}$ and $P_{0}=1.01\ \mathrm{bar}$.
 
 \npar
 
-Finally, one of the most recent NSD correlation has been proposed by Li \etal in 2018 \cite{li_new_2018} and validated over a large range of measurements by including a more realistic power law for $\Delta T_{w}$. It avoids the divergence of $N_{sit}$ observed in Hibiki \& Ishii law (Eq. \ref{eq:nsit_hibiki}) when reaching high pressure and superheats. It also includes the impact of pressure and contact angle and its evolution with temperature \eg its decrease close to 0 $\degree$ when approaching the critical temperature \cite{song_temperature_2021}:
+Finally, one of the most recent NSD correlation has been proposed by Li \etal in 2018 \cite{li_development_2018} and validated over a large range of measurements by including a more realistic power law for $\Delta T_{w}$. It avoids the divergence of $N_{sit}$ observed in Hibiki \& Ishii law (Eq. \ref{eq:nsit_hibiki}) when reaching high pressure and superheats. It also includes the impact of pressure and contact angle and its evolution with temperature \eg its decrease close to 0 $\degree$ when approaching the critical temperature \cite{song_temperature_2021}:
 
 
 \begin{align}
@@ -286,7 +286,7 @@ Author & Fluid &  $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K]  & $\Delta 
 Zhou \cite{zhou_experimental_2020} \newline (2020) & Water & 1.21 - 3.12 & 482.7 - 1930.6 & 8 - 15  & 6.7 - 20.2 & $51$ & 60 \\
 \\
 
-Richenderfer \cite{richenderfer} \newline (2018) & Water & 1.01 & 500 - 1000 & 10 & 21.7 - 42.8 & $80$ & 49 \\
+Richenderfer \cite{richenderfer_experimental_2018} \newline (2018) & Water & 1.01 & 500 - 1000 & 10 & 21.7 - 42.8 & $80$ & 49 \\
 \\
 
 Kossolapov \cite{kossolapov_experimental_2021} \newline (2021) & Water & 1.01 - 75.8 & 500 - 2000 & $80$ &10 & 80\degree & 63 & \\
@@ -345,7 +345,7 @@ On the contrary, models from Hibiki \& Ishii and Li \etal seem to better reprodu
 Overall, the model of Li \etal is the most efficient with an acceptable agreement on most of the data of Borishanskii and Zhou \etal. The measurements of Richenderfer and Kossolapov fail to be precisely reproduced, but it shows a coherent trend and the most limited error when compared to other correlations.
 
 \begin{remark*}{}
-The coherency of NSD predictions is hard to ensure since we do not know the exact contact angle and boiling surface morphology in the experiments. This was pointed out by Richenderfer \cite{Richen_phd} who observed significant variation in the NSD value depending on the heater, though keeping the same material (ITO). For instance, this may explain the fact that the NSD measured by Kossolapov at $10.5$ bar is higher than any other pressure on his experiment, leading to both underpredictions and overpredictions of the model of Li \etal depending on the pressure.
+The coherency of NSD predictions is hard to ensure since we do not know the exact contact angle and boiling surface morphology in the experiments. This was pointed out by Richenderfer \cite{richenderfer_experimental_2018} who observed significant variation in the NSD value depending on the heater, though keeping the same material (ITO). For instance, this may explain the fact that the NSD measured by Kossolapov at $10.5$ bar is higher than any other pressure on his experiment, leading to both underpredictions and overpredictions of the model of Li \etal depending on the pressure.
 \end{remark*}
 
 
@@ -411,7 +411,7 @@ Traditional approaches of the wait time estimation rely on the analytic solution
 
 \begin{align}
 T_{L}\parth{y,0} &= T_{L,bulk},\ \forall y >0\\
-T_{L}\parth{0,0} &= T_{w},\ \forall t > 0
+T_{L}\parth{0,t} &= T_{w},\ \forall t > 0
 \end{align}
 
 %\begin{align}
@@ -446,11 +446,11 @@ t_{w} &= \frac{1}{4\eta_{L}} \crocht{ \frac{R_{c}}{\erfcrec{ \dfrac{\Delta T_{L}
 \label{eq:twait_mikic}
 \end{align}
 
-Using the same approach, Han \& Griffith \cite{han_griffith_tw} use the same expression of the transient liquid temperature field but consider $T_{L}\parth{\dfrac{3}{2}R_{c},t_{w}}=T_{V,nuc}$, which yields a wait time that is $\dfrac{9}{4}$ times Eq. \ref{eq:twait_mikic}.
+Using the same approach, Han \& Griffith \cite{chi-yeh_mechanism_1965} use the same expression of the transient liquid temperature field but consider $T_{L}\parth{\dfrac{3}{2}R_{c},t_{w}}=T_{V,nuc}$, which yields a wait time that is $\dfrac{9}{4}$ times Eq. \ref{eq:twait_mikic}.
 
 \npar
 
-Later, Yeoh \etal followed a similar derivation to propose an expression of the wait time that accounts for the contact angle value:
+Later, Yeoh \etal \cite{yeoh_fundamental_2008} followed a similar derivation to propose an expression of the wait time that accounts for the contact angle value:
 
 \begin{align}
 t_{w} &= \frac{1}{\pi \eta_{L}}\crocht{ \frac{\parth{\Delta T_{L} + \Delta T_{w}} C_{1} R_{c}}{\Delta T_{w} - \dfrac{2\sigma T_{sat}}{C_{2}\rho_{V}h_{LV}R_{c}}}  }^{2}
@@ -468,13 +468,13 @@ All those analytical approaches present one pivotal parameter: the activated cav
 Among existing expressions of $R_{c}$, we have:
 
 \begin{align}
-R_{c} &= \frac{2\sigma T_{sat}}{\rho_{V}h_{LV}\Delta T_{w}},\ \text{used by Han \& Griffith}
+R_{c} &= \frac{2\sigma T_{sat}}{\rho_{V}h_{LV}\Delta T_{w}},\ \text{used by Han \& Griffith \cite{chi-yeh_mechanism_1965}}
 \label{eq:rc_han}\\
 %
-R_{c} &= \sqrt{\dfrac{1}{C_{1}C_{2}} \dfrac{2 \sigma T_{sat} \lambda_{L}}{\rho_{V}h_{LV}\phi_{w}}}, \ \text{used by Yeoh \etal}
+R_{c} &= \sqrt{\dfrac{1}{C_{1}C_{2}} \dfrac{2 \sigma T_{sat} \lambda_{L}}{\rho_{V}h_{LV}\phi_{w}}}, \ \text{used by Yeoh \etal \cite{yeoh_fundamental_2008}}
 \label{eq:rc_yeoh}\\
 %
-R_{c} &= \frac{2\sigma\parth{1+ \dfrac{\rho_{V}}{\rho_{L}} } / P}{\exp{h_{LV} \dfrac{\Delta T_{w}}{R_{g}T_{w}T_{sat}} }}, \ \text{used by Hibiki \& Ishii}
+R_{c} &= \frac{2\sigma\parth{1+ \dfrac{\rho_{V}}{\rho_{L}} } / P}{\exp{h_{LV} \dfrac{\Delta T_{w}}{R_{g}T_{w}T_{sat}} }}, \ \text{used by Hibiki \& Ishii \cite{hibiki_active_2003}}
 \label{eq:rc_hibiki}
 \end{align}
 
@@ -509,7 +509,7 @@ This expression will yield $t_{w}=0$ for saturated boiling conditions, which is 
 
 \subsection{Experimental Measurements}
 
-To try to assess the proposed expressions of the bubble wait time, we rely on some experimental measurements available in the literature from Basu \etal \cite{basu_wall_2005}, Richenderfer \cite{richenderfer_phd} and Kossolapov \cite{kossolapov_experimental_2021}. The boiling conditions of the data are summed up on Table \ref{tab:tw_exp_data}.
+To try to assess the proposed expressions of the bubble wait time, we rely on some experimental measurements available in the literature from Basu \etal \cite{basu_wall_2005}, Richenderfer \cite{richenderfer_experimental_2018} and Kossolapov \cite{kossolapov_experimental_2021}. The boiling conditions of the data are summed up on Table \ref{tab:tw_exp_data}.
 
 \begin{table}[h!]
 
@@ -527,7 +527,7 @@ Author & Fluid & $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K] & $\phi_{w}$
 Basu \etal \cite{basu_wall_2005} \newline (2005) & Water & 1.01 & 346.0 & 8.35 - 46.5 & N.A. & 9.83 - 17.5 & 0.797 - 13.3 (19) \\
 \\
 
-Richenderfer \cite{richenderfer_phd} \newline (2018) & Water & 1 - 2 & 1000 - 2000 & 5 - 20 & 0.74 - 7.13 & N.A. & 0.914 - 6.02 (259) \\
+Richenderfer \cite{richenderfer_experimental_2018} \newline (2018) & Water & 1 - 2 & 1000 - 2000 & 5 - 20 & 0.74 - 7.13 & N.A. & 0.914 - 6.02 (259) \\
 \\
 
 Kossolapov \cite{kossolapov_experimental_2021} \newline (2021) & Water & 10.5 & 500 - 2000 & 10 & N.A. & 0.12 - 25.9 & 6.13 - 85.9 (33) \\
@@ -583,7 +583,7 @@ The data sets from Kossolapov and Richenderfer also give the associated frequenc
 We can see that for lower values of $\Ja_{w}^{*}$, the product $t_{w} \times f$ starts to tend to $1$. For higher values, a linear decrease seem to be the general trend of the measurements. However, it can't decrease linearly forever, which is why the trend on Figure \ref{fig:twf_Jawred} extrapolated to higher values of $\Ja_{w}^{*}$ looks like a sigmoid in order to approach zero for large superheats. Nevertheless, we clearly lack of measurements at larger values of $\Ja_{w}^{*}$ to confirm this supposed trend.
 
 \begin{remark*}{}
-The range of values attained by the product $t_{w} \times f$ can vary from 1 down to 0.5 on the chosen experimental data. This clearly shows that the relation between the wait time and the growth time is not straightforward as assumed in some works who neglects the growth time or suppose a constant relationship such as $t_{w}=3t_{g}$\cite{han_griffith}.
+The range of values attained by the product $t_{w} \times f$ can vary from 1 down to 0.5 on the chosen experimental data. This clearly shows that the relation between the wait time and the growth time is not straightforward as assumed in some works who neglects the growth time or suppose a constant relationship such as $t_{w}=3t_{g}$\cite{chi-yeh_mechanism_1965}.
 
 \npar
 Moreover the boiling conditions range covered by the data are not that exhaustive, leaving room for even larger ranges of $t_{w} \times f$ with different fluids and heater material for instance.
@@ -625,12 +625,13 @@ At last, it appeared that choosing the Yeoh \etal expression of $t_{w}$ (Eq. \re
 
 \begin{itemize}
 \item $\theta = 31 \degree$ for Basu \etal data \cite{basu_wall_2005-1} ;
-\item $\theta = 72 \degree$ for Richenderfer data \cite{richenderfer_phd};
+\item $\theta = 72 \degree$ for Richenderfer data \cite{richenderfer_experimental_2018};
 \item $\theta = 80 \degree$ for Kossolapov data \cite{kossolapov_experimental_2021}.
 \end{itemize} 
 
 The fact that the analytic expression is able to correctly predict the large range of $t_{w}$ values from the different experiments is encouraging since it is based on a physical approach contrary to correlations which mainly relies on data-fitting.
 
+\npar
 \textbf{To conclude, it seems appropriate to use the wait time formulation of Yeoh \etal along with expressing cavity radius using Han \& Griffith estimation.}
 
 
@@ -638,23 +639,51 @@ The fact that the analytic expression is able to correctly predict the large ran
 
 
 
-\section{Bubble Sliding Length}
+%\section{Bubble Sliding Length}
 
 \section{Single Bubble Quenching Area}
-
-
 \label{sec:quench_area}
 
 When computing the quenching heat flux, we need to provide the total wall area visited by a single bubble $A_{q,1b}$ that will undergo quenching.
 
-In wall boiling model that do not consider bubble sliding \cite{kurul_podowski, guelfi_neptune_2007, shaver_podowski} the impacted area at bubble lift-off is often considered as :
+In wall boiling model that do not consider bubble sliding \cite{kurul_multidimensional_1990, guelfi_neptune_2007, podowski_mechanistic_2008} the impacted area at bubble lift-off is often considered as :
 
 \begin{equation}
 A_{q,1b} = F_{A} \pi R_{lo}^{2}
 \end{equation} 
 with $F_{A}$ being an enhancement factor that accounts for the the possibility that the bubble will induce quenching over a surface larger than its projected area.
 
+\npar
 
+Otherwise, models that account for bubble sliding \cite{basu_wall_2005, yeoh_fundamental_2008, gilman_self-consistent_2017, kommajosyula_development_2020} compute the quenching area using the sliding length $l_{sl}$ as:
+
+\begin{equation}
+A_{q,1b} = l_{sl}\parth{R_{d} + R_{lo}}
+\end{equation}
+
+However, depending on the relationship between $l_{sl}$, $R_{d}$ and $R_{lo}$, the quenching area can have different shapes as pictured in Figure \ref{fig:slide_area}.
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[$l_{sl}< R_{lo}-R_{d}$]{
+\includegraphics[width=0.15\linewidth]{img/slide_area/slide_area1.pdf}
+}
+\hfill
+\subfloat[$R_{lo}-R_{d} \leq l_{sl}$ and $l_{sl} \leq R_{lo} + R_{d}$]{
+\includegraphics[width=0.15\linewidth]{img/slide_area/slide_area2.pdf}
+}
+\hfill
+\subfloat[$l_{sl} > R_{lo} + R_{d}$]{
+\includegraphics[width=0.15\linewidth]{img/slide_area/slide_area3.pdf}
+}
+\caption{Quenching area shape depending on the relation between $R_{d}$, $R_{lo}$ and $l_{sl}$.}
+\label{fig:slide_area}
+\end{figure}
+
+\npar
+
+Based on Figure \ref{fig:slide_area}, we can then write:
 
 \begin{align}
 A_{q,1b} = &
@@ -676,7 +705,7 @@ Which can be re-expressed by defining ${l_{sl}}^{*}=\dfrac{l_{sl}}{R_{lo}}$ and 
 \frac{1}{2}\parth{1+\parth{\frac{R_{d}}{R_{lo}}}^{2} } + \frac{{l_{sl}}^{*}}{\pi}\parth{1+\frac{R_{d}}{R_{lo}}} & \text{if } {l_{sl}}^{*} \geq 1 + \frac{R_{d}}{R_{lo}}
 \end{dcases}
 \end{align}
-and we linearly interpolate those two expressions for the region where $1-\dfrac{R_{d}}{R_{lo}}\geq {l_{sl}}^{*} \geq 1+\dfrac{R_{d}}{R_{lo}}$.
+and we linearly interpolate those two expressions for the region where $1-\dfrac{R_{d}}{R_{lo}}\leq {l_{sl}}^{*} \leq 1+\dfrac{R_{d}}{R_{lo}}$.
 
 
 
@@ -709,7 +738,7 @@ This large difference in nucleation frequency between the different sites indica
 In order to consider such interactions between nucleation sites, we need to know their spatial distribution over the boiling surface. Usual approaches considered that the nucleation sites followed an homogeneous spatial Poisson process \ie the probability of finding a site in an area $A$ only depends on the value of $A$ and not on its location over the boiling surface.
 
 \npar
-This has been supported by different experimental observations such as those of Gaertner \cite{gaertner_1960} or Sultan \cite{sultan_1978} for pool boiling who found an agreement between site distribution and Poisson process by studying sites populations in subdivisions of the boiling surface. It was also confirmed for flow boiling by Del Valle \& Kenning \cite{kenning_boiling} who observed site distribution at different heat fluxes. However, they noticed that the increase in nucleation site with the heat flux did not come from an additive effect of new sites since some active sites at low heat fluxes became inactive at higher heat fluxes before sometimes reactivating later (see Figure \ref{fig:kenning_boiling_inter}. This further highlights that the interactions and deactivation processes originate from complex physics that simultaneously include wall morphology and thermal behavior, external flow influence and bubble presence. 
+This has been supported by different experimental observations such as those of Gaertner \cite{gaertner_population_1960} or Sultan \cite{sultan_spatial_1978} for pool boiling who found an agreement between site distribution and Poisson process by studying sites populations in subdivisions of the boiling surface. It was also confirmed for flow boiling by Del Valle \& Kenning \cite{kenning_boiling} who observed site distribution at different heat fluxes. However, they noticed that the increase in nucleation site with the heat flux did not come from an additive effect of new sites since some active sites at low heat fluxes became inactive at higher heat fluxes before sometimes reactivating later (see Figure \ref{fig:kenning_boiling_inter}). This further highlights that the interactions and deactivation processes originate from complex physics that simultaneously include wall morphology and thermal behavior, external flow influence and bubble presence. 
 
 \npar
 
@@ -734,7 +763,7 @@ More recent observations also show a random distribution of the sites such as in
 
 \npar
 
-Considering an homogeneous spatial (two-dimensional) Poisson process with an event density (\ie average number of events per unit of area) $\delta$, then the probability that the number of event $N$ in an area $A$ is equal to $n \ in \mathbb{N}$ is \cite{Daley_vere-jones_point_processes}:
+Considering an homogeneous spatial (two-dimensional) Poisson process with an event density (\ie average number of events per unit of area) $\lambda$, then the probability that the number of event $N$ in an area $A$ is equal to $n \in \mathbb{N}$ is \cite{daley_introduction_2003}:
 
 \begin{equation}
 \mathcal{P}\parth{N\parth{A}=n}=\frac{\parth{\lambda A}^{n}}{n!}e^{-\lambda A}
@@ -801,7 +830,8 @@ Let us consider the nucleation site density $N_{sit}$ computed by a correlation 
 Thus, we need a correction of $N_{sit}$ to obtain the actual number of active sites $N_{sit,a}$ that can geometrically fit on the surface regarding the nucleation parameters. Given a bubble growth time before departure $t_{g,d}$ and an average nucleation frequency $f$, we can estimate the actual number of bubbles growing attached to their sites on the boiling surface as:
 
 \begin{equation}
-N_{b} = t_{g,d}\times f \times N_{sit,a} 
+N_{b} = t_{g,d}\times f \times N_{sit,a}
+\label{eq:bubble_density}
 \end{equation}
 
 
@@ -824,7 +854,7 @@ This overlapping probability $\mathcal{P}$ can then be used to ponderate the num
 where $A_{sit}=t_{g,d}f \pi R_{d}^{2}$ and $\mathcal{W}$ is Lambert's W-function (reciprocal of $x \rightarrow xe^{x}$).
 
 \begin{note*}{}
-This calculation has originally been conducted by Gilman \cite{gilman_phd} and continued by Kommajosyula \cite{kommajosyula_development_2020}. 
+This calculation has originally been conducted by Gilman \cite{gilman_self-consistent_2017} and continued by Kommajosyula \cite{kommajosyula_development_2020}. 
 \end{note*}
 
 The evaluation of $\mathcal{W}$ can easily be achieved with a few iterations of a bisection method. Otherwise, Kommajosyula proposed an approximation to allow its direct computation \cite{kommajosyula_development_2020}.
@@ -833,94 +863,120 @@ The evaluation of $\mathcal{W}$ can easily be achieved with a few iterations of 
 
 \npar
 
-On Figure \ref{fig:NSD_supp} we show the impact of the correction of Eq. \ref{eq:static_deact} on NSD correlations of Hibiki \& Ishii (Eq. \ref{eq:nsit_hibiki}) and Li \etal (Eq. \ref{eq:nsit_li}).
+On Figure \ref{fig:nsit_CSR} we show the impact of the correction of Eq. \ref{eq:static_deact} on NSD correlations of Hibiki \& Ishii (Eq. \ref{eq:nsit_hibiki}) and Li \etal (Eq. \ref{eq:nsit_li}).
+
+
+\begin{figure}
+\centering
+\subfloat[Hibiki \& Ishii correlation (Eq. \ref{eq:nsit_hibiki})]{
+\includegraphics[width=0.5\linewidth]{img/site_interaction/CSR_HI.pdf}
+}
+\subfloat[Hibiki \& Ishii correlation (Eq. \ref{eq:nsit_li})]{
+\includegraphics[width=0.5\linewidth]{img/site_interaction/CSR_Li.pdf}
+}
+\caption{Static deactivation correction tested with Hibiki \& Ishii and Li \etal correlations for water at 40 bar, $f=200$~Hz, $t_{g,d} = 0.1$~ms, $\theta=80\degree$ and $R_{d} = 0.01$~mm.}
+\label{fig:nsit_CSR}
+\end{figure}
+
+
+\npar
+
+Li \etal correlation present a significant correction for larger wall superheat due to its formulation that damps the exponential growth of the NSD at high superheat. On the contrary, the well-known drawback of Hibiki \& Ishii correlation which yields too large $N_{sit}$ value at high superheat is strongly ponderated by the static deactivation correction.
+
+
+\subsection{Static Coalescence}
+
+Now that the actual number of bubble-generating sites have been identified, we can consider other interaction phenomena that can occur on the boiling surface. For instance, if two bubbles are simultaneously growing on sites at a distance lower than $2R_{d}$, the bubbles will coalesce while growing up to the detachment diameter (Figure \ref{fig:static_coal}). 
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.5\linewidth]{img/site_interaction/static_coal.pdf}
+\caption{Sketch of the static coalescence phenomenon.}
+\label{fig:static_coal}
+\end{figure}
 
 
 
-\subsection{Static coalescence}
-
-Now that the actual number of bubble-generating sites have been identified, we can consider other interaction phenomena that can occur on the boiling surface. For instance, if two sites are simultaneously generating a bubble at a distance $d$ between $R_{d}$ and $2R_{d}$, the bubbles will coalesce while growing up to the detachment diameter. To estimate the probability of having a bubble on a site in this distance range, we consider the probability density function of the nearest-neighbour in the case of a homogeneous spatial Poisson process $f$ with an event density $\lambda$. 
+Using the bubble density $N_{b}$ (Eq. \ref{eq:bubble_density}) as the event density in Eq. \ref{eq:poisson_distribution}, the probability of static coalescence is:
 
 \begin{align}
-f\parth{r}=2\lambda \pi r e^{-\lambda \pi r^{2}}
-\end{align} 
-
-The considered probability of interaction is then :
-
-\begin{align}
-\mathcal{P}\parth{R_{d}\leq r \leq 2R_{d}} &=\int_{R_{d}}^{2R_{d}}f\parth{r} \mathrm{d}r \\
-%
-&= e^{-\lambda \pi R_{d}^{2}} - e^{-4\lambda \pi R_{d}^{2}}\\
-%
-&= e^{-\lambda \pi R_{d}^{2}}\crocht{1-\parth{e^{-\lambda \pi R_{d}^{2}}}^{3}} \\
-&= \mathcal{P}_{coal,st} \ \ \ \text{with}\ \ \ \lambda=t_{g} f N_{b}
+\mathcal{P}\parth{r \leq 2R_{d}} &=\int_{0}^{2R_{d}}f\parth{r} \mathrm{d}r = 1 - e^{-N_{b} \pi \parth{2R_{d}}^{2}}=\mathcal{P}_{coal,st}
 \end{align}
 
 The density of bubble-generating sites that will lead to a static coalescence can then be estimated as :
 
 \begin{align}
-N_{coal,st}=\mathcal{P}_{coal,st}N_{b}
+N_{coal,st}=\mathcal{P}_{coal,st}N_{sit,a}
 \end{align}
 
-If we suppose that coalescing bubbles will instantly lift-off due to the perturbation associated with the coalescence process, this yields an associated boiling flux :
+Figure \ref{fig:pcoal_st} the evolution of $\mathcal{P}_{coal,st}$ with the wall superheat for two departure radius values, using the same conditions as in Figure \ref{fig:nsit_CSR}.
 
-\begin{align}
-\phi_{e,coal,st}=N_{coal,st} f \rho_{V}h_{LV} \frac{4}{3}\pi R_{coal,st}^{3} \ \ \ \text{where}\ \ \ R_{coal,st}=\sqrt[3]{2}R_{d} 
-\end{align}
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\linewidth]{img/site_interaction/P_coal_st.pdf}
+\caption{Static coalescence probability with corrected Li \etal for water at 40 bar, $f=200$~Hz, $t_{g,d} = 0.1$~ms and $\theta=80\degree$.}
+\label{fig:pcoal_st}
+\end{figure}
 
-considering that the bubbles will merge approximately at $R=R_{d}$.
-
-\subsection{Sliding coalescence}
-
-Now that suppressed sites and sites that will lead to static coalescence have been identified, the remaining sites $N_{sl}=\parth{1-\mathcal{P}_{coal,st}}N_{b}$ will generate sliding bubbles. While sliding, a single bubble swipes an area :
-
-\begin{align}
-A_{sl, 1b} \approx l_{sl,1b}\frac{D_{d}+D_{lo}}{2}
-\end{align}
-
-In this area, there are an average number of bubble-generating sites $N_{b}A_{sl,1b}$ and an average number of growing bubbles on their sites $t_{g}f N_{b}A_{sl,1b}$
-
-\npar
-Two situations can happen from the sliding process :
-
-\begin{itemize}
-\item The bubble slides without coalescing
-\item The bubble coalesces while sliding with a bubble growing on its site and lifts-off
-\end{itemize}
-
-
-Following the same approach from the static suppression, we can estimate the probability of finding no growing bubble over the sliding surface : 
-
-\begin{align}
-\mathcal{P}\parth{N\parth{A_{sl,1b}}=0 }=e^{-N_{b}t_{g}fA_{sl,1b}}
-\end{align}
-
-Thus, if a sliding bubble among the $N_{sl}$ does not encounter any growing bubble, the sites on its sliding area will be wiped and thus be quenched by cold liquid. This means that those sites will be suppressed due to the sliding of other bubbles over them.
-
-Among the $N_{b}$ bubble generating sites we can identify 4 categories of sites :
-
-\begin{itemize}
-\item Sites generating bubbles which will slide without encountering any growing bubble on their path : $$N_{sl, NC}=N_{sl}e^{-ft_{g}N_{b}A_{sl,1b}}$$
-
-\item Sites generating bubbles that will coalesce with a growing bubble during sliding : 
-$$N_{sl, C}=  N_{sl}\parth{1-e^{-ft_{g}N_{b}A_{sl,1b}}}$$
-
-\item Sites which will be suppressed by bubbles sliding without coalescing : $$N_{sup, sl}=N_{sl,NC}\ N_{b}A_{sl,1b}$$
-
-\item Sites generating bubbles that will coalesce with a sliding bubble coming from upstream. Those bubbles are still in the growing phase up to detachment when they are coalescing with sliding bubbles. Therefore, there are equal to the number of sliding bubbles that will coalesce : $$N_{g,C}=N_{sl,C}$$
-
-\end{itemize}
-
-This allows to finally write :
-
-\begin{align}
-N_{b}&=N_{sl,NC}+N_{sl,C}+N_{sup,sl} + N_{g,C}\\
+%If we suppose that coalescing bubbles will instantly lift-off due to the perturbation associated with the coalescence process, this yields an associated boiling flux :
 %
-&=N_{sl}\crocht{2-e^{-ft_{g}N_{b}A_{sl,1b}}\parth{A_{sl,1b}N_{b}-1}}
-\end{align}
-
-Which finally yields the total number of sliding bubbles : 
-
-\begin{align}
-N_{sl}=\frac{N_{b}}{2-e^{-ft_{g}N_{b}A_{sl,1b}}\parth{A_{sl,1b}N_{b}-1}}
-\end{align}
+%\begin{align}
+%\phi_{e,coal,st}=N_{coal,st} f \rho_{V}h_{LV} \frac{4}{3}\pi R_{coal,st}^{3} \ \ \ \text{where}\ \ \ R_{coal,st}=\sqrt[3]{2}R_{d} 
+%\end{align}
+%
+%considering that the bubbles will merge approximately at $R=R_{d}$.
+%
+%\subsection{Sliding coalescence}
+%
+%Now that suppressed sites and sites that will lead to static coalescence have been identified, the remaining sites $N_{sl}=\parth{1-\mathcal{P}_{coal,st}}N_{b}$ will generate sliding bubbles. While sliding, a single bubble swipes an area :
+%
+%\begin{align}
+%A_{sl, 1b} \approx l_{sl,1b}\frac{D_{d}+D_{lo}}{2}
+%\end{align}
+%
+%In this area, there are an average number of bubble-generating sites $N_{b}A_{sl,1b}$ and an average number of growing bubbles on their sites $t_{g}f N_{b}A_{sl,1b}$
+%
+%\npar
+%Two situations can happen from the sliding process :
+%
+%\begin{itemize}
+%\item The bubble slides without coalescing
+%\item The bubble coalesces while sliding with a bubble growing on its site and lifts-off
+%\end{itemize}
+%
+%
+%Following the same approach from the static suppression, we can estimate the probability of finding no growing bubble over the sliding surface : 
+%
+%\begin{align}
+%\mathcal{P}\parth{N\parth{A_{sl,1b}}=0 }=e^{-N_{b}t_{g}fA_{sl,1b}}
+%\end{align}
+%
+%Thus, if a sliding bubble among the $N_{sl}$ does not encounter any growing bubble, the sites on its sliding area will be wiped and thus be quenched by cold liquid. This means that those sites will be suppressed due to the sliding of other bubbles over them.
+%
+%Among the $N_{b}$ bubble generating sites we can identify 4 categories of sites :
+%
+%\begin{itemize}
+%\item Sites generating bubbles which will slide without encountering any growing bubble on their path : $$N_{sl, NC}=N_{sl}e^{-ft_{g}N_{b}A_{sl,1b}}$$
+%
+%\item Sites generating bubbles that will coalesce with a growing bubble during sliding : 
+%$$N_{sl, C}=  N_{sl}\parth{1-e^{-ft_{g}N_{b}A_{sl,1b}}}$$
+%
+%\item Sites which will be suppressed by bubbles sliding without coalescing : $$N_{sup, sl}=N_{sl,NC}\ N_{b}A_{sl,1b}$$
+%
+%\item Sites generating bubbles that will coalesce with a sliding bubble coming from upstream. Those bubbles are still in the growing phase up to detachment when they are coalescing with sliding bubbles. Therefore, there are equal to the number of sliding bubbles that will coalesce : $$N_{g,C}=N_{sl,C}$$
+%
+%\end{itemize}
+%
+%This allows to finally write :
+%
+%\begin{align}
+%N_{b}&=N_{sl,NC}+N_{sl,C}+N_{sup,sl} + N_{g,C}\\
+%%
+%&=N_{sl}\crocht{2-e^{-ft_{g}N_{b}A_{sl,1b}}\parth{A_{sl,1b}N_{b}-1}}
+%\end{align}
+%
+%Which finally yields the total number of sliding bubbles : 
+%
+%\begin{align}
+%N_{sl}=\frac{N_{b}}{2-e^{-ft_{g}N_{b}A_{sl,1b}}\parth{A_{sl,1b}N_{b}-1}}
+%\end{align}
