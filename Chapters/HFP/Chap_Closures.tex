@@ -1,8 +1,8 @@
 % Chapter X
 
-\chapter{Closure laws for the Heat Flux Partitioning model} % Chapter title
+\chapter{Closure Laws and Construction of a New HFP Model} % Chapter title
 
-\label{ch:HFP_closures} % For referencing the chapter elsewhere, use \autoref{ch:name} 
+\label{chap:HFP_closures} % For referencing the chapter elsewhere, use \autoref{ch:name} 
 
 %----------------------------------------------------------------------------------------
 
@@ -635,83 +635,8 @@ The fact that the analytic expression is able to correctly predict the large ran
 \textbf{To conclude, it seems appropriate to use the wait time formulation of Yeoh \etal along with expressing cavity radius using Han \& Griffith estimation.}
 
 
-
-
-
-
-%\section{Bubble Sliding Length}
-
-\section{Single Bubble Quenching Area}
-\label{sec:quench_area}
-
-When computing the quenching heat flux, we need to provide the total wall area visited by a single bubble $A_{q,1b}$ that will undergo quenching.
-
-In wall boiling model that do not consider bubble sliding \cite{kurul_multidimensional_1990, guelfi_neptune_2007, podowski_mechanistic_2008} the impacted area at bubble lift-off is often considered as :
-
-\begin{equation}
-A_{q,1b} = F_{A} \pi R_{lo}^{2}
-\end{equation} 
-with $F_{A}$ being an enhancement factor that accounts for the the possibility that the bubble will induce quenching over a surface larger than its projected area.
-
-\npar
-
-Otherwise, models that account for bubble sliding \cite{basu_wall_2005, yeoh_fundamental_2008, gilman_self-consistent_2017, kommajosyula_development_2020} compute the quenching area using the sliding length $l_{sl}$ as:
-
-\begin{equation}
-A_{q,1b} = l_{sl}\parth{R_{d} + R_{lo}}
-\end{equation}
-
-However, depending on the relationship between $l_{sl}$, $R_{d}$ and $R_{lo}$, the quenching area can have different shapes as pictured in Figure \ref{fig:slide_area}.
-
-
-\begin{figure}[!h]
-\centering
-\subfloat[$l_{sl}< R_{lo}-R_{d}$]{
-\includegraphics[width=0.15\linewidth]{img/slide_area/slide_area1.pdf}
-}
-\hfill
-\subfloat[$R_{lo}-R_{d} \leq l_{sl}$ and $l_{sl} \leq R_{lo} + R_{d}$]{
-\includegraphics[width=0.15\linewidth]{img/slide_area/slide_area2.pdf}
-}
-\hfill
-\subfloat[$l_{sl} > R_{lo} + R_{d}$]{
-\includegraphics[width=0.15\linewidth]{img/slide_area/slide_area3.pdf}
-}
-\caption{Quenching area shape depending on the relation between $R_{d}$, $R_{lo}$ and $l_{sl}$.}
-\label{fig:slide_area}
-\end{figure}
-
-\npar
-
-Based on Figure \ref{fig:slide_area}, we can then write:
-
-\begin{align}
-A_{q,1b} = &
-\begin{dcases}
-\pi R_{lo}^{2} & \text{if } l_{sl}\leq R_{lo}-R_{d} \\
-%
-\frac{1}{2}\pi R_{d}^{2} + l_{sl}\parth{R_{d}+R_{lo}} + \frac{1}{2}\pi R_{lo}^{2} & \text{if } l_{sl} \geq R_{lo}+R_{d}
-%
-\end{dcases}
-\end{align}
-
-Which can be re-expressed by defining ${l_{sl}}^{*}=\dfrac{l_{sl}}{R_{lo}}$ and ${A_{q,1b}}^{*}=\dfrac{A_{q,1b}}{\pi R_{lo}^{2}}$
-
-\begin{align}
-{A_{q,1b}}^{*} = &
-\begin{dcases}
-1 & \text{if } {l_{sl}}^{*}\leq 1- \frac{R_{d}}{R_{lo}} \\
-%
-\frac{1}{2}\parth{1+\parth{\frac{R_{d}}{R_{lo}}}^{2} } + \frac{{l_{sl}}^{*}}{\pi}\parth{1+\frac{R_{d}}{R_{lo}}} & \text{if } {l_{sl}}^{*} \geq 1 + \frac{R_{d}}{R_{lo}}
-\end{dcases}
-\end{align}
-and we linearly interpolate those two expressions for the region where $1-\dfrac{R_{d}}{R_{lo}}\leq {l_{sl}}^{*} \leq 1+\dfrac{R_{d}}{R_{lo}}$.
-
-
-
-
-
 \section{Considerations on Bubble Interactions and Nucleation Sites Deactivation}
+\label{sec:site_interactions}
 
 \subsection{Nucleation Site Distribution}
 
@@ -901,12 +826,14 @@ Using the bubble density $N_{b}$ (Eq. \ref{eq:bubble_density}) as the event dens
 
 \begin{align}
 \mathcal{P}\parth{r \leq 2R_{d}} &=\int_{0}^{2R_{d}}f\parth{r} \mathrm{d}r = 1 - e^{-N_{b} \pi \parth{2R_{d}}^{2}}=\mathcal{P}_{coal,st}
+\label{eq:proba_coal_st}
 \end{align}
 
 The density of bubble-generating sites that will lead to a static coalescence can then be estimated as :
 
 \begin{align}
 N_{coal,st}=\mathcal{P}_{coal,st}N_{sit,a}
+\label{eq:sites_static_coal}
 \end{align}
 
 Figure \ref{fig:pcoal_st} the evolution of $\mathcal{P}_{coal,st}$ with the wall superheat for two departure radius values, using the same conditions as in Figure \ref{fig:nsit_CSR}.
@@ -917,6 +844,269 @@ Figure \ref{fig:pcoal_st} the evolution of $\mathcal{P}_{coal,st}$ with the wall
 \caption{Static coalescence probability with corrected Li \etal for water at 40 bar, $f=200$~Hz, $t_{g,d} = 0.1$~ms and $\theta=80\degree$.}
 \label{fig:pcoal_st}
 \end{figure}
+
+
+
+
+
+%\section{Bubble Sliding Length}
+
+
+
+
+
+
+\section{Bubble Sliding Length}
+
+Estimation of the bubble sliding length is critical for the evaluation of the quenching term since it acts as an enhancing factor of the wall area that will undergo transient heat transfer.
+
+\npar
+
+As discussed in Section \ref{sec:liftoff}, is we consider that bubble lift-off occurs when a sliding bubble coalesces with an other bubble growing on its site, the sliding length $l_{sl}$ shall be close to the average distance between two nucleation bubbles on the boiling surface. This value has been derived in Section \ref{sec:site_interactions}:
+
+\begin{equation}
+l_{sl} = s_{b} = \frac{1}{2\sqrt{N_{b}}}
+\label{eq:sliding_length}
+\end{equation}
+with $N_{b}$ the bubble density from Eq. \ref{eq:bubble_density}.
+
+\npar
+
+To assess the validity of this assumption, we compare on Figure \ref{fig:lsl_koss} values of sliding length obtained using either the bubble density $N_{b}$ or the active site density $N_{sit,a}$ (Eq. \ref{eq:static_deact}). Since their expression depend on the values of $f$, $t_{g,d}$ and $R_{d}$, we take:
+\begin{itemize}
+\item $R_{d} = 0.015$~mm at 40 bar and $R_{d} = 0.02$~mm at 20 bar (see Table \ref{tab:exp_data_dd}) ;
+\item $ft_{g,d}=0.1$ or $ft_{g,d}=0.01$ since bubble departure by sliding becomes nearly instantaneous after nucleation as pressure increases \cite{kossolapov_experimental_2021}.
+\end{itemize}
+
+\begin{figure}[!h]
+\centering
+\subfloat[$P=20$~bar, $G=500\ \debm$]{
+\includegraphics[width=0.5\linewidth]{img/lsl/Koss_P20_G500_lsl.pdf}
+}
+\subfloat[$P=40$~bar, $G=500\ \debm$]{
+\includegraphics[width=0.5\linewidth]{img/lsl/Koss_P40_G500_lsl.pdf}
+}
+\\
+\subfloat[$P=20$~bar, $G=1000\ \debm$]{
+\includegraphics[width=0.5\linewidth]{img/lsl/Koss_P20_G1000_lsl.pdf}
+}
+\subfloat[$P=40$~bar, $G=1000\ \debm$]{
+\includegraphics[width=0.5\linewidth]{img/lsl/Koss_P40_G1000_lsl.pdf}
+}
+\\
+\subfloat[$P=20$~bar, $G=1500\ \debm$]{
+\includegraphics[width=0.5\linewidth]{img/lsl/Koss_P20_G1500_lsl.pdf}
+}
+\subfloat[$P=40$~bar, $G=1500\ \debm$]{
+\includegraphics[width=0.5\linewidth]{img/lsl/Koss_P40_G1500_lsl.pdf}
+}
+\caption{Comparison of sliding distance estimations with Kossolapov measurements \cite{kossolapov_experimental_2021}. NSD was estimated using Li \etal correlation (Eq. \ref{eq:nsit_li}).}
+\label{fig:lsl_koss}
+\end{figure}
+
+
+\npar
+
+First, we must acknowledge that the ranges of measured sliding length by Kossolapov include bubbles that do not slide to the longest observed distance. When looking at the statistical distribution provided in his work \cite{kossolapov_experimental_2021}, bubbles seem to averagely slide around half the longest distance measured in the experiments.
+
+\npar
+The evaluation using the average distance between two active sites is always clearly underestimating the sliding distance. This seems natural due to the heterogeneity and temporal asynchronism between active sites regarding their nucleation behavior. On the contrary, estimating the distance using the bubble density with very low values of $ft_{g,d}$ seem to better approach the actual sliding length. Only a clear overestimation is observed for the $P=20\ $bar and $G=500\ \debm$ case for which we can speculate that values of $ft_{g,d}$ may be larger.
+
+
+\section{Single Bubble Quenching Area}
+\label{sec:quench_area}
+
+When computing the quenching heat flux, we need to provide the total wall area visited by a single bubble $A_{q,1b}$ that will undergo quenching. In wall boiling model that do not consider bubble sliding \cite{kurul_multidimensional_1990, guelfi_neptune_2007, podowski_mechanistic_2008} the impacted area at bubble lift-off is often considered as :
+
+\begin{equation}
+A_{q,1b} = F_{A} \pi R_{lo}^{2}
+\end{equation} 
+with $F_{A}$ being an enhancement factor that accounts for the the possibility that the bubble will induce quenching over a surface larger than its projected area.
+
+\begin{remark*}{}
+This question of bubble influence area has been discussed by different authors. Yoo \etal \cite{yoo_area_2018} experimentally found enhancement factor sup to $14$ for small sliding bubbles. On the contrary, Kossolapov \cite{kossolapov_experimental_2021} observed that the area undergoing quenching was exactly the surface covered by the bubble footprint that can be even smaller that the bubble projected area. This aspect seems still open to discussions and may need extra experimental observations to reach a solid conclusion. In this work, we will simply consider that the bubble induces transient heat transfer over its projected area.
+\end{remark*}
+
+
+\npar
+
+Otherwise, models that account for bubble sliding \cite{basu_wall_2005, yeoh_fundamental_2008, gilman_self-consistent_2017, kommajosyula_development_2020} compute the quenching area using the sliding length $l_{sl}$ as:
+
+\begin{equation}
+A_{q,1b} = l_{sl}\parth{R_{d} + R_{lo}}
+\end{equation}
+
+However, depending on the relationship between $l_{sl}$, $R_{d}$ and $R_{lo}$, the quenching area can have different shapes as pictured in Figure \ref{fig:slide_area}.
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[$l_{sl}< R_{lo}-R_{d}$]{
+\includegraphics[width=0.15\linewidth]{img/slide_area/slide_area1.pdf}
+}
+\hfill
+\subfloat[$R_{lo}-R_{d} \leq l_{sl}$ and $l_{sl} \leq R_{lo} + R_{d}$]{
+\includegraphics[width=0.15\linewidth]{img/slide_area/slide_area2.pdf}
+}
+\hfill
+\subfloat[$l_{sl} > R_{lo} + R_{d}$]{
+\includegraphics[width=0.15\linewidth]{img/slide_area/slide_area3.pdf}
+}
+\caption{Quenching area shape depending on the relation between $R_{d}$, $R_{lo}$ and $l_{sl}$.}
+\label{fig:slide_area}
+\end{figure}
+
+\npar
+
+Based on Figure \ref{fig:slide_area}, we can then write:
+
+\begin{align}
+A_{q,1b} = &
+\begin{dcases}
+\pi R_{lo}^{2} & \text{if } l_{sl}\leq R_{lo}-R_{d} \\
+%
+\frac{1}{2}\pi R_{d}^{2} + l_{sl}\parth{R_{d}+R_{lo}} + \frac{1}{2}\pi R_{lo}^{2} & \text{if } l_{sl} \geq R_{lo}+R_{d}
+%
+\end{dcases}
+label{eq:Aq_1b}
+\end{align}
+
+Which can be re-expressed by defining ${l_{sl}}^{*}=\dfrac{l_{sl}}{R_{lo}}$ and ${A_{q,1b}}^{*}=\dfrac{A_{q,1b}}{\pi R_{lo}^{2}}$
+
+\begin{align}
+{A_{q,1b}}^{*} = &
+\begin{dcases}
+1 & \text{if } {l_{sl}}^{*}\leq 1- \frac{R_{d}}{R_{lo}} \\
+%
+\frac{1}{2}\parth{1+\parth{\frac{R_{d}}{R_{lo}}}^{2} } + \frac{{l_{sl}}^{*}}{\pi}\parth{1+\frac{R_{d}}{R_{lo}}} & \text{if } {l_{sl}}^{*} \geq 1 + \frac{R_{d}}{R_{lo}}
+\end{dcases}
+\label{eq:Aq_1b_star}
+\end{align}
+and we linearly interpolate those two expressions for the region where $1-\dfrac{R_{d}}{R_{lo}}\leq {l_{sl}}^{*} \leq 1+\dfrac{R_{d}}{R_{lo}}$.
+
+
+\section{Assembling a New Heat Flux Partitioning}
+
+Based on all the discussions conducted in Chapter \ref{chap:bub_dyn} and in previous Sections of this Chapter, we will now propose a formulation for the HFP model.
+
+\npar
+
+In our approach, we consider the following partitioning (Figure \ref{fig:sketch_HFP}):
+
+\begin{itemize}
+\item A liquid convective heat flux $\phi_{c,L}$ associated to forced convection ;
+\item An evaporation heat flux based on static coalescence between adjacent bubbles nucleating on very close sites $\phi_{e,coal,st}$ ;
+\item An evaporation heat flux based on sliding coalescence between a sliding bubble and a growing bubble on its site $\phi_{e,coal_sl}$ ;
+\item A quenching heat flux due to transient conduction following bubble departure, sliding and lift-off ;
+\item A vapor convective heat flux $\phi_{c,V}$ that accounts for the portion of the wall directly in contact with vapor under a bubble footprint.
+\end{itemize}
+
+\begin{figure}[!h]
+\includegraphics[width=1.0\linewidth]{img/HFP/HFP_sketch.pdf}
+\caption{Sketch of all the considered heat transfers for the new HFP model.}
+\label{fig:sketch_HFP}
+\end{figure}
+
+
+\subsection{Liquid Convective Heat Flux}
+
+The liquid convective heat flux $\phi_{c,L}$ is naturally computed as:
+
+\begin{equation}
+\phi_{c,L} = A_{c,L}h_{c,L}\parth{T_{w}-T_{L}} = h_{c,L}\parth{\Delta T_{w} + \Delta T_{L}}
+\end{equation}
+where $A_{c,L}$ is the proportion of the wall area that is affected by liquid forced convection.
+
+\npar
+
+The liquid heat transfer coefficient $h_{c,L}$ is computed using Gnielinski correlation (Eq. \ref{eq:gnielinski}) that has proven to be efficient for wall temperature predictions in single-phase regimes both for R12 and water (\ref{subsec:debora_Tw_verif} and \ref{sec:single_phase_HTC}). 
+
+\subsection{Static Coalescence Evaporation Heat Flux}
+
+The static coalescence arises from the calculation of the probability for two bubbles to nucleate at a distance lower than $2R_{d}$ (Eq. \ref{eq:proba_coal_st}) which gives the proportion of active nucleation sites that will produce this type of bubble (Eq. \ref{eq:sites_static_coal}). 
+
+\npar
+
+Assuming that the bubbles will merge at a radius close to $R_{d}$, we can compute the associated evaporation heat flux:
+
+\begin{equation}
+\phi_{e,coal,st} = N_{coal,st} f \rho_{V} h_{LV} \frac{4}{3}\pi R_{d}^{3}
+\end{equation}
+
+This heat flux can also be expressed using the resulting radius of the coalescence:
+
+\begin{align}
+\phi_{e,coal,st} = \frac{N_{coal,st}}{2} f \rho_{V} h_{LV} \frac{4}{3}\pi R_{coal,st}^{3}\\
+R_{coal,st} = \parth{R_{d}^{3}+R_{d}^{3}}^{1/3} = 2^{1/3}R_{d}
+\end{align}
+
+\subsection{Sliding Coalescence Evaporation Heat Flux}
+
+Since we identified the active sites that will lead to static coalescence, we consider that the remaining sites will generate bubbles for which lift-off occurs under sliding coalescence. Meaning that half of the sites will generate a sliding bubble and the other half a static bubble that will coalesce with the sliding one. This results in a bubble of diameter:
+
+\begin{equation}
+R_{coal,sl} = \parth{R_{sl}^{3}+R_{d}^{3}}^{1/3}
+\label{eq:Rcoal_sl}
+\end{equation}
+
+Where $R_{sl}$ is the diameter of the sliding bubble after a distance $l_{sl} = \dfrac{1}{2\sqrt{N_{b}}}$ (Eq. \ref{eq:sliding_length}). The sliding part is solved following the bubble dynamics model that has been developed in Section \ref{sec:bub_dyn_sliding} after departure at radius $R_{d}$ computed using Eq. \ref{eq:adim_dep}.
+
+\npar
+
+We can thus write:
+
+\begin{equation}
+\phi_{e,coal,sl} = \frac{N_{coal,sl}}{2}f \rho_{V} h_{LV} \frac{4}{3} \pi \parth{R_{sl}^{3} + R_{d}^{3}}
+\end{equation}
+
+\subsection{Quenching Heat Flux}
+
+The quenching heat flux is split in two parts:
+
+\begin{itemize}
+\item Quenching from static coalescing bubbles, each of them having a projected area of $\pi R_{d}^{2}$ ;
+\item Quenching from sliding coalescing bubbles, for which the total swiped area can be expressed using Eq. \ref{eq:Aq_1b} with a lift-off radius being the resulting coalescence radius (Eq. \ref{eq:Rcoal_sl}).
+\end{itemize}
+
+
+The time during which the transient heat transfer will take place depends on the relationship between the total wait time $t_{w}$ and the theoretical time $t^{*}$ at which the heat transfer coefficient of transient conduction and forced convection are equal:
+
+\begin{align}
+h_{c,L}\parth{\Delta T_{w} + \Delta T_{L}} &= \frac{\lambda_{L}\parth{\Delta T_{w} + \Delta T_{L}}}{\sqrt{\pi\eta_{L}t^{*}}}\\
+\Leftrightarrow t^{*} &= \parth{\frac{\lambda_{L}}{h_{c,L}}}^{2}\frac{1}{\pi \eta_{L}}
+\end{align}
+
+If the wait time $t_{w}$ is lower than $t_{*}$, then transient conduction dominates during the whole period between two nucleation and the quenching time $t_{q}$ is thus equal to $t_{w}$.
+
+Otherwise, if $t_{w}>t^{*}$ the wait time will consist of transient heat transfer during $t^{*}$ before being dominated by forced convection up to $t_{w}$. The quenching time $t_{q}$ in this case is then $t^{*}$.
+
+Then, using the transient heat transfer solution (mentioned in Section \ref{sec:wait_time}, also derived by Del Valle \cite{delvalle_phd}), we can write the total quenching flux as:
+
+\begin{align}
+\phi_{q} &= A_{q,tot}t_{q}f \frac{2\lambda_{L}\parth{\Delta T_{w} + \Delta T_{L}}}{\sqrt{\pi \eta_{L}t_{q}} }\\
+A_{q} &= N_{coal,st} \pi R_{d}^{2} + \frac{N_{coal,sl}}{2} A_{q,1b} \\
+t_{q} &= \min{t_{w}, t^{*}}
+\end{align}
+where $A_{q,1b}$ is computed using Eq. \ref{eq:Aq_1b} with $R_{coal,sl}$ as the lift-off radius.
+
+
+\subsection{Vapor Convective Heat Flux}
+
+Assuming that the vapor is at saturation temperature, we can write:
+
+\begin{align}
+\phi_{c,V} = A_{c,V} h_{c,V} \parth{T_{w}-T_{sat}} = A_{c,V} h_{c,V} \Delta T_{w}
+\end{align}
+where $A_{c,V}$ is the portion of the wall area in direct contact with vapor.
+
+\npar
+
+For a truncated spherical bubble, the vapor contact area is its foot area : $\pi R^{2}\sin{\theta}$. Since the bubbles are supposed to grow following a $\sqrt{t}$ law (Section \ref{sec:bub_growth}), the average radius for a bubble over its lifetime is:
+
+\begin{equation}
+\overline{R} = \frac{1}{t_{g}}\int_{0}^{R}r\ \mathrm{d}r = \frac{1}{t_{g}} \int_{0}^{R} K\Ja_{w}\sqrt{\eta_{L}t} \mathrm{d}t = \frac{1}{t_{g}} K\Ja_{w} \frac{2}{3}\sqrt{\eta_{L}}t_{g}^{3/2} = \frac{2}{3}R
+\end{equation}
+
 
 %If we suppose that coalescing bubbles will instantly lift-off due to the perturbation associated with the coalescence process, this yields an associated boiling flux :
 %

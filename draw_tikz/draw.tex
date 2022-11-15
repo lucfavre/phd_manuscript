@@ -278,6 +278,8 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \end{tikzpicture}
 
 
+\beginpgfgraphicnamed{HFP_sketch}
+
 \fbox{
 
 \begin{tikzpicture}[scale=3.0]
@@ -286,13 +288,13 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \coordinate (A1) at (1,0);
 \coordinate (A2) at (2,0);
 \coordinate (A3) at (3,0);
-\coordinate (A) at (4,0);
+\coordinate (A) at (4.5,0);
 
 
 %Sections and wall
 \draw (O) -- (A);
 \draw ($(O)-(0,0.03)$) -- ($(A)-(0,0.03)$);
-\foreach \i in {0,...,19}
+\foreach \i in {0,...,22}
 {
 \draw (\i*0.2,0) -- (\i*0.2+0.05,-0.03);
 }
@@ -323,23 +325,30 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \draw ($(Ophi)+(0,-0.15)$) node{${\phi_{c,L}}$};
 
 
-%Boiling heat flux
+%Boiling Coal St heat flux
 \coordinate (Ob) at (1.0,0);
 
-\tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.15; \rayw = sin(\alphrad r) * \ray;}; %Geom values
+\tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.1; \rayw = sin(\alphrad r) * \ray;}; %Geom values
 
 \coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
 \shade[ball color = gray!40, opacity = 0.4] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
 
 \draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
 
+\coordinate (Ob) at (1.15,0);
+\coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
+\shade[ball color = gray!40, opacity = 0.4] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+\coordinate (Oarc) at ($(Ob)+(-{\ray * sin(\alphrad r)}*0.3,0)$);
 
 \draw[->,>=latex, thick, brown!80!black] plot [smooth, tension=0.5] coordinates {($(Oarc)+(0,-0.1)$) ($(Oarc)+(0.05,+0.03)$) ($(Oarc)+(-0.05,+0.1)$)};
 
 \coordinate (Oarc2) at ($(Oarc) + (-2*\rayw,0)$);
 \draw[->,>=latex, thick, brown!80!black] plot [smooth, tension=0.5] coordinates {($(Oarc2)+(0,-0.1)$) ($(Oarc2)+(-0.05,+0.03)$) ($(Oarc2)+(+0.05,+0.1)$)};
 
-\draw ($(Ob)+(0,-0.15)$) node{${\phi_{e}}$};
+\draw ($(Ob)+(-0.1,-0.15)$) node{${\phi_{e,coal,st}}$};
 
 
 
@@ -382,7 +391,7 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 
 \draw (Oarc) arc ({-(pi/2-(\alphadvrad)) r}:{(pi/2) r}:\rayadv) arc ({(pi/2) r}:{(pi+pi/2-(\alphrecrad)) r}:\rayrec);
 
-\coordinate (Ob2) at (3.5,0.5);
+\coordinate (Ob2) at (4.0,0.5);
 \tikzmath{\ray=0.25;};
 
 \shade[ball color = gray!40, opacity = 0.4] (Ob2) circle(\ray);
@@ -397,24 +406,50 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 
 \coordinate (Ophisl) at ($(Oarc) - (\rayadv+\rayrec+0.05,0)$);
 \draw[->,>=latex, thick, orange!90!gray] ($(Ophisl)+(0,-0.1)$)--($(Ophisl)+(0,+0.1)$);
-\draw ($(Ophisl)+(0,-0.15)$) node{${\phi_{q,sl}}$};
+\draw ($(Ophisl)+(0,-0.15)$) node{${\phi_{q}}$};
 
 
 \tikzmath{\rayspi=0.08;};
 
-\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=94,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
-\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=105,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=109,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=119,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
 
 
 \coordinate (Ophiq) at ($(Ob2) - (0,0.5)$);
 \draw[->,>=latex, thick, orange!90!gray] ($(Ophiq)+(0,-0.1)$)--($(Ophiq)+(0,+0.1)$);
-\draw ($(Ophiq)+(0,-0.15)$) node{${\phi_{q,lo}}$};
+\draw ($(Ophiq)+(0,-0.15)$) node{${\phi_{q}}$};
+
+
+%%Boiling Coal Sl Heat Flux
+
+\coordinate (Ob) at (3.3,0);
+
+\tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.1; \rayw = sin(\alphrad r) * \ray;}; %Geom values
+
+\coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
+\shade[ball color = gray!40, opacity = 0.4] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+
+%Flux to sliding bubble
+\coordinate (Ophiesl) at ($(Oarc)+(-0.5,0)$);
+\draw[->,>=latex, thick, brown!80!black] plot [smooth, tension=0.5] coordinates {($(Ophiesl)+(0,-0.1)$) ($(Ophiesl)+(0.05,+0.03)$) ($(Ophiesl)+(-0.05,+0.1)$)};
+
+%Flux to static bubble
+\coordinate (Oarc2) at ($(Oarc) + (-2*\rayw,0)$);
+\draw[->,>=latex, thick, brown!80!black] plot [smooth, tension=0.5] coordinates {($(Oarc2)+(0,-0.1)$) ($(Oarc2)+(-0.05,+0.03)$) ($(Oarc2)+(+0.05,+0.1)$)};
+
+\draw ($(Ob)+(-0.25,-0.15)$) node{${\phi_{e,coal,sl}}$};
+
+
+
 
 \end{tikzpicture}
 
 }
 
-
+\endpgfgraphicnamed
 
 \fbox{
 
@@ -1372,6 +1407,10 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \draw (Oloc) node[gray!70!blue, above right]{${\vect{U_{L}}}$};
 
 \draw[densely dashed, black, <->] (Osit)--($(Olo)-(0.05,0)$) node[midway, left]{$l_{sl}$};
+
+\draw ($(Osit)+(-0.05,0)$) node[left]{$t_{g,d}$};
+
+\draw ($(Olo)+(-0.05,0)$) node[left]{$t_{g,lo}$};
 
 %Static growth
 

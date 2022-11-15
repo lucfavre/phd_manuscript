@@ -2,7 +2,7 @@
 
 \chapter{Boiling Bubble Dynamics} % Chapter title
 
-\label{ch:bub_dyn} % For referencing the chapter elsewhere, use \autoref{ch:name} 
+\label{chap:bub_dyn} % For referencing the chapter elsewhere, use \autoref{ch:name} 
 
 %----------------------------------------------------------------------------------------
 \minitoc
@@ -1957,7 +1957,7 @@ The approach demonstrated the importance and the strong influence of the contact
 
 
 \section{Sliding phase}\label{sliding}
-
+\label{sec:bub_dyn_sliding}
 
 \subsection{Modeling}
 
@@ -2109,6 +2109,7 @@ This comparison highlights the fact that the proposed model is able to represent
 
 
 \section{Bubble Lift-Off}
+\label{sec:liftoff}
 
 \subsection{Introduction}
 
@@ -2160,7 +2161,7 @@ Contrary to those observations, other authors who realized experimental visualiz
 \item Bubble lift-off under application of a high heat flux (rapid growth) or after coalescence with an other bubble on its path.
 \end{itemize}
 
-Similar behaviors of bubbles sliding along the wall and not leaving it until a coalescence occurs has also been reported for vertical flow boiling by Prodanovic \etal \cite{prodanovic_bubble_2002} or Thorncroft \etal \cite{thorncroft_experimental_1998}. In particular, Prodanovic \etal mentioned that bubbles that would detach from the wall by themsleves cannot be interpreted as typical bubble behavior in those conditions since there were very few of them. Typical experimental visualizations of this nature are presented on Figure \ref{fig:exp_nolift}
+Similar behaviors of bubbles sliding along the wall and not leaving it until a coalescence occurs have also been reported for vertical flow boiling by Prodanovic \etal \cite{prodanovic_bubble_2002} or Thorncroft \etal \cite{thorncroft_experimental_1998}. In particular, Prodanovic \etal mentioned that bubbles that would detach from the wall by themsleves cannot be interpreted as typical bubble behavior in those conditions since there were very few of them. Typical experimental visualizations of this nature are presented on Figure \ref{fig:exp_nolift}
 
 \begin{figure}[h!]
 \begin{center}
@@ -2180,6 +2181,10 @@ Similar behaviors of bubbles sliding along the wall and not leaving it until a c
 \npar
 
 Generally speaking, it seems that single bubbles in vertical boiling are not likely to present a lift-off behavior by themselves in every flow conditions that could be explored. \textbf{As concluded by Okawa \etal \cite{okawa_bubble_2005} and discussed in Yoo \etal \cite{yoo_experimental_2016-1}, it seems that a more general trigger for bubble lift-off would be either associated to strong deformation / elongation of the bubble shape (inducing a change in the lift coefficient) or to a coalescence event between two bubbles. }
+
+\begin{note*}{}
+Such a lift-off mechanism is considered by Gilman \& Baglietto \cite{gilman_self-consistent_2017} who consider lift-off when the Eotvös number of the bubble reaches $0.1$.
+\end{note*}
 
 \npar
 
@@ -2439,12 +2444,14 @@ Moreover, existing database, though diverse, are lacking of high pressure measur
 
 \npar
 
-Finally, the question of lift-off in the framework of the HFP model can be answered in two ways:
+Finally, the question of lift-off in the framework of the HFP model can be answered in three ways:
 
 \begin{enumerate}
 \item[1)] No lift-off diameter value is attributed to single bubbles.  It is thus computed by solving the bubble sliding until it collides and coalesces with an other bubble growing on its nucleation site. This approach is likely to be the most representative of the general behavior of bubbles in vertical boiling according to experiments. However, it may lead to very large, if not unphysical, values of sliding length at low heat fluxes values where the average distance between bubbles would increase greatly.
 
-\item[2)] A lift-off / maximum diameter is attributed for single bubble behaviors and sliding is computed between the fixed values of $D_{d}$ and $D_{lo}$, with coalescence that can be considered between those two events and trigger earlier lift-off. This choice would be in fewer concordance with experimental observations but would allow to consider distinct bubble lifetime scenario including full single bubbles.
+\item[2)] Same as above 1) but the lift-off is considered when a non-dimensional number representative of bubble deformation reaches a critical value. Several bubble coalescence can thus occur until that moment occurs.
+
+\item[3)] A lift-off / maximum diameter is attributed for single bubble behaviors and sliding is computed between the fixed values of $D_{d}$ and $D_{lo}$, with coalescence that can be considered between those two events and trigger earlier lift-off. This choice would be in fewer concordance with experimental observations but would allow to consider distinct bubble lifetime scenario including full single bubbles.
 \end{enumerate}
 
 
