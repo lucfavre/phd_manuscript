@@ -12,13 +12,10 @@
 \section{Single-Phase Heat Transfer Coefficient}
 \label{sec:single_phase_HTC}
 
-The choice of a proper correlation to compute the single-phase heat transfer coefficient is a first but inevitable step to build a HFP model. Indeed, if the single-phase convection term is badly computed, the resulting boiling model will fail to predict the wall temperature.
+The choice of a proper correlation to compute the single-phase heat transfer coefficient is a first but inevitable step to build a HFP model. Indeed, if the single-phase convection term is badly computed, the resulting boiling model will fail to predict the wall temperature. For instance, if the liquid convective HTC is overestimated, it would result in a delayed increase of the boiling and quenching heat fluxes which would in turn lead to an overprediction of the wall temperature. 
 
-For instance, if the liquid convective HTC is overestimated, it would result in a delayed increase of the boiling and quenching heat fluxes which would in turn lead to an overprediction of the wall temperature. 
-
-To assess existing correlations for the single-phase HTC, we will use wall temperature measurements extracted from experimental boiling curves for water where $T_{w}\leq T_{sat}$. They correspond to the single-phase part of the experimental data later used to assess the HFP model.
-
-The chosen data are presented on Table \ref{tab:exp_data_convection}.
+\npar
+To assess existing correlations for the single-phase HTC, we will use wall temperature measurements extracted from experimental boiling curves for water where $T_{w}\leq T_{sat}$. They correspond to the single-phase part of the experimental data later used to assess the HFP model. The chosen data are presented on Table \ref{tab:exp_data_convection}.
 
 \begin{table}[h!]
 
@@ -64,18 +61,16 @@ On Figure \ref{fig:dittus_gniel_htc}, we compare the results of wall temperature
 \label{fig:dittus_gniel_htc}
 \end{figure}
 
-The two correlations are of similar efficiency regarding wall temperature predictions over the considered data sets. They both have very good agreement with Kennel data and clear overestimations of $\Delta T_{w}$ on Richenderfer and Kossolapov measurements. The slope difference compared to the parity implies that the correlations are predicting too small Nusselt numbers for those cases. 
-
-Regarding Jens-Lottes data, both model underestimate the wall temperatures, with better results achieved by Gnielinski correlation.
+\npar
+The two correlations are of similar efficiency regarding wall temperature predictions over the considered data sets. They both have very good agreement with Kennel data and clear overestimations of $\Delta T_{w}$ on Richenderfer and Kossolapov measurements. The slope difference compared to the parity implies that the correlations are predicting too small Nusselt numbers for those cases. Regarding Jens-Lottes data, both model underestimate the wall temperatures, with better results achieved by Gnielinski correlation.
 
 \begin{remark*}{}
 We tested different friction factor along with different values of wall roughness in the Gnielinski correlation and observed a negligible impact on the overall results. This allows to stay with a simple formulation for the friction coefficient.
 \end{remark*}
 
+\npar
 
-The error obtained on Richenderfer and Kossolapov data can be explained by the definition of the HTC computed by Gnielinski correlation. Indeed, Gnielinski correlated a Nusselt number associated to a forced convection coefficient $h_{fc,Gniel}$ in the case of a internal flow with a completely heated wall.
-
-However, only one side of the channel is heated in Richenderfer ans Kossolapov experiments. If $S_{heat}$ denotes this actual heated surface, then Gnielinski correlation estimates the HTC for a surface $4S_{heat}$. With the same imposed total heat power $\Phi_{w}$ and bulk liquid temperature $T_{L}$, we have:
+The error obtained on Richenderfer and Kossolapov data can be explained by the definition of the HTC computed by Gnielinski correlation. Indeed, Gnielinski correlated a Nusselt number associated to a forced convection coefficient $h_{fc,Gniel}$ in the case of a internal flow with a completely heated wall. However, only one side of the channel is heated in Richenderfer ans Kossolapov experiments. If $S_{heat}$ denotes this actual heated surface, then Gnielinski correlation estimates the HTC for a surface $4S_{heat}$. With the same imposed total heat power $\Phi_{w}$ and bulk liquid temperature $T_{L}$, we have:
 
 \begin{align}
 h_{fc,Gniel} =& \frac{\Phi_{w}}{\parth{T_{w,Gniel}-T_{L}} 4S_{heat}} \\
@@ -92,9 +87,8 @@ h_{fc,exp}=4h_{fc,Gniel}
 This correction can be interpreted as using the thermal diameter instead of the hydraulic diameter, which is 4 times smaller when only one side of the channel is heated.
 \end{remark*}
 
-On Figure \ref{fig:ncfd_gniel_corr_htc} we display the predictions of Gnielisnki correlation including this correction by a factor 4 on the HTC for Richenderfer and Kossolapov cases. We also test a $10\%$ reduction on the HTC for Jens-Lottes cases to assess the error made by Gnielinski correlation.
-
-On the same Figure, we also present predictions achieved with the local HTC estimation implemented in NCFD (Eq. \ref{eq:SP_HTC_NCFD}), using a value of $y^{+}=100$. 
+\npar
+On Figure \ref{fig:ncfd_gniel_corr_htc} we display the predictions of Gnielisnki correlation including this correction by a factor 4 on the HTC for Richenderfer and Kossolapov cases. We also test a $10\%$ reduction on the HTC for Jens-Lottes cases to assess the error made by Gnielinski correlation. On the same Figure, we also present predictions achieved with the local HTC estimation implemented in NCFD (Eq. \ref{eq:SP_HTC_NCFD}), using a value of $y^{+}=100$. 
 
 
 \begin{figure}[h!]
@@ -111,12 +105,14 @@ On the same Figure, we also present predictions achieved with the local HTC esti
 \label{fig:ncfd_gniel_corr_htc}
 \end{figure}
 
+\npar
 The NCFD approach yields predictions similar to the 1D correlations (Figure \ref{fig:dittus_gniel_htc}) with larger underestimations on Jens-Lottes measurements. On the other hand, we see that applying a constant correction to the Gnielinski correlation (4 for Kossolapov and Richenderfer cases, 0.9 for Jens-Lottes cases) suffices to yield accurate predictions on the whole range of wall temperature measurements. 
 
 \begin{remark*}{}
 The NCFD law was tested without running CFD simulations. The equations were re-written in python to allow its testing outside of the whole code. The use of $y^{+}=100$ as well as the Mac Adams correlation (Eq. \ref{eq:utau_macadams}) for the friction velocity $U_{\tau}$ may induce a difference with the predictions that could be achieved by running a complete CFD computation of the considered cases.
 \end{remark*}
 
+\npar
 The average errors obtained with each model are summed up on Table \ref{tab:error_models_SP_HTC}
 
 \begin{table}[h!]
@@ -152,6 +148,7 @@ Corrected Gnielisnki & 1.34 & 3.08 & 1.57 & 1.74 \\
 \end{table}
 
 
+\npar
 \textbf{Recalling that Gnielinski correlation was also providing good results on the DEBORA cases with R12 (Chapter \ref{chap:debora}) further indicates it as a proper choice regarding single-phase HTC estimation in the HFP model.} We will later allow the use of the correction factors when needed to ensure a proper representation of the single-phase part when trying to assess the models associated to boiling.
 
 
@@ -164,6 +161,8 @@ Corrected Gnielisnki & 1.34 & 3.08 & 1.57 & 1.74 \\
 \label{sec:NSD}
 
 The Nucleation Site Density is among the most influencing parameters over the HFP models predictions, particularly regarding wall temperature. Indeed, its value directly controls the density of bubbles generated at the heater and therefore impacts both the boiling ($\phi_{e}$) and quenching ($\phi_{q}$) heat fluxes to the first order. Being able to come up with correct predictions of the NSD is thus critical if one wishes to properly capture the thermal behavior of the boiling surface.
+
+\npar
 
 However, the value of $N_{sit}$ is actually influenced by many parameters being either linked to thermal-hydraulics (wall temperature, pressure, operating fluid) or the heater material (roughness, wettability). That is why its value is often estimated through empirical correlations, for which many different expression have been proposed over the years since the end of the XX\textsuperscript{th} century.
 
@@ -209,9 +208,7 @@ with $R_{g}$ the perfect gas constant times the molar mass of the fluid,  $N_{0}
 This law is used in the HFP model of Gilman \& Baglietto \cite{gilman_self-consistent_2017}.
 \end{remark*}
 
-We can note that it also includes the value of the static contact angle $\theta$ which can be used as a parameter to accounts for wall properties, since it is dependent on the wall roughness, wettability and the operating fluid. 
-
-Indeed, a high-wetting material (low values of $\theta$) will allow smaller cavities to be flooded by the surrounding liquid, thus hindering non-condensable gases to be captured inside and become a potentially active nucleation site (Figure \ref{fig:nsd_theta_wet}).
+We can note that it also includes the value of the static contact angle $\theta$ which can be used as a parameter to accounts for wall properties, since it is dependent on the wall roughness, wettability and the operating fluid.  Indeed, a high-wetting material (low values of $\theta$) will allow smaller cavities to be flooded by the surrounding liquid, thus hindering non-condensable gases to be captured inside and become a potentially active nucleation site (Figure \ref{fig:nsd_theta_wet}).
 
 \begin{figure}[h!]
 \centering
@@ -338,17 +335,20 @@ We then compare the predictions achieved by the model of Lemmert \& Chawla (Eq. 
 
 The Lemmert \& Chawla model appears to fail in predicting the NSD at high pressures. This is a logical drawback of its sole dependence on the wall superheat. More importantly it increasingly underestimates the NSD as pressure increases, which makes it a clearly unsuitable correlation to compute $N_{sit}$ particularly for pressurized flows such as in PWR.
 
+\npar
 Altough the model of Zhou \etal includes a pressure term, its partial calibration on data covering a low range of pressure may explain the large error observed when compared to higher pressure measurements.
 
+\npar
 On the contrary, models from Hibiki \& Ishii and Li \etal seem to better reproduce the different trends with flow conditions, especially with pressure. The model from Li \etal achieves better predictions by avoiding to reach unphysically high values of $N_{sit}$ at higher wall superheat compared to Hibiki \& Ishii. This behavior is clear over Kossolapov data at high pressure, where both model lead to overestimations, the strongest discrepancy being associated to Hibiki \& Ishii model.
 
+\npar
 Overall, the model of Li \etal is the most efficient with an acceptable agreement on most of the data of Borishanskii and Zhou \etal. The measurements of Richenderfer and Kossolapov fail to be precisely reproduced, but it shows a coherent trend and the most limited error when compared to other correlations.
 
 \begin{remark*}{}
 The coherency of NSD predictions is hard to ensure since we do not know the exact contact angle and boiling surface morphology in the experiments. This was pointed out by Richenderfer \cite{richenderfer_experimental_2018} who observed significant variation in the NSD value depending on the heater, though keeping the same material (ITO). For instance, this may explain the fact that the NSD measured by Kossolapov at $10.5$ bar is higher than any other pressure on his experiment, leading to both underpredictions and overpredictions of the model of Li \etal depending on the pressure.
 \end{remark*}
 
-
+\npar
 All things considered, those comparisons show that the Nucleation Site Density remains among the most difficult quantity to evaluate because of its very large variations over experiments, boiling surfaces and flow conditions. Dedicated correlations are hardly precise outside of their establishment databases. However, it remains the best yet only way to compute $N_{sit}$. \textbf{In that regard, the NSD correlation of Li \etal appears to be the most coherent choice.}
 
 
@@ -1116,7 +1116,7 @@ For a truncated spherical bubble, the vapor contact area is its foot area : $\pi
 Distinguishing between the bubbles that coalesce while growing up to $R_{d}$ on their site and sliding bubbles that reaches $R_{sl}$, we have:
 
 \begin{equation}
-A_{c,V} = \parth{N_{coal,st} + \frac{N_{coal,sl}}{2}}\pi \parth{\frac{2}{3}R_{d}\sin{\theta}}^{2} + \frac{N_{coal,sl}}{2}\pi \parth{\frac{2}{3}R_{sl}\sin{\theta}}^{2}
+A_{c,V} = \parth{N_{coal,st} + \frac{N_{coal,sl}}{2}}\pi \parth{\frac{2}{3}R_{d}\ \sin{\theta}}^{2} + \frac{N_{coal,sl}}{2}\pi \parth{\frac{2}{3}R_{sl}\ \sin{\theta}}^{2}
 \end{equation}
 
 
@@ -1125,7 +1125,7 @@ A_{c,V} = \parth{N_{coal,st} + \frac{N_{coal,sl}}{2}}\pi \parth{\frac{2}{3}R_{d}
 Using the expressions of $A_{q}$ and $A_{c,V}$, we can deduce the remaining unaffected area $A_{c,L}$:
 
 \begin{equation}
-A_{c,L} = 1 - A_{q} - A_{c,V} + A_{q}\min{0, \frac{t_{w}-t_{q}}{t_{q}}}
+A_{c,L} = 1 - A_{q} - A_{c,V} + A_{q}\max{0, \frac{t_{w}-t_{q}}{t_{q}}}
 \end{equation}
 
 
@@ -1139,8 +1139,20 @@ In this Chapter, we covered different aspects related to the construction of the
 At last, we can remember that:
 
 \begin{itemize}
-\item 1
+\item Single phase heat transfer coefficient is well predicted using Gnielinski correlation, with errors on the wall temperature below 3K for single-phase water flows in various conditions. A corrective factor of 4 had to be used for cases where only one side of the channel is heated to account for geometry difference regarding the correlation establishment.
+
+\item Nucleation site density using existing correlations have been assessed using different expriments with water. Covering a large range of pressure, it appeared that Li \etal \cite{li_development_2018} formulation was better at predicting the experimental nucleation site density. In particular, the influence of pressure is very significant and must be accounted for. However, we must keep in mind that although the nucleation site density is critical for wall boiling modeling, its value depends on very fine details of the boiling surface which are not always accessible.
+
+\item The bubble wait time has been studied using some existing experimental measurements. Its strong decrease with the wall superheat makes it accounting between nearly 100\% down to 50\% of the total nucleation period. Comparison of wait time values predictions showed that analytic approaches could perform better than correlations, though this requires an estimation of the active cavity radius which can be very tricky depending and surface-dependent.
+
+\item Considering sites and bubble interactions can be achieved under the hypothesis that they both follow an homogeneous spatial Poisson point-process. The mathematical formulations can then be used to account for events such as nucleation site suppression and bubble static coalescence.
+
+\item Bubble sliding length was found to be in reasonable agreement with the average distance between two nucleating bubbles on the wall, which can be associated to the fact that bubble leave the surface when coalescing with another one.
+
+\item A new heat flux partitioning model was finally proposed in which the boiling flux is computed based on coalescence event avoiding the need of a particular closure law for the lift-off diameter $D_{lo}$, which estimation for single bubbles was questionable as discussed in Section \ref{sec:liftoff}. Moreover, the departure and sliding includes the detailed force balance approach developed in Chapter \ref{chap:bub_dyn}.
 \end{itemize}
+
+Next chapter will be dedicated to the validation of the new HFP model through comparisons with wall temperature measurements in vertical flow boiling.
 
 %If we suppose that coalescing bubbles will instantly lift-off due to the perturbation associated with the coalescence process, this yields an associated boiling flux :
 %
