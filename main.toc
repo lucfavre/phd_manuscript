@@ -135,31 +135,33 @@
 \contentsline {subsection}{\numberline {8.8.3}Sliding Coalescence Evaporation Heat Flux}{109}{subsection.8.8.3}%
 \contentsline {subsection}{\numberline {8.8.4}Quenching Heat Flux}{110}{subsection.8.8.4}%
 \contentsline {subsection}{\numberline {8.8.5}Vapor Convective Heat Flux}{110}{subsection.8.8.5}%
-\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Assembling and Validation of a New Heat Flux Partitioning Model}}{111}{chapter.9}%
-\contentsline {section}{\numberline {9.1}General description of the model}{111}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}Convective heat fluxes}{111}{subsection.9.1.1}%
-\contentsline {subsection}{\numberline {9.1.2}Boiling heat flux}{112}{subsection.9.1.2}%
-\contentsline {subsection}{\numberline {9.1.3}Quenching heat flux}{112}{subsection.9.1.3}%
-\contentsline {subsection}{\numberline {9.1.4}Needed closure relationships}{112}{subsection.9.1.4}%
-\contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Conclusion}}{113}{chapter.10}%
-\contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Towards the Industrial Geometry}}{114}{part.3}%
-\contentsline {chapter}{\numberline {11}\spacedlowsmallcaps {Promoteur}}{115}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Boiling freon in a tube with mixing vanes : DEBORA-Promoteur experiments}{115}{section.11.1}%
-\contentsline {subsection}{\numberline {11.1.1}Description of the experiment}{115}{subsection.11.1.1}%
-\contentsline {subsection}{\numberline {11.1.2}Analysis of the Experimental Measurements}{115}{subsection.11.1.2}%
-\contentsline {subsection}{\numberline {11.1.3}NEPTUNE\_CFD simulations of DEBORA-Promoteur cases}{116}{subsection.11.1.3}%
-\contentsline {section}{\numberline {11.2}Liquid water flow in a tube with mixing vanes : AGATE-PROMOTEUR experiment}{116}{section.11.2}%
-\contentsline {subsection}{\numberline {11.2.1}Description of the experiment}{116}{subsection.11.2.1}%
-\contentsline {subsection}{\numberline {11.2.2}NEPTUNE\_CFD simulations of AGATE-Promoteur case}{117}{subsection.11.2.2}%
-\contentsline {chapter}{\numberline {12}\spacedlowsmallcaps {Conclusion}}{120}{chapter.12}%
-\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Appendix}}{121}{part.4}%
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{122}{appendix.A}%
-\contentsline {subsection}{\numberline {A.0.1}Case 1 : $\delta _{b}$ is constant}{124}{subsection.A.0.1}%
-\contentsline {subsection}{\numberline {A.0.2}Case 2 : $\delta _{b}=\sqrt {\eta _{l}t}$}{124}{subsection.A.0.2}%
-\contentsline {subsection}{\numberline {A.0.3}Case 3 : $\delta _{b}=CR$}{125}{subsection.A.0.3}%
-\contentsline {chapter}{\numberline {B}\spacedlowsmallcaps {Details on the Bubble Force Balance}}{126}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Appendix Section Test}{127}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Another Appendix Section Test}{127}{section.B.2}%
+\contentsline {subsection}{\numberline {8.8.6}Liquid Convection Area}{111}{subsection.8.8.6}%
+\contentsline {section}{\numberline {8.9}Conclusion}{111}{section.8.9}%
+\contentsline {chapter}{\numberline {9}\spacedlowsmallcaps {Assembling and Validation of a New Heat Flux Partitioning Model}}{112}{chapter.9}%
+\contentsline {section}{\numberline {9.1}General description of the model}{112}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Convective heat fluxes}{112}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Boiling heat flux}{113}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Quenching heat flux}{113}{subsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.1.4}Needed closure relationships}{113}{subsection.9.1.4}%
+\contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Conclusion}}{114}{chapter.10}%
+\contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Towards the Industrial Geometry}}{115}{part.3}%
+\contentsline {chapter}{\numberline {11}\spacedlowsmallcaps {Promoteur}}{116}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Boiling freon in a tube with mixing vanes : DEBORA-Promoteur experiments}{116}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}Description of the experiment}{116}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.2}Analysis of the Experimental Measurements}{116}{subsection.11.1.2}%
+\contentsline {subsection}{\numberline {11.1.3}NEPTUNE\_CFD simulations of DEBORA-Promoteur cases}{117}{subsection.11.1.3}%
+\contentsline {section}{\numberline {11.2}Liquid water flow in a tube with mixing vanes : AGATE-PROMOTEUR experiment}{117}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Description of the experiment}{117}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}NEPTUNE\_CFD simulations of AGATE-Promoteur case}{118}{subsection.11.2.2}%
+\contentsline {chapter}{\numberline {12}\spacedlowsmallcaps {Conclusion}}{121}{chapter.12}%
+\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Appendix}}{122}{part.4}%
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{123}{appendix.A}%
+\contentsline {subsection}{\numberline {A.0.1}Case 1 : $\delta _{b}$ is constant}{125}{subsection.A.0.1}%
+\contentsline {subsection}{\numberline {A.0.2}Case 2 : $\delta _{b}=\sqrt {\eta _{l}t}$}{125}{subsection.A.0.2}%
+\contentsline {subsection}{\numberline {A.0.3}Case 3 : $\delta _{b}=CR$}{126}{subsection.A.0.3}%
+\contentsline {chapter}{\numberline {B}\spacedlowsmallcaps {Details on the Bubble Force Balance}}{127}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Appendix Section Test}{128}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Another Appendix Section Test}{128}{section.B.2}%
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{129}{dummy.7}%
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{130}{dummy.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

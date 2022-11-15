@@ -1007,6 +1007,12 @@ In our approach, we consider the following partitioning (Figure \ref{fig:sketch_
 \label{fig:sketch_HFP}
 \end{figure}
 
+The total wall heat flux then writes:
+
+\begin{equation}
+\phi_{w} = \phi_{c,L} + \phi_{e,coal,st} + \phi_{e,coal,sl} + \phi_{q} + \phi_{c,V}
+\end{equation}
+
 
 \subsection{Liquid Convective Heat Flux}
 
@@ -1072,8 +1078,8 @@ The quenching heat flux is split in two parts:
 The time during which the transient heat transfer will take place depends on the relationship between the total wait time $t_{w}$ and the theoretical time $t^{*}$ at which the heat transfer coefficient of transient conduction and forced convection are equal:
 
 \begin{align}
-h_{c,L}\parth{\Delta T_{w} + \Delta T_{L}} &= \frac{\lambda_{L}\parth{\Delta T_{w} + \Delta T_{L}}}{\sqrt{\pi\eta_{L}t^{*}}}\\
-\Leftrightarrow t^{*} &= \parth{\frac{\lambda_{L}}{h_{c,L}}}^{2}\frac{1}{\pi \eta_{L}}
+&h_{c,L}\parth{\Delta T_{w} + \Delta T_{L}} = \frac{\lambda_{L}\parth{\Delta T_{w} + \Delta T_{L}}}{\sqrt{\pi\eta_{L}t^{*}}}\\
+\Leftrightarrow &t^{*} = \parth{\frac{\lambda_{L}}{h_{c,L}}}^{2}\frac{1}{\pi \eta_{L}}
 \end{align}
 
 If the wait time $t_{w}$ is lower than $t_{*}$, then transient conduction dominates during the whole period between two nucleation and the quenching time $t_{q}$ is thus equal to $t_{w}$.
@@ -1101,12 +1107,40 @@ where $A_{c,V}$ is the portion of the wall area in direct contact with vapor.
 
 \npar
 
-For a truncated spherical bubble, the vapor contact area is its foot area : $\pi R^{2}\sin{\theta}$. Since the bubbles are supposed to grow following a $\sqrt{t}$ law (Section \ref{sec:bub_growth}), the average radius for a bubble over its lifetime is:
+For a truncated spherical bubble, the vapor contact area is its foot area : $\pi R^{2}\sin{\theta}$. Since the bubbles are supposed to grow following a $\sqrt{t}$ law (Section \ref{sec:bub_growth}), the average radius for a bubble over its growth time $t_{g}$ is:
 
 \begin{equation}
-\overline{R} = \frac{1}{t_{g}}\int_{0}^{R}r\ \mathrm{d}r = \frac{1}{t_{g}} \int_{0}^{R} K\Ja_{w}\sqrt{\eta_{L}t} \mathrm{d}t = \frac{1}{t_{g}} K\Ja_{w} \frac{2}{3}\sqrt{\eta_{L}}t_{g}^{3/2} = \frac{2}{3}R
+\overline{R} = \frac{1}{t_{g}}\int_{0}^{R}r\ \mathrm{d}r = \frac{1}{t_{g}} \int_{0}^{t_{g}} K\Ja_{w}\sqrt{\eta_{L}t}~\mathrm{d}t = \frac{1}{t_{g}} K\Ja_{w} \frac{2}{3}\sqrt{\eta_{L}}~t_{g}^{3/2} = \frac{2}{3}R
 \end{equation}
 
+Distinguishing between the bubbles that coalesce while growing up to $R_{d}$ on their site and sliding bubbles that reaches $R_{sl}$, we have:
+
+\begin{equation}
+A_{c,V} = \parth{N_{coal,st} + \frac{N_{coal,sl}}{2}}\pi \parth{\frac{2}{3}R_{d}\sin{\theta}}^{2} + \frac{N_{coal,sl}}{2}\pi \parth{\frac{2}{3}R_{sl}\sin{\theta}}^{2}
+\end{equation}
+
+
+\subsection{Liquid Convection Area}
+
+Using the expressions of $A_{q}$ and $A_{c,V}$, we can deduce the remaining unaffected area $A_{c,L}$:
+
+\begin{equation}
+A_{c,L} = 1 - A_{q} - A_{c,V} + A_{q}\min{0, \frac{t_{w}-t_{q}}{t_{q}}}
+\end{equation}
+
+
+
+\section{Conclusion}
+
+In this Chapter, we covered different aspects related to the construction of the HFP model, including the evaluation of closure laws required to complete the mathematical model.
+
+\npar
+
+At last, we can remember that:
+
+\begin{itemize}
+\item 1
+\end{itemize}
 
 %If we suppose that coalescing bubbles will instantly lift-off due to the perturbation associated with the coalescence process, this yields an associated boiling flux :
 %
