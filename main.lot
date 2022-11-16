@@ -1,50 +1,98 @@
-\babel@toc {english}{}\relax 
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
 \deactivateaddvspace 
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{\spacedlowsmallcaps {Introduction}}{1}{chapter.1}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{\spacedlowsmallcaps {NEPTUNE\_CFD Code}}{3}{chapter.2}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{\spacedlowsmallcaps {The DEBORA Database}}{8}{chapter.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {3.1}{\ignorespaces Water R12 scaling, $R=0.01$mm for $\mathrm {We}$\relax }}{11}{table.caption.14}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Test matrix of the DEBORA cases. $\bigcirc $: C800 - $\bigtriangledown $: C2900 - $\bigtriangleup $: C3000 \relax }}{14}{table.caption.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.2}{\ignorespaces Test matrix of the DEBORA cases. $\bigcirc $: C800 - $\bigtriangledown $: C2900 - $\bigtriangleup $: C3000 \relax }}{15}{table.caption.18}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {3.3}{\ignorespaces Recalculated control parameters for the 30G2P14W16 cases. ($T_{sat} = 58.07\degree \mathrm {C}$)\relax }}{16}{table.caption.19}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {3.4}{\ignorespaces Recalculated control parameters for the 30G2P26W16 cases. ($T_{sat} = 86.81\degree \mathrm {C}$)\relax }}{16}{table.caption.20}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {3.5}{\ignorespaces Similar conditions cases between the C3000 and C800 campaigns. Outlet quality calculated with Eq. \ref {eq:xeq_out}.\relax }}{22}{table.caption.25}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Heat flux recalculation results\relax }}{22}{table.caption.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.6}{\ignorespaces Heat flux recalculation results\relax }}{23}{table.caption.27}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{\spacedlowsmallcaps {NEPTUNE\_CFD simulations of DEBORA cases}}{27}{chapter.4}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{\spacedlowsmallcaps {Introduction}}{31}{chapter.5}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{\spacedlowsmallcaps {Existing Heat Flux Partitioning Models}}{32}{chapter.6}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{\spacedlowsmallcaps {Boiling Bubble Dynamics}}{40}{chapter.7}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {7.1}{\ignorespaces Summary of the presented correlations\relax }}{46}{table.caption.39}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {7.2}{\ignorespaces Summary of different force-balance mechanistic approaches.\relax }}{58}{table.caption.45}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {7.3}{\ignorespaces Bubble departure diameters data sets in vertical flow boiling\relax }}{71}{table.caption.60}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {7.4}{\ignorespaces Average relative error reached by the models.\relax }}{76}{table.caption.65}%
-\contentsline {table}{\numberline {7.5}{\ignorespaces Bubble lift-off diameters data sets in vertical flow boiling\relax }}{84}{table.caption.73}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.5}{\ignorespaces Bubble lift-off diameters data sets in vertical flow boiling\relax }}{83}{table.caption.73}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{\spacedlowsmallcaps {Closure Laws and Construction of a New HFP Model}}{90}{chapter.8}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {8.1}{\ignorespaces Experimental data range of wall temperature measurements from the single-phase part of boiling curves.\relax }}{91}{table.caption.77}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {8.2}{\ignorespaces Average errors achieved by the considered models on each data sets.\relax }}{92}{table.caption.80}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {8.3}{\ignorespaces Nucleation Site Density data in flow boiling\relax }}{95}{table.caption.83}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {8.4}{\ignorespaces Bubble wait time data in vertical flow boiling. Wall superheat values for Richenderfer data are estimated using Frost \& Dzakowic correlation (Eq. \ref {eq:frost}).\relax }}{98}{table.caption.85}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {8.5}{\ignorespaces Summary of the HFP model closure laws\relax }}{112}{table.caption.99}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {8.6}{\ignorespaces Summary of the HFP model formulation\relax }}{113}{table.caption.100}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{\spacedlowsmallcaps {Validation of the Heat Flux Partitioning Model}}{115}{chapter.9}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {9.1}{\ignorespaces Experimental data range of wall temperature measurements from the single-phase part of boiling curves.\relax }}{116}{table.caption.106}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{\spacedlowsmallcaps {Conclusion}}{118}{chapter.10}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{\spacedlowsmallcaps {Promoteur}}{120}{chapter.11}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{\spacedlowsmallcaps {Conclusion}}{125}{chapter.12}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{127}{appendix.A}%
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Force Balance}}{131}{appendix.B}%
+\defcounter {refsection}{0}\relax 
 \contentsline {table}{\numberline {B.1}{\ignorespaces Autem usu id}}{132}{table.caption.111}%
-\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
