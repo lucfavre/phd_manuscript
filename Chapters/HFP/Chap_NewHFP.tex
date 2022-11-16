@@ -6,100 +6,128 @@
 
 %----------------------------------------------------------------------------------------
 
-
-\section{General description of the model}
-\label{sec:model}
-
-The main goal of such a model is to provide a way to compute the wall temperature $T_{w}$ resulting from the applied wall heat flux $\phi_{w}$, or the other way around.
-
-\npar
-In order to try to be as extensive as possible regarding the different heat transfer mechanisms at stake, the wall heat flux is supposed to be split between 4 different contributions (Figure \ref{fig:HFP}) :
+In this Chapter, we want to assess the validity of the new Heat Flux Partitioning formulation proposed in Chapter \ref{chap:HFP_closures}. To do so, we will conduct two different validations:
 
 \begin{itemize}
-\item A convective heat flux towards the liquid phase, unaffected by the presence of bubbles on the heater surface : $\phi_{c,l}$
-\item A boiling heat flux, representing the energy removed from the wall to grow a bubble up to its lift-off diameter : $\phi_{b}$
-\item A quenching heat flux, accounting for transient heat transfer to the liquid phase when bubbles slide or lift-off from the wall : $\phi_{q}$
-\item A convective heat flux towards the vapor phase, representing the heat transfer occurring through the dry areas of the surface beneath the bubbles : $\phi_{c,v}$
+\setlength{\itemsep}{8pt}
+\item The first part will be dedicated to validation on a single experimental subcooled boiling case at 10.5 bar from Kossolapov \cite{kossolapov_experimental_2021} for which numerous physical parameters have been measured. This will ensure that the proposed mathematical formulation and the closure laws propose an acceptable physical modeling of the boiling parameters.
+
+\item The second part will consist on wall temperature predictions for vertical subcooled flow boiling of water in various conditions, including pressure. Experimental database from Jens \& Lottes \cite{jens_analysis_1951}, Kennel \cite{kennel_local_1949} and Kossolapov \cite{kossolapov_experimental_2021}. Comparison with other HFP models from Kurul \& Podowski, Basu and Kommajosyula will be performed.
 \end{itemize}
 
 
+\section{Detailed Comparison and Assessment of the Heat Flux Partitioning}
 
-\begin{figure}[h!]
-\centering
-\input{tikz_img/HFP/hfp}
-\caption{Sketch of the considered HFP}
-\label{fig:HFP}
+In this section, we compare our results to those obtaines by Kossolapov \cite{kossolapov_experimental_2021} in vertical subcooled flow boiling. At a pressure of 10.5 bar, he realized measurements of many relevant parameters regarding the Heat Flux Partitioning:
+
+\begin{itemize}
+\item Active nucleation site density $N_{sit,a}$ ;
+\item Bubble nucleation frequency $f$ ;
+\item Bubble wait time $t_{w}$ ;
+\item Transient heat transfer (quenching) time $t_{q}$ ;
+\item Average bubble growth time $t_{g}$ ;
+\item Average area visited by a bubble $A_{q,1b}$ ;
+\item Proportion of the heater area impacted by bubbles $A_{b,tot}$
+\item Liquid single-phase heat flux proportion $\dfrac{\phi_{c,L}}{\phi_{w}}$ ;
+\item Quenching heat flux proportion $\dfrac{\phi_{q}}{\phi_{w}}$ ;
+\item Wall superheat $\Delta T_{w}$.
+\end{itemize}
+
+The only lacking parameters to conduct a full evaluation of the model would be the average bubble departure diameter $R_{d}$, sliding length $l_{sl}$ and lift-off diameter / coalescence diameter.
+
+The values provided by Kossolapov are an average conducted over all the observed nucleation events during the time of the experiment. Such data are representative of what we want to achieve using a HFP model since we represent average values of the boiling parameters for the considered boiling surface.
+
+\npar
+
+All those variables were measured for a subcooling $\Delta T_{L} = 10\degC$ at three different liquid mass fluxes $G_{L} = 500$, $1000$ and $2000~\debm$. 
+
+\npar
+
+We present the results obtained by comparison with the case at $G_{L} = 2000 \debm$ for each variable. The simulations using the HFP model were conducted using a contact angle $\theta = 80 \degree$ (usual contact angle for water and ITO \cite{kossolapov_experimental_2021}), an hysteresis $\dtheta = 2 \degree$ and a growth constant $K=1.5$
+
+ 
+\subsection{Active Nucleation Site Density}
+
+\begin{figure}
+\subfloat[$N_{sit,a}$ predictions by Li \etal correlation]{
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/sites_G2000.png}
+}
+\subfloat[$N_{sit,a}$ predictions with corrected Li \etal correlation]{
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/sites_G2000.png}
+}
+\end{figure}
+
+\subsection{Wait Time, Growth Time, Quenching Time and Nucleation Frequency}
+
+\begin{figure}
+\subfloat[Bubble nucleation frequency]{
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/f_G2000.png}
+}
+\subfloat[Bubble wait time, growth time and quenching time]{
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/times_G2000.png}
+}
 \end{figure}
 
 
-The supposed mechanisms yields the total wall heat flux partioning (\ref{eq:HFP}) :
+\subsection{Single Bubble Area and Total Bubble Area}
 
-\begin{align}
-\label{eq:HFP}
-\phi_{w}=\phi_{c,l} + \phi_{e} + \phi_{q} + \phi_{c,v}
-\end{align}
-
-
-In the following subsections, we focus out analysis on each term to detail its modeling.
-
-\npar
-
-
-\subsection{Convective heat fluxes}
-\label{subsec:conv_HF}
-
-The convective heat fluxes towards the liquid phase $\phi_{c,l}$ and the vapor phase $\phi_{c,v}$ can be written using an associated heat transfer coefficient (\ref{eq:conv_HF}) :
-
-\begin{align}
-\label{eq:conv_HF}
-\phi_{c,l}=\orangemath{a_{c,l}} \bluemath{h_{c,l}}\parth{\redmath{T_{w}}-\bluemath{T_{l}}} ~\text{ and }~
-\phi_{c,v}=\orangemath{a_{c,v}} \bluemath{ h_{c,v}}\parth{\redmath{T_{w}}-\bluemath{T_{v}}}
-\end{align}
+\begin{figure}
+\subfloat[Single bubble area]{
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/Aq1b_G2000.png}
+}
+\subfloat[Total wall area impacted by bubbles]{
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/Abub_tot_G2000.png}
+}
+\end{figure}
 
 
+\begin{figure}
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/length_G2000.png}
+\end{figure}
 
-\subsection{Boiling heat flux}
+\subsection{Flux Proportions and Wall Superheat}
 
-The total energy associated with the nucleation of a bubble with a volume $V_{b}$ can be expressed as $V_{b}\rho_{v}h_{lv}$. If one knows the nucleation frequency $f$ at which bubbles are generated along with the nucleation site density on the heater surface $N_{sit}$, the resulting heat flux associated with the nucleation phenomenon can thus be written as (\ref{eq:boil_HF}) :
-
-\begin{align}
-\label{eq:boil_HF}
-\phi_{b}&=\bluemath{N_{sit}} \bluemath{f} \orangemath{V_{b}} \rho_{v} h_{lv}
-\end{align}
-
-\subsection{Quenching heat flux}
-
-The quenching heat flux accounts for the transient heat transfer which occurs when cold liquid is brought close to the wall when a bubble slides or lifts-off, thus disrupting the previously established thermal boundary layer.
-
-\textsc{Del Valle} \& \textsc{Kenning} have supposed that this kind phenomenon can be represented as a semi-infinite transient heat transfer between the liquid at $T_{l}$ and the wall at $T_{w}$. Solving the conductive heat transfer problem yields an instantaneous heat flux expressed as Eq.~\ref{eq:inst_quench_HF}.
-
-\begin{align}
-\label{eq:inst_quench_HF}
-\phi_{q}\parth{t} = \frac{\lambda_{l}\parth{\redmath{T_{w}}-\bluemath{T_{l}}} }{\sqrt{\pi \eta_{l} t} }
-\end{align}
+\begin{figure}
+\subfloat[Single bubble area]{
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/hfp_G2000.png}
+}
+\subfloat[Total wall area impacted by bubbles]{
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/boil_curve_G2000.png}
+}
+\end{figure}
 
 
-Therefore, we can average this heat flux over a time $t_{w}$, during which the quenching operates, and ponderating it both by the portion of the affected heater area $a_{q}$ and the fraction of quenching time over a total bubble nucleation cycle $t_{w}f$, yielding : 
-
-\begin{align}
-\phi_{q}&=\orangemath{a_{q}} \bluemath{t_{w}} \bluemath{f} \frac{1}{\bluemath{t_{w}} } \int_{0}^{  \bluemath{t_{w}} } \frac{\lambda_{l}\parth{\redmath{T_{w}}-\bluemath{T_{l}} }}{\sqrt{\pi \eta_{l} t }} = \orangemath{a_{q}} \bluemath{t_{w}} \bluemath{f} \frac{2 \lambda_{l} \parth{\redmath{T_{w}} - \bluemath{T_{l}} } }{\sqrt{\pi \eta_{l} \bluemath{t_{w}} } }
-\end{align}
 
 
-\subsection{Needed closure relationships}
+\section{Wall Temperature Predictions}
 
-After expressing each heat flux components of the global partitioning, the resulting formulations yields a first list of parameters for which closure relationships (or at least precise definition) are needed. Terms previously highlighted in \textcolor{orange}{orange} will be given a specific definition, terms in \textcolor{blue}{blue} require a closure law, wall temperature is indicated in \textcolor{red}{red}.
 
-\npar
 
-The different terms needing further development are listed below :
 
-\begin{itemize}
-\item The fractions of the heater area ponderating convective and quenching heat transfers : $a_{c,l}$, $a_{c,v}$ and $a_{q}$(\ref{sec:geometry})
-\item The convective heat transfer coefficients : $h_{c,l}$ and $h_{c,v}$ (Section \ref{sec:HTC})
-\item The nucleation site density over the heater surface : $N_{sit}$ (Section : \ref{sec:NSD})
-\item The nucleation frequency, which includes both the growth time $t_{g}$ (Section \ref{sec:bubble_growth}) of a bubble and the waiting time $t_{w}$ ({\color{red} Je dois encore proposer une modélisation pour $t_{w}$, à discuter}) : $f=1/\parth{t_{g}+t_{w}}$
-\item The total bubble volume $V_{b}$ (\ref{subsec:geom_bub}) generated until its lift-off, thus including the modeling of the bubble lift-off diameter : $D_{lo}$ 
-\item The phases temperature : $T_{l}$ (\ref{subsec:liq_temp}) and $T_{v}$ (\ref{subsec:vap_temp})
-\end{itemize}
 
+\begin{table}[h!]
+
+%\begin{changemargin}{-1cm}{0cm}
+
+\noindent\makebox[\textwidth]{
+
+\scriptsize
+\centering
+\begin{tabular}{p{20mm}|c c c c c c c c} 
+Author & $D_{h}$ [mm] & $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K] & $\phi_{w}$ [MW/m\up{2}] & $T_{sat}-T_{w}$ [K] &$N_{mes}$ [-] \\
+\hline
+\\
+
+Kossolapov \cite{kossolapov_experimental_2021} \newline (2021) & 12 & 10.5 & 500 - 2000 & 10 & 0.1 - 0.6  & 0.22 - 9.5 & 12 \\
+
+Richenderfer \cite{richenderfer_experimental_2018} \newline (2018) & 15 & 1 - 5 & 1000 - 2000 & 10-20 & 0.1 - 0.63 & 1 - 18.7 & 13 \\
+
+Jens-Lottes \cite{jens_analysis_1951} \newline (1951) & 5.74 & 137.9 & 2617.5 & 53.3 - 92.2 & 0.91 - 2.37 & 0.33 - 44.1 & 15 \\
+
+Kennel \cite{kennel_local_1949} \newline (1948) & 4.3 - 13.2 & 2 - 6.2 & 284 - 10~577 & 11.1 - 83.3 & 0.035 - 1.89 & 0.35 - 69 & 52 \\
+\hline
+\end{tabular}
+}
+\caption{Experimental data range of wall temperature measurements from the single-phase part of boiling curves.}
+\label{tab:exp_data_convection}
+\end{table}
