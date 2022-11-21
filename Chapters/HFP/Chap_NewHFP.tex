@@ -48,30 +48,51 @@ We present the results obtained by comparison with the case at $G_{L} = 2000 \de
  
 \subsection{Active Nucleation Site Density}
 
-\begin{figure}
+On Figure \ref{fig:fullkoss_nsit}, we compare the values obtained for the active nucleation site density. The Li \etal correlation used in the model (Eq. \ref{eq:nsit_li}) propose a reasonable prediction of the measured values of $N_{sit,a}$ with an underestimation of less than a decade. The correlation correctly reproduce the experimental trend where we observe a sort of saturation in the nucleation site density for higher wall superheat.
+
+\npar
+
+To better match the asymptotic value of the experiment, we correct the Li \etal correlation for this case by a factor $\Delta T_{w}^{3-0.6\Delta T_{w}^{0.5}}$ which better fits the measurements for $\Delta T_{w}>10$~K but yields a small overestimation before.
+
+
+\begin{figure}[!h]
 \subfloat[$N_{sit,a}$ predictions by Li \etal correlation]{
-\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/sites_G2000.png}
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/sites_G2000_nocorr.png}
 }
 \subfloat[$N_{sit,a}$ predictions with corrected Li \etal correlation]{
 \includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/sites_G2000.png}
 }
+\caption{Comparison of active nucleation site density with and without a correction for Li \etal formulation.}
+\label{fig:fullkoss_nsit}
 \end{figure}
+
+
 
 \subsection{Wait Time, Growth Time, Quenching Time and Nucleation Frequency}
 
-\begin{figure}
+Figure \ref{fig:fullkoss_times} compares the different times involved in the boiling physics and the bubble nucleation frequency. As seen in Sec \ref{sec:wait_time}, the wait time is quite fairly reproduced along with the nucleation frequency. Actually, the bubble departure is nearly instantaneous and the nucleation cycle is mainly composed of the wait period, which means a good estimation of $t_{w}$ leads to a reasonable estimation of $f$ for this case.
+
+\npar
+
+The average bubble growth time is overestimated by nearly a decade for low superheat and is better predicted for larger superheat. Its evolution seem coherent with a decrease up to 15\ K and a stabilization afterwards. However, the experimental measurements show an increase in the growth time for large superheat which could be associated to bubble diameter increase with the wall Jakob number as previously observed in Section \ref{sec:liftoff}.
+
+
+
+\begin{figure}[!h]
 \subfloat[Bubble nucleation frequency]{
 \includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/f_G2000.png}
 }
 \subfloat[Bubble wait time, growth time and quenching time]{
 \includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/times_G2000.png}
 }
+\caption{Comparison of bubble nucleation frequency, wait time, avergae growth time and quenching time.}
+\label{fig:fullkoss_times}
 \end{figure}
 
 
 \subsection{Single Bubble Area and Total Bubble Area}
 
-\begin{figure}
+\begin{figure}[!h]
 \subfloat[Single bubble area]{
 \includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/Aq1b_G2000.png}
 }
@@ -81,13 +102,13 @@ We present the results obtained by comparison with the case at $G_{L} = 2000 \de
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[!h]
 \includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/length_G2000.png}
 \end{figure}
 
 \subsection{Flux Proportions and Wall Superheat}
 
-\begin{figure}
+\begin{figure}[!h]
 \subfloat[Single bubble area]{
 \includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/hfp_G2000.png}
 }
