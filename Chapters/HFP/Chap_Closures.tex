@@ -1080,6 +1080,7 @@ The time during which the transient heat transfer will take place depends on the
 \begin{align}
 &h_{c,L}\parth{\Delta T_{w} + \Delta T_{L}} = \frac{\lambda_{L}\parth{\Delta T_{w} + \Delta T_{L}}}{\sqrt{\pi\eta_{L}t^{*}}}\\
 \Leftrightarrow\  &t^{*} = \parth{\frac{\lambda_{L}}{h_{c,L}}}^{2}\frac{1}{\pi \eta_{L}}
+\label{eq:tstar}
 \end{align}
 
 If the wait time $t_{w}$ is lower than $t_{*}$, then transient conduction dominates during the whole period between two nucleation and the quenching time $t_{q}$ is thus equal to $t_{w}$.
@@ -1089,7 +1090,7 @@ Otherwise, if $t_{w}>t^{*}$ the wait time will consist of transient heat transfe
 Then, using the transient heat transfer solution (mentioned in Section \ref{sec:wait_time}, also derived by Del Valle \cite{delvalle_phd}), we can write the total quenching flux as:
 
 \begin{align}
-\phi_{q} &= A_{q,tot}t_{q}f \frac{2\lambda_{L}\parth{\Delta T_{w} + \Delta T_{L}}}{\sqrt{\pi \eta_{L}t_{q}} }\\
+\phi_{q} &= A_{q}t_{q}f \frac{2\lambda_{L}\parth{\Delta T_{w} + \Delta T_{L}}}{\sqrt{\pi \eta_{L}t_{q}} }\\
 A_{q} &= N_{coal,st} \pi R_{d}^{2} + \frac{N_{coal,sl}}{2} A_{q,1b} \\
 t_{q} &= \min{t_{w}, t^{*}}
 \end{align}
@@ -1125,13 +1126,19 @@ Distinguishing between the bubbles that coalesce while growing up to $R_{d}$ on 
 A_{c,V} = \parth{N_{coal,st} + \dfrac{N_{coal,sl}}{2}}\pi \parth{\dfrac{2}{3}R_{d}\ \sin{\theta}}^{2} + \dfrac{N_{coal,sl}}{2}\pi \parth{\dfrac{2}{3}R_{sl}\ \sin{\theta}}^{2}
 \end{equation}
 
+The time-averaged surface proportion occupied by bubble footprints is then:
+
+\begin{equation}
+\overline{A_{c,V}} =  \parth{N_{coal,st} + \dfrac{N_{coal,sl}}{2}}\pi \parth{\dfrac{2}{3}R_{d}\ \sin{\theta}}^{2} \times t_{g,d}f + \dfrac{N_{coal,sl}}{2}\pi \parth{\dfrac{2}{3}R_{sl}\ \sin{\theta}}^{2} \times t_{g,lo} f
+\end{equation}
+
 
 \subsection{Liquid Convection Area}
 
 Using the expressions of $A_{q}$ and $A_{c,V}$, we can deduce the remaining unaffected area $A_{c,L}$:
 
 \begin{equation}
-A_{c,L} = 1 - A_{q} - A_{c,V} + A_{q}\max{0, \frac{t_{w}-t_{q}}{t_{q}}}
+A_{c,L} = 1 - A_{q}t_{q}f - \overline{A_{c,V}}
 \end{equation}
 
 \subsection{Model Summary}
