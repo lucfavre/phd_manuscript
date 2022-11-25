@@ -1,12 +1,60 @@
 % Chapter X
 
-\chapter{Existing Heat Flux Partitioning Models} % Chapter title
+\chapter{Introduction to Heat Flux Partitioning} % Chapter title
 
 \label{chap:HFP_bib} % For referencing the chapter elsewhere, use \autoref{ch:name} 
 
+\minitoc
+
 %----------------------------------------------------------------------------------------
+\section{Introduction}
+
+In the field of heat transfer and boiling, establishing a physical relationship between the applied heat flux at the wall $\phi_{w}$ and the wall temperature $T_{w}$ has always been a primal goal for system design and safety analysis. Traditional approaches for single-phase flows rely on the estimation of the heat transfer coefficient $h_{SP}$ defined as:
+
+\begin{equation}
+\phi_{w} = h_{SP} \parth{T_{L} - T_{w}}
+\end{equation}
+where $T_{L}$ is the bulk liquid temperature. 
+
+Estimating $h_{SP}$ is usually done using dedicated correlations depending on flow parameters such as the hydraulic Reynolds number $\Re_{D_{h}}$, the fluid Prandtl number $\Pr_{L}$, etc. Example of such correlations are those of Dittus-Boelter (Eq \ref{eq:dittus}) or Gnielinski (Eq. \ref{eq:gnielinski}) that were presented earlier.
+
+\npar
+
+For boiling multiphase flows, different types of empirical approaches have been developed. For instance, some authors proposed direct correlations relating wall heat flux and temperature such as:
+
+\begin{itemize}
+\item Jens \& Lottes \cite{jens_analysis_1951}:
+
+\begin{equation}
+\phi_{w} = \parth{ \frac{\Delta T_{w} }{25} e^{P / 62}	}^{4}
+\label{eq:jens_correl}
+\end{equation}
+
+\item Thom \etal \cite{thom_phiw}:
+\begin{equation}
+\phi_{w} = \parth{ \frac{\Delta T_{w} }{22.65} e^{P / 87}	}^{2}
+\label{eq:thom_correl}
+\end{equation}
+\end{itemize}
+with $P$ in bar and $\phi_{w}$ in MW/m\up{2}.
+
+\npar
+
+On the other hand, models based on the estimation of heat transfer coefficients similar to single-phase approaches were also proposed. They mostly rely on the separation between a single phase $h_{SP}$ and nucleate boiling $h_{NB}$ heat transfer coefficients. The correlation of Chen \cite{chen_correl} for examples writes:
+
+\begin{equation}
+\phi_{w} = \phi_{SP} + \phi_{NB} = h_{SP}\parth{T_{w}-T_{L}}F + h_{NB}\parth{T_{w}-T_{sat}}S
+\end{equation}
+with $F$ an amplification factor for the single phasae heat transfer due to bubble agitation and $S$ a suppression term hindering the nucleate boiling under the effect of bulk liquid flow.
+
+The single phase part $h_{SP}$ is calculated using Dittus-Boelter \cite{dittus_heat_1985} formulation (Eq. \ref{eq:dittus}) while the nucleate boiling part is:
+
+\begin{equation}
+h_{NB} = 0.00122 \frac{\lambda_{L}^{0.79} c_{p,L}^{0.45} \rho_{L}^{0.49}}{\sigma^{0.5} \mu_{L}^{0.29} h_{LV}^{0.24}\rho_{V}^{0.24}} \Delta T_{w}^{0.25} \parth{P_{sat}\parth{T_{w}} - P_{sat}\parth{T_{sat}}}^{0.75}
+\end{equation}
 
 \section{Kurul \& Podowski (1990)}
+\label{sec:hfp_kurul}
 
 
 In their original work published in 1990, Kurul \& Podowski \cite{kurul_1990} proposed a complete closure for the wall heat flux partitioning. They considered the applied heat flux to be divided between three mechanisms:
@@ -59,6 +107,7 @@ where $F_{A}=4$ accounts for the bubble influence area when leaving the surface.
 %------------------------------------------------
 
 \section{Basu (2000)}
+\label{sec:hfp_basu}
 
 In 2005, Basu \etal \cite{basu2005, basu2005a} proposed a new HFP model together with a series of experiments to further study the different needed closure relationships. This model was meant to account for finer descriptions of the multiple phenomena at stake in subcooled flow boiling. In particular, they account for bubble sliding and merging and thus distinguish bubble departure diameter $D_{d}$ (leaving the nucleation site) and lift-off diameter $D_{lo}$ (leaving the wall).
 
@@ -310,7 +359,9 @@ with $\Delta T_{q}=2\ K$ as suggested by Gerardi \etal \cite{gerardi_etal}.
 
 
 
-\section{Zhou (2020)}
+\section{Kommajosyula (2020)}
+\label{sec:hfp_komma}
+
 
 The last HFP model we will look through in this Chapter was proposed by Zhou \etal \cite{zhou}. It is one of the most recent available in the literature and was built along with associated experiments for validation. In particular they compute separate heat flux contributions for static ($st$) or sliding bubbles ($sl$), yielding a total heat flux:
 

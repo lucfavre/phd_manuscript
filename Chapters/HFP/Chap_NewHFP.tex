@@ -177,47 +177,63 @@ In this section, we want to evaluate the model's capability to predict wall temp
 \scriptsize
 \centering
 \begin{tabular}{p{20mm}|c c c c c c c c} 
-Author & $D_{h}$ [mm] & $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K] & $\phi_{w}$ [MW/m\up{2}] & $T_{sat}-T_{w}$ [K] &$N_{mes}$ [-] \\
+Author & $D_{h}$ [mm] & $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K] & $\phi_{w}$ [MW/m\up{2}] & $\Delta T_{w}$ [K] &$N_{mes}$ [-] \\
 \hline
 \\
 
-Kossolapov \cite{kossolapov_experimental_2021} \newline (2021) & 12 & 1.12 - 75.8 & 500 - 2000 & 10 & 0.1 - 0.6  & 0.22 - 9.5 & 12 \\
+Kossolapov \cite{kossolapov_experimental_2021} \newline (2021) & 11.78 & 1.12 - 75.8 & 500 - 2000 & 10 & 0.23 - 7.93  & 1.55 - 30.77 & 81 \\
 
-Jens-Lottes \cite{jens_analysis_1951} \newline (1951) & 5.74 & 137.9 & 2617.5 & 53.3 - 92.2 & 0.91 - 2.37 & 0.33 - 44.1 & 15 \\
+Jens-Lottes \cite{jens_analysis_1951} \newline (1951) & 5.74 & 137.9 & 2617.5 & 53.3 - 92.2 & 2.15 - 3.63 & 1.81 - 4.16 & 38 \\
 
-Kennel \cite{kennel_local_1949} \newline (1948) & 4.3 - 13.2 & 2 - 6.2 & 284 - 10~577 & 11.1 - 83.3 & 0.035 - 1.89 & 0.35 - 69 & 52 \\
+Kennel \cite{kennel_local_1949} \newline (1948) & 4.3 - 13.2 & 2 - 6.2 & 284 - 10~577 & 11.1 - 83.3 & 0.053 - 6.35 & 1.64 - 49.7 & 172 \\
 \hline
 \end{tabular}
 }
-\caption{Experimental data range of wall temperature measurements from the single-phase part of boiling curves.}
+\caption{Experimental data range of wall temperature measurements in the boiling region.}
 \label{tab:exp_data_HFP}
 \end{table}
 
+\npar
 
-\subsection{Kennel Data}
 
-\begin{figure}[!h]
-\centering
-\subfloat[Kurul \& Podowski]{
-\includegraphics[width=0.5\linewidth]{img/HFP/kennel/KP_Kennel.pdf}
-}
-\subfloat[Basu]{
-\includegraphics[width=0.5\linewidth]{img/HFP/kennel/Basu_Kennel.pdf}
-}
-\\
-\subfloat[Kommajosyula]{
-\includegraphics[width=0.5\linewidth]{img/HFP/kennel/Komma_Kennel.pdf}
-}
-\subfloat[New Model]{
-\includegraphics[width=0.5\linewidth]{img/HFP/kennel/NM_Kennel_t50_K05_dt5.pdf}
-}
+The following sub-sections compare the results for wall superheat predictions obtained using four models : Kurul \& Podowski (\ref{sec:hfp_kurul}), Basu \etal (\ref{sec:hfp_basu}), Kommajosyula (\ref{sec:hfp_komma}) and the new formulation (\ref{sec:hfp_new}).
 
-\caption{Wall temperature predictions achieved by the different HFP models on Kennel data. $\theta = 50 \degree$}
-\label{fig:HFP_kennel}
-\end{figure}
+\npar
+
+In order to propose consistent choices required closing parameters for the new formulation, we will discuss the values attributed to the contact angle $\theta$, bubble inclination $\dtheta$ and constant value in bubble growth rate $K$.
 
 
 \subsection{Kossolapov Data}
+
+The boiling curves from Kossolapov work \cite{kossolapov_experimental_2021} are among the most recent available data and notably include various operating pressures. The experimental setup consists of a heated flat plate of ITO in vertical flow boiling in a rectangular channel.
+
+
+\npar
+
+As stated by Kossolapov, the contact angle for water and ITO usually lies between 80$\degree$ and $90\degree$ \cite{kossolapov_experimental_2021}. The bubble tilt is likely to be very low for high pressure cases (see Sec. \ref{sec:departure}) and the bubble growth rate coefficient $K$ shall be closer to 1.5 / 2 at high pressure while it can be lower than 1 for low pressure cases. The chosen values are then:
+
+\begin{itemize}
+\item $\theta = 85 \degree$ ;
+\item $\dtheta = 1 \degree$ for $P > 5\ $bar and $\dtheta = 5 \degree$ otherwise ;
+\item $K = 1.5$ for $P > 5\ $bar and $K=1.0$ otherwise.
+\end{itemize}
+
+
+Figure \ref{fig:HFP_koss_BC} shows two typical boiling curves along with the heat flux partitioning obtained using the new formulation for Kossolapov cases at 19.8 bar and 75.8 bar.
+
+
+INSERT FIGURES
+
+
+
+\npar
+
+We can observe that experimental profiles are quite fairly reproduced in both cases. The model also shows different types of heat flux partitioning with the case at 75.8 bar starting to have a significant proportion of static coalescence evaporation flux. This is probably a consequence of both the high pressure and large wall superheat resulting in a very large nucleation site density and increasing the probability for two bubbles to coalesce early in their lifetime.
+
+\npar
+
+Figure \ref{fig:HFP_koss} shows the wall temperature predictions achieved with the different HFP models.
+
 
 \begin{figure}[!h]
 \centering
@@ -235,13 +251,36 @@ Kennel \cite{kennel_local_1949} \newline (1948) & 4.3 - 13.2 & 2 - 6.2 & 284 - 1
 \includegraphics[width=0.5\linewidth]{img/HFP/koss/NM_Kossolapov.pdf}
 }
 
-\caption{Wall temperature predictions achieved by the different HFP models on Kossolapov data. $\theta = 85\degree$}
+\caption{Wall temperature predictions achieved by the different HFP models on Kossolapov data.}
 \label{fig:HFP_koss}
 \end{figure}
+
+\npar
+We can note that the new formulation generally better agrees with experimental measurements but yields significant underestimation of low wall superheat values for low pressure cases. The predictions achieved by Kurul \& Podowski and Kommajosyula models seem similar while Basu \etal formulation largely overestimates the wall temperature with an average error above 100~K. 
+
 
 
 
 \subsection{Jens-Lottes Data}
+
+The data of Jens \& Lottes are of particular interest for the HFP validation since they were obtained in conditions close to PWR ones, with an operating pressure of 138 bar, liquid mass flux above $2500\ \debm$ and high inlet liquid subcooling. The experiment consisted of an integrally heated metallic circular pipe. Precise evaluation of the contact angle in those conditions is tricky but, according to the work of Song \& Fan \cite{song_temperature_2021}, the water contact angle on metallic surfaces (\eg stainless steel) at large pressure present a very large decrease when reaching surface temperatures above 200$\degC$. Since saturation temperature of water at 138 bar if $T_{sat} \approx 335 \degC$, the boiling measurements lie largely in the low contact angle zone. Therefore, we will assume:
+
+\begin{itemize}
+\item $\theta = 20 \degree$ ;
+\item $\dtheta = 1 \degree$ (very high pressure leading to nearly non-tilted bubbles) ;
+\item $K = 2.0$ (very high pressure and low Jakob numbers).
+\end{itemize}
+
+
+Figure \ref{fig:HFP_jens_BC} shows a typical boiling curve obtained for an experimental case of Jens \& Lottes. We can observe that in this region where wall superheat are low ($\Delta T_{w}<5\ $K), the quasi-entirety of the wall heat flux is evacuated through liquid convection and transient conduction through quenching. This is likely to be a consequence of the very high pressure conditions under which nucleation site density is very large but bubbles become extremely small ($R ~\mu$m). Evaporation heat flux is then relatively small but the large number of bubbles and their sliding induce a strong quenching effect over the heater surface. 
+
+\npar
+
+INSERT BC JENS
+
+\npar
+
+Figure \ref{fig:HFP_jens} shows the wall temperature predictions achieved with the different HFP models.
 
 \begin{figure}[!h]
 \centering
@@ -259,14 +298,75 @@ Kennel \cite{kennel_local_1949} \newline (1948) & 4.3 - 13.2 & 2 - 6.2 & 284 - 1
 \includegraphics[width=0.5\linewidth]{img/HFP/jens/NM_Jens.pdf}
 }
 
-\caption{Wall temperature predictions achieved by the different HFP models on Jens data. $\theta = 20\degree$}
+\caption{Wall temperature predictions achieved by the different HFP models on Jens data.}
+\label{fig:HFP_jens}
+\end{figure}
+
+\npar
+
+Both the new formulation and Kommajosyula model achieve good predictions of the wall temperature in those high pressure conditions. However, Kurul \& Podowski and Basu models do not seem to capture properly the wall superheat evolution, with large relative overestimations ($\sim 200\%$).
+
+
+\subsection{Kennel Data}
+
+Kennel measurements are of similar nature to those of Jens \& Lottes since they were conducted for a uniformly heated vertical circular metallic pipe. However, the experiments were operated at pressures lower than 6 bar and various inlet liquid mass fluxes and subcoolings. In those conditions, the evaluation of the constant $K$ in the bubble growth profile can be very tricky since the larger bubbles at low pressure are more impacted by the bulk flow, implying potentially large variations of $K$ that can become much lower than 1. Regarding the contact angle, its value can also be roughly estimated using Song \& Fan review \cite{song_temperature_2021} showing that metallic surfaces at low and moderate pressure also show a contact angle decrease with temperature, with values roughly lying between $40 \degree$ and $60 \degree$ when $T_{w} \sim T_{sat}$. Therefore, we assume:
+
+
+\begin{itemize}
+\item $\theta = 50 \degree$ ;
+\item $\dtheta = 5 \degree$ (larger and deformable bubbles at low pressure) ;
+\item $K = 0.3$ (larger impact of bulk subcooling on bubble growth).
+\end{itemize}
+
+
+
+\npar
+
+
+
+Figure \ref{fig:HFP_kennel} shows the wall temperature predictions achieved with the different HFP models.
+
+\begin{figure}[!h]
+\centering
+\subfloat[Kurul \& Podowski]{
+\includegraphics[width=0.5\linewidth]{img/HFP/kennel/KP_Kennel.pdf}
+}
+\subfloat[Basu]{
+\includegraphics[width=0.5\linewidth]{img/HFP/kennel/Basu_Kennel.pdf}
+}
+\\
+\subfloat[Kommajosyula]{
+\includegraphics[width=0.5\linewidth]{img/HFP/kennel/Komma_Kennel.pdf}
+}
+\subfloat[New Model]{
+\includegraphics[width=0.5\linewidth]{img/HFP/kennel/NM_Kennel_t50_K05_dt5.pdf}
+}
+
+\caption{Wall temperature predictions achieved by the different HFP models on Kennel data.}
 \label{fig:HFP_kennel}
 \end{figure}
+
+\npar
+
+Achieving a good quality of wall superheat predictions for the cases of Kennel appears more complicated. Indeed, the new formulation and Kommajoysula model obtain the best results but still present an average underestimation of approximately 50\%. The very large range of conditions associated to the low pressure may invalidate the assumption of constants values for $\theta$, $\dtheta$ and $K$. 
+
+
+\begin{remark*}{}
+In his work, Kommajosyula \cite{kommajosyula_development_2020} presented better wall temperature predictions on Kennel data with his model (average error between 3\ K and 5\ K). We only managed to achieve similar results using a much lower contact angle ($\theta \leq 20\degree$) which could be questioned regarding the operating conditions.
+\end{remark*}
 
 
 
 \section{Validation DEBORA Experiment}
 
+In order to try a further validation of the proposed HFP model, we will test it under conditions that are representative of the DEBORA cases:
 
-We 
+
+\begin{itemize}
+\item R12 as operating fluid ;
+\item $P=26.2\ $bar ;
+\item $G_{L} = 2000~\debm$ ;
+\item $\Delta T_{L} \approx 0.5\ $K ; 
+\item $\phi_{w} = 73.8\ $kW/m\up{2}.
+\end{itemize}
 
