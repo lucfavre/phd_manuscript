@@ -19,6 +19,7 @@ In this Chapter, we want to assess the validity of the new Heat Flux Partitionin
 
 
 \section{Detailed Comparison and Assessment of the Heat Flux Partitioning}
+\label{sec:hfp_valid_fullkoss}
 
 In this section, we compare our results to those obtaines by Kossolapov \cite{kossolapov_experimental_2021} in vertical subcooled flow boiling. At a pressure of 10.5 bar, he realized measurements of many relevant parameters regarding the Heat Flux Partitioning:
 
@@ -162,10 +163,12 @@ On the other hand, the boiling curve is pretty well predicted except for the las
 \end{figure}
 
 
+\npar
 
+\clearpage
 
 \section{Wall Temperature Predictions}
-
+\label{sec:hfp_valid_DTw}
 
 In this section, we want to evaluate the model's capability to predict wall temperature in boiling regimes for different flow conditions. To do so, we gather boiling curves data from the literature for water that covers a large range of flow conditions as detailed in Table \ref{tab:exp_data_HFP}.
 
@@ -285,7 +288,7 @@ The data of Jens \& Lottes are of particular interest for the HFP validation sin
 \end{itemize}
 
 
-Figure \ref{fig:HFP_jens_BC} shows a typical boiling curve obtained for an experimental case of Jens \& Lottes. We can observe that in this region where wall superheat are low ($\Delta T_{w}<5\ $K), the quasi-entirety of the wall heat flux is evacuated through liquid convection and transient conduction through quenching. This is likely to be a consequence of the very high pressure conditions under which nucleation site density is very large but bubbles become extremely small ($R ~\mu$m). Evaporation heat flux is then relatively small but the large number of bubbles and their sliding induce a strong quenching effect over the heater surface. 
+Figure \ref{fig:HFP_jens_BC} shows a typical boiling curve obtained for an experimental case of Jens \& Lottes. We can observe that in this region where wall superheat are low ($\Delta T_{w}<5\ $K), the quasi-entirety of the wall heat flux is evacuated through liquid convection and transient conduction through quenching. This is likely to be a consequence of the very high pressure conditions under which nucleation site density is very large but bubbles become extremely small ($R \sim \mu$m). Evaporation heat flux is then relatively small but the large number of bubbles and their sliding induce a strong quenching effect over the heater surface. 
 
 \npar
 
@@ -293,6 +296,7 @@ Figure \ref{fig:HFP_jens_BC} shows a typical boiling curve obtained for an exper
 \centering
 \includegraphics[width=0.6\linewidth]{img/HFP/jens/jens_p138.pdf}
 \caption{Comparison with measured boiling curve by Jens \& Lottes \cite{jens_analysis_1951}. $P=138$ bar, $G=2600~\debm$, $\Delta T_{L}=64\degC$.}
+\label{fig:HFP_jens_BC}
 \end{figure}
 \npar
 
@@ -373,8 +377,9 @@ In his work, Kommajosyula \cite{kommajosyula_development_2020} presented better 
 \end{remark*}
 
 
-
+\clearpage
 \section{Validation for DEBORA Experiment}
+\label{sec:hfp_valid_debora}
 
 In order to try a further validation of the proposed HFP model, we will test it under conditions that are representative of the DEBORA cases for the G2P26W16 campaign (Chapter \ref{chap:debora}):
 
@@ -416,4 +421,15 @@ The proximity in the results obtained by the new formulation and Kommajosyula's 
 
 \section{Conclusions}
 
+In this Chapter, we proposed different aspects of validation regarding the proposed Heat Flux Partitioning model developed in Section \ref{sec:hfp_new}. All in all, we can conclude that:
 
+\begin{itemize}
+\item The evolution of most physical parameters included in the model are coherent with detailed measurements conducted by Kossolapov \cite{kossolapov_experimental_2021} (Section \ref{sec:hfp_valid_fullkoss}), namely the nucleation site density, the bubble departure frequency, waiting time and quenching time.
+
+\item The quenching seems overestimated with a probably too large sliding length. Meaning that the proposed modeling (\ie average distance between two nucleating bubbles, Section \ref{sec:sliding_length}) is likely to be an upper bound of the actual sliding length. Bubbles may actually slide over shorter length, which would require dedicated investigations when reaching boiling regimes with large bubble density on the wall.
+
+\item The formulation seems able to capture different nature of heat flux partition, with high-quenching regimes at high pressure and low superheats (Figure \ref{fig:HFP_jens_BC}), regimes with both static and sliding coalescence at high pressure and high superheat (Figure \ref{fig:HFP_koss_BC}), or mixed between quenching and sliding coalescence at low to moderate pressure and high superheat (Figure \ref{fig:HFP_koss_BC}).
+
+\item Wall temperature predictions (Section \ref{sec:hfp_valid_DTw}) using the new formulation along with reasonable values for the closing parameters $\parth{\theta,\ \dtheta,\ K }$ yields better results in average compared to older models. In particular, it seems capable of enhancing the wall temperature predictions on the DEBORA case as shown on Table \ref{tab:debora_hfp_test}.
+
+\end{itemize}

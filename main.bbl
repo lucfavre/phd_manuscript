@@ -326,6 +326,51 @@
     \field{year}{1969}
   \endentry
 
+  \entry{bowring_physical_1962}{report}{}
+    \name{author}{1}{}{%
+      {{hash=BRW}{%
+         family={Bowring},
+         familyi={B\bibinitperiod},
+         given={R.\bibnamedelima W.},
+         giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BRW1}
+    \strng{fullhash}{BRW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    A physical model developed primarily for use in calculating the sub-cooled
+  void distribution in the Halden Reactor at 5 to 30 atm. is described. The
+  model is considered applicable to other systems with parameters in the
+  following ranges. Pressure, 1 to 40 atm.; heat flux, up to 200 w/cm2; and
+  velocity, up to 200 cm/sec. (J.R.D.)%
+    }
+    \field{number}{{HPR}-10}
+    \field{title}{Physical model, based on bubble detachment, and calculation
+  of steam voidage in he sub-cooled region of a heated channel}
+    \verb{url}
+    \verb https://www.osti.gov/biblio/4759604
+    \endverb
+    \list{institution}{1}{%
+      {Institutt for Atomenergi (Norway). {OECD} Halden Reaktor Prosjekt}%
+    }
+    \verb{file}
+    \verb Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\LU6VHGTJ\\Bowring - 1
+    \verb 962 - Physical model, based on bubble detachment, and ca.pdf:applicat
+    \verb ion/pdf;Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\L677ZHR4\\4759604.
+    \verb html:text/html
+    \endverb
+    \field{day}{01}
+    \field{month}{12}
+    \field{year}{1962}
+    \field{urlday}{27}
+    \field{urlmonth}{11}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{bucci_not-so-subtle_2021}{article}{}
     \name{author}{3}{}{%
       {{hash=BM}{%
@@ -584,6 +629,51 @@
     \field{year}{2012}
     \field{urlday}{18}
     \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{chen_correlation_1966}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CJC}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={J.\bibnamedelima C.},
+         giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJC1}
+    \strng{fullhash}{CJC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1021/i260019a023
+    \endverb
+    \field{issn}{0196-4305}
+    \field{note}{Publisher: American Chemical Society}
+    \field{number}{3}
+    \field{pages}{322\bibrangedash 329}
+    \field{shortjournal}{Ind. Eng. Chem. Proc. Des. Dev.}
+    \field{title}{Correlation for Boiling Heat Transfer to Saturated Fluids in
+  Convective Flow}
+    \verb{url}
+    \verb https://doi.org/10.1021/i260019a023
+    \endverb
+    \field{volume}{5}
+    \verb{file}
+    \verb ACS Full Text Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\293TU7GV\\i2
+    \verb 60019a023.html:text/html;Version soumise:C\:\\Users\\Luc\\Zotero\\sto
+    \verb rage\\VK2YYRYI\\Chen - 1966 - Correlation for Boiling Heat Transfer t
+    \verb o Saturated.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Industrial \& Engineering Chemistry Process Design and
+  Development}
+    \field{day}{01}
+    \field{month}{07}
+    \field{year}{1966}
+    \field{urlday}{27}
+    \field{urlmonth}{11}
     \field{urlyear}{2022}
   \endentry
 
@@ -1581,7 +1671,9 @@
     \field{langid}{english}
     \verb{file}
     \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\YMUV27LP\\07
-    \verb 3519338590003X.html:text/html
+    \verb 3519338590003X.html:text/html;Snapshot:C\:\\Users\\Luc\\Zotero\\stora
+    \verb ge\\FHF8U5CY\\heat-transfer-in-automobile-radiators-of-the-tubular-ty
+    \verb pe-4mzf0y1yos.html:text/html
     \endverb
     \field{journaltitle}{International Communications in Heat and Mass
   Transfer}
@@ -2092,6 +2184,221 @@
     \field{year}{2009}
     \field{urlday}{02}
     \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{gerardi_investigation_2009}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=GCD}{%
+         family={Gerardi},
+         familyi={G\bibinitperiod},
+         given={Craig\bibnamedelima Douglas},
+         giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GCD1}
+    \strng{fullhash}{GCD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    A high-speed video and infrared thermography based technique has been used
+  to obtain detailed and fundamental time- and space-resolved information on
+  pool boiling heat transfer. The work is enabled by recent advances in heat
+  transfer diagnostics and motivated by increased interest in the enhancement
+  of heat transfer for applications such as micro-electronics, space
+  heat-transfer systems, and advanced nuclear reactors. This study critically
+  examined the fundamental processes occurring during nucleate boiling,
+  critical heat flux, and rewetting on thin-film heating elements. A
+  significant focus of the work was to investigate and explain the modification
+  of these heat transfer phenomena through the addition of silica and diamond
+  nanoparticles to the working fluid. Bubble departure diameter and frequency,
+  growth and wait times, and nucleation site density were measured for every
+  nucleation site during nucleate pool boiling at multiple superheats. The data
+  were compared with decades-old and poorly-validated models and correlations,
+  and were used to evaluate the relative contribution of the superheated liquid
+  layer and microlayer evaporation to bubble growth. Deterioration in nucleate
+  boiling heat transfer of water-based nanofluids was observed. It was
+  determined that a reduction in the static contact angle, caused by
+  nanoparticle deposition on the surface during boiling, created a larger
+  energy barrier for nucleation, which in turn reduced bubble departure
+  frequency and nucleation density, thus resulting in a reduced heat transfer
+  coefficient.%
+    }
+    \field{note}{Accepted: 2010-03-24T20:38:10Z}
+    \field{title}{Investigation of the pool boiling heat transfer enhancement
+  of nano-engineered fluids by means of high-speed infrared thermography}
+    \verb{url}
+    \verb https://dspace.mit.edu/handle/1721.1/52793
+    \endverb
+    \list{institution}{1}{%
+      {Massachusetts Institute of Technology}%
+    }
+    \verb{file}
+    \verb Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\2LXNN6CP\\Gerardi - 2
+    \verb 009 - Investigation of the pool boiling heat transfer en.pdf:applicat
+    \verb ion/pdf;Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\W6NGLG2X\\52793.ht
+    \verb ml:text/html
+    \endverb
+    \field{type}{Thesis}
+    \field{year}{2009}
+    \field{urlday}{27}
+    \field{urlmonth}{11}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{gerardi_study_2010}{article}{}
+    \name{author}{4}{}{%
+      {{hash=GC}{%
+         family={Gerardi},
+         familyi={G\bibinitperiod},
+         given={Craig},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Buongiorno},
+         familyi={B\bibinitperiod},
+         given={Jacopo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HLw}{%
+         family={Hu},
+         familyi={H\bibinitperiod},
+         given={Lin-wen},
+         giveni={L\bibinithyphendelim w\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={{McKrell}},
+         familyi={M\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \keyw{Bubble nucleation, Computational fluid dynamics, Interface tracking
+  methods, Nucleate-boiling heat transfer}
+    \strng{namehash}{GC+1}
+    \strng{fullhash}{GCBJHLwMT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    High-speed video and infrared thermometry were used to obtain time- and
+  space-resolved information on bubble nucleation and heat transfer in pool
+  boiling of water. The bubble departure diameter and frequency, growth and
+  wait times, and nucleation site density were directly measured for a thin,
+  electrically-heated, indium–tin-oxide surface, laid on a sapphire
+  substrate. These data are very valuable for validation of two-phase flow and
+  heat transfer models, including computational fluid dynamics with interface
+  tracking methods. Here, detailed experimental bubble-growth data from
+  individual nucleation sites were used to evaluate simple, commonly-used, but
+  poorly-validated, bubble-growth and nucleate-boiling heat-transfer models.
+  The agreement between the data and the models was found to be reasonably
+  good. Also, the heat flux partitioning model, to which our data on nucleation
+  site density, bubble departure diameter and frequency were directly fed,
+  suggests that transient conduction following bubble departure is the dominant
+  contribution to nucleate-boiling heat transfer.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2010.05.041
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{19}
+    \field{pages}{4185\bibrangedash 4192}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{Study of bubble growth in water pool boiling through
+  synchronized, infrared thermometry and high-speed video}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931010002838
+    \endverb
+    \field{volume}{53}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\Z7QKIX65\\S0
+    \verb 017931010002838.html:text/html;Version soumise:C\:\\Users\\Luc\\Zoter
+    \verb o\\storage\\66I2JH5E\\Gerardi et al. - 2010 - Study of bubble growth
+    \verb in water pool boiling throu.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{09}
+    \field{year}{2010}
+    \field{urlday}{27}
+    \field{urlmonth}{11}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{gilman_development_2014}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=GLA}{%
+         family={Gilman},
+         familyi={G\bibinitperiod},
+         given={Lindsey\bibnamedelima Anne},
+         giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GLA1}
+    \strng{fullhash}{GLA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Advanced modeling capabilities were developed for application to subcooled
+  flow boiling through this work. The target was to introduce, and demonstrate,
+  all necessary mechanisms required to accurately predict the temperature and
+  heat flux for subcooled flow boiling in {CFD} simulations. The model was
+  developed using an experimentally based mechanistic approach, where the goal
+  was to accurately capture all physical phenomena that affect heat transfer
+  and occur at the heated surface to correctly predict surface temperatures.
+  The proposed model adopts a similar approach to the classical heat
+  partitioning method, but captures additional boiling physical phenomena. It
+  introduces a new evaporation term, to truly capture the evaporation occurring
+  on the surface while also tracking the bubble crowding effect on the boiling
+  surface. This includes evaporation from the initial bubble inception and
+  evaporation through the bubble microlayer. The convection term is modified to
+  account for increased surface roughness caused by the presence of the bubbles
+  on the heated surface. The quenching term accounts for bringing the bubble
+  dry spot back to the wall superheat prior to bubble inception. In addition to
+  the changes to these three classic components, a sliding conduction term is
+  added to capture the increased heat transfer due to bubble sliding on the
+  heated surface prior to lift-off. The sliding conduction component includes
+  all heat removal associated with transient conduction caused by disruption of
+  the thermal boundary layer. The new method extends the generality and
+  applicability of boiling models in {CFD} through a fully mechanistic
+  representation. The new model also tracks the dry surface area during boiling
+  for possible application in {DNB} predictions. A statistical tracking method
+  for bubble location on the heated surface provides information on the bubble
+  merging probability and prevents the active nucleation site density from
+  reaching un-physical values. The model was implemented in the {CFD} software
+  {STAR}-{CCM}+, and the wall temperature predictions were recorded and
+  compared against the standard model's predictions and experimental data for a
+  range of mass fluxes, heat fluxes, inlet subcoolings, and pressures. In
+  general, the new model predicts wall temperatures closer to experimental data
+  for both low and high pressures when compared against the standard model. The
+  new model also converges at higher heat fluxes and greater subcoolings than
+  the standard model.%
+    }
+    \field{note}{Accepted: 2014-12-08T18:48:48Z}
+    \field{title}{Development of a general purpose subgrid wall boiling model
+  from improved physical understanding for use in computational fluid dynamics}
+    \verb{url}
+    \verb https://dspace.mit.edu/handle/1721.1/92099
+    \endverb
+    \list{institution}{1}{%
+      {Massachusetts Institute of Technology}%
+    }
+    \verb{file}
+    \verb Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\EFXVYZ5S\\Gilman - 20
+    \verb 14 - Development of a general purpose subgrid wall boil.pdf:applicati
+    \verb on/pdf;Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\NAIED5CG\\92099.htm
+    \verb l:text/html
+    \endverb
+    \field{type}{Thesis}
+    \field{year}{2014}
+    \field{urlday}{27}
+    \field{urlmonth}{11}
     \field{urlyear}{2022}
   \endentry
 
@@ -2639,6 +2946,102 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{gungor_general_1986}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GKE}{%
+         family={Gungor},
+         familyi={G\bibinitperiod},
+         given={K.\bibnamedelima E.},
+         giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=WRHS}{%
+         family={Winterton},
+         familyi={W\bibinitperiod},
+         given={R.\bibnamedelima H.\bibnamedelima S.},
+         giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GKEWRHS1}
+    \strng{fullhash}{GKEWRHS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    A new general correlation for forced convection boiling has been developed
+  with the aid of a large data bank. This data bank consists of over 4300 data
+  points for water, refrigerants and ethylene glycol, covering seven fluids and
+  28 authors, mostly for saturated boiling in vertical and horizontal tubes,
+  but with significant information also for subcooled boiling and for annuli.
+  The new correlation is simpler to apply and overall gives a closer fit to the
+  data than existing correlations. The mean deviation between the calculated
+  and measured boiling heat transfer coefficient is 21.4\% for saturated
+  boiling and 25.0\% for subcooled boiling. Résumé Une nouvelle formule
+  générate pour l'ébullition en convection forcée est développée à
+  1'aide d'une grande banque de données. Celle-ci concerne 4300 points de
+  mesures pour l'eau, les réfrigérants et I'éthylène glycol, couvrant sept
+  fluides et 28 auteurs; la plupart des points pour l'ébullition saturée dans
+  des tubes verticaux et horizontaux, mais avec une information significative
+  aussi pour l'ébullition sous-refroidie et pour les espaces annulaires. La
+  nouvelle relation est plus simple à appliquer et donne généralement une
+  meilleure adaptation aux données que les formules existantes. La déviation
+  moyenne entre les coefficients de transfert calculé et mesuré est de 21,4\%
+  pour 1'ébullition saturée et de 25\% pour l'ébullition sous-refroidie.
+  Zusammenfassung Unter Verwendung einer groβen Datenbank wurde eine neue
+  allgemeingültige Korrelation für das Sieden bei erzwungener Konvektion
+  entwickelt. Die Datenbank enthält über 4300 Datenpunkte für Wasser,
+  Kältemittel und Äthylenglykol. Sie beinhaltet sieben Stoffe und 28 Autoren,
+  meist für gesättigtes Sieden und für Ringspalte. Die neue Korrelation ist
+  einfacher in der Anwendung und zeigt eine bessere Anpassung an die Daten als
+  bestehende Korrelationen. Die mittlere Abweichung zwischen den berechneten
+  und gemessenen Wärmeübergangskoeffizienten beim Sieden beträgt 21,48\%
+  für gesättigtes Sieden und 25,0\% für unterkühltes Sieden. Реферат
+  C и{cпoльзoвAниeм} бoльшoгo б{AнкA} дAнныч пoлyчeнo
+  нoвoe oбoбшeннoe cooтнoшeниe для к{oэффициeнтA}
+  т{eплooбмeнA} пpи кипeнии в cмыcлe вынyждeннoй
+  кoнвeкции. ъAнк дAннич включAeт cвышe 4300
+  дAнныч для вoды, чл{AдAгeнтoв} и этилeн
+  глюкoля, {oчвAтывAющнч} дAнныe 28 Aвтopoв пo 7
+  жидкocтям в ocнoвнoм для кипeния нAcыщeннoй
+  жидкocти в в{epтикAлQjныч} и г{opизoнтAльныч}
+  т{pyбoAч}, пpичeм зн{AчитeлQjнAя} чAcть инф{opмAции}
+  oтнocитcя к кипeнию нeдoгpeтoй ьидкocти и для
+  кoльцeвыч к{AнAлoв}. Hoвoe cooтнoщeниe бoлee пpocтo в
+  пpимeнeнии и в oбщeм. дAeт бoлee блиэкoe
+  {coвпAдeниe} c дAнными, чeм cyшecтвyющиe. Cpeднee
+  oтклoнeниe мeждy {pAccчитAнным} и иэмepeнным
+  к{oэффициeнтAми} т{eплooмeнA} пpи кипeнии
+  {cocтAвляeт} 21,4\% для кипиeния нAcыщeннoй
+  жидкocти и 25,0\% для кипeния нeдoгpeтoй.
+  жидкocти.%
+    }
+    \verb{doi}
+    \verb 10.1016/0017-9310(86)90205-X
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{3}
+    \field{pages}{351\bibrangedash 358}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{A general correlation for flow boiling in tubes and annuli}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/001793108690205X
+    \endverb
+    \field{volume}{29}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\CUJHKHQV\\00
+    \verb 1793108690205X.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{03}
+    \field{year}{1986}
+    \field{urlday}{27}
+    \field{urlmonth}{11}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{gunther_photographic_1951}{article}{}
     \name{author}{1}{}{%
       {{hash=GFC}{%
@@ -2893,6 +3296,67 @@
     \field{month}{05}
     \field{year}{1951}
     \field{urlday}{12}
+    \field{urlmonth}{11}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{judd_comprehensive_1976}{article}{}
+    \name{author}{2}{}{%
+      {{hash=JRL}{%
+         family={Judd},
+         familyi={J\bibinitperiod},
+         given={R.\bibnamedelima L.},
+         giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=HKS}{%
+         family={Hwang},
+         familyi={H\bibinitperiod},
+         given={K.\bibnamedelima S.},
+         giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JRLHKS1}
+    \strng{fullhash}{JRLHKS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{abstract}{%
+    The results of an experimental investigation are presented in which
+  dichloromethane (methylene chloride) boiling on a glass surface was studied
+  using laser interferometry and high-speed photography. New data for active
+  site density, frequency of bubble emission, and bubble departure radius were
+  obtained in conjunction with measurements of the volume of microlayer
+  evaporated from the film underlying the base of each bubble for various
+  combinations of heat flux and subcooling. These results were used to support
+  a model for predicting boiling heat flux incorporating microlayer
+  evaporation, natural convection, and nucleate boiling mechanisms. Microlayer
+  evaporation heat transfer is shown to represent a significant proportion of
+  the total heat transfer for the range of heat flux and sub-cooling
+  investigated.%
+    }
+    \verb{doi}
+    \verb 10.1115/1.3450610
+    \endverb
+    \field{issn}{0022-1481}
+    \field{number}{4}
+    \field{pages}{623\bibrangedash 629}
+    \field{shortjournal}{Journal of Heat Transfer}
+    \field{title}{A Comprehensive Model for Nucleate Pool Boiling Heat Transfer
+  Including Microlayer Evaporation}
+    \verb{url}
+    \verb https://doi.org/10.1115/1.3450610
+    \endverb
+    \field{volume}{98}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\GGGN8XPU\\A-Comprehensive-
+    \verb Model-for-Nucleate-Pool-Boiling.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Heat Transfer}
+    \field{day}{01}
+    \field{month}{11}
+    \field{year}{1976}
+    \field{urlday}{27}
     \field{urlmonth}{11}
     \field{urlyear}{2022}
   \endentry
@@ -3780,6 +4244,139 @@
     \field{urlday}{12}
     \field{urlmonth}{11}
     \field{urlyear}{2022}
+  \endentry
+
+  \entry{liu_general_1991}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LZ}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Z.},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=WRHS}{%
+         family={Winterton},
+         familyi={W\bibinitperiod},
+         given={R.\bibnamedelima H.\bibnamedelima S.},
+         giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim
+  S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LZWRHS1}
+    \strng{fullhash}{LZWRHS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    Recent accurate correlations for predicting the heat transfer coefficient
+  in saturated flow boiling all contain an empirical boiling number correction.
+  The original idea behind the boiling number correction was to allow for the
+  enhancement of the forced eonvective heat transfer mechanisms arising from
+  the generation of vapour in the boundary layer next to the wall. However, the
+  presence of the boiling number term appears to prevent application to
+  subcooled boiling, throwing doubt on the physical basis of the correlation.
+  This paper shows that the eonvective term in the correlation should have a
+  Prandtl number dependence. In this way an accurate predictive method covering
+  a very wide range of parameters is constructed with an explicit nucleate
+  boiling term and without boiling number dependence. Résumé Des formules
+  précises récentes pour prédire le coefficient de transfert thermique dans
+  l'ébullition saturée d'un écoulement contiennent toutes une correction
+  empirique de nombre d'ébullition. L'idée derriere cette correction de
+  nombre d'ébullition est de tenir compte de l'accroissement des mécanismes
+  de convection thermique forcée provenant de la création de vapeur dans la
+  couche limite prés de la paroi. Néanmoins, la présence du terme de nombre
+  d'ébullition paraît interdire l'application à l'ébullition sousrefroidie,
+  ce qui jette un doute sur la base physique de la formule. On montre que le
+  terme convectif dans la formule doit avoir une dépendance vis-à-vis du
+  nombre de Prandtl. Dans cette voie. une méthode prédictive précise est
+  construite pour couvrir un trés large domaine de parametres avec un terme
+  explicite d'ébullition nucléée et sans dépendance vis-à-vis du nombre
+  d'ébullition. Zusammenfassung Die Üblichen genauen Korrelationen {fÜr} die
+  Berechnung des {WÄrmeÜbergangs}-koeffizienten {fÜr} das {gesÄttigte}
+  Strömungssieden enthalten stets eine empirische Korrektur {fÜr} die
+  Siedekennzahl. Der Korrektur liegt die Absicht zugrunde, eine Verbesserung
+  des konvektiven {WÄrmeÜber}-gangs infolge der Dampferzeugung innerhalb der
+  wandanliegenden Grenzschicht zu {berÜcksichtigen}. Allerdings scheint das
+  Vorhandenseins des Korrekturterms die Anwendung solcher Korrelationen auf das
+  {unterkÜhlte} Sieden zu verhindern, was Zweifel an der physikalisch
+  korrekten Basis der Korrelation aufkommen {lÄβt}. In der vorliegenden
+  Arbeit wird gezeigt, daβ der konvektive Therm in der Korrelation von der
+  Prandtl-Zahl {abhÄngig} sein sollte. Darauf aulbauend wird ein genaues
+  Berechnungsverfahren entwickelt, das einen groβen Parameterbereich abdeckt
+  und einen expliziten Term {fÜr} das Blasensieden ohne {AbhÄngigkeit} von
+  der Siedezahl {enthÄlt}. Реферат {NeдaVNo} п{oлykhcyeNNыe}
+  {TokhcyNыe} {cooTNoшeNия} для {packhcyeTa} к{oэффициeNTa}
+  Teплoпepeиoca V {ycлoVияч} кип{eNия} пpи {TekhcyeNии}
+  {NacыщeNNoй} жидк{ocTи} {coдepжaT} эмпиpиkhcyecкyю
+  п{oпpaVкy}. Идeя {VVoдa} эToй п{oпpaVки} зaклюkhcyaлacь V
+  {ykhcyeTe} {ycилeNия} {VыNyждeNNoкoNVeкTиVNoгo}
+  {TeплoпepeNoca}, {VызVaNNoгo} п{apooбpaзoVaNиeм} V
+  пpилeгaющeм к {cTeNкe} п{oгpaNиkhcyNoм} cлoe. {oдNaкo}
+  Naлиkhcyиe эToгo cлaгaeмoгo п{peпяTcTVyeT} п{pимeNeNию}
+  {yпoмяNyTыч} {cooTNoшeNий} к кип{eNию} пpи {NeдoгpeVe},
+  T.к. V эToм cлykhcyae и{cкaжaeTcя} ич физиkhcyecкий
+  cмыcл. V {NacToящeм} и{ccлeдoVaNии} п{oкaзaNo}, {khcyTo}
+  к{oNVeкTиVNый} {khcyлeN}, Vчoдящий V Taкoe {cooTNoшeNиe}
+  д{oлжeN} з{aVиceTь} {oT} khcyиcлa П{paNдTля}. Taким
+  oбpaзoм, {paзpaбoTaN} м{eToд} {TokhcyNoгo} {oпpeдeлeNия}
+  к{oэффициeNTa} {TeплoпepeNoca} V шиpoкoм ди{aпaзoNe}
+  п{apaмeTpoV}, к{oTopый} {coдepжиT} cлaгaeмoe, {oпиcыVaющee}
+  п{yзыpькoVoe} кип{eNиe}.%
+    }
+    \verb{doi}
+    \verb 10.1016/0017-9310(91)90234-6
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{11}
+    \field{pages}{2759\bibrangedash 2766}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{A general correlation for saturated and subcooled flow
+  boiling in tubes and annuli, based on a nucleate pool boiling equation}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0017931091902346
+    \endverb
+    \field{volume}{34}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\M5UM34H8\\00
+    \verb 17931091902346.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{11}
+    \field{year}{1991}
+    \field{urlday}{27}
+    \field{urlmonth}{11}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{lockhart_proposed_nodate}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LR}{%
+         family={Lockhart},
+         familyi={L\bibinitperiod},
+         given={R.W.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MR}{%
+         family={Martinelli},
+         familyi={M\bibinitperiod},
+         given={R.C.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LRMR1}
+    \strng{fullhash}{LRMR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{pages}{38\bibrangedash 48}
+    \field{title}{Proposed Correlation of Data for Isothermal Two-Phase,
+  Two-Component Flow in Pipes.}
+    \field{volume}{45}
+    \field{journaltitle}{Chemical Engineering Progress}
   \endentry
 
   \entry{magnaudet_motion_2000}{article}{}
@@ -6003,6 +6600,65 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{thom_boiling_1967}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TJRS}{%
+         family={Thom},
+         familyi={T\bibinitperiod},
+         given={J.\bibnamedelima R.\bibnamedelima S.},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim
+  S\bibinitperiod},
+      }}%
+      {{hash=WWM}{%
+         family={Walker},
+         familyi={W\bibinitperiod},
+         given={W.\bibnamedelima M.},
+         giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=FTA}{%
+         family={Fallon},
+         familyi={F\bibinitperiod},
+         given={T.\bibnamedelima A.},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=RGFS}{%
+         family={Reising},
+         familyi={R\bibinitperiod},
+         given={G.\bibnamedelima F.\bibnamedelima S.},
+         giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim
+  S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TJRS+1}
+    \strng{fullhash}{TJRSWWMFTARGFS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    The U.S. Department of Energy's Office of Scientific and Technical
+  Information%
+    }
+    \field{note}{Institution: Babcock and Wilcox Ltd., Renfrew, Eng.}
+    \field{title}{Boiling In Sub-Cooled Water During Flow Up Heated Tubes or
+  Annuli.}
+    \verb{url}
+    \verb https://www.osti.gov/biblio/4263900
+    \endverb
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\GCC5F8WB\\4263900.html:tex
+    \verb t/html
+    \endverb
+    \field{journaltitle}{Proc. Inst. Mech. Eng. (London), 180: Pt 3C,
+  226-46(1965-66).}
+    \field{day}{31}
+    \field{month}{10}
+    \field{year}{1967}
+    \field{urlday}{27}
+    \field{urlmonth}{11}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{thorncroft_experimental_1998}{article}{}
     \name{author}{3}{}{%
       {{hash=TGE}{%
@@ -6533,7 +7189,7 @@
   M\bibinitperiod},
       }}%
     }
-    \keyw{Average bubble number density, Bubbly flow, {CFD}, Population
+    \keyw{{CFD}, Average bubble number density, Bubbly flow, Population
   balance}
     \strng{namehash}{YGH+1}
     \strng{fullhash}{YGHCSCPTJYHMKM1}
@@ -6759,6 +7415,82 @@
     \field{year}{2016}
     \field{urlday}{10}
     \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{yoo_area_2018}{article}{}
+    \name{author}{3}{}{%
+      {{hash=YJ}{%
+         family={Yoo},
+         familyi={Y\bibinitperiod},
+         given={Junsoo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EPCE}{%
+         family={Estrada-Perez},
+         familyi={E\bibinithyphendelim P\bibinitperiod},
+         given={Carlos\bibnamedelima E.},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=HYA}{%
+         family={Hassan},
+         familyi={H\bibinitperiod},
+         given={Yassin\bibnamedelima A.},
+         giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \keyw{Subcooled boiling flow, Sliding bubble, Area of bubble influence,
+  Bubble sliding trajectory}
+    \strng{namehash}{YJEPCEHYA1}
+    \strng{fullhash}{YJEPCEHYA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{abstract}{%
+    The heat transfer effect of sliding bubbles is discussed in two aspects
+  based on new experimental findings: (i) the area of bubble influence and (ii)
+  bubble sliding characteristics influencing the degree of wall heat transfer.
+  One notable finding was that the bubble sliding behavior, characterized by
+  sliding trajectories, played a crucial role in determining the area of bubble
+  influence and the bubble influence factor (K). Also, such sliding
+  characteristic was observed strongly dependent on the sliding bubble size. An
+  empirical model has been proposed based on this finding to evaluate the
+  bubble influence factor (K) for the sliding bubbles. Another experimental
+  finding was that the bubble sliding characteristic, represented by bubble
+  spreading factor (S), had a significant impact on the degree of wall heat
+  transfer induced by sliding bubbles. This is due to the fact that the bubbles
+  spread across the heater width as they slid downstream, which reduced the
+  effective frequency of sliding bubbles per unit wall area. These new findings
+  not only improve our understanding of the heat transfer associated with
+  sliding bubbles, but also are expected to contribute to improving the insight
+  in the existing {CFD} boiling heat transfer models.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2018.04.058
+    \endverb
+    \field{issn}{0017-9310}
+    \field{pages}{43\bibrangedash 52}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{Area of bubble influence due to sliding bubbles in subcooled
+  boiling flow}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931017355722
+    \endverb
+    \field{volume}{125}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\JKGPL2KH\\S0
+    \verb 017931017355722.html:text/html;Version soumise:C\:\\Users\\Luc\\Zoter
+    \verb o\\storage\\EFYK4MQQ\\Yoo et al. - 2018 - Area of bubble influence du
+    \verb e to sliding bubbles in.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{10}
+    \field{year}{2018}
+    \field{urlday}{15}
+    \field{urlmonth}{11}
     \field{urlyear}{2022}
   \endentry
 

@@ -228,7 +228,13 @@ The model thus gives Equation \ref{eq:HFP} :
 \phi_{w}=\phi_{c,L}+\phi_{e}+\phi_{q}+\phi_{c,G}
 \end{equation}
 
-The convective heat fluxes are expressed as $\phi_{c,k}=A_{k}h_{k,log}\parth{T_{w}-T_{k}}$ with $ h_{k,log}=\rho_{k}c_{p,k}{u^{*}}/{T_{L}^{+}}$ ; where $A_{k}$ the fraction of the wall area facing phase $k$, $T_{w}$ the wall temperature and $h_{k,log}$ the wall logarithmic convective heat transfer coefficient to phase $k$ based on the wall functions for friction velocity $u^{*}$ and non-dimensional liquid temperature $T_{L}^{+}$ described in \ref{subsec:wall_func}.
+The convective heat fluxes are expressed as $\phi_{c,k}=A_{k}h_{k,log}\parth{T_{w}-T_{k}}$ with :
+
+\begin{equation} 
+h_{k,log}=\rho_{k}c_{p,k}{u^{*}}/{T_{L}^{+}}
+\label{eq:ncfd_hfc}
+\end{equation}
+where $A_{k}$ the fraction of the wall area facing phase $k$, $T_{w}$ the wall temperature and $h_{k,log}$ the wall logarithmic convective heat transfer coefficient to phase $k$ based on the wall functions for friction velocity $u^{*}$ and non-dimensional liquid temperature $T_{L}^{+}$ described in \ref{subsec:wall_func}.
 
 The vaporization heat flux is computed following $\phi_{e}=N_{sit}f\rho_{G}h_{lg}{\pi d_{d}^{2}}/{6}$ with :
 \begin{itemize}

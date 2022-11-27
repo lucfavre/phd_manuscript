@@ -12,7 +12,6 @@ A level-1 auxiliary file: FrontBackMatter/Contents.aux
 A level-1 auxiliary file: Chapters/intro_ccl/Intro.aux
 A level-1 auxiliary file: Chapters/NCFD/Chap_NCFD.aux
 A level-1 auxiliary file: Chapters/NCFD/Chap_Debora.aux
-A level-1 auxiliary file: Chapters/HFP/Chap_HFPIntro.aux
 A level-1 auxiliary file: Chapters/HFP/Chap_HFPmodels.aux
 A level-1 auxiliary file: Chapters/HFP/Chap_BubDyn.aux
 A level-1 auxiliary file: Chapters/HFP/Chap_Closures.aux
@@ -39,11 +38,12 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 26128 items.
+Reallocating 'field_info' (item size: 4) to 25294 items.
 Database file #1: main-blx.bib
-Database file #2: bib_v6.bib
+Database file #2: bib_v7.bib
 Reallocating 'str_pool' (item size: 1) to 130000 items.
 Reallocating 'str_pool' (item size: 1) to 195000 items.
+Reallocating 'str_pool' (item size: 1) to 260000 items.
 Warning--I didn't find a database entry for "knuth:1974"
 Warning--I didn't find a database entry for "guelfi2007"
 Warning--I didn't find a database entry for "ruyer2009"
@@ -62,69 +62,51 @@ Warning--I didn't find a database entry for "cole1960"
 Warning--I didn't find a database entry for "unal1976"
 Warning--I didn't find a database entry for "delvalle1985"
 Warning--I didn't find a database entry for "leduc1995"
-Warning--I didn't find a database entry for "thom_phiw"
-Warning--I didn't find a database entry for "chen_correl"
-Warning--I didn't find a database entry for "lockhart_martinelli"
-Warning--I didn't find a database entry for "bowring"
-Warning--I didn't find a database entry for "kurul_1990"
-Warning--I didn't find a database entry for "basu2005"
-Warning--I didn't find a database entry for "basu2005a"
-Warning--I didn't find a database entry for "gilman_phd"
-Warning--I didn't find a database entry for "gilman2017"
-Warning--I didn't find a database entry for "gerardi"
-Warning--I didn't find a database entry for "gerardi_etal"
-Warning--I didn't find a database entry for "lemmert"
-Warning--I didn't find a database entry for "basu"
-Warning--I didn't find a database entry for "cole"
-Warning--I didn't find a database entry for "gilman"
-Warning--I didn't find a database entry for "zuber1961"
+Warning--I didn't find a database entry for "favre_nureth19"
 Warning--I didn't find a database entry for "gerardi_ijhmt_2010"
-Warning--I didn't find a database entry for "kenning_boiling"
-Warning--I didn't find a database entry for "yoo_area_2018"
 Warning--I didn't find a database entry for "delvalle_phd"
 Biblatex version: 3.13
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'str_pool' (item size: 1) to 260000 items.
-You've used 114 entries,
+You've used 125 entries,
             6365 wiz_defined-function locations,
-            2385 strings with 190780 characters,
-and the built_in function-call counts, 1233530 in all, are:
-= -- 59308
-> -- 98392
-< -- 8309
-+ -- 93854
-- -- 80478
-* -- 70496
-:= -- 165437
+            2466 strings with 210311 characters,
+and the built_in function-call counts, 1354960 in all, are:
+= -- 65566
+> -- 107585
+< -- 9152
++ -- 102469
+- -- 87936
+* -- 77598
+:= -- 181118
 add.period$ -- 0
-call.type$ -- 114
-change.case$ -- 113
-chr.to.int$ -- 7100
-cite$ -- 226
-duplicate$ -- 100317
-empty$ -- 85034
-format.name$ -- 8233
-if$ -- 191028
+call.type$ -- 125
+change.case$ -- 124
+chr.to.int$ -- 7772
+cite$ -- 248
+duplicate$ -- 109528
+empty$ -- 93791
+format.name$ -- 8973
+if$ -- 210599
 int.to.chr$ -- 0
-int.to.str$ -- 281
+int.to.str$ -- 308
 missing$ -- 0
-newline$ -- 5588
-num.names$ -- 5544
-pop$ -- 38221
+newline$ -- 6104
+num.names$ -- 6144
+pop$ -- 41869
 preamble$ -- 1
-purify$ -- 2522
+purify$ -- 2816
 quote$ -- 0
-skip$ -- 31269
+skip$ -- 34480
 stack$ -- 0
-substring$ -- 120225
-swap$ -- 29970
-text.length$ -- 6388
-text.prefix$ -- 123
+substring$ -- 133529
+swap$ -- 32811
+text.length$ -- 6977
+text.prefix$ -- 134
 top$ -- 1
-type$ -- 3808
+type$ -- 4174
 warning$ -- 0
-while$ -- 15675
+while$ -- 17048
 width$ -- 0
-write$ -- 5475
-(There were 38 warnings)
+write$ -- 5980
+(There were 21 warnings)

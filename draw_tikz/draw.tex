@@ -1296,19 +1296,22 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \coordinate (cavC) at ($(cavL)+(-45:0.5)$);
 \coordinate (cavR) at ($(cavC)+(+45:0.5)$);
 \coordinate (Oend) at ($(cavR)+(0.5,0)$);
+\coordinate (sep) at ($(Oend)+(1.5,0)+(0.05,0)$);
 
 %coordinates {(1,1) (2,2) (4,-2) (3,2)}
 
 
-\draw[thick] (O)--(cavL)--(cavC)--(cavR)--(Oend)--++(1.5,0);
-\draw[blue] plot [smooth, tension=0.3] coordinates {(Oliq) ($(cavL)+(0,0.1)$) ($(cavC)+(0,0.1)$) ($(cavR)+(0,0.1)$) ($(Oend)+(0,0.1)$)};
+%\draw[blue] plot [smooth, tension=0.3] coordinates {(Oliq) ($(cavL)+(0,0.1)$) ($(cavC)+(0,0.1)$) ($(cavR)+(0,0.1)$) ($(Oend)+(0,0.1)$)};
+
+\fill[blue!10!white] (O)--(cavL)--(cavC)--(cavR)--(sep)--($(sep)+(0,2)$)--($(O)+(0,2)$)--cycle;
+\draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--++(1.5,0);
 
 \coordinate (Ob) at ($(O) + (2.5,0)$);
 
 \tikzmath{\alph = 20; \alphrad= \alph * pi / 180; \ray=0.6; \rw=\ray * sin(\alphrad r);};
 
 \coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
-\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+\draw[fill=gray!10!white] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
 
 %%Right angle
 \draw (Oarc) --++(\alph:0.3) node[very near end, right]{$\theta$};
@@ -1316,7 +1319,8 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 
 \draw ($(cavC) + (0,1.2)$) node{High wettability, low $\theta$};
 
-\coordinate (sep) at ($(Oend)+(1.5,0)+(0.05,0)$);
+\draw (cavC)  node[below]{Flooded cavity};
+
 \draw[dashed] (sep)--++(0,2);
 
 
@@ -1326,20 +1330,32 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \coordinate (Oliq) at ($(O)+(0,0.1)$);
 \coordinate (cavL) at ($(O)+(0.5,0)$);
 \coordinate (cavC) at ($(cavL)+(-45:0.5)$);
+
 \coordinate (cavR) at ($(cavC)+(+45:0.5)$);
+\coordinate (cavCgas) at ($(cavC)+(+45:0.3)$);
+
 \coordinate (Oend) at ($(cavR)+(0.5,0)$);
 
 %coordinates {(1,1) (2,2) (4,-2) (3,2)}
 
-\draw[thick] (O)--(cavL)--(cavC)--(cavR)--(Oend)--++(1.6,0);
-\draw[blue] plot [smooth, tension=0.3] coordinates {(Oliq) ($(cavL)+(0,0.1)$) ($(cavC)+(0,0.35)$) ($(cavR)+(0,0.1)$) ($(Oend)+(0,0.1)$)};
+%\draw[blue] plot [smooth, tension=0.3] coordinates {(Oliq) ($(cavL)+(0,0.1)$) ($(cavC)+(0,0.35)$) ($(cavR)+(0,0.1)$) ($(Oend)+(0,0.1)$)};
+
+\fill[blue!10!white] (sep)--(cavL)--(cavC)--(cavR)--($(Oend)+(1.6,0)$)--($(Oend)+(1.6,2)$)--($(sep)+(0,2)$)--cycle;
+
+
+\fill[white] (cavC) circle(0.3);
+
+\draw (cavC)  node[below]{Trapped gas};
+
+\draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--++(1.6,0);
+
 
 \coordinate (Ob) at ($(O) + (2.6,0)$);
 
 \tikzmath{\alph = 120; \alphrad= \alph * pi / 180; \ray=0.6; \rw=\ray * sin(\alphrad r);};
 
 \coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
-\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+\draw[fill=gray!10!white] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
 
 %%Right angle
 \draw (Oarc) --++(\alph:0.3) node[very near end, right]{$\theta$};

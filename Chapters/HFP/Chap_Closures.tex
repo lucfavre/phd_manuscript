@@ -1,6 +1,6 @@
 % Chapter X
 
-\chapter{Closure Laws and Construction of a New HFP Model} % Chapter title
+\chapter{Closure Laws and Construction of a New Heat Flux Partitioning Model} % Chapter title
 
 \label{chap:HFP_Assembling} % For referencing the chapter elsewhere, use \autoref{ch:name} 
 
@@ -8,14 +8,46 @@
 
 \minitoc
 
+\section{Introduction}
+
+When constructing a Heat Flux Partitioning model, different modeling steps have to be followed:
+
+\begin{itemize}
+\item Definition of the heat transfer mechanisms to be accounted for ;
+\item Identification of the physical parameters requiring a specific computation ;
+\item Conduct analytic approaches or correlation selection to choose dedicated closure laws.
+\end{itemize}
+
+In this work, we want to account for four different heat fluxes:
+
+\begin{itemize}
+\item The liquid convective heat-flux :
+\item The evaporation heat flux ;
+\item The transient conduction / quenching heat flux including the impact of sliding bubbles ;
+\item The vapor convective heat flux located at dry spot locations beneath bubble footprints.
+\end{itemize}
+
+The evaluation of those different heat fluxes requires to model a certain number of parameters, namely:
+
+\begin{itemize}
+\item The single-phase heat transfer coefficient toward the liquid phase $h_{c,L}$;
+\item The nucleation site density $N_{sit}$, representing the number of cavities per unit of area where bubbles will be allowed to nucleate ;
+\item The different times involved in the bubble nucleation cycle, \ie the growth time until bubble departure by sliding $t_{g,d}$ and the waiting time between two nucleation events on a site $t_{w}$ ;
+\item The bubble dynamics at the wall, including bubble departure radius $R_{d}$, sliding velocity $U_{b}$, lift-off (discussed in Chapter \ref{chap:bub_dyn}), sliding length $l_{sl}$ and area $A_{q,1b}$ ;
+\item Possible interactions between bubbles (coalescence) or nucleation sites (deactivation).
+\end{itemize}
+
+In this Chapter, we will go through each physical parameter and discuss their modeling in the light of experimental measurements when possible. Finally, a new model formulation for the Heat Flux Partitioning is proposed in Section \ref{sec:hfp_new}.
+
+
 
 \section{Single-Phase Heat Transfer Coefficient}
 \label{sec:single_phase_HTC}
 
-The choice of a proper correlation to compute the single-phase heat transfer coefficient is a first but inevitable step to build a HFP model. Indeed, if the single-phase convection term is badly computed, the resulting boiling model will fail to predict the wall temperature. For instance, if the liquid convective HTC is overestimated, it would result in a delayed increase of the boiling and quenching heat fluxes which would in turn lead to an overprediction of the wall temperature. 
+The choice of a proper correlation to compute the single-phase heat transfer coefficient is a first but unavoidable step to build a HFP model. Indeed, if the single-phase convection term is badly computed, the resulting boiling model will fail to predict the wall temperature. For instance, if the liquid convective HTC is overestimated, it would result in a delayed increase of the boiling and quenching heat fluxes which would in turn lead to an overprediction of the wall temperature.
 
 \npar
-To assess existing correlations for the single-phase HTC, we will use wall temperature measurements extracted from experimental boiling curves for water where $T_{w}\leq T_{sat}$. They correspond to the single-phase part of the experimental data later used to assess the HFP model. The chosen data are presented on Table \ref{tab:exp_data_convection}.
+To assess existing correlations for the single-phase HTC, we will use wall temperature measurements extracted from experimental boiling curves for water where $T_{w}\leq T_{sat}$. They correspond to the single-phase part of the experimental data later used to assess the HFP model. As discussed before, good prediction of the single-phase HTC is very important in the frame of boiling heat transfer, which means achieving good wall temperature predictions prior to the Onset of Nucleate Boiling. The chosen data are presented on Table \ref{tab:exp_data_convection}.
 
 \begin{table}[h!]
 
@@ -25,8 +57,8 @@ To assess existing correlations for the single-phase HTC, we will use wall tempe
 
 \scriptsize
 \centering
-\begin{tabular}{p{20mm}|c c c c c c c c} 
-Author & $D_{h}$ [mm] & $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K] & $\phi_{w}$ [MW/m\up{2}] & $T_{sat}-T_{w}$ [K] &$N_{mes}$ [-] \\
+\begin{tabular}{p{27mm}|c c c c c c c c} 
+Author & $D_{h}$ [mm] & $P$ [bar] & $G_{L}$ [$\debm$] & $\Delta T_{L}$ [K] & $\phi_{w}$ [MW/m\up{2}] & $T_{sat}-T_{w}$ [K] & $N_{mes}$ [-] \\
 \hline
 \\
 
@@ -40,7 +72,7 @@ Kennel \cite{kennel_local_1949} \newline (1948) & 4.3 - 13.2 & 2 - 6.2 & 284 - 1
 \hline
 \end{tabular}
 }
-\caption{Experimental data range of wall temperature measurements from the single-phase part of boiling curves.}
+\caption{Experimental data range of wall temperature measurements from the single-phase part of boiling curves. $N_{mes}$ is the number of measurements of each data set.}
 \label{tab:exp_data_convection}
 \end{table}
 
@@ -66,7 +98,7 @@ The Gnielinski correlation is used in Kommajosyula's HFP model to compute the li
 \end{figure}
 
 \npar
-The two correlations are of similar efficiency regarding wall temperature predictions over the considered data sets. They both have very good agreement with Kennel data and clear overestimations of $\Delta T_{w}$ on Richenderfer and Kossolapov measurements. The slope difference compared to the parity implies that the correlations are predicting too small Nusselt numbers for those cases. Regarding Jens-Lottes data, both model underestimate the wall temperatures, with better results achieved by Gnielinski correlation.
+The two correlations are of similar efficiency regarding wall temperature predictions over the considered data sets. They both have very good agreement with Kennel data and clear overestimations of $\Delta T_{w}$ on Richenderfer and Kossolapov measurements. The slope difference compared to the parity implies that the correlations are predicting too small Nusselt numbers for those cases. Regarding Jens-Lottes data, both models underestimate the wall temperatures, with better results achieved by Gnielinski correlation.
 
 \begin{remark*}{}
 We tested different friction factor along with different values of wall roughness in the Gnielinski correlation and observed a negligible impact on the overall results. This allows to stay with a simple formulation for the friction coefficient.
@@ -92,7 +124,7 @@ This correction can be interpreted as using the thermal diameter instead of the 
 \end{remark*}
 
 \npar
-On Figure \ref{fig:ncfd_gniel_corr_htc} we display the predictions of Gnielisnki correlation including this correction by a factor 4 on the HTC for Richenderfer and Kossolapov cases. We also test a $10\%$ reduction on the HTC for Jens-Lottes cases to assess the error made by Gnielinski correlation. On the same Figure, we also present predictions achieved with the local HTC estimation implemented in NCFD (Eq. \ref{eq:SP_HTC_NCFD}), using a value of $y^{+}=100$. 
+On Figure \ref{fig:ncfd_gniel_corr_htc} we display the predictions of Gnielisnki correlation including this correction by a factor 4 on the HTC for Richenderfer and Kossolapov cases. On the same Figure, we also present predictions achieved with the local HTC estimation implemented in NCFD (Eq. \ref{eq:ncfd_hfc}), using a value of $y^{+}=100$. 
 
 
 \begin{figure}[h!]
@@ -101,11 +133,11 @@ On Figure \ref{fig:ncfd_gniel_corr_htc} we display the predictions of Gnielisnki
 \includegraphics[width=0.45\linewidth]{img/single_phase/comp_ncfd.pdf}
 \label{fig:ncfd_comp}
 } 
-\subfloat[Corrected Gnielinski correlation. We multiply the HTC by 4 on Richenderfer and Kossolapov cases and by 0.9 on Jens-Lotte cases.]{
+\subfloat[Corrected Gnielinski correlation. We multiply the HTC by 4 on Richenderfer and Kossolapov cases.]{
 \includegraphics[width=0.45\linewidth]{img/single_phase/comp_gniel_corr.pdf}
 \label{fig:gniel_corr_comp}
 } 
-\caption{Predictive capability of wall temperature by NCFD law and Gnielinski correlation including corrections. $\pm 3K$ error bars indicated.}
+\caption{Predictive capability of wall temperature by NCFD law and Gnielinski correlation including corrections. $\pm 3K$ error bars indicated (dashed lines).}
 \label{fig:ncfd_gniel_corr_htc}
 \end{figure}
 
@@ -141,7 +173,7 @@ Gnielinski \cite{gnielinski_new_1975} & 20.31 & 14.06 & 6.09 & 1.74 \\
 NCFD law \cite{guelfi_neptune_2007} & 15.52 & 9.25 & 23.69 & 3.36 \\
 \\
 
-Corrected Gnielisnki & 1.34 & 3.08 & 1.57 & 1.74 \\
+Corrected Gnielisnki & 1.34 & 3.08 & 6.09 & 1.74 \\
 \\
 
 \hline
@@ -153,22 +185,28 @@ Corrected Gnielisnki & 1.34 & 3.08 & 1.57 & 1.74 \\
 
 
 \npar
-\textbf{Recalling that Gnielinski correlation was also providing good results on the DEBORA cases with R12 (Chapter \ref{chap:debora}) further indicates it as a proper choice regarding single-phase HTC estimation in the HFP model.} We will later allow the use of the correction factors when needed to ensure a proper representation of the single-phase part when trying to assess the models associated to boiling.
+\textbf{Recalling that Gnielinski correlation was also providing good results on the DEBORA cases with R12 (Chapter \ref{chap:debora}) further indicates it as a proper choice regarding single-phase HTC estimation in the HFP model.} 
 
-
-
-
+\begin{note*}{}
+We will later allow the use of the correction factor when needed to ensure a proper representation of the single-phase part when trying to assess the models associated to boiling.
+\end{note*}
 
 
 
 \section{Nucleation Site Density}
 \label{sec:NSD}
 
-The Nucleation Site Density is among the most influencing parameters over the HFP models predictions, particularly regarding wall temperature. Indeed, its value directly controls the density of bubbles generated at the heater and therefore impacts both the boiling ($\phi_{e}$) and quenching ($\phi_{q}$) heat fluxes to the first order. Being able to come up with correct predictions of the NSD is thus critical if one wishes to properly capture the thermal behavior of the boiling surface.
+The Nucleation Site Density is among the most influencing parameters over the HFP models predictions, particularly regarding wall temperature \cite{favre_nureth19}. Indeed, its value directly controls the density of bubbles generated at the heater and therefore impacts both the boiling ($\phi_{e}$) and quenching ($\phi_{q}$) heat fluxes to the first order. Being able to come up with correct predictions of the NSD is thus critical if one wishes to properly capture the thermal behavior of the boiling surface.
 
 \npar
 
-However, the value of $N_{sit}$ is actually influenced by many parameters being either linked to thermal-hydraulics (wall temperature, pressure, operating fluid) or the heater material (roughness, wettability). That is why its value is often estimated through empirical correlations, for which many different expression have been proposed over the years since the end of the XX\textsuperscript{th} century.
+In particular, a distinction has to be made between the density of sites or cavities over the surface, which is an intrinsic property of the material, versus the active sites density, \ie the cavities that will actually reach thermal-hydraulics conditions to allow nucleation, which usually depends on the cavity radius $R_{c}$. The smallest cavities are less likely to be flooded by the liquid due to capillary effects and can thus become a place where a vapor bubble will grow. 
+
+\npar
+The active nucleation site density, noted $N_{sit}$, is the one of interest when trying to model wall boiling since it control the density of bubbles that can be generated on the heater. Its value is actually influenced by many parameters being either linked to thermal-hydraulics (wall temperature, pressure, operating fluid) or the heater material (roughness, wettability, thermal conductivity, diffusivity, etc.). That is why it is often estimated through empirical correlations, for which many different expression have been proposed over the years since the end of the XX\textsuperscript{th} century as discussed below.
+
+
+
 
 \subsection{Existing Correlations}
 
@@ -201,11 +239,11 @@ Moreover, experimental measurements such as in Borishanskii \cite{borishanskii_h
 N_{sit} =& N_{0}\parth{1-\exp{-\dfrac{\theta^{2}}{8\mu^{2}} } }\crocht{\exp{ \mathrm{f}\parth{\rho^{+}}\dfrac{\lambda '}{R_{c}} } -1}
 \label{eq:nsit_hibiki} \\
 %
-R_{c} =& \dfrac{2\sigma\parth{1+\dfrac{\rho_{V}}{\rho_{L}}} / P }{\exp{\dfrac{h_{LV} \Delta T_{w}}{R_{g}T_{w}T_{sat}} } -1}\\
+R_{c} =& \dfrac{2\sigma\parth{1+\dfrac{\rho_{V}}{\rho_{L}}} / P }{\exp{\dfrac{h_{LV} \Delta T_{w}}{R_{g} M T_{w}T_{sat}} } -1}\\
 %
 \mathrm{f}\parth{\rho^{+}} =& -0.01064 + 0.48246\rho^{+} - 0.22712 \rho^{+^{2}} + 0.05468 \rho^{+^{3}}
 \end{align}
-with $R_{g}$ the perfect gas constant times the molar mass of the fluid,  $N_{0}=4.72\times 10^{5}\ \mathrm{m}^{-2}$, $\mu = 0.722\ \mathrm{rad}$, $\lambda ' = 2.5 \times 10^{-3} \ \mathrm{m}$ and $\rho^{+}=\mathrm{log}_{10}\parth{\dfrac{\rho_{L}-\rho_{V}}{\rho_{V}}}$.
+with $\theta$ the contact angle, $R_{c}$ the cavity radius, $\sigma$ the surface tension, $h_{LV}$ the latent enthalpy of vaporization, $P$ the operating pressure, $T_{w}$ and $T_{sat}$ the wall and saturation temperature in Kelvins, $R_{g}=8.314$~J/mol/K the perfect gas constant, $M$ the molar mass of the fluid (18~g/mol for water),  $N_{0}=4.72\times 10^{5}\ \mathrm{m}^{-2}$, $\mu = 0.722\ \mathrm{rad}$, $\lambda ' = 2.5 \times 10^{-3} \ \mathrm{m}$ and $\rho^{+}=\mathrm{log}_{10}\parth{\dfrac{\rho_{L}-\rho_{V}}{\rho_{V}}}$.
 
 
 \begin{note*}{}
@@ -261,6 +299,8 @@ B &= 0.122P +1.988\\
 1-\cos{\theta} &= \parth{1-\cos{\theta_{0}}}\parth{\frac{T_{c}-T_{sat}}{T_{c}-T_{0}}}^{\gamma}
 \end{align}
 with $P$ in MPa, $\theta_{0}$ the contact angle at room temperature $T_{0}$, and default value being for water $\theta_{0}=41.37 \degree$, $T_{c}=374 \degree$C $T_{0}=25\degree$C, $\gamma = 0.719$.
+
+\npar
 
 \begin{remark*}{}
 We can question the absence of bulk liquid velocity and temperature in the presented law since they should logically influence the nucleation process. However, this impact is rather limited as observed in experimental measurements of Zhou \etal \cite{zhou_experimental_2020} and Kossolapov \cite{kossolapov_experimental_2021}.
@@ -388,7 +428,7 @@ t_{g,d} = \parth{\frac{R_{d}}{K \Ja_{w}}}^{2} \frac{1}{\pi \eta_{L}}
 \end{equation}
 
 \begin{note*}{}
-This formulation is used in Gilman \cite{gilman_phd} and Kommajosyula \cite{kommajosyula_development_2020} HFP models, with their own choice of value for $K$.
+This formulation is used in Gilman \cite{gilman_development_2014} and Kommajosyula \cite{kommajosyula_development_2020} HFP models, with their own choice of value for $K$.
 \end{note*}
 
 By correlating their own growth time measurements, Basu \etal \cite{basu_wall_2005} propose the following relationship including an influence of the liquid subcooling:
@@ -417,10 +457,10 @@ This formulation requires $R_{d} < R_{\infty}$ the equilibrium radius in subcool
 
 
 
-\section{Bubble Wait Time}
+\section{Waiting Time}
 \label{sec:wait_time}
 
-The wait time between two nucleation events on an active site corresponds to the time needed for the thermal boundary layer to reconstruct after its disruption due to bubble departure from the nucleation site. This process is then intrinsically related to the heater properties and the transient heat transfer with the external liquid flow.
+The waiting time $t_{w}$ between two nucleation events on an active site corresponds to the time needed for the thermal boundary layer to reconstruct after its disruption due to bubble departure from the nucleation site. This process is then intrinsically related to the heater properties and the transient heat transfer with the external liquid flow.
 
 
 
@@ -527,7 +567,7 @@ t_{w} = 0.061\frac{{\Ja_{L}}^{0.63}}{\Delta T_{w}}
 \end{equation}
 
 \begin{remark*}
-This expression, used in Kommajosyula's HFP model, will yield $t_{w}=0$ for saturated boiling conditions, which is hardly reasonable since a non-zero wait time exists between two nucleation events even at saturation \cite{gerardi_ijhmt_2010}.
+This expression, used in Kommajosyula's HFP model, will yield $t_{w}=0$ for saturated boiling conditions, which is hardly reasonable since a non-zero wait time exists between two nucleation events even at saturation \cite{gerardi_study_2010}.
 \end{remark*}
 
 
@@ -573,7 +613,7 @@ The experimental data are all using water as working fluid. We can see at first 
 \begin{itemize}
 \item The bubbles that are smaller and depart nearly right after nucleation, leaving wait time as the main part of the nucleation cycle ;
 \item The wall Jakob number values that are smaller ;
-\item The heterogeneity in nucleation sites behavior (their number increasing with pressure), with sites exhibiting very large wait time due to their very low nucleation frequency versus very active sites that contributes much more to the overall nucleation. Averaging over those events as done by Kossolapov \cite{kossolapov_experimental_2021} may result in a large wait time.
+\item The heterogeneity in nucleation sites behavior (their number increasing with pressure), with sites exhibiting very large wait time due to their very low nucleation frequency versus very active sites that contributes much more to the overall nucleation. This can partially be explained by the local decrease in wall temperature when a bubble nucleates (acting locally as a heat sink), potentially deactivating the neighboring sites. Averaging over those events as done by Kossolapov \cite{kossolapov_experimental_2021} may result in a large wait time.
 \end{itemize}
 
 
@@ -584,7 +624,7 @@ The experimental data are all using water as working fluid. We can see at first 
 \label{fig:tw_Jaw}
 \end{figure}
 
-On Figure \ref{fig:tw_Jaw}, we show the evolution of the measures wait times with the wall Jakob number. We can see that the lower values of Jakob number actually correspond to lower wait times, which seem to confirm the previous assumptions.
+On Figure \ref{fig:tw_Jaw}, we show the evolution of the measures wait times with the wall Jakob number. We can see that the lower values of Jakob number actually correspond to lower wait times, which seems to confirm the previous assumptions.
 
 \npar
 
@@ -594,7 +634,7 @@ On the contrary, values at 1 bar from Basu do not clearly match with Richenderfe
 
 \npar
 
-The data sets from Kossolapov and Richenderfer also give the associated frequency to each wait time measurement. This allows to plot the product $t_{w} \times f$ to evaluate the proportion of the nucleation cycle occupied by wait time. The value of $t_{w} \times f$ would physically be expected to tend to $1$ when $\Delta T_{w} \to 0$ (highly reduced nucleation) and to $0$ when $\Delta T_{w} \to \infty$ due to the intense nucleation and increased transient heat transfer under the high temperature gradient between the wall and the fluid. Experimental values are plotted on Figure \ref{fig:twf_Jawred} versus the reduced Jakob number values to regroup the values by excluding the influence of the density ratio $\rho_{L}/\rho_{V}$.
+The data sets from Kossolapov and Richenderfer also give the associated frequency to each wait time measurement. This allows to plot the product $t_{w} \times f$ to evaluate the proportion of the nucleation cycle occupied by wait time. The value of $t_{w} \times f$ would physically be expected to tend to $1$ when $\Delta T_{w} \to 0$ (highly reduced nucleation) and to $0$ when $\Delta T_{w} \to \infty$ due to the intense nucleation and increased transient heat transfer under the high temperature gradient between the wall and the fluid. Experimental values are plotted on Figure \ref{fig:twf_Jawred} versus the reduced Jakob number $\Ja_{w}^{*} = \dfrac{c_{p,L}\Delta T_{w}}{h_{LV}}$ values to regroup the values by excluding the influence of the density ratio $\rho_{L}/\rho_{V}$.
 
 
 
@@ -651,10 +691,14 @@ When testing the analytic formulations of the wait time, we tested different com
 At last, it appeared that choosing the Yeoh \etal expression of $t_{w}$ (Eq. \ref{eq:twait_yeoh}) along with the cavity radius of Han \& Griffith (Eq. \ref{eq:rc_han}) resulted in good results in average over the three chosen datasets. As we can see on Figure \ref{fig:tw_pred_anal}, it produces overall better results compared to the correlation. Moreover, we used contact angle values that were representative of each experimental conditions according to each author:
 
 \begin{itemize}
-\item $\theta = 31 \degree$ for Basu \etal data \cite{basu_wall_2005-1} ;
-\item $\theta = 72 \degree$ for Richenderfer data \cite{richenderfer_experimental_2018};
-\item $\theta = 80 \degree$ for Kossolapov data \cite{kossolapov_experimental_2021}.
+\item $\theta = 31 \degree$ for Basu \etal data \cite{basu_wall_2005-1} (metallic surface) ;
+\item $\theta = 72 \degree$ for Richenderfer data \cite{richenderfer_experimental_2018} (ITO on sapphire) ;
+\item $\theta = 80 \degree$ for Kossolapov data \cite{kossolapov_experimental_2021} (ITO on sapphire).
 \end{itemize} 
+
+\begin{remark*}{}
+Obviously, since the wait time results from a transient heat transfer between the wall and the liquid after the bubble departure, it should strongly depend on the wall thermal properties. However, they are not accounted for in the analytic expressions, with solely the contact angle being related to the wall material. 
+\end{remark*}
 
 The fact that the analytic expression is able to correctly predict the large range of $t_{w}$ values from the different experiments is encouraging since it is based on a physical approach contrary to correlations which mainly relies on data-fitting.
 
@@ -672,7 +716,7 @@ NSD correlations actually estimate the total number of sites where bubbles can n
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.9\linewidth]{img/site_interaction/site_f_kossolapov.PNG}
-\caption{Nucleation site distribution with associated nucleation frequency, by and adapted from Kossolapov \cite{kossolapov_experimental_2021}.}
+\caption{Nucleation site distribution by and adapted from Kossolapov \cite{kossolapov_experimental_2021}. Red circles represent the active sites positions with diameter increasing with the site's nucleation frequency.}
 \label{fig:sites_f_koss}
 \end{figure}
 
@@ -699,7 +743,7 @@ More recent observations also show a random distribution of the sites such as in
 \begin{figure}[!h]
 \centering
 
-\subfloat[Nucleation site distribution in flow boiling from Del Valle \& Kenning \cite{del_valle_subcooled_1985}. Black triangles circled in red represent sites that deactivate when the heat flux exceeds 70\% of the CHF. ]{
+\subfloat[Nucleation site distribution in flow boiling from Del Valle \& Kenning \cite{del_valle_subcooled_1985}, each symbol represent a family of active nucleation site observed at different heat fluxes. Black triangles circled in red are sites that deactivate when the heat flux exceeded 70\% of the CHF.]{
 \includegraphics[width=0.5\linewidth]{img/site_interaction/sites_kenning_red.PNG}
 \label{fig:kenning_boiling_inter}
 }
@@ -715,7 +759,7 @@ More recent observations also show a random distribution of the sites such as in
 
 \npar
 
-Considering an homogeneous spatial (two-dimensional) Poisson process with an event density (\ie average number of events per unit of area) $\lambda$, then the probability that the number of event $N$ in an area $A$ is equal to $n \in \mathbb{N}$ is \cite{daley_introduction_2003}:
+Considering an homogeneous spatial (two-dimensional) Poisson process with an event density (\ie average number of events per unit of area) $\lambda$, then the probability that the number of events $N$ in an area $A$ is equal to $n \in \mathbb{N}$ is \cite{daley_introduction_2003}:
 
 \begin{equation}
 \mathcal{P}\parth{N\parth{A}=n}=\frac{\parth{\lambda A}^{n}}{n!}e^{-\lambda A}
@@ -741,7 +785,12 @@ Eq. \ref{eq:poisson_distribution} allows to compute the average distance $s$ bet
 
 \begin{equation}
 s = \int_{0}^{+\infty} r f\parth{r}\mathrm{d}r  = 2 \frac{\sqrt{\pi}}{4\sqrt{\lambda \pi}} = \frac{1}{2\sqrt{\lambda}}
+\label{eq:poisson_avg_dist}
 \end{equation}
+
+\begin{note*}{}
+In the case of boiling physics, the word "event" can refer to active nucleation sites or bubbles on the surface.
+\end{note*}
 
 
 \npar
@@ -767,6 +816,9 @@ From those mathematical expressions, we can then model different type of interac
 
 \subsection{Static Deactivation}
 
+\begin{note*}{}
+This calculation has originally been conducted by Gilman \cite{gilman_self-consistent_2017} and continued by Kommajosyula \cite{kommajosyula_development_2020}. 
+\end{note*}
 
 
 Let us consider the nucleation site density $N_{sit}$ computed by a correlation as in Section \ref{sec:NSD}. As mentioned earlier, if we distribute a given number of bubbles of radius $R_{d}$ over the different sites, we have no guarantee that the correlation avoids too large values of $N_{sit}$ that would lead to geometrical overlapping as shown on Figure \ref{fig:static_deactivation}.
@@ -790,7 +842,7 @@ N_{b} = t_{g,d}\times f \times N_{sit,a}
 If $N_{b}$ is used as an event density in the Poisson process, we can estimate the probability to have an undesired overlapping \ie two simultaneous bubbles of radius $R_{d}$ on neighboring sites at a distance $r\leq R_{d}$:
 
 \begin{align}
-\mathcal{P}\parth{r\leq R_{d}} &=1-\mathcal{P}\parth{N\parth{\pi R_{d}^{2}}=0} = 1-e^{-N_{sit,a}t_{g}f\pi R_{d}^{2}} = \mathcal{P}
+\mathcal{P}\parth{r\leq R_{d}} &=1-\underbrace{ \mathcal{P}\parth{N\parth{\pi R_{d}^{2}}=0} }_{\text{No bubble nucleates within $\pi R_{d}^{2}$}} = 1-e^{-N_{sit,a}t_{g,d}f\pi R_{d}^{2}} = \mathcal{P}
 \end{align}
 
 This overlapping probability $\mathcal{P}$ can then be used to ponderate the number of sites given by the NSD correlation, yielding:
@@ -805,9 +857,6 @@ This overlapping probability $\mathcal{P}$ can then be used to ponderate the num
 \end{align}
 where $A_{sit}=t_{g,d}f \pi R_{d}^{2}$ and $\mathcal{W}$ is Lambert's W-function (reciprocal of $x \rightarrow xe^{x}$).
 
-\begin{note*}{}
-This calculation has originally been conducted by Gilman \cite{gilman_self-consistent_2017} and continued by Kommajosyula \cite{kommajosyula_development_2020}. 
-\end{note*}
 
 The evaluation of $\mathcal{W}$ can easily be achieved with a few iterations of a bisection method. Otherwise, Kommajosyula proposed an approximation to allow its direct computation \cite{kommajosyula_development_2020}.
 
@@ -874,6 +923,26 @@ Figure \ref{fig:pcoal_st} the evolution of $\mathcal{P}_{coal,st}$ with the wall
 
 
 
+\subsection{Sliding Coalescence}
+
+
+The question of sliding coalescence is partly adressed by Basu \etal \cite{basu_wall_2005} (Section \ref{sec:hfp_basu}) by comparing the computed sliding distance of a single bubble $l_{sl,0}$ with the average distance between two active nucleation sites $s = 1 / \sqrt{N_{sit,a}}$ (twice the value obtained if we use the Poisson distribution Eq. \ref{eq:poisson_avg_dist}). They suppose that if $l_{sl,0} > s$ bubble coalescence will occur during the sliding phase and reduces the number of sites generating sliding bubbles.
+
+\begin{remark*}{}
+Their approach is based on the distribution of active nucleation sites $N_{sit,a}$ and not on the bubble density $N_{b}$ which could better represent the average distance between two bubbles actually living on the surface.
+\end{remark*}
+
+
+Using the spatial distribution, if the total area covered by a single sliding bubble is $A_{q,1b}$ and the number of sites generating sliding bubbles $N_{sl}$, we can estimate:
+
+\begin{itemize}
+\item The probability of finding no growing bubbles in area $A_{q,1b}$, meaning no sliding coalescence (NC): $\mathcal{P}_{NC} = \exp{-N_{sit,a}t_{g,d}f A_{q,1b}}$  
+\item The number of sites generating sliding bubbles without coalescence  : $N_{sl,NC} = N_{sl} \times \mathcal{P}_{NC}$
+\item The number of sites generating sliding bubbles that will coalesce with others: $N_{sl,C} = N_{sl} \times \parth{1-\mathcal{P}_{NC}}$
+\item The number of sites, present in sliding bubbles path, that will not be holding growing bubbles : $N_{nob} = N_{sit,a} \times N_{sl,NC} \times A_{q,1b}$
+\end{itemize}
+
+Those types of calculations are interesting if one wishes to further distinguish many different types of bubble behavior, and particularly \textit{if we dispose of a sliding length for single bubbles $l_{sl,0}$ meaning that single bubble lift-off would be considered.} This point being questionable in vertical flow boiling as discussed in Section \ref{sec:liftoff}.
 
 
 %\section{Bubble Sliding Length}
@@ -884,6 +953,7 @@ Figure \ref{fig:pcoal_st} the evolution of $\mathcal{P}_{coal,st}$ with the wall
 
 
 \section{Bubble Sliding Length}
+\label{sec:sliding_length}
 
 Estimation of the bubble sliding length is critical for the evaluation of the quenching term since it acts as an enhancing factor of the wall area that will undergo transient heat transfer.
 
@@ -940,6 +1010,7 @@ First, we must acknowledge that the ranges of measured sliding length by Kossola
 The evaluation using the average distance between two active sites is always clearly underestimating the sliding distance. This seems natural due to the heterogeneity and temporal asynchronism between active sites regarding their nucleation behavior. On the contrary, estimating the distance using the bubble density with very low values of $ft_{g,d}$ seem to better approach the actual sliding length. Only a clear overestimation is observed for the $P=20\ $bar and $G=500\ \debm$ case for which we can speculate that values of $ft_{g,d}$ may be larger.
 
 
+\clearpage
 \section{Single Bubble Quenching Area}
 \label{sec:quench_area}
 
@@ -948,11 +1019,11 @@ When computing the quenching heat flux, we need to provide the total wall area v
 \begin{equation}
 A_{q,1b} = F_{A} \pi R_{lo}^{2}
 \end{equation} 
-with $F_{A}$ being an enhancement factor that accounts for the the possibility that the bubble will induce quenching over a surface larger than its projected area.
+with $F_{A}$ being an enhancement factor that accounts for the the possibility that the bubble will induce quenching over a surface larger than its projected area. For instance, we remind that Kurul \& Podowski used $F_{A}=4$ in their model \cite{kurul_multidimensional_1990}.
 
 \npar
 \begin{remark*}{}
-This question of bubble influence area has been discussed by different authors. Yoo \etal \cite{yoo_area_2018} experimentally found enhancement factor sup to $14$ for small sliding bubbles. On the contrary, Kossolapov \cite{kossolapov_experimental_2021} observed that the area undergoing quenching was exactly the surface covered by the bubble footprint that can be even smaller that the bubble projected area. This aspect seems still open to discussions and may need extra experimental observations to reach a solid conclusion. In this work, we will simply consider that the bubble induces transient heat transfer over its projected area.
+This question of bubble influence area has been discussed by different authors. Yoo \etal \cite{yoo_area_2018} experimentally found enhancement factor up to $14$ for small sliding bubbles. On the contrary, Kossolapov \cite{kossolapov_experimental_2021} observed that the area undergoing quenching was exactly the surface covered by the bubble footprint that can be even smaller that the bubble projected area. This aspect seems still open to discussions and may need extra experimental observations to reach a solid conclusion. \textbf{In this work, we will simply consider that the bubble induces transient heat transfer over its projected area.}
 \end{remark*}
 
 
@@ -964,7 +1035,7 @@ Otherwise, models that account for bubble sliding \cite{basu_wall_2005, yeoh_fun
 A_{q,1b} = l_{sl}\parth{R_{d} + R_{lo}}
 \end{equation}
 
-However, depending on the relationship between $l_{sl}$, $R_{d}$ and $R_{lo}$, the quenching area can have different shapes as pictured in Figure \ref{fig:slide_area}.
+However, depending on the relationship between $l_{sl}$, $R_{d}$ and $R_{lo}$, the quenching area induced by a single sliding bubble without coalescence can have different shapes as pictured in Figure \ref{fig:slide_area}.
 
 
 \begin{figure}[!h]
@@ -980,7 +1051,7 @@ However, depending on the relationship between $l_{sl}$, $R_{d}$ and $R_{lo}$, t
 \subfloat[$l_{sl} > R_{lo} + R_{d}$]{
 \includegraphics[width=0.15\linewidth]{img/slide_area/slide_area3.pdf}
 }
-\caption{Quenching area shape depending on the relation between $R_{d}$, $R_{lo}$ and $l_{sl}$.}
+\caption{Quenching area shape depending on the relation between $R_{d}$, $R_{lo}$ and $l_{sl}$, if the bubble do not experience multiple coalescence while sliding. }
 \label{fig:slide_area}
 \end{figure}
 

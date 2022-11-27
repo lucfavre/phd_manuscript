@@ -33,7 +33,7 @@ For boiling multiphase flows, different types of empirical approaches have been 
 \label{eq:jens_correl}
 \end{equation}
 
-\item Thom \etal \cite{thom_phiw}:
+\item Thom \etal \cite{thom_boiling_1967}:
 \begin{equation}
 \phi_{w} = \parth{ \frac{\Delta T_{w} }{22.65} e^{P / 87}	}^{2}
 \label{eq:thom_correl}
@@ -43,7 +43,7 @@ with $P$ in bar and $\phi_{w}$ in MW/m\up{2}.
 
 \npar
 
-On the other hand, some models are based on the estimation of heat transfer coefficients similar to single-phase approaches. They mostly rely on the separation between a single phase $h_{SP}$ and nucleate boiling $h_{NB}$ heat transfer coefficients. Well-known correlations of this type are proposed by Chen \cite{chen_correl}, Gungor \& Winterton \cite{gungor} or Liu \& Winterton \cite{liu_winterton}. For instance, Chen correlation writes:
+On the other hand, some models are based on the estimation of heat transfer coefficients similar to single-phase approaches. They mostly rely on the separation between a single phase $h_{SP}$ and nucleate boiling $h_{NB}$ heat transfer coefficients. Well-known correlations of this type are proposed by Chen \cite{chen_correlation_1966}, Gungor \& Winterton \cite{gungor_general_1986} or Liu \& Winterton \cite{liu_general_1991}. For instance, Chen correlation writes:
 
 \begin{equation}
 \phi_{w} = \phi_{SP} + \phi_{NB} = h_{SP}\parth{T_{w}-T_{L}}F + h_{NB}\parth{T_{w}-T_{sat}}S
@@ -69,7 +69,7 @@ F &=
 %
 S &= \dfrac{1}{1+ 2.53\times 10^{6} \Re_{D_{h}}^{1.17}}
 \end{align}
-where $X_{tt}$ is the Lockhart-Martinelli parameter \cite{lockhart_martinelli} and $x$ the vapor quality.
+where $X_{tt}$ is the Lockhart-Martinelli parameter \cite{lockhart_proposed_nodate} and $x$ the vapor quality.
 
 \npar
 
@@ -77,7 +77,7 @@ Each of those correlations has been developed for given experimental conditions 
 
 \subsection{First Heat Flux Partitioning Approaches}
 
-The spirit of splitting the different heat transfer mechanisms (single-phase, nucleate boiling) using different heat transfer coefficients is actually a premise to what is nowadays called the "Heat Flux Partitioning" approach. Bowring \cite{bowring} is among the first author who actually expressed the total heat flux at the wall as separate contributions between different heat transfer mechanisms by writing:
+The spirit of splitting the different heat transfer mechanisms (single-phase, nucleate boiling) using different heat transfer coefficients is actually a premise to what is nowadays called the "Heat Flux Partitioning" approach. Bowring \cite{bowring_physical_1962} is among the first author who actually expressed the total heat flux at the wall as separate contributions between different heat transfer mechanisms by writing:
 
 \begin{equation}
 \phi_{w} = \phi_{e} + \phi_{a} + \phi_{SP}
@@ -101,7 +101,7 @@ where $\varepsilon$ has to be experimentally estimated. We can notably observe t
 
 \npar
 
-This idea of splitting the wall heat flux and try to precisely model each heat transfer mechanisms using detailed parameters (nucleation site density, frequency, nucleated bubble diameter, etc.) has been since a very active matter of research in the field of boiling heat transfer \cite{del_valle_subcooled_1985, judd_hwang}. With increasing experimental insights allowing to access local parameters relevant for the physics at stake close to the wall \cite{maity_effect_2000, richenderfer_investigation_2018, yoo_experimental_2016, kossolapov_experimental_2021, sugrue_experimental_2014}, the development of such models has become increasingly important both for analytic and simulation grounds. Indeed, the clear separation of the different heat fluxes is a very useful mathematical formulation for multiphase CFD computations where each term can be used as a phase-related source term at the wall \cite{guelfi_neptune_2007, gilman_phd}. 
+This idea of splitting the wall heat flux and try to precisely model each heat transfer mechanisms using detailed parameters (nucleation site density, frequency, nucleated bubble diameter, etc.) has been since a very active matter of research in the field of boiling heat transfer \cite{del_valle_subcooled_1985, judd_comprehensive_1976}. With increasing experimental insights allowing to access local parameters relevant for the physics at stake close to the wall \cite{maity_effect_2000, richenderfer_investigation_2018, yoo_experimental_2016, kossolapov_experimental_2021, sugrue_experimental_2014}, the development of such models has become increasingly important both for analytic and simulation grounds. Indeed, the clear separation of the different heat fluxes is a very useful mathematical formulation for multiphase CFD computations where each term can be used as a phase-related source term at the wall \cite{guelfi_neptune_2007, gilman_development_2014}.
 
 \npar
 
@@ -112,10 +112,10 @@ In the following sections, we chronologically present four different Heat Flux P
 \label{sec:hfp_kurul}
 
 
-In their original work published in 1990, Kurul \& Podowski \cite{kurul_1990} proposed a complete closure for the wall heat flux partitioning. Their model is among the most referred to by many authors and has been particularly used in CMFD codes due to its simple formulation and closure laws.
+In their original work published in 1990, Kurul \& Podowski \cite{kurul_multidimensional_1990} proposed a complete closure for the wall heat flux partitioning. Their model is among the most referred to by many authors and has been particularly used in CMFD codes due to its simple formulation and closure laws.
 
 \begin{note*}{}
-The wall boiling model of NCFD mostly rely on the Kurul \& Podowski formulation as presented in Section \ref{sec:ncdf_HFP}.
+The wall boiling model of NCFD mostly rely on the Kurul \& Podowski formulation as presented in Chapter \ref{chap:ncfd}.
 \end{note*}
 
 
@@ -375,7 +375,7 @@ f = \dfrac{1}{t_{g} + t_{w}}
 
 \section{Gilman (2017)}
 
-A more recent HFP model dedicated to CFD simulations has been proposed in Gilman PhD work \cite{gilman_phd} and summarized in Gilman \& Baglietto \cite{gilman_self-consistent_2017}. Among the different evolutions proposed in their work, we can mention:
+A more recent HFP model dedicated to CFD simulations has been proposed in Gilman PhD work \cite{gilman_development_2014} and summarized in Gilman \& Baglietto \cite{gilman_self-consistent_2017}. Among the different evolutions proposed in their work, we can mention:
 
 \begin{itemize}
 \item A probabilistic law to account for static interaction between nucleation sites ;
@@ -394,7 +394,7 @@ The total heat flux is partitioned between the liquid forced convection $\phi_{c
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.6\linewidth]{img/HFP/Gilman/hfp_model.PNG}
-\caption{Heat Flux Partitioning considered by Gilman \cite{gilman_phd} (Adapted from \cite{gilman_self-consistent_2017}).}
+\caption{Heat Flux Partitioning considered by Gilman \cite{gilman_development_2014} (Adapted from \cite{gilman_self-consistent_2017}).}
 \label{fig:gilman_hfp}
 \end{figure}
 
@@ -450,7 +450,7 @@ Regarding the boiling heat flux, Gilman splits it in two contributions respectiv
 %
 V_{ML} &= \frac{2}{3}\pi \parth{\frac{R_{d}}{2}}^{3}\delta_{max}
 \end{align}
-where $\delta_{max}=2\ \mu\text{m}$ is the largest bubble microlayer thickness based on experiments from Gerardi \cite{gerardi}.
+where $\delta_{max}=2\ \mu\text{m}$ is the largest bubble microlayer thickness based on experiments from Gerardi \cite{gerardi_investigation_2009}.
 
 \npar
 
@@ -461,7 +461,7 @@ Finally, the solid quenching term is written as:
 %
 & V_{q} = \frac{2}{3} \pi r_{w}^{2}
 \end{align}
-with subscript $w$ denoting the wall properties, $r_{w}$ the dry patch radius and $\Delta T_{q}=2\ K$ the extra wall superheat as suggested by Gerardi \etal \cite{gerardi_etal}.
+with subscript $w$ denoting the wall properties, $r_{w}$ the dry patch radius and $\Delta T_{q}=2\ K$ the extra wall superheat as suggested by Gerardi \etal \cite{gerardi_study_2010}.
 
 \npar
 
@@ -472,7 +472,7 @@ with subscript $w$ denoting the wall properties, $r_{w}$ the dry patch radius an
 \section{Kommajosyula (2020)}
 \label{sec:hfp_komma}
 
-The last HFP model we will look through in this Chapter was proposed by Kommajosyula \cite{kommajosyula_development_2020} in the continuation of Gilman \cite{gilman_phd} work. In particular, he proposed:
+The last HFP model we will look through in this Chapter was proposed by Kommajosyula \cite{kommajosyula_development_2020} in the continuation of Gilman \cite{gilman_development_2014} work. In particular, he proposed:
 
 \begin{itemize}
 \item A finer modeling of the bubble microlayer evaporation ;
