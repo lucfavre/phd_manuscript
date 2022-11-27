@@ -16,13 +16,14 @@ In the field of heat transfer and boiling, establishing a physical relationship 
 \begin{equation}
 \phi_{w} = h_{SP} \parth{T_{L} - T_{w}}
 \end{equation}
-where $T_{L}$ is the bulk liquid temperature. 
+where $T_{w}$ and $T_{L}$ are the wall and bulk liquid temperature. 
 
-Estimating $h_{SP}$ is usually done using dedicated correlations depending on flow parameters such as the hydraulic Reynolds number $\Re_{D_{h}}$, the fluid Prandtl number $\Pr_{L}$, etc. Example of such correlations are those of Dittus-Boelter (Eq \ref{eq:dittus}) or Gnielinski (Eq. \ref{eq:gnielinski}) that were presented earlier.
+\npar
+Estimating $h_{SP}$ is usually done using dedicated correlations depending on flow parameters such as the hydraulic Reynolds number $\Re_{D_{h}}$, the fluid Prandtl number $\Pr_{L}$, etc. Correlations of Dittus-Boelter (Eq \ref{eq:dittus}) or Gnielinski (Eq. \ref{eq:gnielinski}) that were presented earlier are typical example of widely used expressions to estimate $h_{SP}$.
 
 \npar
 
-For boiling multiphase flows, different types of empirical approaches have been developed. For instance, some authors proposed direct correlations relating wall heat flux and temperature such as:
+For boiling multiphase flows, different types of empirical approaches have been developed through the history. For instance, some authors proposed direct correlations relating wall heat flux and temperature such as:
 
 \begin{itemize}
 \item Jens \& Lottes \cite{jens_analysis_1951}:
@@ -37,18 +38,19 @@ For boiling multiphase flows, different types of empirical approaches have been 
 \phi_{w} = \parth{ \frac{\Delta T_{w} }{22.65} e^{P / 87}	}^{2}
 \label{eq:thom_correl}
 \end{equation}
-\end{itemize}
+\end{itemize} 
 with $P$ in bar and $\phi_{w}$ in MW/m\up{2}.
 
 \npar
 
-On the other hand, models based on the estimation of heat transfer coefficients similar to single-phase approaches were also proposed. They mostly rely on the separation between a single phase $h_{SP}$ and nucleate boiling $h_{NB}$ heat transfer coefficients. The correlation of Chen \cite{chen_correl} for examples writes:
+On the other hand, some models are based on the estimation of heat transfer coefficients similar to single-phase approaches. They mostly rely on the separation between a single phase $h_{SP}$ and nucleate boiling $h_{NB}$ heat transfer coefficients. Well-known correlations of this type are proposed by Chen \cite{chen_correl}, Gungor \& Winterton \cite{gungor} or Liu \& Winterton \cite{liu_winterton}. For instance, Chen correlation writes:
 
 \begin{equation}
 \phi_{w} = \phi_{SP} + \phi_{NB} = h_{SP}\parth{T_{w}-T_{L}}F + h_{NB}\parth{T_{w}-T_{sat}}S
 \end{equation}
 with $F$ an amplification factor for the single phasae heat transfer due to bubble agitation and $S$ a suppression term hindering the nucleate boiling under the effect of bulk liquid flow.
 
+\npar
 The single phase part $h_{SP}$ is calculated using Dittus-Boelter \cite{dittus_heat_1985} formulation (Eq. \ref{eq:dittus}) while the nucleate boiling part is:
 
 \begin{equation}
@@ -67,15 +69,15 @@ F &=
 %
 S &= \dfrac{1}{1+ 2.53\times 10^{6} \Re_{D_{h}}^{1.17}}
 \end{align}
-where $X_{tt}$ is the Lockhart-Martinelli parameter \cite{lockhart_martinelli}.
+where $X_{tt}$ is the Lockhart-Martinelli parameter \cite{lockhart_martinelli} and $x$ the vapor quality.
 
 \npar
 
-Each of those correlations has been developed for given experimental conditions such as high pressure flows for Thom and Jens \& Lottes correlations while Chen correlation is dedicated for low to moderate pressure ($\sim 35\ $bar).
+Each of those correlations has been developed for given experimental conditions such as high pressure flows up to 150 bar for Thom and Jens \& Lottes correlations while Chen correlation is dedicated for low to moderate pressure ($\sim 35\ $bar).
 
 \subsection{First Heat Flux Partitioning Approaches}
 
-The spirit of splitting the different heat transfer mechanisms (single-phase, nucleate boiling) using different heat transfer coefficient is actually a premise to what is nowadays called the "Heat Flux Partitioning" approach. Bowring \cite{bowring} is among the first author who actually wrote the total heat flux at the wall as separate contributions between different heat transfer mechanisms by writing:
+The spirit of splitting the different heat transfer mechanisms (single-phase, nucleate boiling) using different heat transfer coefficients is actually a premise to what is nowadays called the "Heat Flux Partitioning" approach. Bowring \cite{bowring} is among the first author who actually expressed the total heat flux at the wall as separate contributions between different heat transfer mechanisms by writing:
 
 \begin{equation}
 \phi_{w} = \phi_{e} + \phi_{a} + \phi_{SP}
@@ -84,12 +86,12 @@ where $\phi_{e}$ is the latent-heat transfer associated to evaporation, $\phi_{a
 
 \npar
 
-Making steps towards a more mechanistic description of the boiling, Bowring wrote:
+Making steps towards a more mechanistic description of boiling, he wrote:
 
 \begin{equation}
 \phi_{e} = N_{sit} f V_{b} \rho_{V} h_{LV}
 \end{equation}
-where $N_{sit}$ is the nucleation site density on the surface, $f$ the bubble nucleation frequency, $V_{b}$ the bubble volume. Those parameters need dedicated description and modeling based on experimental measurements. He nonetheless introduced an empirical parameter to estimate the bubble-agitation term $\phi_{a}$ as:
+where $N_{sit}$ is the nucleation site density on the surface, $f$ the bubble nucleation frequency, $V_{b}$ the bubble volume. Those parameters need dedicated description and modeling based on experimental measurements. Nonetheless, an empirical parameter is introduced by Bowring to estimate the bubble-agitation term $\phi_{a}$ as:
 
 \begin{align}
 \phi_{w} &= \phi_{SP} + \parth{1+\varepsilon}\phi_{e}\\
@@ -99,11 +101,11 @@ where $\varepsilon$ has to be experimentally estimated. We can notably observe t
 
 \npar
 
-This idea of splitting the wall heat flux and try to precisely model each heat transfer mechanisms using detailed parameters (nucleation site density, frequency, nucleated bubble diameter, etc.) has been since a very active matter of research in the field of boiling heat transfer. With increasing experimental insights allowing to access local parameters relevant for the physics at stake close to the wall, the development of such models has become increasingly important both for analytic and simulation grounds. Indeed, clear separation of the different heat fluxes is a very useful mathematical formulation for multiphase CFD computations where each term can be used as a phase-related source term at the wall. 
+This idea of splitting the wall heat flux and try to precisely model each heat transfer mechanisms using detailed parameters (nucleation site density, frequency, nucleated bubble diameter, etc.) has been since a very active matter of research in the field of boiling heat transfer \cite{del_valle_subcooled_1985, judd_hwang}. With increasing experimental insights allowing to access local parameters relevant for the physics at stake close to the wall \cite{maity_effect_2000, richenderfer_investigation_2018, yoo_experimental_2016, kossolapov_experimental_2021, sugrue_experimental_2014}, the development of such models has become increasingly important both for analytic and simulation grounds. Indeed, the clear separation of the different heat fluxes is a very useful mathematical formulation for multiphase CFD computations where each term can be used as a phase-related source term at the wall \cite{guelfi_neptune_2007, gilman_phd}. 
 
 \npar
 
-In the following sections, we chronologically present four different Heat Flux Partitioning models developed between 1990 and 2020. For each model, we detail the mathematical formulation of the different fluxes along with associated physical assumptions and highlight the remaining parameters that require a dedicated closure law.
+In the following sections, we chronologically present four different Heat Flux Partitioning models developed between 1990 and 2020. For each model, we detail the mathematical formulation of the different fluxes along with associated physical assumptions and highlight the parameters that require a dedicated closure law.
 
 
 \section{Kurul \& Podowski (1990)}
@@ -117,13 +119,20 @@ The wall boiling model of NCFD mostly rely on the Kurul \& Podowski formulation 
 \end{note*}
 
 
-Kurul \& Podowski considered the applied heat flux to be divided between three mechanisms:
+Kurul \& Podowski considered the applied heat flux to be divided between three mechanisms (Figure \ref{fig:KP_hfp}):
 
 \begin{itemize}
 \item A liquid single-phase convective heat flux $\phi_{c,L}$ ;
 \item A boiling heat flux $\phi_{e}$ ;
-\item A quenching heat flux $\phi_{q}$ induced by bubbles movement when leaving the surface.
+\item A quenching heat flux $\phi_{q}$ induced by bubble movement when leaving the surface.
 \end{itemize}
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\linewidth]{img/HFP/KP/KP_hfp.PNG}
+\caption{Sketch of the HFP considered by Kurul \& Podowski (by Manon \cite{manon_contribution_2000}).}
+\label{fig:KP_hfp}
+\end{figure}
 
 The total wall heat flux being :
 
@@ -133,7 +142,7 @@ The total wall heat flux being :
 
 The convective heat flux is expressed as :
 \begin{align}
-\phi_{c,l}=A_{c,L} \rho_{L} c_{p,L}U_{L,\delta} \St_{L,\delta}\parth{T_{w}-T_{L,\delta}}
+\phi_{c,L}=A_{c,L} \rho_{L} c_{p,L}U_{L,\delta} \St_{L,\delta}\parth{T_{w}-T_{L,\delta}}
 \label{eq:KP_hfp_phicL}
 \end{align}
 with $A_{c,L}$ the portion of the wall unaffected by boiling, $U_{L}$ the liquid velocity, $\St$ the Stanton number and $\delta$ a location in the buffer layer.
@@ -146,7 +155,8 @@ Assuming bubbles are spherical and leave the surface at diameter $D_{lo}$, they 
 \end{align}
 with $N_{sit}$ the nucleation site density and $f$ the nucleation frequency.
 
-The quenching heat flux occurring over the wait time $t_{w}$ between two nucleated bubbles is computed following::  
+\npar
+The quenching heat flux occurring over the wait time $t_{w}$ between two nucleated bubbles is computed following:  
 \begin{align}
 \phi_{q}=t_{w}fA_{q}\frac{2\lambda_{L}\parth{T_{w}-T_{L,\delta}}}{\sqrt{\pi \eta_{L} t_{w}}}
 \label{eq:KP_hfp_phiq}
@@ -175,11 +185,12 @@ f = \frac{1}{t_{w}}
 
 %------------------------------------------------
 
-\section{Basu (2005)}
+\section{Basu, Warrier \& Dhir (2005)}
 \label{sec:hfp_basu}
 
-In 2005, Basu \etal \cite{basu2005, basu2005a} proposed a new HFP model together with a series of experiments to further study the different closure relationships required in their approach. This model was meant to account for finer descriptions of the multiple phenomena at stake in subcooled flow boiling. In particular, they account for bubble sliding and merging and thus distinguish bubble departure diameter $D_{d}$ (leaving the nucleation site) and lift-off diameter $D_{lo}$ (leaving the wall).
+In 2005, Basu \etal \cite{basu_wall_2005, basu_wall_2005-1} proposed a new HFP model together with a series of experiments to further study the different closure relationships required in their approach. This model was meant to account for finer descriptions of the multiple phenomena at stake in subcooled flow boiling. In particular, they account for bubble sliding and merging and thus distinguish bubble departure diameter $D_{d}$ (leaving the nucleation site) and lift-off diameter $D_{lo}$ (leaving the wall).
 
+\npar
 Their approach consist of separating the boiling flow in three regions (Figure \ref{fig:basu_hfp_zones}):
 
 \begin{itemize}
@@ -190,14 +201,14 @@ Their approach consist of separating the boiling flow in three regions (Figure \
 \label{eq:basu_hfp_preONB}
 \end{equation}
 
-\item Zone between the ONB and the OSV, prior to observing a net amount of vapor with bubble lifting off the surface. The heat flux is then still totally transferred to the liquid, but the equivalent convective heat transfer coefficient $\overline{h_{c,L}}$ is supposed to be enhanced by 30\% due to the presence of bubbles on the wall:
+\item Zone between the ONB and the OSV, prior to observing a net amount of vapor with bubble lifting off the surface. The heat flux is still totally transferred to the liquid, but the equivalent convective heat transfer coefficient $\overline{h_{c,L}}$ is supposed to be enhanced by 30\% due to the presence of bubbles on the wall:
 
 \begin{equation}
 \phi_{w}=\overline{h_{c,L}} \parth{T_{w}-T_{L}}\approx 1.3 h_{c,L}\parth{T_{w}-T_{L}}
 \label{eq:basu_hfp_postONB}
 \end{equation}
 
-Basu \etal define the ONB as:
+Basu \etal compute the ONB wall temperature as:
 
 \begin{align}
 &T_{w, ONB}= T_{sat} + \frac{4 \sigma T_{sat}}{D_{c}\rho_{V} h_{LV}}\\
@@ -205,9 +216,9 @@ Basu \etal define the ONB as:
 &D_{c}= \sqrt{\frac{8 \sigma T_{sat} \lambda_{L}}{\rho_{V} h_{LV} \phi_{w}}}\parth{ 1- \exp{ - \theta^{3} - 0.5 \theta}  }
 \label{eq:basu_hfp_ONB}
 \end{align}
-where $D_{c}$ represents the diameter of active cavities and $\theta$ is the static contact angle.
+where $D_{c}$ represents the diameter of active cavities and $\theta$ the static contact angle.
 
-\item Post-OSV zone, where bubbles now leave the surface towards the bulk flow. This is where the other parts of the HFP appear \ie the boiling and quenching fluxes. The beginning of OSV is defined by Basu \etal using a critical liquid temperature$T_{L,OSV}$ as:
+\item Post-OSV zone, where bubbles now leave the surface towards the bulk flow and the other parts of the HFP appear \ie the boiling and quenching fluxes. The beginning of OSV is defined by Basu \etal using a critical liquid temperature $T_{L,OSV}$ as:
 
 \begin{equation}
 T_{L,OSV}=T_{sat}-0.7\exp{-0.065 \frac{D_{d}h_{c,L}}{\lambda_{L}}}\frac{\phi_{w}}{h_{c,L}}
@@ -252,6 +263,7 @@ Those two cases are distinguished using the average distance between nucleation 
 
 In this case, the bubble will grow up to its departure diameter $D_{d}$ and slide over a length $l_{sl,0}$ before lifting-off. If $l_{sl,0}<s$, the bubble will slide up to its lift-off diameter $D_{lo}$ and leave the wall withouth colliding with other bubbles. On the contrary, if $l_{sl,0}\geq s$ the sliding bubble will merge with bubbles growing on their nucleation site, inducing a sudden growth of the bubble diameter that can exceed $D_{lo}$ and thus trigger lift-off after sliding over a reduced length $l_{sl}<l_{sl,0}$. Those assumptions are summarized on Figure \ref{fig:basu_hfp_sliding}.
 
+\npar
 If bubble coalescence occurs, the number of bubbles lifting-off the surface is lower than the actual number of nucleating sites. Basu \etal thus define a reduction factor:
 
 \begin{align}
@@ -265,14 +277,16 @@ R_{f}&=
 
 
 Regarding bubble sizes, they suppose that bubbles coalesced by a sliding bubble while growing have a diameter $D_{d}$ \ie they were close to departure. %(in reality, the coalesced bubble would have a diameter $D<D_{d}$). 
-This results in a bubble of diameter $D=\parth{D_{sl}^{3} + D_{d}^{3}}^{1/3}$ which will lift-off if $D>D_{lo}$. Consequently, a sliding bubble is allowed to merge with numerous bubbles before lifting off. Noting $N_{merg}$ the number of coalesced bubble and $D_{N}$ the resulting bubble diameter, the sliding distance is:
+This results in a bubble of diameter $D=\parth{D_{sl}^{3} + D_{d}^{3}}^{1/3}$ which will trigger lift-off if $D>D_{lo}$. Consequently, a sliding bubble is allowed to merge with numerous bubbles before lifting off. Noting $N_{merg}$ the number of coalesced bubble and $D_{N}$ the resulting bubble diameter, the sliding distance is:
 
 \begin{equation}
 l_{sl}=N_{merg}s + l_{D_{N}\rightarrow D_{lo}}
 \end{equation}
 where $l_{D_{N}\rightarrow D_{lo}}$ is the remaining distance to slide if $D_{N}<D_{lo}$, being $0$ if $D_{N} \leq D_{lo}$.
 
-The surface swiped by the sliding bubble is then expressed as $A_{sl} = C\overline{D}l_{sl}$ with $\overline{D}$ the average bubble diameter during sliding and $C$ the ration between the bubble diameter and its foot, expressed correlating measurements from Maity \cite{maity_effect_2000} as :
+\npar
+
+The surface swiped by the sliding bubble is then expressed as $A_{sl} = C\overline{D}l_{sl}$ with $\overline{D}$ the average bubble diameter during sliding and $C$ the ratio between the bubble diameter and its foot, expressed  based on measurements from Maity \cite{maity_effect_2000} as :
 
 \begin{equation}
 C=1-\exp{2-\theta ^{0.6}}
@@ -285,11 +299,11 @@ After observing in their experiments that $D_{d}\approx 0.5D_{lo}$, Basu \etal c
 \end{equation}
 
 
-The resulting quenching heat transfer $\phi_{q}$ is computed using:
+Defining:
 \begin{equation}
 t^{*}=\parth{\dfrac{\lambda_{L}}{h_{c,L}}}^{2} \dfrac{1}{\pi \eta_{L}}
 \label{eq:basu_hfp_tstar}
-\end{equation} the time at which transient conduction heat transfer becomes equal to forced liquid convection:
+\end{equation} the time at which transient conduction heat transfer becomes equal to forced liquid convection, the resulting quenching heat transfer $\phi_{q}$ is computed as:
 
 \begin{equation}
 \phi_{q} = \frac{1}{t_{w}+t_{g}} \int_{0}^{T}\frac{\lambda_{L}}{\sqrt{\pi \eta_{L}t}}\parth{T_{w}-T_{L}}A_{sl}R_{f}N_{sit}dt
@@ -297,7 +311,7 @@ t^{*}=\parth{\dfrac{\lambda_{L}}{h_{c,L}}}^{2} \dfrac{1}{\pi \eta_{L}}
 where $T=t^{*}$ if $t^{*}<t_{w}+t_{g}$ (forced convection dominates at some point during a nucleation cycle which total time is the wait time $t_{w}$ plus the bubble growth time $t_{g}$) or $T=t_{w}+t_{g}$ if $t^{*}\geq t_{w}+t_{g}$ (transient conduction dominates over the whole nucleation cycle).
 
 \npar
-The liquid convective heat transfer is then:
+The liquid convective heat transfer is therefore:
 
 \begin{equation}
 \phi_{c,L} = \overline{h_{c,L}}\parth{T_{w}-T_{L}}A_{c,L} + \overline{h_{c,L}}\parth{T_{w}-T_{L}}A_{sl}R_{f}N_{sit}\parth{1-\mathrm{min}\parth{1\ ;\ \frac{t^{*}}{t_{w}+t_{g}}}}
@@ -361,7 +375,7 @@ f = \dfrac{1}{t_{g} + t_{w}}
 
 \section{Gilman (2017)}
 
-A more recent HFP model dedicated to CFD simulations has been proposed in Gilman PhD work \cite{gilman_phd} and summarized in Gilman \& Baglietto(2017) \cite{gilman2017}. Among the different evolutions proposed in their work, we can mention:
+A more recent HFP model dedicated to CFD simulations has been proposed in Gilman PhD work \cite{gilman_phd} and summarized in Gilman \& Baglietto \cite{gilman_self-consistent_2017}. Among the different evolutions proposed in their work, we can mention:
 
 \begin{itemize}
 \item A probabilistic law to account for static interaction between nucleation sites ;
@@ -421,7 +435,8 @@ where $l_{sl,0}$ is the sliding length of a single bubble and $s=1/\sqrt{N_{sit,
 The sliding quenching term is also computed in a similar to Basu \etal as:
 
 \begin{align}
-\phi_{q,sl}&=\frac{2\lambda_{L}\parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}t^{*}}}A_{sl}N_{sit,a}^{*} \\
+\phi_{q,sl}&=\frac{2\lambda_{L}\parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}t^{*}}}A_{sl}N_{sit,a}^{*}
+\label{eq:gilman_hfp_phiq} \\
 %
 A_{sl} &= \overline{D}l_{sl} = \frac{D_{d}+D_{lo}}{2}\parth{N_{merg}s+l_{D_{N}\rightarrow D_{lo}}}
 \end{align}
@@ -450,7 +465,7 @@ with subscript $w$ denoting the wall properties, $r_{w}$ the dry patch radius an
 
 \npar
 
-\textbf{\underline{Needed closure relationships : }} $N_{sit}$, $t_{w}$, $t_{g}$, $D_{d}$, $D_{lo}$, $l_{sl,0}$, $h_{c,L}$, $\overline{h_{c,L}}$. 
+\textbf{\underline{Required closure relationships : }} $N_{sit}$, $t_{w}$, $t_{g}$, $D_{d}$, $D_{lo}$, $l_{sl,0}$, $h_{c,L}$, $\overline{h_{c,L}}$. 
 
 
 
@@ -477,6 +492,8 @@ The liquid convective term is expressed as:
 \phi_{c,L} = \parth{1-S_{sl}}h_{c,L}\parth{T_{w} - T_{L}}
 \end{equation}
 where $S_{sl}$ is the surface covered by sliding bubbles.
+
+\npar
 
 Assuming that the transient conduction during quenching operates during the time $t^{*}$ (Eq. \ref{eq:basu_hfp_tstar}), Kommajoysula rewrites the total quenching flux using the forced-convection heat transfer coefficient as:
 
@@ -528,6 +545,11 @@ The active nucleation site density $N_{sit,a}$ is computed based on the Complete
 N_{sit,a} = \frac{\mathcal{W}\parth{f t_{g} \pi \dfrac{D_{d}^{2}}{4} N_{sit}}}{f t_{g} \pi \dfrac{D_{d}^{2}}{4}}
 \end{equation}
 with $\mathcal{W}$ being approximated to avoid an implicit solving of this equation.
+
+\npar
+
+\textbf{\underline{Required closure relationships : }} $N_{sit}$, $t_{w}$, $t_{g}$, $D_{d}$, $D_{lo}$, $h_{c,L}$. 
+
 
 %was proposed by Zhou \etal \cite{zhou}. It is one of the most recent available in the literature and was built along with associated experiments for validation. In particular they compute separate heat flux contributions for static ($st$) or sliding bubbles ($sl$), yielding a total heat flux:
 
@@ -585,89 +607,103 @@ with $\mathcal{W}$ being approximated to avoid an implicit solving of this equat
 %\end{equation}
 %
 %\npar
+
+
+\section{Conclusion}
+
+
+As we have seen, the HFP approach is widely studied since decades and is still an active field of work to hopefully reach an exhaustive and precise modeling of all the heat transfer phenomena that are at stake in wall boiling. While most models are similar to each other regarding terms such as single-phase convection or transient conduction heat transfer, they may differ in their methods to account for bubble sliding, microlayer evaporation or modeling of the bubble nucleation cycle.
+
+\npar
+
+Moreover, each of those approaches requires a certain number of closure laws to compute important physical parameters among which we can in particular cite:
+\begin{itemize}
+\item The nucleation site density $N_{sit}$ ;
+\item The bubble nucleation period / frequency : $f=\dfrac{1}{t_{g}+t_{w}}$ ;
+\item The bubble departure and lift-off diameters $D_{d}$ and $D_{lo}$.
+\end{itemize}
+
+\npar
+
+In this global framework, we will propose the development of a new HFP model by first trying to have a close look at boiling bubble dynamics to propose an acceptable modeling of a bubble lifetime growing and sliding on the wall  (Chapter \ref{chap:bub_dyn}). Then, we will tackle the problem of the closure laws aiming to compute important yet highly uncertain parameters ($N_{sit}$, $t_{w}$, etc.) before proposing a final formulation for the HFP that will be compared to experimental measurements (Chapter \ref{chap:HFP_Assembling}). In order to complete the description of the aforementioned models, we will highlight throughout the development when a given closure law is used in one of the presented models.
 %
-%\textbf{\underline{Needed closure relationships : }} $N_{sit}$, $t_{w}$, $t_{g}$, $D_{d}$, $D_{lo}$, $l_{sl,0}$, $h_{c,L}$. 
-
-
-\section{Closure Laws for Remaining Parameters}
-
-In each of the 4 presented HFP models, there is a number of parameters that still need to be computed in order for the model to be fully expressed. Those parameters are often the nucleation site density, bubble diameters, etc. To do so, closure relationships are used and differ from one model to another. Here we want to sum up the different choices of the authors to point the variety of possibilities that exist.
-
-\subsection{Nucleation Site Density : $N_{sit}$}
-
-The value of the nucleation site density is a very sensitive parameter that controls the intensity of the boiling heat transfer. Unfortunately, its value can vary over a very large range of value depending on the operating conditions and heater material and is thus expressed using experimental correlations.
-
-\npar
-In their work, Kurul \& Podowski used the law of Lemmert and Chawla \cite{lemmert}:
-
-\begin{align}
-N_{sit}=\crocht{210\parth{T_{w}-T_{sat}}}^{1.8}
-\end{align}
-
-
-\npar
-Later, Basu \cite{basu} correlated her own experimental results to obtain:
-
-\begin{align}
-N_{sit}=&
-\begin{dcases}
-0.34\crocht{1-\cos{\theta}} {\Delta T_{w}}^{2} & \text{if } \Delta T_{w,ONB}<\Delta T_{w} < 15\ K\\
-3.4\times 10^{-5}\crocht{1-\cos{\theta}} {\Delta T_{w}}^{5.3} & \text{if } \Delta T_{w} > 15\ K
-\end{dcases}
-\end{align}
-
-\npar
-
-\npar
-Finally, Zhou \etal followed a approach similar to Basu \etal by correlating their own experimental data:
-
-\begin{align}
-N_{sit} =& N_{0}\parth{1-\cos{\theta}}\crocht{\exp{\mathrm{f}\parth{P} \Delta T_{w} } -1 }
-\mathrm{f}\parth{P} = 0.218~\ln{\dfrac{P}{P_{0}}}+0.1907
-\end{align}
-with $N_{0}=55~395.26\ \mathrm{m}^{-2}$ and $P_{0}=1.01\ \mathrm{bar}$.
-
-
-
-\subsection{Bubble Departure Frequency $f$, Growth Time $t_{g}$ and Wait Time $t_{w}$}
-
-
-Historically, Kurul \& Podowski modeled the BDF according to Cole \cite{cole} which derived an expression using photographic observations of bubble nucleation, further verified by Ceumern \& Lindenstjerna for pool boiling of water at pressures up to 8 bar. :
-
-\begin{align}
-f = \sqrt{\frac{4}{3} \frac{g \parth{\rho_{L}-\rho_{V}}}{\rho_{L}D_{d}} }
-\label{eq:f_Cole}
-\end{align}
-
-Then, assuming that the growth time of the bubble before departure is small compared to the wait time before a new bubble nucleates ($t_{g,d} \ll t_{w}$) gives :
-
-\begin{align}
-t_{w} \approx \frac{1}{f}
-\end{align}
-
-
-Although the assumption of a negligible growth time is true in different cases, notably when bubble departure diameter is small \ie they leave their nucleation site nearly instantly, this is not generally true and the value of the ratio $\dfrac{t_{g,d}}{t_{w}}$ can vary by decades depending on the thermal-hydraulics conditions.
-
-Thus, later models considered separate modeling of the growth and wait time in order to compute the BDF as :
-
-\begin{align}
-f = \frac{1}{t_{g,d} + t_{w} }
-\label{eq:frequency}
-\end{align}
-
-
-In this scope, Basu \etal \cite{basu} correlated their own exprimental results to obtain :
-
-\begin{align}
-t_{g} =& \frac{D_{d}^{2} }{45~e^{-0.02~\Ja_{L}} \eta_{L} \Ja_{w}} \label{eq:tg_Basu}
- \\
-t_{w} =&  139.1\ {\Delta T_{w}}^{-4.1}
-\label{eq:tw_Basu}
-\end{align}
-
-
-Gilman \& Baglietto \cite{gilman} chose use the growth law of Zuber \cite{zuber1961} and the total BDF of Cole (Eq. \ref{eq:f_Cole}) to close the relation \ref{eq:frequency}.
-
-\begin{align}
-t_{g,d} = \frac{\pi {R_{d}}^{2}}{4b^{2} \Ja_{w} \eta{L}},\ \ b=1.56
-\end{align}
+%In each of the 4 presented HFP models, there is a number of parameters that still need to be computed in order for the model to be fully expressed. Those parameters are often the nucleation site density, bubble diameters, etc. To do so, closure relationships are used and differ from one model to another. Here we want to sum up the different choices of the authors to point the variety of possibilities that exist.
+%
+%\subsection{Nucleation Site Density : $N_{sit}$}
+%
+%The value of the nucleation site density is a very sensitive parameter that controls the intensity of the boiling heat transfer. Unfortunately, its value can vary over a very large range of value depending on the operating conditions and heater material and is thus expressed using experimental correlations.
+%
+%\npar
+%In their work, Kurul \& Podowski used the law of Lemmert and Chawla \cite{lemmert}:
+%
+%\begin{align}
+%N_{sit}=\crocht{210\parth{T_{w}-T_{sat}}}^{1.8}
+%\end{align}
+%
+%
+%\npar
+%Later, Basu \cite{basu} correlated her own experimental results to obtain:
+%
+%\begin{align}
+%N_{sit}=&
+%\begin{dcases}
+%0.34\crocht{1-\cos{\theta}} {\Delta T_{w}}^{2} & \text{if } \Delta T_{w,ONB}<\Delta T_{w} < 15\ K\\
+%3.4\times 10^{-5}\crocht{1-\cos{\theta}} {\Delta T_{w}}^{5.3} & \text{if } \Delta T_{w} > 15\ K
+%\end{dcases}
+%\end{align}
+%
+%\npar
+%
+%\npar
+%Finally, Zhou \etal followed a approach similar to Basu \etal by correlating their own experimental data:
+%
+%\begin{align}
+%N_{sit} =& N_{0}\parth{1-\cos{\theta}}\crocht{\exp{\mathrm{f}\parth{P} \Delta T_{w} } -1 }
+%\mathrm{f}\parth{P} = 0.218~\ln{\dfrac{P}{P_{0}}}+0.1907
+%\end{align}
+%with $N_{0}=55~395.26\ \mathrm{m}^{-2}$ and $P_{0}=1.01\ \mathrm{bar}$.
+%
+%
+%
+%\subsection{Bubble Departure Frequency $f$, Growth Time $t_{g}$ and Wait Time $t_{w}$}
+%
+%
+%Historically, Kurul \& Podowski modeled the BDF according to Cole \cite{cole} which derived an expression using photographic observations of bubble nucleation, further verified by Ceumern \& Lindenstjerna for pool boiling of water at pressures up to 8 bar. :
+%
+%\begin{align}
+%f = \sqrt{\frac{4}{3} \frac{g \parth{\rho_{L}-\rho_{V}}}{\rho_{L}D_{d}} }
+%\label{eq:f_Cole}
+%\end{align}
+%
+%Then, assuming that the growth time of the bubble before departure is small compared to the wait time before a new bubble nucleates ($t_{g,d} \ll t_{w}$) gives :
+%
+%\begin{align}
+%t_{w} \approx \frac{1}{f}
+%\end{align}
+%
+%
+%Although the assumption of a negligible growth time is true in different cases, notably when bubble departure diameter is small \ie they leave their nucleation site nearly instantly, this is not generally true and the value of the ratio $\dfrac{t_{g,d}}{t_{w}}$ can vary by decades depending on the thermal-hydraulics conditions.
+%
+%Thus, later models considered separate modeling of the growth and wait time in order to compute the BDF as :
+%
+%\begin{align}
+%f = \frac{1}{t_{g,d} + t_{w} }
+%\label{eq:frequency}
+%\end{align}
+%
+%
+%In this scope, Basu \etal \cite{basu} correlated their own exprimental results to obtain :
+%
+%\begin{align}
+%t_{g} =& \frac{D_{d}^{2} }{45~e^{-0.02~\Ja_{L}} \eta_{L} \Ja_{w}} \label{eq:tg_Basu}
+% \\
+%t_{w} =&  139.1\ {\Delta T_{w}}^{-4.1}
+%\label{eq:tw_Basu}
+%\end{align}
+%
+%
+%Gilman \& Baglietto \cite{gilman} chose use the growth law of Zuber \cite{zuber1961} and the total BDF of Cole (Eq. \ref{eq:f_Cole}) to close the relation \ref{eq:frequency}.
+%
+%\begin{align}
+%t_{g,d} = \frac{\pi {R_{d}}^{2}}{4b^{2} \Ja_{w} \eta{L}},\ \ b=1.56
+%\end{align}

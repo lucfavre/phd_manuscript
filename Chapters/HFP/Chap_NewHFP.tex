@@ -8,7 +8,7 @@
 
 %----------------------------------------------------------------------------------------
 
-In this Chapter, we want to assess the validity of the new Heat Flux Partitioning formulation proposed in Chapter \ref{chap:HFP_closures}. To do so, we will conduct two different validations:
+In this Chapter, we want to assess the validity of the new Heat Flux Partitioning formulation proposed in Chapter \ref{chap:HFP_Assembling}. To do so, we will conduct two different validations:
 
 \begin{itemize}
 \setlength{\itemsep}{8pt}
@@ -136,7 +136,7 @@ On Figure \ref{fig:fullkoss_length}, we indicatively show the values of sliding 
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/length_G2000.png}
-\caption{Comparison of average area visited by a bubble and total wall fraction area impacted by bubbles (footprint or transient conduction).}
+\caption{Bubble radiuses, sliding length and distances between sites.}
 \label{fig:fullkoss_length}
 \end{figure}
 
@@ -151,13 +151,13 @@ Figure \ref{fig:fullkoss_hfp} finally compares the fraction of single-phase conv
 On the other hand, the boiling curve is pretty well predicted except for the last experimental measurement where an increase in wall temperature starts, which could correspond to conditions close to the CHF that can't yet be detected by the HFP model.
 
 \begin{figure}[!h]
-\subfloat[Single bubble area]{
+\subfloat[Single-phase and quenching heat fluxes proportions]{
 \includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/hfp_G2000.png}
 }
-\subfloat[Total wall area impacted by bubbles]{
+\subfloat[Global boiling curve of the experiment]{
 \includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/boil_curve_G2000.png}
 }
-\caption{Comparison of average area visited by a bubble and total wall fraction area impacted by bubbles (footprint or transient conduction).}
+\caption{Comparison of the resulting heat flux partitioning along with the boiling curve.}
 \label{fig:fullkoss_hfp}
 \end{figure}
 
@@ -198,7 +198,7 @@ Kennel \cite{kennel_local_1949} \newline (1948) & 4.3 - 13.2 & 2 - 6.2 & 284 - 1
 \npar
 
 
-The following sub-sections compare the results for wall superheat predictions obtained using four models : Kurul \& Podowski (\ref{sec:hfp_kurul}), Basu \etal (\ref{sec:hfp_basu}), Kommajosyula (\ref{sec:hfp_komma}) and the new formulation (\ref{sec:hfp_new}).
+The following sub-sections compare the results for wall superheat predictions obtained using four models: Kurul \& Podowski (Section \ref{sec:hfp_kurul}), Basu \etal (Section \ref{sec:hfp_basu}), Kommajosyula (Section \ref{sec:hfp_komma}) and the new formulation (Section \ref{sec:hfp_new}).
 
 \npar
 
@@ -206,8 +206,9 @@ In order to propose consistent choices required closing parameters for the new f
 
 
 \subsection{Kossolapov Data}
+\label{subsec:HFP_verif_koss}
 
-The boiling curves from Kossolapov work \cite{kossolapov_experimental_2021} are among the most recent available data and notably include various operating pressures. The experimental setup consists of a heated flat plate of ITO in vertical flow boiling in a rectangular channel.
+The boiling curves from Kossolapov's work \cite{kossolapov_experimental_2021} are among the most recent available data and notably include various operating pressures. The experimental setup consists of a heated flat plate of ITO in vertical flow boiling in a rectangular channel.
 
 
 \npar
@@ -224,8 +225,17 @@ As stated by Kossolapov, the contact angle for water and ITO usually lies betwee
 Figure \ref{fig:HFP_koss_BC} shows two typical boiling curves along with the heat flux partitioning obtained using the new formulation for Kossolapov cases at 19.8 bar and 75.8 bar.
 
 
-INSERT FIGURES
-
+\begin{figure}[!h]
+\centering
+\subfloat[$P=19.8$ bar]{
+\includegraphics[width=0.5\linewidth]{img/HFP/koss/koss_p19.pdf}
+}
+\subfloat[$P=75.8$ bar]{
+\includegraphics[width=0.5\linewidth]{img/HFP/koss/koss_p75.pdf}
+}
+\caption{Comparison with measured boiling curves from Kossolapov \cite{kossolapov_experimental_2021}. $\Delta T_{L}=10\degC$ and $G_{L}=1000~\debm$.}
+\label{fig:HFP_koss_BC}
+\end{figure}
 
 
 \npar
@@ -264,6 +274,7 @@ We can note that the new formulation generally better agrees with experimental m
 
 
 \subsection{Jens-Lottes Data}
+\label{subsec:HFP_verif_Jens}
 
 The data of Jens \& Lottes are of particular interest for the HFP validation since they were obtained in conditions close to PWR ones, with an operating pressure of 138 bar, liquid mass flux above $2500\ \debm$ and high inlet liquid subcooling. The experiment consisted of an integrally heated metallic circular pipe. Precise evaluation of the contact angle in those conditions is tricky but, according to the work of Song \& Fan \cite{song_temperature_2021}, the water contact angle on metallic surfaces (\eg stainless steel) at large pressure present a very large decrease when reaching surface temperatures above 200$\degC$. Since saturation temperature of water at 138 bar if $T_{sat} \approx 335 \degC$, the boiling measurements lie largely in the low contact angle zone. Therefore, we will assume:
 
@@ -278,8 +289,11 @@ Figure \ref{fig:HFP_jens_BC} shows a typical boiling curve obtained for an exper
 
 \npar
 
-INSERT BC JENS
-
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\linewidth]{img/HFP/jens/jens_p138.pdf}
+\caption{Comparison with measured boiling curve by Jens \& Lottes \cite{jens_analysis_1951}. $P=138$ bar, $G=2600~\debm$, $\Delta T_{L}=64\degC$.}
+\end{figure}
 \npar
 
 Figure \ref{fig:HFP_jens} shows the wall temperature predictions achieved with the different HFP models.
@@ -310,6 +324,7 @@ Both the new formulation and Kommajosyula model achieve good predictions of the 
 
 
 \subsection{Kennel Data}
+\label{subsec:HFP_verif_kennel}
 
 Kennel measurements are of similar nature to those of Jens \& Lottes since they were conducted for a uniformly heated vertical circular metallic pipe. However, the experiments were operated at pressures lower than 6 bar and various inlet liquid mass fluxes and subcoolings. In those conditions, the evaluation of the constant $K$ in the bubble growth profile can be very tricky since the larger bubbles at low pressure are more impacted by the bulk flow, implying potentially large variations of $K$ that can become much lower than 1. Regarding the contact angle, its value can also be roughly estimated using Song \& Fan review \cite{song_temperature_2021} showing that metallic surfaces at low and moderate pressure also show a contact angle decrease with temperature, with values roughly lying between $40 \degree$ and $60 \degree$ when $T_{w} \sim T_{sat}$. Therefore, we assume:
 
@@ -359,19 +374,46 @@ In his work, Kommajosyula \cite{kommajosyula_development_2020} presented better 
 
 
 
-\section{Validation DEBORA Experiment}
+\section{Validation for DEBORA Experiment}
 
-In order to try a further validation of the proposed HFP model, we will test it under conditions that are representative of the DEBORA cases:
+In order to try a further validation of the proposed HFP model, we will test it under conditions that are representative of the DEBORA cases for the G2P26W16 campaign (Chapter \ref{chap:debora}):
 
 
 \begin{itemize}
 \item R12 as operating fluid ;
 \item $P=26.2\ $bar ;
 \item $G_{L} = 2000~\debm$ ;
-\item $\Delta T_{L} \approx 0.5\ $K ; 
-\item $\phi_{w} = 73.8\ $kW/m\up{2}.
+\item $\Delta T_{L} \approx 0.1\ $K (approaching liquid saturation near the wall); 
+\item $\phi_{w} = 73.9\ $kW/m\up{2}.
 \end{itemize}
 
 
+Since refrigerant are usually known to have low contact angle, we suppose $\theta = 10 \degree$. The operating pressure being experimentally chosen to match high-pressure water similarity, we thus choose $\dtheta = 1 \degree$ and $K = 2$ in accordance with the choices made for Jens \& Lottes cases.
 
-Results : KP : 0.597K, Basu : 17.57K, komma ; 4.0K, ncfd : 6.937K, NM : 3.918K
+
+Applying the four different models yielded the results of Table \ref{tab:debora_hfp_test}.
+
+
+\begin{table}[h!]
+\small
+\centering
+\begin{tabular}{c||c|c|c|c|c|c} 
+Value & Experiment & Kurul \& Podowski & Basu \etal & Kommajosyula & New model & NCFD reference\\
+\hline
+$\Delta T_{w}$ [K] & 2.15 & 0.37 & 17.9 & 4.0 & 3.9 & 6.9\\
+\hline
+\end{tabular}
+\caption{Wall superheat values obtained with different models versus the measurements on DEBORA case at 26.6 bar.}
+\label{tab:debora_hfp_test}
+\end{table}
+
+We see that the models perform in very different ways for the DEBORA conditions. Kurul \& Podowski model finds a very low wall superheat while Basu \etal formulation largely overestimates the experimental value. The new formulation provides a result similar to Kommajosyula's model with an overestimation of approximately $2$ K compared to the experiment.
+
+\begin{remark*}{}
+The proximity in the results obtained by the new formulation and Kommajosyula's model might be related to their similar performance on the Jens \& Lottes data (Subsection \ref{subsec:HFP_verif_Jens}) since the DEBORA cases are supposed to mimic high pressure water boiling conditions, the physical formulations of the HFP models may then behave similarly in those conditions.
+\end{remark*}
+
+
+\section{Conclusions}
+
+

@@ -2,7 +2,7 @@
 
 \chapter{Closure Laws and Construction of a New HFP Model} % Chapter title
 
-\label{chap:HFP_closures} % For referencing the chapter elsewhere, use \autoref{ch:name} 
+\label{chap:HFP_Assembling} % For referencing the chapter elsewhere, use \autoref{ch:name} 
 
 %----------------------------------------------------------------------------------------
 
@@ -46,6 +46,10 @@ Kennel \cite{kennel_local_1949} \newline (1948) & 4.3 - 13.2 & 2 - 6.2 & 284 - 1
 
 
 On Figure \ref{fig:dittus_gniel_htc}, we compare the results of wall temperature prediction in the single-phase region obtained with the correlation of Dittus-Boelter (Eq. \ref{eq:dittus}) and Gnielinski (Eq. \ref{eq:gnielinski}).
+
+\begin{note*}{}
+The Gnielinski correlation is used in Kommajosyula's HFP model to compute the liquid heat transfer coefficient.
+\end{note*}
 
 \begin{figure}[h!]
 \centering
@@ -109,7 +113,7 @@ On Figure \ref{fig:ncfd_gniel_corr_htc} we display the predictions of Gnielisnki
 The NCFD approach yields predictions similar to the 1D correlations (Figure \ref{fig:dittus_gniel_htc}) with larger underestimations on Jens-Lottes measurements. On the other hand, we see that applying a constant correction to the Gnielinski correlation (4 for Kossolapov and Richenderfer cases, 0.9 for Jens-Lottes cases) suffices to yield accurate predictions on the whole range of wall temperature measurements. 
 
 \begin{remark*}{}
-The NCFD law was tested without running CFD simulations. The equations were re-written in python to allow its testing outside of the whole code. The use of $y^{+}=100$ as well as the Mac Adams correlation (Eq. \ref{eq:utau_macadams}) for the friction velocity $U_{\tau}$ may induce a difference with the predictions that could be achieved by running a complete CFD computation of the considered cases.
+The NCFD law was tested without running CFD simulations. The equations were re-written in python to allow its testing outside of the whole code. The use of $y^{+}=100$ as well as the Mac Adams correlation (Eq. \ref{eq:utau_mcadams}) for the friction velocity $U_{\tau}$ may induce a difference with the predictions that could be achieved by running a complete CFD computation of the considered cases.
 \end{remark*}
 
 \npar
@@ -175,9 +179,9 @@ N_{sit}=\crocht{210\parth{T_{w}-T_{sat}}}^{1.8}
 \label{eq:nsit_lemmert}
 \end{align}
 
-\begin{remark*}{}
+\begin{note*}{}
 This law is used in the HFP model of Kurul \& Podowski and NEPTUNE\_CFD to compute $N_{sit}$.
-\end{remark*}
+\end{note*}
 
 However, such an expression misses the influence of other parameters such as pressure, which has been proven to be strongly impacting the range of active cavities that can generate bubbles as shown on Figure \ref{fig:nsd_P_koss} and induces a larger bubble density over the heater. 
 
@@ -204,9 +208,9 @@ R_{c} =& \dfrac{2\sigma\parth{1+\dfrac{\rho_{V}}{\rho_{L}}} / P }{\exp{\dfrac{h_
 with $R_{g}$ the perfect gas constant times the molar mass of the fluid,  $N_{0}=4.72\times 10^{5}\ \mathrm{m}^{-2}$, $\mu = 0.722\ \mathrm{rad}$, $\lambda ' = 2.5 \times 10^{-3} \ \mathrm{m}$ and $\rho^{+}=\mathrm{log}_{10}\parth{\dfrac{\rho_{L}-\rho_{V}}{\rho_{V}}}$.
 
 
-\begin{remark*}{}
-This law is used in the HFP model of Gilman \& Baglietto \cite{gilman_self-consistent_2017}.
-\end{remark*}
+\begin{note*}{}
+This law is used in the HFP model of Gilman \& Baglietto \cite{gilman_self-consistent_2017} and Kommajosyula \cite{kommajosyula_development_2020}.
+\end{note*}
 
 We can note that it also includes the value of the static contact angle $\theta$ which can be used as a parameter to accounts for wall properties, since it is dependent on the wall roughness, wettability and the operating fluid.  Indeed, a high-wetting material (low values of $\theta$) will allow smaller cavities to be flooded by the surrounding liquid, thus hindering non-condensable gases to be captured inside and become a potentially active nucleation site (Figure \ref{fig:nsd_theta_wet}).
 
@@ -259,7 +263,7 @@ B &= 0.122P +1.988\\
 with $P$ in MPa, $\theta_{0}$ the contact angle at room temperature $T_{0}$, and default value being for water $\theta_{0}=41.37 \degree$, $T_{c}=374 \degree$C $T_{0}=25\degree$C, $\gamma = 0.719$.
 
 \begin{remark*}{}
-We can question the absence of bulk liquid velocity and temperature in the presented law since they should logically influence the nucleation process. However, this impact is rather limited as observed in experimental measurements of Zhou \etal and Kossolapov.
+We can question the absence of bulk liquid velocity and temperature in the presented law since they should logically influence the nucleation process. However, this impact is rather limited as observed in experimental measurements of Zhou \etal \cite{zhou_experimental_2020} and Kossolapov \cite{kossolapov_experimental_2021}.
 \end{remark*}
 
 \subsection{Comparison with Experimental Measurements}
@@ -336,7 +340,7 @@ We then compare the predictions achieved by the model of Lemmert \& Chawla (Eq. 
 The Lemmert \& Chawla model appears to fail in predicting the NSD at high pressures. This is a logical drawback of its sole dependence on the wall superheat. More importantly it increasingly underestimates the NSD as pressure increases, which makes it a clearly unsuitable correlation to compute $N_{sit}$ particularly for pressurized flows such as in PWR.
 
 \npar
-Altough the model of Zhou \etal includes a pressure term, its partial calibration on data covering a low range of pressure may explain the large error observed when compared to higher pressure measurements.
+Although the model of Zhou \etal includes a pressure term, its partial calibration on data covering a low range of pressure may explain the large error observed when compared to higher pressure measurements.
 
 \npar
 On the contrary, models from Hibiki \& Ishii and Li \etal seem to better reproduce the different trends with flow conditions, especially with pressure. The model from Li \etal achieves better predictions by avoiding to reach unphysically high values of $N_{sit}$ at higher wall superheat compared to Hibiki \& Ishii. This behavior is clear over Kossolapov data at high pressure, where both model lead to overestimations, the strongest discrepancy being associated to Hibiki \& Ishii model.
@@ -344,6 +348,7 @@ On the contrary, models from Hibiki \& Ishii and Li \etal seem to better reprodu
 \npar
 Overall, the model of Li \etal is the most efficient with an acceptable agreement on most of the data of Borishanskii and Zhou \etal. The measurements of Richenderfer and Kossolapov fail to be precisely reproduced, but it shows a coherent trend and the most limited error when compared to other correlations.
 
+\npar
 \begin{remark*}{}
 The coherency of NSD predictions is hard to ensure since we do not know the exact contact angle and boiling surface morphology in the experiments. This was pointed out by Richenderfer \cite{richenderfer_experimental_2018} who observed significant variation in the NSD value depending on the heater, though keeping the same material (ITO). For instance, this may explain the fact that the NSD measured by Kossolapov at $10.5$ bar is higher than any other pressure on his experiment, leading to both underpredictions and overpredictions of the model of Li \etal depending on the pressure.
 \end{remark*}
@@ -375,7 +380,7 @@ with value of $K$ laying roughly between 0.1 and 2 depending on the boiling cond
 
 \npar
 
-With a given departure radius $R_{d}$, the bubble growth time until departure from nucleation site $t_{g,d}$ quan be estimated as:
+With a given departure radius $R_{d}$, the bubble growth time until departure from nucleation site $t_{g,d}$ can be estimated as:
 
 \begin{equation}
 t_{g,d} = \parth{\frac{R_{d}}{K \Ja_{w}}}^{2} \frac{1}{\pi \eta_{L}}
@@ -383,6 +388,20 @@ t_{g,d} = \parth{\frac{R_{d}}{K \Ja_{w}}}^{2} \frac{1}{\pi \eta_{L}}
 \end{equation}
 
 \begin{note*}{}
+This formulation is used in Gilman \cite{gilman_phd} and Kommajosyula \cite{kommajosyula_development_2020} HFP models, with their own choice of value for $K$.
+\end{note*}
+
+By correlating their own growth time measurements, Basu \etal \cite{basu_wall_2005} propose the following relationship including an influence of the liquid subcooling:
+
+\begin{equation}
+\frac{D_{d}^{2}}{\eta_{L}\Ja_{w}t_{g,d}} = 45  e^{-0.02\Ja_{L}}
+\end{equation}
+which is naturally used in their HFP model to compute the bubble growth time.
+
+\npar
+
+
+\begin{remark*}{}
 If precise estimations of the thermal boundary layer thickness is achievable, the new analytic expression of the bubble growth proposed in Eq. \ref{eq:exp_growth} can be used to express the growth time:
 
 \begin{equation}
@@ -392,7 +411,9 @@ with $K_{a}$ defined as in Eq. \ref{eq:coeff_expgrowth} and $R_{\infty}$ in Eq. 
 
 \npar
 This formulation requires $R_{d} < R_{\infty}$ the equilibrium radius in subcooled pool boiling. Though this condition seems logical physically speaking, it can't be ensured numerically due to the range of values attainable using correlations or other mechanistic models to estimate $R_{d}$.
-\end{note*}
+\end{remark*}
+
+
 
 
 
@@ -411,7 +432,7 @@ Traditional approaches of the wait time estimation rely on the analytic solution
 
 \begin{align}
 T_{L}\parth{y,0} &= T_{L,bulk},\ \forall y >0\\
-T_{L}\parth{0,t} &= T_{w},\ \forall t > 0
+T_{L}\parth{0,t} &= T_{w},\ \forall t \geq 0
 \end{align}
 
 %\begin{align}
@@ -465,7 +486,7 @@ All those analytical approaches present one pivotal parameter: the activated cav
 
 \npar
 
-Among existing expressions of $R_{c}$, we have:
+Among existing expressions of $R_{c}$, we can mention:
 
 \begin{align}
 R_{c} &= \frac{2\sigma T_{sat}}{\rho_{V}h_{LV}\Delta T_{w}},\ \text{used by Han \& Griffith \cite{chi-yeh_mechanism_1965}}
@@ -493,6 +514,10 @@ t_{w} = 139.1\Delta {T_{w}}^{-4.1}
 \end{equation}
 based on low pressure and low liquid velocity experiments.
 
+\begin{note*}{}
+This expression of $t_{w}$ is used in Basu \etal HFP model \cite{basu_wall_2005}.
+\end{note*}
+
 
 \npar
 
@@ -502,7 +527,7 @@ t_{w} = 0.061\frac{{\Ja_{L}}^{0.63}}{\Delta T_{w}}
 \end{equation}
 
 \begin{remark*}
-This expression will yield $t_{w}=0$ for saturated boiling conditions, which is hardly reasonable since a non-zero wait time exists between two nucleation events even at saturation \cite{gerardi_ijhmt_2010}.
+This expression, used in Kommajosyula's HFP model, will yield $t_{w}=0$ for saturated boiling conditions, which is hardly reasonable since a non-zero wait time exists between two nucleation events even at saturation \cite{gerardi_ijhmt_2010}.
 \end{remark*}
 
 
@@ -582,6 +607,8 @@ The data sets from Kossolapov and Richenderfer also give the associated frequenc
 
 We can see that for lower values of $\Ja_{w}^{*}$, the product $t_{w} \times f$ starts to tend to $1$. For higher values, a linear decrease seem to be the general trend of the measurements. However, it can't decrease linearly forever, which is why the trend on Figure \ref{fig:twf_Jawred} extrapolated to higher values of $\Ja_{w}^{*}$ looks like a sigmoid in order to approach zero for large superheats. Nevertheless, we clearly lack of measurements at larger values of $\Ja_{w}^{*}$ to confirm this supposed trend.
 
+\npar
+
 \begin{remark*}{}
 The range of values attained by the product $t_{w} \times f$ can vary from 1 down to 0.5 on the chosen experimental data. This clearly shows that the relation between the wait time and the growth time is not straightforward as assumed in some works who neglects the growth time or suppose a constant relationship such as $t_{w}=3t_{g}$\cite{chi-yeh_mechanism_1965}.
 
@@ -594,7 +621,7 @@ Moreover the boiling conditions range covered by the data are not that exhaustiv
 Using the data of Table \ref{tab:tw_exp_data} to evaluate the different approaches presented above, we obtain the results presented on Figures \ref{fig:tw_pred_correl} and \ref{fig:tw_pred_anal}.
 
 
-\begin{figure}
+\begin{figure}[!h]
 \centering
 \subfloat[Basu \etal correlation]{
 \includegraphics[width=0.5\linewidth]{img/tw/tw_Basu.pdf}
@@ -610,7 +637,7 @@ Using the data of Table \ref{tab:tw_exp_data} to evaluate the different approach
 The correlation of Basu \etal naturally performs well on their own data but largely underestimates the wait time for Richenderfer and Kossolapov data. Kommajosyula's formulation produces better results on the low pressure cases, particularly on Richenderfer cases. However, it fails to capture the increase in $t_{w}$ for Kossolapov data and largely underestimates them.
 
 
-\begin{figure}
+\begin{figure}[!h]
 \centering
 \includegraphics[width=0.5\linewidth]{img/tw/twYeoh_RcHan.pdf}
 \caption{Yeoh \etal formulation of $t_{w}$ with Han \& Griffith cavity radius. $\pm 50\%$ dashed lines are represented.}
@@ -663,7 +690,7 @@ This large difference in nucleation frequency between the different sites indica
 In order to consider such interactions between nucleation sites, we need to know their spatial distribution over the boiling surface. Usual approaches considered that the nucleation sites followed an homogeneous spatial Poisson process \ie the probability of finding a site in an area $A$ only depends on the value of $A$ and not on its location over the boiling surface.
 
 \npar
-This has been supported by different experimental observations such as those of Gaertner \cite{gaertner_population_1960} or Sultan \cite{sultan_spatial_1978} for pool boiling who found an agreement between site distribution and Poisson process by studying sites populations in subdivisions of the boiling surface. It was also confirmed for flow boiling by Del Valle \& Kenning \cite{kenning_boiling} who observed site distribution at different heat fluxes. However, they noticed that the increase in nucleation site with the heat flux did not come from an additive effect of new sites since some active sites at low heat fluxes became inactive at higher heat fluxes before sometimes reactivating later (see Figure \ref{fig:kenning_boiling_inter}). This further highlights that the interactions and deactivation processes originate from complex physics that simultaneously include wall morphology and thermal behavior, external flow influence and bubble presence. 
+This has been supported by different experimental observations such as those of Gaertner \cite{gaertner_population_1960} or Sultan \cite{sultan_spatial_1978} for pool boiling who found an agreement between site distribution and Poisson process by studying sites populations in subdivisions of the boiling surface. It was also confirmed for flow boiling by Del Valle \& Kenning \cite{del_valle_subcooled_1985} who observed site distribution at different heat fluxes. However, they noticed that the increase in nucleation site with the heat flux did not come from an additive effect of new sites since some active sites at low heat fluxes became inactive at higher heat fluxes before sometimes reactivating later (see Figure \ref{fig:kenning_boiling_inter}). This further highlights that the interactions and deactivation processes originate from complex physics that simultaneously include wall morphology and thermal behavior, external flow influence and bubble presence. 
 
 \npar
 
@@ -923,6 +950,7 @@ A_{q,1b} = F_{A} \pi R_{lo}^{2}
 \end{equation} 
 with $F_{A}$ being an enhancement factor that accounts for the the possibility that the bubble will induce quenching over a surface larger than its projected area.
 
+\npar
 \begin{remark*}{}
 This question of bubble influence area has been discussed by different authors. Yoo \etal \cite{yoo_area_2018} experimentally found enhancement factor sup to $14$ for small sliding bubbles. On the contrary, Kossolapov \cite{kossolapov_experimental_2021} observed that the area undergoing quenching was exactly the surface covered by the bubble footprint that can be even smaller that the bubble projected area. This aspect seems still open to discussions and may need extra experimental observations to reach a solid conclusion. In this work, we will simply consider that the bubble induces transient heat transfer over its projected area.
 \end{remark*}
