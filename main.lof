@@ -87,406 +87,452 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {NEPTUNE\_CFD simulations of DEBORA cases}}{27}{chapter.3}%
+\contentsline {xchapter}{\spacedlowsmallcaps {NEPTUNE\_CFD Simulations of DEBORA Cases}}{27}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces NCFD (lines) vs. Exp. (circles) - $T_{L}$ and $T_{w}$ - Cases C8G2P26W16Te44.9, Te49.6, Te66.6 and Te70.3 - Simulations using two meshes M1 (coarse) and M2 (fine).\relax }}{27}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces View of the computational domain.\relax }}{27}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces NCFD (lines) vs. Exp. (circles) - $\alpha $, $d_{G}$ and $U_{G,z}$ - Cases C30G2P26W16Te66.6 and Te70.6 - Simulations using two meshes M1 (coarse) and M2 (fine).\relax }}{28}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces View of the radial meshes.\relax }}{28}{figure.caption.33}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces $N_{sit}$ correlations of {Lemmert} \& {Chawla} (left) and {Hibiki} \& {Ishii} (right) vs. exp. data from literature. Operation pressures are displayed. $\pm 50\%$ error bars are drawn in black.\relax }}{28}{figure.caption.33}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mesh M1}}}{28}{subfigure.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces NCFD results for $\alpha $, $T_{L}$ and $T_{w}$ using {Lemmert} \& {Chawla} and {Hibiki} \& {Ishii} correlation. Cases 8G2P26W23Te66.6 and Te70.3, 30G2P26W23Te66.6 and 70.6.\relax }}{29}{figure.caption.34}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mesh M2}}}{28}{subfigure.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Mesh M4}}}{28}{subfigure.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Mesh M8}}}{28}{subfigure.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Mesh sensitivity study for 30G2P26Te66.6 case\relax }}{28}{figure.caption.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Void fraction}}}{28}{subfigure.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Bubble diameter}}}{28}{subfigure.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Vapor velocity}}}{28}{subfigure.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Liquid temperature}}}{28}{subfigure.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Simulation results for cases 8G2P26W16Te33.4 \& 44.5\relax }}{29}{figure.caption.35}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Liquid temperature}}}{29}{subfigure.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Wall temperature vs. axial position}}}{29}{subfigure.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Wall temperature vs. local quality}}}{29}{subfigure.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Simulation results for cases 8G2P26W16Te33.4 \& 44.5\relax }}{29}{figure.caption.36}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Liquid temperature}}}{29}{subfigure.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Wall temperature vs. axial position}}}{29}{subfigure.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Wall temperature vs. local quality}}}{29}{subfigure.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Simulation results for cases 8G2P26W16Te33.4 \& 44.5\relax }}{30}{figure.caption.37}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Liquid temperature}}}{30}{subfigure.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Wall temperature vs. axial position}}}{30}{subfigure.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Wall temperature vs. local quality}}}{30}{subfigure.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces NCFD (lines) vs. Exp. (circles) - $T_{L}$ and $T_{w}$ - Cases C8G2P26W16Te44.9, Te49.6, Te66.6 and Te70.3 - Simulations using two meshes M1 (coarse) and M2 (fine).\relax }}{31}{figure.caption.38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces NCFD (lines) vs. Exp. (circles) - $\alpha $, $d_{G}$ and $U_{G,z}$ - Cases C30G2P26W16Te66.6 and Te70.6 - Simulations using two meshes M1 (coarse) and M2 (fine).\relax }}{31}{figure.caption.39}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces $N_{sit}$ correlations of {Lemmert} \& {Chawla} (left) and {Hibiki} \& {Ishii} (right) vs. exp. data from literature. Operation pressures are displayed. $\pm 50\%$ error bars are drawn in black.\relax }}{32}{figure.caption.40}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.10}{\ignorespaces NCFD results for $\alpha $, $T_{L}$ and $T_{w}$ using {Lemmert} \& {Chawla} and {Hibiki} \& {Ishii} correlation. Cases 8G2P26W23Te66.6 and Te70.3, 30G2P26W23Te66.6 and 70.6.\relax }}{32}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Introduction to Heat Flux Partitioning}}{31}{chapter.4}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Introduction to Heat Flux Partitioning}}{35}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Sketch of the HFP considered by Kurul \& Podowski (by Manon \cite {manon_contribution_2000}).\relax }}{33}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Sketch of the HFP considered by Kurul \& Podowski (by Manon \cite {manon_contribution_2000}).\relax }}{37}{figure.caption.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Sketch of the heat transfers zones and bubble behavior considered by Basu \textit {et al.}\xspace . (Adapted from \cite {basu_wall_2005})\relax }}{35}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Sketch of the heat transfers zones and bubble behavior considered by Basu \textit {et al.}\xspace . (Adapted from \cite {basu_wall_2005})\relax }}{39}{figure.caption.43}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Heat transfer zones subdivision}}}{35}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Heat transfer zones subdivision}}}{39}{subfigure.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Considered sliding and merging mechanisms}}}{35}{subfigure.2.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Considered sliding and merging mechanisms}}}{39}{subfigure.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Heat Flux Partitioning considered by Gilman \cite {gilman_development_2014} (Adapted from \cite {gilman_self-consistent_2017}).\relax }}{38}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Heat Flux Partitioning considered by Gilman \cite {gilman_development_2014} (Adapted from \cite {gilman_self-consistent_2017}).\relax }}{42}{figure.caption.44}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Boiling Bubble Dynamics}}{41}{chapter.5}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Boiling Bubble Dynamics}}{45}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Visualization of bubble sliding at various pressures.\relax }}{42}{figure.caption.38}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Visualization of bubble sliding at various pressures.\relax }}{46}{figure.caption.45}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Bubble sliding visualized and adapted from Maity \cite {maity_effect_2000} at atmospheric pressure.}}}{42}{subfigure.1.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Bubble sliding visualized and adapted from Maity \cite {maity_effect_2000} at atmospheric pressure.}}}{46}{subfigure.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Bubble sliding visualized and adapted from Kossolapov \cite {kossolapov_experimental_2021} at higher pressure.}}}{42}{subfigure.1.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Bubble sliding visualized and adapted from Kossolapov \cite {kossolapov_experimental_2021} at higher pressure.}}}{46}{subfigure.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Visualization of bubble sliding thermal impact.\relax }}{43}{figure.caption.39}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Visualization of bubble sliding thermal impact.\relax }}{47}{figure.caption.46}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Instantaneous and time-averaged wall temperature in boiling regime visualized and adapted from Estrada-Pérez \textit {et al.}\xspace \cite {estrada-perez_time-resolved_2018}.}}}{43}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Instantaneous and time-averaged wall temperature in boiling regime visualized and adapted from Estrada-Pérez \textit {et al.}\xspace \cite {estrada-perez_time-resolved_2018}.}}}{47}{subfigure.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Transient conduction induced by sliding bubbles visualized and adapted from Kossolapov \cite {kossolapov_experimental_2021}.}}}{43}{subfigure.2.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Transient conduction induced by sliding bubbles visualized and adapted from Kossolapov \cite {kossolapov_experimental_2021}.}}}{47}{subfigure.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Sketch of a typical bubble lifetime in vertical flow boiling. Left depicts a typical side view of the heater with identification of departure, sliding and lift-off. Right depicts a top view of the heater, exhibiting the area that will undergo transient heat transfer.\relax }}{43}{figure.caption.40}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Sketch of a typical bubble lifetime in vertical flow boiling. Left depicts a typical side view of the heater with identification of departure, sliding and lift-off. Right depicts a top view of the heater, exhibiting the area that will undergo transient heat transfer.\relax }}{47}{figure.caption.47}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Sketch of the forces applied to the bubble facing an upward flow $\overline {U_{L}}$ and sliding at velocity $\overline {U_{b}}$\relax }}{49}{figure.caption.42}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Sketch of the forces applied to the bubble facing an upward flow $\overline {U_{L}}$ and sliding at velocity $\overline {U_{b}}$\relax }}{53}{figure.caption.49}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Physical situation considered by Shi \textit {et al.}\xspace \cite {shi_drag_2021}.\relax }}{52}{figure.caption.43}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Physical situation considered by Shi \textit {et al.}\xspace \cite {shi_drag_2021}.\relax }}{56}{figure.caption.50}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Drag correction from Shi \textit {et al.}\xspace \cite {shi_drag_2021}.\relax }}{53}{figure.caption.44}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Drag correction from Shi \textit {et al.}\xspace \cite {shi_drag_2021}.\relax }}{57}{figure.caption.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces $C_{L}$ computed using Shi \textit {et al.}\xspace correlation.\relax }}{55}{figure.caption.45}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces $C_{L}$ computed using Shi \textit {et al.}\xspace correlation.\relax }}{59}{figure.caption.52}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Positive values of $\mathrm {Sr}$}}}{55}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Positive values of $\mathrm {Sr}$}}}{59}{subfigure.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Negative values of $\mathrm {Sr}$}}}{55}{subfigure.7.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Negative values of $\mathrm {Sr}$}}}{59}{subfigure.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Values of the computed added mass coefficients in Eq. \ref {eq:FAMx} and \ref {eq:FAMy}. \relax }}{58}{figure.caption.46}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Values of the computed added mass coefficients in Eq. \ref {eq:FAMx} and \ref {eq:FAMy}. \relax }}{62}{figure.caption.53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Microlayer appearing beneath the bubble in DNS conducted by and adapted from Urbano \textit {et al.}\xspace \cite {urbano_direct_2018}.\relax }}{62}{figure.caption.48}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Microlayer appearing beneath the bubble in DNS conducted by and adapted from Urbano \textit {et al.}\xspace \cite {urbano_direct_2018}.\relax }}{66}{figure.caption.55}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Studied geometry\relax }}{65}{figure.caption.49}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Studied geometry\relax }}{69}{figure.caption.56}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Comparison with DNS results of Urbano \textit {et al.}\xspace \cite {urbano_direct_2019} ($\delta =3$mm and $\theta =50\degree $). Lines : Model predictions - Markers : DNS \relax }}{67}{figure.caption.50}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Comparison with DNS results of Urbano \textit {et al.}\xspace \cite {urbano_direct_2019} ($\delta =3$mm and $\theta =50\degree $). Lines : Model predictions - Markers : DNS \relax }}{71}{figure.caption.57}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Results using $R_{\infty }$}}}{67}{subfigure.11.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Results using $R_{\infty }$}}}{71}{subfigure.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Results using $C\times R_{\infty }$, $C=1.158$}}}{67}{subfigure.11.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Results using $C\times R_{\infty }$, $C=1.158$}}}{71}{subfigure.11.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Comparison with experimental measurements of Maity \cite {maity_effect_2000}.\relax }}{68}{figure.caption.51}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Comparison with experimental measurements of Maity \cite {maity_effect_2000}.\relax }}{72}{figure.caption.58}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$G_{L}=0~ \text {kg/m$^{2}$/s}$, $\Delta T_{w}=5.9K$, $\Delta T_{L}=0.7K$}}}{68}{subfigure.12.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$G_{L}=0~ \text {kg/m$^{2}$/s}$, $\Delta T_{w}=5.9K$, $\Delta T_{L}=0.7K$}}}{72}{subfigure.12.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$G_{L}=73.8~ \text {kg/m$^{2}$/s}$, $\Delta T_{w}=5.0K$, $\Delta T_{L}=0.6K$}}}{68}{subfigure.12.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$G_{L}=73.8~ \text {kg/m$^{2}$/s}$, $\Delta T_{w}=5.0K$, $\Delta T_{L}=0.6K$}}}{72}{subfigure.12.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$G_{L}=143.8~ \text {kg/m$^{2}$/s}$, $\Delta T_{w}=5.9K$, $\Delta T_{L}=0.3K$}}}{68}{subfigure.12.3}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$G_{L}=143.8~ \text {kg/m$^{2}$/s}$, $\Delta T_{w}=5.9K$, $\Delta T_{L}=0.3K$}}}{72}{subfigure.12.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$G_{L}=239.6~ \text {kg/m$^{2}$/s}$, $\Delta T_{w}=5.9K$, $\Delta T_{L}=0.3K$}}}{68}{subfigure.12.4}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$G_{L}=239.6~ \text {kg/m$^{2}$/s}$, $\Delta T_{w}=5.9K$, $\Delta T_{L}=0.3K$}}}{72}{subfigure.12.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Comparison with experimental measurements of Kossolapov \cite {kossolapov_experimental_2021}. $\Delta T_{w}$ values are recalculated from analytical growth profiles fitted by the author.\relax }}{69}{figure.caption.52}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Comparison with experimental measurements of Kossolapov \cite {kossolapov_experimental_2021}. $\Delta T_{w}$ values are recalculated from analytical growth profiles fitted by the author.\relax }}{73}{figure.caption.59}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$P=20$ bar, $G_{L}=500\ \text {kg/m$^{2}$/s}$,\\ $\phi _{w} = 0.178$~MW/m$^\mathrm {2}$, $\Delta T_{w}=12.6$K}}}{69}{subfigure.13.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$P=20$ bar, $G_{L}=500\ \text {kg/m$^{2}$/s}$,\\ $\phi _{w} = 0.178$~MW/m$^\mathrm {2}$, $\Delta T_{w}=12.6$K}}}{73}{subfigure.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$P=40$ bar, $G_{L}=500\ \text {kg/m$^{2}$/s}$,\\ $\phi _{w} = 0.291$~MW/m$^\mathrm {2}$, $\Delta T_{w}=10.1$K}}}{69}{subfigure.13.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$P=40$ bar, $G_{L}=500\ \text {kg/m$^{2}$/s}$,\\ $\phi _{w} = 0.291$~MW/m$^\mathrm {2}$, $\Delta T_{w}=10.1$K}}}{73}{subfigure.13.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$P=20$ bar, $G_{L}=994\ \text {kg/m$^{2}$/s}$,\\ $\phi _{w} = 0.495$~MW/m$^\mathrm {2}$, $\Delta T_{w}=16.1$K}}}{69}{subfigure.13.3}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$P=20$ bar, $G_{L}=994\ \text {kg/m$^{2}$/s}$,\\ $\phi _{w} = 0.495$~MW/m$^\mathrm {2}$, $\Delta T_{w}=16.1$K}}}{73}{subfigure.13.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$P=40$ bar, $G_{L}=994\ \text {kg/m$^{2}$/s}$,\\ $\phi _{w} = 0.361$~MW/m$^\mathrm {2}$, $\Delta T_{w}=10.8$K}}}{69}{subfigure.13.4}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$P=40$ bar, $G_{L}=994\ \text {kg/m$^{2}$/s}$,\\ $\phi _{w} = 0.361$~MW/m$^\mathrm {2}$, $\Delta T_{w}=10.8$K}}}{73}{subfigure.13.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {$P=20$ bar, $G_{L}=1504\ \text {kg/m$^{2}$/s}$,\\ $\phi _{w} = 0.487$~MW/m$^\mathrm {2}$, $\Delta T_{w}=16.2$K}}}{69}{subfigure.13.5}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {$P=20$ bar, $G_{L}=1504\ \text {kg/m$^{2}$/s}$,\\ $\phi _{w} = 0.487$~MW/m$^\mathrm {2}$, $\Delta T_{w}=16.2$K}}}{73}{subfigure.13.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {$P=40$ bar, $G=1504\ \text {kg/m$^{2}$/s}$,\\ $\phi _{w} = 0.613$~MW/m$^\mathrm {2}$, $\Delta T_{w}=12.2$K}}}{69}{subfigure.13.6}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {$P=40$ bar, $G=1504\ \text {kg/m$^{2}$/s}$,\\ $\phi _{w} = 0.613$~MW/m$^\mathrm {2}$, $\Delta T_{w}=12.2$K}}}{73}{subfigure.13.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Regime map regarding departure by sliding. Boundaries plotted for water at 1 bar and $D_{d}=0.5$mm. ($K=2$)\relax }}{71}{figure.caption.59}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Regime map regarding departure by sliding. Boundaries plotted for water at 1 bar and $D_{d}=0.5$mm. ($K=2$)\relax }}{75}{figure.caption.66}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Regime map plotted for water at different pressures and bubble departure diameters. ($K=2$)\relax }}{72}{figure.caption.60}%
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Regime map plotted for water at different pressures and bubble departure diameters. ($K=2$)\relax }}{76}{figure.caption.67}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.16}{\ignorespaces Regime map for R12 as simulating fluid for PWR. $D_{d}=0.05$mm is chosen according to R12 measurements from Garnier \textit {et al.}\xspace \cite {garnier_local_2001} who observed bubbles of $\sim 0.1$mm diameter after lift-off. The same value is taken for water. ($K=2$)\relax }}{72}{figure.caption.61}%
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Regime map for R12 as simulating fluid for PWR. $D_{d}=0.05$mm is chosen according to R12 measurements from Garnier \textit {et al.}\xspace \cite {garnier_local_2001} who observed bubbles of $\sim 0.1$mm diameter after lift-off. The same value is taken for water. ($K=2$)\relax }}{76}{figure.caption.68}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Regime maps for each water data sets from Table \ref {tab:exp_data}.\relax }}{74}{figure.caption.63}%
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Regime maps for each water data sets from Table \ref {tab:exp_data}.\relax }}{78}{figure.caption.70}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Maity data}}}{74}{subfigure.17.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Maity data}}}{78}{subfigure.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Guan data}}}{74}{subfigure.17.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Guan data}}}{78}{subfigure.17.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Sugrue data}}}{74}{subfigure.17.3}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Sugrue data}}}{78}{subfigure.17.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Chen data}}}{74}{subfigure.17.4}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Chen data}}}{78}{subfigure.17.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Ren data}}}{74}{subfigure.17.5}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Ren data}}}{78}{subfigure.17.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Kossolapov data}}}{74}{subfigure.17.6}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Kossolapov data}}}{78}{subfigure.17.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Predicted bubble departure diameters. $\pm 50\%$ error bars are indicated.\relax }}{76}{figure.caption.64}%
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Predicted bubble departure diameters. $\pm 50\%$ error bars are indicated.\relax }}{80}{figure.caption.71}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Proposed model without accounting for contact angle uncertainties}}}{76}{subfigure.18.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Proposed model without accounting for contact angle uncertainties}}}{80}{subfigure.18.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mazzocco model}}}{76}{subfigure.18.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mazzocco model}}}{80}{subfigure.18.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Initially assumed, real and reassessed bubble shape for Sugrue cases (picture adapted from \cite {sugrue_experimental_2014}).\relax }}{77}{figure.caption.65}%
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Initially assumed, real and reassessed bubble shape for Sugrue cases (picture adapted from \cite {sugrue_experimental_2014}).\relax }}{81}{figure.caption.72}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Proposed model performance while accounting for contact angle uncertainties\relax }}{78}{figure.caption.66}%
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Proposed model performance while accounting for contact angle uncertainties\relax }}{82}{figure.caption.73}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Modified contact angle and hysteresis values.}}}{78}{subfigure.20.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Modified contact angle and hysteresis values.}}}{82}{subfigure.20.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Predicted bubble departure diameters.}}}{78}{subfigure.20.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Predicted bubble departure diameters.}}}{82}{subfigure.20.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Bubble sliding velocity predictions on Maity cases\relax }}{80}{figure.caption.68}%
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Bubble sliding velocity predictions on Maity cases\relax }}{84}{figure.caption.75}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\Delta T_{w}=5.0$\degree C, $G_{L}=73.8~\text {kg/m$^{2}$/s}$}}}{80}{subfigure.21.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\Delta T_{w}=5.0$\degree C, $G_{L}=73.8~\text {kg/m$^{2}$/s}$}}}{84}{subfigure.21.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\Delta T_{w}=5.9$\degree C, $G_{L}=143.8~\text {kg/m$^{2}$/s}$}}}{80}{subfigure.21.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\Delta T_{w}=5.9$\degree C, $G_{L}=143.8~\text {kg/m$^{2}$/s}$}}}{84}{subfigure.21.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\Delta T_{w}=5.9$\degree C, $G_{L}=239.6~\text {kg/m$^{2}$/s}$}}}{80}{subfigure.21.3}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\Delta T_{w}=5.9$\degree C, $G_{L}=239.6~\text {kg/m$^{2}$/s}$}}}{84}{subfigure.21.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.22}{\ignorespaces Bubble sliding length predictions on Kossolapov cases - $P=20$ bar\relax }}{81}{figure.caption.69}%
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Bubble sliding length predictions on Kossolapov cases - $P=20$ bar\relax }}{85}{figure.caption.76}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\phi _{w}=0.178$~MW/m$^\mathrm {2}$, $\Delta T_{w}=12.6$K, $G_{L}=500~\text {kg/m$^{2}$/s}$}}}{81}{subfigure.22.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\phi _{w}=0.178$~MW/m$^\mathrm {2}$, $\Delta T_{w}=12.6$K, $G_{L}=500~\text {kg/m$^{2}$/s}$}}}{85}{subfigure.22.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\phi _{w}=0.495$~MW/m$^\mathrm {2}$, $\Delta T_{w}=16.1$K, $G_{L}=994~\text {kg/m$^{2}$/s}$}}}{81}{subfigure.22.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\phi _{w}=0.495$~MW/m$^\mathrm {2}$, $\Delta T_{w}=16.1$K, $G_{L}=994~\text {kg/m$^{2}$/s}$}}}{85}{subfigure.22.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\phi _{w}=0.487$~MW/m$^\mathrm {2}$, $\Delta T_{w}=16.2$K, $G_{L}=1504~\text {kg/m$^{2}$/s}$}}}{81}{subfigure.22.3}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\phi _{w}=0.487$~MW/m$^\mathrm {2}$, $\Delta T_{w}=16.2$K, $G_{L}=1504~\text {kg/m$^{2}$/s}$}}}{85}{subfigure.22.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.23}{\ignorespaces Bubble sliding length predictions on Kossolapov cases - $P=40$ bar\relax }}{82}{figure.caption.70}%
+\contentsline {figure}{\numberline {5.23}{\ignorespaces Bubble sliding length predictions on Kossolapov cases - $P=40$ bar\relax }}{86}{figure.caption.77}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\phi _{w}=0.291$~MW/m$^\mathrm {2}$, $\Delta T_{w}=10.1$K, $G_{L}=500~\text {kg/m$^{2}$/s}$}}}{82}{subfigure.23.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\phi _{w}=0.291$~MW/m$^\mathrm {2}$, $\Delta T_{w}=10.1$K, $G_{L}=500~\text {kg/m$^{2}$/s}$}}}{86}{subfigure.23.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\phi _{w}=0.361$~MW/m$^\mathrm {2}$, $\Delta T_{w}=10.8$K, $G_{L}=994~\text {kg/m$^{2}$/s}$}}}{82}{subfigure.23.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$\phi _{w}=0.361$~MW/m$^\mathrm {2}$, $\Delta T_{w}=10.8$K, $G_{L}=994~\text {kg/m$^{2}$/s}$}}}{86}{subfigure.23.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\phi _{w}=0.613$~MW/m$^\mathrm {2}$, $\Delta T_{w}=12.2$K, $G_{L}=1504~\text {kg/m$^{2}$/s}$}}}{82}{subfigure.23.3}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$\phi _{w}=0.613$~MW/m$^\mathrm {2}$, $\Delta T_{w}=12.2$K, $G_{L}=1504~\text {kg/m$^{2}$/s}$}}}{86}{subfigure.23.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.24}{\ignorespaces Amplitude of each force during sliding\relax }}{82}{figure.caption.71}%
+\contentsline {figure}{\numberline {5.24}{\ignorespaces Amplitude of each force during sliding\relax }}{86}{figure.caption.78}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Maity : $\Delta T_{w}=5.9 \degree $ C, $G_{L}=239.6~\text {kg/m$^{2}$/s}$}}}{82}{subfigure.24.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Maity : $\Delta T_{w}=5.9 \degree $ C, $G_{L}=239.6~\text {kg/m$^{2}$/s}$}}}{86}{subfigure.24.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Kossolapov : $P=40$ bar, $\phi _{w}=0.613$~MW/m$^\mathrm {2}$,\newline $G_{L}=1504~\text {kg/m$^{2}$/s}$}}}{82}{subfigure.24.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Kossolapov : $P=40$ bar, $\phi _{w}=0.613$~MW/m$^\mathrm {2}$,\newline $G_{L}=1504~\text {kg/m$^{2}$/s}$}}}{86}{subfigure.24.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.25}{\ignorespaces Visualization of bubble lift-off in horizontal boiling conducted by and adapted from Maity \cite {maity_effect_2000}. The detachment the the bubble base from the surface is clear in the last frame.\relax }}{83}{figure.caption.72}%
+\contentsline {figure}{\numberline {5.25}{\ignorespaces Visualization of bubble lift-off in horizontal boiling conducted by and adapted from Maity \cite {maity_effect_2000}. The detachment the the bubble base from the surface is clear in the last frame.\relax }}{87}{figure.caption.79}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.26}{\ignorespaces Visualization of bubble lift-off in vertical boiling. The moment when bubble leaves the surface appears less clearly than for horizontal boiling.\relax }}{83}{figure.caption.73}%
+\contentsline {figure}{\numberline {5.26}{\ignorespaces Visualization of bubble lift-off in vertical boiling. The moment when bubble leaves the surface appears less clearly than for horizontal boiling.\relax }}{87}{figure.caption.80}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Lift-off observed in Maity experiment \cite {maity_effect_2000}}}}{83}{subfigure.26.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Lift-off observed in Maity experiment \cite {maity_effect_2000}}}}{87}{subfigure.26.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Lift-off observed in Situ experiment \cite {situ_bubble_2005}}}}{83}{subfigure.26.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Lift-off observed in Situ experiment \cite {situ_bubble_2005}}}}{87}{subfigure.26.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.27}{\ignorespaces Visualization of boiling surfaces in vertical boiling, where single bubble lift-off is not systematically observed.\relax }}{84}{figure.caption.74}%
+\contentsline {figure}{\numberline {5.27}{\ignorespaces Visualization of boiling surfaces in vertical boiling, where single bubble lift-off is not systematically observed.\relax }}{88}{figure.caption.81}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Boiling visualization by and adapted from\newline Prodanovic \textit {et al.}\xspace \cite {prodanovic_bubble_2002} in the region where bubble coalescence started to occur.}}}{84}{subfigure.27.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Boiling visualization by and adapted from\newline Prodanovic \textit {et al.}\xspace \cite {prodanovic_bubble_2002} in the region where bubble coalescence started to occur.}}}{88}{subfigure.27.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Boiling visualization by and adapted from Scheiff \textit {et al.}\xspace \cite {scheiff_experimental_2021}, highlighting the observed layer of sliding bubbles.}}}{84}{subfigure.27.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Boiling visualization by and adapted from Scheiff \textit {et al.}\xspace \cite {scheiff_experimental_2021}, highlighting the observed layer of sliding bubbles.}}}{88}{subfigure.27.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.28}{\ignorespaces Evolution of $D_{lo} / L_{c}$ depending on the flow conditions.\relax }}{87}{figure.caption.76}%
+\contentsline {figure}{\numberline {5.28}{\ignorespaces Evolution of $D_{lo} / L_{c}$ depending on the flow conditions.\relax }}{91}{figure.caption.83}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Influence of superheat}}}{87}{subfigure.28.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Influence of superheat}}}{91}{subfigure.28.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Influence of subcooling}}}{87}{subfigure.28.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Influence of subcooling}}}{91}{subfigure.28.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Influence of density ratio}}}{87}{subfigure.28.3}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Influence of density ratio}}}{91}{subfigure.28.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Influence of liquid Prandtl number}}}{87}{subfigure.28.4}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Influence of liquid Prandtl number}}}{91}{subfigure.28.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Influence of Reynolds number}}}{87}{subfigure.28.5}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Influence of Reynolds number}}}{91}{subfigure.28.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Influence of capillary number}}}{87}{subfigure.28.6}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Influence of capillary number}}}{91}{subfigure.28.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.29}{\ignorespaces Prediction of Eq. \ref {eq:bdf_adim_lo} versus data from Table \ref {tab:exp_data_dlo}. Value of $K=0.24$ was used and only converged points are presented.\relax }}{88}{figure.caption.77}%
+\contentsline {figure}{\numberline {5.29}{\ignorespaces Prediction of Eq. \ref {eq:bdf_adim_lo} versus data from Table \ref {tab:exp_data_dlo}. Value of $K=0.24$ was used and only converged points are presented.\relax }}{92}{figure.caption.84}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.30}{\ignorespaces Comparison of simple direct correlations with data from Table \ref {tab:exp_data_dlo}\relax }}{90}{figure.caption.78}%
+\contentsline {figure}{\numberline {5.30}{\ignorespaces Comparison of simple direct correlations with data from Table \ref {tab:exp_data_dlo}\relax }}{94}{figure.caption.85}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Prediction with Kommajosyula correlation \cite {kommajosyula_development_2020}}}}{90}{subfigure.30.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Prediction with Kommajosyula correlation \cite {kommajosyula_development_2020}}}}{94}{subfigure.30.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Prediction using Eq. \ref {eq:correl_dlo}}}}{90}{subfigure.30.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Prediction using Eq. \ref {eq:correl_dlo}}}}{94}{subfigure.30.2}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Closure Laws and Construction of a New Heat Flux Partitioning Model}}{92}{chapter.6}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Closure Laws and Construction of a New Heat Flux Partitioning Model}}{96}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Predictive capability of wall temperature by single-phase heat transfer correlations. $\pm 3K$ error bars indicated.\relax }}{94}{figure.caption.80}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Predictive capability of wall temperature by single-phase heat transfer correlations. $\pm 3K$ error bars indicated.\relax }}{98}{figure.caption.87}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Dittus-Boelter correlation}}}{94}{subfigure.1.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Dittus-Boelter correlation}}}{98}{subfigure.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Gnielinski correlation}}}{94}{subfigure.1.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Gnielinski correlation}}}{98}{subfigure.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Predictive capability of wall temperature by NCFD law and Gnielinski correlation including corrections. $\pm 3K$ error bars indicated (dashed lines).\relax }}{95}{figure.caption.81}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Predictive capability of wall temperature by NCFD law and Gnielinski correlation including corrections. $\pm 3K$ error bars indicated (dashed lines).\relax }}{99}{figure.caption.88}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {NCFD law}}}{95}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {NCFD law}}}{99}{subfigure.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Corrected Gnielinski correlation. We multiply the HTC by 4 on Richenderfer and Kossolapov cases.}}}{95}{subfigure.2.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Corrected Gnielinski correlation. We multiply the HTC by 4 on Richenderfer and Kossolapov cases.}}}{99}{subfigure.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces HSV Visualization of bubble density at various pressures adapted from Kossolapov \cite {kossolapov_experimental_2021} (left to right: 1.01 bar, 3 bar, 19.8 bar, 75.8 bar). \relax }}{96}{figure.caption.83}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces HSV Visualization of bubble density at various pressures adapted from Kossolapov \cite {kossolapov_experimental_2021} (left to right: 1.01 bar, 3 bar, 19.8 bar, 75.8 bar). \relax }}{100}{figure.caption.90}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Sketch of the link between bubble contact angle and wettability / cavity flooding\relax }}{97}{figure.caption.84}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Sketch of the link between bubble contact angle and wettability / cavity flooding\relax }}{101}{figure.caption.91}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Predictions of the chosen models against the experimental data of Table \ref {tab:nsit_exp_data} with $\pm 50\%$ error bars. The contact angles\relax }}{98}{figure.caption.86}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Predictions of the chosen models against the experimental data of Table \ref {tab:nsit_exp_data} with $\pm 50\%$ error bars. The contact angles\relax }}{102}{figure.caption.93}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Lemmert \& Chawla model}}}{98}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Lemmert \& Chawla model}}}{102}{subfigure.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hibiki \& Ishii model}}}{98}{subfigure.5.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hibiki \& Ishii model}}}{102}{subfigure.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Zhou \textit {et al.}\xspace model}}}{98}{subfigure.5.3}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Zhou \textit {et al.}\xspace model}}}{102}{subfigure.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \textit {et al.}\xspace model}}}{98}{subfigure.5.4}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Li \textit {et al.}\xspace model}}}{102}{subfigure.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Evolution of the wait time values with the wall Jakob number.\relax }}{102}{figure.caption.88}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Evolution of the wait time values with the wall Jakob number.\relax }}{106}{figure.caption.95}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Evolution of the product $t_{w} \times f$ with the reduced Jakob number.\relax }}{103}{figure.caption.89}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Evolution of the product $t_{w} \times f$ with the reduced Jakob number.\relax }}{107}{figure.caption.96}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Predictions using the correlations. $\pm 50\%$ dashed lines are represented.\relax }}{104}{figure.caption.90}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Predictions using the correlations. $\pm 50\%$ dashed lines are represented.\relax }}{108}{figure.caption.97}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Basu \textit {et al.}\xspace correlation}}}{104}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Basu \textit {et al.}\xspace correlation}}}{108}{subfigure.8.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Kommajosyula correlation}}}{104}{subfigure.8.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Kommajosyula correlation}}}{108}{subfigure.8.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Yeoh \textit {et al.}\xspace formulation of $t_{w}$ with Han \& Griffith cavity radius. $\pm 50\%$ dashed lines are represented.\relax }}{104}{figure.caption.91}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Yeoh \textit {et al.}\xspace formulation of $t_{w}$ with Han \& Griffith cavity radius. $\pm 50\%$ dashed lines are represented.\relax }}{108}{figure.caption.98}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Nucleation site distribution by and adapted from Kossolapov \cite {kossolapov_experimental_2021}. Red circles represent the active sites positions with diameter increasing with the site's nucleation frequency.\relax }}{105}{figure.caption.92}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Nucleation site distribution by and adapted from Kossolapov \cite {kossolapov_experimental_2021}. Red circles represent the active sites positions with diameter increasing with the site's nucleation frequency.\relax }}{109}{figure.caption.99}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Examples of exprimental nucleation sites distribution in flow boiling.\relax }}{106}{figure.caption.93}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Examples of exprimental nucleation sites distribution in flow boiling.\relax }}{110}{figure.caption.100}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nucleation site distribution in flow boiling from Del Valle \& Kenning \cite {del_valle_subcooled_1985}, each symbol represent a family of active nucleation site observed at different heat fluxes. Black triangles circled in red are sites that deactivate when the heat flux exceeded 70\% of the CHF.}}}{106}{subfigure.11.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Nucleation site distribution in flow boiling from Del Valle \& Kenning \cite {del_valle_subcooled_1985}, each symbol represent a family of active nucleation site observed at different heat fluxes. Black triangles circled in red are sites that deactivate when the heat flux exceeded 70\% of the CHF.}}}{110}{subfigure.11.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Nucleation site distribution at 3 bar by and adapted from Zhou \textit {et al.}\xspace \cite {zhou_experimental_2020}.}}}{106}{subfigure.11.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Nucleation site distribution at 3 bar by and adapted from Zhou \textit {et al.}\xspace \cite {zhou_experimental_2020}.}}}{110}{subfigure.11.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Sketch of the geometrical overlapping leading to static deactivation. Bubbles in red can not be accommodated on the surface due to their site laying below an existing bubble.\relax }}{107}{figure.caption.94}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Sketch of the geometrical overlapping leading to static deactivation. Bubbles in red can not be accommodated on the surface due to their site laying below an existing bubble.\relax }}{111}{figure.caption.101}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Static deactivation correction tested with Hibiki \& Ishii and Li \textit {et al.}\xspace correlations for water at 40 bar, $f=200$~Hz, $t_{g,d} = 0.1$~ms, $\theta =80\degree $ and $R_{d} = 0.01$~mm.\relax }}{108}{figure.caption.95}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Static deactivation correction tested with Hibiki \& Ishii and Li \textit {et al.}\xspace correlations for water at 40 bar, $f=200$~Hz, $t_{g,d} = 0.1$~ms, $\theta =80\degree $ and $R_{d} = 0.01$~mm.\relax }}{112}{figure.caption.102}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Hibiki \& Ishii correlation (Eq. \ref {eq:nsit_hibiki})}}}{108}{subfigure.13.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Hibiki \& Ishii correlation (Eq. \ref {eq:nsit_hibiki})}}}{112}{subfigure.13.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hibiki \& Ishii correlation (Eq. \ref {eq:nsit_li})}}}{108}{subfigure.13.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Hibiki \& Ishii correlation (Eq. \ref {eq:nsit_li})}}}{112}{subfigure.13.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Sketch of the static coalescence phenomenon.\relax }}{109}{figure.caption.96}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Sketch of the static coalescence phenomenon.\relax }}{113}{figure.caption.103}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Static coalescence probability with corrected Li \textit {et al.}\xspace for water at 40 bar, $f=200$~Hz, $t_{g,d} = 0.1$~ms and $\theta =80\degree $.\relax }}{109}{figure.caption.97}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Static coalescence probability with corrected Li \textit {et al.}\xspace for water at 40 bar, $f=200$~Hz, $t_{g,d} = 0.1$~ms and $\theta =80\degree $.\relax }}{113}{figure.caption.104}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Comparison of sliding distance estimations with Kossolapov measurements \cite {kossolapov_experimental_2021}. NSD was estimated using Li \textit {et al.}\xspace correlation (Eq. \ref {eq:nsit_li}).\relax }}{111}{figure.caption.98}%
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Comparison of sliding distance estimations with Kossolapov measurements \cite {kossolapov_experimental_2021}. NSD was estimated using Li \textit {et al.}\xspace correlation (Eq. \ref {eq:nsit_li}).\relax }}{115}{figure.caption.105}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$P=20$~bar, $G=500\ \text {kg/m$^{2}$/s}$}}}{111}{subfigure.16.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$P=20$~bar, $G=500\ \text {kg/m$^{2}$/s}$}}}{115}{subfigure.16.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$P=40$~bar, $G=500\ \text {kg/m$^{2}$/s}$}}}{111}{subfigure.16.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$P=40$~bar, $G=500\ \text {kg/m$^{2}$/s}$}}}{115}{subfigure.16.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$P=20$~bar, $G=1000\ \text {kg/m$^{2}$/s}$}}}{111}{subfigure.16.3}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$P=20$~bar, $G=1000\ \text {kg/m$^{2}$/s}$}}}{115}{subfigure.16.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$P=40$~bar, $G=1000\ \text {kg/m$^{2}$/s}$}}}{111}{subfigure.16.4}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {$P=40$~bar, $G=1000\ \text {kg/m$^{2}$/s}$}}}{115}{subfigure.16.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {$P=20$~bar, $G=1500\ \text {kg/m$^{2}$/s}$}}}{111}{subfigure.16.5}%
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {$P=20$~bar, $G=1500\ \text {kg/m$^{2}$/s}$}}}{115}{subfigure.16.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {$P=40$~bar, $G=1500\ \text {kg/m$^{2}$/s}$}}}{111}{subfigure.16.6}%
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {$P=40$~bar, $G=1500\ \text {kg/m$^{2}$/s}$}}}{115}{subfigure.16.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Quenching area shape depending on the relation between $R_{d}$, $R_{lo}$ and $l_{sl}$, if the bubble do not experience multiple coalescence while sliding. \relax }}{112}{figure.caption.99}%
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Quenching area shape depending on the relation between $R_{d}$, $R_{lo}$ and $l_{sl}$, if the bubble do not experience multiple coalescence while sliding. \relax }}{116}{figure.caption.106}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$l_{sl}< R_{lo}-R_{d}$}}}{112}{subfigure.17.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$l_{sl}< R_{lo}-R_{d}$}}}{116}{subfigure.17.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$R_{lo}-R_{d} \leq l_{sl}$ and $l_{sl} \leq R_{lo} + R_{d}$}}}{112}{subfigure.17.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$R_{lo}-R_{d} \leq l_{sl}$ and $l_{sl} \leq R_{lo} + R_{d}$}}}{116}{subfigure.17.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$l_{sl} > R_{lo} + R_{d}$}}}{112}{subfigure.17.3}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {$l_{sl} > R_{lo} + R_{d}$}}}{116}{subfigure.17.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Sketch of all the considered heat transfers for the new HFP model.\relax }}{113}{figure.caption.100}%
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Sketch of all the considered heat transfers for the new HFP model.\relax }}{117}{figure.caption.107}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Validation of the Heat Flux Partitioning Model}}{120}{chapter.7}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Validation of the Heat Flux Partitioning Model}}{124}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Comparison of active nucleation site density with and without a correction for Li \textit {et al.}\xspace formulation.\relax }}{121}{figure.caption.103}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Comparison of active nucleation site density with and without a correction for Li \textit {et al.}\xspace formulation.\relax }}{125}{figure.caption.110}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$N_{sit,a}$ predictions by Li \textit {et al.}\xspace correlation}}}{121}{subfigure.1.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$N_{sit,a}$ predictions by Li \textit {et al.}\xspace correlation}}}{125}{subfigure.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$N_{sit,a}$ predictions with corrected Li \textit {et al.}\xspace correlation}}}{121}{subfigure.1.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$N_{sit,a}$ predictions with corrected Li \textit {et al.}\xspace correlation}}}{125}{subfigure.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Comparison of bubble nucleation frequency, wait time, average growth time and quenching time.\relax }}{122}{figure.caption.104}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Comparison of bubble nucleation frequency, wait time, average growth time and quenching time.\relax }}{126}{figure.caption.111}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Bubble nucleation frequency}}}{122}{subfigure.2.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Bubble nucleation frequency}}}{126}{subfigure.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Bubble wait time, growth time and quenching time}}}{122}{subfigure.2.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Bubble wait time, growth time and quenching time}}}{126}{subfigure.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Comparison of average area visited by a bubble and total wall fraction area impacted by bubbles (footprint or transient conduction).\relax }}{123}{figure.caption.105}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Comparison of average area visited by a bubble and total wall fraction area impacted by bubbles (footprint or transient conduction).\relax }}{127}{figure.caption.112}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Single bubble area}}}{123}{subfigure.3.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Single bubble area}}}{127}{subfigure.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total wall area impacted by bubbles}}}{123}{subfigure.3.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Total wall area impacted by bubbles}}}{127}{subfigure.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Bubble radiuses, sliding length and distances between sites.\relax }}{123}{figure.caption.106}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Bubble radiuses, sliding length and distances between sites.\relax }}{127}{figure.caption.113}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Comparison of the resulting heat flux partitioning along with the boiling curve.\relax }}{124}{figure.caption.107}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Comparison of the resulting heat flux partitioning along with the boiling curve.\relax }}{128}{figure.caption.114}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Single-phase and quenching heat fluxes proportions}}}{124}{subfigure.5.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Single-phase and quenching heat fluxes proportions}}}{128}{subfigure.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Global boiling curve of the experiment}}}{124}{subfigure.5.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Global boiling curve of the experiment}}}{128}{subfigure.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Comparison with measured boiling curves from Kossolapov \cite {kossolapov_experimental_2021}. $\Delta T_{L}=10\degree \mathrm {C}$ and $G_{L}=1000~\text {kg/m$^{2}$/s}$.\relax }}{126}{figure.caption.109}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Comparison with measured boiling curves from Kossolapov \cite {kossolapov_experimental_2021}. $\Delta T_{L}=10\degree \mathrm {C}$ and $G_{L}=1000~\text {kg/m$^{2}$/s}$.\relax }}{130}{figure.caption.116}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$P=19.8$ bar}}}{126}{subfigure.6.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$P=19.8$ bar}}}{130}{subfigure.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$P=75.8$ bar}}}{126}{subfigure.6.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {$P=75.8$ bar}}}{130}{subfigure.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Wall temperature predictions achieved by the different HFP models on Kossolapov data.\relax }}{126}{figure.caption.110}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Wall temperature predictions achieved by the different HFP models on Kossolapov data.\relax }}{130}{figure.caption.117}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Kurul \& Podowski}}}{126}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Kurul \& Podowski}}}{130}{subfigure.7.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Basu}}}{126}{subfigure.7.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Basu}}}{130}{subfigure.7.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Kommajosyula}}}{126}{subfigure.7.3}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Kommajosyula}}}{130}{subfigure.7.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {New Model}}}{126}{subfigure.7.4}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {New Model}}}{130}{subfigure.7.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Comparison with measured boiling curve by Jens \& Lottes \cite {jens_analysis_1951}. $P=138$ bar, $G=2600~\text {kg/m$^{2}$/s}$, $\Delta T_{L}=64\degree \mathrm {C}$.\relax }}{127}{figure.caption.111}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Comparison with measured boiling curve by Jens \& Lottes \cite {jens_analysis_1951}. $P=138$ bar, $G=2600~\text {kg/m$^{2}$/s}$, $\Delta T_{L}=64\degree \mathrm {C}$.\relax }}{131}{figure.caption.118}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Wall temperature predictions achieved by the different HFP models on Jens data.\relax }}{128}{figure.caption.112}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Wall temperature predictions achieved by the different HFP models on Jens data.\relax }}{132}{figure.caption.119}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Kurul \& Podowski}}}{128}{subfigure.9.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Kurul \& Podowski}}}{132}{subfigure.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Basu}}}{128}{subfigure.9.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Basu}}}{132}{subfigure.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Kommajosyula}}}{128}{subfigure.9.3}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Kommajosyula}}}{132}{subfigure.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {New Model}}}{128}{subfigure.9.4}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {New Model}}}{132}{subfigure.9.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Wall temperature predictions achieved by the different HFP models on Kennel data.\relax }}{129}{figure.caption.113}%
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Wall temperature predictions achieved by the different HFP models on Kennel data.\relax }}{133}{figure.caption.120}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Kurul \& Podowski}}}{129}{subfigure.10.1}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Kurul \& Podowski}}}{133}{subfigure.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Basu}}}{129}{subfigure.10.2}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Basu}}}{133}{subfigure.10.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Kommajosyula}}}{129}{subfigure.10.3}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Kommajosyula}}}{133}{subfigure.10.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {New Model}}}{129}{subfigure.10.4}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Perspectives Towards Critical Heat Flux Prediction}}{131}{chapter.8}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {New Model}}}{133}{subfigure.10.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Promoteur}}{133}{chapter.9}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.1}{\ignorespaces Picture of the mixing device (left) and its fine meshing (right).\relax }}{133}{figure.caption.115}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.2}{\ignorespaces Experimental results from the 48G3P26W23 series.\relax }}{134}{figure.caption.116}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Void fraction}}}{134}{subfigure.2.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interference frequency}}}{134}{subfigure.2.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.3}{\ignorespaces Experimental results from the 52G3P26W23 series.\relax }}{134}{figure.caption.117}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Void fraction}}}{134}{subfigure.3.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interference frequency}}}{134}{subfigure.3.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.4}{\ignorespaces Experimental results from the 52G3P26W27 series.\relax }}{134}{figure.caption.118}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Void fraction}}}{134}{subfigure.4.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interference frequency}}}{134}{subfigure.4.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.5}{\ignorespaces Relative difference of interference frequency for the two probes.\relax }}{135}{figure.caption.119}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {52G3P26W23 series}}}{135}{subfigure.5.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {52G3P26W27 series}}}{135}{subfigure.5.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.6}{\ignorespaces Average relative importance of radial velocity to axial velocity in AGATE experiment\relax }}{135}{figure.caption.120}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.7}{\ignorespaces Estimation of bubble diameter on C5200 measurements series.\relax }}{135}{figure.caption.121}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {52G3P26W23 series}}}{135}{subfigure.7.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {52G3P26W27 series}}}{135}{subfigure.7.2}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.8}{\ignorespaces NCFD (lines) vs. Exp. (circles) - $\alpha $ profiles for two MV positions (23.5$D_{h}$ in blue, $10D_{h}$ in orange) - $T_{in}=65\degree $C (left), $T_{in}=69\degree $C (middle), $T_{in}=75\degree $C (right) - Simulations using two meshes M1 (coarse) and M2 (fine) for $T_{in}=69\degree $C.\relax }}{136}{figure.caption.122}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9.9}{\ignorespaces NCFD vs. Exp. - Top \& Middle : Radial velocity and turbulent RMS ($z=30$mm \& $z=440$mm) - Bottom : Axial velocity and turbulent RMS ($z=440$mm).\relax }}{137}{figure.caption.123}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Perspectives Towards Critical Heat Flux Prediction}}{135}{chapter.8}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Conclusion}}{139}{chapter.10}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Promoteur}}{137}{chapter.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.1}{\ignorespaces Picture of the mixing device (left) and its fine meshing (right).\relax }}{137}{figure.caption.122}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.2}{\ignorespaces Experimental results from the 48G3P26W23 series.\relax }}{138}{figure.caption.123}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Void fraction}}}{138}{subfigure.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interference frequency}}}{138}{subfigure.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.3}{\ignorespaces Experimental results from the 52G3P26W23 series.\relax }}{138}{figure.caption.124}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Void fraction}}}{138}{subfigure.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interference frequency}}}{138}{subfigure.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.4}{\ignorespaces Experimental results from the 52G3P26W27 series.\relax }}{138}{figure.caption.125}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Void fraction}}}{138}{subfigure.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Interference frequency}}}{138}{subfigure.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.5}{\ignorespaces Relative difference of interference frequency for the two probes.\relax }}{139}{figure.caption.126}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {52G3P26W23 series}}}{139}{subfigure.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {52G3P26W27 series}}}{139}{subfigure.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.6}{\ignorespaces Average relative importance of radial velocity to axial velocity in AGATE experiment\relax }}{139}{figure.caption.127}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.7}{\ignorespaces Estimation of bubble diameter on C5200 measurements series.\relax }}{139}{figure.caption.128}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {52G3P26W23 series}}}{139}{subfigure.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {52G3P26W27 series}}}{139}{subfigure.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.8}{\ignorespaces NCFD (lines) vs. Exp. (circles) - $\alpha $ profiles for two MV positions (23.5$D_{h}$ in blue, $10D_{h}$ in orange) - $T_{in}=65\degree $C (left), $T_{in}=69\degree $C (middle), $T_{in}=75\degree $C (right) - Simulations using two meshes M1 (coarse) and M2 (fine) for $T_{in}=69\degree $C.\relax }}{140}{figure.caption.129}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9.9}{\ignorespaces NCFD vs. Exp. - Top \& Middle : Radial velocity and turbulent RMS ($z=30$mm \& $z=440$mm) - Bottom : Axial velocity and turbulent RMS ($z=440$mm).\relax }}{141}{figure.caption.130}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{141}{appendix.A}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Studied geometry\relax }}{141}{figure.caption.124}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Conclusion}}{143}{chapter.10}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Force Balance}}{145}{appendix.B}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{145}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Studied geometry\relax }}{145}{figure.caption.131}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Force Balance}}{149}{appendix.B}%

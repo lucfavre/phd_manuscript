@@ -973,8 +973,165 @@ At last, the different evaluations conducted over the chosen experiments have re
 
 
 
-\chapter{NEPTUNE\_CFD simulations of DEBORA cases}
+\chapter{NEPTUNE\_CFD Simulations of DEBORA Cases}
 \label{chap:ncfd}
+
+In this Chapter, we present neptune\_cfd simulations of the DEBORA experiment. The objective is to assess the current modeling for dispersed two-phase boiling flow implemented in the code. To do so, we will simulate cases from the different campaigns of the DEBORA database (C800 and C3000) to conduct comparisons of void faction, bubble diamter, vapor velocity, liquid temperature and wall temperature profiles.
+
+\section{Simulation Setup}
+
+Since the geometry of the experiment presents an axisymmetry, we simplify the simulation setup in order to realize a 2D axisymmetric computation. The computational domain consists of a 1$\degree$ angular section of radius $R=9.6$\ mm and 3.85\ m length (Figure \ref{fig:deb_cfd_domain}).
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\linewidth]{img/DEBORA/cfd/msh/domain.png}
+\caption{View of the computational domain.}
+\label{fig:deb_cfd_domain}
+\end{figure}
+
+
+The boundary conditions are:
+
+\begin{itemize}
+\item Uniform heat flux for $0.2$\ m $\leq z \leq$ 3.5\ m ;
+\item Adiabatic wall for $z<0.2$\ m and $z>3.7$\ m ;
+\item Uniform outlet pressure ;
+\item Uniform inlet velocity ;
+\end{itemize}
+
+The inlet section before heating is approximately $10D_{h}$ long and the extracted radial profile for comparisons is located at the end of the heating length. 
+
+\begin{table}[!h]
+\centering
+
+\begin{tabular}{c||c|c|c|c}
+Mesh name & M1 & M2 & M4 & M8  \\
+\hline
+Number of cells (radial $\times$ axial) & 10  $\times$ 100 & 20 $\times$ 200 & 40 $\times$ 400 & 80 $\times$ 800
+\end{tabular}
+
+\caption{Mesh parameters}
+\label{tab:deb_cfd_msh}
+
+\end{table}
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[Mesh M1]{
+\includegraphics[width=0.25\linewidth]{img/DEBORA/cfd/msh/deb_m1.png}
+}
+\subfloat[Mesh M2]{
+\includegraphics[width=0.25\linewidth]{img/DEBORA/cfd/msh/deb_m2.png}
+}
+\subfloat[Mesh M4]{
+\includegraphics[width=0.25\linewidth]{img/DEBORA/cfd/msh/deb_m4.png}
+}
+\subfloat[Mesh M8]{
+\includegraphics[width=0.25\linewidth]{img/DEBORA/cfd/msh/deb_m8.png}
+}
+\caption{View of the radial meshes.}
+\label{fig:deb_cfd_msh_rad}
+\end{figure}
+
+
+
+\section{Mesh Sensitivity Study}
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[Void fraction]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_alpha_msh.pdf}
+}
+\subfloat[Bubble diameter]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_dV_msh.pdf}
+}
+\\
+\subfloat[Vapor velocity]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_Uvap_msh.pdf}
+}
+\subfloat[Liquid temperature]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_TL_msh.pdf}
+}
+\caption{Mesh sensitivity study for 30G2P26Te66.6 case}
+\label{fig:deb_cfd_msh_sensi}
+\end{figure}
+
+
+
+
+\section{C800 Cases Simulation : Thermal Measurements}
+
+\subsection{High Subcooling Cases}
+
+\begin{figure}[!h]
+\centering
+\subfloat[Liquid temperature]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T31_T44_TL_ref.pdf}
+}
+\subfloat[Wall temperature vs. axial position]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_ref.pdf}
+}
+\\
+\subfloat[Wall temperature vs. local quality]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_x_ref.pdf}
+}
+\caption{Simulation results for cases 8G2P26W16Te31. 5\& Te44.9}
+\label{fig:deb_cfd_8T33_T44}
+\end{figure}
+
+
+
+\subsection{Low Subcooling Cases}
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[Liquid temperature]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_T61_TL_ref.pdf}
+}
+\subfloat[Wall temperature vs. axial position]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_ref.pdf}
+}
+\\
+\subfloat[Wall temperature vs. local quality]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_x_ref.pdf}
+}
+\caption{Simulation results for cases 8G2P26W16Te55.7 \& Te61.5}
+\label{fig:deb_cfd_8T55_T61}
+\end{figure}
+
+\subsection{Saturated Cases}
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[Liquid temperature]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_ref.pdf}
+}
+\subfloat[Wall temperature vs. axial position]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_ref.pdf}
+}
+\\
+\subfloat[Wall temperature vs. local quality]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_x_ref.pdf}
+}
+\caption{Simulation results for cases 8G2P26W16Te66.6 \& Te70.3}
+\label{fig:deb_cfd_8T66_T70}
+\end{figure}
+
+
+\clearpage
+
+
+
+
+
+
+
+
 
 In this work, we present the simulations of the following cases:
 \begin{itemize}

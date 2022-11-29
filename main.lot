@@ -25,68 +25,70 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {NEPTUNE\_CFD simulations of DEBORA cases}}{27}{chapter.3}%
+\contentsline {xchapter}{\spacedlowsmallcaps {NEPTUNE\_CFD Simulations of DEBORA Cases}}{27}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {3.1}{\ignorespaces Mesh parameters\relax }}{27}{table.caption.32}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Introduction to Heat Flux Partitioning}}{31}{chapter.4}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Introduction to Heat Flux Partitioning}}{35}{chapter.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Boiling Bubble Dynamics}}{41}{chapter.5}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Boiling Bubble Dynamics}}{45}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.1}{\ignorespaces Summary of the presented correlations\relax }}{47}{table.caption.41}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Summary of the presented correlations\relax }}{51}{table.caption.48}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.2}{\ignorespaces Summary of different force-balance mechanistic approaches.\relax }}{59}{table.caption.47}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Summary of different force-balance mechanistic approaches.\relax }}{63}{table.caption.54}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.3}{\ignorespaces Bubble departure diameters data sets in vertical flow boiling\relax }}{73}{table.caption.62}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Bubble departure diameters data sets in vertical flow boiling\relax }}{77}{table.caption.69}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.4}{\ignorespaces Average relative error reached by the models.\relax }}{78}{table.caption.67}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Average relative error reached by the models.\relax }}{82}{table.caption.74}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.5}{\ignorespaces Bubble lift-off diameters data sets in vertical flow boiling\relax }}{86}{table.caption.75}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Closure Laws and Construction of a New Heat Flux Partitioning Model}}{92}{chapter.6}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.1}{\ignorespaces Experimental data range of wall temperature measurements from the single-phase part of boiling curves. $N_{mes}$ is the number of measurements of each data set.\relax }}{93}{table.caption.79}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.2}{\ignorespaces Average errors achieved by the considered models on each data sets.\relax }}{95}{table.caption.82}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.3}{\ignorespaces Nucleation Site Density data in flow boiling\relax }}{98}{table.caption.85}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.4}{\ignorespaces Bubble wait time data in vertical flow boiling. Wall superheat values for Richenderfer data are estimated using Frost \& Dzakowic correlation (Eq. \ref {eq:frost}).\relax }}{102}{table.caption.87}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.5}{\ignorespaces Summary of the HFP model closure laws\relax }}{117}{table.caption.101}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.6}{\ignorespaces Summary of the HFP model formulation\relax }}{118}{table.caption.102}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Bubble lift-off diameters data sets in vertical flow boiling\relax }}{90}{table.caption.82}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Validation of the Heat Flux Partitioning Model}}{120}{chapter.7}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Closure Laws and Construction of a New Heat Flux Partitioning Model}}{96}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.1}{\ignorespaces Experimental data range of wall temperature measurements in the boiling region.\relax }}{125}{table.caption.108}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Experimental data range of wall temperature measurements from the single-phase part of boiling curves. $N_{mes}$ is the number of measurements of each data set.\relax }}{97}{table.caption.86}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.2}{\ignorespaces Wall superheat values obtained with different models versus the measurements on DEBORA case at 26.6 bar.\relax }}{130}{table.caption.114}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Average errors achieved by the considered models on each data sets.\relax }}{99}{table.caption.89}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.3}{\ignorespaces Nucleation Site Density data in flow boiling\relax }}{102}{table.caption.92}%
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Perspectives Towards Critical Heat Flux Prediction}}{131}{chapter.8}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Bubble wait time data in vertical flow boiling. Wall superheat values for Richenderfer data are estimated using Frost \& Dzakowic correlation (Eq. \ref {eq:frost}).\relax }}{106}{table.caption.94}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.5}{\ignorespaces Summary of the HFP model closure laws\relax }}{121}{table.caption.108}%
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Promoteur}}{133}{chapter.9}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Conclusion}}{139}{chapter.10}%
+\contentsline {table}{\numberline {6.6}{\ignorespaces Summary of the HFP model formulation\relax }}{122}{table.caption.109}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{141}{appendix.A}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Validation of the Heat Flux Partitioning Model}}{124}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.1}{\ignorespaces Experimental data range of wall temperature measurements in the boiling region.\relax }}{129}{table.caption.115}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.2}{\ignorespaces Wall superheat values obtained with different models versus the measurements on DEBORA case at 26.6 bar.\relax }}{134}{table.caption.121}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Force Balance}}{145}{appendix.B}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Perspectives Towards Critical Heat Flux Prediction}}{135}{chapter.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {B.1}{\ignorespaces Autem usu id}}{146}{table.caption.125}%
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{\spacedlowsmallcaps {Promoteur}}{137}{chapter.9}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{\spacedlowsmallcaps {Conclusion}}{143}{chapter.10}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{145}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Force Balance}}{149}{appendix.B}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {B.1}{\ignorespaces Autem usu id}}{150}{table.caption.132}%
