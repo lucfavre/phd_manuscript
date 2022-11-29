@@ -12,6 +12,7 @@ A level-1 auxiliary file: FrontBackMatter/Contents.aux
 A level-1 auxiliary file: Chapters/intro_ccl/Intro.aux
 A level-1 auxiliary file: Chapters/NCFD/Chap_NCFD.aux
 A level-1 auxiliary file: Chapters/NCFD/Chap_Debora.aux
+A level-1 auxiliary file: Chapters/NCFD/Chap_Debora_NCFD.aux
 A level-1 auxiliary file: Chapters/HFP/Chap_HFPmodels.aux
 A level-1 auxiliary file: Chapters/HFP/Chap_BubDyn.aux
 A level-1 auxiliary file: Chapters/HFP/Chap_Closures.aux
@@ -69,7 +70,7 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 125 entries,
             6365 wiz_defined-function locations,
-            2465 strings with 210293 characters,
+            2466 strings with 210327 characters,
 and the built_in function-call counts, 1354960 in all, are:
 = -- 65566
 > -- 107585

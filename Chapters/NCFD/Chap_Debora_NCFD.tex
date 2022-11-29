@@ -1,0 +1,239 @@
+\chapter{NEPTUNE\_CFD Simulations of DEBORA Cases}
+\label{chap:ncfd}
+
+In this Chapter, we present neptune\_cfd simulations of the DEBORA experiment. The objective is to assess the current modeling for dispersed two-phase boiling flow implemented in the code. To do so, we will simulate cases from the different campaigns of the DEBORA database (C800 and C3000) to conduct comparisons of void faction, bubble diamter, vapor velocity, liquid temperature and wall temperature profiles.
+
+\section{Simulation Setup}
+
+Since the geometry of the experiment presents an axisymmetry, we simplify the simulation setup in order to realize a 2D axisymmetric computation. The computational domain consists of a 1$\degree$ angular section of radius $R=9.6$\ mm and 3.85\ m length (Figure \ref{fig:deb_cfd_domain}).
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\linewidth]{img/DEBORA/cfd/msh/domain.png}
+\caption{View of the computational domain.}
+\label{fig:deb_cfd_domain}
+\end{figure}
+
+
+The boundary conditions are:
+
+\begin{itemize}
+\item Uniform heat flux for $0.2$\ m $\leq z \leq$ 3.5\ m ;
+\item Adiabatic wall for $z<0.2$\ m and $z>3.7$\ m ;
+\item Uniform outlet pressure ;
+\item Uniform inlet velocity ;
+\item Symmetry condition on remaining faces.
+\end{itemize}
+
+The inlet section before heating is approximately $10D_{h}$ long and the extracted radial profile for comparisons is located at the end of the heating length. 
+
+\begin{table}[!h]
+\centering
+
+\begin{tabular}{c||c|c|c|c}
+Mesh name & M1 & M2 & M4 & M8  \\
+\hline
+Number of cells (radial $\times$ axial) & 10  $\times$ 100 & 20 $\times$ 200 & 40 $\times$ 400 & 80 $\times$ 800
+\end{tabular}
+
+\caption{Mesh parameters}
+\label{tab:deb_cfd_msh}
+
+\end{table}
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[Mesh M1]{
+\includegraphics[width=0.25\linewidth]{img/DEBORA/cfd/msh/deb_m1.png}
+}
+\subfloat[Mesh M2]{
+\includegraphics[width=0.25\linewidth]{img/DEBORA/cfd/msh/deb_m2.png}
+}
+\subfloat[Mesh M4]{
+\includegraphics[width=0.25\linewidth]{img/DEBORA/cfd/msh/deb_m4.png}
+}
+\subfloat[Mesh M8]{
+\includegraphics[width=0.25\linewidth]{img/DEBORA/cfd/msh/deb_m8.png}
+}
+\caption{View of the radial meshes.}
+\label{fig:deb_cfd_msh_rad}
+\end{figure}
+
+
+
+\section{Mesh Sensitivity Study}
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[Void fraction]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_alpha_msh.pdf}
+}
+\subfloat[Bubble diameter]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_dV_msh.pdf}
+}
+\\
+\subfloat[Vapor velocity]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_Uvap_msh.pdf}
+}
+\subfloat[Liquid temperature]{
+\includegraphics[width=0.5\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_TL_msh.pdf}
+}
+\caption{Mesh sensitivity study for 30G2P26Te66.6 case}
+\label{fig:deb_cfd_msh_sensi}
+\end{figure}
+
+
+
+
+\section{C800 Cases Simulation : Thermal Measurements}
+
+\subsection{High Subcooling Cases}
+
+\begin{figure}[!h]
+\centering
+\subfloat[Liquid temperature]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T31_T44_TL_ref.pdf}
+}
+\subfloat[Wall temperature vs. axial position]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_ref.pdf}
+}
+\\
+\subfloat[Wall temperature vs. local quality]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_x_ref.pdf}
+}
+\caption{Simulation results for cases 8G2P26W16Te31. 5\& Te44.9}
+\label{fig:deb_cfd_8T33_T44}
+\end{figure}
+
+
+
+\subsection{Low Subcooling Cases}
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[Liquid temperature]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_T61_TL_ref.pdf}
+}
+\subfloat[Wall temperature vs. axial position]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_ref.pdf}
+}
+\\
+\subfloat[Wall temperature vs. local quality]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_x_ref.pdf}
+}
+\caption{Simulation results for cases 8G2P26W16Te55.7 \& Te61.5}
+\label{fig:deb_cfd_8T55_T61}
+\end{figure}
+
+\subsection{Saturated Cases}
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[Liquid temperature]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_ref.pdf}
+}
+\subfloat[Wall temperature vs. axial position]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_ref.pdf}
+}
+\\
+\subfloat[Wall temperature vs. local quality]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_x_ref.pdf}
+}
+\caption{Simulation results for cases 8G2P26W16Te66.6 \& Te70.3}
+\label{fig:deb_cfd_8T66_T70}
+\end{figure}
+
+
+\clearpage
+
+
+
+
+
+
+
+
+
+In this work, we present the simulations of the following cases:
+\begin{itemize}
+\item C8G2P26W16Te44.9 and C8G2P26W16Te49.6 (single-phase flow)
+\item C8G2P26W16Te66.6 and C8G2P26W16Te70.3 (two-phase flow)
+\item C30G2P26W16Te66.6 and C30G2P26W16Te70.6 (two-phase flow)
+\end{itemize}
+
+The pressure of $26~\text{bar}$ is chosen to match the pressure of the mixing vanes cases (DEBORA-Promoteur, Section \ref{sec:deb_prom}). Mesh sensitivity is performed over two meshes: a large mesh (M1) with $460~356\text{ cells }=338\text{ radial } \times 1362 \text{ axial cells}$ and a fine mesh (M2) with $3~157~952\text{ cells }=1568\text{ radial } \times 2014 \text{ axial cells}$.
+
+On Figure \ref{fig:th_1phi_res}, we present the results regarding liquid temperature at the outlet and wall temperature. The liquid temperature profile seems to be correctly reproduced by the simulations, though we see a slight overestimation close to the wall. Looking closer at boiling cases shows a difference of $\approx 0.5\degree$ C, which is close to the uncertainty of the measurements \cite{garnier_local_2001}. Concerning the wall temperature, it appears that it is underestimated before the \textbf{Onset of Nucleate Boiling} (ONB) ($T_{w}<T_{sat}$) and overestimated after the ONB ($\approx +5\degree$C). Post-ONB wall temperature is characterized by a stabilization of its value above the saturation temperature (here $T_{w,ONB}-T_{sat}\approx 2\degree\text{C}$).
+
+%
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.60]{img/DEBORA/c8.png}
+\caption{NCFD (lines) vs. Exp. (circles) - $T_{L}$ and $T_{w}$ - Cases C8G2P26W16Te44.9, Te49.6, Te66.6 and Te70.3 - Simulations using two meshes M1 (coarse) and M2 (fine).}
+\label{fig:th_1phi_res}
+\end{figure}
+%
+
+%%
+%\begin{figure}[!htb]
+%\vspace{16pt}
+%\begin{spacing}{1.0}
+%\centering
+%\includegraphics[scale=0.60]{img/DEBORA/thermal_diph.png}
+%\caption{NEPTUNE\_CFD simulations results vs. experimental measurements - $T_{L}$ and $T_{w}$ - Cases C8G2P26W16Te66.6 and C8G2P26W16Te70.3}
+%\label{fig:th_diph_res}
+%\end{spacing}
+%\vspace{16pt}
+%\end{figure}
+%%
+
+
+
+%
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.60]{img/DEBORA/c30.png}
+\caption{NCFD (lines) vs. Exp. (circles) - $\alpha$, $d_{G}$ and $U_{G,z}$ - Cases C30G2P26W16Te66.6 and Te70.6 - Simulations using two meshes M1 (coarse) and M2 (fine).}
+\label{fig:topology_res}
+\end{figure}
+%
+
+On Figure \ref{fig:topology_res}, we compare the results of the simulations to the experiments regarding void fraction, bubble Sauter diameter and axial gas velocity. Void fraction profiles are quite correctly reproduced, though we observe a $10\%$ higher peak at the wall for $T_{in}=66.6\degree$C. The order of magnitude of bubble diameter is correct ($\sim 0.1\text{mm}$) and NEPTUNE\_CFD manages to detect coalescence (increase of bubble diameter when leaving the wall) and bulk condensation (decrease of bubble diameter when reaching the core of the flow), which is in qualitative agreement with the experiments. Quantitatively speaking, bubble diameter is globally underestimated. Finally, gas velocity profile is reasonably reproduced for $T_{in}=66.6\degree$C, but not for $T_{in}=70.6\degree$C. The latter experimental profile is flatter, which could be explained by a change of flow regime since uncondensed vapor is detected in the bulk.  
+
+Finally, the simulations reasonably agree with the experiments. The strongest discrepancies being mostly the wall temperature and bubble diameter. Potential ways of improving those results are investigated in next sub-section.
+
+\subsection{Investigating the nucleation site density modeling $N_{sit}$}
+
+In NEPTUNE\_CFD, wall temperature is computed through the Heat Flux Partitioning model, which role is to find the appropriate $T_{w}$ which balances Equation $\ref{eq:HFP}$. However, some laws used to express parameters such as $N_{sit}$, $f$, or $d_{d}$ are quite old and simple. For instance, the {Lemmert} \& {Chawla}\cite{lemmert_influence_1977} expression of $N_{sit}$ only depends on the wall superheat (Sub-section \ref{subsec:HFP}).%, meaning that it can not reproduce potential influence of the pressure on the nucleation site density.
+
+A comparison of the {Lemmert} \& {Chawla} law\cite{lemmert_influence_1977} with  the {Hibiki} \& {Ishii}\cite{hibiki_active_2003} law for $N_{sit}$ against 4 data sets from the literature is presentend on Figure \ref{fig:nsit}. The {Hibiki} \& {Ishii} correlation depends simultaneously on wall superheat, pressure and contact angle.  Experimental measurements of {Borishanskii} \etal\cite{borishanskii_heat_1969}, {Richenderfer} \etal\cite{richenderfer_investigation_2018}, {Kossolapov} \etal\cite{kossolapov_experimental_2021} and {Zhou} \etal\cite{zhou_experimental_2020-1} are used to assess the two nucleation site density correlations.
+%
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.45]{img/DEBORA/nsit.png}
+\caption{$N_{sit}$ correlations of {Lemmert} \& {Chawla} (left) and {Hibiki} \& {Ishii} (right) vs. exp. data from literature. Operation pressures are displayed. $\pm 50\%$ error bars are drawn in black.}
+\label{fig:nsit}
+\end{figure}
+%
+
+Figure \ref{fig:nsit} clearly shows that the {Lemmert} \& {Chawla} law lack of pressure dependence fails to reproduce high pressure measurements contrary to the {Hibiki} \& {Ishii} one. Even though {Hibiki} \& {Ishii} correlation shows significant discrepancies with measurements of {Kossolapov} \etal and {Richenderfer} \etal, its prediction capability is greater in average than {Lemmert} \& {Chawla} correlation.
+
+%
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.60]{img/DEBORA/plot_HI.png}
+\caption{NCFD results for $\alpha$, $T_{L}$ and $T_{w}$ using {Lemmert} \& {Chawla} and {Hibiki} \& {Ishii} correlation. Cases 8G2P26W23Te66.6 and Te70.3, 30G2P26W23Te66.6 and 70.6.}
+\label{fig:NCFD_nsit}
+\end{figure}
+%
+To assess the influence of nucleation site density law on NEPTUNE\_CFD computations, we compare results obtained with both correlations on Figure \ref{fig:NCFD_nsit}, which shows a remarkable impact of the modification of $N_{sit}$ correlation. Using {Hibiki} \& {Ishii} correlation reduces the error on $T_{w}$ by approximately $2\degree\text{C}$ while $\alpha$ and $T_{L}$ remain unchanged. This implies that the same heat flux partitioning is found with the two models, but that the pressure dependence of {Hibiki} \& {Ishii} law helped to balance Equation \ref{eq:HFP} using a lower $T_{w}$, thus closer to experimental measurements.
+
+Such a result indicates that the HFP model could be improved through a systematic analysis of each parameter's impact and modeling (bubble departure diameter, detachment frequency, etc.). Assembling a more recent and consistent model could provide better results regarding wall temperature prediction. Models such as the one developed by {Kommajosyula}\cite{kommajosyula_development_2020} could be interesting to apply for high-pressure flows.
+
+
+Now that simple tube boiling flow has been assessed through the presented results, next section will focus on the simulation of boiling flow in a tube equipped with a mixing device.% using DEBORA-Promoteur experimental results.
