@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.1 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -136,6 +136,80 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{basu_wall_2005}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BN}{%
+         family={Basu},
+         familyi={B\bibinitperiod},
+         given={Nilanjana},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=WGR}{%
+         family={Warrier},
+         familyi={W\bibinitperiod},
+         given={Gopinath\bibnamedelima R.},
+         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=DVK}{%
+         family={Dhir},
+         familyi={D\bibinitperiod},
+         given={Vijay\bibnamedelima K.},
+         giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BNWGRDVK1}
+    \strng{fullhash}{BNWGRDVK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    A mechanistic model for wall heat flux partitioning during subcooled flow
+  boiling proposed in Part I of this two-part paper, is validated in this part.
+  As the first step of the validation process, the developed model was applied
+  to experimental data obtained as part of this study. Comparison of the model
+  predictions with the present data shows good agreement. In order to further
+  validate/exercise the model, it was then applied to several data sets
+  available in the literature. Though the data in the literature were for
+  experimental conditions vastly different from those from which the model was
+  originally developed, reasonable agreement between the model predictions and
+  the experimental data were observed. This indicates that the proposed model
+  can be extended to other flow conditions provided the submodels cover the
+  conditions of the experiments. Future work should be directed towards
+  improvement of the various submodels involved to extend their range of
+  applicability, especially the ones related to bubble dynamics. Additionally,
+  it must be kept in mind that the model as proposed is strictly only
+  applicable to vertical up-flow and may not be applicable to other
+  orientations.%
+    }
+    \verb{doi}
+    \verb 10.1115/1.1842785
+    \endverb
+    \field{issn}{0022-1481}
+    \field{number}{2}
+    \field{pages}{141\bibrangedash 148}
+    \field{shortjournal}{Journal of Heat Transfer}
+    \field{shorttitle}{Wall Heat Flux Partitioning During Subcooled Flow
+  Boiling}
+    \field{title}{Wall Heat Flux Partitioning During Subcooled Flow Boiling:
+  Part {II}â€”Model Validation}
+    \verb{url}
+    \verb https://doi.org/10.1115/1.1842785
+    \endverb
+    \field{volume}{127}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\YIWTGMNK\\Wall-Heat-Flux-P
+    \verb artitioning-During-Subcooled-Flow.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Heat Transfer}
+    \field{day}{15}
+    \field{month}{03}
+    \field{year}{2005}
+    \field{urlday}{23}
+    \field{urlmonth}{06}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{basu_wall_2005-1}{article}{}
     \name{author}{3}{}{%
       {{hash=BN}{%
@@ -203,80 +277,6 @@
     \field{volume}{127}
     \verb{file}
     \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\XXKGXHJ2\\Wall-Heat-Flux-P
-    \verb artitioning-During-Subcooled-Flow.html:text/html
-    \endverb
-    \field{journaltitle}{Journal of Heat Transfer}
-    \field{day}{15}
-    \field{month}{03}
-    \field{year}{2005}
-    \field{urlday}{23}
-    \field{urlmonth}{06}
-    \field{urlyear}{2022}
-  \endentry
-
-  \entry{basu_wall_2005}{article}{}
-    \name{author}{3}{}{%
-      {{hash=BN}{%
-         family={Basu},
-         familyi={B\bibinitperiod},
-         given={Nilanjana},
-         giveni={N\bibinitperiod},
-      }}%
-      {{hash=WGR}{%
-         family={Warrier},
-         familyi={W\bibinitperiod},
-         given={Gopinath\bibnamedelima R.},
-         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=DVK}{%
-         family={Dhir},
-         familyi={D\bibinitperiod},
-         given={Vijay\bibnamedelima K.},
-         giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BNWGRDVK1}
-    \strng{fullhash}{BNWGRDVK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{abstract}{%
-    A mechanistic model for wall heat flux partitioning during subcooled flow
-  boiling proposed in Part I of this two-part paper, is validated in this part.
-  As the first step of the validation process, the developed model was applied
-  to experimental data obtained as part of this study. Comparison of the model
-  predictions with the present data shows good agreement. In order to further
-  validate/exercise the model, it was then applied to several data sets
-  available in the literature. Though the data in the literature were for
-  experimental conditions vastly different from those from which the model was
-  originally developed, reasonable agreement between the model predictions and
-  the experimental data were observed. This indicates that the proposed model
-  can be extended to other flow conditions provided the submodels cover the
-  conditions of the experiments. Future work should be directed towards
-  improvement of the various submodels involved to extend their range of
-  applicability, especially the ones related to bubble dynamics. Additionally,
-  it must be kept in mind that the model as proposed is strictly only
-  applicable to vertical up-flow and may not be applicable to other
-  orientations.%
-    }
-    \verb{doi}
-    \verb 10.1115/1.1842785
-    \endverb
-    \field{issn}{0022-1481}
-    \field{number}{2}
-    \field{pages}{141\bibrangedash 148}
-    \field{shortjournal}{Journal of Heat Transfer}
-    \field{shorttitle}{Wall Heat Flux Partitioning During Subcooled Flow
-  Boiling}
-    \field{title}{Wall Heat Flux Partitioning During Subcooled Flow Boiling:
-  Part {II}â€”Model Validation}
-    \verb{url}
-    \verb https://doi.org/10.1115/1.1842785
-    \endverb
-    \field{volume}{127}
-    \verb{file}
-    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\YIWTGMNK\\Wall-Heat-Flux-P
     \verb artitioning-During-Subcooled-Flow.html:text/html
     \endverb
     \field{journaltitle}{Journal of Heat Transfer}
@@ -8156,19 +8156,19 @@
 
   \entry{unal_maximum_1976}{article}{}
     \name{author}{1}{}{%
-      {{hash=ÃHC}{%
+      {{hash=nHC}{%
          family={Ãœnal},
-         familyi={Ã\bibinitperiod},
+         familyi={n\bibinitperiod},
          given={H.\bibnamedelima C.},
          giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
       }}%
     }
-    \strng{namehash}{ÃHC1}
-    \strng{fullhash}{ÃHC1}
+    \strng{namehash}{nHC1}
+    \strng{fullhash}{nHC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{Ã}
-    \field{sortinithash}{Ã}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
     \field{abstract}{%
     A heat transfer controlled bubble model has yielded three semi-empirical
   correlations to predict bubble-growth rate, maximum bubble diameter and

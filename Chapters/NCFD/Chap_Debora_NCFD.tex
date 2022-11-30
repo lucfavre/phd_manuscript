@@ -95,17 +95,17 @@ On Figure \ref{fig:deb_cfd_msh_sensi}, we present simulation results for the 4 m
 \begin{figure}[!h]
 \centering
 \subfloat[Void fraction]{
-\includegraphics[width=0.5\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_alpha_msh.pdf}
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_alpha_msh.pdf}
 }
 \subfloat[Bubble diameter]{
-\includegraphics[width=0.5\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_dV_msh.pdf}
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_dV_msh.pdf}
 }
 \\
 \subfloat[Vapor velocity]{
-\includegraphics[width=0.5\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_Uvap_msh.pdf}
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_Uvap_msh.pdf}
 }
 \subfloat[Liquid temperature]{
-\includegraphics[width=0.5\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_TL_msh.pdf}
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_TL_msh.pdf}
 }
 \caption{Mesh sensitivity study for 30G2P26Te66.6 case}
 \label{fig:deb_cfd_msh_sensi}
@@ -250,23 +250,88 @@ Now that comparisons with thermal measurements have been conducted, we move to a
 
 \subsection{Subcooled Boiling Cases}
 
-Cases with 0 void fraction at center.
+Subcooled cases 30G2P26W16Te62 and Te64 are simulated. They both have an outlet quality $x_{eq,out} \leq 0$ with pure liquid at the center of the test section, but present significant void fraction when approaching the wall (Figure \ref{fig:G2P26W16_alpha}). Results of the NEPTUNE\_CFD Simulations are presented on Figure \ref{fig:deb_cfd_30T66_T70}.
+
+\begin{figure}[!h]
+\centering
+\subfloat[Void fraction]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T62_T64_alpha_ref.pdf}
+\label{fig:30T62_T64_alpha}
+}
+\subfloat[Bubble diameter]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T62_T64_dV_ref.pdf}
+\label{fig:30T62_T64_dV}
+}
+\\
+\subfloat[Vapor velocity]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T62_T64_Uvap_ref.pdf}
+\label{fig:30T62_T64_Uvap}
+}
+\caption{Simulation results for cases 30G2P26W16Te62 \& Te64}
+\label{fig:deb_cfd_30T62_T64}
+\end{figure}
+
+
+\npar
+
+The void fraction (Figure \ref{fig:30T62_T64_alpha}) appears globally overestimated over the whole radial section, with a difference $\alpha_{CFD} - \alpha_{exp} \approx 10\%$ at the wall. However the results seem to match the very low void fractions region ($\alpha < 3\%$) and finds a pure liquid flow roughly at the same radial position as the measurements ($r/R \approx 0.5$ and $0.3$ for Te62 and Te64 cases respectively).
+
+\npar
+
+On the other hand, the bubble diameter (Figure \ref{fig:30T62_T64_dV}) is largely underestimated by vanishing rapidly when $r/R < 0.9$ which is not observed experimentally. Measurements contrarily show a roughly constant bubble diameter after a small increase. The simulations yet present an acceptable agreement with the experiments near the wall and even present a slight growth of the bubble diameter before its immediate decrease. \textbf{Such a discrepancy combined to a too large void fraction points towards an erroneous estimation of bubble break-up and / or condensation.}
+
+\npar
+
+The vapor velocity profiles (Figure \ref{fig:30T62_T64_Uvap}) are in accordance with the DEBORA measurements, both in the values and profile shape. \textbf{This may be supporting the evaluation of the interfacial momentum transfer determining the drift velocity between liquid and vapor.}
+
 
 \subsection{Saturated Boiling Cases}
 
-Cases 30Te66 and 30Te70
+Next we simulate two saturated cases that experimentally present a non-zero void fraction at the tube center : cases 30G2P26W16Te66 and Te70. Results are presented of Figure \ref{fig:deb_cfd_30T66_T70}.
+
+\begin{figure}[!h]
+\centering
+\subfloat[Void fraction]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_T70_alpha_ref.pdf}
+\label{fig:30T66_T70_alpha}
+}
+\subfloat[Bubble diameter]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_T70_dV_ref.pdf}
+\label{fig:30T66_T70_dV}
+}
+\\
+\subfloat[Vapor velocity]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_T70_Uvap_ref.pdf}
+\label{fig:30T66_T70_Uvap}
+}
+\caption{Simulation results for cases 30G2P26W16Te66 \& Te70}
+\label{fig:deb_cfd_30T66_T70}
+\end{figure}
+
+Similar to the subcooled cases, the void fraction (Figure \ref{fig:30T66_T70_alpha}) is overestimated over the whole section. Case Te66 presents a wall overestimation of approximately 10\% as for the subcooled simulations (Figure \ref{fig:30T62_T64_alpha})and matches the radial position where $\alpha \approx 0$. On the contrary, case Te70 is largely overestimated over the whole section, which can be explained because the liquid temperature is close to saturation, strongly limiting the impact of condensation.
+
+\npar
+
+Bubble diameter (Figure \ref{fig:30T66_T70_dV}) for the Te66 case behaves close to the subcooled cases, with a large overestimation under the sharp decrease when $r/R < 0.8$. However, case Te70 presents a a different profile with a larger growth in bubble diameter nearly matching maximum experimental value at $r/R \approx 0.6$, but then decreases too rapidly. Recalling thermal results for the 8G2P26W16Te70.3 case presenting similar operating conditions (Figure \ref{fig:8T66_T70_TL}), $r/R \approx 0.6$ corresponds to the radial position where the computed liquid temperature becomes lower than saturation temperature, enabling condensation to occur. This tends to indicate that \textbf{condensation may be responsible for most of the bubble diameter underestimation in the sub-cooled region}. On the contrary, \textbf{coalescence and break-up terms alone seem to be able to reproduce the bubble diameter increase before condensation starts}.
+
+\npar
+
+Finally, vapor velocity (Figure \ref{fig:30T66_T70_Uvap}) is correctly reproduced for the Te66 case while the Te70 simulation do not reproduce the plateau observed in the measurements by keeping a parabolic profile from which the experiment deviates. The velocity magnitude achieved for the Te70 case are however coherent with the experiments. 
+
 
 \section{Simulations Sensitivity Tests}
 
 
-\subsection{Correction of the Wall Heat Flux}
-
-Test of correction for 30Te66 and 30Te70
+\subsection{Sensitivity to Wall Heat Flux Correction}
 
 
-\subsection{Sensitivity to Condensation and Bubble Break-Up}
+%%
 
-Some sensitivity to Break-Up term and Condensation term if relevant
+
+
+%\subsection{Sensitivity to Condensation and Bubble Break-Up}
+%
+%Some sensitivity to Break-Up term and Condensation term if relevant
 
 
 \subsection{Influence of a Wall Boiling Parameter : the Nucleation Site Density}
