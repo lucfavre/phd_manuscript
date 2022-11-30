@@ -680,6 +680,7 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \end{tikzpicture}
 }
 
+
 \fbox{
 
 \begin{tikzpicture}[scale=2.0]
@@ -1810,5 +1811,64 @@ coordinates
 \end{tikzpicture}
 
 \endpgfgraphicnamed
+
+
+
+
+\fbox{
+
+\begin{tikzpicture}[scale=2.0]
+
+\tikzmath{\length=3; \diam=0.6;};
+
+\coordinate (A1) at (0,0);
+\coordinate (A2) at ($(A1) + (0,\length)$);
+\coordinate (B1) at (\diam,0);
+\coordinate (B2) at ($(B1)+(0,\length)$);
+
+\draw (A1) -- (A2);
+\draw (B1) -- (B2);
+
+\draw [->, >=latex, blue!70!black] ($(A1)+({\diam / 2},0)$) --++ (0,0.4) node[very near start, below right]{$U_{e}$};
+
+
+\foreach \z in {1,...,4}
+{
+\coordinate (P1) at (0,{\z * \length / 5});
+\coordinate (P2) at (\diam, {\z * \length / 5});
+
+\draw[->, >=latex, red!80!black] ($(P1)+(-0.4,0)$) -- (P1);
+\draw[->, >=latex, red!80!black] ($(P2)+(0.4,0)$) -- (P2);
+
+}
+
+
+\draw[red!80!black] (0,{\length / 2}) node[left]{$\phi_{w}$};
+\draw[red!80!black] (\diam,{\length / 2}) node[right]{$\phi_{w}$};
+
+\draw[orange!50!black, densely dotted] (P1)--(P2) node[very near end, above right]{\footnotesize{~Mesures}};
+
+\draw[green!50!black, densely dashed, <->,>=latex] ($(B1)+(0.5,0)$) -- ($(P2) + (0.5,0)$) node[midway,right]{$L_{heat}$};
+
+\tikzmath{\bubrad=0.03;};
+\foreach \i in {1,...,10}
+{
+
+\draw ({\bubrad+rnd*(\diam-2*\bubrad)}, {\length / 2 + rnd*\length /2}) circle(\bubrad);
+
+\draw ({\bubrad+rnd*(\diam-2*\bubrad)}, {\length / 2 + rnd*\length /2}) circle(\bubrad);
+
+\draw ({\bubrad+rnd*(\diam-2*\bubrad)}, {\length / 2 + rnd*\length /2}) circle(\bubrad);
+
+
+}
+
+
+\end{tikzpicture}
+
+
+}
+
+
 
 \end{document}

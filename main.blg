@@ -9,14 +9,12 @@ Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: FrontBackMatter/Titlepage.aux
 Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: FrontBackMatter/Titleback.aux
-Reallocating 'name_of_file' (item size: 1) to 31 items.
-A level-1 auxiliary file: FrontBackMatter/Dedication.aux
 Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: FrontBackMatter/Abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: FrontBackMatter/Resume.aux
 Reallocating 'name_of_file' (item size: 1) to 33 items.
 A level-1 auxiliary file: FrontBackMatter/Publications.aux
-Reallocating 'name_of_file' (item size: 1) to 36 items.
-A level-1 auxiliary file: FrontBackMatter/Acknowledgments.aux
 Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: FrontBackMatter/Contents.aux
 Reallocating 'name_of_file' (item size: 1) to 29 items.
@@ -64,13 +62,12 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 25300 items.
+Reallocating 'field_info' (item size: 4) to 26000 items.
 Database file #1: main-blx.bib
 Database file #2: bib_v7.bib
 Reallocating 'str_pool' (item size: 1) to 130000 items.
 Reallocating 'str_pool' (item size: 1) to 195000 items.
 Reallocating 'str_pool' (item size: 1) to 260000 items.
-Warning--I didn't find a database entry for "knuth:1974"
 Warning--I didn't find a database entry for "guelfi2007"
 Warning--I didn't find a database entry for "ruyer2009"
 Warning--I didn't find a database entry for "manon2000"
@@ -88,6 +85,12 @@ Warning--I didn't find a database entry for "cole1960"
 Warning--I didn't find a database entry for "unal1976"
 Warning--I didn't find a database entry for "delvalle1985"
 Warning--I didn't find a database entry for "leduc1995"
+Warning--I didn't find a database entry for "kledy_DEBORA"
+Warning--I didn't find a database entry for "mimouni_debora"
+Warning--I didn't find a database entry for "guelfi_neptune"
+Warning--I didn't find a database entry for "bestion_debora"
+Warning--I didn't find a database entry for "baglietto_debora"
+Warning--I didn't find a database entry for "montout"
 Warning--I didn't find a database entry for "favre_nureth19"
 Warning--I didn't find a database entry for "delvalle_phd"
 Biblatex version: 3.18
@@ -95,7 +98,7 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 125 entries,
             6399 wiz_defined-function locations,
-            2476 strings with 210415 characters,
+            2481 strings with 210455 characters,
 and the built_in function-call counts, 1574193 in all, are:
 = -- 91238
 > -- 107767
@@ -134,4 +137,4 @@ warning$ -- 0
 while$ -- 19512
 width$ -- 0
 write$ -- 5980
-(There were 20 warnings)
+(There were 25 warnings)

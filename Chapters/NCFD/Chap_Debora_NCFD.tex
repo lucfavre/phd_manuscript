@@ -1,7 +1,11 @@
 \chapter{NEPTUNE\_CFD Simulations of DEBORA Cases}
 \label{chap:debora_ncfd}
 
-Due to the large amount of measurements along with its scaling conditions with PWR flows, the DEBORA cases have been often used for validation of multiphase simulation tools, from simple 1D / 2D codes \cite{kledy_DEBORA, gueguen_contribution_2013, manon_contribution_2000} to CFD softwares \cite{mimouni_debora, guelfi_neptune, bestion_debora, baglietto_debora}, helping to conduct separate validation and comparison of several modeling aspects involved in such codes (interfacial heat and momentum transfer, turbulence, interfacial area transport, etc.). 
+\minitoc
+
+\section{Introduction}
+
+Due to the large amount of measurements along with its scaling conditions with PWR flows, the DEBORA cases have been often used for validation of multiphase simulation tools, from simple 1D / 2D codes \cite{kledy_DEBORA, gueguen_contribution_2013, manon_contribution_2000} to CFD softwares \cite{mimouni_debora, guelfi_neptune, bestion_debora, baglietto_debora, montout}, helping to conduct separate validation and comparison of several modeling aspects involved in such codes (interfacial heat and momentum transfer, turbulence, interfacial area transport, etc.). 
 
 \npar
 
@@ -31,7 +35,7 @@ The boundary conditions are:
 \item Uniform heat flux for $0.2$\ m $\leq z \leq$ 3.5\ m ;
 \item Adiabatic wall for $z<0.2$\ m and $z>3.7$\ m ;
 \item Uniform outlet pressure ;
-\item Uniform inlet velocity ;
+\item Uniform liquid inlet velocity and temperature ;
 \item Symmetry condition on remaining faces.
 \end{itemize}
 
@@ -116,7 +120,7 @@ One of the most remarkable impact of the mesh concerns the liquid temperature in
 
 
 
-\section{C800 Cases Simulation : Thermal Measurements}
+\section{C800 Cases Simulations : Thermal Measurements}
 
 In this Section, we focus our attention on cases from the 8G2P26W16 series to assess liquid and wall temperature predictions. We sub-divide the case in three parts depending on the degree of subcooling at the outlet in order to cover both single-phase and fully boiling cases.
 
@@ -221,7 +225,7 @@ Finally, we focus on saturated cases 8G2P26W16Te66.6 and Te70.3, both having an 
 \end{figure}
 
 
-Contrary to previous observations in subcooled cases, the liquid temperature profiles (Figure \ref{fig:8T66_T70_TL}) are are overestimated over the whole radial section for both cases. The shape exhibited are however similar to the experiments, with a flattening of the liquid temperature for the Te70.3 case.
+Contrary to previous observations in subcooled cases, the liquid temperature profiles (Figure \ref{fig:8T66_T70_TL}) are are overestimated ($\approx +0.6\degC$) over the whole radial section for both cases. The shape exhibited are however similar to the experiments, with a flattening of the liquid temperature for the Te70.3 case.
 
 \npar
 
@@ -229,8 +233,53 @@ In those conditions, boiling starts immediately at the beginning of the heated l
 
 \npar
 
-Those saturated cases are confirming that \textbf{the boiling model fails to predict the wall temperature}. Moreover, the small yet observed 
+Those saturated cases are confirming that \textbf{the boiling model fails to predict the wall temperature}. 
 
+
+\begin{remark*}{}
+The small yet observed global overestimation of the liquid temperature may be a consequence of a either a too large condensation or interfacial area concentration (\ie small bubble diameter). 
+\end{remark*}
+
+
+
+
+\section{C3000 Cases Simulations : Topology Measurements}
+
+Now that comparisons with thermal measurements have been conducted, we move to assessment of core flow topology predictions by the code. Based on results from the 30G2P26W16 campaign, we will compare the predictions of the void fraction, the bubble diameter and the vapor velocity at the end of the heating length. We will separately focus on subcooled boiling and saturated cases.
+
+
+\subsection{Subcooled Boiling Cases}
+
+Cases with 0 void fraction at center.
+
+\subsection{Saturated Boiling Cases}
+
+Cases 30Te66 and 30Te70
+
+\section{Simulations Sensitivity Tests}
+
+
+\subsection{Correction of the Wall Heat Flux}
+
+Test of correction for 30Te66 and 30Te70
+
+
+\subsection{Sensitivity to Condensation and Bubble Break-Up}
+
+Some sensitivity to Break-Up term and Condensation term if relevant
+
+
+\subsection{Influence of a Wall Boiling Parameter : the Nucleation Site Density}
+
+Comparison between Lemmert, Hibiki and Li
+
+Show HFP along the tube --> impact on flux partition but not at bulk --> too large influence of condensation and interfacial area.
+
+--> Need for a new HFP model, including new laws. 
+
+
+
+\section{Conclusion}
 
 \clearpage
 
