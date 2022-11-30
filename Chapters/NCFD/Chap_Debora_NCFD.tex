@@ -1,11 +1,20 @@
 \chapter{NEPTUNE\_CFD Simulations of DEBORA Cases}
-\label{chap:ncfd}
+\label{chap:debora_ncfd}
 
-In this Chapter, we present neptune\_cfd simulations of the DEBORA experiment. The objective is to assess the current modeling for dispersed two-phase boiling flow implemented in the code. To do so, we will simulate cases from the different campaigns of the DEBORA database (C800 and C3000) to conduct comparisons of void faction, bubble diamter, vapor velocity, liquid temperature and wall temperature profiles.
+Due to the large amount of measurements along with its scaling conditions with PWR flows, the DEBORA cases have been often used for validation of multiphase simulation tools, from simple 1D / 2D codes \cite{kledy_DEBORA, gueguen_contribution_2013, manon_contribution_2000} to CFD softwares \cite{mimouni_debora, guelfi_neptune, bestion_debora, baglietto_debora}, helping to conduct separate validation and comparison of several modeling aspects involved in such codes (interfacial heat and momentum transfer, turbulence, interfacial area transport, etc.). 
+
+\npar
+
+In this Chapter, we present neptune\_cfd simulations of the DEBORA experiment. The objective is to assess the current modeling of the code for dispersed two-phase boiling flows. To do so, we will simulate cases from the different campaigns of the DEBORA database (C800 and C3000) to conduct comparisons of void faction, bubble diameter, vapor velocity, liquid temperature and wall temperature profiles.
+
+\npar
+
+As identified in Chapter \ref{chap:debora}, our focus will be on cases from the G2P26W16 series, since they provide the most extensive set of measurements in very close operating conditions.
+
 
 \section{Simulation Setup}
 
-Since the geometry of the experiment presents an axisymmetry, we simplify the simulation setup in order to realize a 2D axisymmetric computation. The computational domain consists of a 1$\degree$ angular section of radius $R=9.6$\ mm and 3.85\ m length (Figure \ref{fig:deb_cfd_domain}).
+Since the geometry of the DEBORA experiment presents an axisymmetry, we simplify the simulation setup in order to realize a 2D axisymmetric computation. The computational domain consists of a 1$\degree$ angular section of radius $R=9.6$\ mm and 3.85\ m length (Figure \ref{fig:deb_cfd_domain}).
 
 
 \begin{figure}[!h]
@@ -26,7 +35,9 @@ The boundary conditions are:
 \item Symmetry condition on remaining faces.
 \end{itemize}
 
-The inlet section before heating is approximately $10D_{h}$ long and the extracted radial profile for comparisons is located at the end of the heating length. 
+The inlet section before heating is approximately $10D_{h}$ long and the extracted radial profile for comparisons is located at the end of the heating length. The angular section consists of 1 mesh while radial and axial direction are uniformly discretized. Four meshes are considered, presented on Table \ref{tab:deb_cfd_msh} and Figure \ref{fig:deb_cfd_msh_rad}.
+
+
 
 \begin{table}[!h]
 \centering
@@ -42,6 +53,7 @@ Number of cells (radial $\times$ axial) & 10  $\times$ 100 & 20 $\times$ 200 & 4
 
 \end{table}
 
+\npar
 
 \begin{figure}[!h]
 \centering
@@ -62,9 +74,19 @@ Number of cells (radial $\times$ axial) & 10  $\times$ 100 & 20 $\times$ 200 & 4
 \end{figure}
 
 
+\npar
+
+The computation runs using the transient solver of NCFD for a long enough physical time ensuring temporal stabilization and convergence of the results. 
+
+\begin{note*}{}
+First simulated case was simulated up to a physical time of 40\ s, ensuring the time-convergence. Further simulations used this first case as a restart point, allowing to reach time-convergence in less than 10\ s when changing boundary conditions.  
+\end{note*}
+
+
 
 \section{Mesh Sensitivity Study}
 
+On Figure \ref{fig:deb_cfd_msh_sensi}, we present simulation results for the 4 meshes (Table \ref{tab:deb_cfd_msh}) of the case 30G2P26W16Te66.6. 
 
 \begin{figure}[!h]
 \centering
@@ -86,67 +108,128 @@ Number of cells (radial $\times$ axial) & 10  $\times$ 100 & 20 $\times$ 200 & 4
 \end{figure}
 
 
+We see that the different meshes provide similar results for the void fraction, bubble diameter, vapor velocity and liquid temperature. This is particularly true for the M4 and M8 meshes, allowing to assume that an acceptable grid convergence is reached with the M4 mesh. \textbf{Therefore, further simulations will be conducted using the M4 mesh.}
+
+\begin{remark*}
+One of the most remarkable impact of the mesh concerns the liquid temperature in the wall-adjacent cell. As the mesh refines, the strong temperature gradient at the wall is logically better captured, inducing a net rise in the liquid temperature when $r/R \to 1$.
+\end{remark*}
+
 
 
 \section{C800 Cases Simulation : Thermal Measurements}
 
+In this Section, we focus our attention on cases from the 8G2P26W16 series to assess liquid and wall temperature predictions. We sub-divide the case in three parts depending on the degree of subcooling at the outlet in order to cover both single-phase and fully boiling cases.
+
+
+
 \subsection{High Subcooling Cases}
+
+We start by simulating cases 8G2P26W16Te31.5 and Te44.9 which both have an outlet quality $x_{eq,out}<-0.25$, meaning that the fluid remains in its liquid phase along nearly the entire heating length. Results obtained for those cases are presented on Figure \ref{fig:deb_cfd_8T33_T44}.
 
 \begin{figure}[!h]
 \centering
 \subfloat[Liquid temperature]{
 \includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T31_T44_TL_ref.pdf}
+\label{fig:8T31_T44_TL}
 }
 \subfloat[Wall temperature vs. axial position]{
 \includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_ref.pdf}
+\label{fig:8T31_T44_Tw}
 }
 \\
 \subfloat[Wall temperature vs. local quality]{
 \includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_x_ref.pdf}
+\label{fig:8T31_T44_Tw_x}
 }
 \caption{Simulation results for cases 8G2P26W16Te31. 5\& Te44.9}
 \label{fig:deb_cfd_8T33_T44}
 \end{figure}
 
+\npar
+
+The liquid temperature profiles are fairly reproduced with experimental the parabolic shape correctly captured along with quite precise prediction of the temperature values in the bulk (Figure \ref{fig:8T31_T44_TL}). Still, we note that an overestimation near the wall and a small underestimation (less than $1\degC$) when approaching the center of the pipe.
+
+\npar
+
+Wall temperature predictions in the single-phase region present a good agreement with the experimental measurements along the axial positions (Figure \ref{fig:8T31_T44_Tw}). This is further verified by transposition along the local quality $x_{eq}$ (Figure \ref{fig:8T31_T44_Tw_x}) gathering all the measurements from the 8G2P26W16 campaign, showing an average error of approximately $1 \degC$ up to $x_{eq} \approx -0.5$.
+
+\npar
+
+Those comparisons highlight the validation of the code for the single-phase flow part, implying that \textbf{the local liquid heat transfer coefficient (Eq. \ref{eq:ncfd_hfc}) is correctly computed along with a good heat transport along the radial direction}.
 
 
 \subsection{Low Subcooling Cases}
+
+Next cases to be simulated are 8G2P26W16Te55.7 and Te61.5. Their outlet quality is closer to saturation with $x_{eq,out} \geq -0.1$ and thus present a subcooled boiling region during a significant portion of the heating length. However, the bulk flow is expected to stay fully liquid in those conditions (Figure \ref{fig:G2P26W16_alpha}). The results are presented of Figure \ref{fig:deb_cfd_8T55_T61}.
 
 
 \begin{figure}[!h]
 \centering
 \subfloat[Liquid temperature]{
 \includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_T61_TL_ref.pdf}
+\label{fig:8T55_T61_TL}
 }
 \subfloat[Wall temperature vs. axial position]{
 \includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_ref.pdf}
+\label{fig:8T55_T61_Tw}
 }
 \\
 \subfloat[Wall temperature vs. local quality]{
 \includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_x_ref.pdf}
+\label{fig:8T55_T61_Tw_x}
 }
 \caption{Simulation results for cases 8G2P26W16Te55.7 \& Te61.5}
 \label{fig:deb_cfd_8T55_T61}
 \end{figure}
 
+\npar
+
+Liquid temperature profiles (Figure \ref{fig:8T55_T61_TL}) are similar to those of the high subcooling cases (Figure \ref{fig:8T31_T44_TL}). The parabolic shape of the measurements is reasonably reproduced, with liquid temperature values close to the experiment. The same discrepancies are observed, namely a overestimation close to the wall and a small underestimation at the center (also lower than $1\degC$).
+
+\npar
+
+However, the wall temperature start to show significant discrepancies with the measurements (Figure \ref{fig:8T55_T61_Tw}). The deviation from the linear profile observed in the pure-single phase region towards a stabilization corresponding to the boiling regime fails to be reproduced (Figure \ref{fig:8T55_T61_Tw_x}). First, the temperature plateau appears to start later than the experiment (around $x_{eq}\approx -0.3$ for the simulations contrary to $x_{eq} \approx -0.4$ for the experiments) and further reaches a wall temperature up to $6 \degC$ above the measurements.
+
+\npar
+Albeit the liquid temperature seems correctly distributed along the radial direction in the subcooled boiling region (also meaning that any amount of vapor potentially produced at the wall is correctly re-condensed), the wall temperature behavior significantly deviates from the experiments both by missing the ONB and exhibiting a too large superheat in the boiling region. \textbf{This consequently casts interrogations towards the modeling of the wall temperature in the code, which is a result of the wall boiling model (Section \ref{sec:ncfd_HFP}).}
+
+
+
 \subsection{Saturated Cases}
+
+Finally, we focus on saturated cases 8G2P26W16Te66.6 and Te70.3, both having an outlet quality $x_{eq,out} > 0$. Under those operating conditions, uncondensed vapor is present in the bulk flow (Figure \ref{fig:G2P26W16_alpha}). Results of the simulation sfor those cases are presented on Figure \ref{fig:deb_cfd_8T66_T70}.
+
 
 
 \begin{figure}[!h]
 \centering
 \subfloat[Liquid temperature]{
 \includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_ref.pdf}
+\label{fig:8T66_T70_TL}
 }
 \subfloat[Wall temperature vs. axial position]{
 \includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_ref.pdf}
+\label{fig:8T66_T70_Tw}
 }
 \\
 \subfloat[Wall temperature vs. local quality]{
 \includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_x_ref.pdf}
+\label{fig:8T66_T70_Tw_x}
 }
 \caption{Simulation results for cases 8G2P26W16Te66.6 \& Te70.3}
 \label{fig:deb_cfd_8T66_T70}
 \end{figure}
+
+
+Contrary to previous observations in subcooled cases, the liquid temperature profiles (Figure \ref{fig:8T66_T70_TL}) are are overestimated over the whole radial section for both cases. The shape exhibited are however similar to the experiments, with a flattening of the liquid temperature for the Te70.3 case.
+
+\npar
+
+In those conditions, boiling starts immediately at the beginning of the heated length. Therefore, wall temperature is expected to rapidly stabilize to the boiling temperature, which is actually what happens in the simulations (Figure \ref{fig:8T66_T70_Tw})). As previously noted for the low subcooling cases, the wall temperature during boiling is overestimated by approximately $6\degC$. 
+
+\npar
+
+Those saturated cases are confirming that \textbf{the boiling model fails to predict the wall temperature}. Moreover, the small yet observed 
 
 
 \clearpage
