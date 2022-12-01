@@ -18,9 +18,8 @@ The NEPTUNE\_CFD project (started in 2001) is a reasearch program coordinated by
 \item Study the Loss Of Coolant Accident (LOCA) to predict fuel rod cladding temperature.
 \end{itemize}
 
-The code consists of a local three-dimensional modeling based on a two-fluid one pressure approach combined with mass, momentum and energy conservation equations for each phase\cite{guelfi2007}. 
+As a multiphase eulerian code, NEPTUNE\_CFD consists of a local three-dimensional  modeling based on a two fluids-one pressure approach combined with mass, momentum and energy conservation equations for each phase\cite{guelfi_neptune_2007}. 
 
- is an eulerian multiphase CFD solver co-developed 
 
 \npar
 %The NEPTUNE\_CFD solver can handle several types of multiphase flows, \eg dispersed vapor-liquid flow of a same component, mixed gas-liquid-solid particles flow of different components, or multiple forms of a single component (dispersed vapor/continuous liquid, dispersed liquid/continuous vapor, continuous liquid/continuous vapor, etc.).
@@ -28,27 +27,27 @@ The constitutive equations are solved using a pressure correction, and is based 
 
 \npar
 
-The simulations presented in this thesis have all been conducted using the NEPTUNE\_CFD 7.0 modeling framework for dispersed bubbly flows. In the next sections, we will detail the constitutive equations and closures laws of the code for the simulation of boiling bubbly flows.
+The simulations presented in this thesis have all been conducted using the NEPTUNE\_CFD 7.0 modeling framework for dispersed bubbly flows. In the next sections, we will detail the constitutive equations and physical modeling of the code for the simulation of boiling bubbly flows.
 
 
 \section{Governing Equations for Turbulent Boiling Bubbly Flows}
 
-To simulate two-phase dispersed boiling flows, NEPTUNE\_CFD solves the ensemble-averaged equations of mass conservation, momentum balance and energy conservation for each phase : 
+To simulate two-phase dispersed boiling flows, NEPTUNE\_CFD solves the ensemble-averaged equations of mass conservation, momentum balance and energy conservation for each phase (see Ishii \cite{ishii_multiphase_flows} for details on the derivation).
 %As a reminder, the ensemble-averaging of a physical quantity $F_{k}$ for any phase $k$ in a multiphase flows is defined as:
 
 
 
-\subsection{Mass Conservation :}
+\subsection{Mass Conservation}
 \begin{equation}
 	\label{eq:mass}
 %MASS
 	\dtime{\alpha_{k}\rho_{k}} + \divg{\alpha_{k}\rho_{k} \vect{U_{k}}} = \orangemath{\Gamma_{k}}
 \end{equation}
 
-Where $\alpha_{k}$, $\rho_{k}$, $\vect{U_{k}}$ are the time fraction, average density and velocity of phase $k$ ; $\Gamma_{k}=\Gamma_{k,i}+\Gamma_{k,w}$ the interfacial mass transfer term per unit of volume and time splitted between bulk and wall contribution.
+Where $\alpha_{k}$, $\rho_{k}$, $\vect{U_{k}}$ are the time fraction, average density and velocity of phase $k$ ; $\orangemath{\Gamma_{k}}=\Gamma_{k,i}+\Gamma_{k,w}$ the interfacial mass transfer term per unit of volume and time splitted between bulk and wall contribution.
 Subscripts $k= L$ or $V$ denotes the liquid or vapor phase, $i$ the interfacial quantities and $w$ the wall contribution.
 
-\subsection{Momentum Balance :}
+\subsection{Momentum Balance}
 
 \begin{equation}
 	\label{eq:momentum}
@@ -56,9 +55,9 @@ Subscripts $k= L$ or $V$ denotes the liquid or vapor phase, $i$ the interfacial 
 	\dtime{\alpha_{k}\rho_{k}\vect{U_{k}}} + \vecdivg{\alpha_{k}\rho_{k} \vect{U_{k}}\otimes \vect{U_{k}}} = -\alpha_{k}\grad{P} + \orangemath{\vect{F_{k,i}}} + \orangemath{\Gamma_{k}}\vect{U_{k,i}} + \alpha_{k}\rho_{k}\vect{g} + \vecdivg{\alpha_{k} \parth{ \tens{\tau_{k,m}} + \orangemath{\tens{\tau_{k,T}}} }}
 \end{equation}
 
-Where $P$ is the pressure, $\vect{g}$ the gravity, $\vect{F_{k,i}}$ the interfacial forces accounting for momentum transfer between phases per unit of volume and time, $\vect{U_{k,i}}$ the interfacial velocity, $\tens{\tau_{k,m}}$ and $\tens{\tau_{k,T}}$ respectively the viscous and turbulent (or Reynolds) stress tensor. Subscript $m$ and $T$ respectively denote the molecular (or laminar) and turbulent terms.
+Where $P$ is the pressure, $\vect{g}$ the gravity, $\orangemath{ \vect{F_{k,i}} }$ the interfacial forces accounting for momentum transfer between phases per unit of volume and time, $\vect{U_{k,i}}$ the interfacial velocity, $\tens{\tau_{k,m}}$ and $\orangemath{ \tens{\tau_{k,T}} }$ respectively the viscous and turbulent (or Reynolds) stress tensor. Subscript $m$ and $T$ respectively denote the molecular (or laminar) and turbulent terms.
 
-\subsection{Energy Conservation :}
+\subsection{Energy Conservation}
 
 \begin{equation}
 	\label{eq:energy}
@@ -69,37 +68,72 @@ Where $P$ is the pressure, $\vect{g}$ the gravity, $\vect{F_{k,i}}$ the interfac
 \end{aligned}
 \end{equation}
 
-Where $H_{k}=e_{k}+\frac{U_{k}^{2}}{2}+\frac{P}{\rho_{k}}=h_{k}+\frac{U_{k}^{2}}{2}$ is the total enthalpy of phase $k$, $H_{k,i}$ the interfacial-averaged enthalpy, $Q_{k,i}$ the interfacial heat flux per unit of volume and time, $\lambda_{k,m}$ and $\lambda_{k,T}$ respectively being the laminar and turbulent thermal conductivity, $T_{k}$ the temperature, $Q_{k,w}$ the heat flux from the wall to phase $k$ per unit of volume and time.
+Where $H_{k}=e_{k}+\dfrac{U_{k}^{2}}{2}+\dfrac{P}{\rho_{k}}=h_{k}+\dfrac{U_{k}^{2}}{2}$ is the total enthalpy of phase $k$, $H_{k,i}$ the interfacial-averaged enthalpy, $\orangemath{ Q_{k,i} }$ the interfacial heat flux per unit of volume and time, $\lambda_{k,m}$ and $\orangemath{ \lambda_{k,T} }$ respectively being the laminar and turbulent thermal conductivity, $T_{k}$ the temperature, $\orangemath{ Q_{k,w} }$ the heat flux from the wall to phase $k$ per unit of volume and time.
 
 \npar
 
-However, this ensemble-average approach requires a given number of closure laws since this mathematical operation removes most of the information about smaller scales physics such as interfacial exchanges between phases or wall-fluid interaction. Terms for which this modeling effort is needed are colored in orange in equations \ref{eq:mass}, \ref{eq:momentum} and \ref{eq:energy}. The chosen expressions for those terms are detailed in subsections \ref{subsec:int_transfers}, \ref{subsec:turbulence} and \ref{subsec:HFP}.
+This ensemble-average approach requires a given number of closure laws since this mathematical averaging operation removes most of the information about smaller scales physics (compared to the mesh size) such as interfacial exchanges between phases or wall-fluid interaction. Terms for which this modeling effort is needed are colored in orange in equations \ref{eq:mass}, \ref{eq:momentum} and \ref{eq:energy}. Following sections detail the physical modeling for each of those terms. 
 
-\section{Interfacial transfers closure laws}
+
+\section{Interfacial Transfers Closure Laws}
 \label{sec:int_transfers}
 
 The interfacial transfers of mass, momentum and energy are respectively noted in equations \ref{eq:mass}, \ref{eq:momentum} and \ref{eq:energy} : $\Gamma_{k}$, $\vect{F_{k,i}}$ and $Q_{k,i}$.
 
-\subsection{Heat and mass transfers :}
+\subsection{Heat and Mass Transfers}
 \label{subsec:ncfd_interf_mass}
 
 
-The mass transfer term, can be written as : $\Gamma_{L,i} + \Gamma_{G,i} = 0$, $\Gamma_{L,w} + \Gamma_{G,w} = 0$ with $\Gamma_{G,w} \geq 0$ in the case of boiling flows. This finally gives $\Gamma_{L}=-\Gamma_{G}$.
+The mass transfer term, can be written as: 
 
-The interfacial heat flux $Q_{k,i}$ can be rewritten in terms of interfacial area concentration $a_{i}$ : $Q_{k,i}=q''_{k,i}a_{i}$. Neglecting the mechanical contribution compared to the thermal terms, the energy jump condition can then be expressed as :
+\begin{align}
+\Gamma_{L,i} + \Gamma_{V,i} = 0\\
+%
+\Gamma_{L,w} + \Gamma_{G,w} = 0
+\end{align}
+with $\Gamma_{V,w} \geq 0$ in the case of boiling flows. This finally gives:
+
+\begin{equation}
+\Gamma_{L}=-\Gamma_{V}
+\end{equation}
+
+\npar
+The interfacial heat flux $Q_{k,i}$ can be rewritten in terms of interfacial area concentration $a_{i}$ : 
+
+\begin{equation}
+Q_{k,i}=q''_{k,i}a_{i}
+\end{equation} 
+
+\npar
+
+Neglecting the mechanical contribution compared to the thermal terms, the energy jump condition can then be expressed as :
 
 \begin{equation}
 \label{eq:energy_jump}
-\sum_{k=L,G}\parth{\Gamma_{k,i}h_{k,i} + q''_{k,i}a_{i}}=0
+\sum_{k=L,V}\parth{\Gamma_{k,i}h_{k,i} + q''_{k,i}a_{i}}=0
 \end{equation}
 
-The estimation of $h_{k,i}$ is not straightforward since it can either be supposed to be the saturation enthalpy of phase $k$ at the system pressure (H1) or $h_{k,i}$ can be identified to the phase-averaged enthalpy (H2). In NEPTUNE\_CFD, the assumption H2 is chosen, thus giving the bulk condensation rate :
+The estimation of $h_{k,i}$ is not straightforward since it can either be supposed as:
+
+\begin{enumerate}
+\item[H1)] The saturation enthalpy of phase $k$ at the system pressure ;
+\item[H2)] The phase-averaged enthalpy.
+\end{enumerate}
+
+In NEPTUNE\_CFD, the assumption H2 is chosen, thus giving the bulk condensation rate :
 
 \begin{equation}
 \label{eq:condensation_rate}
-\Gamma_{L,i}=\frac{a_{i}\parth{q''_{L,i}+q''_{G,i}}}{h_{G,sat}-h_{L,sat}}
+\Gamma_{L,i}=\frac{a_{i}\parth{q''_{L,i}+q''_{G,i}}}{h_{V}-h_{L}}
 \end{equation}
-The interfacial heat flux densities $q''_{k,i}$ and interfacial area concentration $a_{i}$ are expressed as $q''_{k,i}=C_{k,i}\parth{T_{sat}(P)-T_{k}}$ and $a_{i}=6 \alpha_{G}/d_{G}$, $d_{G}$ being the gas phase Sauter mean bubble diameter. The interfacial area is computed using the transport equation of \textsc{Ruyer} \& \textsc{Seiler}\cite{ruyer2009}.
+
+
+The interfacial heat flux densities $q''_{k,i}$ and interfacial area concentration $a_{i}$ are expressed as:
+
+\begin{equation}
+q''_{k,i}=C_{k,i}\parth{T_{sat}(P)-T_{k}}$ and $a_{i}=6 \alpha_{V}/D_{V}$
+\end{equations}
+with $D_{V}$ being the vapor phase Sauter mean bubble diameter. The interfacial area is computed using the transport equation of \textsc{Ruyer} \& \textsc{Seiler}\cite{ruyer2009}.
 
 For subcooled liquid, the following heat transfer coefficient is used \cite{manon2000}:
 
