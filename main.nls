@@ -1,64 +1,64 @@
 
 \begin{thenomenclature} 
 \nomgroup{A}
-  \item [{BC}]\begingroup Boiling Crisis\nomeqref {0.0}\nompageref{xv}
-  \item [{CHF}]\begingroup Critical Heat Flux\nomeqref {0.0}\nompageref{xv}
-  \item [{DNS}]\begingroup Direct Numerical Simulations\nomeqref {0.0}\nompageref{xv}
-  \item [{HFP}]\begingroup Heat Flux Partitioning\nomeqref {0.0}\nompageref{xv}
-  \item [{PWR}]\begingroup Pressurized Water Reactor\nomeqref {0.0}\nompageref{xv}
-  \item [{RPE}]\begingroup Rayleigh-Plesset Equation\nomeqref {0.0}\nompageref{xv}
-  \item [{SMR}]\begingroup Small Modular Reactor\nomeqref {0.0}\nompageref{xv}
+  \item [{BC}]\begingroup Boiling Crisis\nomeqref {0.0}\nompageref{xiv}
+  \item [{CHF}]\begingroup Critical Heat Flux\nomeqref {0.0}\nompageref{xiv}
+  \item [{DNS}]\begingroup Direct Numerical Simulations\nomeqref {0.0}\nompageref{xiv}
+  \item [{HFP}]\begingroup Heat Flux Partitioning\nomeqref {0.0}\nompageref{xiv}
+  \item [{PWR}]\begingroup Pressurized Water Reactor\nomeqref {0.0}\nompageref{xiv}
+  \item [{RPE}]\begingroup Rayleigh-Plesset Equation\nomeqref {0.0}\nompageref{xiv}
+  \item [{SMR}]\begingroup Small Modular Reactor\nomeqref {0.0}\nompageref{xiv}
 \nomgroup{G}
-  \item [{$\eta$}]\begingroup Thermal diffusivity[m\up{2}/s]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\gamma$}]\begingroup Shear rate [s\up{-1}]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\lambda$}]\begingroup Thermal conductivity [W/m/K]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\mu$}]\begingroup Dynamic viscosity [J.s/m\up{-3}]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\nu$}]\begingroup Kinematic viscosity [m\up{2}/s]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\phi$}]\begingroup Heat flux [J/m\up{2}/s]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\rho$}]\begingroup Density [kg/m\up{3}]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\sigma$}]\begingroup Surface tension [J/m\up{2}]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\theta$, $\dtheta$}]\begingroup Contact angle and half-hysteresis [$\degree$ or rad]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\theta_{i}$}]\begingroup Bubble inclination angle [$\degree$ or rad]\nomeqref {0.0}\nompageref{xv}
+  \item [{$\eta$}]\begingroup Thermal diffusivity[m\up{2}/s]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\gamma$}]\begingroup Shear rate [s\up{-1}]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\lambda$}]\begingroup Thermal conductivity [W/m/K]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\mu$}]\begingroup Dynamic viscosity [J.s/m\up{-3}]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\nu$}]\begingroup Kinematic viscosity [m\up{2}/s]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\phi$}]\begingroup Heat flux [J/m\up{2}/s]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\rho$}]\begingroup Density [kg/m\up{3}]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\sigma$}]\begingroup Surface tension [J/m\up{2}]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\theta$, $\dtheta$}]\begingroup Contact angle and half-hysteresis [$\degree$ or rad]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\theta_{i}$}]\begingroup Bubble inclination angle [$\degree$ or rad]\nomeqref {0.0}\nompageref{xiv}
 \nomgroup{L}
-  \item [{$C$}]\begingroup Force coefficient [-]\nomeqref {0.0}\nompageref{xv}
-  \item [{$D$}]\begingroup Bubble diameter [m]\nomeqref {0.0}\nompageref{xv}
-  \item [{$D_{h}$}]\begingroup Hydraulic diameter [m]\nomeqref {0.0}\nompageref{xv}
-  \item [{$E$}]\begingroup Kinetic energy [J]\nomeqref {0.0}\nompageref{xv}
-  \item [{$F$}]\begingroup Force [N]\nomeqref {0.0}\nompageref{xv}
-  \item [{$G$}]\begingroup Mass flux [$\debm$]\nomeqref {0.0}\nompageref{xv}
-  \item [{$g$}]\begingroup Gravity acceleration [m\up{2}/s]\nomeqref {0.0}\nompageref{xv}
-  \item [{$h_{LV}$}]\begingroup Latent heat of vaporization [J/kg]\nomeqref {0.0}\nompageref{xv}
-  \item [{$K$}]\begingroup Bubble growth constant [-]\nomeqref {0.0}\nompageref{xv}
-  \item [{$L_{c}=\sqrt{\frac{\sigma}{\parth{\rho_{L}-\rho_{V}}g}}$}]\begingroup Capillary length [m]\nomeqref {0.0}\nompageref{xv}
-  \item [{$l_{sl}$}]\begingroup Bubble sliding length [m]\nomeqref {0.0}\nompageref{xv}
-  \item [{$R$}]\begingroup Bubble radius [m]\nomeqref {0.0}\nompageref{xv}
-  \item [{$R_{c}$}]\begingroup Bubble curvature radius [m]\nomeqref {0.0}\nompageref{xv}
-  \item [{$r_{w}$}]\begingroup Bubble foot radius [m]\nomeqref {0.0}\nompageref{xv}
-  \item [{$T$}]\begingroup Temperature [K]\nomeqref {0.0}\nompageref{xv}
-  \item [{$U$}]\begingroup Velocity [m/s]\nomeqref {0.0}\nompageref{xv}
-  \item [{$U_{\tau}$}]\begingroup Wall friction velocity [m/s]\nomeqref {0.0}\nompageref{xv}
-  \item [{$U_{rel}=U_{L}-U_{b}$}]\begingroup Relative velocity [m/s]\nomeqref {0.0}\nompageref{xv}
-  \item [{$V$}]\begingroup Volume [m\up{3}]\nomeqref {0.0}\nompageref{xv}
+  \item [{$C$}]\begingroup Force coefficient [-]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$D$}]\begingroup Bubble diameter [m]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$D_{h}$}]\begingroup Hydraulic diameter [m]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$E$}]\begingroup Kinetic energy [J]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$F$}]\begingroup Force [N]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$G$}]\begingroup Mass flux [$\debm$]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$g$}]\begingroup Gravity acceleration [m\up{2}/s]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$h_{LV}$}]\begingroup Latent heat of vaporization [J/kg]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$K$}]\begingroup Bubble growth constant [-]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$L_{c}=\sqrt{\frac{\sigma}{\parth{\rho_{L}-\rho_{V}}g}}$}]\begingroup Capillary length [m]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$l_{sl}$}]\begingroup Bubble sliding length [m]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$R$}]\begingroup Bubble radius [m]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$R_{c}$}]\begingroup Bubble curvature radius [m]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$r_{w}$}]\begingroup Bubble foot radius [m]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$T$}]\begingroup Temperature [K]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$U$}]\begingroup Velocity [m/s]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$U_{\tau}$}]\begingroup Wall friction velocity [m/s]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$U_{rel}=U_{L}-U_{b}$}]\begingroup Relative velocity [m/s]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$V$}]\begingroup Volume [m\up{3}]\nomeqref {0.0}\nompageref{xiv}
 \nomgroup{N}
-  \item [{$\Ca =\frac{\mu_{L}U_{L}}{\sigma}$}]\begingroup Capillary number [-]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\Eo =\frac{\parth{\rho_{L}-\rho_{V}}gR^{2}}{\sigma}$}]\begingroup Eotvos number [-]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\Fr =\frac{\rho_{L}U_{L}^{2}}{\parth{\rho_{L}-\rho_{V}}gR}$}]\begingroup Froude number [-]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\Ja =\frac{\rho_{L}c_{P,L}\bars{T-T_{sat}}}{\rho_{V}h_{LV}}$}]\begingroup Jakob number [-]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\Pr =\frac{\nu}{\eta}$}]\begingroup Prandtl number [-]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\Re_{b}=\frac{U_{rel}D_{b}}{\nu_{L}}$}]\begingroup Bubble Reynolds number [-]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\Re_{D_{h}}=\frac{G_{L}D_{h}}{\mu_{L}}$}]\begingroup Liquid bulk Reynolds number [-]\nomeqref {0.0}\nompageref{xv}
-  \item [{$\Sr =\frac{2 \gamma R}{\bars{U_{rel}}}$}]\begingroup Non-dimensional shear rate [-]\nomeqref {0.0}\nompageref{xv}
-  \item [{$y^{+} =\frac{yU_{\tau}}{\nu_{L}}$}]\begingroup Non-dimensional wall distance [-]\nomeqref {0.0}\nompageref{xv}
+  \item [{$\Ca =\frac{\mu_{L}U_{L}}{\sigma}$}]\begingroup Capillary number [-]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\Eo =\frac{\parth{\rho_{L}-\rho_{V}}gR^{2}}{\sigma}$}]\begingroup Eotvos number [-]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\Fr =\frac{\rho_{L}U_{L}^{2}}{\parth{\rho_{L}-\rho_{V}}gR}$}]\begingroup Froude number [-]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\Ja =\frac{\rho_{L}c_{P,L}\bars{T-T_{sat}}}{\rho_{V}h_{LV}}$}]\begingroup Jakob number [-]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\Pr =\frac{\nu}{\eta}$}]\begingroup Prandtl number [-]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\Re_{b}=\frac{U_{rel}D_{b}}{\nu_{L}}$}]\begingroup Bubble Reynolds number [-]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\Re_{D_{h}}=\frac{G_{L}D_{h}}{\mu_{L}}$}]\begingroup Liquid bulk Reynolds number [-]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$\Sr =\frac{2 \gamma R}{\bars{U_{rel}}}$}]\begingroup Non-dimensional shear rate [-]\nomeqref {0.0}\nompageref{xiv}
+  \item [{$y^{+} =\frac{yU_{\tau}}{\nu_{L}}$}]\begingroup Non-dimensional wall distance [-]\nomeqref {0.0}\nompageref{xiv}
 \nomgroup{S}
-  \item [{$AM$}]\begingroup Added-Mass\nomeqref {0.0}\nompageref{xv}
-  \item [{$b$}]\begingroup Bubble\nomeqref {0.0}\nompageref{xv}
-  \item [{$D$}]\begingroup Drag\nomeqref {0.0}\nompageref{xv}
-  \item [{$d$}]\begingroup Departure or Downstream\nomeqref {0.0}\nompageref{xv}
-  \item [{$L$}]\begingroup Liquid or Lift\nomeqref {0.0}\nompageref{xv}
-  \item [{$lo$}]\begingroup Lift-off\nomeqref {0.0}\nompageref{xv}
-  \item [{$sat$}]\begingroup Saturation\nomeqref {0.0}\nompageref{xv}
-  \item [{$u$}]\begingroup upstream\nomeqref {0.0}\nompageref{xv}
-  \item [{$V$}]\begingroup Vapor\nomeqref {0.0}\nompageref{xv}
-  \item [{$w$}]\begingroup Wall\nomeqref {0.0}\nompageref{xv}
+  \item [{$AM$}]\begingroup Added-Mass\nomeqref {0.0}\nompageref{xiv}
+  \item [{$b$}]\begingroup Bubble\nomeqref {0.0}\nompageref{xiv}
+  \item [{$D$}]\begingroup Drag\nomeqref {0.0}\nompageref{xiv}
+  \item [{$d$}]\begingroup Departure or Downstream\nomeqref {0.0}\nompageref{xiv}
+  \item [{$L$}]\begingroup Liquid or Lift\nomeqref {0.0}\nompageref{xiv}
+  \item [{$lo$}]\begingroup Lift-off\nomeqref {0.0}\nompageref{xiv}
+  \item [{$sat$}]\begingroup Saturation\nomeqref {0.0}\nompageref{xiv}
+  \item [{$u$}]\begingroup upstream\nomeqref {0.0}\nompageref{xiv}
+  \item [{$V$}]\begingroup Vapor\nomeqref {0.0}\nompageref{xiv}
+  \item [{$w$}]\begingroup Wall\nomeqref {0.0}\nompageref{xiv}
 
 \end{thenomenclature}

@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.1 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -136,6 +136,80 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{basu_wall_2005}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BN}{%
+         family={Basu},
+         familyi={B\bibinitperiod},
+         given={Nilanjana},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=WGR}{%
+         family={Warrier},
+         familyi={W\bibinitperiod},
+         given={Gopinath\bibnamedelima R.},
+         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=DVK}{%
+         family={Dhir},
+         familyi={D\bibinitperiod},
+         given={Vijay\bibnamedelima K.},
+         giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BNWGRDVK1}
+    \strng{fullhash}{BNWGRDVK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    A mechanistic model for wall heat flux partitioning during subcooled flow
+  boiling proposed in Part I of this two-part paper, is validated in this part.
+  As the first step of the validation process, the developed model was applied
+  to experimental data obtained as part of this study. Comparison of the model
+  predictions with the present data shows good agreement. In order to further
+  validate/exercise the model, it was then applied to several data sets
+  available in the literature. Though the data in the literature were for
+  experimental conditions vastly different from those from which the model was
+  originally developed, reasonable agreement between the model predictions and
+  the experimental data were observed. This indicates that the proposed model
+  can be extended to other flow conditions provided the submodels cover the
+  conditions of the experiments. Future work should be directed towards
+  improvement of the various submodels involved to extend their range of
+  applicability, especially the ones related to bubble dynamics. Additionally,
+  it must be kept in mind that the model as proposed is strictly only
+  applicable to vertical up-flow and may not be applicable to other
+  orientations.%
+    }
+    \verb{doi}
+    \verb 10.1115/1.1842785
+    \endverb
+    \field{issn}{0022-1481}
+    \field{number}{2}
+    \field{pages}{141\bibrangedash 148}
+    \field{shortjournal}{Journal of Heat Transfer}
+    \field{shorttitle}{Wall Heat Flux Partitioning During Subcooled Flow
+  Boiling}
+    \field{title}{Wall Heat Flux Partitioning During Subcooled Flow Boiling:
+  Part {II}—Model Validation}
+    \verb{url}
+    \verb https://doi.org/10.1115/1.1842785
+    \endverb
+    \field{volume}{127}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\YIWTGMNK\\Wall-Heat-Flux-P
+    \verb artitioning-During-Subcooled-Flow.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Heat Transfer}
+    \field{day}{15}
+    \field{month}{03}
+    \field{year}{2005}
+    \field{urlday}{23}
+    \field{urlmonth}{06}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{basu_wall_2005-1}{article}{}
     \name{author}{3}{}{%
       {{hash=BN}{%
@@ -214,78 +288,223 @@
     \field{urlyear}{2022}
   \endentry
 
-  \entry{basu_wall_2005}{article}{}
-    \name{author}{3}{}{%
-      {{hash=BN}{%
-         family={Basu},
+  \entry{berne_analyse_1983}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=B}{%
+         family={Berne},
          familyi={B\bibinitperiod},
-         given={Nilanjana},
-         giveni={N\bibinitperiod},
-      }}%
-      {{hash=WGR}{%
-         family={Warrier},
-         familyi={W\bibinitperiod},
-         given={Gopinath\bibnamedelima R.},
-         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=DVK}{%
-         family={Dhir},
-         familyi={D\bibinitperiod},
-         given={Vijay\bibnamedelima K.},
-         giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod},
       }}%
     }
-    \strng{namehash}{BNWGRDVK1}
-    \strng{fullhash}{BNWGRDVK1}
+    \strng{namehash}{B1}
+    \strng{fullhash}{B1}
     \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Analyse critique des modèles d'auto vaporisation utilisés
+  dans le calcul des écoulements diphasiques en conduites}
+    \list{institution}{1}{%
+      {Châtenay-Malabry, Ecole centrale de Paris}%
+    }
+    \field{type}{phdthesis}
+    \field{year}{1983}
+  \endentry
+
+  \entry{bestion_review_2008}{article}{}
+    \name{author}{15}{}{%
+      {{hash=BD}{%
+         family={Bestion},
+         familyi={B\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=AH}{%
+         family={Anglart},
+         familyi={A\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Caraghiaur},
+         familyi={C\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=PP}{%
+         family={Péturaud},
+         familyi={P\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SB}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=AM}{%
+         family={Andreani},
+         familyi={A\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NB}{%
+         family={Niceno},
+         familyi={N\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=KE}{%
+         family={Krepper},
+         familyi={K\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Lucas},
+         familyi={L\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Moretti},
+         familyi={M\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GMC}{%
+         family={Galassi},
+         familyi={G\bibinitperiod},
+         given={M.\bibnamedelima C.},
+         giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Macek},
+         familyi={M\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=VL}{%
+         family={Vyskocil},
+         familyi={V\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Koncar},
+         familyi={K\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Hazi},
+         familyi={H\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BD+1}
+    \strng{fullhash}{BDAHCDPPSBAMNBKELDMFGMCMJVLKBHG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
     \field{sortinit}{B}
     \field{sortinithash}{B}
     \field{abstract}{%
-    A mechanistic model for wall heat flux partitioning during subcooled flow
-  boiling proposed in Part I of this two-part paper, is validated in this part.
-  As the first step of the validation process, the developed model was applied
-  to experimental data obtained as part of this study. Comparison of the model
-  predictions with the present data shows good agreement. In order to further
-  validate/exercise the model, it was then applied to several data sets
-  available in the literature. Though the data in the literature were for
-  experimental conditions vastly different from those from which the model was
-  originally developed, reasonable agreement between the model predictions and
-  the experimental data were observed. This indicates that the proposed model
-  can be extended to other flow conditions provided the submodels cover the
-  conditions of the experiments. Future work should be directed towards
-  improvement of the various submodels involved to extend their range of
-  applicability, especially the ones related to bubble dynamics. Additionally,
-  it must be kept in mind that the model as proposed is strictly only
-  applicable to vertical up-flow and may not be applicable to other
-  orientations.%
+    The {NURESIM} Project of the 6th European Framework Program initiated the
+  development of a new-generation common European Standard Software Platform
+  for nuclear reactor simulation. The thermal-hydraulic subproject aims at
+  improving the understanding and the predictive capabilities of the simulation
+  tools for key two-phase flow thermal-hydraulic processes such as the critical
+  heat flux ({CHF}). As part of a multi-scale analysis of reactor
+  thermal-hydraulics, a two-phase {CFD} tool is developed to allow zooming on
+  local processes. Current industrial methods for {CHF} mainly use the
+  sub-channel analysis and empirical {CHF} correlations based on large scale
+  experiments having the real geometry of a reactor assembly. Two-phase {CFD}
+  is used here for understanding some boiling flow processes, for helping new
+  fuel assembly design, and for developing better {CHF} predictions in both
+  {PWR} and {BWR}. This paper presents a review of experimental data which can
+  be used for validation of the two-phase {CFD} application to {CHF}
+  investigations. The phenomenology of {DNB} and Dry-Out are detailed
+  identifying all basic flow processes which require a specific modeling in
+  {CFD} tool. The resulting modeling program of work is given and the current
+  state-of-the-art of the modeling within the {NURESIM} project is presented.%
     }
     \verb{doi}
-    \verb 10.1115/1.1842785
+    \verb 10.1155/2009/214512
     \endverb
-    \field{issn}{0022-1481}
-    \field{number}{2}
-    \field{pages}{141\bibrangedash 148}
-    \field{shortjournal}{Journal of Heat Transfer}
-    \field{shorttitle}{Wall Heat Flux Partitioning During Subcooled Flow
-  Boiling}
-    \field{title}{Wall Heat Flux Partitioning During Subcooled Flow Boiling:
-  Part {II}—Model Validation}
+    \field{issn}{1687-6075}
+    \field{note}{Publisher: Hindawi}
+    \field{pages}{e214512}
+    \field{title}{Review of Available Data for Validation of Nuresim Two-Phase
+  {CFD} Software Applied to {CHF} Investigations}
     \verb{url}
-    \verb https://doi.org/10.1115/1.1842785
+    \verb https://www.hindawi.com/journals/stni/2009/214512/
     \endverb
-    \field{volume}{127}
+    \field{volume}{2009}
+    \field{langid}{english}
     \verb{file}
-    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\YIWTGMNK\\Wall-Heat-Flux-P
-    \verb artitioning-During-Subcooled-Flow.html:text/html
+    \verb Full Text PDF:C\:\\Users\\Luc\\Zotero\\storage\\654PRVA5\\Bestion et
+    \verb al. - 2008 - Review of Available Data for Validation of Nuresim.pdf:a
+    \verb pplication/pdf;Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\BNXI8CGB\\2
+    \verb 14512.html:text/html
     \endverb
-    \field{journaltitle}{Journal of Heat Transfer}
-    \field{day}{15}
-    \field{month}{03}
-    \field{year}{2005}
-    \field{urlday}{23}
-    \field{urlmonth}{06}
+    \field{journaltitle}{Science and Technology of Nuclear Installations}
+    \field{day}{14}
+    \field{month}{10}
+    \field{year}{2008}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
     \field{urlyear}{2022}
+  \endentry
+
+  \entry{boree_ecoulements_1992}{report}{}
+    \name{author}{5}{}{%
+      {{hash=BJ}{%
+         family={Borée},
+         familyi={B\bibinitperiod},
+         given={J},
+         giveni={J},
+      }}%
+      {{hash=CG}{%
+         family={Charnay},
+         familyi={C\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=FJ}{%
+         family={Fabre},
+         familyi={F\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Legendre},
+         familyi={L\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=MJ}{%
+         family={Magnaudet},
+         familyi={M\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJ+1}
+    \strng{fullhash}{BJCGFJLDMJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Ecoulements diphasiques eau-vapeur avec changement de phase.}
+    \list{location}{1}{%
+      {Toulouse}%
+    }
+    \list{institution}{1}{%
+      {{IMFT} - Interface}%
+    }
+    \field{type}{Technical Report}
+    \field{year}{1992}
   \endentry
 
   \entry{borishanskii_heat_1969}{incollection}{}
@@ -957,6 +1176,56 @@
     \endverb
     \field{journaltitle}{Chemical Engineering}
     \field{year}{1977}
+  \endentry
+
+  \entry{cole_bubble_1967}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CR}{%
+         family={Cole},
+         familyi={C\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CR1}
+    \strng{fullhash}{CR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    Bubble frequencies and departure volumes in nucleate pool boiling have been
+  obtained for a variety of liquids at pressures ranging from 50 to 760 mm. Hg.
+  The bubble dynamic data conclusively show the volumetric vapor flow rate to
+  be a strong function of the Jakob number in qualitative agreement with the
+  heat transfer measurements of Nickelson and Preckshot. The data also indicate
+  the volumetric vapor flow rate per cross section to be independent of the
+  Jakob number, in agreement with existing equations.%
+    }
+    \verb{doi}
+    \verb 10.1002/aic.690130434
+    \endverb
+    \field{issn}{1547-5905}
+    \field{note}{\_eprint:
+  https://onlinelibrary.wiley.com/doi/pdf/10.1002/aic.690130434}
+    \field{number}{4}
+    \field{pages}{779\bibrangedash 783}
+    \field{title}{Bubble frequencies and departure volumes at subatmospheric
+  pressures}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/aic.690130434
+    \endverb
+    \field{volume}{13}
+    \field{langid}{english}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\UITIATGK\\aic.html:text/ht
+    \verb ml
+    \endverb
+    \field{journaltitle}{{AIChE} Journal}
+    \field{year}{1967}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{colombo_prediction_2015}{article}{}
@@ -3249,6 +3518,114 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{ishii_thermo-fluid_2011}{book}{}
+    \name{author}{2}{}{%
+      {{hash=IM}{%
+         family={Ishii},
+         familyi={I\bibinitperiod},
+         given={Mamoru},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HT}{%
+         family={Hibiki},
+         familyi={H\bibinitperiod},
+         given={Takashi},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \keyw{biochemical engineering, Interfacial Area Transport, Mamoru Ishii,
+  Nuclear engineering, Thermo Fluid dynamics, Two Phase Flow}
+    \strng{namehash}{IMHT1}
+    \strng{fullhash}{IMHT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \verb{doi}
+    \verb 10.1007/978-1-4419-7985-8
+    \endverb
+    \field{isbn}{978-1-4419-7984-1 978-1-4419-7985-8}
+    \field{title}{Thermo-Fluid Dynamics of Two-Phase Flow}
+    \verb{url}
+    \verb http://link.springer.com/10.1007/978-1-4419-7985-8
+    \endverb
+    \field{langid}{english}
+    \list{location}{1}{%
+      {New York, {NY}}%
+    }
+    \verb{file}
+    \verb Texte intégral:C\:\\Users\\Luc\\Zotero\\storage\\PBSVR4EM\\Ishii et
+    \verb Hibiki - 2011 - Thermo-Fluid Dynamics of Two-Phase Flow.pdf:applicati
+    \verb on/pdf
+    \endverb
+    \field{year}{2011}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{ishii_drag_1979}{article}{}
+    \name{author}{2}{}{%
+      {{hash=IM}{%
+         family={Ishii},
+         familyi={I\bibinitperiod},
+         given={Mamoru},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ZN}{%
+         family={Zuber},
+         familyi={Z\bibinitperiod},
+         given={Novak},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{IMZN1}
+    \strng{fullhash}{IMZN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{abstract}{%
+    Drag coefficient and relative motion correlations for dispersed two-phase
+  flows of bubbles, drops, and particles were developed from simple similarity
+  criteria and a mixture viscosity model. The results are compared with a
+  number of experimental data, and satisfactory agreements are obtained at wide
+  ranges of the particle concentration and Reynolds number. Characteristics
+  differences between fluid particle systems and solid particle systems at
+  higher Reynolds numbers or at higher concentration regimes were successfully
+  predicted by the model. Results showed that the drag law in various dispersed
+  two-phase flows could be put on a general and unified base by the present
+  method.%
+    }
+    \verb{doi}
+    \verb 10.1002/aic.690250513
+    \endverb
+    \field{issn}{1547-5905}
+    \field{note}{\_eprint:
+  https://onlinelibrary.wiley.com/doi/pdf/10.1002/aic.690250513}
+    \field{number}{5}
+    \field{pages}{843\bibrangedash 855}
+    \field{title}{Drag coefficient and relative velocity in bubbly, droplet or
+  particulate flows}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/aic.690250513
+    \endverb
+    \field{volume}{25}
+    \field{langid}{english}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\L2S2S7WE\\aic.html:text/ht
+    \verb ml
+    \endverb
+    \field{journaltitle}{{AIChE} Journal}
+    \field{year}{1979}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{jens_analysis_1951}{report}{}
     \name{author}{2}{}{%
       {{hash=JWH}{%
@@ -3637,6 +4014,180 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{kledy_developpement_2018}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=KM}{%
+         family={Kledy},
+         familyi={K\bibinitperiod},
+         given={Michel},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \name{editora}{2}{}{%
+      {{hash=DH}{%
+         family={Djeridi},
+         familyi={D\bibinitperiod},
+         given={Henda},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Barre},
+         familyi={B\bibinitperiod},
+         given={Stéphane},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \field{editoratype}{collaborator}
+    \keyw{620, Anemometry, Anénométrie thermique, Convective boiling flows,
+  Écoulement diphasique, Écoulements bouillants convectifs, Haute pression,
+  Hautes pressions, High pressure, Homogeneous model, Hot wire anemometry,
+  Modele homogène}
+    \strng{namehash}{KM1}
+    \strng{fullhash}{KM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Ce travail de thèse constitue une contribution à la caractérisation des
+  écoulements diphasiques bouillants convectifs à haute pression rencontrés
+  dans les réacteurs à eau sous pression ({REP}) ou dans des conditions
+  simulantes.La première partie présente un modèle bi-dimensionnel
+  permettant de décrire le développement d'un écoulement bouillant dans une
+  conduite circulaire (régime à bulle). La modélisation proposée est basée
+  sur les équations locales stationnaires du mélange homogène fermées à
+  l'aide d'un modèle de relaxation thermodynamique. Une confrontation des
+  résultats avec les données expérimentales issues de la banque de donnée
+  {DEBORA} a ensuite montré que si le modèle était capable de rendre compte
+  de manière satisfaisante des résultats expérimentaux, les mécanismes de
+  transport radiaux de la turbulence ainsi que de la vapeur étaient encore mal
+  modélisés.La seconde partie de l'étude traite du développement de la
+  thermo-anémométrie dans l'installation expérimentale {DEBORA}, afin de
+  mesurer de manière colocalisée les champs de vitesse et de température
+  liquide ainsi que le taux de vide en écoulement diphasique bouillant. La
+  procédure expérimentale repose sur l'utilisation de sondes anémométriques
+  classiques (sonde à film {DANTEC}@ 70 µm de diamètre, sonde à fil 2.5µm
+  de 2.5 de diamètre) fonctionnant successivement à différentes surchauffes
+  et pilotées à l'aide d'un anémomètre à courant constant. Des mesures ont
+  d'abord été réalisées en écoulement monophasique chauffé, puis une
+  procédure de discrimination phasique a été développée et a permis de
+  fournir des premières mesures en écoulement bouillant. Ces dernières ont
+  alors été comparées aux résultats du modèle.%
+    }
+    \field{title}{Développement d'une méthode de mesure des champs de vitesse
+  et de température liquide en écoulement diphasique bouillant en conditions
+  réacteurs ou simulantes}
+    \verb{url}
+    \verb https://www.theses.fr/2018GREAI035
+    \endverb
+    \list{institution}{1}{%
+      {Université Grenoble Alpes ({ComUE})}%
+    }
+    \field{type}{These de doctorat}
+    \field{day}{30}
+    \field{month}{05}
+    \field{year}{2018}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{kledy_toward_2021}{article}{}
+    \name{author}{5}{}{%
+      {{hash=KM}{%
+         family={Kledy},
+         familyi={K\bibinitperiod},
+         given={Michel},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=FF}{%
+         family={François},
+         familyi={F\bibinitperiod},
+         given={Fabrice},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=DH}{%
+         family={Djeridi},
+         familyi={D\bibinitperiod},
+         given={Henda},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Barre},
+         familyi={B\bibinitperiod},
+         given={Stephane},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DJM}{%
+         family={Delhaye},
+         familyi={D\bibinitperiod},
+         given={Jean-Marc},
+         giveni={J\bibinithyphendelim M\bibinitperiod},
+      }}%
+    }
+    \keyw{drift flux model, Forced convective boiling, High-pressure,
+  Prandtl’s analogy, Relaxation time, Turbulence model}
+    \strng{namehash}{KM+1}
+    \strng{fullhash}{KMFFDHBSDJM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    Forced convective boiling is of great interest for several applications in
+  the power and process industry, particularly in nuclear plants. Under certain
+  nominal, incidental or accidental conditions, a boiling crisis may occur
+  resulting in the meltdown of the heating surface. It is then essential to
+  predict as accurately as possible the thermal-hydraulic conditions leading to
+  the occurrence of this boiling crisis. Such an objective cannot reasonably be
+  achieved without a good description of the associated two-phase flow. The
+  objective of the present study is twofold: (1) to identify the necessary key
+  parameters for correctly describing boiling flows, and (2) to present in a
+  didactic way an original stationary and local model involving these
+  parameters. This new model is primarily based on four mixture balance
+  equations, a submodel for the local vapor generation rate, and a turbulence
+  submodel inspired by the pioneering work of [25]. The results obtained with
+  this original boiling flow model are then compared to an extensive
+  experimental data set obtained on a R12/R134a experimental facility. The
+  comparison clearly demonstrates that this new model contains the fewer
+  necessary submodels to describe the structure of a boiling two-phase flow
+  under pressurized water reactor conditions. Subcooled boiling is acceptably
+  described by the model. However, for higher values of void fraction, the
+  model always predicts a nonexistent void fraction peak near the heating wall
+  and overpredicts the wall and liquid temperatures. This behavior may be
+  explained by: (i) the inadequacy of the radial turbulence modeling, (ii) the
+  use of Prandtl's analogy whose validity under boiling conditions is
+  questionable, and (iii) too simplistic a model for the vapor generation
+  rate.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijheatmasstransfer.2021.121506
+    \endverb
+    \field{issn}{0017-9310}
+    \field{pages}{121506}
+    \field{shortjournal}{International Journal of Heat and Mass Transfer}
+    \field{title}{Toward a local drift flux model for high-pressure, subcooled,
+  convective boiling flows}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931021006098
+    \endverb
+    \field{volume}{177}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\6XGZIP6L\\S0
+    \verb 017931021006098.html:text/html;Version soumise:C\:\\Users\\Luc\\Zoter
+    \verb o\\storage\\5UQJ2X3Z\\Kledy et al. - 2021 - Toward a local drift flux
+    \verb  model for high-pressure,.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{day}{01}
+    \field{month}{10}
+    \field{year}{2021}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{kocamustafaogullari_pressure_1983}{article}{}
     \name{author}{1}{}{%
       {{hash=KG}{%
@@ -3892,6 +4443,100 @@
     \field{title}{Hydrodynamics}
     \field{langid}{english}
     \field{year}{1895}
+  \endentry
+
+  \entry{lavieville_generalized_2017}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LJ}{%
+         family={Laviéville},
+         familyi={L\bibinitperiod},
+         given={Jérôme},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MN}{%
+         family={Mérigoux},
+         familyi={M\bibinitperiod},
+         given={Nicolas},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Guingo},
+         familyi={G\bibinitperiod},
+         given={Mathieu},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Baudry},
+         familyi={B\bibinitperiod},
+         given={Cyril},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mimouni},
+         familyi={M\bibinitperiod},
+         given={Stéphane},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{{DNB}, Turbulent dispersion, Two phase bubbly flow, Validation}
+    \strng{namehash}{LJ+1}
+    \strng{fullhash}{LJMNGMBCMS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    The {NEPTUNE}\_CFD code, based upon an Eulerian multi-fluid model, is
+  developed within the framework of the {NEPTUNE} project, financially
+  supported by {EDF} (Electricité de France), {CEA} (Commissariat à
+  l’Energie Atomique et aux Energies Alternatives), {IRSN} (Institut de
+  Radioprotection et de Sûreté Nucléaire) and {AREVA}-{NP}. {NEPTUNE}\_CFD
+  is mainly focused on Nuclear Safety applications involving two-phase
+  water-steam flows, like two-phase Pressurized Shock ({PTS}) and Departure
+  from Nucleate Boiling ({DNB}). Many of these applications involve bubbly
+  flows, particularly, for application to flows in {PWR} fuel assemblies,
+  including studies related to {DNB}. Considering a very usual model for
+  interfacial forces acting on bubbles, including drag, virtual mass and lift
+  forces, the turbulent dispersion force is often added to moderate the lift
+  effect in orthogonal directions to the main flow and get the right dispersion
+  shape. This paper presents a formal derivation of this force, considering on
+  the one hand, the fluctuating part of drag and virtual mass, and on the other
+  hand, Turbulent Pressure derivation obtained by comparison between Lagrangian
+  and Eulerian description of bubbles motion. An extension of the Tchen’s
+  theory is used to express the turbulent kinetic energy of bubbles and the
+  two-fluid turbulent covariance tensor in terms of liquid turbulent velocities
+  and time scale. The model obtained by this way, called Generalized Turbulent
+  Dispersion Model ({GTD}), does not require any user parameter. The model is
+  validated against Liu \& Bankoff air-water experiment, Arizona State
+  University ({ASU}) experiment, {DEBORA} experiment and Texas A\&M University
+  ({TAMU}) boiling flow experiments.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.nucengdes.2016.11.003
+    \endverb
+    \field{issn}{0029-5493}
+    \field{pages}{284\bibrangedash 293}
+    \field{series}{16th International Topical Meeting on Nuclear Reactor
+  Thermal Hydraulics}
+    \field{shortjournal}{Nuclear Engineering and Design}
+    \field{title}{A Generalized turbulent dispersion model for bubbly flow
+  numerical simulation in {NEPTUNE}\_CFD}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0029549316304332
+    \endverb
+    \field{volume}{312}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\BTBPZW3V\\S0
+    \verb 029549316304332.html:text/html
+    \endverb
+    \field{journaltitle}{Nuclear Engineering and Design}
+    \field{day}{01}
+    \field{month}{02}
+    \field{year}{2017}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{legendre_thermal_1998}{article}{}
@@ -4910,6 +5555,201 @@
     \field{year}{1938}
   \endentry
 
+  \entry{mimouni_computational_2016}{article}{}
+    \name{author}{6}{}{%
+      {{hash=MS}{%
+         family={Mimouni},
+         familyi={M\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BC}{%
+         family={Baudry},
+         familyi={B\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Guingo},
+         familyi={G\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lavieville},
+         familyi={L\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=MN}{%
+         family={Merigoux},
+         familyi={M\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=MN}{%
+         family={Mechitoua},
+         familyi={M\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MS+1}
+    \strng{fullhash}{MSBCGMLJMNMN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Extensive efforts have been made in the last five decades to evaluate the
+  boiling heat transfer coefficient and the critical heat flux in particular.
+  Boiling crisis remains a major limiting phenomenon for the analysis of
+  operation and safety of both nuclear reactors and conventional thermal power
+  systems. As a consequence, models dedicated to boiling flows have being
+  improved. For example, Reynolds Stress Transport Model, polydispersion and
+  two-phase flow wall law have been recently implemented. In a previous work,
+  we have evaluated computational fluid dynamics results against single-phase
+  liquid water tests equipped with a mixing vane and against two-phase boiling
+  cases. The objective of this paper is to propose a new mechanistic model in a
+  computational multi-fluid dynamics tool leading to wall temperature excursion
+  and onset of boiling crisis. Critical heat flux is calculated against 150
+  tests and the mean relative error between calculations and experimental
+  values is equal to 8.3\%. The model tested covers a large physics scope in
+  terms of mass flux, pressure, quality and channel diameter. Water and R12
+  refrigerant fluid are considered. Furthermore, it was found that the
+  sensitivity to the grid refinement was acceptable.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.nucengdes.2015.07.017
+    \endverb
+    \field{issn}{0029-5493}
+    \field{pages}{28\bibrangedash 36}
+    \field{series}{{CFD}4NRS-5}
+    \field{shortjournal}{Nuclear Engineering and Design}
+    \field{title}{Computational multi-fluid dynamics predictions of critical
+  heat flux in boiling flow}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0029549315002873
+    \endverb
+    \field{volume}{299}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\7HT2XWEB\\S0
+    \verb 029549315002873.html:text/html
+    \endverb
+    \field{journaltitle}{Nuclear Engineering and Design}
+    \field{day}{01}
+    \field{month}{04}
+    \field{year}{2016}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{mimouni_combined_2011}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MS}{%
+         family={Mimouni},
+         familyi={M\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Laviéville},
+         familyi={L\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Seiler},
+         familyi={S\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Ruyer},
+         familyi={R\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MS+1}
+    \strng{fullhash}{MSLJSNRP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    High-thermal performance {PWR} (pressurized water reactor) spacer grids
+  require both low pressure loss, high wall heat transfer coefficient and high
+  critical heat flux ({CHF}) properties. A further detailed understanding of
+  the main physical phenomena (wall boiling, entrainment of bubbles in the
+  wakes, recondensation) is needed and can be reached by numerical simulation.
+  In the field of fuel assembly analysis or design by means of {CFD} codes, the
+  overwhelming majority of the studies are carried out using two-equation eddy
+  viscosity models ({EVM}) as turbulence model, especially the standard K−ɛ
+  model, while the use of Reynolds Stress Transport Models ({RSTMs}) remains
+  exceptional. In contrast, extensive testing and application over the past
+  three decades have revealed a number of shortcomings and deficiencies in eddy
+  viscosity models. Indeed, the K−ɛ model is totally blind to flow rotation,
+  e.g., in the presence of swirls. This aspect is crucial for the simulation of
+  a hot channel in a fuel assembly. In fact, the mixing vanes of the spacer
+  grids generate swirls in the coolant water, which enhances the heat transfer
+  from the rods to the coolant in the hot channels and thus limits boiling. In
+  this work, all the models are implemented in {NEPTUNE}\_CFD, a three
+  dimensional multi-fluid code developed especially for nuclear reactor
+  applications, in the framework of the {NEPTUNE} project ({EDF}, {CEA},
+  {AREVA}-{NP}, {IRSN}). In a previous work, we have evaluated computational
+  fluid dynamics results obtained with {RSTM} against single-phase liquid water
+  tests equipped with a mixing vane and against two-phase boiling cases
+  ({DEBORA}-tube and {ASU}-annular channel tests). In the present work, a
+  geometry closer to actual fuel assemblies is considered. It consists of a
+  rectangular test section in which a 2×2 rod bundle, equipped with a simple
+  spacer grid with mixing vanes, is inserted. The influence of the turbulence
+  model on target variables supposed to be related to {CHF} limitation is
+  discussed. Numerical investigations on the optimised angle of mixing vanes
+  are addressed. In addition, the impact of a detailed description of the
+  bubble size distribution on the boiling flow with realistic geometry is
+  addressed. The relative importance of the correct description of this
+  modelling of polydisperse bubble size is due to the dependency of (i) main
+  hydrodynamic forces, like drag, as well as of (ii) inter-phase transfer area
+  with respect to the individual bubble size. The effects of the phenomena of
+  coalescence or break-up and the main influences of mean bubble diameter on
+  the void fraction and fluid velocity in the vicinity of the grids are
+  underlined. The study of this 2×2 rod bundle case is a further step towards
+  a physically reliable local {CFD} modelling of the two-phase boiling flow in
+  real fuel assemblies, including spacers grid structures.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.nucengdes.2010.12.028
+    \endverb
+    \field{issn}{0029-5493}
+    \field{number}{11}
+    \field{pages}{4523\bibrangedash 4536}
+    \field{series}{13th International Topical Meeting on Nuclear Reactor
+  Thermal Hydraulics ({NURETH}-13)}
+    \field{shortjournal}{Nuclear Engineering and Design}
+    \field{title}{Combined evaluation of second order turbulence model and
+  polydispersion model for two-phase boiling flow and application to fuel
+  assembly analysis}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0029549311000884
+    \endverb
+    \field{volume}{241}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\8L6U7AK5\\S0
+    \verb 029549311000884.html:text/html
+    \endverb
+    \field{journaltitle}{Nuclear Engineering and Design}
+    \field{day}{01}
+    \field{month}{11}
+    \field{year}{2011}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{montout_contribution_2009}{thesis}{}
     \name{author}{1}{}{%
       {{hash=MM}{%
@@ -5783,6 +6623,81 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{ruyer_modelisation_2009}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RP}{%
+         family={Ruyer},
+         familyi={R\bibinitperiod},
+         given={Pierre},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SN}{%
+         family={Seiler},
+         familyi={S\bibinitperiod},
+         given={Nathalie},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RPSN1}
+    \strng{fullhash}{RPSN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Un programme de Recherche et Développement dans le domaine de l'Accident
+  de Perte du Réfrigérant Primaire, sur un Réacteur à Eau sous Pression,
+  est en cours à l'Institut de Radioprotection et de Sûreté Nucléaire. Lors
+  de ce transitoire accidentel, l'ébullition du fluide sur la paroi des
+  crayons conduit au dénoyage du coeur du réacteur. L'étude présentée est
+  orientée sur le développement de modèles permettant la simulation {CFD} de
+  la topologie locale d'un écoulement bouillant. En effet, les observations
+  expérimentales ont permis de mettre en évidence une polydispersion en
+  taille : statistiquement et localement, la population de bulles se
+  caractérise par un large spectre de taille. Or, les forces gouvernant
+  l'hydrodynamique locale d'une bulle dependent fortement de sa taille. Cette
+  taille détermine également la surface d'échange avec le liquide et donc
+  les différents transferts entre phases. Ces observations soulignent la
+  nécessité de prendre en compte cette polydispersion en taille au sein d'une
+  description moyennée de l'écoulement. Ainsi, un modèle de population de
+  bulles a été développé, basé sur des équations de transport des
+  densités de moments statistiques de la fonction de distribution en taille de
+  la population de bulles. Dans ce papier, on décrit les termes sources
+  traduisant les différentes contributions à l'évolution des diamètres des
+  bulles. Ce modèle, intégré dans le code {NEPTUNE}\_CFD, a été testé sur
+  des resultants d'expérience d'écoulements bouillants obtenus sur
+  l'installation {DEBORA}. Les simulations réalisées constituent une
+  validation du modèle ainsi qu'une étude de sa convergence en maillage et de
+  l'impact de certains phénomènes sur la topologie de l'écoulement.%
+    }
+    \verb{doi}
+    \verb 10.1051/lhb/2009046
+    \endverb
+    \field{issn}{0018-6368, 1958-5551}
+    \field{note}{Number: 4 Publisher: {EDP} Sciences}
+    \field{number}{4}
+    \field{pages}{65\bibrangedash 71}
+    \field{shortjournal}{La Houille Blanche}
+    \field{title}{Modélisation avancée de la polydispersion en taille des
+  écoulements bouillants}
+    \verb{url}
+    \verb https://www.shf-lhb.org/articles/lhb/abs/2009/04/lhb2009046/lhb200904
+    \verb 6.html
+    \endverb
+    \field{langid}{french}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\XPLNZXS7\\lhb2009046.html:
+    \verb text/html
+    \endverb
+    \field{journaltitle}{La Houille Blanche}
+    \field{day}{01}
+    \field{month}{08}
+    \field{year}{2009}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{saffman_lift_1965}{article}{}
     \name{author}{1}{}{%
       {{hash=SPG}{%
@@ -6362,6 +7277,85 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{speziale_modelling_1991}{article}{}
+    \name{author}{3}{}{%
+      {{hash=SCG}{%
+         family={Speziale},
+         familyi={S\bibinitperiod},
+         given={Charles\bibnamedelima G.},
+         giveni={C\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=SS}{%
+         family={Sarkar},
+         familyi={S\bibinitperiod},
+         given={Sutanu},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GTB}{%
+         family={Gatski},
+         familyi={G\bibinitperiod},
+         given={Thomas\bibnamedelima B.},
+         giveni={T\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SCGSSGTB1}
+    \strng{fullhash}{SCGSSGTB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    The modelling of the pressure-strain correlation of turbulence is examined
+  from a basic theoretical standpoint with a view toward developing improved
+  second-order closure models. Invariance considerations along with elementary
+  dynamical systems theory are used in the analysis of the standard hierarchy
+  of closure models. In these commonly used models, the pressure-strain
+  correlation is assumed to be a linear function of the mean velocity gradients
+  with coefficients that depend algebraically on the anisotropy tensor. It is
+  proven that for plane homogeneous turbulent flows the equilibrium structure
+  of this hierarchy of models is encapsulated by a relatively simple model
+  which is only quadratically nonlinear in the anisotropy tensor. This new
+  quadratic model - the {SSG} model - appears to yield improved results over
+  the Launder, Reece \& Rodi model (as well as more recent models that have a
+  considerably more complex nonlinear structure) in five independent
+  homogeneous turbulent flows. However, some deficiencies still remain for the
+  description of rotating turbulent shear flows that are intrinsic to this
+  general hierarchy of models and, hence, cannot be overcome by the mere
+  introduction of more complex nonlinearities. It is thus argued that the
+  recent trend of adding substantially more complex nonlinear terms containing
+  the anisotropy tensor may be of questionable value in the modelling of the
+  pressure–strain correlation. Possible alternative approaches are discussed
+  briefly.%
+    }
+    \verb{doi}
+    \verb 10.1017/S0022112091000101
+    \endverb
+    \field{issn}{1469-7645, 0022-1120}
+    \field{note}{Publisher: Cambridge University Press}
+    \field{pages}{245\bibrangedash 272}
+    \field{shorttitle}{Modelling the pressure–strain correlation of
+  turbulence}
+    \field{title}{Modelling the pressure–strain correlation of turbulence: an
+  invariant dynamical systems approach}
+    \verb{url}
+    \verb https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/ar
+    \verb ticle/abs/modelling-the-pressurestrain-correlation-of-turbulence-an-i
+    \verb nvariant-dynamical-systems-approach/3F54EAE2F2998E34ED7CC44D7048B73E
+    \endverb
+    \field{volume}{227}
+    \field{langid}{english}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\DHEK4ETQ\\3F54EAE2F2998E34
+    \verb ED7CC44D7048B73E.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Fluid Mechanics}
+    \field{month}{06}
+    \field{year}{1991}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{sugrue_modified_2016}{article}{}
     \name{author}{2}{}{%
       {{hash=SR}{%
@@ -6830,6 +7824,85 @@
     \field{year}{1970}
     \field{urlday}{10}
     \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{tomiyama_transverse_2002}{article}{}
+    \name{author}{4}{}{%
+      {{hash=TA}{%
+         family={Tomiyama},
+         familyi={T\bibinitperiod},
+         given={Akio},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=TH}{%
+         family={Tamai},
+         familyi={T\bibinitperiod},
+         given={Hidesada},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=ZI}{%
+         family={Zun},
+         familyi={Z\bibinitperiod},
+         given={Iztok},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Hosokawa},
+         familyi={H\bibinitperiod},
+         given={Shigeo},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{Bubble, Lateral migration, Lift force, Multiphase flow, Simple shear
+  flow}
+    \strng{namehash}{TA+1}
+    \strng{fullhash}{TATHZIHS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    Trajectories of single air bubbles in simple shear flows of
+  glycerol–water solution were measured to evaluate transverse lift force
+  acting on single bubbles. Experiments were conducted under the conditions of
+  −5.5⩽log10M⩽−2.8, 1.39⩽Eo⩽5.74 and
+  0⩽{\textbar}{dVL}/dy{\textbar}⩽8.3s−1, where M is the Morton number, Eo
+  the Eötvös number and {dVL}/dy the velocity gradient of the shear flow. A
+  net transverse lift coefficient {CT} was evaluated by making use of all the
+  measured trajectories and an equation of bubble motion. It was confirmed that
+  {CT} for small bubbles is a function of the bubble Reynolds number Re,
+  whereas {CT} for larger bubbles is well correlated with a modified Eötvös
+  number Eod which employs the maximum horizontal dimension of a deformed
+  bubble as a characteristic length. An empirical correlation of {CT} was
+  therefore summarized as a function of Re and Eod. The critical bubble
+  diameter causing the radial void profile transition from wall peaking to core
+  peaking in an air–water bubbly flow evaluated by the proposed {CT}
+  correlation coincided with available experimental data.%
+    }
+    \verb{doi}
+    \verb 10.1016/S0009-2509(02)00085-4
+    \endverb
+    \field{issn}{0009-2509}
+    \field{number}{11}
+    \field{pages}{1849\bibrangedash 1858}
+    \field{shortjournal}{Chemical Engineering Science}
+    \field{title}{Transverse migration of single bubbles in simple shear flows}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0009250902000854
+    \endverb
+    \field{volume}{57}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\2FG8RTXY\\S0
+    \verb 009250902000854.html:text/html
+    \endverb
+    \field{journaltitle}{Chemical Engineering Science}
+    \field{day}{01}
+    \field{month}{06}
+    \field{year}{2002}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
     \field{urlyear}{2022}
   \endentry
 
@@ -8051,6 +9124,100 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{zuber_dispersed_1964}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ZN}{%
+         family={Zuber},
+         familyi={Z\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZN1}
+    \strng{fullhash}{ZN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    The time dependent, dispersed, two-phase flow problem for the laminar flow
+  regime is considered. In agreement with Burgers' description of the flow, the
+  analysis takes into account the effect of both the motion and the presence of
+  other particles. The effect of motion is taken into account by considering
+  the momentum equation for the two-phase mixture and the two continuity
+  equations (one for each phase). The effect of the presence of other particles
+  is taken into account in the equation of motion (derived from
+  phenomenological considerations) of a single particle in a two-phase mixture.
+  The steady-state solution of the governing set of equations is applied to an
+  analysis of sedimentation and of fluidization (batch, cocurrent and
+  countercurrent). Good agreement with experimental data is shown. The
+  steady-state results give a formulation and a confirmation of the basic
+  premise in the phenomenological theory of Elgin and Lapidus for vertical
+  two-phase flow systems. The theory of kinematic waves proposed by Kynch and
+  by Lighthill and Whitham is used to analyse the transient response, i.e. the
+  diffusion process, and to predict the diffusivity in two-phase flow. The
+  kinematic wave theory is used also to predict the operating limits imposed on
+  the system by the flooding phenomenon. Extensions of the analysis to
+  turbulent flow and to more complex systems are discussed. Résumé L'article
+  traite de l'écoulement laminaire et non-stationnaire de deux phases
+  dispersées l'une dans l'autre. Tout comme la description faite par Burgers
+  de cet écoulement l'analyse tient compte du mouvement ainsi que de la
+  présence d'autres particules. On tient compte de l'effet du mouvement en
+  considérant l'équation du mouvement pour l'ensemble du fluide et de deux
+  équations de continuité, une pour chaque phase. L'effet d'autres particules
+  intervient dans l'équation du mouvement, dérivées de considérations
+  phénoménologiques, d'une particule dans un mélange à deux phases. La
+  solution stationnaire de ces équations est appliquée à une analyse de la
+  sédimentation et de la fluidisation (batch, à co-courant ou à
+  contre-courant). L'accord avec les résultats expérimentaux est bon. Les
+  hypothèses impliquées dans la théorie d'Elgin et de Lapidus pour
+  l'écoulement vertical de systèmes à deux phases sont ainsi formulées et
+  confirmées. La théorie des ondes cinématiques proposée par Kynch et par
+  Lighthill a été appliquée dans l'analyse de l'état transitoire, c'est à
+  dire du processus de diffusion ainsi que pour prédire la diffusivité dans
+  un écoulement à deux phases. Cette théorie est encore utilisée pour
+  prédire les limites imposées au système par le phénomène de
+  l'engorgement. On discute l'extension de l'analyse au régime turbulent et
+  aux systèmes plus complexes. Zusammenfassung Das laminare Strömen zweier
+  disperser Phasen wird unter Berücksichtigung der Anwesenheit fremder
+  Partikel und deren Bewegung beschrieben. Die Lösungen der Gleichungen für
+  den stationären Fall, angewandt auf die Sedimentation and die Wirbelschicht,
+  zeigen gute Übereinstimmung mit den experimentellen Resultaten und
+  bestätigen die Theorie von Elgin und Lapidus für das vertikale Fliessen
+  eines Zweiphasensystems. Mit Hilfe der Theorie von Kynch und von Lighthill
+  und Whitham für die Bewegung von Wellen wurden die Übergangsfunktion des
+  Systems, d.h. die Diffusionserscheinungen im fliessenden Zweiphasensystem,
+  sowie die durch das Auftreten des “Flooding” begrenzten
+  Arbeitsbedingungen diskutiert. Abschliessend wird die Möglichkeit der
+  Anwendung der gefundenen Theorie auf das Gebiet der turbulenten Strömung
+  erörtert.%
+    }
+    \verb{doi}
+    \verb 10.1016/0009-2509(64)85067-3
+    \endverb
+    \field{issn}{0009-2509}
+    \field{number}{11}
+    \field{pages}{897\bibrangedash 917}
+    \field{shortjournal}{Chemical Engineering Science}
+    \field{title}{On the dispersed two-phase flow in the laminar flow regime}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0009250964850673
+    \endverb
+    \field{volume}{19}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\IRGTR9PV\\00
+    \verb 09250964850673.html:text/html
+    \endverb
+    \field{journaltitle}{Chemical Engineering Science}
+    \field{day}{01}
+    \field{month}{11}
+    \field{year}{1964}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{zuber_dynamics_1961}{article}{}
     \name{author}{1}{}{%
       {{hash=ZN}{%
@@ -8060,8 +9227,8 @@
          giveni={N\bibinitperiod},
       }}%
     }
-    \strng{namehash}{ZN1}
-    \strng{fullhash}{ZN1}
+    \strng{namehash}{ZN2}
+    \strng{fullhash}{ZN2}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{sortinit}{Z}
@@ -8156,19 +9323,19 @@
 
   \entry{unal_maximum_1976}{article}{}
     \name{author}{1}{}{%
-      {{hash=�HC}{%
+      {{hash=nHC}{%
          family={Ünal},
-         familyi={�\bibinitperiod},
+         familyi={n\bibinitperiod},
          given={H.\bibnamedelima C.},
          giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
       }}%
     }
-    \strng{namehash}{�HC1}
-    \strng{fullhash}{�HC1}
+    \strng{namehash}{nHC1}
+    \strng{fullhash}{nHC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{�}
-    \field{sortinithash}{�}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
     \field{abstract}{%
     A heat transfer controlled bubble model has yielded three semi-empirical
   correlations to predict bubble-growth rate, maximum bubble diameter and

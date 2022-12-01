@@ -1,6 +1,6 @@
 % Chapter 1
 
-\chapter{NEPTUNE\_CFD Code} % Chapter title
+\chapter{Presentation of the NEPTUNE\_CFD Code} % Chapter title
 
 \label{chap:ncfd} % For referencing the chapter elsewhere, use \autoref{ch:introduction} 
 
@@ -18,12 +18,12 @@ The NEPTUNE\_CFD project (started in 2001) is a reasearch program coordinated by
 \item Study the Loss Of Coolant Accident (LOCA) to predict fuel rod cladding temperature.
 \end{itemize}
 
-As a multiphase eulerian code, NEPTUNE\_CFD consists of a local three-dimensional  modeling based on a two fluids-one pressure approach combined with mass, momentum and energy conservation equations for each phase\cite{guelfi_neptune_2007}. 
+As a multiphase eulerian code, NEPTUNE\_CFD consists of a local three-dimensional  modeling based on a two fluids-one pressure approach combined with mass, momentum and energy conservation equations for each phase \cite{guelfi_neptune_2007}. 
 
 
 \npar
 %The NEPTUNE\_CFD solver can handle several types of multiphase flows, \eg dispersed vapor-liquid flow of a same component, mixed gas-liquid-solid particles flow of different components, or multiple forms of a single component (dispersed vapor/continuous liquid, dispersed liquid/continuous vapor, continuous liquid/continuous vapor, etc.).
-The constitutive equations are solved using a pressure correction, and is based on a finite-volume discretization along with a collocated arrangement of the variables. Moreover, NEPTUNE\_CFD allows the use of all type of meshes (hexahedra, tetrahedra, pyramids, etc.), even non-conforming ones, thanks to its face-based data structure. Finally, the code is well-suited for parallel computing, widening its computing capacity to very large meshes.
+The constitutive equations are solved using a pressure correction and is based on a finite-volume discretization along with a collocated arrangement of the variables. Moreover, NEPTUNE\_CFD allows the use of all type of meshes (hexahedra, tetrahedra, pyramids, etc.), even non-conforming ones, thanks to its face-based data structure. Finally, the code is well-suited for parallel computing, widening its computing capacity to very large meshes.
 
 \npar
 
@@ -32,16 +32,16 @@ The simulations presented in this thesis have all been conducted using the NEPTU
 
 \section{Governing Equations for Turbulent Boiling Bubbly Flows}
 
-To simulate two-phase dispersed boiling flows, NEPTUNE\_CFD solves the ensemble-averaged equations of mass conservation, momentum balance and energy conservation for each phase (see Ishii \cite{ishii_multiphase_flows} for details on the derivation).
+To simulate two-phase dispersed boiling flows, NEPTUNE\_CFD solves the ensemble-averaged equations of mass conservation, momentum balance and energy conservation for each phase (see Ishii \cite{ishii_thermo-fluid_2011} for details on the derivation).
 %As a reminder, the ensemble-averaging of a physical quantity $F_{k}$ for any phase $k$ in a multiphase flows is defined as:
 
 
 
 \subsection{Mass Conservation}
 \begin{equation}
-	\label{eq:mass}
 %MASS
 	\dtime{\alpha_{k}\rho_{k}} + \divg{\alpha_{k}\rho_{k} \vect{U_{k}}} = \orangemath{\Gamma_{k}}
+	\label{eq:mass}
 \end{equation}
 
 Where $\alpha_{k}$, $\rho_{k}$, $\vect{U_{k}}$ are the time fraction, average density and velocity of phase $k$ ; $\orangemath{\Gamma_{k}}=\Gamma_{k,i}+\Gamma_{k,w}$ the interfacial mass transfer term per unit of volume and time splitted between bulk and wall contribution.
@@ -50,25 +50,37 @@ Subscripts $k= L$ or $V$ denotes the liquid or vapor phase, $i$ the interfacial 
 \subsection{Momentum Balance}
 
 \begin{equation}
-	\label{eq:momentum}
 %MOMENTUM
 	\dtime{\alpha_{k}\rho_{k}\vect{U_{k}}} + \vecdivg{\alpha_{k}\rho_{k} \vect{U_{k}}\otimes \vect{U_{k}}} = -\alpha_{k}\grad{P} + \orangemath{\vect{F_{k,i}}} + \orangemath{\Gamma_{k}}\vect{U_{k,i}} + \alpha_{k}\rho_{k}\vect{g} + \vecdivg{\alpha_{k} \parth{ \tens{\tau_{k,m}} + \orangemath{\tens{\tau_{k,T}}} }}
+\label{eq:momentum}
 \end{equation}
 
 Where $P$ is the pressure, $\vect{g}$ the gravity, $\orangemath{ \vect{F_{k,i}} }$ the interfacial forces accounting for momentum transfer between phases per unit of volume and time, $\vect{U_{k,i}}$ the interfacial velocity, $\tens{\tau_{k,m}}$ and $\orangemath{ \tens{\tau_{k,T}} }$ respectively the viscous and turbulent (or Reynolds) stress tensor. Subscript $m$ and $T$ respectively denote the molecular (or laminar) and turbulent terms.
 
+
 \subsection{Energy Conservation}
 
 \begin{equation}
-	\label{eq:energy}
 \begin{aligned}
 %ENERGY
 	\dtime{\alpha_{k}\rho_{k} H_{k}} + \divg{\alpha_{k}\rho_{k} H_{k}\vect{U_{k}}} =& \dtime{\alpha_{k}P} + \orangemath{\Gamma_{k}}H_{k,i}+\orangemath{\vect{F_{k,i}}}\cdot \vect{U_{k}} + \orangemath{Q_{k,I}} + \divg{\alpha_{k}\parth{ \tens{\tau_{k}} + \orangemath{\tens{\tau_{k,T}}} }\cdot \vect{U_{k}}}\\
 	& + \divg{\alpha_{k} \parth{-\parth{ \lambda_{k,m}+\orangemath{\lambda_{k,T}}}\grad{T_{k}}}} + \alpha_{k}\rho_{k}\vect{g}\cdot \vect{U_{k}} + \orangemath{Q_{k,w}}
 \end{aligned}
+\label{eq:energy}
 \end{equation}
 
 Where $H_{k}=e_{k}+\dfrac{U_{k}^{2}}{2}+\dfrac{P}{\rho_{k}}=h_{k}+\dfrac{U_{k}^{2}}{2}$ is the total enthalpy of phase $k$, $H_{k,i}$ the interfacial-averaged enthalpy, $\orangemath{ Q_{k,i} }$ the interfacial heat flux per unit of volume and time, $\lambda_{k,m}$ and $\orangemath{ \lambda_{k,T} }$ respectively being the laminar and turbulent thermal conductivity, $T_{k}$ the temperature, $\orangemath{ Q_{k,w} }$ the heat flux from the wall to phase $k$ per unit of volume and time.
+
+\npar
+
+The viscous and Reynolds stress tensors read:
+
+\begin{align}
+\tens{\tau_{k,m}} &= \mu_{k} \parth{ \vecgrad{\vect{U_{k}}}+\vecgrad{U_{k}}^{T}  - \frac{2}{3}\divg{\vect{U_{k}}}\tens{I} }\\
+\parth{\orangemath{\tens{\tau_{k,T}}} }_{i,j} &= -\rho_{k} \left< U'_{k,i}U'_{k,j} \right>_{k}
+\end{align}
+with $\vect{U'_{k}}$ is the fluctuating part of velocity for phase $k$.
+
 
 \npar
 
@@ -89,7 +101,7 @@ The mass transfer term, can be written as:
 \begin{align}
 \Gamma_{L,i} + \Gamma_{V,i} = 0\\
 %
-\Gamma_{L,w} + \Gamma_{G,w} = 0
+\Gamma_{L,w} + \Gamma_{V,w} = 0
 \end{align}
 with $\Gamma_{V,w} \geq 0$ in the case of boiling flows. This finally gives:
 
@@ -109,8 +121,8 @@ Q_{k,i}=q''_{k,i}a_{i}
 Neglecting the mechanical contribution compared to the thermal terms, the energy jump condition can then be expressed as :
 
 \begin{equation}
-\label{eq:energy_jump}
 \sum_{k=L,V}\parth{\Gamma_{k,i}h_{k,i} + q''_{k,i}a_{i}}=0
+\label{eq:ncfd_energy_jump}
 \end{equation}
 
 The estimation of $h_{k,i}$ is not straightforward since it can either be supposed as:
@@ -120,93 +132,126 @@ The estimation of $h_{k,i}$ is not straightforward since it can either be suppos
 \item[H2)] The phase-averaged enthalpy.
 \end{enumerate}
 
+\npar
 In NEPTUNE\_CFD, the assumption H2 is chosen, thus giving the bulk condensation rate :
 
 \begin{equation}
-\label{eq:condensation_rate}
-\Gamma_{L,i}=\frac{a_{i}\parth{q''_{L,i}+q''_{G,i}}}{h_{V}-h_{L}}
+\Gamma_{L,i}=\frac{a_{i}\parth{q''_{L,i}+q''_{V,i}}}{h_{V}-h_{L}}
+\label{eq:ncfd_cond_rate}
 \end{equation}
 
 
 The interfacial heat flux densities $q''_{k,i}$ and interfacial area concentration $a_{i}$ are expressed as:
 
-\begin{equation}
-q''_{k,i}=C_{k,i}\parth{T_{sat}(P)-T_{k}}$ and $a_{i}=6 \alpha_{V}/D_{V}$
-\end{equations}
-with $D_{V}$ being the vapor phase Sauter mean bubble diameter. The interfacial area is computed using the transport equation of \textsc{Ruyer} \& \textsc{Seiler}\cite{ruyer2009}.
+\begin{align}
+q''_{k,i}=C_{k,i}\parth{T_{sat}(P)-T_{k}}\\
+a_{i}=6 \alpha_{V}/D_{V}
+\end{align}
+with $D_{V}$ being the vapor phase Sauter mean bubble diameter and $C_{k,i}$ the interfacial heat transfer coefficient.
 
-For subcooled liquid, the following heat transfer coefficient is used \cite{manon2000}:
+\npar
+
+\begin{note*}{}
+The interfacial area is computed using the transport equation of {Ruyer} \& {Seiler} \cite{ruyer_modelisation_2009}.
+\end{note*}
+
+
+\subsubsection{Subcooled Liquid}
+
+For subcooled liquid, the following heat transfer coefficient is used \cite{ranz_evaporation_1952, manon_contribution_2000}:
+
+\begin{align}
+C_{L,i}&=\frac{\Nu_{L}\lambda_{L}}{d_{G}}\\
+%
+Nu_{L}&=2+0.6\Re_{b}^{1/2}\Pr_{L}^{1/3}
+\label{eq:ncfd_subcooled_L}
+\end{align}
+
+Where $\Re_{b}$ is the bubble Reynolds number $Re_{b}=\dfrac{\norm{\vect{U_{V}}-\vect{U_{L}}}D_{V} }{\nu_{L}}$ and $\Pr_{L}=\dfrac{\nu_{L}}{\eta_{L}}$ the liquid Prandtl number with $\nu_{L}$ and $\eta_{L}$ respectively being the liquid kinematic viscosity and thermal diffusivity.
+
+
+\subsubsection{Superheated Liquid}
+
+On the other hand, if the liquid is overheated, the maximum of three heat transfer coefficients accounting for different heat tranfer mechanisms is taken \cite{berne_analyse_1983}:
 
 \begin{equation}
-\label{eq:subcooled_HT}
-C_{L,i}=\frac{Nu_{L}\lambda_{L}}{d_{G}} \text{ and } Nu_{L}=2+0.6Re^{1/2}Pr_{L}^{1/3}
+C_{L,i}=\max{C_{L,i,1}\ ;\ C_{L,i,2}\ ;\ C_{L,i,3}}
+\label{eq:ncfd_supheat_L}
 \end{equation}
 
-Where $Re$ is the bubble Reynolds number $Re=\norm{\vect{U_{G}}-\vect{U_{L}}}d_{G}/\nu_{L}$ and $Pr_{L}$ the liquid Prandtl number $Pr_{L}=\nu_{L}/\eta_{L}$ with $\nu_{L}$ and $\eta_{L}$ respectively being the liquid kinematic viscosity and thermal diffusivity.
-
-On the other hand, if the liquid is overheated, the maximum of three heat transfer coefficients accounting for different heat tranfer mechanisms is taken \cite{berne1983}:
-
-\begin{equation}
-\label{eq:superheated_HT}
-C_{L,i}=\max{C_{L,i,1} ; C_{L,i,2} ; C_{L,i,3}}
-\end{equation}
-
-With $C_{L,i,n}=\lambda_{L}Nu_{L,n}/d_{G}$ and :
+With $C_{L,i,n}=\dfrac{\lambda_{L}\Nu_{L,n}}{D_{V}}$ and :
 
 \begin{equation}
 \label{eq:nusselt}
-Nu_{1}=\sqrt{\frac{4}{\pi}Pe}\text { ; } Nu_{2}=2 \text{ ; } Nu_{3}=\frac{12}{\pi} Ja
+Nu_{1}=\sqrt{\frac{4}{\pi}Pe}\text { ; } Nu_{2}=2 \text{ ; } Nu_{3}=\frac{12}{\pi} \Ja_{L}
 \end{equation}
 
 
-where $Pe=\norm{ \vect{U_{G}}-\vect{U_{L}} }d_{G}/\eta_{L}$ is the Peclet number and $Ja=\rho_{L}c_{p,L}\bars{T_{sat}-T_{L}}/\parth{\rho_{g} h_{lg}}$ the Jakob number, with $h_{lg}$ the latent heat of vaporization. Those three Nusselt numbers respectively correspond to convection heat transfer, stationnary conduction and transient conduction.
+where $\Pe=\Re_{b} \Pr_{L}$ is the Peclet number, $\Ja_{L}=\dfrac{ \rho_{L}c_{p,L}\bars{T_{sat}-T_{L}}}{\rho_{V} h_{LV}} $ the liquid Jakob number and $h_{LV}$ the latent heat of vaporization. 
 
+\npar
 
-For the gas phase, a simple law that ensures that the vapor temperature remains close to the saturation temperature is used (which is expected for small bubbles, \eg in a PWR) :
+Those three Nusselt numbers respectively correspond to convective heat transfer, stationnary conduction and transient conduction.
+
+\subsubsection{Vapor Heat Transfer}
+
+For the vapor phase, a simple law that ensures the vapor temperature to stay close to the saturation temperature is used (which is expected for small bubbles, \eg in a PWR) :
 
 \begin{equation}
-\label{eq:gas_relaxation}
-C_{G,i}a_{i}=\frac{\alpha_{G}\rho_{v}c_{p,G}}{t_{c}}
+C_{V,i}a_{i}=\frac{\alpha_{V}\rho_{V}c_{p,V}}{t_{c}}
+\label{eq:ncfd_vap_relaxation}
 \end{equation}
-
-where $c_{p,G}$ is the gas heat capacity at constant pressure, and $t_{c}$ a characteristic (relaxation) time given by the user (default value being $t_{c}=0.01\text{s}$) .
+where $c_{p,V}$ is the vapor heat capacity at constant pressure and $t_{c}$ a characteristic (relaxation) time given by the user (default value being $t_{c}=0.01\ \text{s}$) .
 
 \subsection{Interfacial Forces}
 \label{subsec:ncfd_interf_qdm}
 
-The interfacial momentum transfer (excluding transfer associated to transfer of mass $\Gamma_{k}$) is assumed to be composed of 4 different forces being the, drag $D$, the added mass $AM$, the lift $L$ and the turbulent dispersion $TD$ :
+The interfacial momentum transfer (excluding transfer associated to transfer of mass $\Gamma_{k}$) is assumed to be composed of 4 different forces being the, drag $D$, the added mass $AM$, the lift $L$ and the turbulent dispersion $TD$:
 
 \begin{equation}
-\label{eq:force_balance}
 \vect{F_{k,i}}=\vect{F_{k,D}} + \vect{F_{k,AM}} +\vect{F_{k,L}} +\vect{F_{k,TD}}
+\label{eq:ncfd_force_balance}
 \end{equation}
 
-The turbulent dispersion force $\vect{F_{k,TD}}$ originates from the averaging operation conducted on the three other forces' expressions, detailed in equations \ref{eq:drag}, \ref{eq:added_mass}, \ref{eq:lift} and \ref{eq:turb_disp}.
+\npar
 
+The turbulent dispersion force $\vect{F_{k,TD}}$ originates from the averaging operation conducted on the three other forces expressions, detailed in equations \ref{eq:ncfd_drag}, \ref{eq:ncfd_added_mass}, \ref{eq:ncfd_lift} and \ref{eq:ncfd_turb_disp}.
+
+\subsubsection{Drag Force}
+
+The drag force is modeled according to Ishii \& Zuber \cite{ishii_drag_1979}:
 
 \begin{equation}
-\label{eq:drag}
-\vect{F_{G,D}}=-\vect{F_{L,D}}=-\frac{1}{8}a_{i}\rho_{L}C_{D}\norm{ \vect{U_{G}}-\vect{U_{L}} }\parth{\vect{U_{G}}-\vect{U_{L}} }
+\vect{F_{V,D}}=-\vect{F_{L,D}}=-\frac{1}{8}a_{i}\rho_{L}C_{D}\norm{ \vect{U_{V}}-\vect{U_{L}} }\parth{\vect{U_{V}}-\vect{U_{L}} }
+\label{eq:ncfd_drag}
 \end{equation}
 
 \begin{equation}
-C_{D} = \frac{2}{3}D_{b}\sqrt{\dfrac{g\parth{\rho_{L}-\rho_{V}}}{\sigma}}\parth{ \frac{1 + 17.67~f\parth{\alpha}^{1.67}}{18.67f\parth{\alpha}} }, \ f\parth{\alpha} = \parth{1-\alpha}^{1.5}\ \text{for distorted bubbles.}
+C_{D} = \frac{2}{3}D_{V}\sqrt{\dfrac{g\parth{\rho_{L}-\rho_{V}}}{\sigma}}\parth{ \frac{1 + 17.67~f\parth{\alpha}^{1.67}}{18.67f\parth{\alpha}} }, \ f\parth{\alpha} = \parth{1-\alpha}^{1.5}\ \text{for distorted bubbles.}
 \end{equation}
 
 \begin{equation}
 C_{D} = \frac{8}{3} \parth{1-\alpha}^{2}\ \text{for churn-turbulent regime.}
 \end{equation}
 
+\subsubsection{Added Mass Force}
+
+The added mass force is modeled  following Zuber \cite{zuber_dispersed_1964}:
+
 \begin{align}
-\vect{F_{G,AM}}=-\vect{F_{L,AM}}=&-C_{AM} \frac{1+2\alpha_{G}}{1-\alpha_{G}}\alpha_{G}\rho_{L}\\
-&\times \crocht{ \parth{\dtime{\vect{U_{G}}}+\vecgrad{\vect{U_{G}}}\cdot \vect{U_{G}} } - \parth{\dtime{\vect{U_{L}}}+\vecgrad{\vect{U_{L}}}\cdot \vect{U_{L}} } }
-\label{eq:added_mass}
+\vect{F_{V,AM}}=-\vect{F_{L,AM}}=&-C_{AM} \frac{1+2\alpha_{V}}{1-\alpha_{V}}\alpha_{V}\rho_{L}\\
+&\times \crocht{ \parth{\dtime{\vect{U_{V}}}+\vecgrad{\vect{U_{V}}}\cdot \vect{U_{V}} } - \parth{\dtime{\vect{U_{L}}}+\vecgrad{\vect{U_{L}}}\cdot \vect{U_{L}} } }
+\label{eq:ncfd_added_mass}
 \end{align}
-with $C_{AM}=\dfrac{1}{2}$.
+with $C_{AM}=\dfrac{1}{2}$ and the term $\dfrac{1+2\alpha_{V}}{1-\alpha_{V}}$ accounts for the impact of bubble concentration.
+
+\subsubsection{Lift Force}
+
+The lift force is modeled based on the experiments of Tomiyama \etal \cite{tomiyama_transverse_2002}:
 
 \begin{equation}
-\label{eq:lift}
-\vect{F_{G,L}}=-\vect{F_{L,L}}=-C_{L}\alpha_{G}\rho_{L}\parth{\vect{U_{G}}-\vect{U_{L}} }\wedge \parth{\rot{\vect{U_{L}}} }
+\vect{F_{V,L}}=-\vect{F_{L,L}}=-C_{L}\alpha_{V}\rho_{L}\parth{\vect{U_{V}}-\vect{U_{L}} }\wedge \parth{\rot{\vect{U_{L}}} }
+\label{eq:ncfd_lift}
 \end{equation}
 
 \begin{equation}
@@ -216,118 +261,220 @@ C_{L} = \begin{cases}
    -0.27, & \text{if}\ \Eo_{H}>10
   \end{cases}
 \end{equation}
-
-
+where $\Eo_{H} = \dfrac{g\parth{\rho_{V}-\rho_{L}}D_{H}^{2}}{\sigma}$ is a modified E\"otv\"os number with:
 
 \begin{equation}
-\label{eq:turb_disp}
-\vect{F_{G,TD}}=-\vect{F_{L,TD}}=-\frac{2}{3}\alpha_{L}\alpha_{G}C_{TD}\grad{\alpha_{G}}
+D_{H} = D_{V}\sqrt[3]{1+0.163^Eo^{0.757}}
 \end{equation}
 
-with $C_{D}$, $C_{AM}$, $C_{L}$ and $C_{TD}$ the associated forces coefficients, respectively taken from \textsc{Ishii}\cite{ishii1967}, \textsc{Zuber}\cite{zuber1964}, \textsc{Tomiyama}\cite{tomiyama2002} and the Generalized Turbulent Dispersion model (GTD) from \textsc{Lavieville} \etal \cite{lavieville2017}.
+\subsubsection{Turbulent Dispersion Force}
+
+The turbulent dispersion force is computed following the General Turbulent Dispersion approach presented by Lavieville \etal \cite{lavieville_generalized_2017}:
+
+\begin{equation}
+\vect{F_{V,TD}}=-\vect{F_{L,TD}}=-\frac{2}{3}\alpha_{L}\alpha_{V}C_{TD}\grad{\alpha_{V}}
+\label{eq:ncfd_turb_disp}
+\end{equation}
+
+The value of $C_{TD}$ notably depends on the fluid turbulence, drag force, added mass force. Further details on its derivation are presented in Lavieville \etal \cite{lavieville_generalized_2017}.
+
+%\begin{align}
+%C_{TD} = \frac{F_{12}\tau_{12}^{t}}{3\rho_{L}} \frac{b+\eta_{r}}{1+\eta_{r}} + \frac{C_{12}}{\rho_{L}}\frac{b^{2} + \eta_{r}}{1+\eta_{r}} - \frac{b+\eta_{r}}{1+\eta_{r}} - \frac{\alpha_{L}}{\alpha_{V}}
+%\label{eq:ncfd_CTD}\\
+%%
+%b&= \frac{1+C_{VM}}{\frac{\rho_{L}}{\rho_{V}} + C_{VM}}
+%\end{align}
+
+%with $C_{D}$, $C_{AM}$, $C_{L}$ and $C_{TD}$ the associated forces coefficients, respectively taken from \textsc{Ishii}\cite{ishii1967}, \textsc{Zuber}\cite{zuber1964}, \textsc{Tomiyama}\cite{tomiyama2002} and the Generalized Turbulent Dispersion model (GTD) from \textsc{Lavieville} \etal \cite{lavieville2017}.
 
 \section{Turbulence Modeling}
 \label{subsec:turbulence}
 
-\begin{equation}
-\dtime{R_{ij}} + U_{k}
-\end{equation}
+%\begin{equation}
+%\dtime{R_{ij}} + U_{k}
+%\end{equation}
+%
+%\begin{equation}
+%\dtime{\tens{R}} + \vect{U_{k}}\cdot \grad{R_{ij}} = 
+%\end{equation}
 
-\begin{equation}
-\dtime{\tens{R}} + \vect{U_{k}}\cdot \grad{R_{ij}} = 
-\end{equation}
+For bubbly flow simulations, only liquid phase turbulence is taken into account while it is neglected for the vapor phase. The prescribed model is the Reynolds Stress Model $R_{ij}-\varepsilon~SSG$ from Speziale, Sarkar and Gatski \cite{speziale_modelling_1991} adapted to two-phase boiling flows by Mimouni \etal\cite{mimouni_combined_2011}. Noting $R_{ij} = \left< U'_{L,i}U'_{L,j} \right>_{L}$ and $\alpha = \alpha_{V}$, it reads:
 
-For bubbly flow simulations, only liquid phase turbulence is taken into account. The prescribed model is the Reynolds Stress Model (RSM) $R_{ij}-\varepsilon~SSG$ from \textsc{Speziale}, \textsc{Sarkar} and \textsc{Gatski}\cite{speziale1991} adapted to two-phase boiling flows by \textsc{Mimouni} \etal\cite{mimouni2011}.
+\begin{align}
+\parth{1-\alpha}+\frac{\mathrm{D}\rho_{L}R_{ij}}{\mathrm{D}t}  = & \frac{\partial}{\partial x_{k}}\crocht{ \parth{\rho_{L}\nu_{L} + \rho_{L}C_{s} \frac{k}{\varepsilon}R_{ij}} \frac{\partial}{\partial x_{k}}\parth{ \parth{1-\alpha} R_{ij} } } \\
+&+ \parth{1 - \alpha}\parth{P_{ij} + G_{ij} + \Phi_{ij} + \varepsilon_{ij}}
+\end{align}
+where $\mathrm{D}/\mathrm{D}t$ is the Lagrangian derivative, $k$ the turbulent kinetic energy, $\varepsilon$ the turbulent pseudo-dissipation rate, $\tens{P}$ the turbulent production term, $\tens{G}$ the gravity production, $\tens{\Phi}$ the pressure-strain term and $\tens{\varepsilon}$ the viscous destruction term.
 
-\begin{equation}
-\dtime{R_{ij}} + U_{k}\dpartial{R_{ij}}{x_{k}} = - R_{ik} \dpartial{U_{j}}{x_{k}}
-\end{equation}
+\npar
+
+All those terms need a proper modeling, for which we refer the reader to Mimouni \etal \cite{mimouni_combined_2011}.
+
+\npar
+
+The transport equation on $\varepsilon$ also includes the impact of $\alpha$:
+
+
+\begin{align}
+\parth{1-\alpha}+\frac{\mathrm{D}\varepsilon}{\mathrm{D}t}  &= \frac{\partial}{\partial x_{k}}\crocht{ C_{\varepsilon} \frac{k}{\varepsilon}\left< U'_{L,k}U'_{L,l} \right>_{L}  \frac{\partial \parth{1-\alpha} \epsilon}{\partial x_{l}} } \\
+&+ \parth{C_{\varepsilon_{1}} + C_{\varepsilon_{3}}G + C_{\varepsilon_{4}}k\frac{\partial U_{L,k}}{\partial x_{k}} - C_{\varepsilon_{2}}\epsilon } \frac{\parth{1-\alpha}\epsilon}{k}
+\end{align}
+
+\npar
+
+We conclude by specifying the values used for the constants in NEPTUNE\_CFD (Table \ref{tab:ncfd_ssg_constants}).
+
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{c c c c c c c c c c} 
+\hline
+$C_{s}$ & $C_{1}$ & $C_{2}$ & $C_{1}^{\omega}$ & $C_{2}^{\omega}$ & $C_{\varepsilon}$ & $C_{\varepsilon_{1}}$ & $C_{\varepsilon_{2}}$ & $C_{\varepsilon_{3}}$ & $C_{\varepsilon_{4}}$ \\
+\hline
+0.2 & 1.8 & 0.6 & 0.5 & 0.3 & 0.18 & 1.44 & 1.92 & 1.44 & 0.33\\
+\hline
+\end{tabular}
+
+\caption{Constant values for the SSG model in NEPTUNE\_CFD}
+\label{tab:ncfd_ssg_constants}
+
+\end{table}
+
+
 
 
 \section{Wall Boiling Model}
 \label{sec:ncfd_HFP}
 
-The modeling of the heterogeneous boiling phenomenon at the wall is based on a Heat Flux Partioning (HFP) model, inspired by \textsc{Kurul} \& \textsc{Podowski} original work\cite{kurul1990} who divided the wall heat flux density $\phi_{w}$ in three terms  :
+The modeling of the heterogeneous boiling phenomenon at the wall is based on a Heat Flux Partioning (HFP) model,  from Kurul \& Podowski original work\cite{kurul_multidimensional_1990} who divided the wall heat flux density $\phi_{w}$ in three terms  :
 
 \begin{itemize}
-\item A single phase convective heat flux $\phi_{c,L}$ heating the liquid through the fraction of the wall area unaffected by the vapor bubbles
-\item A vaporization heat flux $\phi_{e}$ which accounts for the generation of vapor through heterogeneous nucleation
+\item A single phase convective heat flux $\phi_{c,L}$ heating the liquid through the fraction of the wall area unaffected by the vapor bubbles ;
+\item A vaporization heat flux $\phi_{e}$ which accounts for the generation of vapor through heterogeneous nucleation ;
 \item A quenching heat flux $\phi_{q}$ to represent the thermal impact of bubbles departing from the wall and being replaced by cool liquid
 \end{itemize}
 
-A fourth flux is added to this HFP in NEPTUNE\_CFD, following \textsc{Mimouni} \etal\cite{mimouni2016} who consider a convective heat flux heating the vapour $\phi_{c,G}$ when the wall area is covered by a dense accumulation of bubbles.
+A fourth flux is added to this HFP in NEPTUNE\_CFD, following Mimouni \etal\cite{mimouni_computational_2016} who consider a convective heat flux towards the vapour $\phi_{c,V}$ when the wall area is covered by a dense accumulation of bubbles. 
 
-The model thus gives Equation \ref{eq:HFP} :
+\npar
+
+The model is then ponderated by a phenomelogical function $f_{\alpha_{L}}$ enhancing $\phi_{c,V}$ when the void fraction at the wall becomes large. It thus gives Equation \ref{eq:ncfd_HFP} :
 
 \begin{equation}
-\label{eq:HFP}
-\phi_{w}=\phi_{c,L}+\phi_{e}+\phi_{q}+\phi_{c,G}
+\phi_{w}=f_{\alpha_{L}} \parth{\phi_{c,L}+\phi_{e}+\phi_{q}} + \parth{1+f_{\alpha_{L}} }\phi_{c,V}
+\label{eq:ncfd_HFP}
 \end{equation}
+where $f_{\alpha_{L}}$ verifies smooth conditions $\lim\limits_{\alpha_{L} \to 1} f_{\alpha_{L}} = 1$, $\lim\limits_{\alpha_{L} \to 0} f_{\alpha_{L}} = 0$, $\lim\limits_{\alpha_{L} \to 0} \dfrac{f_{\alpha_{L}} }{ \alpha_{L}} = 0$ and $\lim\limits_{\alpha_{L} \to 1} \dfrac{ 1 - f_{\alpha_{L}} }{ 1 - \alpha_{L}} = 0$.
 
-The convective heat fluxes are expressed as $\phi_{c,k}=A_{k}h_{k,log}\parth{T_{w}-T_{k}}$ with :
+\npar
+The convective heat fluxes are expressed as:
 
-\begin{equation} 
-h_{k,log}=\rho_{k}c_{p,k}{u^{*}}/{T_{L}^{+}}
+\begin{align}
+\phi_{c,k} &=A_{k}h_{k,log}\parth{T_{w}-T_{k}}\\
+%
+h_{k,log} &=\frac{ \rho_{k}c_{p,k}{U_{\tau}}}{{T_{L}^{+}} }
 \label{eq:ncfd_hfc}
-\end{equation}
-where $A_{k}$ the fraction of the wall area facing phase $k$, $T_{w}$ the wall temperature and $h_{k,log}$ the wall logarithmic convective heat transfer coefficient to phase $k$ based on the wall functions for friction velocity $u^{*}$ and non-dimensional liquid temperature $T_{L}^{+}$ described in \ref{subsec:wall_func}.
+\end{align}
+where $A_{k}$ the fraction of the wall area facing phase $k$, $T_{w}$ the wall temperature and $h_{k,log}$ the wall logarithmic convective heat transfer coefficient to phase $k$ based on the wall functions for friction velocity $U_{\tau}$ and non-dimensional liquid temperature $T_{L}^{+}$ described in \ref{subsec:wall_func}.
 
+\npar
 The vaporization heat flux is computed following:
 
-
 \begin{equation}
-\phi_{e}=N_{sit}f\rho_{G}h_{lg}{\pi d_{d}^{2}}/{6}
+\phi_{e}=N_{sit}f\rho_{V}h_{LV}\frac{\pi D_{d}^{2}}{6}
 \label{eq:phie_NCFD}
-\end{equation}with $N_{sit}$ the nucleation site density modeled as \cite{lemmert1977}
+\end{equation}
 
+
+Closure of physical parameters needed are :
+
+\begin{itemize}
+\item $N_{sit}$ the nucleation site density modeled as \cite{lemmert_influence_1977}:
 \begin{equation}
 N_{sit}=\crocht{210\parth{T_{w}-T_{sat}} }^{1.8}
 \label{eq:nsit_NCFD}
 \end{equation}
 
-\begin{itemize}
-
-\item $f$ the bubble detachment frequency expressed as \cite{cole1960} : $f=\sqrt{\frac{4}{3}\frac{g\bars{\rho_{v}-\rho_{l}} }{\rho_{l}d_{d}}}$
-\item $d_{d}$ the bubble detachment diameter given by Unal correlation\cite{unal1976} corrected by Bor\'ee \etal[ref] (Equation \ref{eq:unal})
-\end{itemize}
-
+\item $f$ the bubble detachment frequency expressed as \cite{cole_bubble_1967}: 
 \begin{equation}
-\label{eq:unal}
-d_{d}=2.42\times 10^{-5} P^{0.709} \frac{a}{\sqrt{b\varphi}}\text{ with } a=\frac{\parth{T_{w}-T_{sat}} \lambda_{w}}{2\rho_{G}h_{lg}\sqrt{\pi\eta_{w}}} \text{ and } 
-  b=\begin{cases}
-    \frac{T_{sat}-T_{L}}{2 \parth{1-\rho_{G}/\rho_{L} })}, & \text{if $St\leq0.0065$}\\
-    \frac{1}{2 \parth{1-\rho_{G}/\rho_{L} })}\frac{\phi_{c,L}+\phi_{e}+\phi_{q}}{0.0065\rho_{L}c_{p,L}\norm{\vect{U_{L}}}}, & \text{\text{if $St>0.0065$}}
-  \end{cases}
+f=\sqrt{\frac{4}{3}\frac{g\bars{\rho_{V}-\rho_{L}} }{\rho_{L}D_{d}}}
 \end{equation}
 
-where $\lambda_{w}$ and $\eta_{w}$ are the wall thermal conductivity and diffusivity, $St=\displaystyle \frac{\phi_{c,L}+\phi_{e}+\phi_{q}}{\rho_{L}c_{p,L}\norm{\vect{U_{L}}}\parth{T_{sat}-T_{L} }}$ is the Stanton number and $\varphi=\displaystyle \max{1 ; \parth{\frac{\norm{\vect{U_{L}}}}{U_{0}} }^{0.47} }$ with $U_{0}=0.61\text{m/s}$
+\item $D_{d}$ the bubble detachment diameter given by \"Unal correlation \cite{unal_maximum_1976} corrected by Bor\'ee \etal \cite{boree_ecoulements_1992} (Equation \ref{eq:ncfd_unal_boree}).
 
-Finally, the quenching heat flux follows the approach of \textsc{Del Valle} \& \textsc{Kenning}\cite{delvalle1985} supposing that it follows a semi-infinite transient conduction regime : $\displaystyle \phi_{q}=A_{G}t_{q}f\frac{2\lambda_{L} \parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}t_{q}}}$ where $t_{q}$ is the quenching time, supposed to be equal to $1/f$.
+\end{itemize}
+
+
+
+\begin{align}
+D_{d}&=2.42\times 10^{-5} P^{0.709} \frac{a}{\sqrt{b\varphi}}\text{ with }
+  \label{eq:ncfd_unal_boree}\\
+  %
+ a&=\frac{\parth{T_{w}-T_{sat}} \lambda_{w}}{2\rho_{V}h_{LV}\sqrt{\pi\eta_{w}}}\\
+ %
+  b&=\begin{cases}
+    \dfrac{T_{sat}-T_{L}}{2 \parth{1-\dfrac{\rho_{V}}{\rho_{L}} }}, & \text{if $St\leq0.0065$}\\
+    \dfrac{1}{2 \parth{1-\rho_{G}/\rho_{L} })}\dfrac{\phi_{c,L}+\phi_{e}+\phi_{q}}{0.0065\rho_{L}c_{p,L}\norm{\vect{U_{L}}}}, & \text{\text{if $St>0.0065$}}
+    \end{cases}
+\end{align}
+where $\lambda_{w}$ and $\eta_{w}$ are the wall thermal conductivity and diffusivity, $St=\dfrac{\phi_{c,L}+\phi_{e}+\phi_{q}}{\rho_{L}c_{p,L}\norm{\vect{U_{L}}}\parth{T_{sat}-T_{L} }}$ is the Stanton number and $\varphi=\displaystyle \max{1 ; \parth{\frac{\norm{\vect{U_{L}}}}{U_{0}} }^{0.47} }$ with $U_{0}=0.61\text{m/s}$
+
+\npar
+
+Finally, the quenching heat flux follows the approach of {Del Valle} \& {Kenning} \cite{del_valle_subcooled_1985} supposing that it follows a semi-infinite transient conduction regime: 
+
+\begin{equation}
+\phi_{q}=A_{G}t_{q}f\frac{2\lambda_{L} \parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}t_{q}}}
+\label{eq:ncfd_phiq}
+\end{equation} 
+where $t_{q}$ is the quenching time, supposed to be equal to $1/f$.
+
+
 
 \section{Wall Function for Dispersed Boiling Flows}
 \label{subsec:wall_func}
 
-In boiling flows, the formation of bubbles at the wall may disturb the liquid velocity profile in the boundary layer. To take this phenomena into account, \textsc{Mimouni} \etal\cite{mimouni2016} proposed a wall function for boiling flows which tends to the single-phase formulation when $\alpha_{G} \rightarrow 0$ and depends on the bubble diameter and density at the wall : 
+In boiling flows, the formation of bubbles at the wall may disturb the liquid velocity profile in the boundary layer. To take this phenomena into account, Mimouni \etal\cite{mimouni_computational_2016} proposed a wall function for boiling flows which tends to the single-phase formulation when $\alpha_{V} \rightarrow 0$ and depends on the bubble diameter and density at the wall: 
 
 \begin{equation}
-\label{eq:wall_law}
-u^{+}=\frac{1}{\kappa}\ln{ y^{+} } + B - \Delta u^{+} \text{ with } 
-  \Delta u^{+}=\begin{cases}
-    0 & \text{if $k_{r}^{+}\leq11.3$}\\
-    \frac{1}{\kappa}\ln{ 1+ C_{kr}k_{r}^{+} } & \text{\text{if $k_{r}^{+}>11.3$}}
-  \end{cases}
+U^{+}=\frac{1}{\kappa}\ln{ y^{+} } + B - \Delta U^{+} \text{ with } 
+\label{eq:ncfd_wall_law}
 \end{equation}
+where $\kappa$=0.41 is the Von Karman constant, $B=5.3$ the standard single-phase logarithmic law constant and $\Delta U^{+}$ represents the offset of $U^{+}$ due to the wall roughness induced by the presence of bubble.
 
-where $\kappa$=0.41 is the Von Karman constant, $B=5.3$ the standard single-phase logarithmic law constant. $\Delta u^{+}$ represents the offset of $u^{+}$ due to the wall roughness induced by the presence of bubble. We have $C_{kr}=0.5$ and $k_{r}=\displaystyle \frac{k_{r}\sqrt{u^{*}u_{T}}}{\nu_{L}}$ the "roughness Reynolds number" with $u_{T}=C_{\mu}^{1/4}\sqrt{k_{L}}$ defined from the $k-\varepsilon$ constant $C_{\mu}=0.09$ and $k_{L}$ the liquid turbulent kinetic energy. Finally, $k_{r}=\alpha_{G}d_{G}$.
+\npar
 
-The non-dimensional wall liquid temperature $T_{L}^{+}$ is modeled according to \textsc{Leduc}\cite{leduc1995}:
+The correction $\Delta u^{+}$ is computed as:
+
+\begin{align}
+  \Delta U^{+}&=\begin{cases}
+    0 & \text{if $k_{r}^{+}\leq 11.3$}\\
+    \dfrac{1}{\kappa}\ln{ 1+ C_{kr}k_{r}^{+} } & \text{\text{if $k_{r}^{+}>11.3$}}
+  \end{cases} \\
+%
+k_{r}^{+}&= \dfrac{k_{r}\sqrt{U_{\tau}U_{T}}}{\nu_{L}} \\
+%
+k_{r}&=\alpha_{V}d_{V}\\
+%
+U_{T}&=C_{\mu}^{1/4}\sqrt{k_{L}}
+\end{align}
+with $C_{kr}=0.5$ , $k_{r}$ a "bubble roughness Reynolds number", $C_{\mu}=0.09$ defined from the $k-\varepsilon$ and $k_{L}$ the liquid turbulent kinetic energy.
+
+\npar
+
+The non-dimensional wall liquid temperature $T_{L}^{+}$ is modeled according following a Van Driest formulation:
 
 \begin{equation}
-\label{eq:wall_law} 
-  T_{L}^{+}=\begin{cases}
-    Pr_{L}~y^{+}, & \text{if $y^{+}\leq 13.2$}\\
-    8.67Pr_{L,T}\parth{ \frac{Pr_{L}}{Pr_{L,T}}-1 } \parth{\frac{Pr_{L,T}}{Pr_{L}} }^{0.25} + \frac{Pr_{L,T}}{\kappa}\ln{Ey^{+}}  & \text{\text{if $y^{+}>13.2$}}
-  \end{cases}
+T_{L}^{+} = \int_{0}^{y^{+}} \frac{2\mathrm{d}y}{1 + \dfrac{1}{2}\dfrac{\Pr_{L}}{\Pr_{T}}\sqrt{1+4\kappa^{2} {y^{+}}^{2}  \parth{1-\exp{-y^{+}/A}}^{2}}}
 \end{equation}
+with $A=25.6$, $\Pr_{T} = 0.9$ and $y^{+} \approx 100$ usually.
 
-With $Pr_{L,T}=0.9$ the turbulent liquid Prandtl number, and $E=7.76$ a constant for smoth walls.
+%\begin{equation}
+%\label{eq:wall_law} 
+%  T_{L}^{+}=\begin{cases}
+%    Pr_{L}~y^{+}, & \text{if $y^{+}\leq 13.2$}\\
+%    8.67Pr_{L,T}\parth{ \frac{Pr_{L}}{Pr_{L,T}}-1 } \parth{\frac{Pr_{L,T}}{Pr_{L}} }^{0.25} + \frac{Pr_{L,T}}{\kappa}\ln{Ey^{+}}  & \text{\text{if $y^{+}>13.2$}}
+%  \end{cases}
+%\end{equation}
+%
+%With $Pr_{L,T}=0.9$ the turbulent liquid Prandtl number, and $E=7.76$ a constant for smoth walls.
