@@ -287,7 +287,7 @@ On the other hand, the bubble diameter (Figure \ref{fig:30T62_T64_dV}) is largel
 The vapor velocity profiles (Figure \ref{fig:30T62_T64_Uvap}) are in accordance with the DEBORA measurements, both in the values and profile shape. \textbf{This may be supporting the evaluation of the interfacial momentum transfer determining the drift velocity between liquid and vapor.}
 
 \begin{remark*}{}
-The interfacial momentum terms (Subsection \ref{subsec:ncfd_interf_forces}) also depend on the local void fraction, meaning that achieving a correct velocity profile while having an erroneous void fraction does not ensure the validation of the interfacial forces by itself. However, the difference in vapor velocity from one case to another is coherent with the experiments, which at least implies a correct sensitivity to the local thermal-hydraulics conditions.
+The interfacial momentum terms (Subsection \ref{subsec:ncfd_interf_forces}) also depend on the local void fraction and bubble diameter, meaning that achieving a correct velocity profile while having an erroneous void fraction and bubble diameter does not ensure the validation of the interfacial forces by itself. However, the difference in vapor velocity from one case to another is coherent with the experiments, which at least implies a correct sensitivity to the local thermal-hydraulics conditions.
 \end{remark*}
 
 
@@ -521,7 +521,7 @@ The difference between the simulations results are presented on Figure \ref{fig:
 The nucleation site density modification induces very small variations over the bulk quantities (Figures \ref{fig:8T55_alpha_nsit} to \ref{fig:8T55_TL_nsit}). The only observable differences lie very close to the wall with an absolute void fraction change of $1.5\%$ and bubble diameter change less than $0.01$\ mm. However, the computed heat fluxes (Figure \ref{fig:8T55_fluxes_nsit}) show large difference between the three cases, with an evaporation heat flux enhanced by more than 15\% by changing from Lemmert \& Chawla to Li \etal formulation. The absence of such a difference in the bulk means that models controlling the bulk thermodynamic equilibrium (\eg condensation) rapidly compensate changes in the heat flux partitioning to reach the very similar distribution between $\alpha$ and $T_{L}$.
 
 \begin{note*}{}
-This "compensating" effect of the bulk models in CFD computations when changing the wall Heat Flux Partitioning has also been noted in other works such as in Gilman \& Baglietto \cite{gilman_self-consistent_2017}.
+This "compensating" effect of the bulk models in CFD computations when changing the wall Heat Flux Partitioning has also been noted in other works such as in Gilman \& Baglietto \cite{gilman_self-consistent_2017} or Montout \cite{montout_contribution_2009}.
 \end{note*}
 
 
