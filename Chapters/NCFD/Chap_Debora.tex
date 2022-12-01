@@ -288,6 +288,43 @@ This measurement technique was performed in the \textbf{measurement campaign C80
 \end{note*}
 
 
+\subsubsection{Measurements Uncertainties}
+
+On Table \ref{tab:deb_mes_uncertainty} we mention the uncertainties associated to each control parameter and measurement.
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{c|c|c} 
+
+Quantity & Notation & Uncertainty \\
+\hline \hline
+Mass flux & $G$ & $\pm 1\%$ (relative)\\
+%
+Outlet pressure & $P$ & $5000$\ Pa (absolute)\\
+%
+Inlet temperature & $T_{L,in}$ & $\pm 0.2\degC$ (absolute)\\
+%
+Heat flux & $\phi_{w}$ & $\pm 4\%$ (relative)\\
+%
+\hline
+\hline
+%
+Void fraction & $\alpha$ & $\pm 2\%$ (absolute)\\
+%
+Bubble diameter & $D_{V}$ & $\pm 12\%$ (relative)\\
+%
+Vapor velocity & $U_{V,z}$ & $\pm 10\%$ (relative)\\
+%
+Wall \& liquid temperature & $T_{w}$ \& $T_{L}$ & $\pm 0.2\degC$ (absolute)\\
+\hline
+\end{tabular}
+
+\caption{Uncertainties for DEBORA results \cite{gueguen_contribution_2013, cubizolles_etude_1996}}
+\label{tab:deb_mes_uncertainty}
+
+\end{table}
+
+
 
 \section{Measurements Campaigns and Results}
 \label{sec:deb_exp_campaign}
@@ -685,6 +722,8 @@ The comparison of wall temperature with local flow quality (Figure \ref{fig:G2P1
 
 
 \subsection{Reconstruction of the Applied Heat Flux}
+\label{subsec:deb_phi_corr}
+
 
 To further quantify the coherency of the DEBORA database, we want to reconstruct the wall heat flux injected in the flow from the experimental measurements of void fraction, vapor velocity and liquid temperature measurements.
 
@@ -813,9 +852,9 @@ The results obtained for the heat flux recalculations are presented on Table \re
 Case name & $x_{m}$ [-] & $\phi_{w,rec}$ [kW/m$^{2}$] & $\phi_{w,exp}$ [kW/m$^{2}$] & $\Delta \phi_{w}$ [\%]  \\
 \hline
 \hline
-30G2P26W23Te66.6 & 0.0193 & 70.432 & 73.893 & -4.68\%\\
+30G2P26W23Te66 & 0.0193 & 70.432 & 73.893 & -4.68\%\\
 \hline
-30G2P26W23Te70.6 & 0.0500\% & 68.041 & 73.893 & -7.9\%\\
+30G2P26W23Te70 & 0.0500\% & 68.041 & 73.893 & -7.9\%\\
 %\hline
 %\hline
 %30G2P14W16Te40 & 0 & 0 & 0 & 0 & 0
@@ -826,7 +865,11 @@ Case name & $x_{m}$ [-] & $\phi_{w,rec}$ [kW/m$^{2}$] & $\phi_{w,exp}$ [kW/m$^{2
 
 \end{table}
 
-We see that reconstructing the heat flux yields values significantly lower than the experimental values given in the database. This underestimation was also noted in a similar approach conducted by Guéguen \cite{gueguen_contribution_2013} who found discrepancy of a few \%.
+We see that reconstructing the heat flux yields values significantly lower than the experimental values given in the database. The initial uncertainty of the wall heat flux being of $4\%$ (Table \ref{tab:deb_mes_uncertainty}), which is smaller than the computed values but close for the Te66 case.
+
+\npar
+
+This underestimation was also noted for single-phase C800 cases in a similar approach conducted by Guéguen \cite{gueguen_contribution_2013} who found discrepancy up to 6\%.
 
 In our case, these discrepancies can be partially explained by:
 \begin{itemize}

@@ -76,11 +76,12 @@ Where $H_{k}=e_{k}+\frac{U_{k}^{2}}{2}+\frac{P}{\rho_{k}}=h_{k}+\frac{U_{k}^{2}}
 However, this ensemble-average approach requires a given number of closure laws since this mathematical operation removes most of the information about smaller scales physics such as interfacial exchanges between phases or wall-fluid interaction. Terms for which this modeling effort is needed are colored in orange in equations \ref{eq:mass}, \ref{eq:momentum} and \ref{eq:energy}. The chosen expressions for those terms are detailed in subsections \ref{subsec:int_transfers}, \ref{subsec:turbulence} and \ref{subsec:HFP}.
 
 \section{Interfacial transfers closure laws}
-\label{subsec:int_transfers}
+\label{sec:int_transfers}
 
 The interfacial transfers of mass, momentum and energy are respectively noted in equations \ref{eq:mass}, \ref{eq:momentum} and \ref{eq:energy} : $\Gamma_{k}$, $\vect{F_{k,i}}$ and $Q_{k,i}$.
 
 \subsection{Heat and mass transfers :}
+\label{subsec:ncfd_interf_mass}
 
 
 The mass transfer term, can be written as : $\Gamma_{L,i} + \Gamma_{G,i} = 0$, $\Gamma_{L,w} + \Gamma_{G,w} = 0$ with $\Gamma_{G,w} \geq 0$ in the case of boiling flows. This finally gives $\Gamma_{L}=-\Gamma_{G}$.
@@ -136,7 +137,8 @@ C_{G,i}a_{i}=\frac{\alpha_{G}\rho_{v}c_{p,G}}{t_{c}}
 
 where $c_{p,G}$ is the gas heat capacity at constant pressure, and $t_{c}$ a characteristic (relaxation) time given by the user (default value being $t_{c}=0.01\text{s}$) .
 
-\subsection{Interfacial Forces :}
+\subsection{Interfacial Forces}
+\label{subsec:ncfd_interf_qdm}
 
 The interfacial momentum transfer (excluding transfer associated to transfer of mass $\Gamma_{k}$) is assumed to be composed of 4 different forces being the, drag $D$, the added mass $AM$, the lift $L$ and the turbulent dispersion $TD$ :
 
@@ -236,9 +238,21 @@ h_{k,log}=\rho_{k}c_{p,k}{u^{*}}/{T_{L}^{+}}
 \end{equation}
 where $A_{k}$ the fraction of the wall area facing phase $k$, $T_{w}$ the wall temperature and $h_{k,log}$ the wall logarithmic convective heat transfer coefficient to phase $k$ based on the wall functions for friction velocity $u^{*}$ and non-dimensional liquid temperature $T_{L}^{+}$ described in \ref{subsec:wall_func}.
 
-The vaporization heat flux is computed following $\phi_{e}=N_{sit}f\rho_{G}h_{lg}{\pi d_{d}^{2}}/{6}$ with :
+The vaporization heat flux is computed following:
+
+
+\begin{equation}
+\phi_{e}=N_{sit}f\rho_{G}h_{lg}{\pi d_{d}^{2}}/{6}
+\label{eq:phie_NCFD}
+\end{equation}with $N_{sit}$ the nucleation site density modeled as \cite{lemmert1977}
+
+\begin{equation}
+N_{sit}=\crocht{210\parth{T_{w}-T_{sat}} }^{1.8}
+\label{eq:nsit_NCFD}
+\end{equation}
+
 \begin{itemize}
-\item $N_{sit}$ the nucleation site density modeled as \cite{lemmert1977} : $N_{sit}=\crocht{210\parth{T_{w}-T_{sat}} }^{1.8}$
+
 \item $f$ the bubble detachment frequency expressed as \cite{cole1960} : $f=\sqrt{\frac{4}{3}\frac{g\bars{\rho_{v}-\rho_{l}} }{\rho_{l}d_{d}}}$
 \item $d_{d}$ the bubble detachment diameter given by Unal correlation\cite{unal1976} corrected by Bor\'ee \etal[ref] (Equation \ref{eq:unal})
 \end{itemize}

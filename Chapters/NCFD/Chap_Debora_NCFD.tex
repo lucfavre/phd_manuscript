@@ -121,6 +121,7 @@ One of the most remarkable impact of the mesh concerns the liquid temperature in
 
 
 \section{C800 Cases Simulations : Thermal Measurements}
+\label{sec:deb_cfd_c8}
 
 In this Section, we focus our attention on cases from the 8G2P26W16 series to assess liquid and wall temperature predictions. We sub-divide the case in three parts depending on the degree of subcooling at the outlet in order to cover both single-phase and fully boiling cases.
 
@@ -151,11 +152,11 @@ We start by simulating cases 8G2P26W16Te31.5 and Te44.9 which both have an outle
 
 \npar
 
-The liquid temperature profiles are fairly reproduced with experimental the parabolic shape correctly captured along with quite precise prediction of the temperature values in the bulk (Figure \ref{fig:8T31_T44_TL}). Still, we note that an overestimation near the wall and a small underestimation (less than $1\degC$) when approaching the center of the pipe.
+The liquid temperature profiles are fairly reproduced with the experimental parabolic shape correctly captured along with quite precise prediction of the temperature values in the bulk (Figure \ref{fig:8T31_T44_TL}). Still, we note that an overestimation of the liquid temperature near the wall and a small underestimation (less than $1\degC$) when approaching the center of the pipe.
 
 \npar
 
-Wall temperature predictions in the single-phase region present a good agreement with the experimental measurements along the axial positions (Figure \ref{fig:8T31_T44_Tw}). This is further verified by transposition along the local quality $x_{eq}$ (Figure \ref{fig:8T31_T44_Tw_x}) gathering all the measurements from the 8G2P26W16 campaign, showing an average error of approximately $1 \degC$ up to $x_{eq} \approx -0.5$.
+Wall temperature predictions in the single-phase region present a good agreement with the experimental measurements along the axial positions (Figure \ref{fig:8T31_T44_Tw}). This is further verified by transposition along the local quality $x_{eq}$ (Figure \ref{fig:8T31_T44_Tw_x}) by gathering all the measurements from the 8G2P26W16 campaign, showing an average error of approximately $1 \degC$ up to $x_{eq} \approx -0.5$.
 
 \npar
 
@@ -244,6 +245,7 @@ The small yet observed global overestimation of the liquid temperature may be a 
 
 
 \section{C3000 Cases Simulations : Topology Measurements}
+\label{sec:deb_cfd_c30}
 
 Now that comparisons with thermal measurements have been conducted, we move to assessment of core flow topology predictions by the code. Based on results from the 30G2P26W16 campaign, we will compare the predictions of the void fraction, the bubble diameter and the vapor velocity at the end of the heating length. We will separately focus on subcooled boiling and saturated cases.
 
@@ -284,6 +286,10 @@ On the other hand, the bubble diameter (Figure \ref{fig:30T62_T64_dV}) is largel
 
 The vapor velocity profiles (Figure \ref{fig:30T62_T64_Uvap}) are in accordance with the DEBORA measurements, both in the values and profile shape. \textbf{This may be supporting the evaluation of the interfacial momentum transfer determining the drift velocity between liquid and vapor.}
 
+\begin{remark*}{}
+The interfacial momentum terms (Subsection \ref{subsec:ncfd_interf_forces}) also depend on the local void fraction, meaning that achieving a correct velocity profile while having an erroneous void fraction does not ensure the validation of the interfacial forces by itself. However, the difference in vapor velocity from one case to another is coherent with the experiments, which at least implies a correct sensitivity to the local thermal-hydraulics conditions.
+\end{remark*}
+
 
 \subsection{Saturated Boiling Cases}
 
@@ -321,9 +327,126 @@ Finally, vapor velocity (Figure \ref{fig:30T66_T70_Uvap}) is correctly reproduce
 
 \section{Simulations Sensitivity Tests}
 
+In this section, we perform two sensitivity tests for the CFD results presented in Sections \ref{sec:deb_cfd_c8} and \ref{sec:deb_cfd_c30}. 
+
 
 \subsection{Sensitivity to Wall Heat Flux Correction}
 
+
+As observed in previous results, the simulations for saturated cases showed simultaneous overestimation of the void fraction (Figure \ref{fig:30T66_T70_alpha}), the liquid temperature (Figure \ref{fig:8T66_T70_TL}) and the wall temperature (Figure \ref{fig:8T66_T70_Tw}) for topology (C3000) and thermal (C800) cases in very close experimental conditions. Such a result means that we concurrently overestimate the phase change and the liquid enthalpy, \textbf{which physically means that we injected too much energy into the system.}
+
+\npar
+
+Considering that the inlet conditions (liquid mass flux / velocity and temperature) are correct, we can question the value of the total heat flux applied in the simulation. This echoes the analysis conducted in Subsection \ref{subsec:deb_phi_corr} where assembling tests from C3000 and C800 campaign to recompute the total heat injected in the system yielded calculated heat fluxes up to $8\%$ smaller than the given experimental value (Table \ref{tab:debora_flux_corr_res}).
+
+\begin{note*}
+We want to insist here that this estimation was based on a "merging" of different experimental tests in similar conditions . Small differences in the control parameters (Table \ref{tab:debora_match_C8C30}) between C800 and C3000 cases can partly explain the calculated heat flux "error".
+\end{note*}
+
+\npar
+
+In order to assess this observation, we apply a heat flux correction for the cases 8G2P26W16Te66.6 \& Te70.3 respectively associated with 30G2P26W16Te66 \& Te70. Recalling  Table \ref{tab:debora_flux_corr_res} and acknowledging that the error may have been overestimated, we apply the correction showed in Tabled \ref{tab:debora_cfd_phicorr}.
+ 
+
+
+
+
+
+\begin{table}[!h]
+\centering
+
+\begin{tabular}{c||c|c|c|c|c}
+Case name & Initial $\phi_{w}$ [kW/m$^{2}$] & Correction [$\%$] & Corrected $\phi_{w}$ [kW/m$^{2}$]\\
+\hline
+\hline
+30G2P26W23Te66 and 8G2P26W16Te66.6 & 73.9 & $-4\%$ & 70.94 \\
+\hline
+30G2P26W23Te70 and 8G2P26W16Te70.3 & 73.9 & $-6\%$ & 69.47 \\
+%\hline
+%\hline
+%30G2P14W16Te40 & 0 & 0 & 0 & 0 & 0
+\end{tabular}
+
+\caption{Corrected heat fluxes applied in the simulations}
+\label{tab:debora_cfd_phicorr}
+
+\end{table}
+
+\npar
+
+The results for each case are compared to the initial heat flux value on Figure \ref{fig:deb_cfd_8T66_T70_pc} and Figure \ref{fig:deb_cfd_30T66_T70_pc} for C800 and C3000 cases respectively.
+
+
+\subsubsection{Thermal Parameters}
+
+\begin{figure}[!h]
+\centering
+\subfloat[Liquid temperature]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_pc.pdf}
+\label{fig:8T66_T70_TL_pc}
+}
+\subfloat[Wall temperature vs. axial position]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_pc.pdf}
+\label{fig:8T66_T70_Tw_pc}
+}
+\caption{Simulation results for cases 8G2P26W16Te66.6 \& Te70.3 with corrected wall heat flux}
+\label{fig:deb_cfd_8T66_T70_pc}
+\end{figure}
+
+\npar
+
+Liquid temperature (Figure \ref{fig:8T66_T70_TL_pc}) is better predicted for both cases but is still globally overestimated. The error is nonetheless no larger than $0.5\degC$ which is close to the measurement uncertainty of $0.2\degC$ (Table \ref{tab:deb_mes_uncertainty}). Case Te66.6 matches very well the bulk experimental liquid temperature with the corrected heat flux.
+
+\npar
+
+The wall temperature is slightly reduced at the beginning of the heated length, but stabilizes at the same value as initial simulations in the boiling region. Which leads to the same previously observed wall superheat overestimation.
+
+
+\subsubsection{Topology Parameters}
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[Void fraction]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_T70_alpha_pc.pdf}
+\label{fig:30T66_T70_alpha_pc}
+}
+\subfloat[Bubble diameter]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_T70_dV_pc.pdf}
+\label{fig:30T66_T70_dV_pc}
+}
+\\
+\subfloat[Vapor velocity]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/30G2P26W16/30T66_T70_Uvap_pc.pdf}
+\label{fig:30T66_T70_Uvap_pc}
+}
+\caption{Simulation results for cases 30G2P26W16Te66 \& Te70 with corrected wall heat flux}
+\label{fig:deb_cfd_30T66_T70_pc}
+\end{figure}
+
+\npar
+
+
+Void fraction predictions are significantly enhanced for both C3000 cases (Figure \ref{fig:30T66_T70_alpha_pc}), especially regarding case Te70 which matches the experiment at the center of the tube and a maximum error $\alpha_{CFD} - \alpha_{exp} \approx 5\%$ over the whole section. Case Te66 still presents a large overestiation at the wall, but better matches bulk measurements for $r/R \leq 0.8$. However, it seems to slightly underestimate the core void fraction for $r/R \leq 0.5$.
+
+
+\npar
+
+Bubble diameter predictions are degraded when using the heat flux correction. It decreases compared to the first simulations with a decrease starting closer to the wall, further deviating from the experiments. This result could have been expected from previous observations where the strong decrease in $D_{V}$ corresponds to the point where $T_{L}=T_{sat}$ (Figures \ref{fig:30T66_T70_dV} and \ref{fig:8T66_T70_TL}). Reducing the applied heat flux thus naturally moves this point towards the wall (Figure \ref{fig:8T66_T70_Tw_pc}).
+
+\npar
+
+Vapor velocity profiles (Figure \ref{fig:30T66_T70_Uvap_pc}) are not much impacted by the correction, with values staying relatively close to the experiment in the bulk. However, results for Te70 case even less capture the velocity plateau observed in the measurements. 
+
+
+%\subsubsection{Conclusion}
+%
+%
+%Testing a correction over the wall heat flux has proven to be an interesting operation since it allowed to observed that:
+%
+%\begin{itemize}
+%\item Wall
+%\end{itemize}
 
 %%
 
@@ -336,101 +459,115 @@ Finally, vapor velocity (Figure \ref{fig:30T66_T70_Uvap}) is correctly reproduce
 
 \subsection{Influence of a Wall Boiling Parameter : the Nucleation Site Density}
 
-Comparison between Lemmert, Hibiki and Li
 
-Show HFP along the tube --> impact on flux partition but not at bulk --> too large influence of condensation and interfacial area.
+Previous analyses showed that the wall temperature in the boiling region was badly predicted by NEPTUNE\_CFD (Figures \ref{fig:8T55_T61_Tw_x} and \ref{fig:8T66_T70_Tw_x}) with an overestimation up to $6\degC$. The wall temperature is computed in the code through the model dedicated to wall boiling, namely the "Heat Flux Partitioning" model (Section \ref{sec:ncfd_HFP}).  
 
---> Need for a new HFP model, including new laws. 
+\npar
 
+This model involves the evaluation many different physical parameters that requires the use of correlations. For instance, the "nucleation site density" ($N_{sit}$, Eq. \ref{eq:phie_NCFD}) which controls the number of bubbles that can be generated per unit of area, is evaluated using the law of Lemmert \& Chawla \cite{lemmert_influence_1977} (Eq. \ref{eq:nsit_NCFD}) that only depends on the wall superheat $\Delta T_{w} = T_{w}-T_{sat}$. More recent correlations dedicated to $N_{sit}$ evaluation have been developed since and notably include of other physical parameters such as pressure or contact angle \cite{hibiki_active_2003, li_development_2018, zhou_experimental_2020, basu_wall_2005}
+
+\npar
+
+To test the CFD results sensitivity to the wall boiling modeling, we conduct simulations of the 8G2P26W16Te55.7 case while changing the $N_{sit}$ correlation. This case covers a local quality range that includes single phase and boiling part (Figure \ref{fig:8T55_T61_Tw_x}). Three nucleation site density correlations are tested:
+
+\begin{itemize}
+\item Lemmert \& Chawla \cite{lemmert_influence_1977} (Eq. \ref{eq:nsit_NCFD} ;
+\item Hibiki \& Ishii \cite{hibiki_active_2003} (Eq. \ref{eq:nsit_hibiki}) ;
+\item Li \etal \cite{li_development_2018} (Eq. \ref{eq:nsit_li}).
+\end{itemize}
+
+The difference between the simulations results are presented on Figure \ref{fig:deb_cfd_8T55_nsit} along with the different fluxes (liquid convection $\phi_{c,L}$, phase change $\phi_{e}$, quenching $\phi_{q}$ and vapor convection $\phi_{c,V}$). 
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[Void fraction (zoomed)]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_alpha_nsit.pdf}
+\label{fig:8T55_alpha_nsit}
+}
+\subfloat[Bubble diameter (zoomed)]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_dV_nsit.pdf}
+\label{fig:8T55_dV_nsit}
+}
+\\
+\subfloat[Vapor velocity]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_Uvap_nsit.pdf}
+\label{fig:8T55_Uvap_nsit}
+}
+\subfloat[Liquid temperature (zoomed)]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_TL_nsit.pdf}
+\label{fig:8T55_TL_nsit}
+}
+\\
+\subfloat[Wall temperature vs. axial position]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_Tw_nsit.pdf}
+\label{fig:8T55_Tw_nsit}
+}
+\subfloat[Wall temperature vs. local quality]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_Tw_x_nsit.pdf}
+\label{fig:8T55_Tw_x_nsit}
+}
+\\
+\subfloat[Heat Flux Partitioning vs. axial position]{
+\includegraphics[width=0.4\linewidth]{img/DEBORA/cfd/8G2P26W16/8T55_fluxes_nsit.pdf}
+\label{fig:8T55_fluxes_nsit}
+}
+\caption{Simulation results for case 8G2P26W16Te55.7 using different nucleation site density correlations}
+\label{fig:deb_cfd_8T55_nsit}
+\end{figure}
+
+\npar
+
+The nucleation site density modification induces very small variations over the bulk quantities (Figures \ref{fig:8T55_alpha_nsit} to \ref{fig:8T55_TL_nsit}). The only observable differences lie very close to the wall with an absolute void fraction change of $1.5\%$ and bubble diameter change less than $0.01$\ mm. However, the computed heat fluxes (Figure \ref{fig:8T55_fluxes_nsit}) show large difference between the three cases, with an evaporation heat flux enhanced by more than 15\% by changing from Lemmert \& Chawla to Li \etal formulation. The absence of such a difference in the bulk means that models controlling the bulk thermodynamic equilibrium (\eg condensation) rapidly compensate changes in the heat flux partitioning to reach the very similar distribution between $\alpha$ and $T_{L}$.
+
+\begin{note*}{}
+This "compensating" effect of the bulk models in CFD computations when changing the wall Heat Flux Partitioning has also been noted in other works such as in Gilman \& Baglietto \cite{gilman_self-consistent_2017}.
+\end{note*}
+
+
+\npar
+
+Contrary to bulk values, the wall temperature obtained in the simulations is significantly modified (Figures \ref{fig:8T55_Tw_nsit} and \ref{fig:8T55_Tw_x_nsit}) with an error reduction regarding the experimental measurements. Results using Li \etal correlation overestimates the wall temperature by $2.5\degC$ versus up to $6\degC$ for the first simulations. This results is probably due to the increase in evaporation heat flux $\phi_{e}$, thus leaving less heat to be transmitted through convection and reduces the wall temperature.
+
+\begin{remark*}{}
+The very small amount of quenching heat flux $\phi_{q}$ (Figure \ref{fig:8T55_fluxes_nsit}) is surprising. The transient conduction induced by bubbles movements is expected to be larger because PWR-like conditions present a large number of tiny bubbles on the surface that can slide over long distances \cite{march_caracterisation_1999, kossolapov_experimental_2021}.
+\end{remark*}
 
 
 \section{Conclusion}
 
-\clearpage
+
+This Chapter has investigated the modeling of dispersed boiling flows implemented in NEPTUNE\_CFD (Chapter \ref{chap:ncfd}) based on simulations of the DEBORA experiment (Chapter \ref{chap:debora}). At this point, the main conclusions are:
 
 
-
-
-
-
-
-
-
-In this work, we present the simulations of the following cases:
 \begin{itemize}
-\item C8G2P26W16Te44.9 and C8G2P26W16Te49.6 (single-phase flow)
-\item C8G2P26W16Te66.6 and C8G2P26W16Te70.3 (two-phase flow)
-\item C30G2P26W16Te66.6 and C30G2P26W16Te70.6 (two-phase flow)
-\end{itemize}
+\item The single-phase flow region correctly matches the experiments, both regarding liquid and wall temperature (maximum error of approx. $1\degC$).
 
-The pressure of $26~\text{bar}$ is chosen to match the pressure of the mixing vanes cases (DEBORA-Promoteur, Section \ref{sec:deb_prom}). Mesh sensitivity is performed over two meshes: a large mesh (M1) with $460~356\text{ cells }=338\text{ radial } \times 1362 \text{ axial cells}$ and a fine mesh (M2) with $3~157~952\text{ cells }=1568\text{ radial } \times 2014 \text{ axial cells}$.
+\item Boiling region is hardly reproducing every measured parameters in the experiments. A good agreement is observed for vapor velocity and liquid temperature for subcooled flows. Significant discrepancies are however present for void fraction (overestimation), bubble diameter (underestimation) and wall temperature (overestimation). 
 
-On Figure \ref{fig:th_1phi_res}, we present the results regarding liquid temperature at the outlet and wall temperature. The liquid temperature profile seems to be correctly reproduced by the simulations, though we see a slight overestimation close to the wall. Looking closer at boiling cases shows a difference of $\approx 0.5\degree$ C, which is close to the uncertainty of the measurements \cite{garnier_local_2001}. Concerning the wall temperature, it appears that it is underestimated before the \textbf{Onset of Nucleate Boiling} (ONB) ($T_{w}<T_{sat}$) and overestimated after the ONB ($\approx +5\degree$C). Post-ONB wall temperature is characterized by a stabilization of its value above the saturation temperature (here $T_{w,ONB}-T_{sat}\approx 2\degree\text{C}$).
+\item Condensation is likely to have an important impact in the bubble diameter underestimation, since its too strong decrease coincides with radial position where $T_{L}=T_{sat}$. 
 
-%
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.60]{img/DEBORA/c8.png}
-\caption{NCFD (lines) vs. Exp. (circles) - $T_{L}$ and $T_{w}$ - Cases C8G2P26W16Te44.9, Te49.6, Te66.6 and Te70.3 - Simulations using two meshes M1 (coarse) and M2 (fine).}
-\label{fig:th_1phi_res}
-\end{figure}
-%
-
-%%
-%\begin{figure}[!htb]
-%\vspace{16pt}
-%\begin{spacing}{1.0}
-%\centering
-%\includegraphics[scale=0.60]{img/DEBORA/thermal_diph.png}
-%\caption{NEPTUNE\_CFD simulations results vs. experimental measurements - $T_{L}$ and $T_{w}$ - Cases C8G2P26W16Te66.6 and C8G2P26W16Te70.3}
-%\label{fig:th_diph_res}
-%\end{spacing}
-%\vspace{16pt}
-%\end{figure}
-%%
+\item Interfacial area transport equation seem to be able to reproduce coalescence effects in the absence of subcooled liquid / condensation.
 
 
+\item Testing a heat flux correction showed that a much greater agreement on the void fraction and liquid temperature could be achieved for saturated cases by diminishing $\phi_{w}$ by roughly $5\%$.
 
-%
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.60]{img/DEBORA/c30.png}
-\caption{NCFD (lines) vs. Exp. (circles) - $\alpha$, $d_{G}$ and $U_{G,z}$ - Cases C30G2P26W16Te66.6 and Te70.6 - Simulations using two meshes M1 (coarse) and M2 (fine).}
-\label{fig:topology_res}
-\end{figure}
-%
+\item Wall temperature appears to be sensitive to the closure laws involved in the Heat Flux Partitioning that models for the wall boiling phenomenon. This is not the case for the bulk properties that are left nearly unchanged.
 
-On Figure \ref{fig:topology_res}, we compare the results of the simulations to the experiments regarding void fraction, bubble Sauter diameter and axial gas velocity. Void fraction profiles are quite correctly reproduced, though we observe a $10\%$ higher peak at the wall for $T_{in}=66.6\degree$C. The order of magnitude of bubble diameter is correct ($\sim 0.1\text{mm}$) and NEPTUNE\_CFD manages to detect coalescence (increase of bubble diameter when leaving the wall) and bulk condensation (decrease of bubble diameter when reaching the core of the flow), which is in qualitative agreement with the experiments. Quantitatively speaking, bubble diameter is globally underestimated. Finally, gas velocity profile is reasonably reproduced for $T_{in}=66.6\degree$C, but not for $T_{in}=70.6\degree$C. The latter experimental profile is flatter, which could be explained by a change of flow regime since uncondensed vapor is detected in the bulk.  
-
-Finally, the simulations reasonably agree with the experiments. The strongest discrepancies being mostly the wall temperature and bubble diameter. Potential ways of improving those results are investigated in next sub-section.
-
-\subsection{Investigating the nucleation site density modeling $N_{sit}$}
-
-In NEPTUNE\_CFD, wall temperature is computed through the Heat Flux Partitioning model, which role is to find the appropriate $T_{w}$ which balances Equation $\ref{eq:HFP}$. However, some laws used to express parameters such as $N_{sit}$, $f$, or $d_{d}$ are quite old and simple. For instance, the {Lemmert} \& {Chawla}\cite{lemmert_influence_1977} expression of $N_{sit}$ only depends on the wall superheat (Sub-section \ref{subsec:HFP}).%, meaning that it can not reproduce potential influence of the pressure on the nucleation site density.
-
-A comparison of the {Lemmert} \& {Chawla} law\cite{lemmert_influence_1977} with  the {Hibiki} \& {Ishii}\cite{hibiki_active_2003} law for $N_{sit}$ against 4 data sets from the literature is presentend on Figure \ref{fig:nsit}. The {Hibiki} \& {Ishii} correlation depends simultaneously on wall superheat, pressure and contact angle.  Experimental measurements of {Borishanskii} \etal\cite{borishanskii_heat_1969}, {Richenderfer} \etal\cite{richenderfer_investigation_2018}, {Kossolapov} \etal\cite{kossolapov_experimental_2021} and {Zhou} \etal\cite{zhou_experimental_2020-1} are used to assess the two nucleation site density correlations.
-%
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.45]{img/DEBORA/nsit.png}
-\caption{$N_{sit}$ correlations of {Lemmert} \& {Chawla} (left) and {Hibiki} \& {Ishii} (right) vs. exp. data from literature. Operation pressures are displayed. $\pm 50\%$ error bars are drawn in black.}
-\label{fig:nsit}
-\end{figure}
-%
-
-Figure \ref{fig:nsit} clearly shows that the {Lemmert} \& {Chawla} law lack of pressure dependence fails to reproduce high pressure measurements contrary to the {Hibiki} \& {Ishii} one. Even though {Hibiki} \& {Ishii} correlation shows significant discrepancies with measurements of {Kossolapov} \etal and {Richenderfer} \etal, its prediction capability is greater in average than {Lemmert} \& {Chawla} correlation.
-
-%
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.60]{img/DEBORA/plot_HI.png}
-\caption{NCFD results for $\alpha$, $T_{L}$ and $T_{w}$ using {Lemmert} \& {Chawla} and {Hibiki} \& {Ishii} correlation. Cases 8G2P26W23Te66.6 and Te70.3, 30G2P26W23Te66.6 and 70.6.}
-\label{fig:NCFD_nsit}
-\end{figure}
-%
-To assess the influence of nucleation site density law on NEPTUNE\_CFD computations, we compare results obtained with both correlations on Figure \ref{fig:NCFD_nsit}, which shows a remarkable impact of the modification of $N_{sit}$ correlation. Using {Hibiki} \& {Ishii} correlation reduces the error on $T_{w}$ by approximately $2\degree\text{C}$ while $\alpha$ and $T_{L}$ remain unchanged. This implies that the same heat flux partitioning is found with the two models, but that the pressure dependence of {Hibiki} \& {Ishii} law helped to balance Equation \ref{eq:HFP} using a lower $T_{w}$, thus closer to experimental measurements.
-
-Such a result indicates that the HFP model could be improved through a systematic analysis of each parameter's impact and modeling (bubble departure diameter, detachment frequency, etc.). Assembling a more recent and consistent model could provide better results regarding wall temperature prediction. Models such as the one developed by {Kommajosyula}\cite{kommajosyula_development_2020} could be interesting to apply for high-pressure flows.
+\item The wall boiling model predicts a very low quenching flux which appears surprising in such flow conditions. 
 
 
-Now that simple tube boiling flow has been assessed through the presented results, next section will focus on the simulation of boiling flow in a tube equipped with a mixing device.% using DEBORA-Promoteur experimental results.
+\end{itemize} 
+
+All in all, these results are highlighting the difficulty of reaching a precise modeling of the multiple physical phenomena at stake in dispersed boiling flows. Despite the absolute discrepancies, the current modeling shows an encouraging behavior in the bulk (void fraction and liquid temperature shapes, coalescence / break-up / condensation impact, etc.). This could benefit from further work to precisely model the interfacial heat transfers in the flow along with bubble population quantification. Approaches considering polydispersed population of bubbles such as the iMUSIG model \cite{krepper_2008} could be of interest in that prospect.
+
+\npar
+
+On the other hand, the modeling of wall boiling appears to be somewhat old-fashioned due to the use of old closure laws and based on a simple formulation of the Heat Flux Partitioning. In the frame of advancing towards local predictions of the Critical Heat Flux, it seems natural to be looking for a finer and more extensive modeling of the wall boiling. 
+
+\npar
+
+\textbf{In that regard, the next part of this manuscript will be dedicated to an investigation and construction of a new Heat Flux Partitioning model. The goal being to account for more physical phenomena at the wall (bubble sliding, interactions, etc.) along with reassessing some of the closure laws required in the formulation, with systematic comparison to experiments when possible.}
+
+
+\clearpage
