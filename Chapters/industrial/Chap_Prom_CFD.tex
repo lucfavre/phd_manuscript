@@ -1,7 +1,23 @@
 \chapter{NEPTUNE\_CFD simulations of DEBORA-Promoteur and AGATE-Promoteur Cases}
+\label{chap:prom_ncfd}
+
+In this Chapter, simulations in 
 
 
 \section{NEPTUNE\_CFD simulations of DEBORA-Promoteur cases}
+\label{sec:debprom_ncfd}
+
+
+
+%
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1.0\linewidth]{img/DEBORA-Promoteur/cfd/prom_M2_all.png}
+\caption{Mesh}
+\label{fig:sim_prom}
+\end{figure}
+%
+
 
 We simulated 3 cases for each position of the mixing device, covering different local thermodynamic quality near the vanes ($x_{eq,MV}$) :
 
@@ -17,9 +33,36 @@ Computations are conducted using two meshes for Te69 cases : a large one (M1) wi
 %
 \begin{figure}[!htb]
 \centering
-\includegraphics[scale=0.60]{img/DEBORA-Promoteur/alpha_prom.png}
-\caption{NCFD (lines) vs. Exp. (circles) - $\alpha$ profiles for two MV positions (23.5$D_{h}$ in blue, $10D_{h}$ in orange) - $T_{in}=65\degree$C (left), $T_{in}=69\degree$C (middle), $T_{in}=75\degree$C (right) - Simulations using two meshes M1 (coarse) and M2 (fine) for $T_{in}=69\degree$C.}
-\label{fig:sim_prom}
+\subfloat[Void fraction - Te65 cases]{
+\includegraphics[width=0.33\linewidth]{img/DEBORA-Promoteur/cfd/G3P26W23Te65_alpha.pdf}
+}
+\subfloat[Void fraction - Te69 cases]{
+\includegraphics[width=0.33\linewidth]{img/DEBORA-Promoteur/cfd/G3P26W23Te69_alpha.pdf}
+}
+\subfloat[Void fraction - Te75 cases]{
+\includegraphics[width=0.33\linewidth]{img/DEBORA-Promoteur/cfd/G3P26W23Te75_alpha.pdf}
+}
+\\
+\subfloat[Bubble diameter - Te65 case]{
+\includegraphics[width=0.33\linewidth]{img/DEBORA-Promoteur/cfd/G3P26W23Te65_dV.pdf}
+}
+\subfloat[Bubble diameter - Te69 case]{
+\includegraphics[width=0.33\linewidth]{img/DEBORA-Promoteur/cfd/G3P26W23Te69_dV.pdf}
+}
+\subfloat[Bubble diameter - Te75 case]{
+\includegraphics[width=0.33\linewidth]{img/DEBORA-Promoteur/cfd/G3P26W23Te75_dV.pdf}
+}
+\\
+\subfloat[Vapor axial velocity - Te65 case]{
+\includegraphics[width=0.33\linewidth]{img/DEBORA-Promoteur/cfd/G3P26W23Te65_Uvap.pdf}
+}
+\subfloat[Vapor axial velocity - Te69 case]{
+\includegraphics[width=0.33\linewidth]{img/DEBORA-Promoteur/cfd/G3P26W23Te69_Uvap.pdf}
+}
+\subfloat[Vapor axial velocity - Te75 case]{
+\includegraphics[width=0.33\linewidth]{img/DEBORA-Promoteur/cfd/G3P26W23Te75_Uvap.pdf}
+}
+\label{fig:debprom_ncfd}
 \end{figure}
 %
 
@@ -34,18 +77,82 @@ To investigate what could be a potential origin for the core void fraction peak 
 
 
 
-\section{Liquid water flow in a tube with mixing vanes : AGATE-PROMOTEUR experiment}
-\label{sec:agate}
+\section{NEPTUNE\_CFD simulations of AGATE-Promoteur cases}
+\label{sec:agate_ncfd}
+
+
+
+%
+\begin{figure}[!h]
+\centering
+\includegraphics[width=1.0\linewidth]{img/AGATE/prom_M4_all.png}
+\caption{Mesh}
+\label{fig:sim_prom}
+\end{figure}
+%
+
+\begin{figure}[!h]
+\centering
+\subfloat[Axial velocity]{
+\includegraphics[width=0.4\linewidth]{img/AGATE/z15/pos1112_VA.pdf}
+}
+\subfloat[Radial velocity]{
+\includegraphics[width=0.4\linewidth]{img/AGATE/z15/pos1112_VT.pdf}
+}
+\\
+\subfloat[Axial RMS]{
+\includegraphics[width=0.4\linewidth]{img/AGATE/z15/pos1112_RMS_A.pdf}
+}
+\subfloat[Radial RMS]{
+\includegraphics[width=0.4\linewidth]{img/AGATE/z15/pos1112_RMS_T.pdf}
+}
+\caption{Results for $z=0.8\ D_{h}$, diameter 11-12}
+\end{figure}
+
+
+
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[Axial velocity]{
+\includegraphics[width=0.4\linewidth]{img/AGATE/z200/pos910_VA.pdf}
+}
+\subfloat[Radial velocity]{
+\includegraphics[width=0.4\linewidth]{img/AGATE/z200/pos910_VT.pdf}
+}
+\\
+\subfloat[Axial RMS]{
+\includegraphics[width=0.4\linewidth]{img/AGATE/z200/pos910_RMS_A.pdf}
+}
+\subfloat[Radial RMS]{
+\includegraphics[width=0.4\linewidth]{img/AGATE/z200/pos910_RMS_T.pdf}
+}
+\caption{Results for $z=10.4\ D_{h}$, diameter 9-10}
+\end{figure}
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[Axial velocity]{
+\includegraphics[width=0.4\linewidth]{img/AGATE/z440/pos910_VA.pdf}
+}
+\subfloat[Radial velocity]{
+\includegraphics[width=0.4\linewidth]{img/AGATE/z440/pos910_VT.pdf}
+}
+\\
+\subfloat[Axial RMS]{
+\includegraphics[width=0.4\linewidth]{img/AGATE/z440/pos910_RMS_A.pdf}
+}
+\subfloat[Radial RMS]{
+\includegraphics[width=0.4\linewidth]{img/AGATE/z440/pos910_RMS_T.pdf}
+}
+\caption{Results for $z=22.9\ D_{h}$, diameter 9-10}
+\end{figure}
+
 
 In this penultimate section, we briefly investigate single-phase flow within the same geometry as Section \ref{sec:deb_prom}.
 
-\subsection{Description of the experiment}
-
-In 2003, using the same experimental geometry as DEBORA-Promoteur cases (Section \ref{sec:deb_prom}), Laser Doppler Velocimetry (LDV) measurements of velocity and turbulent fluctutations for an adiabatic single-phase flow of water were conducted. The outlet pressure was around $P=2$ bar with an inlet mass flux $G\approx 3000~\debm$. Measurements were conducted on $6$ different diameters and repeated at various axial positions upstream and downstream the mixing vanes.
-
-A first look at experimental measurements (Figure \ref{fig:agate1}) shows that the vanes geometry induces significantly non-symmetric velocity profile. Moreover, we observe high turbulent fluctuations which maximum is located at the same radial position as the maximum radial velocity gradient.
-
-\subsection{NEPTUNE\_CFD simulations of AGATE-Promoteur case}
 
 On Figure \ref{fig:agate1}, we present some of the results obtained with NEPTUNE\_CFD using the $R_{ij}-\varepsilon~SSG$ turbulence model on the M2 mesh, along with a smooth wall law and a rough wall law (roughness $\epsilon=0.01$mm). The turbulent fluctuations Root Mean Square (RMS) correspond, for instance, to $\sqrt{<u^{'^{2}}_{x}>}$ for the $x$ direction where $u'_{i}$ represents the fluctuating part of the velocity along compononent $i$ and $<.>$ the time-averaging operator. Subscripts $R$ and $A$ stand for radial and axial values ; $U_{0}$ is the average inlet velocity.
 
