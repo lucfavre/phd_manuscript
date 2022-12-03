@@ -1,12 +1,14 @@
 % Chapter 1
 
-\chapter{Tube Including Mixing Vanes : DEBORA-Promoteur and AGATE-Promoteur Experiments} % Chapter title
+\chapter{Tube With Mixing Vanes : DEBORA-Promoteur and AGATE-Promoteur Experiments} % Chapter title
+
+\minitoc
 
 \label{ch:debora_agate_prom} % For referencing the chapter elsewhere, use \autoref{ch:introduction} 
 
 \section{Introduction}
 
-In PWR cores, the industrial geometry is tremendously complex compared to traditional experimental setup usually consisting of simple tubes such as in the DEBORA experiment (Chapter \ref{chap:debora}). Although simple geometries are absolutely mandatory for verification and validation of the multi-physics modeling involved in boiling two-phase flows, it would hardly suffice to be extended to full scale industrial configurations. 
+In PWR cores, the industrial geometry is tremendously complex compared to traditional experimental setup usually consisting of simple tubes such as in the DEBORA experiment (Chapter \ref{chap:debora}). Although simple geometries are absolutely mandatory for verification and validation of the multi-scale physics modeling involved in boiling two-phase flows, it would hardly suffice to be perform a full scaling of the industrial configurations. 
 
 \npar
 
@@ -14,21 +16,22 @@ To that extent, there is a need for experimental measurements both in representa
 
 \npar
 
-In this Chapter, we describe the experimental setup called DEBORA-Promoteur and propose some analyses of former experimental measurements. Finally, its single-phase counterpart called AGATE-Promoteur is also presented.
+In this Chapter, we focus on such a dedicated experiment called DEBORA-Promoteur and propose some analyses of its experimental measurements. Its single-phase counterpart called AGATE-Promoteur is also presented.
 
 
 
 \section{DEBORA-Promoteur}
+\label{sec:deb_prom_desc}
 
 \subsection{Test Section and Experimental Campaigns}
 
-In 2003, the wish to investigate boiling flows in complex geometries similar to those of PWR fuel assembly motivated CEA and EDF to perform modifications of the DEBORA facility. In order to mimic the turbulent mixing induced by the grids holding the fuel rods, a mixing device equipped with blades was built with respect to the geometrical properties of the mixing vanes of the PWR grids (Figure \ref{fig:debprom_vanes}).
+In 2003, the wish to investigate boiling flows in complex geometries similar to those of PWR fuel assembly motivated CEA and EDF to perform modifications of the DEBORA facility \cite{falk_debprom}. In order to mimic the turbulent mixing induced by the grids holding the fuel rods, a mixing device equipped with blades was built with respect to the geometrical properties of the mixing vanes of the PWR grids (Figure \ref{fig:debprom_vanes}).
 
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.2\linewidth]{img/DEBORA-Promoteur/prom_pic.png}
-\caption{Picture of the mixing device.}
+\includegraphics[width=0.3\linewidth]{img/DEBORA-Promoteur/prom_pic2.png}
+\caption{Picture of the mixing device. (Adapted from \cite{falk_agate})}
 \label{fig:debprom_vanes}
 \end{figure}
 
@@ -42,19 +45,47 @@ This mixing device was then welded into the DEBORA test section, thus named DEBO
 \item Critical Heat Flux value compared to the naked pipe case.
 \end{itemize}
 
+Figures \ref{fig:debprom_mesrad} and \ref{fig:debprom_sketch} present the position of the measurement radius along with a sketch of the experiment, defining the position of the mixing vanes (MV) upstream the measurements section at a distance $L_{MV}$.
+
+
+
+
+\begin{figure}[!h]
+%%%SETTING FOR ALIGNMENT
+\newlength\imageheight
+%\settoheight{\imageheight}{\includegraphics[width=0.45\linewidth]{img/DEBORA-Promoteur/deb_prom_sketch.pdf}}
+%%%%
+\centering
+\subfloat[Measurement radius. (Adapted from \ref{falk_debprom})]
+{
+\includegraphics[width=0.3\linewidth]{img/DEBORA-Promoteur/debprom_mesrad.jpg}
+\label{fig:debprom_mesrad}
+}
+\\
+\subfloat[Sketch of the DEBORA-Promoteur test section.]{
+\includegraphics[width=0.45\linewidth]{img/DEBORA-Promoteur/deb_prom_sketch.pdf}
+\label{fig:debprom_sketch}
+}
+\caption{Description of the DEBORA-Promoteur experiment.}
+\label{fig:debprom_description}
+\end{figure}
+
 
 The same measurement instrumentation as the DEBORA C3000 cases   (bi-optical probe, Figure \ref{fig:optical_probe}) was used to study the flow topology in the DEBORA-Promoteur experiment. In that regard, two measurements campaign were conducted:
 
 \begin{itemize}
-\item Campaign C4800 where the mixing vanes were placed $23.5\ D_{h}$ ($\approx 0.45$\ m)upstream the end of the heating length ;
-\item Campaign C5200, where the mixing vanes were placed $10\ D_{h}$ ($\approx 0.19$\ m) upstream the end of the heating length.
+\item Campaign C4800 where the mixing vanes were placed at $L_{MV} = 23.5\ D_{h}$ ($\approx 0.45$\ m)upstream the end of the heating length ;
+\item Campaign C5200, where the mixing vanes were placed $L_{MV} = 10\ D_{h}$ ($\approx 0.19$\ m) upstream the end of the heating length.
 \end{itemize}
 
 \begin{note*}{}
 Unfortunately, no thermal measurement campaign was conducted on the DEBORA-Promoteur facility.
 \end{note*}
 
-The different cases of the DEBORA-Promoteur experiment follow the same nomenclature as the DEBORA ones (Section \ref{sec:deb_exp_campaign}). A total of three test series were conducted:
+\npar
+
+
+The different cases of the DEBORA-Promoteur experiment follow the same nomenclature as the DEBORA ones (Section \ref{sec:deb_exp_campaign}). A total of three test series were conducted: 48G3P26W23, 52G3P26W23 and 52G3P26W27.
 
 \begin{enumerate}
 \item Series 48G3P26W23 ;
@@ -62,62 +93,117 @@ The different cases of the DEBORA-Promoteur experiment follow the same nomenclat
 \item Series 52G3P26W27.
 \end{enumerate}
 
+Regarding the available data for each test, bi-optical probes allow the measurements of the void fraction but also bubble diameter using the vapor (or interfacial) velocity as explained in Subsection \ref{subsec:deb_mes_tech}. However, the measurement of the vapor velocity if:
+\begin{enumerate}
+\item[1)] The flow is mainly one-directional and aligned with the probles ;
+\item[2)] Vapor phase is composed of spherical bubbles ;
+\item[3)] Velocity gradient and center density gradient are small along a distance equal to the bubble diameter.
+\end{enumerate}
 
-
-
-\section{Boiling freon in a tube with mixing vanes : DEBORA-Promoteur experiments}
-\label{sec:deb_prom}
-
-In this section, we simulate upward boiling flows of R12 in a vertical tube equipped with mixing vanes and compare the outlet void fraction profile predicted by NEPTUNE\_CFD with measurements coming from the DEBORA-Promoteur experiment.
-
-\subsection{Description of the experiment}
-
-In 2003, the wish to investigate boiling flows in complex geometries similar to those in PWR fuel assembly lead CEA and EDF to modify the DEBORA facility to introduce mixing vanes (MV) within the tube. This mixing device has been desgined to have the same geometric properties as the mixing vanes attached to rod bundle grids (Figure \ref{fig:promoteur}).
-
-%
-\begin{figure}[!htb]
-\centering
-\includegraphics[height=4cm]{img/DEBORA-Promoteur/prom_pic.png}
-\includegraphics[height=4cm]{img/DEBORA-Promoteur/medium_mesh.PNG}
-\caption{Picture of the mixing device (left) and its fine meshing (right).}
-\label{fig:promoteur}
-\end{figure}
-%
-
-Two series of measurements were conducted on this geometry : 
+Since the mixing vanes introduce a strong mixing and rotational effect, hypothesis 1) is, at first glance, impossible to verify and ensure that measurements of vapor velocity are correct. For each dataset, the available experimental file contains:
 
 \begin{itemize}
-\item Campaign 4800 : measurements of $\alpha$ using two optical probes, mixing device placed $0.455\text{m}\approx 23.5D_{h}$ upstream the end of the heating length
-\item Campaign 5200 : measurements of $\alpha$ and $U_{G,z}$ using two optical probes, mixing device placed $0.192\text{m}\approx 10D_{h}$ upstream the end of the heating length
+\item 48G3P26W23: Void fraction $\alpha$ and interference frequency $\nu$ value for each probe (1 and 2)
+\item 52G3P26W23 \& 52G3P26W27: void fraction $\alpha$ and interference frequency $\nu$ value for each probe (1 and 2) plus the estimated (potentially uncertain) vapor velocity $U_{V,z}$.
 \end{itemize}
 
-The goal of those tests was to observe the impact of the mixing device on the void fraction profile. The induced rotation is expected to gather the bubbles at the center of the tube and enhance condensation for highly subcooled cases. Those expectations are confirmed when looking at experimental $\alpha$ profiles on Figure \ref{fig:sim_prom}. The strong differences compared to simple tube profiles could explain the gain on the CHF value in PWR thanks to the mixing grids. Cases are named following the same nomenclature as presented in Section \ref{sec:deb_exp_campaign}.
 
-\subsection{Analysis of the Experimental Measurements}
+\section{AGATE-Promoteur}
+\label{sec:agate_prom_desc}
 
+Following the DEBORA-Promoteur tests, experimental findings lead CEA and EDF to investigate the single-phase liquid velocity profile in the mixing vanes geometry. This lead to the development of an experiment called AGATE-Promoteur.
+
+\npar
+
+The AGATE-Promoteur experiments consist of LDV (Laser Doppler Velocimetry) measurements of the liquid velocity and turbulent intensity in both axial and radial direction. The test in conducted using the very same geometry and mixing vanes as the DEBORA-Promoteur case and consists of a single set of measurements for water at 2 bar flowing at a mass flow rate $G_{L} \approx 3000\ \debm$ (same mass flux as the DEBORA-Promoteur cases). Measurements are then operated at several axial positions (18) and diameters (6). Figure \ref{fig:agate_exp_pos} details the different positions where measurements were conducted.
+
+
+
+
+\begin{figure}[!h]
+\centering
+\subfloat[Radial measurements diameters. (Adapted from \cite{falk_agate})]
+{
+\includegraphics[width=0.3\linewidth]{img/AGATE/agate_mes_rad.PNG}
+\label{fig:agate_mesrad}
+}
+\\
+\subfloat[Axial positions of measurements.]
+{
+\includegraphics[width=0.45\linewidth]{img/AGATE/agate_mes_ax.pdf}
+\label{fig:agate_mesax}
+}
+\caption{Covered measurements positions in AGATE-Promoteur experiment.}
+\label{fig:agate_mes}
+\end{figure}
+
+
+\npar
+
+
+
+Each diameter has 24 points of measurements, with a total of 108 diameters covered in the whole test both upstream and downstream of the mixing vanes. 
+
+\npar
+
+For each data point, we have the local axial velocity, radial velocity (signed positive or negative depending on its direction relative to the measured diameter), axial and radial turbulent intensities. Later, we will prefer reconstructing the values of the local RMS (Root Mean Square) of the velocity:
+
+\begin{equation}
+RMS_{i} := \sqrt{\left<U'_{i}U'_{i}\right>} = I_{T,i} \times \left<U_{i}\right>
+\end{equation}
+where $i=A,\ R$ for axial or radial direction, $U=\left<U\right> + U'$ the velocity decomposed between time-average and fluctuation, and $I_{T}$ the measured turbulent intensity. 
+
+
+
+
+\section{Analysis of the DEBORA-Promoteur Experimental Measurements}
+\label{sec:deb_prom_anal}
+
+On Figures \ref{fig:exp_48G3P26W23}, \ref{fig:exp_52G3P26W23} and \ref{fig:exp_52G3P26W27}, we plot respectively the void fraction and interference frequency (averaged for the two probes) for campaigns 48G3P26W23, 52G3P26W23 and 52G3P26W27.
+
+
+
+\subsubsection{48G3P26W23 cases}
 
 
 \begin{figure}[!h]
 \centering
 \subfloat[Void fraction]{
 \includegraphics[width=0.5\linewidth]{img/DEBORA-Promoteur/48G3P26W23/48G3P26W23_alpha.pdf}
+\label{fig:48G3P26W23_alpha}
 }
 \subfloat[Interference frequency]{
 \includegraphics[width=0.5\linewidth]{img/DEBORA-Promoteur/48G3P26W23/48G3P26W23_nu.pdf}
+\label{fig:48G3P26W23_nu}
 }
 
 \caption{Experimental results from the 48G3P26W23 series.}
 \label{fig:exp_48G3P26W23}
 \end{figure}
 
+\npar
+The first immediate observation is the position of the void fraction peak positioned at the center of the tube (Figure \ref{fig:48G3P26W23_alpha}), strongly differing from the naked tube (Figure \ref{fig:G2P26W16_alpha}). This is a direct consequence of the mixing vanes inducing a rotational flow that will gather the vapor at the center. Except for lowest quality cases, the void fraction at the wall is the minimum value along the measurement radius, which insists on the inversion of the void fraction profile under the mixing vanes effect. 
+
+Moreover, the profile is not perfectly symmetrical with a void peak progressively shifting towards positive values of $r/R$. This could be expected since the mixing vanes do not present any axisymmetry.
+
+\npar
+
+Analyzing the interference frequency (Figure \ref{fig:48G3P26W23_nu}), \ie the number of interface detection per second, allow to qualitatively determine whether if the measured void fraction at a given point is the result of a large number of small bubbles or a small number of large bubbles going through the probes. We note for hottest cases that the interference frequency reaches its maximum at the wall where the void fraction is the lowest, while its minimum is at the center where void fraction is maximal. This means that fewer bubbles at the center lead to a larger void fraction compared to the wall, which is likely to indicate the effect of coalescence increasing the average bubble size. 
+
+\subsubsection{52G3P26W23 and W27 cases}
+
+
+The main difference between the C5200 and C4800 cases is the position of the mixing vanes that are closer to the end of the mixing length in the C5200 campaigns ($10\ D_{h}$ versus $23.5\ D_{h}$.
 
 \begin{figure}[!h]
 \centering
 \subfloat[Void fraction]{
 \includegraphics[width=0.5\linewidth]{img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_alpha.pdf}
+\label{fig:52G3P26W23_alpha}
 }
 \subfloat[Interference frequency]{
 \includegraphics[width=0.5\linewidth]{img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_nu.pdf}
+\label{fig:52G3P26W23_nu}
 }
 
 \caption{Experimental results from the 52G3P26W23 series.}
@@ -129,16 +215,50 @@ The goal of those tests was to observe the impact of the mixing device on the vo
 \centering
 \subfloat[Void fraction]{
 \includegraphics[width=0.5\linewidth]{img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_alpha.pdf}
+\label{fig:52G3P26W27_alpha}
 }
 \subfloat[Interference frequency]{
 \includegraphics[width=0.5\linewidth]{img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_nu.pdf}
+\label{fig:52G3P26W27_nu}
 }
 
 \caption{Experimental results from the 52G3P26W27 series.}
 \label{fig:exp_52G3P26W27}
 \end{figure}
 
+\npar
 
+Similar to C4800 cases, we observe a void fraction peak at the center and minimum at the wall (Figures \ref{fig:52G3P26W23_alpha} and \ref{fig:52G3P26W27_alpha}). However, the shape of the measurements largely differs by presenting local maximum values around $r/R = \pm 0.6$ for hottest cases. The void fraction peaks are also higher than for C4800 cases, with values up to $90\%$. This is probably an effect of the MV positions since moving the vanes downwards means that the flow will be mixed later, leaving a shorter distance for the flow to fall back to a traditional single tube profile. The amount of vapor suddenly brought to the center will increase as the distance between the vanes and the measurement section reduces.
+
+\begin{remark*}{}
+Such an effect may be assimilated to a so-called "history effect", meaning that the distance to such a mixing device has an impact over the two-phase flow properties.
+\end{remark*}
+
+\npar
+
+Interference frequencies (Figures \ref{fig:52G3P26W23_nu} and \ref{fig:52G3P26W27_nu}) profiles are also differing from C4800 cases. The interference peak is initially located at the center for low quality cases, meaning that there is a larger number of bubbles at the center compared to the wall. However, the shape reverses as the outlet quality increases (and thus the core void fraction), with a huge decrease of the bulk interference frequency which significantly points towards predominant coalescence effects. Noting that this change happens roughly when $x_{eq,out} \leq 0$ (saturation is reached) indicates that it may originates from the absence of condensation.   
+
+\begin{remark*}{}
+The considerations over condensation are though speculative and would largely benefit from liquid temperature measurements in such a configuration, which could both quantify the impact of mixing on the liquid phase and correlate interference frequencies to local subcooling values.
+\end{remark*}
+
+
+\subsubsection{Estimation of the Bubble Diameter}
+
+Since values of vapor velocity measurements are given for the C5200 cases, one may be interested in exploiting them to try to extract information about the bubble size distribution in the flow. However, we have to be able to tell whether those measurements were largely erroneous due to the rotation effects or not \ie if the bubbles were moving in the direction of the probes.
+
+\npar
+
+To do so, we propose two arguments:
+
+\begin{itemize}
+\item Analyzing the difference between the measured interference frequencies for each probe, which could help to quantify if the number of bubbles detected largely differ between them. If so, it means a strong rotation made bubbles flowing through only one probes. On the contrary, this would support the fact that, locally, bubbles were globally flowing in the direction of the probes.
+
+\item Quantifying the importance of the radial velocity compared to the axial velocity in the measurement section.
+\end{itemize}
+
+
+On Figure \ref{fig:exp_C52_deltanu}, we plot the relative difference of interference frequency between the two probes for each C5200 campaign. 
 
 
 \begin{figure}[!h]
@@ -155,14 +275,42 @@ The goal of those tests was to observe the impact of the mixing device on the vo
 \end{figure}
 
 
+\npar
+
+
+We see that, close to the wall, the interface detection of the probes differ by up to 35\%, which clearly indicates a vapor phase moving radially. However, as we approach the center ($-0.75 \leq r/R \leq 0.75$), the difference in interference frequency globally falls below $5\%$, potentially showing that bubbles at those locations were having mostly axial velocities.
+
+\npar
+
+To quantify the importance of the radial velocity at the measurement section ($z\approx 10\ D_{h}$ after the grids), we rely on the AGATE-Promoteur experimental results (Section \ref{sec:agate_prom_desc}). Based on the different measured diameters at each axial position, we can compute the average value of the ratio between radial and axial velocities $U_{R} / U_{A}$ depending on the height $z$. The results are shown on Figure \ref{fig:exp_agate_Urap_z}
+
+
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.5\linewidth]{img/AGATE/Urap_z.pdf}
-\caption{Average relative importance of radial velocity to axial velocity in AGATE experiment}
+\includegraphics[width=0.6\linewidth]{img/AGATE/Urap_z.pdf}
+\caption{Average relative importance of radial velocity to axial velocity in AGATE experiment. Black dotted lines denotes the position of the MV.}
 \label{fig:exp_agate_Urap_z}
 \end{figure}
 
 
+\npar
+
+The mixing effect on liquid velocity is clear: the average induced rotation velocity can reach up to 45\% of the axial velocity in the section right after the MV. The importance of the radial velocity then naturally fades with the distance to the MV, becoming of the order of $10\%$ at $z\approx 10\ D_{h}$. 
+
+\npar
+
+At the position corresponding to the measurements in the C5200 campaign, the radial velocity then is approximately 10 times smaller than the axial velocity. This comforts the fact that the flow direction is mainly radial when the measurement using the bi-optical probe is conducted.
+
+\npar
+
+Altogether, those two analyses both support the fact that the hypothesis of a flow aligned with the probes at $z=10\ D_{h}$ downstream the MV is reasonable. Therefore, we allow ourselves to use the measured values of the vapor velocity $U_{V,z}$ \textbf{\underline{between $r/R=-0.75$ and $r/R=0.75$}} in the C5200 cases to propose \textbf{\underline{an estimation}} of the bubble diameter in DEBORA-Promoteur measurements:
+
+\begin{equation}
+D_{V} \approx \frac{6 \alpha U_{v,z}}{4\nu}
+\end{equation}
+
+
+Resulting values are presented on Figure \ref{fig:exp_C52_dvap}.
 
 \begin{figure}[!h]
 \centering
@@ -178,66 +326,36 @@ The goal of those tests was to observe the impact of the mixing device on the vo
 \end{figure}
 
 
+First, we notice that the values attained closer to the wall mostly lie between 0.1\ mm and 0.5\ mm which is coherent with the values observed in the naked tube case (Figure \ref{fig:G2P26W16_dv}).
+
+\npar
+
+When approaching the center of the pipe for high qualty cases, the bubble diameter sharply increase with values that can reach up to 3\ mm. In those conditions, such a diameter is the result of an important coalescence along with negligible condensation effects. Although very large void fractions are reached, those bubble diameters are still an order of magnitude lower than the tube diameter meaning we are not in presence of a slug or annular flow at the center. The resulting flow regime at high void fractions is likely look like a foam composed of several millimeter bubbles separated by thin layers of liquid.
+
+\begin{remark*}{}
+In such two-phase flow conditions, the dispersed approach is unlikely to be representative of the real physics at stake. Strong interaction between the bubbles can be expected and the nearly absence of liquid means it can not be considered as the leading fluid anymore.
+
+\npar
+
+Moreover, recalling that the optimal packing for non-overlapping spheres of same sizes is mathematically capped at 74\% \cite{wu_fan_2003}, bubbles at void fraction $\alpha > 74\%$ then must have, at least partially, non-spherical shapes. Which is also supported by Weber number value $\We \sim 0.1$ and E\"otv\"os value $\Eo \sim 1$ in those conditions.
+\end{remark*}
+
+%Wu, Yugong; Fan, Zhigang; Lu, Yuzhu (1 May 2003). "Bulk and interior packing densities of random close packing of hard spheres". Journal of Materials Science. 38 (9): 2019–2025. doi:10.1023/A:1023597707363. ISSN 1573-4803. S2CID 137583828.
 
 
-\subsection{NEPTUNE\_CFD simulations of DEBORA-Promoteur cases}
+\section{Conclusions}
 
-We simulated 3 cases for each position of the mixing device, covering different local thermodynamic quality near the vanes ($x_{eq,MV}$) :
+The analysis of the DEBORA-Promoteur experiment allowed to qualitatively qualify the two-phase flow in a geometry including mixing vanes. So far, we can remember that:
 
 \begin{itemize}
-\item 48G3P26W23Te65 \& 52G3P26W23Te65 with $x_{eq,MV}\approx -1\%$ 
-\item 48G3P26W23Te69 \& 52G3P26W23Te69 with $x_{eq,MV}\approx 4\%$ 
-\item 48G3P26W23Te75 \& 52G3P26W23Te75 with $x_{eq,MV}\approx 12\%$ 
+\item The mixing vanes have a clear impact on the vapor distribution, gathering it at the center of the tube thus reversing the radial void fraction profile.
+
+\item The axial distance to the mixing vanes appears to have a significant influence over the vapor distribution, further enlightening the presence of a "history effect". 
+
+\item An estimation of the bubble diameter in those conditions was achievable and showed very important coalescence effects with bubble diameters increasing up to 10 times larger when moving from the wall to the center.
+
+\item Void fraction can reach very high values with peaks at the center up to $90\%$, which combined with the bubble diameter value indicates that the flow may look like a foam composed of vapor bubbles with thin layers of liquid between them.
 \end{itemize}
 
-Computations are conducted using two meshes for Te69 cases : a large one (M1) with $444~703$ cells and a fine one (M2) with $3~487~627$ cells. Results for void fraction profiles are shown on Figure \ref{fig:sim_prom}.
 
-
-%
-\begin{figure}[!htb]
-\centering
-\includegraphics[scale=0.60]{img/DEBORA-Promoteur/alpha_prom.png}
-\caption{NCFD (lines) vs. Exp. (circles) - $\alpha$ profiles for two MV positions (23.5$D_{h}$ in blue, $10D_{h}$ in orange) - $T_{in}=65\degree$C (left), $T_{in}=69\degree$C (middle), $T_{in}=75\degree$C (right) - Simulations using two meshes M1 (coarse) and M2 (fine) for $T_{in}=69\degree$C.}
-\label{fig:sim_prom}
-\end{figure}
-%
-
-
-Quantitatively speaking, it seems that NEPTUNE\_CFD reproduces the effect of vapor acculumation at the center thanks to the pressure gradient generated by the swirl induced by the mixing vanes. The radial position  of the core void fraction peak correctly matches the experimental one. 
-
-However, measured void fraction profiles are not predicted correctly. A particularly strong overestimation of the core void fraction is observed as well as close to the wall. The CMFD results tend to rapidly reach a core void fraction around $60\%$ ($T_{in}=69\degree$C cases) and then flattens with increasing temperature ($T_{in}=75\degree$ cases). This contradicts experimental observation where the void fraction profile globally rises when inlet temperature increases, except at the wall where no peak is observed due to bubble removing effect by the liquid's rotation. Moreover, the $T_{in}=75\degree$ case with MV at $10D_{h}$ experimentally shows local $\alpha$ peaks at $R\approx \pm 6$mm which remain currently unexplained and not reproduced by the simulations. 
-
-To investigate what could be a potential origin for the core void fraction peak overestimation, we present in Section \ref{sec:agate} single-phase flow simulations in the MV geometry.
-
-
-\section{Liquid water flow in a tube with mixing vanes : AGATE-PROMOTEUR experiment}
-\label{sec:agate}
-
-In this penultimate section, we briefly investigate single-phase flow within the same geometry as Section \ref{sec:deb_prom}.
-
-\subsection{Description of the experiment}
-
-In 2003, using the same experimental geometry as DEBORA-Promoteur cases (Section \ref{sec:deb_prom}), Laser Doppler Velocimetry (LDV) measurements of velocity and turbulent fluctutations for an adiabatic single-phase flow of water were conducted. The outlet pressure was around $P=2$ bar with an inlet mass flux $G\approx 3000~\debm$. Measurements were conducted on $6$ different diameters and repeated at various axial positions upstream and downstream the mixing vanes.
-
-A first look at experimental measurements (Figure \ref{fig:agate1}) shows that the vanes geometry induces significantly non-symmetric velocity profile. Moreover, we observe high turbulent fluctuations which maximum is located at the same radial position as the maximum radial velocity gradient.
-
-\subsection{NEPTUNE\_CFD simulations of AGATE-Promoteur case}
-
-On Figure \ref{fig:agate1}, we present some of the results obtained with NEPTUNE\_CFD using the $R_{ij}-\varepsilon~SSG$ turbulence model on the M2 mesh, along with a smooth wall law and a rough wall law (roughness $\epsilon=0.01$mm). The turbulent fluctuations Root Mean Square (RMS) correspond, for instance, to $\sqrt{<u^{'^{2}}_{x}>}$ for the $x$ direction where $u'_{i}$ represents the fluctuating part of the velocity along compononent $i$ and $<.>$ the time-averaging operator. Subscripts $R$ and $A$ stand for radial and axial values ; $U_{0}$ is the average inlet velocity.
-
-
-%
-\begin{figure}[!htb]
-\centering
-\includegraphics[scale=0.3]{img/AGATE/test.png}
-\caption{NCFD vs. Exp. - Top \& Middle : Radial velocity and turbulent RMS ($z=30$mm \& $z=440$mm) -  Bottom : Axial velocity and turbulent RMS ($z=440$mm).}
-\label{fig:agate1}
-\end{figure}
-
-Non-symmetric radial velocity profiles close to the MV are quite well reproduced by the simulations. However, far downstream the MV, it appears that the fluid's rotation is overestimated by the model with a smooth wall approach, while applying a roughness helps to reduce the magnitude of the swirl. Moreover, the radial turbulent fluctuations are better estimated by the rough wall approach at $z=440$~mm.
-
-On the other hand, it seems that the rough wall approach deteriorates the axial velocity profile compared to the experiment. As shown on the bottom part of Figure \ref{fig:agate1}, the smooth wall simulation returns a flat velocity profile closer to the experiment than the rough wall one which overestimates the core velocity peak.
-
-Both simulations globally underestimate the turbulent fluctuations, which can have a significant influence over the observed discrepancies on velocity profiles since turbulence plays a key role to homogenize the fluid flow. 
-
-Those results finally highlight the fact that simulation of such rotating flows may need a particular wall approach to better capture the induced swirl and its dissipation. Correct prediction of turbulent fluctuations would be of significant interest to ensure liquid velocity validation. Further investigations on boiling cases could possibly be improved by a roughness approach, which is the current correction used for two-phase wall laws (Subsection \ref{subsec:wall_func}). 
+%In the next chapter, we perform numerical simulations of the DEBORA-Promoteur and AGATE-Promoteur experiments to assess NEPTUNE\_CFD capacity on such geometries.

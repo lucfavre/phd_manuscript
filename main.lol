@@ -1,29 +1,16 @@
-\babel@toc {english}{}
-\defcounter {refsection}{0}\relax 
+\babel@toc {english}{}\relax 
 \deactivateaddvspace 
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {lstlisting}{\numberline {B.1}A floating example (\texttt {listings} manual)}{160}{lstlisting.B.1}%
+\addvspace {10\p@ }
+\contentsline {lstlisting}{\numberline {B.1}{\ignorespaces A floating example (\texttt {listings} manual)}}{166}{lstlisting.B.1}%
