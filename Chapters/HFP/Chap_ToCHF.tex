@@ -6,4 +6,61 @@
 
 %----------------------------------------------------------------------------------------
 
+In this last Chapter of this part dedicated to the modeling of wall boiling, we brielfy discuss historical approaches to represent the Boiling Crisis and propose a perspective use of Heat Flux Partitioning models as a mean to detect the Critical Heat Flux.
+
+
+\section{Previous Modeling of the Boiling Crisis}
+
+Historically, since the pioneering observations of Nukiyama \cite{nukiyama} who identified the maximum boiling heat flux, the question of explaining the triggering of the Boiling Crisis has been thoroughly investigated by many researchers who attempted to propose various physical explanations and modelings aimed to estimate the value of the CHF.
+
+
+\subsection{Empirical Approaches}
+
+As a direct way of estimating the CHF, empirical approaches have remained the preferred solution for engineering problems to tackle the Boiling Crisis issue. Indeed, according to Groeneveld \cite{groenveld}, more than 1000 dedicated CHF correlations for water and heated tubes were reported in 2007. As mentioned in the Introduction, current safety analysis in the nuclear industry actually rely on specific correlations tied to a given core / fuel assembly geometry and usually depend on the pressure $P$, the mass flux $G$, the inlet quality $x_{eq,in}$ and the thermal /heated diameter $D_{th}$. For instance, Westinghouse company developed the so-called "Tong-67" correlation \cite{tong_67} based on data-fitted optimization. 
+
+\npar
+
+Following the huge number of CHF experimental tests that were conducted over the past decades, Groeneveld \etal \cite{groeneveld} proposed to simply gather a very large number of measurements in order to come up with a "Look-Up Table", which directly tabulates the CHF values depending on the operating conditions. Though computationally efficient, this approach is not extendable to any other conditions except those covered by the table data. As a result, their work is limited to external vertical flow of water around circular tubes (\eg fuel rods).  
+
+
+\subsection{Physical Phenomenology Approaches}
+
+
+In 1948, Kutatzladze \cite{kutateladze} proposed dimensional analysis to tackle the question of the CHF, based on the interaction of three "energetic scales" respectively associated to surface tension force, gravity and turbulence from which he derived:
+
+\begin{equation}
+\phi_{w,CHF} = K h_{LV} \rho_{V} \parth{\frac{\sigma \parth{\rho_{L} - \rho_{V}}g}{\rho_{V}^{2}}}^{1/4}
+\label{eq:chf_kutateladze}
+\end{equation} 
+where $K=0.16$ was analytically estimated.
+
+\npar
+
+This formulation of the CHF found a true success due to its analytic nature and its good performance for moderate to high pressure measurements. The coherent behavior of Kutateladze law has been once more recently confirmed by Kossolapov \cite{kossolapov_experimental_2021} whose CHF measurements dependency with pressure were fairly reproduced.
+
+\npar
+
+Kutateladze approach was further developed by Zuber \cite{zuber_1958} who proposed a physical interpretation of the  Boilig Crises as an hydrodynamic instability. Considering vapor columns coming out of the heated surface (Figure \ref{fig:chf_zuber}), he supposed that the Boiling Crisis was triggered under a combination of Rayleigh-Taylor and Kelvin-Helmoltz instabilities. Assuming the vapor columns were regularly spaced by a distance equal to the Rayleigh-Taylor instability wavelength $\lambda_{D}$, the Boiling Crisis is supposed to be triggered by the merging of those vapor columns due to the emergence of Kelvin-Helmoltz instabilities. He then could analytically derive:
+
+\begin{equation}
+\phi_{w,CHF} = K h_{LV} \rho_{V} \parth{\frac{\sigma \parth{\rho_{L} - \rho_{V}}g}{\rho_{V}^{2}}}^{1/4} \parth{1 + \dfrac{\rho_{L}}{\rho_{L}+\rho_{V}}}^{1/2}
+\label{eq:chf_zuber}
+\end{equation} 
+where $K=\pi / 24 \approx 0.131$.
+
+\npar
+
+
+Other approaches are based on different physical mechanism. For instance, Lee \& Mudawar \cite{lee_mudawar} propose to describe the boiling crisis phenomenon as the evaporation of a very thin liquid sublayer trapped between the wall an elongated slug of vapor (Figure \ref{fig:chf_lee}), following experimental observations \cite{Mesler (1976), Molen  Galjee (1978), Bhat et al. (1983), Serizawa
+(1983), Hino  Ueda (1985) and Mudawwar et al. (1987)}.
+
+\npar
+
+On the other hand, Weisman \& Pei \cite{weisman_pei} 
+
+
+
+\section{Recent Approaches}
+
+
 Bibliography examples of CHF detection using HFP models !
