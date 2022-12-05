@@ -288,6 +288,66 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{benhamadouche_use_2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BS}{%
+         family={Benhamadouche},
+         familyi={B\bibinitperiod},
+         given={Sofiane},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{(U){RANS}, {HPC}, {LES}, Nuclear engineering, Wall-modeled,
+  Wall-resolved}
+    \strng{namehash}{BS1}
+    \strng{fullhash}{BS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    The present paper gives some ideas and guidelines in order to run high
+  quality (U){RANS} or {LES} computations. The paper starts with (U){RANS}
+  approaches, advocating the use of Reynolds Stress Models for complex flows
+  and recommending further work on modeling of turbulent heat fluxes, which
+  remains today too basic in industry. The superiority of wall-resolved models
+  vs. wall-modeled in {RANS} is recalled and the use of adaptive wall treatment
+  is suggested. The concept of Unsteady {RANS} is finally questioned. Then,
+  important issues around {LES} are raised. The mesh refinement criteria are
+  recalled for wall-resolved {LES} and the use of wall models addressed. The
+  production of {DNS} and wall-resolved {LES} calculations for flow
+  understanding and {RANS} validation is encouraged.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.nucengdes.2016.11.002
+    \endverb
+    \field{issn}{0029-5493}
+    \field{pages}{2\bibrangedash 11}
+    \field{series}{16th International Topical Meeting on Nuclear Reactor
+  Thermal Hydraulics}
+    \field{shortjournal}{Nuclear Engineering and Design}
+    \field{title}{On the use of (U){RANS} and {LES} approaches for turbulent
+  incompressible single phase flows in nuclear engineering applications}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0029549316304344
+    \endverb
+    \field{volume}{312}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\IZ93HWGH\\S0
+    \verb 029549316304344.html:text/html;Version soumise:C\:\\Users\\Luc\\Zoter
+    \verb o\\storage\\R7V7KIKR\\Benhamadouche - 2017 - On the use of (U)RANS an
+    \verb d LES approaches for turbu.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Nuclear Engineering and Design}
+    \field{day}{01}
+    \field{month}{02}
+    \field{year}{2017}
+    \field{urlday}{04}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{berne_analyse_1983}{thesis}{}
     \name{author}{1}{}{%
       {{hash=B}{%
@@ -777,6 +837,92 @@
     \field{year}{2011}
     \field{urlday}{06}
     \field{urlmonth}{11}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{capone_source_2016}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CL}{%
+         family={Capone},
+         familyi={C\bibinitperiod},
+         given={Luigi},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Benhamadouche},
+         familyi={B\bibinitperiod},
+         given={Sofiane},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HYA}{%
+         family={Hassan},
+         familyi={H\bibinitperiod},
+         given={Yassin\bibnamedelima A.},
+         giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \keyw{Code\_Saturne, Mixing vanes, Source terms modeling, Spacer grid,
+  {SSG} model, Star-ccm+}
+    \strng{namehash}{CLBSHYA1}
+    \strng{fullhash}{CLBSHYA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    In the present study, a numerical method was developed to simulate the
+  presence of spacer grids with mixing vanes in nuclear reactors fuel
+  assemblies. These mixing devices usually have a complex morphology that
+  results in difficult mesh procedures and a high computational simulation
+  cost. The presence of spacers and vanes was simulated using momentum sources
+  to overcome the computational power problem from the perspective of a quarter
+  of the full reactor core {CFD} (Computational Fluid Dynamic) simulations.
+  Several approaches were tested using {RANS} models. The starting point is
+  calculation with body-fitted mesh of one grid span of a fuel assembly with
+  spacer grids featuring dimples, springs and mixing vanes. Velocities and
+  Reynolds Stresses are extracted from these mesh, then converted to source
+  terms. A new computational domain is created with a coarser mesh and without
+  the presence of dimples, springs, and vanes, but source terms are added to
+  the momentum and Reynolds Stress transport equations to force the solution as
+  the detailed geometry computation. The forcing is imposed in only a few
+  volumes of the domain where dimples, spring and vanes are located. The
+  approach was numerically stable and relatively easy to implement in open
+  source codes Code\_Saturne ({EDF}) and commercial codes Star-ccm+
+  (Cd-Adapco). Best practice was defined and grid sensitivity analysis on
+  different quantities was performed. The robustness of the numerical method
+  was demonstrated. This new methodology creates an intermediate approach that
+  provides higher spatial resolution than sub-channel codes and reduced
+  computational cost compared to detailed {CFD} simulation. Development of the
+  method was based on anisotropic second order closure models, due to the
+  swirling flow generated by the mixing devices; nevertheless, this novel
+  approach applies also to one and two equation turbulence models, without lack
+  of generality.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.compfluid.2015.11.011
+    \endverb
+    \field{issn}{0045-7930}
+    \field{pages}{141\bibrangedash 152}
+    \field{shortjournal}{Computers \& Fluids}
+    \field{title}{Source terms modeling for spacer grids with mixing vanes for
+  {CFD} simulations in nuclear reactors}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0045793015003825
+    \endverb
+    \field{volume}{126}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\JKL55YVJ\\S0
+    \verb 045793015003825.html:text/html;Version soumise:C\:\\Users\\Luc\\Zoter
+    \verb o\\storage\\RZYS83T6\\Capone et al. - 2016 - Source terms modeling fo
+    \verb r spacer grids with mixing.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Computers \& Fluids}
+    \field{day}{01}
+    \field{month}{03}
+    \field{year}{2016}
+    \field{urlday}{04}
+    \field{urlmonth}{12}
     \field{urlyear}{2022}
   \endentry
 
@@ -2211,6 +2357,102 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{falk_promoteur_2007}{report}{}
+    \name{author}{1}{}{%
+      {{hash=FF}{%
+         family={Falk},
+         familyi={F\bibinitperiod},
+         given={F},
+         giveni={F},
+      }}%
+    }
+    \strng{namehash}{FF1}
+    \strng{fullhash}{FF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{{DER}/{SSTH}/{LIEX}/2006-0.13}
+    \field{title}{Promoteur de Mélange - Diamètre 19.2 mm - 3 ailettes à 120
+  degrés}
+    \list{location}{1}{%
+      {Grenoble}%
+    }
+    \list{institution}{1}{%
+      {{CEA} Grenoble}%
+    }
+    \field{month}{07}
+    \field{year}{2007}
+  \endentry
+
+  \entry{falk_rapport_2002}{report}{}
+    \name{author}{2}{}{%
+      {{hash=FF}{%
+         family={Falk},
+         familyi={F\bibinitperiod},
+         given={F},
+         giveni={F},
+      }}%
+      {{hash=HR}{%
+         family={Hugonnard},
+         familyi={H\bibinitperiod},
+         given={R},
+         giveni={R},
+      }}%
+    }
+    \strng{namehash}{FFHR1}
+    \strng{fullhash}{FFHR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{{DTP}/{SETEX}/{LTAC}/02-158}
+    \field{title}{Rapport d'Essais {DEBORA} -Promoteur de Mélange - Essais de
+  {BO} et de Topologie - Campagne 4800-4900-5000}
+    \list{location}{1}{%
+      {Grenoble}%
+    }
+    \list{institution}{1}{%
+      {{CEA} Grenoble}%
+    }
+    \field{month}{05}
+    \field{year}{2002}
+  \endentry
+
+  \entry{falk_rapport_2003}{report}{}
+    \name{author}{2}{}{%
+      {{hash=FF}{%
+         family={Falk},
+         familyi={F\bibinitperiod},
+         given={F},
+         giveni={F},
+      }}%
+      {{hash=HR}{%
+         family={Hugonnard},
+         familyi={H\bibinitperiod},
+         given={R},
+         giveni={R},
+      }}%
+    }
+    \strng{namehash}{FFHR1}
+    \strng{fullhash}{FFHR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{{DTP}/{DETEX}/{LTAC}/03-178}
+    \field{title}{Rapport d'Essais {DEBORA} - Promoteur de Mélange 10 {DH} -
+  Essais de Crise d'Ebullition et de Topologie - Campagne 5200}
+    \list{location}{1}{%
+      {Grenoble}%
+    }
+    \list{institution}{1}{%
+      {{CEA} Grenoble}%
+    }
+    \field{month}{03}
+    \field{year}{2003}
+  \endentry
+
   \entry{forster_growth_1954}{article}{}
     \name{author}{2}{}{%
       {{hash=FHK}{%
@@ -2402,6 +2644,79 @@
     \field{year}{2001}
     \field{urlday}{02}
     \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{gauffre_wall-modeled_2020}{article}{}
+    \name{author}{3}{}{%
+      {{hash=GMC}{%
+         family={Gauffre},
+         familyi={G\bibinitperiod},
+         given={Marie-Charlotte},
+         giveni={M\bibinithyphendelim C\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Benhamadouche},
+         familyi={B\bibinitperiod},
+         given={Sofiane},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BPB}{%
+         family={Badel},
+         familyi={B\bibinitperiod},
+         given={Pierre-Bernard},
+         giveni={P\bibinithyphendelim B\bibinitperiod},
+      }}%
+    }
+    \keyw{5 × 5 mixing vane grid, {CALIFS} experiment, pressure fluctuations,
+  pressurized water reactor fuel assembly, Wall-modeled large eddy simulation}
+    \strng{namehash}{GMCBSBPB1}
+    \strng{fullhash}{GMCBSBPB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    The {EDF} aims to identify what causes fuel assembly vibrations in
+  pressurized water reactors. The present work focuses on the validation of
+  pressure fluctuations along the central rod of a 5 × 5 configuration for
+  wall-modeled large eddy simulations. New experiments, called {CALIFS}, have
+  been carried out by the Atomic Energy Commission ({CEA}) on a 5 × 5 mixing
+  vane grid ({MVG}) in the framework of the Fuel Assembly
+  {EDF}/{CEA}/{FRAMATOME} tripartite project. In addition to pressure drop and
+  velocity measurements using particle image velocimetry, pressure measurements
+  have been performed along the central rod. The computational domain is
+  representative of a span of the experimental mock-up composed of a 5 × 5 rod
+  bundle equipped with a split-type {MVG}. The hydraulic Reynolds number is
+  equal to 66 000 and periodic boundary conditions are imposed in the
+  streamwise direction. The mesh is fully hexahedral and conformal.
+  Computations give very satisfactory results for the pressure drop, the mean
+  velocity, and the Reynolds stresses at different locations. The
+  root-mean-square of the pressure along the central rod is also compared to
+  experimental data at different heights. The behavior is in very good
+  agreement up to five hydraulic diameters downstream of the {MVG}.%
+    }
+    \verb{doi}
+    \verb 10.1080/00295450.2019.1642684
+    \endverb
+    \field{issn}{0029-5450}
+    \field{note}{Publisher: Taylor \& Francis \_eprint:
+  https://doi.org/10.1080/00295450.2019.1642684}
+    \field{number}{2}
+    \field{pages}{255\bibrangedash 265}
+    \field{title}{Wall-Modeled Large Eddy Simulation of the Flow Through {PWR}
+  Fuel Assemblies at {ReH} = 66 000—Validation on {CALIFS} Experimental
+  Setup}
+    \verb{url}
+    \verb https://doi.org/10.1080/00295450.2019.1642684
+    \endverb
+    \field{volume}{206}
+    \field{journaltitle}{Nuclear Technology}
+    \field{day}{01}
+    \field{month}{02}
+    \field{year}{2020}
+    \field{urlday}{04}
+    \field{urlmonth}{12}
     \field{urlyear}{2022}
   \endentry
 
@@ -4038,10 +4353,10 @@
       }}%
     }
     \field{editoratype}{collaborator}
-    \keyw{620, Anemometry, Anénométrie thermique, Convective boiling flows,
-  Écoulement diphasique, Écoulements bouillants convectifs, Haute pression,
-  Hautes pressions, High pressure, Homogeneous model, Hot wire anemometry,
-  Modele homogène}
+    \keyw{620, Écoulement diphasique, Hautes pressions, Anemometry,
+  Anénométrie thermique, Convective boiling flows, Écoulements bouillants
+  convectifs, Haute pression, High pressure, Homogeneous model, Hot wire
+  anemometry, Modele homogène}
     \strng{namehash}{KM1}
     \strng{fullhash}{KM1}
     \field{labelnamesource}{author}
@@ -4535,6 +4850,80 @@
     \field{month}{02}
     \field{year}{2017}
     \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{lee_synthesis_2014}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LJR}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Jae\bibnamedelima Ryong},
+         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=KJ}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Jungwoo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=SCH}{%
+         family={Song},
+         familyi={S\bibinitperiod},
+         given={Chul-Hwa},
+         giveni={C\bibinithyphendelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LJRKJSCH1}
+    \strng{fullhash}{LJRKJSCH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    The second international {CFD} benchmark exercise on turbulent mixing in a
+  rod bundle has been launched by {OECD}/{NEA}, to validate relevant {CFD}
+  (Computational Fluid Dynamics) codes and develop problem-specific Best
+  Practice Guidelines ({BPG}) based on the {KAERI} (Korea Atomic Energy
+  Research Institute) {MATiS}-H experiments on the turbulent mixing in a 5×5
+  rod array having two different types of vaned spacer grids: split and swirl
+  types. For this 2nd international benchmark exercise ({IBE}-2), the {MATiS}-H
+  testing provided a unique set of experimental data such as axial and lateral
+  velocity components, turbulent intensity, and vorticity information. Blind
+  {CFD} calculation results were submitted by twenty-five (25) participants to
+  {KAERI}, who is the host organization of the {IBE}-2, and then analyzed and
+  synthesized by comparing them with the {MATiS}-H data. Based on the synthesis
+  of the results from both the experiments and blind {CFD} calculations for the
+  {IBE}-2, and also by comparing with the {IBE}-1 benchmark exercise on the
+  mixing in a T-junction, useful information for simulating this kind of
+  complicated physical problem in a rod bundle was obtained. And some
+  additional Best Practice Guidelines ({BPG}) are newly proposed. A summary of
+  the synthesis results obtained in the {IBE}-2 is presented in this paper.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.nucengdes.2014.03.008
+    \endverb
+    \field{issn}{0029-5493}
+    \field{pages}{3\bibrangedash 18}
+    \field{series}{{SI} : {CFD}4NRS-4}
+    \field{shortjournal}{Nuclear Engineering and Design}
+    \field{title}{Synthesis of the turbulent mixing in a rod bundle with vaned
+  spacer grids based on the {OECD}-{KAERI} {CFD} benchmark exercise}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S002954931400140X
+    \endverb
+    \field{volume}{279}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\93Y5X93F\\S0
+    \verb 02954931400140X.html:text/html
+    \endverb
+    \field{journaltitle}{Nuclear Engineering and Design}
+    \field{day}{01}
+    \field{month}{11}
+    \field{year}{2014}
+    \field{urlday}{04}
     \field{urlmonth}{12}
     \field{urlyear}{2022}
   \endentry
@@ -8233,6 +8622,70 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{wu_bulk_2003}{article}{}
+    \name{author}{3}{}{%
+      {{hash=WY}{%
+         family={Wu},
+         familyi={W\bibinitperiod},
+         given={Yugong},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=FZ}{%
+         family={Fan},
+         familyi={F\bibinitperiod},
+         given={Zhigang},
+         giveni={Z\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Yuzhu},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \keyw{Bulk Density, Hard Sphere, Infinite Number, Packing Density, Polymer}
+    \strng{namehash}{WYFZLY1}
+    \strng{fullhash}{WYFZLY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    The packing densities of random close packing of equal hard spheres
+  ({RCPHS}) are studied. The {RCPHS} is generated by a rearrangement algorithm
+  with an optimization subroutine. Traditionally defined packing density, bulk
+  density, is found to be 0.635 ± 0.002 by extrapolation to infinite number of
+  spheres. We propose that there exist a characteristic packing density without
+  boundary effects. This interior packing density is calculated by two methods,
+  resulting in values without statically significant difference. Interior
+  packing density deduced from Voronoi diagram is 0.6690 ± 0.0006. Local
+  packing density for each sphere is defined as ratio of its volume to volume
+  of its corresponding Voronoi cell and is sensitive to sphere's local
+  configuration and overlapping.%
+    }
+    \verb{doi}
+    \verb 10.1023/A:1023597707363
+    \endverb
+    \field{issn}{1573-4803}
+    \field{number}{9}
+    \field{pages}{2019\bibrangedash 2025}
+    \field{shortjournal}{Journal of Materials Science}
+    \field{title}{Bulk and interior packing densities of random close packing
+  of hard spheres}
+    \verb{url}
+    \verb https://doi.org/10.1023/A:1023597707363
+    \endverb
+    \field{volume}{38}
+    \field{langid}{english}
+    \field{journaltitle}{Journal of Materials Science}
+    \field{day}{01}
+    \field{month}{05}
+    \field{year}{2003}
+    \field{urlday}{04}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{yeoh_fundamental_2008}{article}{}
     \name{author}{4}{}{%
       {{hash=YGH}{%
@@ -9319,6 +9772,15 @@
     \field{urlday}{16}
     \field{urlmonth}{09}
     \field{urlyear}{2022}
+  \endentry
+
+  \entry{noauthor_code_saturne_2021}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{code\_saturne 7.1 Theory Guide}
+    \field{month}{12}
+    \field{year}{2021}
   \endentry
 
   \entry{unal_maximum_1976}{article}{}

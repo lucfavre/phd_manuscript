@@ -4,7 +4,7 @@
 
 \minitoc
 
-\label{ch:debora_agate_prom} % For referencing the chapter elsewhere, use \autoref{ch:introduction} 
+\label{chap:debora_agate_prom} % For referencing the chapter elsewhere, use \autoref{ch:introduction} 
 
 \section{Introduction}
 
@@ -25,13 +25,13 @@ In this Chapter, we focus on such a dedicated experiment called DEBORA-Promoteur
 
 \subsection{Test Section and Experimental Campaigns}
 
-In 2003, the wish to investigate boiling flows in complex geometries similar to those of PWR fuel assembly motivated CEA and EDF to perform modifications of the DEBORA facility \cite{falk_debprom}. In order to mimic the turbulent mixing induced by the grids holding the fuel rods, a mixing device equipped with blades was built with respect to the geometrical properties of the mixing vanes of the PWR grids (Figure \ref{fig:debprom_vanes}).
+In 2003, the wish to investigate boiling flows in complex geometries similar to those of PWR fuel assembly motivated CEA and EDF to perform modifications of the DEBORA facility \cite{falk_rapport_2002}. In order to mimic the turbulent mixing induced by the grids holding the fuel rods, a mixing device equipped with blades was built with respect to the geometrical properties of the mixing vanes of the PWR grids (Figure \ref{fig:debprom_vanes}).
 
 
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.3\linewidth]{img/DEBORA-Promoteur/prom_pic2.png}
-\caption{Picture of the mixing device. (Adapted from \cite{falk_agate})}
+\caption{Picture of the mixing device. (Adapted from \cite{falk_promoteur_2007})}
 \label{fig:debprom_vanes}
 \end{figure}
 
@@ -56,7 +56,7 @@ Figures \ref{fig:debprom_mesrad} and \ref{fig:debprom_sketch} present the positi
 %\settoheight{\imageheight}{\includegraphics[width=0.45\linewidth]{img/DEBORA-Promoteur/deb_prom_sketch.pdf}}
 %%%%
 \centering
-\subfloat[Measurement radius. (Adapted from \cite{falk_debprom})]
+\subfloat[Measurement radius. (Adapted from \cite{falk_rapport_2002})]
 {
 \includegraphics[width=0.3\linewidth]{img/DEBORA-Promoteur/debprom_mesrad.jpg}
 \label{fig:debprom_mesrad}
@@ -74,8 +74,8 @@ Figures \ref{fig:debprom_mesrad} and \ref{fig:debprom_sketch} present the positi
 The same measurement instrumentation as the DEBORA C3000 cases   (bi-optical probe, Figure \ref{fig:optical_probe}) was used to study the flow topology in the DEBORA-Promoteur experiment. In that regard, two measurements campaign were conducted:
 
 \begin{itemize}
-\item Campaign C4800 where the mixing vanes were placed at $L_{MV} = 23.5\ D_{h}$ ($\approx 0.45$\ m)upstream the end of the heating length ;
-\item Campaign C5200, where the mixing vanes were placed $L_{MV} = 10\ D_{h}$ ($\approx 0.19$\ m) upstream the end of the heating length.
+\item Campaign C4800 where the mixing vanes were placed at $L_{MV} = 23.5\ D_{h}$ ($\approx 0.45$\ m)upstream the end of the heating length \cite{falk_rapport_2002} ;
+\item Campaign C5200, where the mixing vanes were placed $L_{MV} = 10\ D_{h}$ ($\approx 0.19$\ m) upstream the end of the heating length \cite{falk_rapport_2003}.
 \end{itemize}
 
 \begin{note*}{}
@@ -115,14 +115,14 @@ Following the DEBORA-Promoteur tests, experimental findings lead CEA and EDF to 
 
 \npar
 
-The AGATE-Promoteur experiments consist of LDV (Laser Doppler Velocimetry) measurements of the liquid velocity and turbulent intensity in both axial and radial direction. The test in conducted using the very same geometry and mixing vanes as the DEBORA-Promoteur case and consists of a single set of measurements for water at 2 bar flowing at a mass flow rate $G_{L} \approx 3000\ \debm$ (same mass flux as the DEBORA-Promoteur cases) and $T_{L} \approx 40\degC$. Measurements are then operated at several axial positions (18) and diameters (6). Figure \ref{fig:agate_mes} details the different positions where measurements were conducted.
+The AGATE-Promoteur experiments consist of LDV (Laser Doppler Velocimetry) measurements of the liquid velocity and turbulent intensity in both axial and radial direction. The test in conducted using the very same geometry and mixing vanes as the DEBORA-Promoteur case and consists of a single set of measurements for water at 2 bar flowing at a mass flow rate $G_{L} \approx 3000\ \debm$ (same mass flux as the DEBORA-Promoteur cases) and $T_{L} \approx 40\degC$, resulting in an hydraulic Reynolds number $\Re_{D_{h}} \approx 8.5\times 10^{4}$. Measurements are then operated at several axial positions (18) and diameters (6). Figure \ref{fig:agate_mes} details the different positions where measurements were conducted.
 
 
 
 
 \begin{figure}[!h]
 \centering
-\subfloat[Radial measurements diameters. (Adapted from \cite{falk_agate})]
+\subfloat[Radial measurements diameters. (Adapted from \cite{falk_promoteur_2007})]
 {
 \includegraphics[width=0.3\linewidth]{img/AGATE/agate_mes_rad.PNG}
 \label{fig:agate_mesrad}
@@ -150,6 +150,7 @@ For each data point, we have the local axial velocity, radial velocity (signed p
 
 \begin{equation}
 RMS_{i} := \sqrt{\left<U'_{i}U'_{i}\right>} = I_{T,i} \times \left<U_{i}\right>
+\label{eq:RMS_def}
 \end{equation}
 where $i=A,\ R$ for axial or radial direction, $U=\left<U\right> + U'$ the velocity decomposed between time-average and fluctuation, and $I_{T}$ the measured turbulent intensity. 
 
@@ -243,7 +244,8 @@ The considerations over condensation are though speculative and would largely be
 \end{remark*}
 
 
-\subsubsection{Estimation of the Bubble Diameter}
+\subsection{Estimation of the Bubble Diameter}
+\label{subsec:debprom_dV_exp}
 
 Since values of vapor velocity measurements are given for the C5200 cases, one may be interested in exploiting them to try to extract information about the bubble size distribution in the flow. However, we have to be able to tell whether those measurements were largely erroneous due to the rotation effects or not \ie if the bubbles were moving in the direction of the probes.
 
@@ -338,7 +340,7 @@ In such two-phase flow conditions, the dispersed approach is unlikely to be repr
 
 \npar
 
-Moreover, recalling that the optimal packing for non-overlapping spheres of same sizes is mathematically capped at 74\% \cite{wu_fan_2003}, bubbles at void fraction $\alpha > 74\%$ then must have, at least partially, non-spherical shapes. Which is also supported by Weber number value $\We \sim 0.1$ and E\"otv\"os value $\Eo \sim 1$ in those conditions.
+Moreover, the optimal packing for non-overlapping spheres of same sizes is mathematically capped at 74\% \cite{wu_bulk_2003}, bubbles at void fraction $\alpha > 74\%$ then must have, at least partially, non-spherical shapes. Which is also supported by Weber number value $\We \sim 0.1$ and E\"otv\"os value $\Eo \sim 1$ in those conditions.
 \end{remark*}
 
 %Wu, Yugong; Fan, Zhigang; Lu, Yuzhu (1 May 2003). "Bulk and interior packing densities of random close packing of hard spheres". Journal of Materials Science. 38 (9): 2019–2025. doi:10.1023/A:1023597707363. ISSN 1573-4803. S2CID 137583828.
@@ -359,4 +361,4 @@ The analysis of the DEBORA-Promoteur experiment allowed to qualitatively qualify
 \end{itemize}
 
 
-%In the next chapter, we perform numerical simulations of the DEBORA-Promoteur and AGATE-Promoteur experiments to assess NEPTUNE\_CFD capacity on such geometries.
+In the next chapter, we perform numerical simulations of the DEBORA-Promoteur and AGATE-Promoteur experiments to assess NEPTUNE\_CFD capacity on such geometries.
