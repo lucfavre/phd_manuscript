@@ -6,12 +6,18 @@
 
 %----------------------------------------------------------------------------------------
 
+\minitoc
 
-\section{Nuclear Energy in France}
+\section*{Nuclear Energy in France}
 
-In 2020, France had a total of 136.2~GW of installed electrical power with a total production over the year of 500.1~TWh, 67.1\% of which coming from nuclear reactors. Actually, nuclear energy plays a pivotal role in France's electrical mix since the 1950's and is promoted as a mean to reduce the global carbon dioxyde emissions of the country's energy production. The french government currently plans to build a total of six new nuclear reactors before 2050.
+In 2020, France had a total of 136.2~GW of installed electrical power with a total production over the year of 500.1~TWh, 67.1\% of which coming from nuclear reactors (Figure \ref{fig:france_energy_mix}). Actually, nuclear energy plays a pivotal role in France's electrical mix since the 1950's and is promoted as a mean to reduce the global carbon dioxyde emissions of the country's energy production. The french government currently plans to build a total of six new nuclear reactors before 2050.
 
-%%%FIGURE OF FRENCH ELECTRICAL MIX
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\linewidth]{img/intro/energy_mix.PNG}
+\caption{Shared parts of energy production in France. \cite{rte_website} }
+\label{fig:france_energy_mix}
+\end{figure}
 
 \npar
 
@@ -28,22 +34,27 @@ France accounts for a total of 56 nuclear power plants in 2020, all being Pressu
 
 
 
-\section{Physical and Technological Background}
+\section*{Physical and Technological Background}
 
-\subsection{Nuclear Energy}
+\subsection*{Nuclear Energy}
 
-\subsubsection{Nuclear Fission}
+\subsubsection*{Nuclear Fission}
 
-On earth exists only one isotope that is called "fissile" : uranium 235 (noted $^{235}U$). Under certain physical conditions, $^{235}U$ collision with a neutron results in its break-up in two lighter atoms while releasing a total of two to three neutrons and an energy of the order of 200~MeV ($\approx 3.2 \times 10^{-11]$\ J). This amount of energy results from the mass difference between the $^{235}U$ and the products of the fission (atoms and neutrons), which is transferred as kinetic energy to the latter (Figure \ref{fig:fission}).
+On earth exists only one isotope that is called "fissile" : uranium 235 (noted $^{235}U$). Under certain physical conditions, $^{235}U$ collision with a neutron results in its break-up in two lighter atoms while releasing a total of two to three neutrons and an energy of the order of 200~MeV ($\approx 3.2 \times 10^{-11}$\ J). This amount of energy results from the mass difference between the $^{235}U$ and the products of the fission (atoms and neutrons), which is transferred as kinetic energy to the latter (Figure \ref{fig:fission}).
 
 
-%%%%FIGURE FISSION
 
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\linewidth]{img/intro/fission.jpg}
+\caption{Sketch of the nuclear fission process. \cite{chem_libretext }}
+\label{fig:fission}
+\end{figure}
 
 
 $^{235}U$ used in PWR is an isotope of uranium and accounts for only 0.7\% of the common uranium found in nature, most of which being uranium 238 ($^{238}U$) that is not fissile. For nuclear power production, common uranium must be enriched in $^{238}U$ up to 3\% to 5\%.
 
-\subsubsection{Nuclear Chain Reaction and Energy Production}
+\subsubsection*{Nuclear Chain Reaction and Energy Production}
 
 
 Fission presents particular interest for energy production due to its capacity to create a "nuclear chain reaction". Indeed, as multiple neutrons are expelled after the nuclear fission (Figure \ref{fig:fission}), each of them can potentially become a trigger for a new fission of a nearby $^{235}U$ atom. Since each fission releases more neutrons than required for its own triggering, this results in an exponentially increasing number of fission called a nuclear chain reaction.
@@ -62,9 +73,22 @@ Following the heat exchange between the nuclear fuel and the water, the thermal 
 
 
 
-\subsection{PWR Structure and Operation}
+\subsection*{PWR Structure and Operation}
+
+Pressurized Water Reactors are the only type of nuclear power plants operated in France for electricity production. A simplified sketch of a PWR is presented on Figure \ref{fig:pwr_sketch}.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.7\linewidth]{img/intro/pwr_sketch.png}
+\caption{Sketch of a Pressurized Water Reactor \cite{office_nuclear_energy}}
+\label{fig:pwr_sketch}
+\end{figure}
 
 
+
+\subsubsection{Primary Circuit}
+
+The primary circuit aims to collect the thermal energy expelled by the fission reactions within the nuclear fuel rods. The water flowing through the core gathers this energy and transfer it towards the vapor generator, while ensuring a moderating effect to maintain the nuclear chain reaction in the fuel. The primary circuit is fully closed and operates at a pressure close to 155\ bar, a temperature of $300\degC$ and mass flow rates between $3000$ and $5000 \debm$ (approximately 20 tons per second).  
 
 
 To write :
