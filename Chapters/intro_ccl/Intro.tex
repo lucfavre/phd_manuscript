@@ -1,16 +1,18 @@
 % Chapter 1
 
-\chapter*{Introduction} % Chapter title
+\chapter{Introduction} % Chapter title
 
 \label{ch:introduction} % For referencing the chapter elsewhere, use \autoref{ch:introduction} 
 
 %----------------------------------------------------------------------------------------
 
+
+
 \minitoc
 
-\section*{Nuclear Energy in France}
+\section{Nuclear Energy in France}
 
-In 2020, France had a total of 136.2~GW of installed electrical power with a total production over the year of 500.1~TWh, 67.1\% of which coming from nuclear reactors (Figure \ref{fig:france_energy_mix}). Actually, nuclear energy plays a pivotal role in France's electrical mix since the 1950's and is promoted as a mean to reduce the global carbon dioxyde emissions of the country's energy production. The french government currently plans to build a total of six new nuclear reactors before 2050.
+In 2020, France had a total of 136.2~GW of installed electrical power with a total production over the year of 500.1~TWh, 67.1\% of which coming from nuclear reactors (Figure \ref{fig:france_energy_mix}). Actually, nuclear energy plays a pivotal role in France's electrical mix since the 1950's and is promoted as a mean to reduce the global carbon dioxide emissions of the country's energy production. The french government currently plans to build a total of six new nuclear reactors before 2050.
 
 \begin{figure}[!h]
 \centering
@@ -21,12 +23,12 @@ In 2020, France had a total of 136.2~GW of installed electrical power with a tot
 
 \npar
 
-France accounts for a total of 56 nuclear power plants in 2020, all being Pressurized Water Reactors (PWR). They are dispatched over 19 different geographic locations and split in three electrical power series:
+France accounts for a total of 56 nuclear power units in 2020, all being Pressurized Water Reactors (PWR). They are dispatched over 19 different geographic locations and split in three electrical power series:
 
 \begin{itemize}
-\item 900~MW series (32 plants), launched between 1978 and 1988 (total installed power of 28.8~GW) ;
-\item 1300~MW series (20 plants), launched between 1985 and 1994 (total installed power of 26.3~GW) ;
-\item N4 series (1450~MW, 4 plants), launched between 2000 and 202 (total installed powed of 6~MW) being the most recent french PWR.
+\item 900~MW series (32 units), launched between 1978 and 1988 (total installed power of 28.8~GW) ;
+\item 1300~MW series (20 units), launched between 1985 and 1994 (total installed power of 26.3~GW) ;
+\item N4 series (1450~MW, 4 units), launched between 2000 and 202 (total installed power of 6~MW) being the most recent french PWR.
 \end{itemize}
 
 
@@ -34,11 +36,11 @@ France accounts for a total of 56 nuclear power plants in 2020, all being Pressu
 
 
 
-\section*{Physical and Technological Background}
+\section{Physical and Technological Background}
 
-\subsection*{Nuclear Energy}
+\subsection{Nuclear Energy}
 
-\subsubsection*{Nuclear Fission}
+\subsubsection{Nuclear Fission}
 
 On earth exists only one isotope that is called "fissile" : uranium 235 (noted $^{235}U$). Under certain physical conditions, $^{235}U$ collision with a neutron results in its break-up in two lighter atoms while releasing a total of two to three neutrons and an energy of the order of 200~MeV ($\approx 3.2 \times 10^{-11}$\ J). This amount of energy results from the mass difference between the $^{235}U$ and the products of the fission (atoms and neutrons), which is transferred as kinetic energy to the latter (Figure \ref{fig:fission}).
 
@@ -46,15 +48,16 @@ On earth exists only one isotope that is called "fissile" : uranium 235 (noted $
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.6\linewidth]{img/intro/fission.jpg}
-\caption{Sketch of the nuclear fission process. \cite{chem_libretext }}
+\includegraphics[width=0.7\linewidth]{img/intro/fission.jpg}
+\caption{Sketch of the nuclear fission process. \cite{chem_libretext}}
 \label{fig:fission}
 \end{figure}
 
+\npar
 
 $^{235}U$ used in PWR is an isotope of uranium and accounts for only 0.7\% of the common uranium found in nature, most of which being uranium 238 ($^{238}U$) that is not fissile. For nuclear power production, common uranium must be enriched in $^{238}U$ up to 3\% to 5\%.
 
-\subsubsection*{Nuclear Chain Reaction and Energy Production}
+\subsubsection{Nuclear Chain Reaction and Energy Production}
 
 
 Fission presents particular interest for energy production due to its capacity to create a "nuclear chain reaction". Indeed, as multiple neutrons are expelled after the nuclear fission (Figure \ref{fig:fission}), each of them can potentially become a trigger for a new fission of a nearby $^{235}U$ atom. Since each fission releases more neutrons than required for its own triggering, this results in an exponentially increasing number of fission called a nuclear chain reaction.
@@ -63,9 +66,9 @@ Fission presents particular interest for energy production due to its capacity t
 
 However, neutrons actually released by the fission can't directly trigger a new one. They are emitted with a kinetic energy of approximately 2~MeV at which the probability of impacting an other $^{235}U$ is too low to start the nuclear chain reaction. Therefore, a so-called "moderator" is needed to slow down the neutrons through collisions with other atoms. Then the fission reactions lead the nuclear fuel to heat up rapidly and thus needs to be cooled to evacuate the produced energy. Using a fluid, it must both act as a coolant and allow the nuclear chain reaction to continue (moderator role). In french PWR, this is achieved using water as cooling fluid which also moderates the neutrons going through it.
 
-\begin{note*}{}
-Other nuclear reactor technologies exist with different fluid such as gas-cooled reactor using graphite as moderator material and carbon dioxyde as coolant.
-\end{note*}
+\begin{remark*}{}
+Other nuclear reactor technologies exist with different fluid such as gas-cooled reactor using graphite as moderator material and carbon dioxide as coolant.
+\end{remark*}
 
 \npar
 
@@ -73,22 +76,226 @@ Following the heat exchange between the nuclear fuel and the water, the thermal 
 
 
 
-\subsection*{PWR Structure and Operation}
+\subsection{PWR Operation}
 
 Pressurized Water Reactors are the only type of nuclear power plants operated in France for electricity production. A simplified sketch of a PWR is presented on Figure \ref{fig:pwr_sketch}.
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.7\linewidth]{img/intro/pwr_sketch.png}
-\caption{Sketch of a Pressurized Water Reactor \cite{office_nuclear_energy}}
+\includegraphics[width=1.0\linewidth]{img/intro/pwr_tikz.pdf}
+\caption{Sketch of a Pressurized Water Reactor \cite{Gloria_Faccanoni}}
 \label{fig:pwr_sketch}
+\end{figure}
+
+\npar
+
+\subsubsection{Primary Loop}
+
+The primary loop aims to collect the thermal energy expelled by the fission reactions within the nuclear fuel rods. The water flowing through the core gathers this energy and transfer it towards the vapor generator, while ensuring a moderating effect to maintain the nuclear chain reaction in the fuel. The primary loop is fully closed and operates at a pressure close to 155\ bar, a temperature of $300\degC$ and mass flow rates between $3000$ and $5000 \debm$ (approximately 20 tons per second).  
+
+\npar
+
+The reactor vessel is fed with water by numerous pumps, each of them being connected to its own coolant circuit and steam generator. One of those coolant circuit is connected to the pressurizer to set the pressure of the whole primary loop. In France, 900~MW reactors comprise three primary pumps while 1300~MW and 1450~MW reactors have four of them.
+
+\npar
+
+The main components of the primary loop are:
+
+\begin{itemize}
+\item \textbf{The reactor vessel} containing the core where fission reactions take place within the nuclear fuel rods, gathered in so-called "fuel assemblies". The pressurized water flow between the rods to remove the heat released at their surface and moderates the neutrons to maintain the chain reaction.
+
+\item \textbf{The primary pumps} which role is to ensure the water flow throughout the loop. They require an electrical power supply of approximately 7~MW.
+
+\item \textbf{The pressurizer}, imposing the pressure and keeps the water in a liquid state. It is actually a vessel with a liquid-vapor mixture in which pressure can be increased through vaporization of the liquid water (using heating resistors) or diminished by vapor condensation (using water aspersion system) .
+
+\item \textbf{Steam generator tubes} being the interface between the primary and secondary loop through which the thermal energy gathered in the core is transferred from the primary water to vaporize the secondary water.
+\end{itemize}
+
+
+\subsubsection{Secondary Loop}
+
+The secondary loop is designed to receive the thermal energy from the primary loop to vaporize its own water. The generated vapor is used to produce electricity by conversion of its mechanical energy through the rotating of power-generating turbines connected to alternators. At the outlet of the turbines, the vapor has logically been expanded and is then condensed before being sent back into the secondary loop and the steam generators. Therefore, the secondary loop is a closed water-steam circuit. The operating conditions in the steam generator are usually a pressure of 60 bar, heated from $220\degC$ to $275\degC$ and evaporated.
+
+\npar
+
+Main components of the secondary loop are:
+
+\begin{itemize}
+\item \textbf{Steam generators} in which water flows around tubes containing the primary water and gets evaporated.
+
+\item \textbf{High and low pressure turbines} which role is to transfer the mechanical energy contained in the steam towards the alternators. First, the high pressure part expands the steam from 60 bar to 10 bar before the low pressure part decreasing the pressure down to 0.05 bar. The use of two-stage expanders increases the global thermodynamic efficiency of the cycle.
+
+\item \textbf{The condenser} connecting the secondary loop and third (cooling) loop by operating the heat exchange dedicated to vapor condensation at a pressure of 0.05 bar. The condensation relies on the external heat sink of the cooling loop.
+\end{itemize}
+
+
+For a reactor producing an electrical power of 900~MW, the remaining thermal power to evacuate through the condenser after the low-pressure turbine stage lies around 1800~MW.
+
+
+\subsubsection{Cooling Loop}
+
+
+The cooling loop's goal is to cool down and condense the steam coming our of the turbines. Depending on the geographical situation of the nuclear power plant, the associated heat sink may either be natural (lake, sea, etc.) or built (cooling tower):
+
+\npar
+
+\begin{itemize}
+\item \textbf{A cooling tower} cools down and condenses vapor by direct contact with outside air. Most of the water which condensate falls down in the tower and is further re-injected in the loop while the remaining part escapes into the atmosphere as a steam cloud. This loss of water is compensated by draining a local natural source (usually a river).
+
+\item \textbf{A natural heat sink} such as a sea is self-sufficient to act as an "infinite" cold source. Water is then directly pumped from it and injected in the condenser to extract the heat from the secondary circuit before being sent back. The level of heating of the natural source is controlled following environmental policies. 
+
+\end{itemize}
+
+
+The cooling loop is thus a completely open circuit.
+
+
+\subsection{Structure and Geometry of PWR Core}
+
+
+\subsubsection{Reactor Pressure Vessel}
+
+The whole reactor core is contained in a stainless steel vessel (Figure \ref{fig:vessel_pic}) called "Reactor Pressure Vessel" (RPV). Together with the primary loop, they represent the second "containment barrier" (name given to the parts of the reactor avoiding the escape of radioactive species) of the core. Therefore, the RPV is a pivotal safety element of the reactor which mechanical strength and performances must be ensured in any conditions thay may occur in the reactor.
+
+\begin{note*}{}
+A RPV can not be replace, thus scaling the whole reactor's lifetime. The longer the vessel is durable, the longer the nuclear unit will operate.
+\end{note*}
+
+
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\linewidth]{img/intro/vessel_pic.jpg}
+\caption{Picture of the Reactor Pressure Vessel of the finnish European Pressurized Reactor \cite{usine_nouvelle_areva}}
+\label{fig:vessel_pic}
+\end{figure}
+
+\npar
+
+
+\subsubsection{Fuel Assembly and Core Structure}
+
+A fuel assembly is composed of $17 \times 17$ rods and guide thimbles among which 264 are nuclear fuel rods. 24 of them are guide thimbles in which absorbing rods (used to shut down the chain reaction by neutron absorption in incidental or accidental situations) can be inserted, one of them being dedicated to instrumentation. The top nozzle of the assembly ensures its stability using a hold-down spring. The whole structure is 4\ m high and is also maintained by 8 grid placed every 50\ cm (Figure \ref{fig:fuel_assembly}). 
+
+
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.7\linewidth]{img/intro/fuel_assembly.png}
+\caption{Sketch of a full nuclear fuel assembly and rod. \cite{Croff_nuclear_fuel}}
+\label{fig:fuel_assembly}
+\end{figure}
+
+\npar
+
+In a reactor core, the number of fuel assemblies can vary depending on its final electrical power production: 157 assemblies for 900\ MW units, 193 for 1300~MW units and 205 for 1450~MW units.
+
+\subsubsection{Fuel Rod}
+
+Fuel rods are the elementary component of the reactor's core since they contain the nuclear fuel pellets made of enriched uranium. A pellet measures 13.5\ mm height for an 8\ mm diameter, weighing approximately 8.3\ g. They are placed in a tubular cladding made of zircaloy (an alloy made of 98\% of zirconium and tin) being neutron-transparent, allowing them to move through the core to trigger fission reactions and also heating the coolant fluid. This cladding is the first containment barrier and contains a total of 272 pellets (Figure \ref{fig:fuel_assembly}).
+
+\npar
+
+The bundle organization of the rods allows water to flow between them, allowing the moderation of neutrons coming out of recent fissions. Moreover, this geometry ensures a large heat exchange surface to enhance the cooling of the fuel. A single fuel rod usually measures 4\ m height for a 1\ cm diameter and weighs 2\ kg (Figure \ref{fig:fuel_rod}).
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\linewidth]{img/intro/fuel_rod.jpg}
+\caption{Picture of a fuel rod during a control test. \cite{doseequivalentbanana}}
+\label{fig:fuel_rod}
+\end{figure}
+
+\npar
+ 
+\subsubsection{Grids}
+
+Within the fuel assembly, the rods are held by multiple grids (8) (Figure \ref{fig:fuel_grid}) placed with an even spacing of 50\ cm. 
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.8\linewidth]{img/intro/pic_grid.png}
+\caption{Picture of a fuel assembly grid. \cite{yoo_NED}}
+\label{fig:fuel_grid}
+\end{figure}
+
+\npar
+
+
+They help the whole structure to withstand the huge hydrodynamic effort exerted by the water flowing over the rods
+at high flow rates. Two types of grids are used in fuel assemblies:
+
+\begin{itemize}
+\item Spacer grids which role is solely to ensure the mechanical stability of the assembly and avoid rods deformation when they heat up.
+\item Mixing grids equipped with mixing vanes (Figure \ref{fig:fuel_grid}) that impose a rotational motion to the flow, enhancing the turbulence and mixing to homogenize its temperature.
+\end{itemize}
+
+Figure \ref{fig:fuel_grid_I8C} shows an enlarge model of a grid for a $5 \times 5$ rod bundle. The 25 cells holding the rods are clearly visible along with the different components being the mixing vanes, the dimples and the springs. The latter two holding the rods straight when they are inserted through the grid.
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.3\linewidth]{img/intro/MaquetteGrille.png}
+\includegraphics[width=0.3\linewidth]{img/intro/CanauxGrille.jpg}
+\caption{Model of a $5 \times 5$ grid (scale 5:1) from EDF Lab Chatou. Mixing vanes circled in red, dimples in green and spings in orange.}
+\label{fig:fuel_grid_I8C}
+\end{figure}
+
+
+\section{Safety and Thermal Design of PWR}
+
+Regarding radioactivity, the safety of a PWR is ensured by three containment barriers:
+
+\begin{itemize}
+\item The fuel rod cladding (Figure \ref{fig:fuel_assembly}) ;
+\item The Reactor Pressure Vessel and primary loop (Figure \ref{fig:vessel_pic}) ;
+\item The containment building (Figure \ref{fig:pwr_sketch}).
+\end{itemize}
+
+
+Therefore, thermal-hydraulic design of a PWR has to account for any situation that can potentially pose a threat to any of those containment barriers. In particular, the water used as coolant in the core has to be able to remove the heat from the fuel rods at anytime, including nominal, transient or incidental conditions. The different elements of the primary loop involved in the cooling process both have to be able to withstand the possible violent dynamic changes during the operation of the reactor and avoid to damage other parts of the circuit, especially those related to a containment barrier (fuel rods, RPV, etc.).
+
+
+\npar
+
+Two different types of accident are usually considered when designing the reactor core:
+
+\begin{itemize}
+\item The Loss Of Coolant Accident (LOCA) due to a rupture of a pipe connected to the primary loop leading to an pressure decrease that can lead to vaporization of the primary water. This accident is quite slow (from a few minutes to hours) and triggers an instant drop of the control rods to stop the nuclear chain reaction. A residual power (representing roughly 6\% of the nominal power) still has to be removed from the core.
+
+\item The Reactivity-Initiated Accident (RIA) corresponding to an abrupt rise of the nuclear activity of the fuel rods. This can happen under a failure of the holddown springs (Figure \ref{fig:fuel_assembly}) leading to an ejection of the control rods. In this situation, the extremely fast transient regime (from a few milliseconds to seconds) lead to a quasi-instantaneous increase of the heat flux in the rods, resulting in their thermal expansion and presenting a high risk of fuel cladding damage. 
+\end{itemize}
+
+
+In such conditions, the water around the fuel rods is exposed to a huge increase of the thermal power it receives per unit of volume and is heated up above its saturation temperature and starts to vaporize. Such a situation can then lead to multiphase boiling flow regimes in the core, with a risk of reaching the critical situation called the \textbf{\underline{Boiling Crisis}} (BC).
+
+\npar
+
+The Boiling Crisis (described in next Section) is among the most important thermal-hydraulic phenomenon that has to be accounted for in the design of nuclear reactors since it can lead to damage or rupture of the nuclear fuel rods cladding and thus needs dedicated studies and modeling. %For nuclear fuel assemblies, the physical situation consequently relates to vertical subcooled boiling flows.
+
+
+\section{Thermal-Hydraulics of Boiling Two-Phase Flows}
+
+In nuclear reactors, the water enters in the fuel assemblies from bottom and flows upwards while being heated along the 4~m height of the rods. It is initially highly subcooled \ie at a temperature $T_{L,in}$ much below the saturation temperature (usually a difference of $\Delta T_{L} = T_{L,in}-T_{sat} \approx 50 \degC$, $T_{sat} \approx 345\degC$ at 155\ bar) at exits the fuel assembly at $\Delta T_{L} = 15\degC$. Therefore, the physics at stake relates to \textbf{vertical subcooled boiling flows}.
+
+
+\subsection{Vertical Subcooled Boiling Flow Regimes}
+
+When the liquid heats up while flowing upwards, different heat exchange regimes can occur along with various multiphase flow regimes when the water starts to vaporize. They are usually defined depending on the liquid thermodynamic quality $x_{eq}$ ($x_{eq}<0$ if the the flow is subcooled, $x_{eq} \geq 0$ if the mixture is at saturation) and the time-space distribution of the liquid and vapor phases. In the case of a simple tube, Figure \ref{fig:vertical_flow_boiling_regimes} presents a sketch of the different regimes occurring in vertical flow boiling with a negative inlet quality and low heat flux, long enough to end-up in a pure vapor flow ($x_{eq} \geq 1$).
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.5\linewidth]{img/intro/flow_boiling_regimes.png}
+\caption{Sketch of the different vertical flow boiling regimes.\cite{vijayan_2019}}
+\label{fig:vertical_flow_boiling_regimes}
 \end{figure}
 
 
 
-\subsubsection{Primary Circuit}
 
-The primary circuit aims to collect the thermal energy expelled by the fission reactions within the nuclear fuel rods. The water flowing through the core gathers this energy and transfer it towards the vapor generator, while ensuring a moderating effect to maintain the nuclear chain reaction in the fuel. The primary circuit is fully closed and operates at a pressure close to 155\ bar, a temperature of $300\degC$ and mass flow rates between $3000$ and $5000 \debm$ (approximately 20 tons per second).  
 
 
 To write :

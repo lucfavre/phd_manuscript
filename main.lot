@@ -5,100 +5,104 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Presentation of the NEPTUNE\_CFD Code}}{5}{chapter.1}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1.1}{\ignorespaces Constant values for the SSG model in NEPTUNE\_CFD\relax }}{10}{table.caption.15}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Introduction}}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Flow Boiling Experiments Representative of PWR: The DEBORA Database}}{12}{chapter.2}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Presentation of the NEPTUNE\_CFD Code}}{10}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.1}{\ignorespaces Water R12 scaling, $R=0.01$mm for $\mathrm {We}$\relax }}{15}{table.caption.19}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.2}{\ignorespaces Uncertainties for DEBORA results \cite {gueguen_contribution_2013, cubizolles_etude_1996}\relax }}{18}{table.caption.23}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.3}{\ignorespaces Test matrix of the DEBORA cases. $\bigcirc $: C800 - $\bigtriangledown $: C2900 - $\bigtriangleup $: C3000 \relax }}{19}{table.caption.24}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.4}{\ignorespaces Recalculated control parameters for the 30G2P14W16 cases. ($T_{sat} = 58.07\degree \mathrm {C}$)\relax }}{20}{table.caption.25}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.5}{\ignorespaces Recalculated control parameters for the 30G2P26W16 cases. ($T_{sat} = 86.81\degree \mathrm {C}$)\relax }}{20}{table.caption.26}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.6}{\ignorespaces Similar conditions cases between the C3000 and C800 campaigns. Outlet quality calculated with Eq. \ref {eq:xeq_out}.\relax }}{26}{table.caption.31}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2.7}{\ignorespaces Heat flux recalculation results\relax }}{27}{table.caption.33}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Constant values for the SSG model in NEPTUNE\_CFD\relax }}{15}{table.caption.20}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {NEPTUNE\_CFD Simulations of DEBORA Cases}}{31}{chapter.3}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Flow Boiling Experiments Representative of PWR: The DEBORA Database}}{17}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.1}{\ignorespaces Mesh parameters\relax }}{32}{table.caption.37}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Water R12 scaling, $R=0.01$mm for $\mathrm {We}$\relax }}{20}{table.caption.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3.2}{\ignorespaces Corrected heat fluxes applied in the simulations\relax }}{39}{table.caption.45}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Uncertainties for DEBORA results \cite {gueguen_contribution_2013, cubizolles_etude_1996}\relax }}{23}{table.caption.28}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.3}{\ignorespaces Test matrix of the DEBORA cases. $\bigcirc $: C800 - $\bigtriangledown $: C2900 - $\bigtriangleup $: C3000 \relax }}{24}{table.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Introduction to Heat Flux Partitioning}}{45}{chapter.4}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Recalculated control parameters for the 30G2P14W16 cases. ($T_{sat} = 58.07\degree \mathrm {C}$)\relax }}{25}{table.caption.30}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.5}{\ignorespaces Recalculated control parameters for the 30G2P26W16 cases. ($T_{sat} = 86.81\degree \mathrm {C}$)\relax }}{25}{table.caption.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Boiling Bubble Dynamics}}{55}{chapter.5}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Similar conditions cases between the C3000 and C800 campaigns. Outlet quality calculated with Eq. \ref {eq:xeq_out}.\relax }}{31}{table.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.1}{\ignorespaces Summary of the presented correlations\relax }}{61}{table.caption.55}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.2}{\ignorespaces Summary of different force-balance mechanistic approaches.\relax }}{73}{table.caption.61}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.3}{\ignorespaces Bubble departure diameters data sets in vertical flow boiling\relax }}{87}{table.caption.76}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.4}{\ignorespaces Average relative error reached by the models.\relax }}{92}{table.caption.81}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5.5}{\ignorespaces Bubble lift-off diameters data sets in vertical flow boiling\relax }}{100}{table.caption.89}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Heat flux recalculation results\relax }}{32}{table.caption.38}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Closure Laws and Construction of a New Heat Flux Partitioning Model}}{106}{chapter.6}%
+\contentsline {xchapter}{\spacedlowsmallcaps {NEPTUNE\_CFD Simulations of DEBORA Cases}}{36}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.1}{\ignorespaces Experimental data range of wall temperature measurements from the single-phase part of boiling curves. $N_{mes}$ is the number of measurements of each data set.\relax }}{107}{table.caption.93}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Mesh parameters\relax }}{37}{table.caption.42}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.2}{\ignorespaces Average errors achieved by the considered models on each data sets.\relax }}{109}{table.caption.96}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.3}{\ignorespaces Nucleation Site Density data in flow boiling\relax }}{112}{table.caption.99}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.4}{\ignorespaces Bubble wait time data in vertical flow boiling. Wall superheat values for Richenderfer data are estimated using Frost \& Dzakowic correlation (Eq. \ref {eq:frost}).\relax }}{116}{table.caption.101}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.5}{\ignorespaces Summary of the HFP model closure laws\relax }}{131}{table.caption.115}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6.6}{\ignorespaces Summary of the HFP model formulation\relax }}{132}{table.caption.116}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Corrected heat fluxes applied in the simulations\relax }}{44}{table.caption.50}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Validation of the Heat Flux Partitioning Model}}{134}{chapter.7}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.1}{\ignorespaces Experimental data range of wall temperature measurements in the boiling region.\relax }}{139}{table.caption.122}%
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.2}{\ignorespaces Wall superheat values obtained with different models versus the measurements on DEBORA case at 26.6 bar.\relax }}{144}{table.caption.128}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Introduction to Heat Flux Partitioning}}{50}{chapter.5}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Perspectives Towards Critical Heat Flux Prediction}}{145}{chapter.8}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Boiling Bubble Dynamics}}{60}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.1}{\ignorespaces Summary of the presented correlations\relax }}{66}{table.caption.60}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.2}{\ignorespaces Summary of different force-balance mechanistic approaches.\relax }}{78}{table.caption.66}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.3}{\ignorespaces Bubble departure diameters data sets in vertical flow boiling\relax }}{92}{table.caption.81}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.4}{\ignorespaces Average relative error reached by the models.\relax }}{97}{table.caption.86}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {6.5}{\ignorespaces Bubble lift-off diameters data sets in vertical flow boiling\relax }}{105}{table.caption.94}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Tube With Mixing Vanes : DEBORA-Promoteur and AGATE-Promoteur Experiments}}{148}{chapter.9}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Closure Laws and Construction of a New Heat Flux Partitioning Model}}{111}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.1}{\ignorespaces Experimental data range of wall temperature measurements from the single-phase part of boiling curves. $N_{mes}$ is the number of measurements of each data set.\relax }}{112}{table.caption.98}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.2}{\ignorespaces Average errors achieved by the considered models on each data sets.\relax }}{114}{table.caption.101}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.3}{\ignorespaces Nucleation Site Density data in flow boiling\relax }}{117}{table.caption.104}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.4}{\ignorespaces Bubble wait time data in vertical flow boiling. Wall superheat values for Richenderfer data are estimated using Frost \& Dzakowic correlation (Eq. \ref {eq:frost}).\relax }}{121}{table.caption.106}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.5}{\ignorespaces Summary of the HFP model closure laws\relax }}{136}{table.caption.120}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {7.6}{\ignorespaces Summary of the HFP model formulation\relax }}{137}{table.caption.121}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {NEPTUNE\_CFD simulations of DEBORA-Promoteur and AGATE-Promoteur Cases}}{156}{chapter.10}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Validation of the Heat Flux Partitioning Model}}{139}{chapter.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.1}{\ignorespaces Experimental data range of wall temperature measurements in the boiling region.\relax }}{144}{table.caption.127}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {8.2}{\ignorespaces Wall superheat values obtained with different models versus the measurements on DEBORA case at 26.6 bar.\relax }}{149}{table.caption.133}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Conclusion}}{164}{chapter.11}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Perspectives Towards Critical Heat Flux Prediction}}{150}{chapter.9}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{166}{appendix.A}%
+\contentsline {xchapter}{\spacedlowsmallcaps {Tube With Mixing Vanes : DEBORA-Promoteur and AGATE-Promoteur Experiments}}{153}{chapter.10}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Force Balance}}{170}{appendix.B}%
+\contentsline {xchapter}{\spacedlowsmallcaps {NEPTUNE\_CFD simulations of DEBORA-Promoteur and AGATE-Promoteur Cases}}{161}{chapter.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {B.1}{\ignorespaces Autem usu id}}{171}{table.caption.145}%
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{\spacedlowsmallcaps {Conclusion}}{169}{chapter.12}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{171}{appendix.A}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{\spacedlowsmallcaps {Details on the Bubble Force Balance}}{175}{appendix.B}%
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {B.1}{\ignorespaces Autem usu id}}{176}{table.caption.150}%
