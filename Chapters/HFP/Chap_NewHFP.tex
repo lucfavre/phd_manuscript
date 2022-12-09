@@ -60,10 +60,10 @@ To better match the asymptotic value of the experiment, we correct the Li \etal 
 
 \begin{figure}[!h]
 \subfloat[$N_{sit,a}$ predictions by Li \etal correlation]{
-\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/sites_G2000_nocorr.png}
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/sites_G2000_nocorr.pdf}
 }
 \subfloat[$N_{sit,a}$ predictions with corrected Li \etal correlation]{
-\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/sites_G2000.png}
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/sites_G2000.pdf}
 }
 \caption{Comparison of active nucleation site density with and without a correction for Li \etal formulation.}
 \label{fig:fullkoss_nsit}
@@ -89,10 +89,10 @@ A very good approximation of the quenching time $t_{q}$ is achieved using the ti
 
 \begin{figure}[!h]
 \subfloat[Bubble nucleation frequency]{
-\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/f_G2000.png}
+\includegraphics[height=0.35\linewidth]{img/HFP/fullcomp_Koss/f_G2000.pdf}
 }
 \subfloat[Bubble wait time, growth time and quenching time]{
-\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/times_G2000.png}
+\includegraphics[height=0.35\linewidth]{img/HFP/fullcomp_Koss/times_G2000.pdf}
 }
 \caption{Comparison of bubble nucleation frequency, wait time, average growth time and quenching time.}
 \label{fig:fullkoss_times}
@@ -120,10 +120,10 @@ Those results naturally lead to an overprediction of the wall area fraction impa
 
 \begin{figure}[!h]
 \subfloat[Single bubble area]{
-\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/Aq1b_G2000.png}
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/Aq1b_G2000.pdf}
 }
 \subfloat[Total wall area impacted by bubbles]{
-\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/Abub_tot_G2000.png}
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/Abub_tot_G2000.pdf}
 }
 \caption{Comparison of average area visited by a bubble and total wall fraction area impacted by bubbles (footprint or transient conduction).}
 \label{fig:fullkoss_area}
@@ -136,7 +136,7 @@ On Figure \ref{fig:fullkoss_length}, we indicatively show the values of sliding 
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/length_G2000.png}
+\includegraphics[width=0.65\linewidth]{img/HFP/fullcomp_Koss/length_G2000.pdf}
 \caption{Bubble radiuses, sliding length and distances between sites.}
 \label{fig:fullkoss_length}
 \end{figure}
@@ -153,10 +153,10 @@ On the other hand, the boiling curve is pretty well predicted except for the las
 
 \begin{figure}[!h]
 \subfloat[Single-phase and quenching heat fluxes proportions]{
-\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/hfp_G2000.png}
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/hfp_G2000.pdf}
 }
 \subfloat[Global boiling curve of the experiment]{
-\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/boil_curve_G2000.png}
+\includegraphics[width=0.5\linewidth]{img/HFP/fullcomp_Koss/boil_curve_G2000.pdf}
 }
 \caption{Comparison of the resulting heat flux partitioning along with the boiling curve.}
 \label{fig:fullkoss_hfp}
@@ -369,7 +369,7 @@ Figure \ref{fig:HFP_kennel} shows the wall temperature predictions achieved with
 
 \npar
 
-Achieving a good quality of wall superheat predictions for the cases of Kennel appears more complicated. Indeed, the new formulation and Kommajoysula model obtain the best results but still present an average underestimation of approximately 50\%. The very large range of conditions associated to the low pressure may invalidate the assumption of constants values for $\theta$, $\dtheta$ and $K$. 
+Achieving a good quality of wall superheat predictions for the cases of Kennel appears more complicated. Indeed, the new formulation and Kommajoysula model obtain the best results but still present an average underestimation of approximately 50\%. The very large range of conditions associated to the low pressure may invalidate the assumption of constants values for $\dtheta$ and $K$. 
 
 
 \begin{remark*}{}
@@ -388,35 +388,26 @@ In order to try a further validation of the proposed HFP model, we will test it 
 \item R12 as operating fluid ;
 \item $P=26.2\ $bar ;
 \item $G_{L} = 2000~\debm$ ;
-\item $\Delta T_{L} \approx 0.1\ $K (approaching liquid saturation near the wall); 
 \item $\phi_{w} = 73.9\ $kW/m\up{2}.
 \end{itemize}
 
 
-Since refrigerant are usually known to have low contact angle, we suppose $\theta = 10 \degree$. The operating pressure being experimentally chosen to match high-pressure water similarity, we thus choose $\dtheta = 1 \degree$ and $K = 2$ in accordance with the choices made for Jens \& Lottes cases.
+Since refrigerant are usually known to have low contact angle and recalling that wall temperature in this case is less than $20\degC$ lower than R12 critical temperature ($T_{crit,R12} \approx 380\ $K), we suppose $\theta = 5 \degree$. The operating pressure being experimentally chosen to match high-pressure water similarity, we thus choose $\dtheta = 1 \degree$ and $K = 2$ in accordance with the choices made for Jens \& Lottes cases.
+
+\npar
+
+Based on the NCFD calculations of case 8G2P26W16Te44.9 (Chapter \ref{chap:debora_ncfd}), we extract the axial profile of $T_{L}$ and $U_{L}$ in the wall-adjacent cell and use it as inputs in the HFP models. This yields the axial wall temperature profile presented in Figure \ref{fig:HFP_DEBORA}.
 
 
-Applying the four different models yielded the results of Table \ref{tab:debora_hfp_test}.
-
-
-\begin{table}[h!]
-\small
+\begin{figure}[!h]
 \centering
-\begin{tabular}{c||c|c|c|c|c|c} 
-Value & Experiment & Kurul \& Podowski & Basu \etal & Kommajosyula & New model & NCFD reference\\
-\hline
-$\Delta T_{w}$ [K] & 2.15 & 0.37 & 17.9 & 4.0 & 3.9 & 6.9\\
-\hline
-\end{tabular}
-\caption{Wall superheat values obtained with different models versus the measurements on DEBORA case at 26.6 bar.}
-\label{tab:debora_hfp_test}
-\end{table}
+\includegraphics[width=0.6\linewidth]{img/HFP/test_allHFP_8Te44.pdf}
+\caption{Comparison of different HFP on the 8G2P26W16Te49 DEBORA case.}
+\label{fig:HFP_DEBORA}
+\end{figure}
 
-We see that the models perform in very different ways for the DEBORA conditions. Kurul \& Podowski model finds a very low wall superheat while Basu \etal formulation largely overestimates the experimental value. The new formulation provides a result similar to Kommajosyula's model with an overestimation of approximately $2$ K compared to the experiment.
+We see that the models perform in very different ways for the DEBORA conditions. Basu \etal formulation largely overestimates the experimental value while Kommajosyula's model finds a wall temperature slightly lower than the NCFD computation. On the other hand, the new formulation provides a wall temperature much closer to the experimental measurements, which is probably an effect mainly due to the large quenching combined with the pressure dependency of the nucleation site density.
 
-\begin{remark*}{}
-The proximity in the results obtained by the new formulation and Kommajosyula's model might be related to their similar performance on the Jens \& Lottes data (Subsection \ref{subsec:HFP_verif_Jens}) since the DEBORA cases are supposed to mimic high pressure water boiling conditions, the physical formulations of the HFP models may then behave similarly in those conditions.
-\end{remark*}
 
 
 \section{Conclusions}
@@ -430,6 +421,6 @@ In this Chapter, we proposed different aspects of validation regarding the propo
 
 \item The formulation seems able to capture different nature of heat flux partition, with high-quenching regimes at high pressure and low superheats (Figure \ref{fig:HFP_jens_BC}), regimes with both static and sliding coalescence at high pressure and high superheat (Figure \ref{fig:HFP_koss_BC}), or mixed between quenching and sliding coalescence at low to moderate pressure and high superheat (Figure \ref{fig:HFP_koss_BC}).
 
-\item Wall temperature predictions (Section \ref{sec:hfp_valid_DTw}) using the new formulation along with reasonable values for the closing parameters $\parth{\theta,\ \dtheta,\ K }$ yields better results in average compared to older models. In particular, it seems capable of enhancing the wall temperature predictions on the DEBORA case as shown on Table \ref{tab:debora_hfp_test}.
+\item Wall temperature predictions (Section \ref{sec:hfp_valid_DTw}) using the new formulation along with reasonable values for the closing parameters $\parth{\theta,\ \dtheta,\ K }$ yields better results in average compared to older models. In particular, it seems capable of enhancing the wall temperature predictions on the DEBORA case as shown on Figure \ref{fig:HFP_DEBORA}.
 
 \end{itemize}

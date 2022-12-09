@@ -142,10 +142,10 @@ On Figure \ref{fig:ncfd_gniel_corr_htc} we display the predictions of Gnielisnki
 \end{figure}
 
 \npar
-The NCFD approach yields predictions similar to the 1D correlations (Figure \ref{fig:dittus_gniel_htc}) with larger underestimations on Jens-Lottes measurements. On the other hand, we see that applying a constant correction to the Gnielinski correlation (4 for Kossolapov and Richenderfer cases, 0.9 for Jens-Lottes cases) suffices to yield accurate predictions on the whole range of wall temperature measurements. 
+The NCFD approach yields predictions similar to the 1D correlations (Figure \ref{fig:dittus_gniel_htc}) with larger underestimations on Jens-Lottes measurements, confirming its correct behavior for single-phase flows as observed on DEBORA simulations (Chapter \ref{chap:debora_ncfd}). On the other hand, we see that applying a constant correction to the Gnielinski correlation (4 for Kossolapov and Richenderfer cases) suffices to yield accurate predictions on the whole range of wall temperature measurements. 
 
 \begin{remark*}{}
-The NCFD law was tested without running CFD simulations. The equations were re-written in python to allow its testing outside of the whole code. The use of $y^{+}=100$ as well as the Mac Adams correlation (Eq. \ref{eq:utau_mcadams}) for the friction velocity $U_{\tau}$ may induce a difference with the predictions that could be achieved by running a complete CFD computation of the considered cases.
+The NCFD law was tested without running CFD simulations. Eq. \ref{eq:ncfd_HFP} was re-written in python to allow its testing outside of the whole code. The use of $y^{+}=100$ as well as the Mac Adams correlation (Eq. \ref{eq:utau_mcadams}) for the friction velocity $U_{\tau}$ may induce a difference with the predictions that could be achieved by running a complete CFD computation of the considered cases.
 \end{remark*}
 
 \npar
@@ -187,6 +187,7 @@ Corrected Gnielisnki & 1.34 & 3.08 & 6.09 & 1.74 \\
 \npar
 \textbf{Recalling that Gnielinski correlation was also providing good results on the DEBORA cases with R12 (Chapter \ref{chap:debora}) further indicates it as a proper choice regarding single-phase HTC estimation in the HFP model.} 
 
+\npar
 \begin{note*}{}
 We will later allow the use of the correction factor when needed to ensure a proper representation of the single-phase part when trying to assess the models associated to boiling.
 \end{note*}
@@ -196,7 +197,7 @@ We will later allow the use of the correction factor when needed to ensure a pro
 \section{Nucleation Site Density}
 \label{sec:NSD}
 
-The Nucleation Site Density is among the most influencing parameters over the HFP models predictions, particularly regarding wall temperature \cite{favre_nureth19}. Indeed, its value directly controls the density of bubbles generated at the heater and therefore impacts both the boiling ($\phi_{e}$) and quenching ($\phi_{q}$) heat fluxes to the first order. Being able to come up with correct predictions of the NSD is thus critical if one wishes to properly capture the thermal behavior of the boiling surface.
+The Nucleation Site Density is among the most influencing parameters over the HFP models predictions, particularly regarding wall temperature \cite{favre_neptune_2022}. Indeed, its value directly controls the density of bubbles generated at the heater and therefore impacts both the boiling ($\phi_{e}$) and quenching ($\phi_{q}$) heat fluxes to the first order. Being able to come up with correct predictions of the NSD is thus critical if one wishes to properly capture the thermal behavior of the boiling surface.
 
 \npar
 
@@ -468,9 +469,10 @@ The waiting time $t_{w}$ between two nucleation events on an active site corresp
 
 \subsubsection{Analytic Approaches}
 
-Traditional approaches of the wait time estimation rely on the analytic solution to the transient heat transfer in a semi-infinite medium. Assuming that after bubble departure liquid at $T_{L,bulk}$ is displaced towards the wall at $T_{w}$, one can solve the the differential problem with the initial and boundary conditions:
+Traditional approaches of the wait time estimation rely on the analytic solution to the transient heat transfer in a semi-infinite medium. Assuming that after bubble departure liquid at $T_{L,bulk}$ is displaced towards the wall at $T_{w}$, one can solve the conductive heat transfer problem at the wall with the initial and boundary conditions:
 
 \begin{align}
+\frac{\partial T_{L}}{\partial t} &= \eta_{L} \frac{\partial^{2} T_{L}}{\partial y^{2}}\\
 T_{L}\parth{y,0} &= T_{L,bulk},\ \forall y >0\\
 T_{L}\parth{0,t} &= T_{w},\ \forall t \geq 0
 \end{align}
@@ -498,7 +500,7 @@ T_{V,nuc} = T_{sat} + \frac{2\sigma T_{sat} \parth{\dfrac{1}{\rho_{V}} - \dfrac{
 \label{eq:TVnuc_Mikic} 
 \end{equation} 
 
-The wait time is then assumed to be the time needed for the transient temperature field to reach $T_{V,nuc}$ at height $y=R_{c}$ \ie $T_{L}\parth{R_{c},t_{w}}=T_{V,nuc}$. Combining Eq. \ref{eq:TL_transient} and \ref{eq:TVnuc_Mikic} allow to write:
+The wait time is then assumed to be the time needed for the transient temperature field to reach $T_{V,nuc}$ at height $y=R_{c}$, \ie $T_{L}\parth{R_{c},t_{w}}=T_{V,nuc}$. Combining Eq. \ref{eq:TL_transient} and \ref{eq:TVnuc_Mikic} allow to write:
 
 \begin{align}
 t_{w} &= \frac{1}{4\eta_{L}} \crocht{ \frac{R_{c}}{\erfcrec{ \dfrac{\Delta T_{L}}{\Delta T_{L} + \Delta T_{w}} + T_{sat} \parth{\dfrac{1}{\rho_{V}} - \dfrac{1}{\rho_{L}}}\dfrac{2\sigma }{ \parth{\Delta T_{w} + \Delta T_{L}}h_{LV}R_{c} } } } }^{2}\\
@@ -624,7 +626,7 @@ The experimental data are all using water as working fluid. We can see at first 
 \label{fig:tw_Jaw}
 \end{figure}
 
-On Figure \ref{fig:tw_Jaw}, we show the evolution of the measures wait times with the wall Jakob number. We can see that the lower values of Jakob number actually correspond to lower wait times, which seems to confirm the previous assumptions.
+On Figure \ref{fig:tw_Jaw}, we show the evolution of the measures wait times with the wall Jakob number. We can see that the low values of Jakob number actually correspond to high wait times, which seems to confirm the previous assumptions.
 
 \npar
 
@@ -697,13 +699,13 @@ At last, it appeared that choosing the Yeoh \etal expression of $t_{w}$ (Eq. \re
 \end{itemize} 
 
 \begin{remark*}{}
-Obviously, since the wait time results from a transient heat transfer between the wall and the liquid after the bubble departure, it should strongly depend on the wall thermal properties. However, they are not accounted for in the analytic expressions, with solely the contact angle being related to the wall material. 
+Obviously, since the wait time results from a transient heat transfer between the wall and the liquid after the bubble departure, it should strongly depend on the wall thermal properties (\eg its effusivity). However, they are not accounted for in the analytic expressions, with solely the contact angle being related to the wall material. 
 \end{remark*}
 
 The fact that the analytic expression is able to correctly predict the large range of $t_{w}$ values from the different experiments is encouraging since it is based on a physical approach contrary to correlations which mainly relies on data-fitting.
 
 \npar
-\textbf{To conclude, it seems appropriate to use the wait time formulation of Yeoh \etal along with expressing cavity radius using Han \& Griffith estimation.}
+\textbf{To conclude, it seems appropriate to use the wait time formulation of Yeoh \etal along with expressing cavity radius using Han \& Griffith estimation.} We must though keep in mind that the model is sensitive to the value of the contact angle $\theta$, which has to be evaluated in order to make proper use of the analytic expressions.
 
 
 \section{Considerations on Bubble Interactions and Nucleation Sites Deactivation}
@@ -1113,6 +1115,8 @@ The total wall heat flux then writes:
 \phi_{w} = \phi_{c,L} + \phi_{e,coal,st} + \phi_{e,coal,sl} + \phi_{q} + \phi_{c,V}
 \end{equation}
 
+\npar
+
 
 \subsection{Liquid Convective Heat Flux}
 
@@ -1187,7 +1191,7 @@ If the wait time $t_{w}$ is lower than $t_{*}$, then transient conduction domina
 
 Otherwise, if $t_{w}>t^{*}$ the wait time will consist of transient heat transfer during $t^{*}$ before being dominated by forced convection up to $t_{w}$. The quenching time $t_{q}$ in this case is then $t^{*}$.
 
-Then, using the transient heat transfer solution (mentioned in Section \ref{sec:wait_time}, also derived by Del Valle \cite{delvalle_phd}), we can write the total quenching flux as:
+Then, using the transient heat transfer solution (mentioned in Section \ref{sec:wait_time}, also derived by Del Valle \cite{del_valle_subcooled_1985}), we can write the total quenching flux as:
 
 \begin{align}
 \phi_{q} &= A_{q}t_{q}f \frac{2\lambda_{L}\parth{\Delta T_{w} + \Delta T_{L}}}{\sqrt{\pi \eta_{L}t_{q}} }\\

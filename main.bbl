@@ -2453,6 +2453,54 @@
     \field{year}{2003}
   \endentry
 
+  \entry{favre_neptune_2022}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=FL}{%
+         family={Favre},
+         familyi={F\bibinitperiod},
+         given={Luc},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Pujet},
+         familyi={P\bibinitperiod},
+         given={Stéphane},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Mimouni},
+         familyi={M\bibinitperiod},
+         given={Stéphane},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CC}{%
+         family={Colin},
+         familyi={C\bibinitperiod},
+         given={Catherine},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FL+1}
+    \strng{fullhash}{FLPSMSCC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{booktitle}{Proc. 19th International Topical Meeting on Nuclear
+  Reactor Thermal Hydraulics ({NURETH}-19)}
+    \field{pages}{1\bibrangedash 17}
+    \field{shorttitle}{{NEPTUNE} {CFD} Simulations of {DEBORA}-Promoteur
+  Experiments}
+    \field{title}{{NEPTUNE} {CFD} Simulations of {DEBORA}-Promoteur
+  Experiments: Boiling Freon in a Vertical Pipe with Mixing Vanes}
+    \verb{file}
+    \verb Full Text:C\:\\Users\\Luc\\Zotero\\storage\\HFPS53KI\\FAVRE et al. -
+    \verb 2022 - NEPTUNE CFD Simulations of DEBORA-Promoteur Experi.pdf:applica
+    \verb tion/pdf
+    \endverb
+    \field{year}{2022}
+  \endentry
+
   \entry{forster_growth_1954}{article}{}
     \name{author}{2}{}{%
       {{hash=FHK}{%

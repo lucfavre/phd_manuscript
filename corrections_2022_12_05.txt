@@ -7,10 +7,10 @@ x_eq_out : même gamme couverte -- préciser dans légende
 
 mechanical equilibrium -> meme vitesse
 
-Dv = 2mm
+Dv = 2mm --> foam
 
 
-P14 ==> préciser qu'on est à Tliq. Peut être gaz incondensable ?
+P14 ==> préciser qu'on est à Tliq=Tsat. Peut être gaz incondensable ?
 effet pression DTw
 
 
@@ -19,27 +19,20 @@ estimation phiw --> symétrie dans les expression vap et liq.
 sensi à Udrift dans estimatoin phiw --> no drift ? 
 
 
-bubble dynamics :
+BUBBLE DYNAMICS :
 
-citer Bures --> microcouche
+tracer bilan forces parallele paroi pour liftoff
 
-nouveau modèle --> pas de microrégion
-
-caractériser delta --> écrire que le flux = lambda x grad T --> flux de conduction 
-
-
-R+ --> prt = 1
-
-closure laws:
+CLOSURE LAWS:
 
 
 temps d'attente kossolapov --> thermique paroi ??
 
 
-validation HFP -->
+VALIDATION HFP -->
 
 
-ajouter clipping --> Dlo
+ajouter clipping --> Dlo ?
 
 kommajoysula --> courbes PARTITION en plus ! --> ccl différents modèles
 discussion physique sur courbes HFP obtenues par chaque modèle

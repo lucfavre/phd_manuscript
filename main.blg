@@ -52,9 +52,8 @@ Warning--I didn't find a database entry for "usine_nouvelle_areva"
 Warning--I didn't find a database entry for "Croff_nuclear_fuel"
 Warning--I didn't find a database entry for "doseequivalentbanana"
 Warning--I didn't find a database entry for "yoo_NED"
+Warning--I didn't find a database entry for "collier_1994"
 Warning--I didn't find a database entry for "krepper_2008"
-Warning--I didn't find a database entry for "favre_nureth19"
-Warning--I didn't find a database entry for "delvalle_phd"
 Warning--I didn't find a database entry for "nukiyama"
 Warning--I didn't find a database entry for "groenveld"
 Warning--I didn't find a database entry for "tong_67"
@@ -67,45 +66,45 @@ Biblatex version: 3.13
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'str_pool' (item size: 1) to 325000 items.
-You've used 149 entries,
+You've used 150 entries,
             6365 wiz_defined-function locations,
-            2689 strings with 246390 characters,
-and the built_in function-call counts, 1616549 in all, are:
-= -- 78362
-> -- 127795
-< -- 10836
-+ -- 122485
-- -- 104451
-* -- 92291
-:= -- 216720
+            2696 strings with 246890 characters,
+and the built_in function-call counts, 1626610 in all, are:
+= -- 78919
+> -- 128423
+< -- 10885
++ -- 123167
+- -- 104976
+* -- 92934
+:= -- 218104
 add.period$ -- 0
-call.type$ -- 149
-change.case$ -- 148
-chr.to.int$ -- 9176
-cite$ -- 296
-duplicate$ -- 132637
-empty$ -- 111420
-format.name$ -- 10880
-if$ -- 250877
+call.type$ -- 150
+change.case$ -- 149
+chr.to.int$ -- 9200
+cite$ -- 298
+duplicate$ -- 133573
+empty$ -- 112113
+format.name$ -- 10972
+if$ -- 252513
 int.to.chr$ -- 0
-int.to.str$ -- 373
+int.to.str$ -- 375
 missing$ -- 0
-newline$ -- 7351
-num.names$ -- 7312
-pop$ -- 50292
+newline$ -- 7396
+num.names$ -- 7353
+pop$ -- 50674
 preamble$ -- 1
-purify$ -- 3393
+purify$ -- 3410
 quote$ -- 0
-skip$ -- 41045
+skip$ -- 41276
 stack$ -- 0
-substring$ -- 157715
-swap$ -- 39184
-text.length$ -- 8288
-text.prefix$ -- 164
+substring$ -- 158715
+swap$ -- 39394
+text.length$ -- 8338
+text.prefix$ -- 165
 top$ -- 1
-type$ -- 4978
+type$ -- 5012
 warning$ -- 0
-while$ -- 20726
+while$ -- 20877
 width$ -- 0
-write$ -- 7203
-(There were 18 warnings)
+write$ -- 7247
+(There were 17 warnings)

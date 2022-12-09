@@ -283,15 +283,33 @@ In nuclear reactors, the water enters in the fuel assemblies from bottom and flo
 
 \subsection{Vertical Subcooled Boiling Flow Regimes}
 
-When the liquid heats up while flowing upwards, different heat exchange regimes can occur along with various multiphase flow regimes when the water starts to vaporize. They are usually defined depending on the liquid thermodynamic quality $x_{eq}$ ($x_{eq}<0$ if the the flow is subcooled, $x_{eq} \geq 0$ if the mixture is at saturation) and the time-space distribution of the liquid and vapor phases. In the case of a simple tube, Figure \ref{fig:vertical_flow_boiling_regimes} presents a sketch of the different regimes occurring in vertical flow boiling with a negative inlet quality and low heat flux, long enough to end-up in a pure vapor flow ($x_{eq} \geq 1$).
+When the liquid heats up while flowing upwards, different heat exchange regimes can occur along with various multiphase flow regimes when the water starts to vaporize. They are usually defined depending on the liquid thermodynamic quality $x_{eq}$ ($x_{eq}<0$ if the the flow is subcooled, $0 \leq x_{eq} \leq 1$ if the mixture is at saturation) and the time-space distribution of the liquid and vapor phases. In the case of a simple tube, Figure \ref{fig:vertical_flow_boiling_regimes} presents a sketch of the different flow and heat transfer regimes occurring in vertical flow boiling in a tube with a negative inlet liquid quality. A a constant heat flux in applied over the tube long enough to end-up in a pure vapor flow ($x_{eq} \geq 1$).
 
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.5\linewidth]{img/intro/flow_boiling_regimes.png}
-\caption{Sketch of the different vertical flow boiling regimes.\cite{vijayan_2019}}
-\label{fig:vertical_flow_boiling_regimes}
+\includegraphics[width=0.6\linewidth]{img/intro/boiling_collier.png}
+\caption{Sketch of the different vertical flow boiling regimes in a vertical tube from Collier \& Thome (1994, \cite{collier_1994}). Here, $x$ denotes the local thermodynamic quality noted $x_{eq}$ in the text. }
+\label{fig:boiling_collier}
 \end{figure}
+
+
+\npar
+
+
+First, the liquid enters in a subcooled state \ie below saturation temperature, leading to a pure \textit{liquid convective heat transfer} (zone A).
+
+\npar
+
+Then, the wall temperature heats up above the saturation temperature to reach the \textbf{Onset of Nucleate Boiling} (ONB) allowing vapor bubbles to nucleate at the wall on so-called "nucleation sites" (which density increases with the heat flux or wall temperature). This happens first in regions where the average temperature of the fluid is still below the saturation temperature, thus called \textit{subcooled boiling} (zone B). As we move upwards the tube, the boiling intensifies and bubbles start to leave the wall, corresponding to the \textbf{Onset of Significant Void} (OSV). They migrate into the bulk flow where they condense due to the locally subcooled liquid. In this region, the multiphase vapor-liquid flow is qualified as \textit{bubbly flow} and the vapor phase can be considered as dispersed in the main continuous liquid phase.
+
+\npar
+
+When the average liquid temperature reaches saturation, $x_{eq} = 0 $ and we enter the \textit{saturated boiling} regime. The vapor phase is first still composed of small dispersed bubbles in the bulk flow (zone C). Since liquid is at saturation temperature, vapor bubbles do not condense anymore and start to coalesce with each other, forming larger inclusions leading to a \textit{slug flow} (zone D).
+
+\npar
+
+Further downstream, the volume occupied by vapor at a given height starts to overcome that of the liquid phase \ie we reach high local "void fractions" (ratio of the vapor volume over the total volume). This leads to a significant change in the flow regime where the core flow is composed of vapor while liquid is pushed towards the wall, corresponding to a phase inversion that defines the beginning of the \textit{annular flow} regime. During the transition from slug to annular flow, the heat transfer regime changes from saturated boiling (where bubbles merge in the bulk with the dominant vapor phase) to \textit{forced convective heat transfer through liquid film} (zone E). The liquid film trapped between the vapor and the wall act as a 
 
 
 

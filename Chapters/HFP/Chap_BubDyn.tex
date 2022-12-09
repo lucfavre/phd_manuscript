@@ -48,7 +48,7 @@ This behavior has been supported by many experimental observations who clearly o
 
 \npar
 
-The bubble sliding process has also been thermally studied to quantify its impact on the wall heat transfer. Estrada-Perez \etal \cite{estrada-perez_time-resolved_2018} observed the significant thermal impact of sliding bubbles footprints. Kossolapov \cite{kossolapov_experimental_2021} also investigated the sliding of boiling bubbles and measured the magnitude of the transient heat transfer induced by the disruption of the liquid thermal boundary layer in the bubble's wake. Typical experimental observations from those works a reproduced on Figure \ref{fig:slide_thermal_exp}
+The bubble sliding process has also been thermally studied through experiments to quantify its impact on the wall heat transfer. Estrada-Perez \etal \cite{estrada-perez_time-resolved_2018} observed the significant thermal impact of sliding bubbles footprints. Kossolapov \cite{kossolapov_experimental_2021} also investigated the sliding of boiling bubbles and measured the magnitude of the transient heat transfer induced by the disruption of the liquid thermal boundary layer in the bubble's wake. Typical experimental observations from those works a reproduced on Figure \ref{fig:slide_thermal_exp}
 
 \begin{figure}[H]
 
@@ -115,13 +115,13 @@ More recently, the developments around HFP models has lead meany researchers to 
 \frac{D_{lo}}{L_{c}} =& 10^{-1.1990}\ \parth{\frac{\rho_{V}}{\rho_{L}}}^{-0.9785} {\Ja^{*}_{w}}^{0.1435} {\Ja^{*}_{L}}^{-0.0119} \Re_{L_{c}}^{-0.5129} \Pr_{L}^{-1.8784}
 \label{eq:dlo_zhou}
 \end{align}
-with the Reynolds numbers based on $L_{o} = \frac{\rho_{L}\nu_{L}^{2}}{\sigma}$ and $L_{c}$ the capillary length, and $\Ja^{*} = \frac{\rho_{L}c_{p,L}}{h_{LV}}$ reduced Jakob numbers that do not inclued the density ratio. 
+with the Reynolds numbers based on $L_{o} = \dfrac{\rho_{L}\nu_{L}^{2}}{\sigma}$ and $L_{c}$ the capillary length, and $\Ja^{*} = \dfrac{c_{p,L}\Delta T}{h_{LV}}$ ($\Delta T$ either the wall superheat or liquid subcooling) reduced Jakob numbers that do not include the density ratio. 
 
 
 \npar
 
 
-In the case of vertical flow boiling, \"Unal (1976)\cite{unal_maximum_1976} derived a correlation based on semi-analytical approach of the heat transfer mechanisms around a bubble to estimate its maximum diameter, including simultaneous influences of pressure, heater material, liquid velocity and subcooling:
+In the case of vertical flow boiling, \"Unal (1976)\cite{unal_maximum_1976} derived a correlation based on a semi-analytical approach of the heat transfer mechanisms around a bubble to estimate its maximum diameter, including simultaneous influences of pressure, heater material, liquid velocity and subcooling:
 
 \begin{align}
 D_{lo}=& 2.42\times 10^{-5} P^{0.709}\frac{a}{\sqrt{b\varphi}}
@@ -141,7 +141,7 @@ The law of \"Unal is used in the HFP model of Kurul \& Podowski. It as also impl
 
 \npar
 
-In the framework of their HEP model development, Basu \etal fitted expressions for $D_{d}$ and $D_{lo}$ based on their own measurements in vertical flow boiling at atmospheric pressure:
+In the framework of their HFP model development, Basu \etal fitted expressions for $D_{d}$ and $D_{lo}$ based on their own measurements in vertical flow boiling at atmospheric pressure:
 
 \begin{align}
 \frac{D_{d}}{L_{c}} =& 1.3~\sin{\theta_{s}}^{0.4}\crocht{ 0.13\ e^{-1.75\times 10^{-4} \Re_{L,D_{h}}}+0.005 }\Ja_{w}^{0.45}e^{-0.0065\Ja_{L}}
@@ -179,6 +179,33 @@ Although this law presents coherent trends with flow conditions, the raw presenc
 \item The relationship is not dimensionless and the constant $18.9 \times 10^{-6}$ must be in m\up{1.26}.s\up{-0.26} ;
 \item The negative exponent will yield diverging values when reaching pool boiling conditions, which is physically inconsistent.
 \end{itemize}
+
+
+\npar
+
+
+In order to show the spread of predicted values by the presented correlations, we plot them for water at low and high pressure on Figure \ref{fig:dlo_correl_spread}.
+
+
+
+
+\begin{figure}[h!]
+
+\subfloat[$P = 1\ $bar, $\Delta T_{w}=15\degC$]{
+\includegraphics[height=0.35\linewidth]{img/bub_dyn/correl_comp_1bar.pdf}
+}
+\subfloat[$P=100\ $bar, $\Delta T_{w}=5\degC$]{
+\includegraphics[height=0.35\linewidth]{img/bub_dyn/correl_comp_100bar.pdf}
+}
+
+\caption{Values predicted by the diameter correlations for water. $\Delta T_{L}=10\degC$, $G_{L}=1000~\debm$, $\theta=40\degree$ and $D_{h}=10\ $mm.}
+\label{fig:dlo_correl_spread}
+\end{figure}
+
+\npar
+
+We observe that altogether, the predicted values for both for departure and lift-off diameters spread at least over a decade, with a global decrease if pressure is increased. Correlations of Basu, Kommajosyula and Zhou seem to present pressure dependency similar to that of Cole \& Rohsenow. On the other hand, \"Unal correlation appears to weakly change with pressure, its value being more controlled by the wall superheat. Tolubinsky correlation depending solely on the liquid subcooling obviously present no variation.
+
 
 
 \subsubsection{Sliding Length and Velocity}
@@ -515,7 +542,7 @@ To compute the resulting components parallel and tangent to the wall, Klausner \
 \vect{\tau}\parth{\Phi} = \cos{\gamma} \cos{\Phi} \vect{e_{x}} + \sin{\gamma} \vect{e_{y}}
 \end{equation}
 
-Then representing the evolution of the local contact angle $\gamma$ from $\theta_{u}$ to $\theta_{d}$ using a polynomial expression of degree 3:
+Then assuming to represent the evolution of the local contact angle $\gamma$ from $\theta_{u}$ to $\theta_{d}$ using a polynomial expression of degree 3:
 
 
 \begin{equation}
@@ -528,10 +555,10 @@ which verifies symmetry conditions:
 \gamma'\parth{0} = \theta_{d},\ \gamma\parth{\pi} = \theta_{u},\ \gamma'\parth{0}=\gamma'\parth{\pi}=0
 \end{equation}
 
-To obtain analytic expression, Klausner \etal also consider a first order linear interpolation:
+To obtain an analytic expression, Klausner \etal also consider a first order linear interpolation:
 
 \begin{equation}
-\gamma\parth{\Phi} = \theta_{d} + \parth{\theta_{u}-\theta_{d}}\frac{\Phi}{\pi}
+\gamma\parth{\Phi} \approx \theta_{d} + \parth{\theta_{u}-\theta_{d}}\frac{\Phi}{\pi}
 \end{equation}
 
 This yields:
@@ -653,6 +680,10 @@ Shi \etal \cite{shi_drag_2021} conducted DNS for wall distances down to $L_{R}=1
 
 \begin{remark*}{}
 In PWR conditions, a static bubble of radius $0.01$\ mm on a wall with a bulk liquid velocity of $5$\ m/s leads to a non-dimensional shear rate $\Sr \approx 0.7$ with $\Re_{b} \approx 500$. In this case, the drag correction can reach 180\% compared to the unbounded uniform flow formulation.
+
+\npar
+
+This also yields a bubble Weber number $\We \approx 0.08$ and a Capillary number $\Ca \approx 0.0036$ which further supports the assumption of spherical bubble shape.
 \end{remark*}
 
 
@@ -1112,6 +1143,15 @@ R^{+} = \frac{2}{3}\crocht{\parth{t^{+}+1}^{3/2}+{t^{+}}^{3/2}-1},\ R^{+}=\frac{
 
 In most cases associated to wall nucleation and boiling flows, experimental observations showed that bubbles' lifetime is long enough to be mostly of heat conduction nature \cite{kossolapov_experimental_2021, maity_effect_2000, zhou_experimental_2020}.
 
+\begin{remark*}{}
+Estimating the time $t$ at which the diffusive growth radius equals the inertia growth radius yields:
+\begin{itemize}
+\item $t\approx 0.39\ \mu$s for water at 1\ bar and $\Delta T_{w}=15$\ K
+\item $t\approx 1.6\times 10^{-4}\ \mu$s for water at 150\ bar and $\Delta T_{w}=5$\ K
+\end{itemize}
+which insists on the validity of the nearly pure diffusive growth hypothesis.
+\end{remark*}
+
 \subsection{Heat Diffusion in Uniformly Superheated Liquid}
 
 The analytic derivation of a bubble growth law in a pure heat diffusion regime has been tackled by various authors, mostly for the case of a bubble in a uniformly superheated and quiescent liquid. An reference solution is the work of Plesset \& Zwick (1954) \cite{plesset_growth_1954} who found an asymptotic solution for high values of $\Ja$:
@@ -1121,7 +1161,7 @@ R\parth{t} = \frac{2\sqrt{3}}{\sqrt{\pi}}\Ja\sqrt{\eta_{L}t}
 \label{eq:growth_plesset}
 \end{equation}
 
-This result was generalized by Scriven (1959) \cite{scriven_dynamics_1959} who derived for any value of $\Ja$:
+This result was generalized by Scriven (1959) \cite{scriven_dynamics_1959} who derived whatever the value of $\Ja$:
 
 \begin{equation}
 R\parth{t} = 2 \mathcal{F}\parth{\Ja}\Ja\sqrt{\eta_{L}t}
@@ -1139,7 +1179,7 @@ The general formulation of $\mathcal{F}$ has been verified by Legendre \etal \ci
 
 \npar
 
-Usually, most authors are accepting $R\parth{t} = K \Ja_{w} \sqrt{\eta_{L}t}$ for the bubble growth. With $K$ usually expressed as $K=\dfrac{2b}{\sqrt{\pi}}$ with $b$ being used as an adjustable constant depending on the flow conditions and the fluid, or derived analytically as presented before ($b=\sqrt{3}$ \cite{plesset_growth_1954}, $b=\dfrac{\pi}{2}$ \cite{forster_growth_1954}, $1 \leq b \leq \sqrt{3}$ \cite{zuber_dynamics_1961}, $b=1.56$ \cite{yun_prediction_2012}, $b=0.24$ \cite{yoo_development_2018}, etc.). 
+Usually, most authors are accepting $R\parth{t} = K \Ja_{w} \sqrt{\eta_{L}t}$ for the bubble growth. With $K$ usually expressed as $K=\dfrac{2b}{\sqrt{\pi}}$ with $b$ being used as an adjustable constant depending on the flow conditions, the fluid and the heater properties, or derived analytically as presented before ($b=\sqrt{3}$ \cite{plesset_growth_1954}, $b=\dfrac{\pi}{2}$ \cite{forster_growth_1954}, $1 \leq b \leq \sqrt{3}$ \cite{zuber_dynamics_1961}, $b=1.56$ \cite{yun_prediction_2012}, $b=0.24$ \cite{yoo_development_2018}, etc.).
 
 \npar
 
@@ -1148,7 +1188,7 @@ When the bubble presents a relative velocity with the ambient liquid, the distur
 \begin{itemize}
 \item If $\dfrac{\dot{R}}{U_{rel}}\gg 1$, the regime is close to the static heat diffusion and correspond to the Scriven formulation (Eq. \ref{eq:growth_scriven}) ;
 
-\item If $\dfrac{\dot{R}}{U_{rel}}\ll 1$, the relative velocity impacts the thermal boundary layer formation and leads to a growth matching the solution of Ruckenstein (1964) \cite{ruckenstein_mass_1964} where the Nusselt number is:
+\item If $\dfrac{\dot{R}}{U_{rel}}\ll 1$, the relative velocity impacts the thermal boundary layer formation and leads to a growth matching the solution of Ruckenstein (1964) \cite{ruckenstein_mass_1964} where the Nusselt number at the liquid-vapor interface is:
 \begin{equation}
 \Nu = 2\sqrt{\frac{\Pe\parth{t}}{\pi}},\ \Pe\parth{t} = \Pr_{L}\times \Re_{b}\parth{t}
 \end{equation}
@@ -1185,7 +1225,7 @@ The microlayer is also often taken into account for HFP modeling by enhancing th
 
 \npar
 
-However, the presence of a liquid microlayer beneath the nucleated bubble is not assured for every boiling conditions. Indeed, experimental observations recently realized by Kossolapov \cite{kossolapov_experimental_2021} showed that the microlayer only existed for pressures below 3 bars when using water as working fluid. Moreover, Direct Numerical Simulations of Urbano \etal \cite{urbano_direct_2018} where a full coupling between mass, momentum and energy balance was achieved managed to detect wether if the bubble grows in a contact-line regime or if a microlayer appears. They proposed a criterion based on the capillary and Jakob numbers determining the formation of a microlayer :
+However, the presence of a liquid microlayer beneath the nucleated bubble is not assured for every boiling conditions. Indeed, experimental observations recently realized by Kossolapov \cite{kossolapov_experimental_2021} showed that the microlayer only existed for pressures below 3 bars when using water as working fluid. Moreover, Direct Numerical Simulations of Urbano \etal \cite{urbano_direct_2018} where a full coupling between mass, momentum and energy balance was achieved managed to detect wether if the bubble grows in a contact-line regime or if a microlayer appears. They proposed a criterion based on the capillary and Jakob numbers determining the formation of a microlayer, further validated by extra Direct Numerical Simulations from B\'ures \& Sato \cite{bures_modelling_2021}:
 
 \begin{equation}
 \frac{\Ja \Ca}{\parth{\theta-\theta_{0}}^{3}} > \frac{1}{A^{3}},\ \theta_{0}=5\degree,\ A=313
@@ -1259,7 +1299,7 @@ with
 \end{equation}
 
 \begin{remark*}{}
-This approach is interesting because it keeps the simple growth law in $t^{1/2}$ but the definition of $\chi$ is hardly general since it can lead to $K\leq 0$ for high values of $\dfrac{\Delta T_{L}}{\Delta T_{w}}$ which would be unphysical.
+This approach is interesting because it keeps the simple growth law in $t^{1/2}$, but $K$ has to be set to 0 for regimes where $\dfrac{\Delta T_{L}}{\Delta T_{w}}$ is very large.% but the definition of $\chi$ is hardly general since it can lead to $K\leq 0$ for high values of $\dfrac{\Delta T_{L}}{\Delta T_{w}}$ which would be unphysical.
 \end{remark*}
 
 
@@ -1293,6 +1333,11 @@ Assuming that the vapor stays at a temperature close to $T_{sat}$, the radial co
 \begin{align}
 \grad{T} \cdot \vect{e_{r}} = \dpartial{T}{r}\parth{R, \vartheta, \varphi} \approx\frac{T_{L}(y)-T_{sat}}{\delta_{b}}
 \end{align}
+
+
+\begin{note*}{}
+It is implicitly supposed that the heat flux within in the vapor bubble is negligible, which is relatively reasonable since the vapor thermal conductivity is 7 to 28 times lower than that of the liquid water between 1\ bar and 100\ bar.
+\end{note*}
 
 \npar
 
@@ -1399,12 +1444,20 @@ To the best of our knowledge, this simple bubble growth law has never been propo
 
 \begin{remark*}{}
 It is worthy to note that this solution is derived solely using the energy balance at the liquid-vapor interface. No momentum balance was used when solving this physical problem, which can be considered as a limit of the approach.
+
+\npar
+
+In addition, no modeling of the micro-region accounting for the specific phase change regime near the contact line have been considered.
 \end{remark*}
 
 
 \subsection{Comparison with DNS Results}
 
-To assess the validity of Eq. \ref{eq:exp_growth}, we will compare the radius time profile with DNS results by Urbano \etal \cite{urbano_direct_2019} who simulated the same physical situation as depicted in Figure \ref{fig:anal_growth} for pool boiling. They also solved the heat conduction in the wall and studied the growth dynamics depending on the values of $\Delta T_{L}$ and $\Delta T_{w}$ as well as the equilibrium diameter reached by the bubble.
+To assess the validity of Eq. \ref{eq:exp_growth}, we will compare the radius time profile with DNS results by Urbano \etal \cite{urbano_direct_2019} who simulated the same physical situation as depicted in Figure \ref{fig:anal_growth} for pool boiling. They also solved the heat conduction in the wall and studied the growth dynamics depending on the values of $\Delta T_{L}$ and $\Delta T_{w}$ as well as the equilibrium diameter reached by the bubble. 
+
+\begin{note*}{}
+The wall temperature in Urbano \etal work is imposed on the outer side of the simulated wall thickness contrary to the model where it is imposed directly at the inner side.
+\end{note*}
 
 \npar
 
@@ -1462,10 +1515,19 @@ In addition, we also plot the predictions by the heat diffusion solution $R=K\Ja
 
 \npar
 
-The new formulation globally reproduces the experimental results better than the other models. In particular, the progressively damped growth rate when the bubble start to face colder liquid seems to correctly captures the nonlinear experimental growth. Values of $\delta$ needed to produce those results were between $0.85$ mm and $1.55$mm, which reasonably agrees with measurements of Maity in his experiment for horizontal flow giving $\delta$ roughly between $1$ mm and $1.5$ mm.
+The new formulation globally reproduces the experimental results better than the other models. In particular, the progressively damped growth rate when the bubble start to face colder liquid seems to correctly captures the nonlinear experimental growth. Values of $\delta$ needed to produce those results were between $0.85$ mm and $1.55$mm, which reasonably agrees with measurements of Maity in his experiment for horizontal flow giving $\delta$ roughly between $1$ mm and $1.5$ mm. We can note that the optimal value of $\delta$ decreases as liquid mass flux increases, which is physically coherent as the thermal boundary layer will diminish in size with the Reynolds number.
 
 \begin{remark*}{}
-We can note that the optimal value of $\delta$ decreases as liquid mass flux increases, which is physically coherent as the thermal boundary layer will diminish in size with the Reynolds number.
+Actually, the thermal boundary layer thickness $\delta$ depends on many parameters such as the liquid Prandtl number and mass flow rate, the heater properties and heat flux, etc.
+
+\npar
+
+If the total wall heat flux $\phi_{w}$ is transmitted to the liquid by conductive heat transfer in the linear boundary layer, we can write:
+
+\begin{equation}
+\phi_{w} = \lambda_{L} \dfrac{\Delta T_{L} + \Delta T_{w}}{\delta}
+\end{equation} 
+
 \end{remark*}
 
 \npar
@@ -1480,7 +1542,20 @@ The growth constant computed by Mazzocco \etal (Eq. \ref{eq:Kgrowth_mazzocco}) i
 
 Finally, we see that the model of Yoo \etal underestimates the bubble radius. We suspect this could come from the assumption considering that half of the bubble faces subcooled liquid ($f=0.5$, Eq. \ref{eq:growth_yoo}), which is hardly reasonable especially at early growth stages.
 
+\npar
 
+To test the sensitivity of the model to the value of $\delta$, we plot on Figure \ref{fig:growth_newmod_sensi} the Maity case at $G_{L}=239.6~\debm$ for values of $\delta \pm 50\%$.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.6\linewidth]{img/growth/SH5.9_SC0.3_V0.25_sensidelta.pdf}
+\caption{$G_{L}=239.6~ \debm$, $\Delta T_{w}=5.9K$, $\Delta T_{L}=0.3K$}
+\label{fig:growth_newmod_sensi}
+\end{figure}
+
+\npar
+
+The value of $\delta$ controls the value of $R_{\infty}$ and thus significantly impacts the transient growth profile. The estimation of the thermal boundary layer thickness is then an important aspect to ensure a correct prediction of the bubble growth.
 
 \subsubsection{High Pressure Measurements}
 
@@ -1525,7 +1600,11 @@ The values of $\delta$ needed to match the experimental measurements using Eq. \
 Contrary to low pressure measurements, the Plesset \& Zwick solution with $\dfrac{2}{\sqrt{\pi}} \leq K \leq \dfrac{2\sqrt{3}}{\sqrt{\pi}}$ provides an acceptable estimation of the bubble radius. This is probably due to the smaller bubble size in pressurized boiling (roughly 10 times smaller compared to atmospheric pressure). 
 
 \begin{remark*}{}
-The non-dimensional positions of the center of gravity of the bubble $R^{+}=\dfrac{R u_{\tau}}{\nu_{L}}$ rise up to 40 for Maity cases and 20 for Kossolapov cases while having larger liquid mass fluxes. This supports the fact that bubbles are higher pressure are less likely to be impacted by subcooled liquid, spending most of their lifetime between the viscous and buffer layer.
+The non-dimensional positions of the center of gravity of the bubble $R^{+}=\dfrac{R u_{\tau}}{\nu_{L}}$ rise up to 40 for Maity cases and 20 for Kossolapov cases while having larger liquid mass fluxes. This supports the fact that bubbles at higher pressure are less likely to be impacted by subcooled liquid, spending most of their lifetime between the viscous and buffer layer. 
+
+\npar
+
+Note that this assumptions is true if the thermal and hydrodynamic boundary layers are close, which is often assumed in numerical simulations under the assumption of a unity turbulent Prandtl number $\Pr_{T} \approx 1$ (Eq. \ref{eq:ncfd_wall_law}).
 \end{remark*}
 
 
@@ -1533,7 +1612,7 @@ The non-dimensional positions of the center of gravity of the bubble $R^{+}=\dfr
 
 \begin{itemize}
 
-\item Recent experimental and numerical research have shown that the presence of a liquid microlayer contributing to the bubble growth strongly depends on the boiling conditions. In particular, disappearance of this microlayer ate pressures higher than $3$ bar has been observed by Kossolapov \cite{kossolapov_experimental_2021}. This microlayer should thus not be systematically taken into account.
+\item Recent experimental and numerical research have shown that the presence of a liquid microlayer contributing to the bubble growth strongly depends on the boiling conditions. In particular, disappearance of this microlayer at pressures higher than $3$ bar has been observed by Kossolapov \cite{kossolapov_experimental_2021}. This microlayer should thus not be systematically taken into account.
 
 \item A new formulation derived from the heat diffusion in a linear temperature profile has been proposed (Eq. \ref{eq:exp_growth}). Provided a correct value of the thermal boundary thickness $\delta$, validation both on DNS and low pressure measurements shows that the model better captures the growth regime of bubbles in subcooled boiling compared to traditional models. However, this improvement appears limited at higher pressure when bubbles are smaller, where the Plesset \& Zwick treatment also proposes an acceptable estimation of the bubble growth.
 
@@ -1696,7 +1775,7 @@ Kossolapov \cite{kossolapov_experimental_2021} \newline (2021) & Water & 11.8 & 
 
 
 
-If the value of $\Delta T_{w}$ is not available in the considered data-set, we estimate it $\Delta T_{w}$ using Frost \& Dzakowic correlation \cite{frost_extension_1967}.
+If the value of $\Delta T_{w}$ is not available in the considered data-set, we estimate it $\Delta T_{w}$ using Frost \& Dzakowic correlation \cite{frost_extension_1967}:
 
 \begin{equation}
 \Delta T_{w} = \Pr_{L,sat} \sqrt{\frac{8 \sigma \phi_{w} T_{sat}}{\lambda_{L}\rho_{V}h_{LV}}}
@@ -1827,7 +1906,7 @@ which is similar to considering that the other forces overcome the capillary for
 
 
 \npar
-On Figure \ref{fig:pred_nosensi}, we show the predictions obtained with the proposed modeling and those obtained with Mazzocco's recent model \cite{mazzocco_reassessed_2018}. 
+On Figure \ref{fig:pred_nosensi}, we show the predictions obtained with the proposed modeling and those obtained with Mazzocco's recent model \cite{mazzocco_reassessed_2018} (see Table \ref{tab:all_BdF}). 
 
 
 \begin{figure}[h!]
@@ -2102,7 +2181,7 @@ In his work, Kossolapov \cite{kossolapov_experimental_2021} conducted measuremen
 \end{center}
 \end{figure}
 
-
+\npar
 
 Comparisons were done for cases at 20 bar and 40 bar and 3 different values of $G_{L}$. The value of $\dtheta$ for the simulations was kept really small ($2 \degree$ at 20 bar and $0.5\degree$ at 40 bar) since bubble tilt is supposed to reduce during sliding because the relative velocity regarding the liquid flow is diminishing. Moreover, higher pressure means smaller bubbles that are even more unlikely to present a significant contact angle hysteresis. We also want to mention that neglecting the capillary term in Eq.~\ref{eq:ub_dot} had a minor impact over the results except that the bubble accelerates a little bit faster. 
 
@@ -2417,7 +2496,7 @@ The solving of the equation of bubble departure (Eq. \ref{eq:bdf_x_dep}) and sli
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.75\linewidth]{img/bub_dyn/lift-off/pred_bdf.pdf}
-\caption{Prediction of Eq. \ref{eq:bdf_adim_lo} versus data from Table \ref{tab:exp_data_dlo}. Value of $K=0.24$ was used and only converged points are presented.}
+\caption{Prediction of Eq. \ref{eq:bdf_adim_lo} versus data from Table \ref{tab:exp_data_dlo}. Value of $K=0.24$ was used and only converged points are presented, same generic value used in Figure \ref{fig:pred_sensi}.}
 \label{fig:pred_bdf_dlo}
 \end{figure}
 \npar
