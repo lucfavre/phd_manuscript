@@ -82,7 +82,7 @@ The Weber number is also similar to those encountered in PWR.
 \We = \dfrac{G^{2}R}{\rho_{L} \sigma}
 \end{equation}
 
-This number characterizes physical phenomena such as bubble break-up or deformation under the influence of the liquid inertia.
+This number characterizes physical phenomena such as bubble break-up or deformation under the influence of the liquid inertia, or bubble coalescence.
 
 \begin{figure}[!h]
 \centering
@@ -143,7 +143,51 @@ The last similarity achieved in the DEBORA experiment is related to the geometry
 
 \subsection{Transposition ranges}
 
-As a result of those conservation criteria, Table \ref{tab:R12_PWR_transposition} sums up the transposition ranges for each parameters.
+On Table \ref{tab:R12_PWR_properties}, we sum up some thermodynamic properties of saturated R12 and water at similarity pressures respectively of 26\ bars and 155\ bars.
+
+\begin{table}[!h]
+\centering
+\begin{tabular}{c||c|c} 
+
+Fluid & Water & Freon R12 \\
+\hline 
+$P$ [bar] & 155 & 26\\
+%
+$T_{sat}$ [$\degC$] & 344.9 & 86.5 \\
+%
+\hline
+\hline
+$\rho_{L}$ [kg/m$^{3}$] & 594.4 & 1019.3 \\
+%
+$c_{p,L}$ [kJ/kg] & 8.950 & 1.413\\ 
+%
+$\lambda_{L}$ [W/m/K] & 0.472 & 0.0458\\
+%
+$\mu_{L}$ [W/m/K] & $6.82 \times 10^{-5}$ & $9.23 \times 10^{-5}$\\
+\hline
+\hline 
+$\rho_{V}$ [kg/m$^{3}$] & 101.9 & 170.7 \\
+%
+$c_{p,V}$ [kJ/kg] & 14.0 & 1.281\\ 
+%
+$\lambda_{V}$ [W/m/K] & 0.126 & 0.0175\\
+%
+$\mu_{V}$ [W/m/K] & $2.30 \times 10^{-5}$ & $1.57 \times 10 ^{-5}$\\
+\hline
+\hline
+$\sigma$ [J/m$^{2}$] & $4.65\times 10^{-3}$ & $1.80 \times 10^{-3}$ \\
+%
+$h_{LV}$ [kJ/kg] & 966.2 & 86.48 \\
+\end{tabular}
+
+\caption{Water and R12 saturation properties.}
+\label{tab:R12_PWR_properties}
+
+\end{table}
+
+
+
+As a result of the conservation criteria, Table \ref{tab:R12_PWR_transposition} sums up the transposition ranges for each parameters.
 
 
 
@@ -206,9 +250,9 @@ The control parameters are adjusted and measured using pressure, temperature, fl
 
 \npar
 
-The local measurements are conducted at the end of the heating length using a controllable probe that can cover the whole diameter of the test section with an accuracy of $10 \mu$m . Only one diameter is covered since the chosen geometry induces an axisymmetry.
+The local measurements are conducted at the end of the heating length using a controllable probe that can move all along the diameter of the test section with an accuracy of $10 \mu$m . Only one diameter is covered since the chosen geometry induces an axisymmetry.
 
-Three type of measurements have been conducted over different experimental campaigns.
+Three types of measurements have been conducted over different experimental campaigns.
 
 \subsubsection{Mono-Optical Probe Measurements}
 
@@ -217,7 +261,7 @@ Optical probe measurement rely on the difference of optical refractive index bet
 
 \npar
 
-The resulting signal is called a Phase Indicator Function (PIF) which looks like to a square signal (Figure \ref{fig:FIP}) that can be post-processed to identify the average time spent by the probe in each phase and then estimate their volume fraction \eg the void fraction. 
+The resulting signal is called a Phase Indicator Function (PIF) which looks like to a square signal (Figure \ref{fig:FIP}) that can be post-processed to identify the average time spent by the probe in each phase and then estimate their volume fraction \eg the void fraction. (for the vapor phase). 
 
 
 \begin{figure}[!h]
@@ -259,22 +303,24 @@ Using the technology of the optical phase dectection, adding a second optical pr
 Considering the following assumptions:
 
 \begin{itemize}
-\item The flow is mainly one-directional in aligned with the probes ;
+\item The flow is mainly one-directional and aligned with the probes ;
 \item The vapor phase is composed of spherical inclusions ;
-\item The velocity gradient and center density gradient are small along a bubble diameter length.
+\item The velocity gradient and gradient of bubble centers are small along a bubble diameter length.
 \end{itemize}
 
 Then we can estimate: 
 
 \begin{itemize}
 \item The vapor axial velocity $U_{V,z}$ that can be supposed equal to the measured interface velocity between the probes ;
-\item The interfacial area density $a_{i}$:
+\item The interfacial area density $a_{i}$ (as detailed in Cubizolles \cite{cubizolles_etude_1996}):
 \begin{equation}
 a_{i} = \frac{4 \nu }{U_{V,z}}
+\label{eq:interfacial_area_debora}
 \end{equation}
 \item The bubble Sauter diameter:
 \begin{equation}
 D_{V} = \frac{6 \alpha }{a_{i}}
+\label{eq:dV_debora}
 \end{equation}
 \end{itemize}
 
@@ -388,7 +434,7 @@ P                   & G & W12 & W14\\
 \end{tabular}
 }
 
-\caption{Test matrix of the DEBORA cases. $\bigcirc$: C800 - $\bigtriangledown$: C2900 - $\bigtriangleup$: C3000 }%\newline \scriptsize{Written at Plateau d'Auguste, Hyper U, Saintes} }
+\caption{Test matrix of the DEBORA cases. $\bigcirc$: C800 - $\bigtriangledown$: C2900 - $\bigtriangleup$: C3000, campaigns in the same matrix cell usually cover the same range of outlet quality $x_{eq,out}$. }%\newline \scriptsize{Written at Plateau d'Auguste, Hyper U, Saintes} }
 \label{tab:debora_matrix}
 \end{table}
 
@@ -409,7 +455,7 @@ Cases from the campaign C2900 would only be relevant for void fraction profiles 
 U_{V,z}\parth{r} \approx U_{M,z}\parth{r} = 1.22 \frac{G}{\spavg{\rho_{M}}} \parth{ \frac{R-r}{R}}^{1/7}
 \label{eq:ugz_C29}
 \end{equation}
-where $U_{M,z}$ is the mixture axial velocity, assuming a mechanical equilibrium between the phases.
+where $U_{M,z}$ is the mixture axial velocity, assuming a mechanical equilibrium (\ie zero slip velocity) between the phases.
 
 \end{remark*}
 
@@ -442,7 +488,7 @@ The difference between the given and recalculated outlet quality can also be con
 \npar 
 
 
-Moreover, for a given set of experiments at the same $P$, $G$ and $\Phi_{w}$ changing the inlet quality can be associated to moving the measurement diameter along the axial direction following the relationship: 
+Moreover, for a given set of experiments at the same $P$, $G$ and $\Phi_{w}$ changing the inlet quality can be equivalent to move the measurement test section along the axial direction following the relationship: 
 
 \begin{equation}
 x_{eq}\parth{z} = x_{eq,in} + \frac{4 \phi_{w} z }{G D_{h} h_{LV}}
@@ -548,11 +594,11 @@ On Figures \ref{fig:30G2P26W16_exp}, \ref{fig:8G2P26W16_exp}, \ref{fig:30G2P14W1
 }
 
 
-\caption{30G2P26W16 and 29G2P26W16 results}
+\caption{30G2P26W16 and 29G2P26W16 results. Vapor velocitt for C2900 cases is estimated using Eq. \ref{eq:ugz_C29}.}
 \label{fig:30G2P26W16_exp}
 \end{figure}
 
-Void fraction profiles obtained in for C2900 (single optical probe) and C3000 (bi-optical probe) cases are compared to verify the consistency of the measurements (Figure \ref{fig:G2P26W16_alpha}). The two campaigns are in good agreement with each other, displaying a void fraction profile monotonously increasing with the outlet quality. The estimation of the vapor velocity by Eq. \ref{eq:ugz_C29} for the C29 results is acceptable but presents an growing underestimation as the outlet title increases (Figure \ref{fig:G2P26W16_ugz}). This results in bubble diameter underestimation close to the wall and consequently interfacial area overestimation. 
+Void fraction profiles obtained in for C2900 (single optical probe) and C3000 (bi-optical probe) cases are compared to verify the consistency of the measurements (Figure \ref{fig:G2P26W16_alpha}). The two campaigns are in good agreement with each other, displaying a void fraction profile monotonously increasing with the outlet quality. The estimation of the vapor velocity by Eq. \ref{eq:ugz_C29} for the C29 results is acceptable but presents an growing underestimation as the outlet title increases (Figure \ref{fig:G2P26W16_ugz}), which is a consequence of the power $1/7$ law for the liquid velocity profile no longer valid when the void fraction increases. This results in bubble diameter underestimation close to the wall and consequently interfacial area overestimation using Eq. \ref{eq:dV_debora} and \ref{eq:interfacial_area_debora}.  
 
 \npar
 
@@ -574,10 +620,10 @@ It seems that bubble diameter very close to the wall do not vary much between di
 
 \npar
 
-Vapor velocity also increases with the outlet quality, with a nearly flat profile reached for saturated cases. The increase in vapor velocity may result of the larger bubble diameters which enhance the effect of buoyancy, acting as an accelerating term increasing the drift velocity.
+Vapor velocity also increases with the outlet quality, with a nearly flat profile reached for saturated cases. The increase in vapor velocity may result of the larger bubble diameters which enhance the effect of buoyancy, acting as an accelerating term increasing the drift velocity. In addition, the liquid velocity profile is flattened due to bubbles locally driving and accelerating the surrounding liquid close to the wall.
 
 \begin{remark*}{}
-Eq. \ref{eq:ugz_C29} fails to predict this flattening of the vapor velocity on C2900 cases, which may indicate a change in the flow structure that can not be detected when assuming liquid-vapor mechanical equilibrium.
+Eq. \ref{eq:ugz_C29} fails to predict this flattening of the vapor velocity on C2900 cases, which may indicate a change in the flow structure that can not be detected when assuming liquid-vapor mechanical equilibrium ($U_{L,z}-U_{V,z}=0$.
 \end{remark*}
 
 \npar
@@ -654,7 +700,7 @@ Rearranging the different wall temperature measurements versus the local flow qu
 
 
 
-Similar to the G2P26W16 cases, we observe the consistency of the void fraction measurements between the C2900 and C300 campaigns (Figure \ref{fig:G2P14W16_alpha}). Although the vapor velocity estimation using Eq. \ref{eq:ugz_C29} for C2900 cases also produces acceptable results for subcooled cases, the discrepancy when saturation is reached is even more observed here (Figure \ref{fig:G2P14W16_ugz}). The overestimation when $x_{eq,out}>0$ is larger than for the G2P26W16 cases, with nearly 1 m/s error on hottest cases. 
+Similar to the G2P26W16 cases, we observe the consistency of the void fraction measurements between the C2900 and C3000 campaigns (Figure \ref{fig:G2P14W16_alpha}). Although the vapor velocity estimation using Eq. \ref{eq:ugz_C29} for C2900 cases also produces acceptable results for subcooled cases, the discrepancy when saturation is reached is even more observed here (Figure \ref{fig:G2P14W16_ugz}). The overestimation when $x_{eq,out}>0$ is larger than for the G2P26W16 cases, with nearly 1 m/s error on hottest cases. 
 
 This logically yields larger underestimations of the bubble diameter and associated overestimations of the interfacial area concentration.
 
@@ -671,7 +717,7 @@ It seems that saturated cases tend to reach a fixed value of near-wall void frac
 Similar to previous obervations, the bubble diameter grows when moving to the bulk, also presenting a peak value around $0.8 > r/R > 0.6$ for subcooled cases (Figure \ref{fig:G2P14W16_dv}). The saturated cases however present much larger increase in bubble diameter when reaching the bulk flow, with $D_{V}$ close to 2 mm for the hottest case. This definitely indicates predominant coalescence effects.
 
 \begin{remark*}{}
-$D_{V}\approx 2$ mm is observed at a point where $\alpha >60\%$ which shows that even at such high void fraction values, the flow is still in a bubbly regime with small vapor inclusions ($D_{V} \approx 0.1 D_{h}$).
+$D_{V}\approx 2$ mm is observed at a point where $\alpha >60\%$ which shows that even at such high void fraction values, the flow is still in a bubbly regime with small vapor inclusions ($D_{V} \approx 0.1 D_{h}$). However such a high void fraction will lead to flow regimes that are likely to behave like a foam composed of many small vapor inclusions.
 \end{remark*}
 
 \npar
@@ -713,12 +759,16 @@ The liquid temperature profiles (Figure \ref{fig:G2P14W16_TL}) are behaving in a
 We also have the huge temperature jump when approaching the wall which reduces when reaching boiling regimes. The measurements also detect superheated liquid near the wall for the hottest cases ($\Delta T_{L} \approx 0.1 \degree$). The case with the greatest outlet quality presents a surprisingly flat liquid temperature profile with measurements being nearly constant ($\Delta T_{L}=-0.3\degC$) over the whole measurement section. 
 
 \begin{remark*}{}
-Such a constant temperature profile could be interpreted as a limit of the liquid temperature in this regime. Since it corresponds to flow conditions where void fraction is large ($\alpha > 60\%$) and bubbles do not condense (Figure \ref{fig:G2P14W16_dv}), any extra heat input may only contribute to phase change and leave the liquid phase thermally unchanged.
+Such a constant temperature profile could be interpreted as a limit of the liquid temperature in this regime. Since it corresponds to flow conditions where void fraction is large ($\alpha > 60\%$) and bubbles do not condense (Figure \ref{fig:G2P14W16_dv}), any extra heat input may only contribute to phase change and leave the liquid phase thermally unchanged. In these conditions, this thermodynamically means that the liquid is nearly exactly at $T_{sat}$, which means the value of $\Delta T_{L}=-0.3\degC$ is probably associated to the measurement uncertainty (Table \ref{tab:deb_mes_uncertainty}).
 \end{remark*}
 
 \npar
 
-Unfortunately, the 8G2P15W16 campaign did not cover as large quality range as the 8G2P26W16 campaign. We thus do not have access to many single-phase flow wall temperature measurements (Figure \ref{fig:G2P14W16_Twz}). Only one point for $x_{eq,out} \approx -0.1$ seem to be in the single-phase convection region. All the other measurements are close to each other and correspond to boiling regimes where we observe a wall superheat stabilization aroud $\Delta T_{w} = 4\degC$.
+Unfortunately, the 8G2P15W16 campaign did not cover as large quality range as the 8G2P26W16 campaign. We thus do not have access to many single-phase flow wall temperature measurements (Figure \ref{fig:G2P14W16_Twz}). Only one point for $x_{eq,out} \approx -0.1$ seems to be in the single-phase convection region. All the other measurements are close to each other and correspond to boiling regimes where we observe a wall superheat stabilization aroud $\Delta T_{w} = 4\degC$.
+
+\begin{note*}{}
+The wall superheat is approximately 2$\degC$ larger than 26 bar cases, which is coherent with the effect of pressure on boiling temperature \cite{hibiki_active_2003, kossolapov_experimental_2021}?
+\end{note*} 
 
 The comparison of wall temperature with local flow quality (Figure \ref{fig:G2P14W16_Twx}) is not as interesting as the G2P26W16 cases but still display a welcomed overlapping of the measurements over the different inlet temperatures.
 
@@ -737,9 +787,15 @@ To further quantify the coherency of the DEBORA database, we want to reconstruct
 To do so, we will estimate the total enthalpy change between the inlet and outlet. The inlet liquid enthalpy $h_{L,in}$ is estimated using the inlet temperature and the outlet mixture enthalpy $h_{M,out}$ is computed as:
 
 \begin{equation}
-h_{M,out}=x_{m,out}h_{V,sat}+\parth{1-x_{m,out}}\spavg{h_{L,out}}
+h_{M,out}=x_{m,out}H_{V,sat}+\parth{1-x_{m,out}}H_{L,out}
 \end{equation}
-supposing that the vapor is at saturation temperature and where $x_{m,out}$ is the outlet mass quality.
+supposing that the vapor is at saturation temperature, where $x_{m,out}$ is the outlet mass quality and $H_{k,out}$ is the flowing enthalphy of phase $k$ averaged over the outlet surface, defined as:
+
+\begin{equation}
+H_{k}\parth{z} = \frac{\spavg{\rho_{k}\alpha_{k}U_{k,z} h_{k}}}{\spavg{ \rho_{k}\alpha_{k}U_{k,z}}}
+\end{equation}
+where $\spavg{.}$ is the surface-averaging operator.
+
 
 \npar
 Using the experimental values of $\alpha$ and $U_{V,z}$, we can compute the outlet mass quality $x_{m,out}$ as:
@@ -757,27 +813,28 @@ for an axisymmetric profile such as the DEBORA measurements.
 
 \npar
 
-From the mass quality we can compute the mixture enthalpy as:
+From the mass quality and assuming that vapor is at saturation ($H_{V,out}\approx h_{V,sat}$) we can compute the mixture enthalpy as:
 
 \begin{equation}
 h_{M} = x_{m} h_{V,sat} + \parth{1-x_{m}} \frac{\spavg{\rho_{L}\parth{1-\alpha}U_{L,z}h_{L}}}{\spavg{\rho_{L}\parth{1-\alpha}U_{L,z}}}
+\label{eq:hM_debora}
 \end{equation}
 
-\npar
-Similarly, the average liquid enthalpy at the outlet is estimated as:
+%\npar
+%Similarly, the average liquid enthalpy at the outlet is estimated as:
+%
+%\begin{equation}
+%\spavg{h_{L}} = \frac{2}{R^{2}}\frac{1}{G_{L}}\int_{r=0}^{R} \rho_{L}\parth{r} U_{L,z}\parth{r} h_{L}\parth{r} r \mathrm{d}r
+%\end{equation}
 
-\begin{equation}
-\spavg{h_{L}} = \frac{2}{R^{2}}\frac{1}{G_{L}}\int_{r=0}^{R} \rho_{L}\parth{r} U_{L,z}\parth{r} h_{L}\parth{r} r \mathrm{d}r
-\end{equation}
-
-where $h_{L}$ is estimated using the local temperature measurements and $U_{L,z}$ is estimated using the drift velocity of Ishii \cite{ishii_one-dimensional_1977}:
+Estimating $h_{L}$ using the local temperature measurements and $U_{L,z}$ is by the the drift velocity of Ishii \cite{ishii_one-dimensional_1977}:
 
 \begin{equation}
 U_{L,z} = U_{V,z} - U_{rel} = U_{V,z} - \sqrt{2} \parth{\frac{g \sigma \parth{\rho_{L}-\rho_{V}}}{\rho_{L}^{2}}}^{1/4} \parth{1-\spavg{\alpha}}^{1.75}
+\label{eq:drift_debora}
 \end{equation}
 
-
-
+We can finally compute the value of $h_{M}$ using Eq. \ref{eq:hM_debora}.
 \npar
 
 Then, writing the one-dimensional energy balance of the flow permits to express the actually applied heat flux: 
@@ -847,6 +904,10 @@ To actually compute the surface-averaged quantities, we need to interpolate the 
 \label{fig:debora_interpol}
 \end{figure}
 
+\begin{remark*}{}
+It was verified beforehand that the hypothesis for the drift velocity (\ref{eq:drift_debora}) allowed to recompute the inlet mass flux from the outlet vapor velocity. Test for the case 30G2P26W16Te70 yielded $G_{L,recalculated}=2106~\debm$. Excluding the drift term and assuming $U_{V,z}=U_{L,z}$ gives $G_{L,recalculated}=2145~\debm$.
+\end{remark*}
+
 
 The results obtained for the heat flux recalculations are presented on Table \ref{tab:debora_flux_corr_res}.
 
@@ -859,7 +920,7 @@ Case name & $x_{m}$ [-] & $\phi_{w,rec}$ [kW/m$^{2}$] & $\phi_{w,exp}$ [kW/m$^{2
 \hline
 30G2P26W23Te66 & 0.0193 & 70.432 & 73.893 & -4.68\%\\
 \hline
-30G2P26W23Te70 & 0.0500\% & 68.041 & 73.893 & -7.9\%\\
+30G2P26W23Te70 & 0.0500 & 68.041 & 73.893 & -7.9\%\\
 %\hline
 %\hline
 %30G2P14W16Te40 & 0 & 0 & 0 & 0 & 0
@@ -1002,7 +1063,7 @@ After a finer analysis of the data, in the continuation of the work of Cubizolle
 
 \item Small but significant errors on the reported outlet quality could be observed when compared to a one-dimensional energy balance based on the control parameters (Table \ref{tab:xout_30P26_recalc}).
 
-\item Good agreement was found between the void fraction measurements with the mono (C2900) and bi-optical probe (C3000), which comforts the validity of the acquired data in close flow conditions.
+\item Good agreement was found between the void fraction measurements with the single (C2900) and dual-optical probe (C3000), which comforts the validity of the acquired data in close flow conditions.
 
 \item Extension of the C2900 data to estimate bubble diameter and interfacial area concentration using Eq. \ref{eq:ugz_C29} to compute vapor velocity was acceptable in subcooled conditions but showed increasing underestimations in the saturated region (Figures \ref{fig:G2P26W16_ugz} and \ref{fig:G2P14W16_ugz}).
 
@@ -1014,7 +1075,7 @@ After a finer analysis of the data, in the continuation of the work of Cubizolle
 
 \item Wall temperature measurements followed a coherent linear profile in the single-phase region before stabilizing when boiling starts, which was further reproduced by comparison with one-dimensional correlations. Measurements were also overlapping each other when plotted versus the local quality, confirming the transposition between change of inlet temperature and axial translation of the measurement section.
 
-\item Reconstruction of the applied wall heat flux in the experiments by merging the values from very close C3000 and C800 cases (Table \ref{tab:debora_match_C8C30}) suggested that the heat flux values provided in the measurements were too large by $5\%$ to $8\%$. Such a large difference is surprising and could partially be explained by the small change of operating conditions between C3000 and C800 cases.
+\item Reconstruction of the applied wall heat flux in the experiments by merging the values for C3000 and C800 cases for similar conditions (Table \ref{tab:debora_match_C8C30}) suggested that the heat flux values provided in the measurements were too large by $5\%$ to $8\%$. Such a large difference is surprising and could partially be explained by the small change of operating conditions between C3000 and C800 cases.
 \end{itemize}
 
 

@@ -11,7 +11,7 @@
 
 \section{Introduction}
 
-The NEPTUNE\_CFD project (started in 2001) is a reasearch program coordinated by four entities : EDF, CEA, IRSN and Framatome. The initial goals of the project were related to nuclear safety by developing a thermal-hydraulics simulation tool to :
+The NEPTUNE\_CFD project (started in 2001) is a research program coordinated by four entities : EDF, CEA, IRSN and Framatome. The initial goals of the project were related to nuclear safety by developing a thermal-hydraulics simulation tool to :
 
 \begin{itemize}
 \item Predict the Boiling Crisis in PWR cores ;
@@ -23,7 +23,7 @@ As a multiphase eulerian code, NEPTUNE\_CFD consists of a local three-dimensiona
 
 \npar
 %The NEPTUNE\_CFD solver can handle several types of multiphase flows, \eg dispersed vapor-liquid flow of a same component, mixed gas-liquid-solid particles flow of different components, or multiple forms of a single component (dispersed vapor/continuous liquid, dispersed liquid/continuous vapor, continuous liquid/continuous vapor, etc.).
-The constitutive equations are solved using a pressure correction and is based on a finite-volume discretization along with a collocated arrangement of the variables. Moreover, NEPTUNE\_CFD allows the use of all type of meshes (hexahedra, tetrahedra, pyramids, etc.), even non-conforming ones, thanks to its face-based data structure. Finally, the code is well-suited for parallel computing, widening its computing capacity to very large meshes.
+The constitutive equations are solved using a pressure correction and is based on a finite-volume discretization along with a collocated arrangement of the variables. Moreover, NEPTUNE\_CFD allows the use of all type of meshes (hexahedral, tetrahedral, pyramids, etc.), even non-conforming ones, thanks to its face-based data structure. Finally, the code is well-suited for parallel computing, widening its computing capacity to very large meshes.
 
 \npar
 
@@ -44,7 +44,7 @@ To simulate two-phase dispersed boiling flows, NEPTUNE\_CFD solves the ensemble-
 	\label{eq:mass}
 \end{equation}
 
-Where $\alpha_{k}$, $\rho_{k}$, $\vect{U_{k}}$ are the time fraction, average density and velocity of phase $k$ ; $\orangemath{\Gamma_{k}}=\Gamma_{k,i}+\Gamma_{k,w}$ the interfacial mass transfer term per unit of volume and time splitted between bulk and wall contribution.
+Where $\alpha_{k}$, $\rho_{k}$, $\vect{U_{k}}$ are the volumetric fraction, average density and velocity of phase $k$ ; $\orangemath{\Gamma_{k}}=\Gamma_{k,i}+\Gamma_{k,w}$ the interfacial mass transfer term per unit of volume and time splitted between bulk and wall contribution.
 Subscripts $k= L$ or $V$ denotes the liquid or vapor phase, $i$ the interfacial quantities and $w$ the wall contribution.
 
 \subsection{Momentum Balance}
@@ -191,7 +191,7 @@ where $\Pe=\Re_{b} \Pr_{L}$ is the Peclet number, $\Ja_{L}=\dfrac{ \rho_{L}c_{p,
 
 \npar
 
-Those three Nusselt numbers respectively correspond to convective heat transfer, stationnary conduction and transient conduction.
+Those three Nusselt numbers respectively correspond to stationnary conduction around a sphere, transient conduction for a spherical bubble in uniformly superheated liquid \cite{plesset_growth_1954} and transient convection around a sphere in a supheated flow \cite{ruckenstein_mass_1964}.
 
 \subsubsection{Vapor Heat Transfer}
 
@@ -304,7 +304,7 @@ For bubbly flow simulations, only liquid phase turbulence is taken into account 
 \parth{1-\alpha}+\frac{\mathrm{D}\rho_{L}R_{ij}}{\mathrm{D}t}  = & \frac{\partial}{\partial x_{k}}\crocht{ \parth{\rho_{L}\nu_{L} + \rho_{L}C_{s} \frac{k}{\varepsilon}R_{ij}} \frac{\partial}{\partial x_{k}}\parth{ \parth{1-\alpha} R_{ij} } } \\
 &+ \parth{1 - \alpha}\parth{P_{ij} + G_{ij} + \Phi_{ij} + \varepsilon_{ij}}
 \end{align}
-where $\mathrm{D}/\mathrm{D}t$ is the Lagrangian derivative, $k$ the turbulent kinetic energy, $\varepsilon$ the turbulent pseudo-dissipation rate, $\tens{P}$ the turbulent production term, $\tens{G}$ the gravity production, $\tens{\Phi}$ the pressure-strain term and $\tens{\varepsilon}$ the viscous destruction term.
+where $\mathrm{D}/\mathrm{D}t$ is the Lagrangian derivative, $k$ the turbulent kinetic energy, $\varepsilon$ the turbulent pseudo-dissipation rate, $\tens{P}$ the turbulent production term, $\tens{G}$ the work of gravity force, $\tens{\Phi}$ the pressure-strain term and $\tens{\varepsilon}$ the viscous dissipation.
 
 \npar
 
@@ -468,6 +468,20 @@ The non-dimensional wall liquid temperature $T_{L}^{+}$ is modeled according fol
 T_{L}^{+} = \int_{0}^{y^{+}} \frac{2\mathrm{d}y}{1 + \dfrac{1}{2}\dfrac{\Pr_{L}}{\Pr_{T}}\sqrt{1+4\kappa^{2} {y^{+}}^{2}  \parth{1-\exp{-y^{+}/A}}^{2}}}
 \end{equation}
 with $A=25.6$, $\Pr_{T} = 0.9$ and $y^{+} \approx 100$ usually.
+
+\section{Conclusions}
+
+In this chapter, we presented the constitutive equations of NEPTUNE\_CFD. As a summary, the main features of the modeling for dispersed bubbly flows are:
+
+\begin{itemize}
+\item Conservation equation for mass, momentum and energy are solved for liquid and vapor ;
+\item Interfacial momentum transfer is modeled by including different forces, with recent formulations for turbulent dispersion and lift ;
+\item Turbulence is modeled by accounting for vapor presence in the $R_{ij}-\varepsilon$ SSG model along with a wall law based on local bubble size ;
+\item Wall boiling is based on a Heat Flux Partitioning approach extending the original formulation of Kurul \& Podowski \cite{kurul_multidimensional_1990} by accounting for vapor convection at high wall void fraction.
+\end{itemize}
+
+In order to assess this modeling framework, we will further conduct simulations using NEPTUNE\_CFD. In next Chapter, we present the DEBORA database that will serve as validation reference in Chapter \ref{chap:debora_ncfd}.
+
 
 %\begin{equation}
 %\label{eq:wall_law} 
