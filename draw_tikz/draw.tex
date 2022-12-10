@@ -1985,4 +1985,31 @@ if
 }
 \endpgfgraphicnamed
 
+\beginpgfgraphicnamed{subchannel}
+
+\begin{tikzpicture}[scale=300]
+
+\tikzmath{\R=0.00475; \p=0.0126;};
+
+\coordinate (A1) at (0,0);
+\coordinate (A2) at (0,\p);
+\coordinate (A3) at (\p,\p);
+\coordinate (A4) at (\p,0);
+
+\draw[black, dashed, fill=blue!10!white] (A1)--(A2)--(A3)--(A4)--cycle;
+
+\draw[black, fill=gray!10!white] (A1) circle(\R);
+\draw[black, fill=gray!10!white] (A2) circle(\R);
+\draw[black, fill=gray!10!white] (A3) circle(\R);
+\draw[black, fill=gray!10!white] (A4) circle(\R);
+
+\draw[<->, >=latex] ($(A3)-(\R,0)$)--++(2*\R,0) node[midway, above]{$9.5\ $mm};
+
+\draw[<->, >=latex] ($(A1)-(1.05*\R,0)$)--++(0,\p) node[midway, left]{$12.6\ $mm};
+
+
+\end{tikzpicture}
+\endpgfgraphicnamed
+
+
 \end{document}

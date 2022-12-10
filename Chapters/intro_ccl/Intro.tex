@@ -198,7 +198,7 @@ Fuel rods are the elementary component of the reactor's core since they contain 
 
 \npar
 
-The bundle organization of the rods allows water to flow between them, allowing the moderation of neutrons coming out of recent fissions. Moreover, this geometry ensures a large heat exchange surface to enhance the cooling of the fuel. A single fuel rod usually measures 4\ m height for a 1\ cm diameter and weighs 2\ kg (Figure \ref{fig:fuel_rod}).
+The bundle organization of the rods allows water to flow between them, allowing the moderation of neutrons coming out of recent fissions. Moreover, this geometry ensures a large heat exchange surface to enhance the cooling of the fuel. A single fuel rod usually measures 4\ m height for a 9.6\ mm diameter and weighs 2\ kg (Figure \ref{fig:fuel_rod}).
 
 
 \begin{figure}[!h]
@@ -269,7 +269,7 @@ Two different types of accident are usually considered when designing the reacto
 \end{itemize}
 
 
-In such conditions, the water around the fuel rods is exposed to a huge increase of the thermal power it receives per unit of volume and is heated up above its saturation temperature and starts to vaporize. Such a situation can then lead to multiphase boiling flow regimes in the core, with a risk of reaching the critical situation called the \textbf{\underline{Boiling Crisis}} (BC).
+In such conditions, the water around the fuel rods is exposed to a huge increase of the thermal power it receives per unit of volume and is heated up above its saturation temperature and starts to vaporize. Such a situation can then lead to multiphase boiling flow regimes in the core, with a risk of reaching the critical situation called the \textbf{\underline{boiling crisis}} (BC).
 
 \npar
 
@@ -283,7 +283,7 @@ In nuclear reactors, the water enters in the fuel assemblies from bottom and flo
 
 \subsection{Vertical Subcooled Boiling Flow Regimes}
 
-When the liquid heats up while flowing upwards, different heat exchange regimes can occur along with various multiphase flow regimes when the water starts to vaporize. They are usually defined depending on the liquid thermodynamic quality $x_{eq}$ ($x_{eq}<0$ if the the flow is subcooled, $0 \leq x_{eq} \leq 1$ if the mixture is at saturation) and the time-space distribution of the liquid and vapor phases. In the case of a simple tube, Figure \ref{fig:vertical_flow_boiling_regimes} presents a sketch of the different flow and heat transfer regimes occurring in vertical flow boiling in a tube with a negative inlet liquid quality. A a constant heat flux in applied over the tube long enough to end-up in a pure vapor flow ($x_{eq} \geq 1$).
+When the liquid heats up while flowing upwards, different heat exchange regimes can occur along with various multiphase flow regimes when the water starts to vaporize. They are usually defined depending on the liquid thermodynamic quality $x_{eq}$ ($x_{eq}<0$ if the the flow is subcooled, $0 \leq x_{eq} \leq 1$ if the mixture is at saturation) and the time-space distribution of the liquid and vapor phases. In the case of a simple tube, Figure \ref{fig:boiling_collier} presents a sketch of the different flow and heat transfer regimes occurring in vertical flow boiling in a tube with a negative inlet liquid quality. A a constant heat flux in applied over the tube long enough to end-up in a pure vapor flow ($x_{eq} \geq 1$).
 
 
 \begin{figure}[!h]
@@ -309,20 +309,147 @@ When the average liquid temperature reaches saturation, $x_{eq} = 0 $ and we ent
 
 \npar
 
-Further downstream, the volume occupied by vapor at a given height starts to overcome that of the liquid phase \ie we reach high local "void fractions" (ratio of the vapor volume over the total volume). This leads to a significant change in the flow regime where the core flow is composed of vapor while liquid is pushed towards the wall, corresponding to a phase inversion that defines the beginning of the \textit{annular flow} regime. During the transition from slug to annular flow, the heat transfer regime changes from saturated boiling (where bubbles merge in the bulk with the dominant vapor phase) to \textit{forced convective heat transfer through liquid film} (zone E). The liquid film trapped between the vapor and the wall act as a 
+Further downstream, the volume occupied by vapor at a given height starts to overcome that of the liquid phase \ie we reach high local "void fractions" (ratio of the vapor volume over the total volume). This leads to a significant change in the flow regime where the core flow is composed of vapor while liquid is pushed towards the wall, corresponding to a phase inversion that defines the beginning of the \textit{annular flow} regime. During the transition from slug to annular flow, the heat transfer regime changes from saturated boiling (where bubbles merge in the bulk with the dominant vapor phase) to \textit{forced convective heat transfer through liquid film} (zone E). The liquid film trapped between the vapor and the wall increases the effective thermal conductivity and limits the possibilities of wall nucleation. The forced convection in the film transports the heat from the wall to the liquid-vapor interface at which evaporation occurs, increasingly shrinking the liquid layer. The turbulence also tears of liquid droplets that are ejected in the bulk vapor flow, corresponding to the\textit{annular flow with entrainment} region.
+
+\npar
+
+Finally, when a critical quality value is reached, the liquid film has totally evaporated and the wall is then in direct contact with the vapor phase. This phenomenon is called \textbf{dryout} and is associated to a steep increase of the wall temperature due to the decrease of the heat transfer coefficient induced by the low vapor thermal conductivity. Before reaching a pure vapor single-phase flow (zone H), liquid droplets can still exist in the bulk event passed the dryout, where we thus have a \textit{droplet flow} (zone G).
 
 
+\subsection{Boiling Crisis and Critical Heat Flux}
 
 
+The rapid rise of the wall temperature when dryout occurs actually corresponds to the so-called \textbf{boiling crisis}. The example of Figure \ref{fig:boiling_collier}) shows the occurrence of a boiling crisis triggered by the evaporation of a thin liquid film separating the bulk vapor and the wall, called \textbf{Liquid Sublayer Dryout} (LSD). However, at lower flow quality (even negative ones), the application of a very high heat flux can trigger a boiling crisis of different nature. If the wall boiling becomes too intense, it may result in the formation of a vapor blanket at the wall insulating it from the liquid water cooling (Figure \ref{fig:dnb_bloch}), thus abruptly increasing its temperature and posing a high risk of material damage. This type of boiling crisis is called the \textbf{Departure from Nucleate Boiling} (DNB). The heat flux at which the boiling crisis occurs is named \textbf{Critical Heat Flux} (CHF).
 
 
-To write :
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.65\linewidth]{img/intro/dnb_bloch.png}
+\caption{Experimental shadowgrams from Bloch \etal \cite{bloch} of the flow boiling at CHF for a 27\ K subcooled liquid flowing upwards at 0.6\ m/s.}
+\label{fig:dnb_bloch}
+\end{figure}
+
+\npar
+
+According to Bricard (1995, \cite{bricard_phd_1995}), the LSD boiling crisis is well identified both by experimental and modeling approaches \cite{govan_1988} where the scientific community seem to reached a consensus. However, the DNB-type boiling crisis is much more debated since it results from local boiling phenomena including bubble dynamics at the wall and is still under thorough scientific investigation today \cite{kossolapov, richenderfer, demarly, bloch_bruder, bruder}.
+
+
+\subsection{Boiling Curves}
+
+The boiling crisis phenomenon has been reported among the first times in the pioneering work Nukiyama \cite{nukiyama_1936} who observed the variety of heat transfer regimes occurring during boiling and identified the maximum accessible heat flux as the Critical Heat Flux. He summarized his findings on a so-called "boiling curve" representing the evolution of the wall temperature (or superheat) against the applied heat flux $\phi_{w}$ (Figure \ref{fig:nukiyama_curve}).
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.7\linewidth]{img/intro/nukiyama.png}
+\caption{Example of Nukiyama / boiling curve for water from \cite{fahri_2006}.}
+\label{fig:nukiyama_curve}
+\end{figure}
+
+
+\npar
+
+For a flux-controlled experiment, reaching the CHF triggers a nearly instantaneous transition from point C to point E (Figure \ref{fig:nukiyama_curve}) which graphically shows the violent increase in wall temperature that can damage the heater.
+
+
+\section{Current Industrial Treatment of the Boiling Crisis}
+
+Even if boiling can be a very efficient way of increasing the global heat transfer between a solid wall and surrounding liquid, the existence of the CHF as an upper limit over which the heater material integrity is threatened represents a huge physical limitation that has to be anticipated
+
+\npar
+
+Any nuclear power unit operator, such as EDF, consequently has to prevent the occurrence of DNB in the core to ensure the full integrity of the nuclear fuel rods. Safety margins imposed by the french Nuclear Satefy Authority (ASN) have to be respected all time, otherwise the nuclear unit will have to stop in order to prevent any incident or accident. Such constraints represents a very challenging aspect for nuclear core thermal-hydraulics which should be able to anticipate and predict the value of the CHF in broad operating conditions.
+
+\npar
+
+However, we mentioned earlier the fact that the DNB was still a very debated phenomenon over which a general scientific agreement has still to be reached. Therefore, CHF predictions for safety studies is achieved using dedicated experimental correlations. With experiments on a nearly full-scale assembly ($5 \times 5$ electrically heated rods, grids, 4\ height, water at 155\ bar, etc.), values of the CHF are measured in a large variety of operating conditions that covers the expected values in industrial operations. A correlation based on those results is then constructed for the specific geometry, usually of the form:
+
+\begin{equation}
+\phi_{w,CHF} = f\parth{P, G, L_{g}, D_{h}, x_{eq}}
+\end{equation}
+where $P$ is the pressure, $G$ the total mass flux, $L_{g}$ the distance between two grids (Figure \ref{fig:fuel_assembly}), $D_{h}$ the hydraulic diameter and $x_{eq}$ the thermodynamic quality.
+
+
+\npar
+
+This correlation is then used in multidimensional codes based on porous medium approaches to avoid fine representation of the geometry, where the scale of a computation cell is usually th	at of a "subchannel" (Figure \ref{fig:subchannel_sketch}).
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.4\linewidth]{img/intro/subchannel.pdf}
+\caption{Sketch of a subchannel in a rod bundle (dashed lines). The equivalent hydraulic diameter here is $D_{h}=11.78\ $mm.}
+\label{fig:subchannel_sketch}
+\end{figure}
+
+\npar
+
+Using the average thermal-hydraulics values at the scale of the subchannel, the dedicated correlation then yields the estimated CHF in the cell which can be compared to the applied heat flux to estimate the \textbf{Departure to Nucleate Boiling Ratio} (DNBR) $\phi_{w} / \phi_{w,CHF}$ that gives the safety margin to the boiling crisis. For EDF, those numerical studies are conducted using the THYC code \cite{aubry_1995}.
+
+\section{Towards Local Predictions of the CHF Using CMFD}
+
+Investigating the boiling crisis physics has showed that the associated time-space scale was sometimes lower than 1\ ms and 1\ mm. Achieving wall-boiling modeling at those scales is impossible using traditional safety study codes and thus put the light onto Computational Multi-Fluid Dynamics, which recent improvements over the past decades (model formulations, computational capacity, meshing techniques) has demonstrated its capability of simulating nearly industrial-scaled situations.
+
+\npar
+
+With CMFD codes, simulations of multiphase flows can be conducted at small local scales that are interesting regarding:
+\begin{itemize}
+\item Finer descriptions of the multiphase flow structure and boiling ;\
+\item More detailed relationship between the wall local thermal-hydraulics properties and the boiling crisis using dedicated models including new physical phenomena related to wall boiling.
+\end{itemize} 
+
+At EDF R\&D, the in-house CFD code \textit{code\_saturne} has its own module dedicated to multiphase flows: NEPTUE\_CFD. NEPTUNE\_CFD is the chosen numerical tool to investigate the modeling and simulation of the boiling crisis at CFD scale.
+
+
+\section{Contents of This Thesis}
+
+In this thesis, we want to tackle the problem of boiling crisis prediction using CFD in PWR conditions. By simulating boiling flows in representative industrial conditions using NEPTUNE\_CFD, the validity of the present formulation of the code are assessed. This can be summed up the following question:
+
+\npar
+
+\textit{Is it nowadays possible to reach a proper modeling of the wall phenomenon to predict boiling crisis occurrence in PWR using CFD simulations ?}
+
+\npar
+
+This leads us to further investigate the modeling of wall boiling in CFD codes using Heat Flux Partitioning (HFP) models and to propose a new formulation following a detailed study of the different physical parameters at stake. This is concluded by a discussion over the boiling crisis prediction using such models. 
+
+\npar
+
+Finally, geometries closer to the industrial configuration are studied to evaluate the difficulties involved by the specific design in PWR cores, notably regarding the presence of grids and mixing vanes (Figure \ref{fig:fuel_grid}).
+
+\npar
+
+This manuscript is organized as follows. \textbf{Part I} is dedicated to boiling flow simulations using NEPTUNE\_CFD:
 
 \begin{itemize}
-\item nuclear in france
-\item progressive zoom toward the primary circuit and nuclear fuel assembly
-\item heat transfer and boiling
-\item CHF issue
-\item Modeling, component approach, THYC
-\item New approaches, CFD, objective of the thesis
+\item \textbf{Chapter 2} details the constitutive equations and the different closure laws used in the 7.0 version of NEPTUNE\_CFD. 
+
+\item \textbf{Chapter 3} presents the DEBORA experimental database that will be used for CFD validation. Some analyses regarding the database consistency and physical implications are proposed.
+
+\item \textbf{Chapter 4} compares the simulation results obtained using NEPUTNE\_CFD with the DEBORA experiment. This allows to identify the strengths and weaknesses of the current modeling regarding boiling dispersed bubbly flows.
+
 \end{itemize}
+
+
+Following those investigations, \textbf{Part II} focuses on the development of a new Heat Flux Partitioning Model:
+
+\begin{itemize}
+\item \textbf{Chapter 5} briefly presents some bibliographic aspects regarding the modeling of wall boiling heat transfer.
+
+\item \textbf{Chapter 6} then investigates in details the dynamics of bubble boiling at the wall. A particular care is given to the modeling of the bubble force balance to reach a representative description of the nucleated bubble movement.
+
+\item \textbf{Chapter 7} discusses the different closure laws required to complete the Heat Flux Partitioning model and gathers experimental measurements for their assessment. The formulation of the new model is finally presented.
+
+\item \textbf{Chapter 8} presents validation aspects of the model with comparisons to fine experimental measurements and wall temperature predictions from different literature databases.
+
+\item \textbf{Chapter 9} discusses perspectives regarding the prediction of the Critical Heat Flux using Heat Flux Partitioning models.
+\end{itemize}
+
+Finally, \textbf{Part III} investigates the impact of mixing vanes over the boiling flow:
+
+\begin{itemize}
+\item \textbf{Chapter 10} studies the DEBORA-Promoteur and AGATE-Promoteur experiments of a boiling and single-phase flow in a tube including mixing vanes. Analyses of the measurements are conducted to further understand the structure of boiling flows in PWR.
+
+\item \textbf{Chapter 11} presents NEPTUNE\_CFD simulations of the tube and mixing vanes case. Comparisons to the experiments evaluates the capacity of CFD to properly capture the effect of such geometries.
+\end{itemize}
+
+\textbf{Chapter 12} closes this manuscript by summarizing the different conclusions of the presented work and details the different perspectives that emerge

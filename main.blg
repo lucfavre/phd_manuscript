@@ -1,32 +1,57 @@
-This is BibTeX, Version 0.99d (MiKTeX 2.9.7350 64-bit)
-Capacity: max_strings=4000, hash_size=5000, hash_prime=4253
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: biblatex.bst
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: FrontBackMatter/Titlepage.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: FrontBackMatter/Titleback.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: FrontBackMatter/Abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
 A level-1 auxiliary file: FrontBackMatter/Resume.aux
+Reallocating 'name_of_file' (item size: 1) to 33 items.
 A level-1 auxiliary file: FrontBackMatter/Publications.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: FrontBackMatter/Contents.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: Chapters/intro_ccl/Intro.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: Chapters/NCFD/Chap_NCFD.aux
+Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: Chapters/NCFD/Chap_Debora.aux
+Reallocating 'name_of_file' (item size: 1) to 35 items.
 A level-1 auxiliary file: Chapters/NCFD/Chap_Debora_NCFD.aux
+Reallocating 'name_of_file' (item size: 1) to 32 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_HFPmodels.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_BubDyn.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_Closures.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_NewHFP.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_ToCHF.aux
+Reallocating 'name_of_file' (item size: 1) to 39 items.
 A level-1 auxiliary file: Chapters/industrial/Chap_Promoteur.aux
+Reallocating 'name_of_file' (item size: 1) to 38 items.
 A level-1 auxiliary file: Chapters/industrial/Chap_Prom_CFD.aux
+Reallocating 'name_of_file' (item size: 1) to 34 items.
 A level-1 auxiliary file: Chapters/intro_ccl/Conclusion.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
 A level-1 auxiliary file: Appendix/App_BubGrowth.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
 A level-1 auxiliary file: Chapters/Chapter0A.aux
+Reallocating 'name_of_file' (item size: 1) to 32 items.
 A level-1 auxiliary file: FrontBackMatter/Declaration.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: FrontBackMatter/Colophon.aux
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
-Reallocating 'global_strs' (item size: 1) to 20000 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
@@ -39,7 +64,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 28213 items.
+Reallocating 'field_info' (item size: 4) to 29360 items.
 Database file #1: main-blx.bib
 Database file #2: bib_v9.bib
 Reallocating 'str_pool' (item size: 1) to 130000 items.
@@ -53,6 +78,13 @@ Warning--I didn't find a database entry for "Croff_nuclear_fuel"
 Warning--I didn't find a database entry for "doseequivalentbanana"
 Warning--I didn't find a database entry for "yoo_NED"
 Warning--I didn't find a database entry for "collier_1994"
+Warning--I didn't find a database entry for "bloch"
+Warning--I didn't find a database entry for "bricard_phd_1995"
+Warning--I didn't find a database entry for "govan_1988"
+Warning--I didn't find a database entry for "kossolapov"
+Warning--I didn't find a database entry for "richenderfer"
+Warning--I didn't find a database entry for "demarly"
+Warning--I didn't find a database entry for "bloch_bruder"
 Warning--I didn't find a database entry for "krepper_2008"
 Warning--I didn't find a database entry for "nukiyama"
 Warning--I didn't find a database entry for "groenveld"
@@ -62,49 +94,49 @@ Warning--I didn't find a database entry for "kutateladze"
 Warning--I didn't find a database entry for "zuber_1958"
 Warning--I didn't find a database entry for "lee_mudawar"
 Warning--I didn't find a database entry for "weisman_pei"
-Biblatex version: 3.13
+Biblatex version: 3.18
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'str_pool' (item size: 1) to 325000 items.
 You've used 150 entries,
-            6365 wiz_defined-function locations,
-            2696 strings with 246890 characters,
-and the built_in function-call counts, 1626610 in all, are:
-= -- 78919
-> -- 128423
-< -- 10885
-+ -- 123167
-- -- 104976
-* -- 92934
-:= -- 218104
+            6399 wiz_defined-function locations,
+            2713 strings with 247050 characters,
+and the built_in function-call counts, 1895181 in all, are:
+= -- 110408
+> -- 128657
+< -- 10967
++ -- 135681
+- -- 105128
+* -- 110957
+:= -- 255943
 add.period$ -- 0
 call.type$ -- 150
 change.case$ -- 149
 chr.to.int$ -- 9200
 cite$ -- 298
-duplicate$ -- 133573
-empty$ -- 112113
-format.name$ -- 10972
-if$ -- 252513
+duplicate$ -- 161639
+empty$ -- 131158
+format.name$ -- 11048
+if$ -- 302071
 int.to.chr$ -- 0
 int.to.str$ -- 375
 missing$ -- 0
 newline$ -- 7396
-num.names$ -- 7353
-pop$ -- 50674
+num.names$ -- 7359
+pop$ -- 52229
 preamble$ -- 1
-purify$ -- 3410
+purify$ -- 3416
 quote$ -- 0
-skip$ -- 41276
+skip$ -- 41483
 stack$ -- 0
-substring$ -- 158715
-swap$ -- 39394
-text.length$ -- 8338
+substring$ -- 225168
+swap$ -- 39476
+text.length$ -- 8414
 text.prefix$ -- 165
 top$ -- 1
 type$ -- 5012
 warning$ -- 0
-while$ -- 20877
+while$ -- 23985
 width$ -- 0
 write$ -- 7247
-(There were 17 warnings)
+(There were 24 warnings)
