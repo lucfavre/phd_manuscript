@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.18)  10 DEC 2022 16:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.18)  11 DEC 2022 07:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -167,9 +167,46 @@ Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
 Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
-(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/was\gensymb.sty
-Package: gensymb 2003/07/02 v1.0 (WaS)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/siunits\SIunits.sty
+Package: SIunits 2007/12/02 v1.36 Support for the International System of units
+ (MH)
+
+
+\@qskwidth=\skip53
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 46.
+\symgreek=\mathgroup7
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/siunits\SIunits.cfg)
+Option `Gray' provided!
+) (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
+f
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/pdfcolmk\pdfcolmk.sty
+Package: pdfcolmk 2019/11/24 v2.0 Color support for pdfTeX via marks
+)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex-dev/graphics\mathcolor
+.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+))
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
@@ -236,11 +273,7 @@ cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
-
-(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
-f
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
-))
+)
 \Gin@req@height=\dimen168
 \Gin@req@width=\dimen169
 )
@@ -304,26 +337,6 @@ File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
-Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
-
-(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 227.
-
-(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex-dev/graphics\mathcolor
-.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
-Package xcolor Info: Model `RGB' extended on input line 1369.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-)
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
 re.code.tex
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
@@ -546,6 +559,25 @@ kz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarydecorations.pathmorphing.code.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarydecorations.code.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+edecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen274
+\pgfdecoratedremainingdistance=\dimen275
+\pgfdecoratedinputsegmentcompleteddistance=\dimen276
+\pgfdecoratedinputsegmentremainingdistance=\dimen277
+\pgf@decorate@distancetomove=\dimen278
+\pgf@decorate@repeatstate=\count306
+\pgfdecorationsegmentamplitude=\dimen279
+\pgfdecorationsegmentlength=\dimen280
+)
+\tikz@lib@dec@box=\box65
+)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decora
+tions\pgflibrarydecorations.pathmorphing.code.tex))
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
 kz/libraries\tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
@@ -555,8 +587,8 @@ kz/libraries\tikzlibrarymath.code.tex
 kz/libraries\tikzlibraryfpu.code.tex
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
 raryfpu.code.tex))
-\tikz@math@for@depth=\count306
-\tikz@math@dimen=\dimen274
+\tikz@math@for@depth=\count307
+\tikz@math@dimen=\dimen281
 \tikz@math@toks=\toks39
 )
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty
@@ -571,9 +603,9 @@ e.code.tex
 \t@pgfplots@toka=\toks40
 \t@pgfplots@tokb=\toks41
 \t@pgfplots@tokc=\toks42
-\pgfplots@tmpa=\dimen275
-\c@pgfplots@coordindex=\count307
-\c@pgfplots@scanlineindex=\count308
+\pgfplots@tmpa=\dimen282
+\c@pgfplots@coordindex=\count308
+\c@pgfplots@scanlineindex=\count309
 
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplot
 ssysgeneric.code.tex))
@@ -589,13 +621,13 @@ re\pgfplotsliststructure.code.tex)
 re\pgfplotsliststructureext.code.tex)
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
 re\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count309
+\c@pgfplotsarray@tmp=\count310
 )
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
 re\pgfplotsmatrix.code.tex)
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pg
 fplotstableshared.code.tex
-\c@pgfplotstable@counta=\count310
+\c@pgfplotstable@counta=\count311
 \t@pgfplotstable@a=\toks43
 )
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructu
@@ -608,7 +640,7 @@ tsbinary.data.code.tex))
 tsutil.verb.code.tex)
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflib
 rarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count311
+\c@pgfplotslibrarysurf@no=\count312
 
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibr
 arypgfplots.surfshading.pgfsys-pdftex.def)))
@@ -636,25 +668,6 @@ rkers.code.tex)
 ks.code.tex)
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.pa
 ths.code.tex)
-(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibrarydecorations.code.tex
-(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
-edecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen276
-\pgfdecoratedremainingdistance=\dimen277
-\pgfdecoratedinputsegmentcompleteddistance=\dimen278
-\pgfdecoratedinputsegmentremainingdistance=\dimen279
-\pgf@decorate@distancetomove=\dimen280
-\pgf@decorate@repeatstate=\count312
-\pgfdecorationsegmentamplitude=\dimen281
-\pgfdecorationsegmentlength=\dimen282
-)
-\tikz@lib@dec@box=\box65
-)
-(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
-kz/libraries\tikzlibrarydecorations.pathmorphing.code.tex
-(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decora
-tions\pgflibrarydecorations.pathmorphing.code.tex))
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
 kz/libraries\tikzlibrarydecorations.pathreplacing.code.tex
 (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decora
@@ -691,45 +704,63 @@ File: l3backend-pdftex.def 2022-08-05 L3 backend support: PDF output (pdfTeX)
 ) (draw.aux)
 \openout1 = `draw.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
-LaTeX Font Info:    ... okay on input line 57.
-LaTeX Info: Redefining \degres on input line 57.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Info: Redefining \degres on input line 64.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 57.
+(french.ldf)             reported on input line 64.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 57.
-LaTeX Info: Redefining \up on input line 57.
+(french.ldf)             reported on input line 64.
+LaTeX Info: Redefining \up on input line 64.
 
 
 Package french.ldf Warning: OT1 encoding should not be used for French.
 (french.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(french.ldf)                of your document; reported on input line 57.
+(french.ldf)                of your document; reported on input line 64.
 
-LaTeX Info: Redefining \celsius on input line 57.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 57.
+Option `Gray' provided! 
+ Command \Gray defined by SIunits package!
 
 
-Package gensymb Warning: Not defining \perthousand.
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
+kii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count316
+\scratchdimen=\dimen289
+\scratchbox=\box67
+\nofMPsegments=\count317
+\nofMParguments=\count318
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count319
+\MPscratchDim=\dimen290
+\MPnumerator=\count320
+\makeMPintoPDFobject=\count321
+\everyMPtoPDFconversion=\toks45
+)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
+base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
 
-LaTeX Info: Redefining \ohm on input line 57.
-Package gensymb Info: Using \Omega for \ohm on input line 57.
-
-Package gensymb Warning: Not defining \micro.
-
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
+cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -765,36 +796,10 @@ Package gensymb Warning: Not defining \micro.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
-kii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count316
-\scratchdimen=\dimen289
-\scratchbox=\box67
-\nofMPsegments=\count317
-\nofMParguments=\count318
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count319
-\MPscratchDim=\dimen290
-\MPnumerator=\count320
-\makeMPintoPDFobject=\count321
-\everyMPtoPDFconversion=\toks45
-)
-(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
-cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-))
-
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 57.
+ on input line 64.
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -819,34 +824,45 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 [4 <./shi_scheme.pdf>] [5 <./wettability.pdf>]
 Missing character: There is no ; in font nullfont!
-[6 <./bub_life_VFB.pdf> <./FIP.pdf> <./static_coal.pdf>]
-Missing character: There is no ; in font nullfont!
-[7 <./static_suppression.pdf> <./deb_prom.pdf>] [8 <./agate_mes_ax.pdf>]
-(draw.aux) ) 
+[6 <./bub_life_VFB.pdf> <./FIP.pdf> <./static_coal.pdf>] [7 <./static_suppressi
+on.pdf> <./deb_prom.pdf>]
+Overfull \hbox (3.04633pt too wide) in paragraph at lines 2283--2283
+[][]\OT1/cmr/m/n/9 Reactor 
+ []
+
+
+Overfull \hbox (170.48514pt too wide) in paragraph at lines 2283--2284
+[][] 
+ []
+
+[8 <./agate_mes_ax.pdf> <./subchannel.pdf>] [9] (draw.aux) ) 
 Here is how much of TeX's memory you used:
- 27438 strings out of 477954
- 695079 string characters out of 2825277
- 1139521 words of memory out of 3000000
- 45807 multiletter control sequences out of 15000+600000
- 472769 words of font info for 40 fonts, out of 8000000 for 9000
+ 28210 strings out of 477954
+ 706816 string characters out of 2825277
+ 1147858 words of memory out of 3000000
+ 46549 multiletter control sequences out of 15000+600000
+ 478305 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,12n,104p,723b,2193s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmbsy10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmbx7.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Luczer/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Luczer/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Luczer/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/User
-s/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmi
-b7.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr7.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr8.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on draw.pdf (8 pages, 237498 bytes).
+<C:/Users/Luczer/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/User
+s/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb
+><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmmi10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmmi7.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/Luczer/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C:/Users/Luczer/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lucze
+r/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Use
+rs/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb
+><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmr9.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmsy6.pfb>
+Output written on draw.pdf (9 pages, 277388 bytes).
 PDF statistics:
- 267 PDF objects out of 1000 (max. 8388607)
+ 294 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 75 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 92 words of extra memory for PDF output out of 10000 (max. 10000000)
 
