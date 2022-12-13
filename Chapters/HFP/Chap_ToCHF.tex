@@ -56,11 +56,62 @@ Other approaches are based on different physical mechanism. For instance, Lee \&
 
 \npar
 
-On the other hand, Weisman \& Pei \cite{weisman_pei} 
+On the other hand, Weisman \& Pei \cite{weisman_pei} proposed that the boiling crisis was due to lack of turbulent transport of the bubbles from the wall towards the bulk, resulting in a bubble layer close to the wall that will trigger coalescence near the heater and isolating it from the liquid phase. Assuming bubbles were of ellipsoidal shapes at CHF, they considered that boiling crisis occurred when the maximum packing density was reached, \ie having a wall void fraction:
+
+\begin{equation}
+\alpha_{CHF} = 0.82
+\end{equation} 
+
+Although this criterion is very suitable for CMFD applications \cite{mimouni_chf, cmfd_chf}, the critical void fraction close to the wall can vary in large ranges (down to 30\% at high subcooling) according to experimental observations \cite{bruder}.
+
+
+\section{Recent Approaches and Advances for CHF Prediction}
 
 
 
-\section{Recent Approaches}
+The question of the boiling crisis occurrence and CHF value is still a topic of active research nowadays. Recently, new experimental observations have allowed the access to wall-related boiling measurements \cite{kossolapov_experimental_2021} \cite{richenderfer_experimental_2018} \cite{bloch_study_2016} and permitted to better understand the phenomenology behind the trigger of the boiling crisis.
+
+\npar
+
+\subsection{Dry Patch Formation}
+
+As detailed by Kossolapov \cite{kossolapov_experimental_2021}, a significant number of different experiments studying the wall boiling at CHF have demonstrated that the occurrence of the boiling crisis was similar at various pressures and associated to the formation of an irreversibly growing dry patch \cite{AAA} (FIGURES?). Such observations are leveraging elements of mechanistic behavior of bubbles right before the CHF. First attempts of modeling this phenomenon were proposed by Han \& No \cite{han_no} prior to the aforementioned experimental observations. Based on a random distribution of the bubbles on the heater surface (similar to the Poisson distributions discussed in Section \ref{sec:site_interactions}), they proposed that a dry patch is created when a bubble crowding hindering rewetting is reached, which was translated as:
+
+\begin{equation}
+\phi_{w,CHF} = \phi_{1b}N_{sit,a} \parth{1 - \mathcal{P}\parth{N \geq N_{c}}}
+\end{equation}
+where $N_{c}=5$ and $\mathcal{P}$ is the probability to find $N$ bubbles in the area of influence of a single bubble.
 
 
-Bibliography examples of CHF detection using HFP models !
+This model was recently re-used by \cite{papier_ICONE_Stephane}.
+
+
+\subsection{Model of Demarly \etal : Stability of the Heat Flux Partitioning}
+
+In the framework of Heat Flux Partitioning modeling, Demarly proposed a modeling of the wall area in direct contact with vapor (similar to $A_{c,V}$ in Section \ref{sec:hfp_new}). Over the direct area beneath single bubbles, Demarly accounts for bubble interaction and models the total wall dry are $S_{dry}$ as:
+
+\begin{equation}
+S_{dry} = ft_{g,d} N_{sit,a} \pi \parth{\zeta \underbrace{ e^{f t_{g,d}N_{sit,a} \pi R_{d}^{2} }_{\text{Bubble interaction}} } \sin{\theta} R_{d} }
+\end{equation} 
+where $\zeta=0.15$ based on data-fitting of Richenderfer \cite{richenderfer_experimental_2018} experiments.
+
+The total heat flux is finally written as:
+
+\begin{equation}
+\phi_{w}=\parth{1-S_{dry}}\parth{\phi_{c,L} + \phi_{e} + \phi_{q}} + S_{dry} \phi_{dry}
+\end{equation}
+where $\phi_{dry}$ is the heat flux through the dry area, which is nearly negligible versus the other heat fluxes.
+
+\npar
+
+This modeling allows to impose a decrease of the total heat flux by gradually enhancing the dry area, thus displaying a maximum value for $\phi_{w}$ when covering a whole boiling curve (Figure \ref{fig:demarly_chf}.
+
+
+\subsection{Model of Zhang \etal : Bubble Interaction and Footprint distribution}
+
+
+
+
+\section{Simple test of the Zhang Criterion}
+
+

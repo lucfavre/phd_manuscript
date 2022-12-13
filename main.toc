@@ -200,39 +200,43 @@
 \contentsline {section}{\numberline {9.1}Previous Modeling of the Boiling Crisis}{159}{section.9.1}%
 \contentsline {subsection}{\numberline {9.1.1}Empirical Approaches}{159}{subsection.9.1.1}%
 \contentsline {subsection}{\numberline {9.1.2}Physical Phenomenology Approaches}{159}{subsection.9.1.2}%
-\contentsline {section}{\numberline {9.2}Recent Approaches}{160}{section.9.2}%
-\contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Towards the Industrial Geometry}}{161}{part.3}%
-\contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Tube With Mixing Vanes : DEBORA-Promoteur and AGATE-Promoteur Experiments}}{162}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Introduction}{162}{section.10.1}%
-\contentsline {section}{\numberline {10.2}DEBORA-Promoteur}{162}{section.10.2}%
-\contentsline {subsection}{\numberline {10.2.1}Test Section and Experimental Campaigns}{162}{subsection.10.2.1}%
-\contentsline {section}{\numberline {10.3}AGATE-Promoteur}{164}{section.10.3}%
-\contentsline {section}{\numberline {10.4}Analysis of the DEBORA-Promoteur Experimental Measurements}{165}{section.10.4}%
-\contentsline {subsubsection}{\numberline {10.4.0.1}48G3P26W23 cases}{165}{subsubsection.10.4.0.1}%
-\contentsline {subsubsection}{\numberline {10.4.0.2}52G3P26W23 and W27 cases}{166}{subsubsection.10.4.0.2}%
-\contentsline {subsection}{\numberline {10.4.1}Estimation of the Bubble Diameter}{167}{subsection.10.4.1}%
-\contentsline {section}{\numberline {10.5}Conclusions}{169}{section.10.5}%
-\contentsline {chapter}{\numberline {11}\spacedlowsmallcaps {NEPTUNE\_CFD simulations of DEBORA-Promoteur and AGATE-Promoteur Cases}}{170}{chapter.11}%
-\contentsline {section}{\numberline {11.1}NEPTUNE\_CFD simulations of DEBORA-Promoteur cases}{170}{section.11.1}%
-\contentsline {subsection}{\numberline {11.1.1}Simulation Setup}{170}{subsection.11.1.1}%
-\contentsline {subsection}{\numberline {11.1.2}Results}{171}{subsection.11.1.2}%
-\contentsline {section}{\numberline {11.2}NEPTUNE\_CFD simulations of AGATE-Promoteur cases}{173}{section.11.2}%
-\contentsline {subsection}{\numberline {11.2.1}Simulation Setup}{173}{subsection.11.2.1}%
-\contentsline {subsection}{\numberline {11.2.2}Results}{174}{subsection.11.2.2}%
-\contentsline {subsubsection}{\numberline {11.2.2.1}$0.8\ D_{h}$ After the Mixing Vanes}{174}{subsubsection.11.2.2.1}%
-\contentsline {subsubsection}{\numberline {11.2.2.2}$10\ D_{h}$ After the Mixing Vanes}{175}{subsubsection.11.2.2.2}%
-\contentsline {subsubsection}{\numberline {11.2.2.3}$23\ D_{h}$ After the Mixing Vanes}{175}{subsubsection.11.2.2.3}%
-\contentsline {subsubsection}{\numberline {11.2.2.4}Interpretation Regarding the DEBORA-Promoteur Simulations}{176}{subsubsection.11.2.2.4}%
-\contentsline {section}{\numberline {11.3}Conclusions}{177}{section.11.3}%
-\contentsline {chapter}{\numberline {12}\spacedlowsmallcaps {Conclusion}}{178}{chapter.12}%
-\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Appendix}}{179}{part.4}%
-\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{180}{appendix.A}%
-\contentsline {subsection}{\numberline {A.0.1}Case 1 : $\delta _{b}$ is constant}{182}{subsection.A.0.1}%
-\contentsline {subsection}{\numberline {A.0.2}Case 2 : $\delta _{b}=\sqrt {\eta _{l}t}$}{182}{subsection.A.0.2}%
-\contentsline {subsection}{\numberline {A.0.3}Case 3 : $\delta _{b}=CR$}{183}{subsection.A.0.3}%
-\contentsline {chapter}{\numberline {B}\spacedlowsmallcaps {Details on the Bubble Force Balance}}{184}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Appendix Section Test}{185}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Another Appendix Section Test}{185}{section.B.2}%
+\contentsline {section}{\numberline {9.2}Recent Approaches and Advances for CHF Prediction}{160}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Dry Patch Formation}{160}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Model of Demarly \textit {et al.}\xspace : Stability of the Heat Flux Partitioning}{160}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}Model of Zhang \textit {et al.}\xspace : Bubble Interaction and Footprint distribution}{161}{subsection.9.2.3}%
+\contentsline {section}{\numberline {9.3}Simple test of the Zhang Criterion}{161}{section.9.3}%
+\contentsline {part}{\numberline {iii}\spacedlowsmallcaps {Towards the Industrial Geometry}}{162}{part.3}%
+\contentsline {chapter}{\numberline {10}\spacedlowsmallcaps {Tube With Mixing Vanes : DEBORA-Promoteur and AGATE-Promoteur Experiments}}{163}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Introduction}{163}{section.10.1}%
+\contentsline {section}{\numberline {10.2}DEBORA-Promoteur}{163}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Test Section and Experimental Campaigns}{163}{subsection.10.2.1}%
+\contentsline {section}{\numberline {10.3}AGATE-Promoteur}{165}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Analysis of the DEBORA-Promoteur Experimental Measurements}{166}{section.10.4}%
+\contentsline {subsubsection}{\numberline {10.4.0.1}48G3P26W23 cases}{166}{subsubsection.10.4.0.1}%
+\contentsline {subsubsection}{\numberline {10.4.0.2}52G3P26W23 and W27 cases}{167}{subsubsection.10.4.0.2}%
+\contentsline {subsection}{\numberline {10.4.1}Estimation of the Bubble Diameter}{168}{subsection.10.4.1}%
+\contentsline {section}{\numberline {10.5}Conclusions}{170}{section.10.5}%
+\contentsline {chapter}{\numberline {11}\spacedlowsmallcaps {NEPTUNE\_CFD simulations of DEBORA-Promoteur and AGATE-Promoteur Cases}}{171}{chapter.11}%
+\contentsline {section}{\numberline {11.1}NEPTUNE\_CFD simulations of DEBORA-Promoteur cases}{171}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}Simulation Setup}{171}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.2}Results}{172}{subsection.11.1.2}%
+\contentsline {section}{\numberline {11.2}NEPTUNE\_CFD simulations of AGATE-Promoteur cases}{174}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Simulation Setup}{174}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Results}{175}{subsection.11.2.2}%
+\contentsline {subsubsection}{\numberline {11.2.2.1}$0.8\ D_{h}$ After the Mixing Vanes}{175}{subsubsection.11.2.2.1}%
+\contentsline {subsubsection}{\numberline {11.2.2.2}$10\ D_{h}$ After the Mixing Vanes}{176}{subsubsection.11.2.2.2}%
+\contentsline {subsubsection}{\numberline {11.2.2.3}$23\ D_{h}$ After the Mixing Vanes}{176}{subsubsection.11.2.2.3}%
+\contentsline {subsubsection}{\numberline {11.2.2.4}Interpretation Regarding the DEBORA-Promoteur Simulations}{177}{subsubsection.11.2.2.4}%
+\contentsline {section}{\numberline {11.3}Conclusions}{178}{section.11.3}%
+\contentsline {chapter}{\numberline {12}\spacedlowsmallcaps {Conclusion}}{179}{chapter.12}%
+\contentsline {part}{\numberline {iv}\spacedlowsmallcaps {Appendix}}{180}{part.4}%
+\contentsline {chapter}{\numberline {A}\spacedlowsmallcaps {Details on the Bubble Growth Calculation}}{181}{appendix.A}%
+\contentsline {subsection}{\numberline {A.0.1}Case 1 : $\delta _{b}$ is constant}{183}{subsection.A.0.1}%
+\contentsline {subsection}{\numberline {A.0.2}Case 2 : $\delta _{b}=\sqrt {\eta _{l}t}$}{183}{subsection.A.0.2}%
+\contentsline {subsection}{\numberline {A.0.3}Case 3 : $\delta _{b}=CR$}{184}{subsection.A.0.3}%
+\contentsline {chapter}{\numberline {B}\spacedlowsmallcaps {Details on the Bubble Force Balance}}{185}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Appendix Section Test}{186}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Another Appendix Section Test}{186}{section.B.2}%
 \vspace {\beforebibskip }
-\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{187}{dummy.6}%
+\contentsline {chapter}{\spacedlowsmallcaps {Bibliography}}{188}{dummy.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
