@@ -216,6 +216,54 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{baglietto_boiling_2019}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BE}{%
+         family={Baglietto},
+         familyi={B\bibinitperiod},
+         given={Emilio},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=DE}{%
+         family={Demarly},
+         familyi={D\bibinitperiod},
+         given={Etienne},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Kommajosyula},
+         familyi={K\bibinitperiod},
+         given={Ravikishore},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BEDEKR1}
+    \strng{fullhash}{BEDEKR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \verb{doi}
+    \verb 10.1063/1.5080724
+    \endverb
+    \field{issn}{0003-6951}
+    \field{note}{Publisher: American Institute of Physics}
+    \field{number}{10}
+    \field{pages}{103701}
+    \field{title}{Boiling crisis as the stability limit to wall heat
+  partitioning}
+    \verb{url}
+    \verb https://aip.scitation.org/doi/10.1063/1.5080724
+    \endverb
+    \field{volume}{114}
+    \field{journaltitle}{Applied Physics Letters}
+    \field{month}{03}
+    \field{year}{2019}
+    \field{urlday}{14}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{basu_wall_2005}{article}{}
     \name{author}{3}{}{%
       {{hash=BN}{%
@@ -623,7 +671,7 @@
     \list{language}{1}{%
       {en}%
     }
-    \keyw{CHF, Flow boiling, Holographic interferometry, Mechanistic models,
+    \keyw{Flow boiling, CHF, Holographic interferometry, Mechanistic models,
   Optical probes, PIV}
     \strng{namehash}{BG+1}
     \strng{fullhash}{BGMWSMST1}
@@ -700,7 +748,7 @@
     \list{language}{1}{%
       {en}%
     }
-    \keyw{CHF/DNB, Experimental validation, Flow boiling, Mechanistic modeling}
+    \keyw{Flow boiling, CHF/DNB, Experimental validation, Mechanistic modeling}
     \strng{namehash}{BGBMST1}
     \strng{fullhash}{BGBMST1}
     \field{labelnamesource}{author}
@@ -888,7 +936,7 @@
          giveni={P\bibinitperiod},
       }}%
     }
-    \keyw{Ébullition -- Modèles mathématiques, Transfert de chaleur}
+    \keyw{Transfert de chaleur, Ébullition -- Modèles mathématiques}
     \strng{namehash}{BP1}
     \strng{fullhash}{BP1}
     \field{labelnamesource}{author}
@@ -938,6 +986,51 @@
     \field{month}{01}
     \field{year}{1995}
     \field{urlday}{11}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{bruder_empirical_2018}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BM}{%
+         family={Bruder},
+         familyi={B\bibinitperiod},
+         given={Moritz},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Sattelmayer},
+         familyi={S\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{BMST1}
+    \strng{fullhash}{BMST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Heat and Mass Transfer Research Journal%
+    }
+    \field{title}{An {Empirical} {Correlation} for the {Void} {Fraction} at
+  {Critical} {Heat} {Flux} {Close} to the {Wall} for {Subcooled} {Flow}
+  {Boiling} of a {Low} {Boiling} {Refrigerant}}
+    \verb{url}
+    \verb https://www.cansrg.com/journals/hmtrj/2018/2/Bruder-and-Sattelmayer/i
+    \verb ndex.php
+    \endverb
+    \verb{file}
+    \verb Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\9QHTI2JE\\Bruder e
+    \verb t Sattelmayer - 2018 - An Empirical Correlation for the Void Fraction
+    \verb  at .pdf:application/pdf
+    \endverb
+    \field{year}{2018}
+    \field{urlday}{14}
     \field{urlmonth}{12}
     \field{urlyear}{2022}
   \endentry
@@ -1115,8 +1208,6 @@
     \verb 10.1080/18811248.2011.9711780
     \endverb
     \field{issn}{0022-3131}
-    \field{note}{Publisher: Taylor \& Francis \_eprint:
-  https://www.tandfonline.com/doi/pdf/10.1080/18811248.2011.9711780}
     \field{number}{6}
     \field{pages}{936\bibrangedash 949}
     \field{title}{Bubble {Lift}-off {Diameter} and {Nucleation} {Frequency} in
@@ -1646,8 +1737,6 @@
     \verb 10.1002/aic.690130434
     \endverb
     \field{issn}{1547-5905}
-    \field{note}{\_eprint:
-  https://onlinelibrary.wiley.com/doi/pdf/10.1002/aic.690130434}
     \field{number}{4}
     \field{pages}{779\bibrangedash 783}
     \field{title}{Bubble frequencies and departure volumes at subatmospheric
@@ -2222,7 +2311,6 @@
   Militaires de l\&\#39;Énergie Atomique).%
     }
     \field{isbn}{978-2-7598-0308-8}
-    \field{note}{Google-Books-ID: v8vL04U7Zt4C}
     \field{title}{Thermohydraulique des réacteurs}
     \field{month}{12}
     \field{year}{2012}
@@ -2457,6 +2545,71 @@
     \field{year}{1985}
     \field{urlday}{12}
     \field{urlmonth}{11}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{dong_numerical_2022}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=DS}{%
+         family={Dong},
+         familyi={D\bibinitperiod},
+         given={Shichang},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GS}{%
+         family={Gong},
+         familyi={G\bibinitperiod},
+         given={Shengjie},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{1}{%
+      {American Society of Mechanical Engineers Digital Collection}%
+    }
+    \strng{namehash}{DSGS1}
+    \strng{fullhash}{DSGS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{abstract}{%
+    Abstract. Cooling systems are wildly used in nuclear power plant equipment
+  and safety systems, such as the external reactor vessel cooling (ERVC)
+  system. It is pretty important to understand the heat transfer
+  characteristics and critical heat flux (CHF) to ensure their efficient and
+  safe operation. Challenges till remain in accurately predicting the subcooled
+  flow boiling curve especially in the low pressure and low mass flux
+  conditions due to its complex boiling process. The present study introduces a
+  numerical model to evaluate subcooled flow boiling heat flux. The proposed
+  model can estimate the transition from forced convection, isolated bubble
+  nucleated boiling to fully developed boiling region by taking the growth and
+  interaction of bubbles into consideration. And the flow boiling limit is
+  numerical described with the probability analysis of dry spots. The results
+  from the new model are validated with experimental data of vertical subcooled
+  flow boiling with single-side heating under low pressure and low mass flux
+  conditions. The predicted boiling curve are in well agreement with
+  experimental results corresponding to different thermal-hydraulic parameters,
+  such as pressure (P = 100–360 kPa), mass flux (G = 50–300 kg/m2s), inlet
+  subcooling (ΔTin = 0–15 K) and wall wettability (hydrophilic and
+  hydrophobic), and the prediction error of CHF is within ± 15\%.%
+    }
+    \verb{doi}
+    \verb 10.1115/ICONE29-93755
+    \endverb
+    \field{title}{Numerical {Model} for {Subcooled} {Flow} {Boiling} {Heat}
+  {Transfer} and {Critical} {Heat} {Flux} {Based} on {Probability} of {Bubble}
+  {Interaction}}
+    \verb{url}
+    \verb https://asmedigitalcollection.asme.org/ICONE/proceedings-abstract/ICO
+    \verb NE29/86427/1151490
+    \endverb
+    \field{month}{11}
+    \field{year}{2022}
+    \field{urlday}{14}
+    \field{urlmonth}{12}
     \field{urlyear}{2022}
   \endentry
 
@@ -3250,8 +3403,6 @@
     \verb 10.1080/00295450.2019.1642684
     \endverb
     \field{issn}{0029-5450}
-    \field{note}{Publisher: Taylor \& Francis \_eprint:
-  https://doi.org/10.1080/00295450.2019.1642684}
     \field{number}{2}
     \field{pages}{255\bibrangedash 265}
     \field{title}{Wall-{Modeled} {Large} {Eddy} {Simulation} of the {Flow}
@@ -3723,6 +3874,112 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{groeneveld_2006_2007}{article}{}
+    \name{author}{8}{}{%
+      {{hash=GDC}{%
+         family={Groeneveld},
+         familyi={G\bibinitperiod},
+         given={D.\bibnamedelima C.},
+         giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=SJQ}{%
+         family={Shan},
+         familyi={S\bibinitperiod},
+         given={J.\bibnamedelima Q.},
+         giveni={J\bibinitperiod\bibinitdelim Q\bibinitperiod},
+      }}%
+      {{hash=VAZ}{%
+         family={Vasić},
+         familyi={V\bibinitperiod},
+         given={A.\bibnamedelima Z.},
+         giveni={A\bibinitperiod\bibinitdelim Z\bibinitperiod},
+      }}%
+      {{hash=LLKH}{%
+         family={Leung},
+         familyi={L\bibinitperiod},
+         given={L.\bibnamedelima K.\bibnamedelima H.},
+         giveni={L\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim
+  H\bibinitperiod},
+      }}%
+      {{hash=DA}{%
+         family={Durmayaz},
+         familyi={D\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=YJ}{%
+         family={Yang},
+         familyi={Y\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=CSC}{%
+         family={Cheng},
+         familyi={C\bibinitperiod},
+         given={S.\bibnamedelima C.},
+         giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={Tanase},
+         familyi={T\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{GDC+1}
+    \strng{fullhash}{GDCSJQVAZLLKHDAYJCSCTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    CHF look-up tables are used widely for the prediction of the critical heat
+  flux (CHF). The CHF look-up table is basically a normalized data bank for a
+  vertical 8mm water-cooled tube. The 2006 CHF look-up table is based on a
+  database containing more than 30,000 data points and provides CHF values at
+  24 pressures, 20 mass fluxes, and 23 qualities, covering the full range of
+  conditions of practical interest. In addition, the 2006 CHF look-up table
+  addresses several concerns with respect to previous CHF look-up tables raised
+  in the literature. The major improvements of the 2006 CHF look-up table
+  are:•An enhanced quality of the database (improved screening procedures,
+  removal of clearly identified outliers and duplicate data).•An increased
+  number of data in the database (an addition of 33 recent data sets).•A
+  significantly improved prediction of CHF in the subcooled region and the
+  limiting quality region.•An increased number of pressure and mass flux
+  intervals (thus increasing the CHF entries by 20\% compared to the 1995 CHF
+  look-up table).•An improved smoothness of the look-up table (the smoothness
+  was quantified by a smoothness index). A discussion of the impact of these
+  changes on the prediction accuracy and table smoothness is presented. The
+  2006 CHF look-up table is characterized by a significant improvement in
+  accuracy and smoothness.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.nucengdes.2007.02.014
+    \endverb
+    \field{issn}{0029-5493}
+    \field{number}{15}
+    \field{pages}{1909\bibrangedash 1922}
+    \field{series}{{NURETH}-11}
+    \field{title}{The 2006 {CHF} look-up table}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0029549307002002
+    \endverb
+    \field{volume}{237}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\MZ3E4AC8\
+    \verb \S0029549307002002.html:text/html
+    \endverb
+    \field{journaltitle}{Nuclear Engineering and Design}
+    \field{month}{09}
+    \field{year}{2007}
+    \field{urlday}{14}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{guan_bubble_2015}{article}{}
     \name{author}{4}{}{%
       {{hash=GP}{%
@@ -3967,8 +4224,6 @@
     \verb 10.13182/NSE05-98
     \endverb
     \field{issn}{0029-5639}
-    \field{note}{Publisher: Taylor \& Francis \_eprint:
-  https://doi.org/10.13182/NSE05-98}
     \field{number}{3}
     \field{pages}{281\bibrangedash 324}
     \field{shorttitle}{{NEPTUNE}}
@@ -4211,6 +4466,65 @@
     \field{year}{1951}
     \field{urlday}{06}
     \field{urlmonth}{11}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{ha_dry-spot_1998}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HSJ}{%
+         family={Ha},
+         familyi={H\bibinitperiod},
+         given={Sang\bibnamedelima Jun},
+         giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=NHC}{%
+         family={No},
+         familyi={N\bibinitperiod},
+         given={Hee\bibnamedelima Cheo},
+         giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{HSJNHC1}
+    \strng{fullhash}{HSJNHC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    A new dry-spot model for high heat flux nucleate boiling region and
+  critical heat flux (CHF) is proposed. The new concept of dry area formation
+  based on Poisson distribution of active nucleation sites and the critical
+  active site number is introduced. It is shown that CHF can be determined
+  without any correction factor based on information on the boiling parameters
+  such as active site density and bubble diameter, etc., in the nucleate
+  boiling region. It turns out that the present model well explains the
+  mechanism on how parameters such as flow modes and surface wettability
+  influences CHF.%
+    }
+    \verb{doi}
+    \verb 10.1016/S0017-9310(97)00140-3
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{2}
+    \field{pages}{303\bibrangedash 311}
+    \field{title}{A dry-spot model of critical heat flux in pool and forced
+  convection boiling}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931097001403
+    \endverb
+    \field{volume}{41}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\3EZJAQRZ\
+    \verb \S0017931097001403.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{month}{01}
+    \field{year}{1998}
+    \field{urlday}{14}
+    \field{urlmonth}{12}
     \field{urlyear}{2022}
   \endentry
 
@@ -4618,8 +4932,6 @@
     \verb 10.1002/aic.690250513
     \endverb
     \field{issn}{1547-5905}
-    \field{note}{\_eprint:
-  https://onlinelibrary.wiley.com/doi/pdf/10.1002/aic.690250513}
     \field{number}{5}
     \field{pages}{843\bibrangedash 855}
     \field{title}{Drag coefficient and relative velocity in bubbly, droplet or
@@ -5461,6 +5773,38 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{kutateladze_transition_1948}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KSS}{%
+         family={Kutateladze},
+         familyi={K\bibinitperiod},
+         given={S.\bibnamedelima S.},
+         giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KSS1}
+    \strng{fullhash}{KSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{pages}{10\bibrangedash 12}
+    \field{title}{On the transition to film boiling under natural convection}
+    \verb{url}
+    \verb https://cir.nii.ac.jp/crid/1571698601178449536
+    \endverb
+    \field{volume}{3}
+    \verb{file}
+    \verb Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\8FLLYZVF\\1571698601178
+    \verb 449536.html:text/html
+    \endverb
+    \field{journaltitle}{Kotloturbostroenie}
+    \field{year}{1948}
+    \field{urlday}{14}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{lamb_hydrodynamics_1895}{book}{}
     \name{author}{1}{}{%
       {{hash=LSH}{%
@@ -5483,7 +5827,6 @@
     \field{sortinit}{L}
     \field{sortinithash}{L}
     \field{isbn}{978-1-4086-1332-0}
-    \field{note}{Google-Books-ID: d\_AoAAAAYAAJ}
     \field{title}{Hydrodynamics}
     \field{year}{1895}
   \endentry
@@ -5577,6 +5920,68 @@
     \field{month}{02}
     \field{year}{2017}
     \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{lee_mechanistic_1988}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LCH}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={C.\bibnamedelima H.},
+         giveni={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=MI}{%
+         family={Mudawwar},
+         familyi={M\bibinitperiod},
+         given={I.},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{boiling, CHF, dryout, prediction, sublayer}
+    \strng{namehash}{LCHMI1}
+    \strng{fullhash}{LCHMI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    The critical heat flux (CHF) mechanisms for subcooled flow boiling are
+  reviewed. Based on experimental observations reported by previous
+  investigators, the authors have developed a new mechanistic CHF model for
+  vertical subcooled flow at high pressure and high mass velocity. This model
+  is based on the dryout of a thin liquid layer (sublayer) beneath an
+  intermittent vapor blanket due to a Helmholtz instability at the
+  sublayer-vapor interface. The parametric trends of CHF have been explored
+  qualitatively and quantitatively with respect to variations in pressure, mass
+  velocity, subcooling and tube diameter. Comparisons of the model predictions
+  with experimental data for water show good agreement in the simulation of
+  subcooled flow conditions of pressurized water reactors (PWRs).%
+    }
+    \verb{doi}
+    \verb 10.1016/0301-9322(88)90070-5
+    \endverb
+    \field{issn}{0301-9322}
+    \field{number}{6}
+    \field{pages}{711\bibrangedash 728}
+    \field{title}{A mechanistic critical heat flux model for subcooled flow
+  boiling based on local bulk flow conditions}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0301932288900705
+    \endverb
+    \field{volume}{14}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\S7MYFTCZ\
+    \verb \0301932288900705.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Multiphase Flow}
+    \field{month}{11}
+    \field{year}{1988}
+    \field{urlday}{14}
     \field{urlmonth}{12}
     \field{urlyear}{2022}
   \endentry
@@ -6052,6 +6457,103 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{liu_critical_2021}{article}{}
+    \name{author}{7}{}{%
+      {{hash=LY}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Yang},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Wei},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Shan},
+         familyi={S\bibinitperiod},
+         given={Jianqiang},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=NDR}{%
+         family={Novog},
+         familyi={N\bibinitperiod},
+         given={David\bibnamedelima R.},
+         giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=ZB}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Bo},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Gui},
+         familyi={G\bibinitperiod},
+         given={Miao},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Guo},
+         familyi={G\bibinitperiod},
+         given={Junliang},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{Bubble behavior, CHF, CHF mechanism, Flow boiling, Mixing-vanes
+  spacer, R-134a, Rod bundle, Visualization}
+    \strng{namehash}{LY+1}
+    \strng{fullhash}{LYLWSJNDRZBGMGJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    In this study, a critical heat flux (CHF) experiment using R-134a as
+  working fluid was carried out in a vertical single rod geometry. A unique
+  feature of this experiment are high speed visualization studies obtained at a
+  viewing port located at the CHF location. The 9.5 mm O.D. heated rod was
+  placed in a 19 x19mm square channel to simulate the Pressurized Water
+  Reactors (PWRs) fuel lattice. Test conditions were selected and scaled to
+  cover a wide range of water conditions relevant to PWRs. The CHF database,
+  experimental trends and comparisons to existing CHF prediction methods are
+  presented. The visualization results of the flow boiling at the CHF location
+  and the CHF mechanism are discussed with a particular emphasis on the impact
+  of grid spacers on the boiling phenomena. Quantitative analysis of bubble
+  layer thickness is carried out, including the relationship between bubble
+  layer thickness and CHF.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.anucene.2021.108399
+    \endverb
+    \field{issn}{0306-4549}
+    \field{pages}{108399}
+    \field{shorttitle}{Critical heat flux measurement and visualization in
+  {R}-134a on a vertical single rod with and without mixing-vanes spacer}
+    \field{title}{Critical heat flux measurement and visualization in {R}-134a
+  on a vertical single rod with and without mixing-vanes spacer: {The}
+  characteristics and phenomenon of critical heat flux}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0306454921002759
+    \endverb
+    \field{volume}{160}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\F562LTDE\
+    \verb \S0306454921002759.html:text/html
+    \endverb
+    \field{journaltitle}{Annals of Nuclear Energy}
+    \field{month}{09}
+    \field{year}{2021}
+    \field{urlday}{14}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{liu_general_1991}{article}{}
     \name{author}{2}{}{%
       {{hash=LZ}{%
@@ -6225,7 +6727,6 @@
     \verb{doi}
     \verb 10.1146/annurev.fluid.32.1.659
     \endverb
-    \field{note}{\_eprint: https://doi.org/10.1146/annurev.fluid.32.1.659}
     \field{number}{1}
     \field{pages}{659\bibrangedash 708}
     \field{title}{The {Motion} of {High}-{Reynolds}-{Number} {Bubbles} in
@@ -6693,7 +7194,6 @@
     \field{labeltitlesource}{title}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \field{note}{Google-Books-ID: A5hRAAAAMAAJ}
     \field{title}{Theoretical {Hydrodynamics}}
     \field{year}{1938}
   \endentry
@@ -6970,6 +7470,233 @@
     }
     \field{type}{techreport}
     \field{year}{1973}
+  \endentry
+
+  \entry{nikolayev_boiling_1999}{article}{}
+    \name{author}{2}{}{%
+      {{hash=NVS}{%
+         family={Nikolayev},
+         familyi={N\bibinitperiod},
+         given={V.\bibnamedelima S.},
+         giveni={V\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=BDA}{%
+         family={Beysens},
+         familyi={B\bibinitperiod},
+         given={D.\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{NVSBDA1}
+    \strng{fullhash}{NVSBDA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \verb{doi}
+    \verb 10.1209/epl/i1999-00395-x
+    \endverb
+    \field{issn}{0295-5075}
+    \field{note}{Publisher: IOP Publishing}
+    \field{number}{3}
+    \field{pages}{345}
+    \field{title}{Boiling crisis and non-equilibrium drying transition}
+    \verb{url}
+    \verb https://iopscience.iop.org/article/10.1209/epl/i1999-00395-x/meta
+    \endverb
+    \field{volume}{47}
+    \verb{file}
+    \verb Version soumise:C\:\\Users\\Luczer\\Zotero\\storage\\CHX2W8RZ\\Nikola
+    \verb yev et Beysens - 1999 - Boiling crisis and non-equilibrium drying tra
+    \verb nsiti.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Europhysics Letters}
+    \field{month}{08}
+    \field{year}{1999}
+    \field{urlday}{14}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{nikolayev_experimental_2006}{article}{}
+    \name{author}{4}{}{%
+      {{hash=NVS}{%
+         family={Nikolayev},
+         familyi={N\bibinitperiod},
+         given={V.\bibnamedelima S.},
+         giveni={V\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Chatain},
+         familyi={C\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Garrabos},
+         familyi={G\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Beysens},
+         familyi={B\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NVS+1}
+    \strng{fullhash}{NVSCDGYBD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    Boiling crisis experiments are carried out in the vicinity of the
+  liquid-gas critical point of H2. A magnetic gravity compensation setup is
+  used to enable nucleate boiling at near critical pressure. The measurements
+  of the critical heat flux that defines the threshold for the boiling crisis
+  are carried out as a function of the distance from the critical point. The
+  obtained power law behavior and the boiling crisis dynamics agree with the
+  predictions of the vapor recoil mechanism and disagree with the classical
+  vapor column mechanism.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.97.184503
+    \endverb
+    \field{note}{Publisher: American Physical Society}
+    \field{number}{18}
+    \field{pages}{184503}
+    \field{title}{Experimental {Evidence} of the {Vapor} {Recoil} {Mechanism}
+  in the {Boiling} {Crisis}}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.97.184503
+    \endverb
+    \field{volume}{97}
+    \verb{file}
+    \verb APS Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\A7NZDGLT\\PhysRevLe
+    \verb tt.97.html:text/html;Version soumise:C\:\\Users\\Luczer\\Zotero\\stor
+    \verb age\\HTHW2KRM\\Nikolayev et al. - 2006 - Experimental Evidence of the
+    \verb  Vapor Recoil Mechanis.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Physical Review Letters}
+    \field{month}{11}
+    \field{year}{2006}
+    \field{urlday}{14}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{nikolayev_boiling_2015}{article}{}
+    \name{author}{9}{}{%
+      {{hash=NV}{%
+         family={Nikolayev},
+         familyi={N\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+      {{hash=GY}{%
+         family={Garrabos},
+         familyi={G\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LC}{%
+         family={Lecoutre},
+         familyi={L\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=CT}{%
+         family={Charignon},
+         familyi={C\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Hitz},
+         familyi={H\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CD}{%
+         family={Chatain},
+         familyi={C\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=GR}{%
+         family={Guillaument},
+         familyi={G\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Marre},
+         familyi={M\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=BD}{%
+         family={Beysens},
+         familyi={B\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{Boiling cisis, Bubble growth, CHF, Departure from nucleate boiling}
+    \strng{namehash}{NV+1}
+    \strng{fullhash}{NVGYLCCTHDCDGRMSBD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{abstract}{%
+    To understand the boiling crisis mechanism, one can take advantage of the
+  slowing down of boiling at high pressures, in the close vicinity of the
+  liquid-vapor critical point of the given fluid. To preserve conventional
+  bubble geometry, such experiments need to be carried out in low gravity. We
+  report here two kinds of saturated boiling experiments. First we discuss the
+  spatial experiments with SF 6 at 46 ∘C. Next we address two ground-based
+  experiments under magnetic gravity compensation with H 2 at 33 K. We compare
+  both kinds of experiments and show their complementarity. The dry spots under
+  vapor bubbles are visualized by using transparent heaters made with metal
+  oxide films. We evidence two regimes of the dry spots growth: the regime of
+  circular dry spots and the regime of chain coalescence of dry spots that
+  immediately precedes the heater dryout. A recent H 2 experiment is shown to
+  bridge the gap between the near-critical and low pressure boiling
+  experiments.%
+    }
+    \verb{doi}
+    \verb 10.1007/s12217-015-9447-8
+    \endverb
+    \field{issn}{1875-0494}
+    \field{number}{4}
+    \field{pages}{253\bibrangedash 260}
+    \field{shorttitle}{Boiling {Crisis} {Dynamics}}
+    \field{title}{Boiling {Crisis} {Dynamics}: {Low} {Gravity} {Experiments} at
+  {High} {Pressure}}
+    \verb{url}
+    \verb https://doi.org/10.1007/s12217-015-9447-8
+    \endverb
+    \field{volume}{27}
+    \verb{file}
+    \verb Version soumise:C\:\\Users\\Luczer\\Zotero\\storage\\3D7N9PDA\\Nikola
+    \verb yev et al. - 2015 - Boiling Crisis Dynamics Low Gravity Experiments a
+    \verb .pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Microgravity Science and Technology}
+    \field{month}{07}
+    \field{year}{2015}
+    \field{urlday}{14}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
   \endentry
 
   \entry{nouvelle_cuve_2010}{article}{}
@@ -7480,6 +8207,103 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{ravichandran_online_2019}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RM}{%
+         family={Ravichandran},
+         familyi={R\bibinitperiod},
+         given={Madhumitha},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bucci},
+         familyi={B\bibinitperiod},
+         given={Matteo},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{Boiling heat transfer, Infrared thermometry, Machine learning}
+    \strng{namehash}{RMBM1}
+    \strng{fullhash}{RMBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    We present a machine learning methodology that can be used online and
+  quasi-real-time (i.e., as fast as we can practically run an experiment) to
+  accelerate the analysis of infrared, boiling heat transfer investigations.
+  Precisely, we use feed-forward artificial neural networks with one layer of
+  hidden neurons to measure bubble growth time, bubble period, and nucleation
+  site density directly from the radiation recorded by the high-speed infrared
+  camera. We test and validate the methodology against saturated pool boiling
+  experiments with water, run on both plain and nanoengineered surfaces. Using
+  such a technique, we have measurements of the quantities above within a few
+  seconds from the moment the camera records the boiling surface radiation,
+  with a regression coefficient of 0.95 or higher compared to reference
+  measurements obtained by conventional, time-consuming, image processing
+  techniques.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.applthermaleng.2019.114357
+    \endverb
+    \field{issn}{1359-4311}
+    \field{pages}{114357}
+    \field{title}{Online, quasi-real-time analysis of high-resolution,
+  infrared, boiling heat transfer investigations using artificial neural
+  networks}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S1359431119318083
+    \endverb
+    \field{volume}{163}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\PAGQR2J6\
+    \verb \S1359431119318083.html:text/html
+    \endverb
+    \field{journaltitle}{Applied Thermal Engineering}
+    \field{month}{12}
+    \field{year}{2019}
+    \field{urlday}{14}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{ravichandran_infrared_2022}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=RM}{%
+         family={Ravichandran},
+         familyi={R\bibinitperiod},
+         given={Madhumitha},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bucci},
+         familyi={B\bibinitperiod},
+         given={Matteo},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RMBM1}
+    \strng{fullhash}{RMBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{Proc. {International} {Topical} {Meeting} on {Advances}
+  in {Thermal} {Hydraulics} 2022}
+    \field{isbn}{978-0-89448-781-1}
+    \field{title}{Infrared {Thermometry} and {Artifical} {Intelligence}
+  {Provide} {Real}-{Time} {Insights} into {Boiling} {Heat} {Transfer}}
+    \list{location}{1}{%
+      {Anaheim, CA, USA}%
+    }
+    \field{month}{06}
+    \field{year}{2022}
+  \endentry
+
   \entry{rayleigh_viii_1917}{article}{}
     \name{author}{1}{}{%
       {{hash=RL}{%
@@ -7499,8 +8323,6 @@
     \verb 10.1080/14786440808635681
     \endverb
     \field{issn}{1941-5982}
-    \field{note}{Publisher: Taylor \& Francis \_eprint:
-  https://doi.org/10.1080/14786440808635681}
     \field{number}{200}
     \field{pages}{94\bibrangedash 98}
     \field{title}{{VIII}. {On} the pressure developed in a liquid during the
@@ -9158,6 +9980,57 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{tong_prediction_1967}{article}{}
+    \name{author}{1}{}{%
+      {{hash=TLS}{%
+         family={Tong},
+         familyi={T\bibinitperiod},
+         given={L.\bibnamedelima S.},
+         giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{TLS1}
+    \strng{fullhash}{TLS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    An empirical correlation has been developed for predicting the ‘departure
+  from nucleate boiling’ (DNB) using data for an axially non-uniform heat
+  flux distribution. This correlation is recommended for use in predicting the
+  DNB flux in a reactor design. Procedures have been formulated for predicting
+  the local DNB flux and the DNB location for a non-uniform flux distribution.
+  The predicted results have been compared and agree closely with the existing
+  non-uniform flux DNB data.%
+    }
+    \verb{doi}
+    \verb 10.1016/S0022-3107(67)90054-8
+    \endverb
+    \field{issn}{0022-3107}
+    \field{number}{3}
+    \field{pages}{241\bibrangedash 248}
+    \field{title}{Prediction of departure from nucleate boiling for an axially
+  non-uniform heat flux distribution}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0022310767900548
+    \endverb
+    \field{volume}{21}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\UPMPZETX\
+    \verb \S0022310767900548.html:text/html
+    \endverb
+    \field{journaltitle}{Journal of Nuclear Energy}
+    \field{month}{01}
+    \field{year}{1967}
+    \field{urlday}{14}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{treshchev_number_1969}{incollection}{}
     \name{author}{1}{}{%
       {{hash=TGG}{%
@@ -9421,6 +10294,93 @@
     \field{year}{1995}
     \field{urlday}{19}
     \field{urlmonth}{09}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{weisman_prediction_1983}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WJ}{%
+         family={Weisman},
+         familyi={W\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=PBS}{%
+         family={Pei},
+         familyi={P\bibinitperiod},
+         given={B.\bibnamedelima S.},
+         giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{WJPBS1}
+    \strng{fullhash}{WJPBS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{abstract}{%
+    A theoretically based prediction of CHF has been developed for high
+  velocity flow in tubes. Turbulent interchange between the bubbly layer and
+  core regions is taken as the limiting mechanism. Good agreement was obtained
+  between predictions and experimental data for water flowing in uniformly and
+  nonuniformly heated tubes. The predictive procedure developed for water was
+  found to yield results in agreement with experiment for each of the four
+  other fluids examined. Résumé Un calcul théorique du CHF est développé
+  pour l’écoulement à grande vitesse dans les tubes. L’échange turbulent
+  entre la couche chargée de bulles et la région du coeur est pris comme
+  mécanisme limitatif. Un bon accord est obtenu entre les prévisions et les
+  données de l’expérience pour l’eau s’écoulant dans des tubes
+  chauffés uniformément ou non. La procédure développée pour l’eau
+  fournit aussi des résultats conformes à l’expérience pour chacun des
+  quatre autres fluides considérés. Zusammenfassung Eine theoretische Methode
+  zur Vorausberechnung der kritischen Wärmestromdichte für
+  Hochgeschwindigkeitsströmung in Rohren wurde entwickelt. Der turbulente
+  Austausch zwischen der Blasenschicht und dem Kern wurde als bestimmender
+  Mechanismus herangezogen. Gute übereinstimmung wurde zwischen
+  vorausberechneten und experimentellen Daten für Wasser in gleichmäßig und
+  ungleichmäß;ig beheizten Rohren festgestellt. Es zeigte sich, daß die für
+  Wasser entwickelte Berechnungsmelhode für vier andere ebenfalls untersuchte
+  Fluide Ergebnisse liefert, die in guter übereinstimmung mit den Experimenten
+  stehen. Аннотация Теоретически рассчитан
+  критический тепловой поток (КТП) для
+  высокоскоростного течения в трубах. В
+  качестве лимитирующего механизма принят
+  турбулентный обмен между пузырьковым
+  слоем и сердцевинной частью потока.
+  Получено хорошее соответствие между
+  расчетными и экспериментальными данными
+  для течения воды в трубах с однородным и
+  неоднородным нагревом. Обнаружено, что
+  методика расчета, примененная для воды,
+  дает результаты, согласующиеся с
+  экспериментальными данными, полученными
+  для каждой из четырех других
+  исследованных жидкостей.%
+    }
+    \verb{doi}
+    \verb 10.1016/S0017-9310(83)80047-7
+    \endverb
+    \field{issn}{0017-9310}
+    \field{number}{10}
+    \field{pages}{1463\bibrangedash 1477}
+    \field{title}{Prediction of critical heat flux in flow boiling at low
+  qualities}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0017931083800477
+    \endverb
+    \field{volume}{26}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\Y6NP8QKZ\
+    \verb \S0017931083800477.html:text/html
+    \endverb
+    \field{journaltitle}{International Journal of Heat and Mass Transfer}
+    \field{month}{10}
+    \field{year}{1983}
+    \field{urlday}{14}
+    \field{urlmonth}{12}
     \field{urlyear}{2022}
   \endentry
 
@@ -9987,8 +10947,8 @@
     \list{language}{1}{%
       {en}%
     }
-    \keyw{Buckling strength, Finite element model, Gap size, Mechanical
-  behavior, Spacer grid}
+    \keyw{Spacer grid, Buckling strength, Finite element model, Gap size,
+  Mechanical behavior}
     \strng{namehash}{YY+1}
     \strng{fullhash}{YYKKEKLS1}
     \field{labelnamesource}{author}
@@ -10234,6 +11194,145 @@
     \field{year}{2009}
     \field{urlday}{02}
     \field{urlmonth}{08}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{zhang_new_2022}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=ZL}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Limiao},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \strng{namehash}{ZL1}
+    \strng{fullhash}{ZL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    Boiling is a very effective heat transfer process, used in nuclear reactors
+  and other applications such as high-performance computing cooling,
+  sterilization, water desalination. However, this process is limited by the
+  boiling crisis. The boiling crisis is an instability that causes a sudden
+  transition from a nucleate boiling regime to a film boiling regime. The value
+  of the heat flux at which this boiling crisis occurs is known as critical
+  heat flux (CHF). The boiling crisis is likely to make overheated heaters to
+  burn out and fail. Thus, systems are typically operated with an adequate
+  margin to the CHF limit. Researchers have spent decades exploring the
+  triggering mechanism of the boiling crisis. Historically, most models assumed
+  that boiling crisis is triggered by a macroscale hydrodynamics instability in
+  the far-field liquid-vapor flows. However, there is a growing consensus that
+  the boiling crisis is a near-wall phenomenon. In summary, while the boiling
+  crisis has been studied for almost a century, there is still no consensus on
+  the triggering mechanism of the boiling crisis. Recent observations from our
+  group and other groups suggest that the boiling crisis is a scale-free
+  phenomenon and belongs to the universal class of critical phenomena including
+  earthquakes, traffic jams, and the outbreak of COVID-19. Inspired by the new
+  observations, we propose a new way to view boiling heat transfer and the
+  boiling crisis by modeling boiling as a bubble percolation process. By
+  combining high-resolution experimental data and a stochastic model, we posit
+  that the boiling crisis is triggered by an instability in the near-wall
+  stochastic bubble interaction process. We formulate a Monte Carlo (MC)
+  simulation model based on the continuum percolation theory that elucidates
+  how the scale-free distribution emerges from the bubble percolation process.
+  This model allows formulating a unifying nondimensional law of the boiling
+  crisis, which we verify using data from eleven different surface and
+  operating conditions. Inspired by the concurrence of scale-free criticality
+  and complexity in many of the aforementioned physical systems, we analyze the
+  fractal behavior of the bubble interaction process and show that the critical
+  phase transition in this phenomenon (i.e., the boiling crisis), coincides
+  with a maximum in the fractal dimension (i.e., the maximum complexity in the
+  system). We also reveal that nucleate boiling (not the boiling crisis) is a
+  self-organized process that belongs to the universal class of phenomena with
+  a self-organized criticality.%
+    }
+    \field{note}{Accepted: 2022-06-15T12:59:30Z}
+    \field{title}{A new triggering mechanism of the boiling crisis based on the
+  percolation theory and its implication}
+    \verb{url}
+    \verb https://dspace.mit.edu/handle/1721.1/143147
+    \endverb
+    \list{institution}{1}{%
+      {Massachusetts Institute of Technology}%
+    }
+    \verb{file}
+    \verb Full Text PDF:C\:\\Users\\Luczer\\Zotero\\storage\\8IJM9MR9\\Zhang -
+    \verb 2022 - A new triggering mechanism of the boiling crisis b.pdf:applica
+    \verb tion/pdf
+    \endverb
+    \field{type}{Thesis}
+    \field{month}{02}
+    \field{year}{2022}
+    \field{urlday}{14}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
+  \entry{zhang_percolative_2019}{article}{}
+    \name{author}{3}{}{%
+      {{hash=ZL}{%
+         family={Zhang},
+         familyi={Z\bibinitperiod},
+         given={Limiao},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=SJH}{%
+         family={Seong},
+         familyi={S\bibinitperiod},
+         given={Jee\bibnamedelima Hyun},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=BM}{%
+         family={Bucci},
+         familyi={B\bibinitperiod},
+         given={Matteo},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZLSJHBM1}
+    \strng{fullhash}{ZLSJHBM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    We present the first experimental observations of scale-free behavior in
+  the bubble footprint distribution during the boiling crisis of water, in pool
+  and flow boiling conditions. We formulate a continuum percolation model that
+  elucidates how the scale-free behavior emerges from the near-wall stochastic
+  interaction of bubbles and provides a criterion to predict the boiling
+  crisis. It also offers useful insights on how to engineer surfaces that
+  enhance the critical heat flux limit.%
+    }
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.122.134501
+    \endverb
+    \field{note}{Publisher: American Physical Society}
+    \field{number}{13}
+    \field{pages}{134501}
+    \field{title}{Percolative {Scale}-{Free} {Behavior} in the {Boiling}
+  {Crisis}}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.122.134501
+    \endverb
+    \field{volume}{122}
+    \verb{file}
+    \verb APS Snapshot:C\:\\Users\\Luczer\\Zotero\\storage\\67SGW3NP\\PhysRevLe
+    \verb tt.122.html:text/html;Version acceptée:C\:\\Users\\Luczer\\Zotero\\s
+    \verb torage\\WZHM3CXC\\Zhang et al. - 2019 - Percolative Scale-Free Behavi
+    \verb or in the Boiling Cri.pdf:application/pdf
+    \endverb
+    \field{journaltitle}{Physical Review Letters}
+    \field{month}{04}
+    \field{year}{2019}
+    \field{urlday}{14}
+    \field{urlmonth}{12}
     \field{urlyear}{2022}
   \endentry
 
@@ -10603,6 +11702,33 @@
     \field{urlday}{01}
     \field{urlmonth}{12}
     \field{urlyear}{2022}
+  \endentry
+
+  \entry{zuber_hydrodynamic_1959}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=ZN}{%
+         family={Zuber},
+         familyi={Z\bibinitperiod},
+         given={Novak},
+         giveni={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZN2}
+    \strng{fullhash}{ZN2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{title}{Hydrodynamic {Aspects} of {Boiling} {Heat} {Transfer}}
+    \list{location}{1}{%
+      {Los Angeles, California}%
+    }
+    \list{institution}{1}{%
+      {University of California Los Angeles}%
+    }
+    \field{type}{{PhD} {Thesis}}
+    \field{month}{06}
+    \field{year}{1959}
   \endentry
 
   \entry{zuber_dynamics_1961}{article}{}
