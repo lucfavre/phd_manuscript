@@ -1,57 +1,32 @@
-This is BibTeX, Version 0.99d
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7350 64-bit)
+Capacity: max_strings=4000, hash_size=5000, hash_prime=4253
 The top-level auxiliary file: main.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: biblatex.bst
-Reallocating 'name_of_file' (item size: 1) to 9 items.
-Reallocating 'name_of_file' (item size: 1) to 8 items.
-Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: FrontBackMatter/Titlepage.aux
-Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: FrontBackMatter/Titleback.aux
-Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: FrontBackMatter/Abstract.aux
-Reallocating 'name_of_file' (item size: 1) to 27 items.
 A level-1 auxiliary file: FrontBackMatter/Resume.aux
-Reallocating 'name_of_file' (item size: 1) to 33 items.
 A level-1 auxiliary file: FrontBackMatter/Publications.aux
-Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: FrontBackMatter/Contents.aux
-Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: Chapters/intro_ccl/Intro.aux
-Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: Chapters/NCFD/Chap_NCFD.aux
-Reallocating 'name_of_file' (item size: 1) to 30 items.
 A level-1 auxiliary file: Chapters/NCFD/Chap_Debora.aux
-Reallocating 'name_of_file' (item size: 1) to 35 items.
 A level-1 auxiliary file: Chapters/NCFD/Chap_Debora_NCFD.aux
-Reallocating 'name_of_file' (item size: 1) to 32 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_HFPmodels.aux
-Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_BubDyn.aux
-Reallocating 'name_of_file' (item size: 1) to 31 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_Closures.aux
-Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_NewHFP.aux
-Reallocating 'name_of_file' (item size: 1) to 28 items.
 A level-1 auxiliary file: Chapters/HFP/Chap_ToCHF.aux
-Reallocating 'name_of_file' (item size: 1) to 39 items.
 A level-1 auxiliary file: Chapters/industrial/Chap_Promoteur.aux
-Reallocating 'name_of_file' (item size: 1) to 38 items.
 A level-1 auxiliary file: Chapters/industrial/Chap_Prom_CFD.aux
-Reallocating 'name_of_file' (item size: 1) to 34 items.
 A level-1 auxiliary file: Chapters/intro_ccl/Conclusion.aux
-Reallocating 'name_of_file' (item size: 1) to 27 items.
 A level-1 auxiliary file: Appendix/App_BubGrowth.aux
-Reallocating 'name_of_file' (item size: 1) to 23 items.
 A level-1 auxiliary file: Chapters/Chapter0A.aux
-Reallocating 'name_of_file' (item size: 1) to 32 items.
 A level-1 auxiliary file: FrontBackMatter/Declaration.aux
-Reallocating 'name_of_file' (item size: 1) to 29 items.
 A level-1 auxiliary file: FrontBackMatter/Colophon.aux
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
-Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'global_strs' (item size: 1) to 20000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
@@ -64,7 +39,7 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 31040 items.
+Reallocating 'field_info' (item size: 4) to 30993 items.
 Database file #1: main-blx.bib
 Database file #2: bib_v11.bib
 Reallocating 'str_pool' (item size: 1) to 130000 items.
@@ -74,48 +49,48 @@ Reallocating 'str_pool' (item size: 1) to 325000 items.
 Warning--I didn't find a database entry for "bloch"
 Warning--I didn't find a database entry for "krepper_2008"
 Warning--I didn't find a database entry for "zhang_prl"
-Biblatex version: 3.18
+Biblatex version: 3.13
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 183 entries,
-            6399 wiz_defined-function locations,
-            2873 strings with 289137 characters,
-and the built_in function-call counts, 1804277 in all, are:
-= -- 125884
-> -- 66463
-< -- 9782
-+ -- 81173
-- -- 46705
-* -- 125951
-:= -- 214386
+You've used 184 entries,
+            6365 wiz_defined-function locations,
+            2874 strings with 289883 characters,
+and the built_in function-call counts, 1493086 in all, are:
+= -- 89002
+> -- 66498
+< -- 9705
++ -- 66661
+- -- 46755
+* -- 104988
+:= -- 170384
 add.period$ -- 0
-call.type$ -- 183
-change.case$ -- 182
-chr.to.int$ -- 4658
-cite$ -- 364
-duplicate$ -- 174358
-empty$ -- 144219
-format.name$ -- 13510
-if$ -- 334345
+call.type$ -- 184
+change.case$ -- 183
+chr.to.int$ -- 4688
+cite$ -- 366
+duplicate$ -- 141723
+empty$ -- 122324
+format.name$ -- 13462
+if$ -- 276886
 int.to.chr$ -- 0
-int.to.str$ -- 576
+int.to.str$ -- 579
 missing$ -- 0
-newline$ -- 8962
-num.names$ -- 9749
-pop$ -- 63251
+newline$ -- 9009
+num.names$ -- 9787
+pop$ -- 61734
 preamble$ -- 1
-purify$ -- 4668
+purify$ -- 4678
 quote$ -- 0
-skip$ -- 45487
+skip$ -- 45398
 stack$ -- 0
-substring$ -- 241808
-swap$ -- 41264
-text.length$ -- 7337
-text.prefix$ -- 198
+substring$ -- 163963
+swap$ -- 41364
+text.length$ -- 7260
+text.prefix$ -- 199
 top$ -- 1
-type$ -- 6091
+type$ -- 6125
 warning$ -- 0
-while$ -- 23941
+while$ -- 20353
 width$ -- 0
-write$ -- 8780
+write$ -- 8826
 (There were 3 warnings)

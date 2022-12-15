@@ -11,6 +11,7 @@ In this last Chapter of this Part dedicated to the modeling of wall boiling, we 
 
 
 \section{Previous Modeling of the Boiling Crisis}
+\label{sec:old_chf}
 
 Historically, since the pioneering observations of Nukiyama \cite{nukiyama_maximum_1966} who identified the maximum boiling heat flux, the question of explaining the triggering of the Boiling Crisis has been thoroughly investigated by many researchers who attempted to propose various physical explanations and modelings aimed to estimate the value of the CHF.
 
@@ -104,7 +105,7 @@ Although this criterion is very suitable for CMFD applications \cite{mimouni_com
 
 
 \section{Recent Approaches and Advances for CHF Prediction}
-
+\label{sec:new_chf}
 
 
 The question of the boiling crisis occurrence and CHF value is still a topic of active research nowadays. Recently, new experimental observations have allowed the access to wall-related boiling measurements \cite{kossolapov_experimental_2021, richenderfer_experimental_2018, bloch_study_2016} and permitted to better understand the phenomenology behind the trigger of the boiling crisis.
@@ -215,6 +216,7 @@ This dimensionless relationship physically means that non-interacting bubbles co
 
 
 \section{Simple test of the Zhang Criterion}
+\label{sec:chf_test_debora}
 
 The criterion proposed by Zhang in the last sub-section presents a particular interest in the frame of HFP models. Indeed, it relies on physical parameters that are all computed in the Heat Flux Partitioning process, namely the average bubble radius $\left<R\right>$, the bubble-generating sites density $N_{sit,a}$, the bubble growth time  $t_{g}$ and nucleation frequency $f$. 
 
@@ -222,8 +224,13 @@ The criterion proposed by Zhang in the last sub-section presents a particular in
 
 Regarding CFD application, this results in a very simple value to compute in every wall boiling cells in order to estimate the local proximity to the boiling crisis. As a prospective test, we computed this value using the original NEPTUNE\_CFD HFP formulation (Section \ref{sec:ncfd_HFP}) on a DEBORA case (Figure \ref{fig:debora_chf_criterion}).
 
-FIGURE CHF CRITERION DEBORA
 
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.45\linewidth]{img/chf/chf_crit/CHF_triplet_Te70_DEBORA.png}
+\caption{Value of the CHF triplet for the DEBORA case 30G2P26W16Te70 (Chapter \ref{chap:debora_ncfd}).}
+\label{fig:debora_chf_criterion}
+\end{figure}
 
 \npar
 

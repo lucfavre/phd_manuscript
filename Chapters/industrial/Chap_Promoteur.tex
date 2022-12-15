@@ -98,6 +98,7 @@ where $B > A$ are the total power applied in the test section, which order of ma
 The values of the applied heat flux for those data sets are not given in this document due to confidentiality reasons.
 \end{note*}
 
+\npar
 
 Regarding the available data for each test, bi-optical probes allow the measurements of the void fraction but also bubble diameter using the vapor (or interfacial) velocity as explained in Subsection \ref{subsec:deb_mes_tech}. However, the measurement of the vapor velocity is reliable if:
 \begin{enumerate}
@@ -166,7 +167,7 @@ where $i=A,\ R$ for axial or radial direction, $U=\left<U\right> + U'$ the veloc
 \section{Analysis of the DEBORA-Promoteur Experimental Measurements}
 \label{sec:deb_prom_anal}
 
-On Figures \ref{fig:exp_48G3P26W23}, \ref{fig:exp_52G3P26W23} and \ref{fig:exp_52G3P26W27}, we plot respectively the void fraction and interference frequency (averaged for the two probes) for campaigns 48G3P26WA, 52G3P26WA and 52G3P26W27.
+On Figures \ref{fig:exp_48G3P26W23}, \ref{fig:exp_52G3P26W23} and \ref{fig:exp_52G3P26W27}, we plot respectively the void fraction and interference frequency (averaged for the two probes) for campaigns 48G3P26WA, 52G3P26WA and 52G3P26WB.
 
 
 
@@ -197,10 +198,10 @@ Moreover, the profile is not perfectly symmetrical with a void peak progressivel
 
 Analyzing the interference frequency (Figure \ref{fig:48G3P26W23_nu}), \ie the number of interface detection per second, allow to qualitatively determine whether if the measured void fraction at a given point is the result of a large number of small bubbles or a small number of large bubbles going through the probes. We note for hottest cases that the interference frequency reaches its maximum at the wall where the void fraction is the lowest, while its minimum is at the center where void fraction is maximal. This means that fewer bubbles at the center lead to a larger void fraction compared to the wall, which is likely to indicate the effect of coalescence increasing the average bubble size. 
 
-\subsubsection{52G3P26WA and W27 cases}
+\subsubsection{52G3P26WA and WB cases}
 
 
-The main difference between the C5200 and C4800 cases is the position of the mixing vanes that are closer to the end of the mixing length in the C5200 campaigns ($10\ D_{h}$ versus $23.5\ D_{h}$.
+The main difference between the C5200 and C4800 cases is the position of the mixing vanes that are closer to the end of the mixing length in the C5200 campaigns ($10\ D_{h}$ versus $23.5\ D_{h}$).
 
 \begin{figure}[!h]
 \centering
@@ -229,7 +230,7 @@ The main difference between the C5200 and C4800 cases is the position of the mix
 \label{fig:52G3P26W27_nu}
 }
 
-\caption{Experimental results from the 52G3P26W27 series.}
+\caption{Experimental results from the 52G3P26WB series.}
 \label{fig:exp_52G3P26W27}
 \end{figure}
 
@@ -274,7 +275,7 @@ On Figure \ref{fig:exp_C52_deltanu}, we plot the relative difference of interfer
 \subfloat[52G3P26WA series]{
 \includegraphics[width=0.5\linewidth]{img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_deltanu.pdf}
 }
-\subfloat[52G3P26W27 series]{
+\subfloat[52G3P26WB series]{
 \includegraphics[width=0.5\linewidth]{img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_deltanu.pdf}
 }
 
@@ -307,7 +308,7 @@ The mixing effect on liquid velocity is clear: the average induced rotation velo
 
 \npar
 
-At the position corresponding to the measurements in the C5200 campaign, the radial velocity then is approximately 10 times smaller than the axial velocity. This comforts the fact that the flow direction is mainly radial when the measurement using the bi-optical probe is conducted.
+At the position corresponding to the measurements in the C5200 campaign, the radial velocity then is approximately 10 times smaller than the axial velocity. This comforts the fact that the flow direction is mainly axial when the measurement using the bi-optical probe is conducted.
 
 \npar
 
@@ -325,7 +326,7 @@ Resulting values are presented on Figure \ref{fig:exp_C52_dvap}.
 \subfloat[52G3P26WA series]{
 \includegraphics[width=0.5\linewidth]{img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_dv.pdf}
 }
-\subfloat[52G3P26W27 series]{
+\subfloat[52G3P26WB series]{
 \includegraphics[width=0.5\linewidth]{img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_dv.pdf}
 }
 
@@ -339,10 +340,10 @@ First, we notice that the values attained closer to the wall mostly lie between 
 
 \npar
 
-When approaching the center of the pipe for high qualty cases, the bubble diameter sharply increase with values that can reach up to 3\ mm. In those conditions, such a diameter is the result of an important coalescence along with negligible condensation effects. Although very large void fractions are reached, those bubble diameters are still an order of magnitude lower than the tube diameter meaning we are not in presence of a slug or annular flow at the center. The resulting flow regime at high void fractions is likely look like a foam composed of several millimeter bubbles separated by thin layers of liquid.
+When approaching the center of the pipe for high qualty cases, the bubble diameter sharply increase with values that can reach up to 3\ mm. In those conditions, such a diameter is the result of an important coalescence along with negligible condensation effects. Although very large void fractions are reached, those bubble diameters are still an order of magnitude lower than the tube diameter meaning we are not in presence of a slug or annular flow at the center. The resulting flow regime at high void fractions is likely looking like a foam composed of several millimeters bubbles separated by thin layers of liquid.
 
 \begin{remark*}{}
-In such two-phase flow conditions, the dispersed approach is unlikely to be representative of the real physics at stake. Strong interaction between the bubbles can be expected and the nearly absence of liquid means it can not be considered as the leading fluid anymore.
+In such two-phase flow conditions, the dispersed approach is unlikely to be representative of the real physics at stake. Strong interaction between the bubbles can be expected. %and the nearly absence of liquid means it can not be considered as the leading fluid anymore.
 
 \npar
 
@@ -361,7 +362,7 @@ The analysis of the DEBORA-Promoteur experiment allowed to qualitatively qualify
 
 \item The axial distance to the mixing vanes appears to have a significant influence over the vapor distribution, further enlightening the presence of a "history effect". 
 
-\item An estimation of the bubble diameter in those conditions was achievable and showed very important coalescence effects with bubble diameters increasing up to 10 times larger when moving from the wall to the center.
+\item An estimation of the bubble diameter in those conditions was achievable and showed very important coalescence effects with bubble diameters increasing up to 10 times larger when moving from the wall to the center. \textbf{This constitutes a new element of analysis of the DEBORA-Promoteur tests.}
 
 \item Void fraction can reach very high values with peaks at the center up to $90\%$, which combined with the bubble diameter value indicates that the flow may look like a foam composed of vapor bubbles with thin layers of liquid between them.
 \end{itemize}
