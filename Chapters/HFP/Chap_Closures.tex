@@ -145,7 +145,7 @@ On Figure \ref{fig:ncfd_gniel_corr_htc} we display the predictions of Gnielisnki
 The NCFD approach yields predictions similar to the 1D correlations (Figure \ref{fig:dittus_gniel_htc}) with larger underestimations on Jens-Lottes measurements, confirming its correct behavior for single-phase flows as observed on DEBORA simulations (Chapter \ref{chap:debora_ncfd}). On the other hand, we see that applying a constant correction to the Gnielinski correlation (4 for Kossolapov and Richenderfer cases) suffices to yield accurate predictions on the whole range of wall temperature measurements. 
 
 \begin{remark*}{}
-The NCFD law was tested without running CFD simulations. Eq. \ref{eq:ncfd_HFP} was re-written in python to allow its testing outside of the whole code. The use of $y^{+}=100$ as well as the Mac Adams correlation (Eq. \ref{eq:utau_mcadams}) for the friction velocity $U_{\tau}$ may induce a difference with the predictions that could be achieved by running a complete CFD computation of the considered cases.
+The NCFD law was tested without running CFD simulations. Eq. \ref{eq:ncfd_HFP} was re-written in python to allow its testing outside of the whole code. The use of $y^{+}=100$ as well as the Mac Adams correlation (Eq. \ref{eq:utau_mcadams}) for the friction velocity $U_{\tau}$ may induce a difference with the predictions that could be achieved by running a complete CFD computation of the considered cases since liquid temperature may not be equal to bulk temperature at this wall distance. 
 \end{remark*}
 
 \npar
@@ -705,7 +705,7 @@ Obviously, since the wait time results from a transient heat transfer between th
 The fact that the analytic expression is able to correctly predict the large range of $t_{w}$ values from the different experiments is encouraging since it is based on a physical approach contrary to correlations which mainly relies on data-fitting.
 
 \npar
-\textbf{To conclude, it seems appropriate to use the wait time formulation of Yeoh \etal along with expressing cavity radius using Han \& Griffith estimation.} We must though keep in mind that the model is sensitive to the value of the contact angle $\theta$, which has to be evaluated in order to make proper use of the analytic expressions.
+\textbf{To conclude, it seems appropriate to use the wait time formulation of Yeoh \etal along with expressing cavity radius using Han \& Griffith estimation.} We must though keep in mind that the model is sensitive to the value of the contact angle $\theta$, which has to be evaluated in order to make a proper use of the analytic expressions.
 
 
 \section{Considerations on Bubble Interactions and Nucleation Sites Deactivation}
@@ -874,7 +874,7 @@ On Figure \ref{fig:nsit_CSR} we show the impact of the correction of Eq. \ref{eq
 \subfloat[Hibiki \& Ishii correlation (Eq. \ref{eq:nsit_hibiki})]{
 \includegraphics[width=0.5\linewidth]{img/site_interaction/CSR_HI.pdf}
 }
-\subfloat[Hibiki \& Ishii correlation (Eq. \ref{eq:nsit_li})]{
+\subfloat[Li \etal correlation (Eq. \ref{eq:nsit_li})]{
 \includegraphics[width=0.5\linewidth]{img/site_interaction/CSR_Li.pdf}
 }
 \caption{Static deactivation correction tested with Hibiki \& Ishii and Li \etal correlations for water at 40 bar, $f=200$~Hz, $t_{g,d} = 0.1$~ms, $\theta=80\degree$ and $R_{d} = 0.01$~mm.}
@@ -961,7 +961,7 @@ Estimation of the bubble sliding length is critical for the evaluation of the qu
 
 \npar
 
-As discussed in Section \ref{sec:liftoff}, is we consider that bubble lift-off occurs when a sliding bubble coalesces with an other bubble growing on its site, the sliding length $l_{sl}$ shall be close to the average distance between two nucleation bubbles on the boiling surface. This value has been derived in Section \ref{sec:site_interactions}:
+As discussed in Section \ref{sec:liftoff}, if we consider that bubble lift-off occurs when a sliding bubble coalesces with an other bubble growing on its site, the sliding length $l_{sl}$ shall be close to the average distance between two nucleation bubbles on the boiling surface. This value has been derived in Section \ref{sec:site_interactions}:
 
 \begin{equation}
 l_{sl} = s_{b} = \frac{1}{2\sqrt{N_{b}}}
@@ -1218,7 +1218,7 @@ The vapor heat transfer coefficient is estimated simply based on a conductive tr
 h_{c,V} = \dfrac{\lambda_{V}}{\overline{R}}
 \end{equation}
 
-For a truncated spherical bubble, the vapor contact area is its foot area : $\pi R^{2}\sin{\theta}$. Since the bubbles are supposed to grow following a $\sqrt{t}$ law (Section \ref{sec:bub_growth}), the average radius for a bubble over its growth time $t_{g}$ is:
+For a truncated spherical bubble, the vapor contact area is its foot area : $\pi  \parth{R~\sin{\theta}}^{2}$. Since the bubbles are supposed to grow following a $\sqrt{t}$ law (Section \ref{sec:bub_growth}), the average radius for a bubble over its growth time $t_{g}$ is:
 
 \begin{equation}
 \overline{R} = \frac{1}{t_{g}}\int_{0}^{R}r\ \mathrm{d}r = \frac{1}{t_{g}} \int_{0}^{t_{g}} K\Ja_{w}\sqrt{\eta_{L}t}~\mathrm{d}t = \frac{1}{t_{g}} K\Ja_{w} \frac{2}{3}\sqrt{\eta_{L}}~t_{g}^{3/2} = \frac{2}{3}R

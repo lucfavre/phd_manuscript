@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.1 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -791,6 +791,44 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{borishanskii_heat_1969}{incollection}{}
+    \name{author}{3}{}{%
+      {{hash=BVM}{%
+         family={Borishanskii},
+         familyi={B\bibinitperiod},
+         given={V.\bibnamedelima M.},
+         giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=BGI}{%
+         family={Bobrovich},
+         familyi={B\bibinitperiod},
+         given={G.\bibnamedelima I.},
+         giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=MFP}{%
+         family={Minchenko},
+         familyi={M\bibinitperiod},
+         given={F.\bibnamedelima P.},
+         giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{BVMBGIMFP1}
+    \strng{fullhash}{BVMBGIMFP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{Problems of {Heat} {Transfer} and {Hydraulics} of
+  {Two}-{Phase} {Media}}
+    \field{pages}{85\bibrangedash 106}
+    \field{title}{Heat transfer from a tube to water and to ethanol in nucleate
+  pool boiling}
+    \field{year}{1969}
+  \endentry
+
   \entry{boree_ecoulements_1992}{report}{}
     \name{author}{5}{}{%
       {{hash=BJ}{%
@@ -839,44 +877,6 @@
     }
     \field{type}{Technical {Report}}
     \field{year}{1992}
-  \endentry
-
-  \entry{borishanskii_heat_1969}{incollection}{}
-    \name{author}{3}{}{%
-      {{hash=BVM}{%
-         family={Borishanskii},
-         familyi={B\bibinitperiod},
-         given={V.\bibnamedelima M.},
-         giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=BGI}{%
-         family={Bobrovich},
-         familyi={B\bibinitperiod},
-         given={G.\bibnamedelima I.},
-         giveni={G\bibinitperiod\bibinitdelim I\bibinitperiod},
-      }}%
-      {{hash=MFP}{%
-         family={Minchenko},
-         familyi={M\bibinitperiod},
-         given={F.\bibnamedelima P.},
-         giveni={F\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Elsevier}%
-    }
-    \strng{namehash}{BVMBGIMFP1}
-    \strng{fullhash}{BVMBGIMFP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{booktitle}{Problems of {Heat} {Transfer} and {Hydraulics} of
-  {Two}-{Phase} {Media}}
-    \field{pages}{85\bibrangedash 106}
-    \field{title}{Heat transfer from a tube to water and to ethanol in nucleate
-  pool boiling}
-    \field{year}{1969}
   \endentry
 
   \entry{bowring_physical_1962}{report}{}
@@ -10646,6 +10646,89 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{yoo_experimental_2016-1}{article}{}
+    \name{author}{3}{}{%
+      {{hash=YJ}{%
+         family={Yoo},
+         familyi={Y\bibinitperiod},
+         given={Junsoo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=EPCE}{%
+         family={Estrada-Perez},
+         familyi={E\bibinithyphendelim P\bibinitperiod},
+         given={Carlos\bibnamedelima E.},
+         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=HYA}{%
+         family={Hassan},
+         familyi={H\bibinitperiod},
+         given={Yassin\bibnamedelima A.},
+         giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \keyw{Subcooled boiling flow, Single nucleation site, Reliability,
+  Statistics}
+    \strng{namehash}{YJEPCEHYA1}
+    \strng{fullhash}{YJEPCEHYA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{abstract}{%
+    A novel experimental method and data acquisition/analysis strategy that
+  ensures reliable measurements of various subcooled flow boiling parameters is
+  discussed. In this study, all experiments were performed by keeping a single
+  active nucleation site within the entire heated area in a square upward flow
+  channel. This approach greatly facilitated the observation of bubble and wall
+  heat transfer features in subcooled boiling flow. Vapor bubbles originating
+  from the nucleation site were observed with both micro- and macroscopic views
+  from high-speed cameras while corresponding wall temperature was measured by
+  an infrared camera. This allowed simultaneously capturing various bubbles
+  characteristics with multiple scales (both space and time) as well as their
+  impact on wall heat transfer. In addition, efforts were made to characterize
+  the observed boiling behavior with high statistical accuracy by analyzing
+  numerous images taken at each test condition. This study proves that by
+  taking the current strategy excellent repeatability and thus reliability can
+  be achieved for a wide range of flow boiling parameters such as bubble size,
+  bubble velocity, statistical distribution of bubble size and time-averaged
+  wall heat transfer coefficients. Also, the major sources of uncertainty for
+  each measurement are thoroughly investigated, from which the final
+  uncertainties are determined. Overall, the present study suggests what we
+  must concern to achieve truly reliable and useful data from any boiling
+  experiments.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.ijmultiphaseflow.2016.04.018
+    \endverb
+    \field{issn}{0301-9322}
+    \field{pages}{315\bibrangedash 324}
+    \field{shorttitle}{Experimental study on bubble dynamics and wall heat
+  transfer arising from a single nucleation site at subcooled flow boiling
+  conditions â€“ {Part} 1}
+    \field{title}{Experimental study on bubble dynamics and wall heat transfer
+  arising from a single nucleation site at subcooled flow boiling conditions
+  â€“ {Part} 1: {Experimental} methods and data quality verification}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0301932216302361
+    \endverb
+    \field{volume}{84}
+    \verb{file}
+    \verb Version acceptÃ©e:C\:\\Users\\Luczer\\Zotero\\storage\\XZ5EF4DH\\Yoo
+    \verb et al. - 2016 - Experimental study on bubble dynamics and wall hea.pd
+    \verb f:application/pdf
+    \endverb
+    \field{journaltitle}{International Journal of Multiphase Flow}
+    \field{month}{09}
+    \field{year}{2016}
+    \field{urlday}{10}
+    \field{urlmonth}{10}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{yoo_experimental_2016}{article}{}
     \name{author}{3}{}{%
       {{hash=YJ}{%
@@ -10731,89 +10814,6 @@
     \verb \S0301932215302251.html:text/html;Version acceptÃ©e:C\:\\Users\\Lucze
     \verb r\\Zotero\\storage\\SBYNPYFW\\Yoo et al. - 2016 - Experimental study
     \verb on bubble dynamics and wall hea.pdf:application/pdf
-    \endverb
-    \field{journaltitle}{International Journal of Multiphase Flow}
-    \field{month}{09}
-    \field{year}{2016}
-    \field{urlday}{10}
-    \field{urlmonth}{10}
-    \field{urlyear}{2022}
-  \endentry
-
-  \entry{yoo_experimental_2016-1}{article}{}
-    \name{author}{3}{}{%
-      {{hash=YJ}{%
-         family={Yoo},
-         familyi={Y\bibinitperiod},
-         given={Junsoo},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=EPCE}{%
-         family={Estrada-Perez},
-         familyi={E\bibinithyphendelim P\bibinitperiod},
-         given={Carlos\bibnamedelima E.},
-         giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-      {{hash=HYA}{%
-         family={Hassan},
-         familyi={H\bibinitperiod},
-         given={Yassin\bibnamedelima A.},
-         giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-    }
-    \list{language}{1}{%
-      {en}%
-    }
-    \keyw{Subcooled boiling flow, Single nucleation site, Reliability,
-  Statistics}
-    \strng{namehash}{YJEPCEHYA1}
-    \strng{fullhash}{YJEPCEHYA1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
-    \field{sortinit}{Y}
-    \field{sortinithash}{Y}
-    \field{abstract}{%
-    A novel experimental method and data acquisition/analysis strategy that
-  ensures reliable measurements of various subcooled flow boiling parameters is
-  discussed. In this study, all experiments were performed by keeping a single
-  active nucleation site within the entire heated area in a square upward flow
-  channel. This approach greatly facilitated the observation of bubble and wall
-  heat transfer features in subcooled boiling flow. Vapor bubbles originating
-  from the nucleation site were observed with both micro- and macroscopic views
-  from high-speed cameras while corresponding wall temperature was measured by
-  an infrared camera. This allowed simultaneously capturing various bubbles
-  characteristics with multiple scales (both space and time) as well as their
-  impact on wall heat transfer. In addition, efforts were made to characterize
-  the observed boiling behavior with high statistical accuracy by analyzing
-  numerous images taken at each test condition. This study proves that by
-  taking the current strategy excellent repeatability and thus reliability can
-  be achieved for a wide range of flow boiling parameters such as bubble size,
-  bubble velocity, statistical distribution of bubble size and time-averaged
-  wall heat transfer coefficients. Also, the major sources of uncertainty for
-  each measurement are thoroughly investigated, from which the final
-  uncertainties are determined. Overall, the present study suggests what we
-  must concern to achieve truly reliable and useful data from any boiling
-  experiments.%
-    }
-    \verb{doi}
-    \verb 10.1016/j.ijmultiphaseflow.2016.04.018
-    \endverb
-    \field{issn}{0301-9322}
-    \field{pages}{315\bibrangedash 324}
-    \field{shorttitle}{Experimental study on bubble dynamics and wall heat
-  transfer arising from a single nucleation site at subcooled flow boiling
-  conditions â€“ {Part} 1}
-    \field{title}{Experimental study on bubble dynamics and wall heat transfer
-  arising from a single nucleation site at subcooled flow boiling conditions
-  â€“ {Part} 1: {Experimental} methods and data quality verification}
-    \verb{url}
-    \verb https://www.sciencedirect.com/science/article/pii/S0301932216302361
-    \endverb
-    \field{volume}{84}
-    \verb{file}
-    \verb Version acceptÃ©e:C\:\\Users\\Luczer\\Zotero\\storage\\XZ5EF4DH\\Yoo
-    \verb et al. - 2016 - Experimental study on bubble dynamics and wall hea.pd
-    \verb f:application/pdf
     \endverb
     \field{journaltitle}{International Journal of Multiphase Flow}
     \field{month}{09}
@@ -11900,9 +11900,9 @@
 
   \entry{unal_maximum_1976}{article}{}
     \name{author}{1}{}{%
-      {{hash=nHC}{%
+      {{hash=ÃHC}{%
          family={Ãœnal},
-         familyi={n\bibinitperiod},
+         familyi={Ã\bibinitperiod},
          given={H.\bibnamedelima C.},
          giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
       }}%
@@ -11910,12 +11910,12 @@
     \list{language}{1}{%
       {en}%
     }
-    \strng{namehash}{nHC1}
-    \strng{fullhash}{nHC1}
+    \strng{namehash}{ÃHC1}
+    \strng{fullhash}{ÃHC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{sortinit}{N}
-    \field{sortinithash}{N}
+    \field{sortinit}{Ã}
+    \field{sortinithash}{Ã}
     \field{abstract}{%
     A heat transfer controlled bubble model has yielded three semi-empirical
   correlations to predict bubble-growth rate, maximum bubble diameter and

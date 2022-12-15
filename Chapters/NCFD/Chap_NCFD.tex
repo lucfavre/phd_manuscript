@@ -183,7 +183,7 @@ With $C_{L,i,n}=\dfrac{\lambda_{L}\Nu_{L,n}}{D_{V}}$ and :
 
 \begin{equation}
 \label{eq:nusselt}
-Nu_{1}=\sqrt{\frac{4}{\pi}Pe}\text { ; } Nu_{2}=2 \text{ ; } Nu_{3}=\frac{12}{\pi} \Ja_{L}
+ Nu_{L,1}=2 \text{ ; } Nu_{L,2}=\frac{12}{\pi} \Ja_{L} \text{ ; }  Nu_{L,3}=\sqrt{\frac{4}{\pi}Pe} 
 \end{equation}
 
 
@@ -191,7 +191,7 @@ where $\Pe=\Re_{b} \Pr_{L}$ is the Peclet number, $\Ja_{L}=\dfrac{ \rho_{L}c_{p,
 
 \npar
 
-Those three Nusselt numbers respectively correspond to stationnary conduction around a sphere, transient conduction for a spherical bubble in uniformly superheated liquid \cite{plesset_growth_1954} and transient convection around a sphere in a supheated flow \cite{ruckenstein_mass_1964}.
+Those three Nusselt numbers respectively correspond to stationnary conduction around a sphere, transient conduction for a spherical bubble growth in uniformly superheated liquid \cite{plesset_growth_1954} and transient convection around a sphere in a supheated flow \cite{ruckenstein_mass_1964}.
 
 \subsubsection{Vapor Heat Transfer}
 
@@ -475,12 +475,12 @@ In this chapter, we presented the constitutive equations of NEPTUNE\_CFD. As a s
 
 \begin{itemize}
 \item Conservation equation for mass, momentum and energy are solved for liquid and vapor ;
-\item Interfacial momentum transfer is modeled by including different forces, with recent formulations for turbulent dispersion and lift ;
+\item Interfacial momentum transfer is modeled by including different forces, with in particular recent formulations for turbulent dispersion and lift ;
 \item Turbulence is modeled by accounting for vapor presence in the $R_{ij}-\varepsilon$ SSG model along with a wall law based on local bubble size ;
 \item Wall boiling is based on a Heat Flux Partitioning approach extending the original formulation of Kurul \& Podowski \cite{kurul_multidimensional_1990} by accounting for vapor convection at high wall void fraction.
 \end{itemize}
 
-In order to assess this modeling framework, we will further conduct simulations using NEPTUNE\_CFD. In next Chapter, we present the DEBORA database that will serve as validation reference in Chapter \ref{chap:debora_ncfd}.
+In order to assess this modeling framework, we will further perform simulations using NEPTUNE\_CFD. In next Chapter, we present the DEBORA database that will serve as validation reference in Chapter \ref{chap:debora_ncfd}.
 
 
 %\begin{equation}

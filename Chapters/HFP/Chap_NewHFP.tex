@@ -46,7 +46,7 @@ All those variables were measured for a subcooling $\Delta T_{L} = 10\degC$ at t
 
 \npar
 
-We present the results obtained by comparison with the case at $G_{L} = 2000\ \debm$ for each variable. The simulations using the HFP model were conducted using a contact angle $\theta = 85 \degree$ (usual contact angle for water and ITO \cite{kossolapov_experimental_2021}), an hysteresis $\dtheta = 2 \degree$ and a growth constant $K=0.8$
+\textbf{In next Subsections, we present the results obtained by comparison with the case at $G_{L} = 2000\ \debm$ for each of those variables. The simulations using the HFP model were conducted using a contact angle $\theta = 85 \degree$ (usual contact angle for water and ITO \cite{kossolapov_experimental_2021}), an hysteresis $\dtheta = 2 \degree$ and a growth constant $K=0.8$}
 
  
 \subsection{Active Nucleation Site Density}
@@ -81,7 +81,7 @@ Figure \ref{fig:fullkoss_times} compares the different times involved in the boi
 
 \npar
 
-The average bubble growth time is overestimated by nearly a decade for low superheat and is better predicted for larger superheat. Its evolution seem coherent with a decrease up to 15\ K and a stabilization afterwards. However, the experimental measurements show an increase in the growth time for large superheat which could be associated to bubble diameter increase with the wall Jakob number as previously observed in Section \ref{sec:liftoff}. This could be in partial contradiction with the single coalescence hypothesis for the lift-off since the average distance between bubbles in likely to decrease with wall superheat, thus decreasing the average growth time. On the other hand, the growth time overprediction may be associated to sliding length overestimation.
+The average bubble growth time is overestimated by nearly a decade for low superheat and is better predicted for larger superheat. Its evolution seem coherent with a decrease up to 15\ K and a stabilization afterwards. However, the experimental measurements show an increase in the growth time for large superheat which could be associated to bubble diameter increase with the wall Jakob number as previously observed in Section \ref{sec:liftoff}. This could be in partial contradiction with the single coalescence hypothesis for the lift-off since the average distance between bubbles in likely to decrease with wall superheat, thus decreasing the average growth time. On the other hand, the growth time overprediction may be associated to sliding length overestimation, especially at low wall superheat.
 
 \npar
 
@@ -104,7 +104,7 @@ A very good approximation of the quenching time $t_{q}$ is achieved using the ti
 
 \subsection{Single Bubble Area and Total Bubble Area}
 
-Figure \ref{fig:fullkoss_area} that the total area visited by a bubble is largely overestimated for the whole boiling curve. It only achieves a reasonable order of magnitude at high wall superheat ($\Delta T_{w} > 23\ $K). This could question the usual hypothesis that supposes a sliding length $l_{sl}$ equal to the average distance between bubbles $s_{b} = 0.5/\sqrt{N_{b}}$. The sole projected area of the bubbles is in average better for the visited area, but underpredicts the largest values of $A_{q,1b}$ when bubbles start sliding over significant lengths.
+Figure \ref{fig:fullkoss_area} shows that the total area visited by a bubble  $A_{q,1b}$ is largely overestimated for the whole boiling curve. It only achieves a reasonable order of magnitude at high wall superheat ($\Delta T_{w} > 23\ $K). This could question the usual hypothesis that supposes a sliding length $l_{sl}$ equal to the average distance between bubbles $s_{b} = 0.5/\sqrt{N_{b}}$. The sole projected area of the bubbles is in average better for the visited area, but underpredicts the largest values of $A_{q,1b}$ when bubbles start sliding over significant lengths.
 
 \npar
 
@@ -266,7 +266,7 @@ Figure \ref{fig:HFP_koss} shows the wall temperature predictions achieved with t
 \includegraphics[width=0.5\linewidth]{img/HFP/koss/NM_Kossolapov.pdf}
 }
 
-\caption{Wall temperature predictions achieved by the different HFP models on Kossolapov data.}
+\caption{Wall temperature predictions achieved by the different HFP models on Kossolapov data. $\pm 50\%$ error bars in dashed lines.}
 \label{fig:HFP_koss}
 \end{figure}
 
@@ -318,7 +318,7 @@ Figure \ref{fig:HFP_jens} shows the wall temperature predictions achieved with t
 \includegraphics[width=0.5\linewidth]{img/HFP/jens/NM_Jens.pdf}
 }
 
-\caption{Wall temperature predictions achieved by the different HFP models on Jens data.}
+\caption{Wall temperature predictions achieved by the different HFP models on Jens data. $\pm 50\%$ error bars in dashed lines.}
 \label{fig:HFP_jens}
 \end{figure}
 
@@ -363,7 +363,7 @@ Figure \ref{fig:HFP_kennel} shows the wall temperature predictions achieved with
 \includegraphics[width=0.5\linewidth]{img/HFP/kennel/NM_Kennel_t50_K05_dt5.pdf}
 }
 
-\caption{Wall temperature predictions achieved by the different HFP models on Kennel data.}
+\caption{Wall temperature predictions achieved by the different HFP models on Kennel data. $\pm 50\%$ error bars in dashed lines.}
 \label{fig:HFP_kennel}
 \end{figure}
 
@@ -407,6 +407,14 @@ Based on the NCFD calculations of case 8G2P26W16Te44.9 (Chapter \ref{chap:debora
 \end{figure}
 
 We see that the models perform in very different ways for the DEBORA conditions. Basu \etal formulation largely overestimates the experimental value while Kommajosyula's model finds a wall temperature slightly lower than the NCFD computation. On the other hand, the new formulation provides a wall temperature much closer to the experimental measurements, which is probably an effect mainly due to the large quenching combined with the pressure dependency of the nucleation site density.
+
+\begin{remark*}{}
+The wall-adjacent cell is located approximately at $y^{+} \approx 100$ which corresponds to a wall distance of roughly 0.3~mm. This could be considered a too short distance to extract the liquid temperature as input in the HFP model. 
+
+\npar
+
+However, the chosen case displays a large range of wall subcooling values (dotted blue line on Figure \ref{fig:HFP_DEBORA}) and the model appears to present very few variation while extracted value of $T_{L}$ increases by nearly $20\degC$. Sensitivity to the wall distance should nevertheless be further tested.
+\end{remark*}
 
 
 

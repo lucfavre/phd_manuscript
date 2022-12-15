@@ -1,9 +1,82 @@
 % Chapter 1
 
-\chapter{Conclusion} % Chapter title
+\chapter{General Conclusion And Perspectives} % Chapter title
 
 \label{ch:conclusion} % For referencing the chapter elsewhere, use \autoref{ch:introduction} 
 
 %----------------------------------------------------------------------------------------
+In this ultimate Chapter, we finally draw the various conclusions emerging from the proposed work in this thesis and discuss some of the numerous perspectives that are of interest regarding the problem of boiling flows CFD simulation and Critical Heat Flux prediction in Pressurized Water Reactor conditions.
 
-To write big summary of all the work + lot of perspectives
+
+\section{Conclusions}
+
+The main goal of this thesis was to try to bring elements of answers to the following question: 
+
+\begin{center}
+\textit{Is it nowadays possible to reach a proper modeling of the wall boiling phenomenon to predict boiling crisis occurrence in PWR using CFD simulations ?}
+\end{center}
+
+To do so, the work presented in this document has been separated in three main parts. 
+
+\npar
+
+\textbf{First}, an evaluation of the NEPTUNE\_CFD code regarding the simulation of boiling flows in PWR conditions has been realized. After presenting the NEPTUNE\_CFD modeling (Chapter \ref{chap:ncfd}), we started by analyzing the DEBORA experimental database which constitutes a rich source of physical information regarding boiling flows in thermal-hydraulic conditions close to PWR (Chapter \ref{chap:debora}). From this study we concluded that:
+
+\begin{itemize}
+\item The boiling flows in PWR are likely to be composed of small vapor inclusions (a few millimeters) even art high void fraction, which deviates from traditional descriptions supposing larger vapor structures.
+\item Bubbles clearly present coalescence and condensation effects when measuring their diameter, with coalescence being dominant close to the wall and condensation in the bulk.
+\item Wall temperature measurements are successfully reproduced with simple one-dimensional correlations both in single-phase and boiling regions.
+\item The database however show some flaws, with a clear lack of simultaneous measurements of topology (void fraction, bubble diameter, vapor velocity) and thermal quantities (liquid and wall temperature). Moreover, significant errors on the applied heat flux were found when trying to recalculate it based on the measurements. Those elements further complicate the parallel validation of CFD simulations. 
+\end{itemize}
+
+The NEPTUNE\_CFD code was then confronted with the DEBORA measurements (Chapter \ref{chap:debora_ncfd} from which we can remember:
+
+\begin{itemize}
+\item Good predicitions in the single-phase region both for the wall and liquid temperature profiles.
+\item Significant errors in the boiling region where the wall temperature is overestimated as well as the void fraction.
+\item Bubble diameter underestimation with an observed too large impact of the condensation in subcooled liquid region while coalescence alone seems fairly reproduced.
+\item The wall boiling closure being composed of old formulations which lead us to question its validity since it is very sensitive to modeling choices such as nucleation site density correlation. 
+\end{itemize}
+
+Those results pointed towards weaknesses in the wall boiling formulation \ie the Heat Flux Partitioning model, which has then become the main part of this work.
+
+\npar
+
+\textbf{The second part} of this thesis thus focused on the development of a new Heat Flux Partitioning model (HFP) to improve the modeling of wall boiling. However, such a model is a truly complicated mix of many closure laws each aiming to account for a precise physical phenomenon. Moreover, literature accounts for dozens of HFP models that propose different formulations of the heat fluxes (Chapter \ref{chap:HFP_bib}). In order to achieve separate validation for the different parameters at stake, we first focused on the dynamics of boiling bubbles on a vertical wall in Chapter \ref{chap:bub_dyn}. This resulted in:
+
+\begin{itemize}
+\item A study of the bubble growth which resulted in a new formulation accounting for bubble subcooling that seems appropriate to pool boiling conditions and validated the use of a $R \propto \sqrt{t}$ law, especially at high pressure.
+
+\item The development of a force balance to predict the bubble dynamics parallel to the wall with the help of recent DNS results \cite{shi_drag_2021} enhancing the drag coefficient estimation and a proper evaluation of the added mass term. This force balance has then been validated against several departure diameter measurements from the literature as well as bubble sliding velocities at low and high pressures. It was also the occasion to show that the uncertainty over some parameters such as the contact angle are largely impacting the predictions, excluding the need of several extra empirical parameters.
+
+\item A discussion over the question of bubble lift-off in vertical boiling. Divergences among experimental observations lead us to consider that the lift-off of a single bubble is unlikely to happen in any conditions while it has more chances to be triggered by deformation or coalescence.
+
+\item The development of a simple empirical correlation for bubble lift-off (or maximum) diameter based on a large measurement database from the literature covering various pressures.
+\end{itemize}
+
+Over the bubble dynamics, several other parameters had still to be modeled for the Heat Flux Partitioning formulation, which was the topic of Chapter \ref{chap:HFP_Assembling} along with the assembling of the model:
+
+\begin{itemize}
+\item Validation of single-phase heat transfer coefficient, nucleation site density and bubble wait time were achieved using experimental measurements from the literature, trying to cover a large range of thermal-hydraulic conditions for water.
+
+\item The nucleation site density was a large point of improvement for the NEPTUNE\_CFD modeling due to the lack of pressure dependency in the Lemmert \& Chawla formulation \cite{lemmert_influence_1977}. Li \etal \cite{li_development_2018} recent correlation better managed to reproduce various experimental database up to very high pressures.
+
+\item Bubble wait time has proven to be a very tricky parameter to model. The few available measurements have however been reasonably reproduced with analytic expressions, avoiding some non-physical behavior of correlations.
+
+\item Bubble interactions was modeled using an homogeneous spatial Poisson process, from which it was possible to compute different types of interactions such as nucleation site suppression and bubble static coalescence. 
+
+\item The final formulation of the HFP model included the previously developed force-balance dynamics for bubble departure and sliding, and supposed that bubble sliding length was the average distance between two nucleating bubbles, at which a bubble coalescence occurs and triggers lift-off.
+\end{itemize}
+
+The validation of the proposed formulation was then conducted in Chapter \ref{ch:HFP_validation}. The different tests allowed to conclude that:
+
+\begin{itemize}
+\item The wait and quenching time showed good agreement with the experiments as well as nucleation frequency. However, bubble growth time was too large due to a sliding length overestimation, resulting in an overestimated quenching area.
+\item Although the quenching flux is overestimated, fair wall temperature predictions were achieved for various experiments while choosing coherent values for the closure parameters being contact angle, bubble tilt and growth constant.
+
+\item A complicated issue regarding HFP modeling remains that different models can produce similar results regarding wall temperature while having strongly different heat flux partitioning. This further insists on the difficulty and importance of carefully choosing separately validated closure laws for each physical parameters at stake.
+
+\item A final test on a DEBORA case showed that wall temperature predictions could be largely improved compared to the initial NEPTUNE\_CFD simulations.
+\end{itemize}
+
+Finally, the prediction of the Boiling Crisis is anchored as a perspective of this work, discussed in Chapter \ref{ch:to_CHF}. Recent models based on the representation of the dry spot arising at the wall and triggering the Boiling Crisis have shown 

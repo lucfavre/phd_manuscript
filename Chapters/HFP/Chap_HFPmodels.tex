@@ -14,7 +14,7 @@
 In the field of heat transfer and boiling, establishing a physical relationship between the applied heat flux at the wall $\phi_{w}$ and the wall temperature $T_{w}$ has always been a primal goal for system design and safety analysis. Traditional approaches for single-phase flows rely on the estimation of the heat transfer coefficient $h_{SP}$ defined as:
 
 \begin{equation}
-\phi_{w} = h_{SP} \parth{T_{L} - T_{w}}
+\phi_{w} = h_{SP} \parth{T_{w} - T_{L}}
 \end{equation}
 where $T_{w}$ and $T_{L}$ are the wall and bulk liquid temperature. 
 
@@ -147,6 +147,11 @@ The convective heat flux is expressed as :
 \end{align}
 with $A_{c,L}$ the portion of the wall unaffected by boiling, $U_{L}$ the liquid velocity, $\St$ the Stanton number and $\delta$ a location in the buffer layer.
 
+\begin{note*}{}
+The choice of Kurul \& Podowski of taking the liquid properties at the buffer layer is not further detailed in their work. It could however be questioned when comparing the bubble size with $\delta$.
+\end{note*}
+
+
 \npar
 Assuming bubbles are spherical and leave the surface at diameter $D_{lo}$, they write:
 \begin{align}
@@ -156,7 +161,7 @@ Assuming bubbles are spherical and leave the surface at diameter $D_{lo}$, they 
 with $N_{sit}$ the nucleation site density and $f$ the nucleation frequency.
 
 \npar
-The quenching heat flux occurring over the wait time $t_{w}$ between two nucleated bubbles is computed following:  
+The quenching heat flux occurring over the wait time $t_{w}$ between two nucleated bubbles is computed as:  
 \begin{align}
 \phi_{q}=t_{w}fA_{q}\frac{2\lambda_{L}\parth{T_{w}-T_{L,\delta}}}{\sqrt{\pi \eta_{L} t_{w}}}
 \label{eq:KP_hfp_phiq}
@@ -191,10 +196,10 @@ f = \frac{1}{t_{w}}
 In 2005, Basu \etal \cite{basu_wall_2005, basu_wall_2005-1} proposed a new HFP model together with a series of experiments to further study the different closure relationships required in their approach. This model was meant to account for finer descriptions of the multiple phenomena at stake in subcooled flow boiling. In particular, they account for bubble sliding and merging and thus distinguish bubble departure diameter $D_{d}$ (leaving the nucleation site) and lift-off diameter $D_{lo}$ (leaving the wall).
 
 \npar
-Their approach consist of separating the boiling flow in three regions (Figure \ref{fig:basu_hfp_zones}):
+Their approach consists of separating the boiling flow in three regions (Figure \ref{fig:basu_hfp_zones}):
 
 \begin{itemize}
-\item Pre-ONB zone, where only liquid forced convection occurs, yielding:
+\item Before Onset of Nucleate Boiling (ONB) zone, where only liquid forced convection occurs, yielding:
 
 \begin{equation}
 \phi_{w}=h_{c,L} \parth{T_{w}-T_{L}}
@@ -218,7 +223,7 @@ Basu \etal compute the ONB wall temperature as:
 \end{align}
 where $D_{c}$ represents the diameter of active cavities and $\theta$ the static contact angle.
 
-\item Post-OSV zone, where bubbles now leave the surface towards the bulk flow and the other parts of the HFP appear \ie the boiling and quenching fluxes. The beginning of OSV is defined by Basu \etal using a critical liquid temperature $T_{L,OSV}$ as:
+\item Post-OSV (Onset of Significant Void) zone, where bubbles now leave the surface towards the bulk flow and the other parts of the HFP appear \ie the boiling and quenching fluxes. The beginning of OSV is defined by Basu \etal using a critical liquid temperature $T_{L,OSV}$ as:
 
 \begin{equation}
 T_{L,OSV}=T_{sat}-0.7\exp{-0.065 \frac{D_{d}h_{c,L}}{\lambda_{L}}}\frac{\phi_{w}}{h_{c,L}}
@@ -264,7 +269,7 @@ Those two cases are distinguished using the average distance between nucleation 
 In this case, the bubble will grow up to its departure diameter $D_{d}$ and slide over a length $l_{sl,0}$ before lifting-off. If $l_{sl,0}<s$, the bubble will slide up to its lift-off diameter $D_{lo}$ and leave the wall withouth colliding with other bubbles. On the contrary, if $l_{sl,0}\geq s$ the sliding bubble will merge with bubbles growing on their nucleation site, inducing a sudden growth of the bubble diameter that can exceed $D_{lo}$ and thus trigger lift-off after sliding over a reduced length $l_{sl}<l_{sl,0}$. Those assumptions are summarized on Figure \ref{fig:basu_hfp_sliding}.
 
 \npar
-If bubble coalescence occurs, the number of bubbles lifting-off the surface is lower than the actual number of nucleating sites. Basu \etal thus define a reduction factor:
+If bubble coalescence occurs, the number of bubbles lifting-off the surface is lower than the actual number of nucleating sites. Basu \etal thus define a reduction factor $R_{f}$ that damps the total nucleation site density:
 
 \begin{align}
 R_{f}&=
@@ -282,7 +287,7 @@ This results in a bubble of diameter $D=\parth{D_{sl}^{3} + D_{d}^{3}}^{1/3}$ wh
 \begin{equation}
 l_{sl}=N_{merg}s + l_{D_{N}\rightarrow D_{lo}}
 \end{equation}
-where $l_{D_{N}\rightarrow D_{lo}}$ is the remaining distance to slide if $D_{N}<D_{lo}$, being $0$ if $D_{N} \leq D_{lo}$.
+where $l_{D_{N}\rightarrow D_{lo}}$ is the remaining distance to slide if $D_{N}<D_{lo}$, being $0$ if $D_{N} \geq D_{lo}$.
 
 \npar
 
@@ -405,7 +410,7 @@ The convective term is computed in a way similar to Basu \etal \cite{basu_wall_2
 \phi_{c,L} = h_{c,L}\parth{1-A_{sl}N_{sit,a}}\parth{T_{w}-T_{L}} + \overline{h_{c,L}}A_{sl}N_{sit,a}\parth{1 - \frac{t^{*}}{t_{w}+t_{g}}}\parth{T_{w}-T_{L}}
 \label{eq:gilman_hfp_phicL}
 \end{equation}
-where $N_{sit,a}^{*}$ is the active nucleation site density that will generate sliding bubbles, that can differ from the empirical value of available sites $N_{sit}$ usually computed by a correlation. The time $t^{*}$ is the same time as in Eq. \ref{eq:basu_hfp_tstar}, $A_{sl}$ the bubble sliding area, $t_{w}$ and $t_{g}$ respectively the wait and bubble growth times.
+where $N_{sit,a}$ is the active nucleation site density that will generate sliding bubbles, that can differ from the empirical value of available sites $N_{sit}$ usually computed by a correlation. The time $t^{*}$ is the same time as in Eq. \ref{eq:basu_hfp_tstar}, $A_{sl}$ the bubble sliding area, $t_{w}$ and $t_{g}$ respectively the wait and bubble growth times.
 
 \npar
 
@@ -432,10 +437,10 @@ N_{sit,a}^{*}=R_{f}N_{sit,a} = \frac{s}{l_{sl,0}+s} N_{sit,a}
 where $l_{sl,0}$ is the sliding length of a single bubble and $s=1/\sqrt{N_{sit,a}}$.
 
 
-The sliding quenching term is also computed in a similar to Basu \etal as:
+The sliding quenching term is also computed in a way similar to Basu \etal as:
 
 \begin{align}
-\phi_{q,sl}&=\frac{2\lambda_{L}\parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}t^{*}}}A_{sl}N_{sit,a}^{*}
+\phi_{q,sl}&=\frac{2\lambda_{L}\parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}t^{*}}} t^{*}fA_{sl}N_{sit,a}^{*}
 \label{eq:gilman_hfp_phiq} \\
 %
 A_{sl} &= \overline{D}l_{sl} = \frac{D_{d}+D_{lo}}{2}\parth{N_{merg}s+l_{D_{N}\rightarrow D_{lo}}}
@@ -498,14 +503,19 @@ where $S_{sl}$ is the surface covered by sliding bubbles.
 Assuming that the transient conduction during quenching operates during the time $t^{*}$ (Eq. \ref{eq:basu_hfp_tstar}), Kommajoysula rewrites the total quenching flux using the forced-convection heat transfer coefficient as:
 
 \begin{align}
-\phi_{q,sl} &= 2 h_{c,L} A_{sl} N_{sit,a} \frac{t^{*}}{t_{g}+t_{w}}\parth{T_{w}-T_{L}}\\
+\phi_{q,sl} &= 2 h_{c,L} \underbrace{ A_{sl} N_{sit,a} \frac{t^{*}}{t_{g}+t_{w}} }_{S_{sl}} \parth{T_{w}-T_{L}}\\
 A_{sl} &= \dfrac{1}{\sqrt{N_{sit,a}}} \frac{D_{d} + D_{lo}}{2}
+\label{eq:komma_phiq}
 \end{align}
 with $N_{sit,a}$ the active nucleation site density, $D_{d}$ and $D_{lo}$ respectively the bubble departure and lift-off diameters.
 
+\begin{note*}{}
+At first glance, it seems surprising to see $h_{c,L}$ (convection coefficient) in the quenching term which is of transient conduction nature. This is due to the assumption that the quenching time is $t^{*}=\parth{\dfrac{\lambda_{L}}{h_{c,L}}}^{2} \dfrac{1}{\pi \eta_{L}}$ which once replaced in Eq. \ref{eq:gilman_hfp_phiq} under the square root at the denominator yields Eq. \ref{eq:komma_phiq}.
+\end{note*}
+
 \npar
 
-The total sliding surface is then expressed as:
+The total sliding area fraction $S_{sl}$ is then expressed as:
 
 \begin{equation}
 S_{sl} = \min{1\ ;\ A_{sl}N_{sit,a}t^{*}f}

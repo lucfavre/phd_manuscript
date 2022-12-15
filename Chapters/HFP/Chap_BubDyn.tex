@@ -78,7 +78,7 @@ Those experimental observations highlight the significant magnitude of the trans
 
 \npar 
 
-Predicting the HFP in vertical flow boiling thus requires a description of single bubble dynamics that includes accurate estimations of bubble departure and lift-off radiuses $R_{d}$ and $R_{lo}$ as well as bubble sliding velocity $\vect{U_{b}}$ to predict the sliding length $l_{sl}$.
+Predicting the HFP in vertical flow boiling thus requires a description of single bubble dynamics that includes accurate estimations of bubble departure and lift-off radii $R_{d}$ and $R_{lo}$ as well as bubble sliding velocity $\vect{U_{b}}$ to predict the sliding length $l_{sl}$.
 
 \subsection{Existing Approaches}
 
@@ -105,7 +105,7 @@ This equations provides a good trend for the evolution of bubble departure diame
 
 
 \npar
-More recently, the developments around HFP models has lead meany researchers to propose dedicated correlations for bubble departure or lift-off diameter. For instance, Zhou \etal (2021) \cite{zhou_mechanistic_2021} proposed simple correlations for the departure and lift-off diameter in horizontal flow boiling at low pressure based on their experiments:
+More recently, the developments around HFP models has lead many researchers to propose dedicated correlations for bubble departure or lift-off diameter. For instance, Zhou \etal (2021) \cite{zhou_mechanistic_2021} proposed simple correlations for the departure and lift-off diameter in horizontal flow boiling at low pressure based on their experiments:
 
 \begin{align}
 \frac{D_{d}}{L_{o}} =& 10^{2.4086}\ \parth{\frac{\rho_{V}}{\rho_{L}}}^{-0.6613} {\Ja^{*}_{w}}^{0.1557} {\Ja^{*}_{L}}^{-0.01592} \Re_{L_{o}}^{-0.6647} \Pr_{L}^{-1.8477} \sin{\theta_{s}}^{0.4}
@@ -136,7 +136,7 @@ D_{lo}=& 2.42\times 10^{-5} P^{0.709}\frac{a}{\sqrt{b\varphi}}
 
 
 \begin{note*}{}
-The law of \"Unal is used in the HFP model of Kurul \& Podowski. It as also implemented in NEPTUNE\_CFD and includes a correction of Borée \etal (Eq. \ref{eq:ncfd_unal_boree}) to avoid divergence in bubble diameter when reaching saturated conditions.
+The law of \"Unal is used in the HFP model of Kurul \& Podowski. It is also implemented in NEPTUNE\_CFD and includes a correction of Borée \etal (Eq. \ref{eq:ncfd_unal_boree}) to avoid divergence in bubble diameter when reaching saturated conditions.
 \end{note*}
 
 \npar
@@ -191,10 +191,10 @@ In order to show the spread of predicted values by the presented correlations, w
 
 \begin{figure}[h!]
 
-\subfloat[$P = 1\ $bar, $\Delta T_{w}=15\degC$]{
+\subfloat[$P = 1\ $bar]{
 \includegraphics[height=0.35\linewidth]{img/bub_dyn/correl_comp_1bar.pdf}
 }
-\subfloat[$P=100\ $bar, $\Delta T_{w}=5\degC$]{
+\subfloat[$P=100\ $bar (Basu diameters overlap each other)]{
 \includegraphics[height=0.35\linewidth]{img/bub_dyn/correl_comp_100bar.pdf}
 }
 
@@ -204,7 +204,7 @@ In order to show the spread of predicted values by the presented correlations, w
 
 \npar
 
-We observe that altogether, the predicted values for both for departure and lift-off diameters spread at least over a decade, with a global decrease if pressure is increased. Correlations of Basu, Kommajosyula and Zhou seem to present pressure dependency similar to that of Cole \& Rohsenow. On the other hand, \"Unal correlation appears to weakly change with pressure, its value being more controlled by the wall superheat. Tolubinsky correlation depending solely on the liquid subcooling obviously present no variation.
+We observe that altogether, the predicted values for both for departure and lift-off diameters spread at least over a decade, with a global decrease if pressure is increased. Correlations of Basu, Kommajosyula and Zhou seem to present pressure dependency similar to that of Cole \& Rohsenow. Basu correlation however present no difference between departure and lift-off diameter at high pressure, which is inconsistent with experimental observations \cite{kossolapov_experimental_2021}. On the other hand, \"Unal correlation appears to weakly change with pressure, its value being more controlled by the wall superheat by covering the largest range of values. Tolubinsky correlation depending solely on the liquid subcooling obviously present no variation.
 
 
 
@@ -216,7 +216,7 @@ Regarding bubble sliding phase, one of the most used correlations to predict bub
 \frac{\parth{D_{sl}^{2} - D_{in}^{2}} }{t_{sl} \eta_{L} \Ja_{w}} = \frac{1}{15\parth{0.015+0.023\ {\Re_{b}}^{0.5} } \parth{0.04+0.023\ \Ja_{L}^{0.5}} }
 \label{eq:dsl_maity}
 \end{equation}
-where $\Re_{b}=\dfrac{U_{L}D_{b}}{\nu_{L}}$
+where $\Re_{b}=\dfrac{U_{L}D_{in}}{\nu_{L}}$
 
 
 Using Maity measurements of bubble sliding velocity, Basu \etal proposed an estimation of the sliding distance for a single bubble $l_{sl,0}$:
@@ -225,15 +225,17 @@ Using Maity measurements of bubble sliding velocity, Basu \etal proposed an esti
 l_{sl,0}=& \int_{0}^{t_{sl}} U_{b}\ \mathrm{d}t = \int_{0}^{t_{sl}}C_{U} \sqrt{t}\ \mathrm{d}t =  \frac{2}{3}C_{U}{t_{sl}}^{3/2}
 \label{eq:lsl_basu}\\
 %
-C_{U} =& 3.2\ U_{L}+1
+C_{U} =& 3.2[\text{s\up{-1/2}}]\ U_{L}+1
 \end{align}
-where $C_{U}$ represents a correlated acceleration coefficient.
+where $C_{U}$ must be in m/s\up{-3/2} and the multiplicative factor 3.2 is in s\up{-1/2}.
 
-\begin{note*}{}
-Basu \etal use this correlation along with Eq. \ref{eq:dsl_maity} in their model to estimate the bubble sliding and growth.
+\begin{remark*}{}
+Basu \etal use this correlation along with Eq. \ref{eq:dsl_maity} in their model to estimate the bubble sliding and growth. The expression of $C_{U}$ is yet questionable since its unit being m/s\up{-3/2} does not have much physical meaning here.
+
+\npar
 
 The estimation of the bubble sliding velocity through an explicit correlation is difficult since it varies over the bubble lifetime. Therefore, some authors simply suppose that $U_{b} = U_{L}$ such as Gilman \& Baglietto who also use Eq. \ref{eq:dsl_maity} for the sliding growth.
-\end{note*}
+\end{remark*}
 
 
 Other assumptions regarding the sliding length relies on the value of the bubble-generating site density on the heater $N_{sit,a}$. Supposing that bubbles usually lift-off after sliding a distance between two active sites gives:
@@ -452,11 +454,11 @@ The hydrodynamic forces are :
 
 
 
-Regarding the bubble shape, we consider a quasi-spherical bubble of radius $R$ with a circular contact area with the wall of radius $r_{w}$. 
+Regarding the bubble shape, we consider a quasi-spherical bubble of radius $R$ with a circular contact area with the wall of radius $r_{w}=d_{w}/2$. 
 
 
 \begin{remark*}{}
-This assumption is mainly supported for high pressure boiling where bubble elongation and deformation is not observed \cite{kossolapov_experimental_2021}. At lower pressure, the bubble shape can somewhat deviate from a spherical shape especially before lift-off. It seems however reasonably quasi-spherical at early growth stages \cite{maity_effect_2000}. 
+This assumption is mainly supported for high pressure boiling where bubble elongation and deformation is not observed \cite{kossolapov_experimental_2021}. At lower pressure, the bubble shape can somewhat deviate from a spherical shape especially before lift-off. It seems however reasonable to consider quasi-spherical bubbles at early growth stages \cite{maity_effect_2000}. 
 \end{remark*} 
 
 
@@ -467,21 +469,18 @@ r_{w} \approx R~ \sin{\frac{\theta_{u}+\theta_{d}}{2}}=R~ \sin{\theta}
 \label{eq:rw}
 \end{equation}
 
-Some authors rather take $r_{w}\approx \dfrac{1}{2} R~\parth{\sin{\theta_{u}} + \sin{\theta_{d}} }=R~\sin{\theta}\cos{\dtheta}$, however this expression tends to zero when reaching $\dtheta \to 90\degree$ which is undesirable regarding the expression of forces such as Contact Pressure and Surface Tension.
-
-
-We suppose $V_{b}\approx\frac{4}{3}\pi R^{3}$ for the bubble volume.
+Some authors rather take $r_{w}\approx \dfrac{1}{2} R~\parth{\sin{\theta_{u}} + \sin{\theta_{d}} }=R~\sin{\theta}\cos{\dtheta}$, however this expression tends to zero when reaching $\dtheta \to 90\degree$ which is undesirable regarding the expression of forces such as Contact Pressure and Surface Tension. We suppose $V_{b}\approx\frac{4}{3}\pi R^{3}$ for the bubble volume.
 
 
 
 
 
-\subsection{Buoyancy and Contact Pressure Force}
+\subsection{Buoyancy and Contact Pressure Forces}
 
 Following the work of Thorncroft \etal \cite{thorncroft_bubble_2001} and Duhar \& Colin \cite{duhar_dynamics_2006}, the global force balance for a bubble growing on a wall can be written as:
 
 \begin{equation}
-\underbrace{ \frac{4}{3} \pi R^{3} \rho_{V} \vect{g}}_{\text{Bubble weight}} + \vect{F_{C}} - \underbrace{ \int_{S_{b}} \parth{P_{L} - \rho_{L}gz}\vect{n}\ \mathrm{d}S }_{\text{Outer liquid pressure}} - \underbrace{ \int_{S_{w}} P_{V} \vect{n}\ \mathrm{d}S }_{\text{Inner vapor pressure}} + \underbrace{ \int_{S_{b}} \tens{\tau_{L}}\cdot \vect{n} }_{\text{Viscous efforts}} = \vect{0}
+\underbrace{ V_{b} \rho_{V} \vect{g}}_{\text{Bubble weight}} + \vect{F_{C}} - \underbrace{ \int_{S_{b}} \parth{P_{L} - \rho_{L}gx} \vect{n}\ \mathrm{d}S }_{\text{Outer liquid pressure}} - \underbrace{ \int_{S_{w}} P_{V} \vect{n}\ \mathrm{d}S }_{\text{Inner vapor pressure}} + \underbrace{ \int_{S_{b}} \tens{\tau_{L}}\cdot \vect{n} }_{\text{Viscous efforts}} = \vect{0}
 \end{equation}
 where $\vect{n}$ is the local normal unity vector, $S_{b}$ is the bubble surface facing the liquid, $S_{w}$ the wall-contact area and $\tens{\tau_{L}}$ the deviatoric stress tensor associated to viscous effects.
 
@@ -490,32 +489,33 @@ where $\vect{n}$ is the local normal unity vector, $S_{b}$ is the bubble surface
 Re-writing the two pressure integrals versus the liquid pressure at the wall $P_{0}$ yields:
 
 \begin{align}
-\nonumber- \int_{S_{b}}\parth{P_{L} - \rho_{L}gz}\vect{n}\ \mathrm{d}S - \int_{S_{w}} P_{V}\vect{n}\ \mathrm{d}S =& - \int_{S_{b} + S_{w}} \parth{P_{0} - \rho_{L}gz}\vect{n}\ \mathrm{d}S + \int_{S_{w}} \parth{P_{0} - \rho_{L}gz - P_{V}}\vect{n}\ \mathrm{d}S \\
+\nonumber- \int_{S_{b}}\parth{P_{L} - \rho_{L}gx}\vect{n}\ \mathrm{d}S - \int_{S_{w}} P_{V}\vect{n}\ \mathrm{d}S =& - \int_{S_{b} + S_{w}} \parth{P_{0} - \rho_{L}gx}\vect{n}\ \mathrm{d}S + \int_{S_{w}} \parth{P_{0} - \rho_{L}gx - P_{V}}\vect{n}\ \mathrm{d}S \\
 \nonumber & - \int_{S_{b}} \parth{P_{L}-P_{0}}\vect{n}\ \mathrm{d}S \\
-\nonumber & = \int_{S_{b} + S_{w}} \rho_{L} g z \vect{n}\ \mathrm{d}S + \int_{S_{w}}\parth{P_{0} - P_{V}}\vect{n}\ \mathrm{d}S\\
-& - \int_{S_{b}} \parth{P_{L} - P_{0}}\vect{n}\ \mathrm{d}S
+\nonumber & = \int_{S_{b} + S_{w}} \rho_{L} g x \vect{n}\ \mathrm{d}S + \int_{S_{w}}\parth{P_{0} - P_{V}}\vect{n}\ \mathrm{d}S\\
+& - \underbrace{ \int_{S_{b}} \parth{P_{L} - P_{0}}\vect{n}\ \mathrm{d}S }_{=\vect{0}\ \text{for a vertical wall}}
 \label{eq:buoy_cp_derivation}
 \end{align}
 
-Summing the first term on the RHS of Eq. \ref{eq:buoy_cp_derivation} with the bubble weight results in the buoyancy force:
-
-
-\begin{equation}
-\vect{F_{B}}= V_{b}\parth{\rho_{V}-\rho_{L}}\vect{g}=\frac{4}{3}\pi R^{3}\parth{\rho_{L}-\rho_{V}}g \ \vect{e_{x}}
-\label{eq:force_buoyancy}
-\end{equation}
-
-
-The second term of Eq. \ref{eq:buoy_cp_derivation} is the so-called "contact pressure force" and can be expressed versus the difference of liquid and vapor pressure at the bubble top:
+Summing the first term on the RHS of Eq. \ref{eq:buoy_cp_derivation} with the bubble weight yields the buoyancy force:
 
 \begin{align}
-\int_{S_{w}} \parth{P_{0} - P_{V}}\vect{n} \mathrm{d}S &= \parth{P_{0}-P_{V}}\pi r_{w}^{2}\vect{e_{y}}\\
-&= \parth{P_{L} - P_{V} - \rho_{L}gh} \pi r_{w}^{2} \vect{e_{y}}
+\vect{F_{B}} =& -V_{b}\rho_{V} g \vect{e_{x}} + \iint_{S_{w}+S_{b}}\rho_{L} g x \vect{n}\ \mathrm{d}S = -V_{b} \rho_{V} g \vect{e_{x}} + \iiint_{V_{b}} \grad{\rho_{L} g x}\mathrm{d}V \\
+%
+=& V_{b} \parth{\rho_{L}-\rho_{V}} g \vect{e_{x}}
+\label{eq:force_buoyancy}
 \end{align}
-where $P_{L}$ is the liquid pressure at the bubble top and $h$ the bubble height.
+
+
+The second term of Eq. \ref{eq:buoy_cp_derivation} is the so-called "contact pressure force" and can be expressed versus the difference of liquid and vapor pressure at the bubble top $P_{L}$ (equals to $P_{0}$ for a vertical wall):
+
+\begin{align}
+\int_{S_{w}} \parth{P_{0} - P_{V}}\vect{n} \mathrm{d}S &= \int_{S_{w}} \parth{P_{L} - P_{V}}\vect{n} \mathrm{d}S\\
+%
+&= \parth{P_{L} - P_{V}} \pi r_{w}^{2} \vect{e_{y}}
+\end{align}
 
 \npar
-Using Laplace's equation $\Delta P = 2\sigma / R_{c}$ and assuming that $\rho_{L}gh \ll \Delta P$ yields:
+Using Laplace's pressure jump at the interface $\Delta P = 2\sigma / R_{c}$ yields:
 
 \begin{align}
 \vect{F_{CP}}  \approx \frac{2\sigma}{R_{c}} \pi r_{w}^{2}\  \vect{e_{y}}
@@ -713,7 +713,7 @@ where $\omega^{*} = \dfrac{2R\bars{\vect{\omega}}}{\bars{U_{rel}}}$ is the non-d
 
 \npar
 
-Later, Mei \& Klausner (1994) \cite{mei_shear_1994} derived the lift force induced by the shear for a spherical bubble in an unbounded flow for low Reynolds numbers, based on the expression of Saffmann \cite{saffman_lift_1965}. By interpolating this result with the solution of Auton \cite{auton_lift_1987}, they obtained a formulation for a large range of $\Re_{b}$ :
+Earlier, Mei \& Klausner (1994) \cite{mei_shear_1994} derived the lift force induced by the shear for a spherical bubble in an unbounded flow for low Reynolds numbers, based on the expression of Saffmann \cite{saffman_lift_1965}. By interpolating this result with the solution of Auton \cite{auton_lift_1987}, they obtained a formulation for a large range of $\Re_{b}$ :
 
 \begin{equation}
 C_{L} = 2.74 \sqrt{\Sr} \times \crocht{\Re_{b}^{-2} + \parth{0.24\sqrt{\Sr}}^{4}}^{1/4}
@@ -725,7 +725,7 @@ This expression is actually used in many mechanistic force balance \cite{klausne
 
 \npar
 
-In his force-balance approach, Mazzocco \etal \cite{mazzocco_reassessed_2018} used a constant lift coefficient by using the upper bound for the lift of a solid particle touching a wall in a Stokes flow, multiplied by $\dfrac{4}{9}$ to transpose this value to the bubble case as suggested by Legendre \& Magnaudet \cite{legendre_lift_1998}. This resulted in:
+In his force-balance approach, Mazzocco \etal \cite{mazzocco_reassessed_2018} used a constant lift coefficient by using the upper bound for the lift of a solid particle touching a wall in a Stokes flow, multiplied by $\dfrac{4}{9}$ as suggested by Legendre \& Magnaudet \cite{legendre_lift_1998} to transpose this value to the bubble case. This resulted in:
 
 \begin{equation}
 C_{L} = 2.61
@@ -892,7 +892,7 @@ F_{AM,q}&=-\dpartial{}{t}\parth{\dpartial{E_{L}}{\dot{q}}}+\dpartial{E_{L}}{q}
 \end{align}
 
 
-This method was also used by Duhar \cite{duhar_dynamics_2006} who developed an asymptotic expression of $E_{L}$ to compute the added mass coefficient when a growing bubble approaches the wall. Here, we express the liquid kinetic energy by relying on the work of Van Der Geld \cite{van_der_geld_dynamics_2009} who derived $E_{L}$ in the case of a full or truncated spherical bubble laying on a wall and facing an uniform flow parallel to the wall of velocity $U_{L}$ (Eq.~\ref{eq:EL_VdG}). If the bubble slides at a velocity $U_{b}=\dot{x}$, it sees a liquid velocity $U_{rel}=U_{L}-\dot{x}$.
+This method was also used by Duhar \cite{duhar_dynamics_2006} who developed an asymptotic expression of $E_{L}$ to compute the added mass coefficient when a growing bubble approaches the wall. Here, we express the liquid kinetic energy by relying on the work of Van Der Geld \cite{van_der_geld_dynamics_2009} who derived $E_{L}$ in the case of a full or truncated spherical bubble laying on a wall and facing a uniform flow parallel to the wall of velocity $U_{L}$ (Eq.~\ref{eq:EL_VdG}). If the bubble slides at a velocity $U_{b,x}=\dot{x}$, it sees a liquid velocity $U_{rel}=U_{L}-\dot{x}$.
 
 \begin{align}
 E_{L}=\frac{\rho_{L}V_{b}}{2}\parth{\alpha \dot{y}^{2} +\trb\dot{R}^{2}+\psi \dot{R}\dot{y} +\alpha_{2} \parth{U_{L}-\dot{x}}^{2} }
@@ -957,7 +957,7 @@ For the case of a spherical bubble laying on a wall ($L_{R}=1$), we finally have
 
 
 \begin{align}
-F_{AM,x}=\rho_{L}V_{b}\crocht{3C_{AM,x}\frac{\dot{R}}{R}U_{rel} - C_{AM,x}\dtime{U_{b}}}
+F_{AM,x}=\rho_{L}V_{b}\crocht{3C_{AM,x}\frac{\dot{R}}{R}U_{rel} - C_{AM,x}\dtime{U_{b,x}}}
 \label{eq:AMx}
 \end{align}
 with $C_{AM,x} \approx 0.636$.
@@ -989,20 +989,20 @@ In the spirit of avoiding to introduce extra empirical terms, we keep the Added 
 
 \subsection{Force Balance Summary}\label{subsec:BdF}
 
-
-Writing Newton's second law, we have the total force balance over the bubble in both directions:
+Writing the bubble velocity $\vect{U_{b}} = U_{b,x}\vect{e_{x}} + U_{b,y}\vect{e_{y}}$ and applying Newton's second law, we have the total force balance over the bubble in both directions:
 
 \begin{align}
-\nonumber \rho_{V} \dtime{V_{b}U_{b,x}} = & -\pi R \sigma f_{C,x}\parth{\theta, \dtheta} + V_{b}\parth{\rho_{L}-\rho_{V}}g + \frac{1}{2}C_{D}\rho_{L}\pi R^{2} \bars{U_{L}-U_{b}}\parth{U_{L}-U_{b}}\\
+\nonumber \rho_{V} \dtime{V_{b}U_{b,x}} = & -\pi R \sigma f_{C,x}\parth{\theta, \dtheta} + V_{b}\parth{\rho_{L}-\rho_{V}}g + \frac{1}{2}C_{D}\rho_{L}\pi R^{2} \bars{U_{L}-U_{b,x}}\parth{U_{L}-U_{b,x}}\\
 %
-& + \rho_{L}V_{b}\crocht{3C_{AM,x}\frac{\dot{R}}{R}\parth{U_{L}-U_{b}} - C_{AM,x} \dtime{U_{b}}}
+& + \rho_{L}V_{b}\crocht{3C_{AM,x}\frac{\dot{R}}{R}\parth{U_{L}-U_{b,x}} - C_{AM,x} \dtime{U_{b,x}}}
 \label{eq:bdf_x}
 \end{align}
+where the relative velocity controlling the drag force is $\vect{U_{L}} - \vect{U_{b}} = U_{L}\vect{e_{x}} -  U_{b,x}\vect{e_{x}} - U_{b,y}\vect{e_{y}} \approx \parth{U_{L}-U_{b,x}} \vect{e_{x}}$ since $U_{b,y}\sim \dot{R} \ll U_{L}$.
 
 \begin{align}
-\nonumber \rho_{V} \dtime{V_{b}U_{b,y}} = & -\pi R \sigma f_{C,y}\parth{\theta, \dtheta} + 2\pi R \sigma \sin{\theta}^{2} + \frac{1}{2}C_{L}\rho_{L}\pi R^{2} \parth{U_{L}-U_{b}}^{2}\\
+\nonumber \rho_{V} \dtime{V_{b}U_{b,y}} = & -\pi R \sigma f_{C,y}\parth{\theta, \dtheta} + 2\pi R \sigma \sin{\theta}^{2} + \frac{1}{2}C_{L}\rho_{L}\pi R^{2} \parth{\vect{U_{L}}-\vect{U_{b}}}^{2}\\
 %
-& + \rho_{L}V_{b}\crocht{-\parth{3 C_{AM,y1} + C_{AM,y2}}\frac{\dot{R}^{2}}{R}-C_{AM,y1}\ddot{R} + C_{AM,y3}\frac{\parth{U_{L}-U_{b}}^{2}}{R}}
+& + \rho_{L}V_{b}\crocht{-\parth{3 C_{AM,y1} + C_{AM,y2}}\frac{\dot{R}^{2}}{R}-C_{AM,y1}\ddot{R} + C_{AM,y3}\frac{\parth{U_{L}-U_{b,x}}^{2}}{R}}
 \label{eq:bdf_y}
 \end{align}
 
@@ -1078,7 +1078,7 @@ On Table \ref{tab:all_BdF}, we sum up some of the mentioned mechanistc approache
 
 \subsection{Liquid Velocity}\label{subsec:liq_vel}
 
-To compute the liquid velocity and shear rate at bubble center height, we use the wall law of Reichardt \cite{reichardt_vollstandige_1951}, which describes the velocity profile from the viscous sublayer to the logarithmic region in a single-phase flow.
+In the expression of the forces, the liquid velocity is taken at a distance to the wall equal to the height of the bubble center of gravity. To compute the liquid velocity and shear rate at bubble center height, we use the wall law of Reichardt \cite{reichardt_vollstandige_1951}, which describes the velocity profile from the viscous sublayer to the logarithmic region in a single-phase flow.
 
 \begin{align}
 U_{L}^{+} =& \frac{1}{\kappa}\ln{1+\kappa y^{+}} + c \parth{1-e^{-y^{+}/\chi} + \frac{y^{+}}{\chi}e^{-y^{+}/3} }\\
@@ -1098,7 +1098,7 @@ The friction velocity is computed using Mac Adams correlation \cite{mcadams_heat
 \begin{align}
 U_{\tau} =& \sqrt{\frac{\tau_{w}}{\nu_{L}}}
 \label{eq:utau_mcadams}\\
-\tau_{w} =& 0.018~ \Re_{D_{h}}^{-0.182}~ \frac{G_{L}^{2}}{\rho_{L}}
+\tau_{w} =& 0.018~ \Re_{D_{h}}^{-0.182}~ \frac{G_{L}^{2}}{\rho_{L}} = 0.018~ \Re_{D_{h}}^{-0.182}~ \rho_{L} U_{L}^{2}
 \end{align}
 
 \newpage
@@ -1141,7 +1141,7 @@ R^{+} = \frac{2}{3}\crocht{\parth{t^{+}+1}^{3/2}+{t^{+}}^{3/2}-1},\ R^{+}=\frac{
 \end{equation}
 
 
-In most cases associated to wall nucleation and boiling flows, experimental observations showed that bubbles' lifetime is long enough to be mostly of heat conduction nature \cite{kossolapov_experimental_2021, maity_effect_2000, zhou_experimental_2020}.
+In most cases associated to wall nucleation and boiling flows, experimental observations showed that bubbles' lifetime is long enough to be mostly controlled by heat diffusion \cite{kossolapov_experimental_2021, maity_effect_2000, zhou_experimental_2020}.
 
 \begin{remark*}{}
 Estimating the time $t$ at which the diffusive growth radius equals the inertia growth radius yields:
@@ -1218,7 +1218,7 @@ R\parth{t} =& \dfrac{2}{\sqrt{\pi}} \sqrt{\dfrac{\lambda_{w}\rho_{w}c_{p,w}}{\la
 \end{align}
 
 \begin{remark*}{}
-The parameter $ \sqrt{\dfrac{\lambda_{w}\rho_{w}c_{p,w}}{\lambda_{L}\rho_{L}c_{p,L}}}$ that accounts for the wall properties is the same used in the correlation of \"Unal for the maximum bubble diameter (Eq. \ref{eq:dlo_unal}).
+The parameter $ \sqrt{\dfrac{\lambda_{w}\rho_{w}c_{p,w}}{\lambda_{L}\rho_{L}c_{p,L}}}$, which is the ratio of the effusivity of the wall and the liquid, is the same used in the correlation of \"Unal for the maximum bubble diameter (Eq. \ref{eq:dlo_unal}).
 \end{remark*}
 
 The microlayer is also often taken into account for HFP modeling by enhancing the boiling heat flux through a computation of the microlayer volume \cite{kommajosyula_development_2020, demarly_new_2020}. 
@@ -1233,6 +1233,10 @@ However, the presence of a liquid microlayer beneath the nucleated bubble is not
 
 \begin{remark*}{}
 Computing the capillary number using $\dot{R}=\dfrac{K\Ja}{2}\sqrt{\dfrac{\eta_{L}}{t}}$ as the interface velocity, we use Urbano \etal criterion to compute the time $t_{max}$ after which the microlayer would cease to exist. Applying this to PWR conditions ($K=1$, $\Delta T_{w}=5K$) yields $t_{max}<10^{-11}$s for $6\degree \leq \theta \leq 90\degree$, meaning that there is no time during the bubble growth during which a microlayer could grow. This agrees with the observation that increasing pressure would lead to microlayer disappearance.
+
+\npar
+
+Moreover, authors often consider that the whole volume of the microlayer contributes to evaporation while in reality a portion of the liquid is pushed away due to vapor recoil at the bubble foot.
 \end{remark*}
 
 We will not further detail the study of the microlayer regime since its existence is very unlikely if not impossible in the pressurized conditions typical of a PWR.
@@ -1321,7 +1325,7 @@ We consider an established single-phase thermal boundary layer of thickness $\de
 \npar
 
 
-The liquid temperature is is assumed to follow a linear profile:
+The liquid temperature is assumed to follow a linear profile:
 
 \begin{align}
 T_{L}\parth{y}=T_{w}+\frac{T_{L,bulk}-T_{w}}{\delta} y
@@ -1336,7 +1340,7 @@ Assuming that the vapor stays at a temperature close to $T_{sat}$, the radial co
 
 
 \begin{note*}{}
-It is implicitly supposed that the heat flux within in the vapor bubble is negligible, which is relatively reasonable since the vapor thermal conductivity is 7 to 28 times lower than that of the liquid water between 1\ bar and 100\ bar.
+It is implicitly supposed that the heat flux within the vapor bubble is negligible, which is relatively reasonable since the vapor thermal conductivity is 7 to 28 times lower than that of the liquid water between 1\ bar and 100\ bar.
 \end{note*}
 
 \npar
@@ -1491,7 +1495,7 @@ Those results are encouraging and validate the modeling of $\delta_{b}$ with the
 \subsection{Comparison with Experimental Measurements}
 
 \subsubsection{Low Pressure Measurements}
-To further evaluate the proposed model, we compare the result with experimental measurements of bubble radius in vertical boiling of water at atmospheric pressure by Maity \cite{maity_effect_2000}. The choice of $\delta$ is adapted to each case and $\theta=45\degree$ is the average measured contact angle in the experiments.
+To further evaluate the proposed model, we compare the result with experimental measurements of bubble radius in vertical boiling of water at atmospheric pressure by Maity \cite{maity_effect_2000} in a square channel. The choice of $\delta$ is adapted to each case and $\theta=45\degree$ is the average measured contact angle in the experiments.
 
 In addition, we also plot the predictions by the heat diffusion solution $R=K\Ja_{w}\sqrt{\eta_{L}t}$ with $K=\dfrac{2b}{\sqrt{\pi}}$ and $1 \leq b \leq \sqrt{\pi}$. A solution with an optimized value of $K$ is also represented. The models of Mazzocco and Yoo \etal are also compared. The results are presented on Figure \ref{fig:growth_comp_maity}.
 
@@ -1527,6 +1531,10 @@ If the total wall heat flux $\phi_{w}$ is transmitted to the liquid by conductiv
 \begin{equation}
 \phi_{w} = \lambda_{L} \dfrac{\Delta T_{L} + \Delta T_{w}}{\delta}
 \end{equation} 
+
+\npar
+
+Estimating the boundary layer thickness as $ \delta = \dfrac{\lambda_{L}}{h_{c,L}}$ with $h_{c,L}$ the convective heat transfer coefficient computed using Dittus-Boelter correlation (Eq. \ref{eq:dittus}) yielded $\delta \approx 0.42~$mm for $G_{L}=150~\debm$, which is an acceptable order of magnitude but would be too small compared to the optimal values of $\delta$.
 
 \end{remark*}
 
@@ -2222,6 +2230,8 @@ It appears that at high pressure and liquid velocity, the drag force is the main
 This comparison highlights the fact that the proposed model is able to represent different forces hierarchy depending on the flow conditions and to acceptably predict the associated bubble sliding velocity, which is an encouraging point regarding its generality.
 
 
+\clearpage
+
 \section{Bubble Lift-Off}
 \label{sec:liftoff}
 
@@ -2496,7 +2506,7 @@ The solving of the equation of bubble departure (Eq. \ref{eq:bdf_x_dep}) and sli
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.75\linewidth]{img/bub_dyn/lift-off/pred_bdf.pdf}
-\caption{Prediction of Eq. \ref{eq:bdf_adim_lo} versus data from Table \ref{tab:exp_data_dlo}. Value of $K=0.24$ was used and only converged points are presented, same generic value used in Figure \ref{fig:pred_sensi}.}
+\caption{Prediction of Eq. \ref{eq:bdf_adim_lo} versus data from Table \ref{tab:exp_data_dlo}. Value of $K=0.24$ (same as in Figure \ref{fig:pred_sensi}) was used and only converged points are presented.}
 \label{fig:pred_bdf_dlo}
 \end{figure}
 \npar
