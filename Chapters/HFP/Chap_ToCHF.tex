@@ -103,6 +103,13 @@ Assuming bubbles were of ellipsoidal shapes at CHF, they considered that boiling
 
 Although this criterion is very suitable for CMFD applications \cite{mimouni_computational_2016, liu_critical_2021}, the critical void fraction close to the wall can vary in large ranges (down to 30\% at high subcooling) according to experimental observations \cite{bruder_empirical_2018}.
 
+\begin{remark*}{}
+This criterion is the baseline for other CHF detection methods in CFD computations. For instance, NEPTUNE\_CFD model uses the 4\up{th} flux towards vapor (Section \ref{sec:ncfd_HFP}) to represent the temperature excursion. This redirection of the heat flux to the vapor phase is controlled by a function depending on critical values of $\alpha$, which finally resembles to Weisman \& Pei criterion.
+
+\npar
+
+We can also cite Liu \etal \cite{liu_critical_2021} who do not use a constant $\alpha_{CHF}$ but rather a fitted pressure and mass flux dependent expression : $\alpha_{CHF}\parth{P,G}$.
+\end{remark*}
 
 \section{Recent Approaches and Advances for CHF Prediction}
 \label{sec:new_chf}
@@ -131,7 +138,7 @@ They noted that this ponderation of the total heat flux allowed to reach reasona
 \centering
 \includegraphics[width=0.35\linewidth]{img/chf/chf_ha.png}
 \caption{Sketch of the dry patch formation mechanism by and adapted from Ha \& No \cite{ha_dry-spot_1998}.}
-\label{fig:chf_weisman}
+\label{fig:chf_ha}
 \end{figure}
 
 
@@ -141,10 +148,9 @@ This model was recently re-used by Dong \& Gong for low pressure cases \cite{don
 
 \subsection{Model of Baglietto, Demarly \& Kommajosyula \cite{baglietto_boiling_2019} : Stability of the Heat Flux Partitioning}
 
-In the framework of Heat Flux Partitioning modeling of Kommajosyula \cite{kommajosyula_development_2020} and Demarly \cite{demarly_new_2020}, Baglietto \etal \cite{baglietto_boiling_2019} proposed a modeling of the wall area in direct contact with vapor (corresponding to $A_{c,V}$ in Section \ref{sec:hfp_new}). Over the direct area beneath single bubbles, they account for bubble interaction and models the total wall dry are $S_{dry}$ as:
-
+In the framework of Heat Flux Partitioning modeling of Kommajosyula \cite{kommajosyula_development_2020} and Demarly \cite{demarly_new_2020}, Baglietto \etal \cite{baglietto_boiling_2019} proposed a modeling of the wall area in direct contact with vapor (corresponding to $A_{c,V}$ in Section \ref{sec:hfp_new}). By accounting for bubble interactions, the dry area below the bubbles gets enhanced and result in a total dry area fraction $S_{dry}$:
 \begin{equation}
-S_{dry} = ft_{g,d} N_{sit,a} \pi \parth{\zeta \underbrace{ e^{f t_{g,d}N_{sit,a} \pi R_{d}^{2} } }_{\text{Bubble interaction}}  \sin{\theta} R_{d} }
+S_{dry} = ft_{g,d} N_{sit,a} \pi \parth{\zeta \underbrace{ e^{f t_{g,d}N_{sit,a} \pi R_{d}^{2} } }_{\text{Bubble interaction}}  \sin{\theta} R_{d} }^{2}
 \end{equation} 
 where $\zeta=0.15$ based on data-fitting of Richenderfer \cite{richenderfer_experimental_2018} experiments.
 
@@ -182,7 +188,7 @@ For CFD applications, this requires to apply this procedure in each cell to obta
 
 
 
-Based on experimental observations, Zhang \etal \cite{zhang_percolative_2019} have observed that the boiling crisis behaved as a scale-free phenomenon by tracking the distribution of bubble footprint area. In particular, they noted that bubble clustering on the surface could be used as an indicator for boiling crisis occurrence: when following the size of the two largest clusters of bubbles, CHF was attained when the second largest cluster reached its maximum size.
+Based on experimental observations, Zhang \etal \cite{zhang_percolative_2019} have observed that the boiling crisis behaved as a scale-free phenomenon, \ie probability density function of parameters such as the bubble footprint area $A$ follows a power law ($\text{PDF}\propto 1/A^{\gamma}$, $\gamma >0$). In particular, they noted that bubble clustering on the surface could be used as an indicator for boiling crisis occurrence: when following the size of the two largest clusters of bubbles, CHF was attained when the second largest cluster reached its maximum size.
 
 \npar
 
@@ -222,13 +228,13 @@ The criterion proposed by Zhang in the last sub-section presents a particular in
 
 \npar
 
-Regarding CFD application, this results in a very simple value to compute in every wall boiling cells in order to estimate the local proximity to the boiling crisis. As a prospective test, we computed this value using the original NEPTUNE\_CFD HFP formulation (Section \ref{sec:ncfd_HFP}) on a DEBORA case (Figure \ref{fig:debora_chf_criterion}).
+Regarding CFD application, this results in a very simple value to compute in every wall boiling cells in order to estimate the local proximity to the boiling crisis. As a prospective test, we computed this value using the original NEPTUNE\_CFD HFP formulation (Section \ref{sec:ncfd_HFP}) on a DEBORA case relatively close to CHF (Figure \ref{fig:debora_chf_criterion}).
 
 
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.45\linewidth]{img/chf/chf_crit/CHF_triplet_Te70_DEBORA.png}
-\caption{Value of the CHF triplet for the DEBORA case 30G2P26W16Te70 (Chapter \ref{chap:debora_ncfd}).}
+\caption{Value of the CHF triplet for the DEBORA case 30G2P26W16Te70 (Chapter \ref{chap:debora_ncfd}). The heat flux applied corresponds approximately to 90\% of the CHF in those conditions \cite{falk_rapport_2002} and the wall void fraction approaches 40\% (Figure \ref{fig:G2P26W16_alpha}).}
 \label{fig:debora_chf_criterion}
 \end{figure}
 
@@ -245,7 +251,7 @@ From that, we can observe that for the simple DEBORA case, the value of the crit
 At first glance, this criterion thus seems to present a reasonable qualitative behavior and may be more relevant than local wall temperature (which is nearly constant in the whole boiling region) or void fraction (strongly depending on the mesh size if taken at the wall cell).
 
 \begin{remark*}{}
-Testing this criterion with new model using the wall liquid properties extracted from the CFD simulations resulted in an outlet value of $N_{sit,a} \pi \left<R\right>^{2} t_{g}f \approx 0.83$ which falls better in the range of [0, 1] found by Zhang.
+Testing this criterion with new HFP model at outlet conditions for this case ($\Delta T_{L} \approx 0$) yielded $N_{sit,a} \pi \left<R\right>^{2} t_{g}f \approx 0.8$ which falls better in the range of [0, 1] found by Zhang.
 \end{remark*}
 
 

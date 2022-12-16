@@ -141,7 +141,7 @@ On Figure \ref{fig:fullkoss_length}, we indicatively show the values of sliding 
 \label{fig:fullkoss_length}
 \end{figure}
 
-
+\clearpage
 
 \subsection{Flux Proportions and Wall Superheat}
 
@@ -162,8 +162,6 @@ On the other hand, the boiling curve is pretty well predicted except for the las
 \label{fig:fullkoss_hfp}
 \end{figure}
 
-
-\npar
 
 \clearpage
 
@@ -225,29 +223,45 @@ As stated by Kossolapov, the contact angle for water and ITO usually lies betwee
 \end{itemize}
 
 
-Figure \ref{fig:HFP_koss_BC} shows two typical boiling curves along with the heat flux partitioning obtained using the new formulation for Kossolapov cases at 19.8 bar and 75.8 bar.
+Figure \ref{fig:HFP_koss_BC} shows two typical boiling curves along with the heat flux partitioning obtained using the new formulation for Kossolapov cases at 19.8 bar and 75.8 bar. Comparisons are also made with Kurul \& Podowski (Section \ref{sec:hfp_kurul}) and Kommajosyula (Section \ref{sec:hfp_komma}) models.
 
 
 \begin{figure}[!h]
 \centering
-\subfloat[$P=19.8$ bar]{
-\includegraphics[width=0.5\linewidth]{img/HFP/koss/koss_p19.pdf}
+\subfloat[New model, $P=19.8$ bar]{
+\includegraphics[width=0.5\linewidth]{img/HFP/koss/koss_p19_nm.pdf}
 }
-\subfloat[$P=75.8$ bar]{
-\includegraphics[width=0.5\linewidth]{img/HFP/koss/koss_p75.pdf}
+\subfloat[New model, $P=75.8$ bar]{
+\includegraphics[width=0.5\linewidth]{img/HFP/koss/koss_p75_nm.pdf}
 }
-\caption{Comparison with measured boiling curves from Kossolapov \cite{kossolapov_experimental_2021}. $\Delta T_{L}=10\degC$ and $G_{L}=1000~\debm$.}
+\\
+\subfloat[Kommajosyula model, $P=19.8$ bar]{
+\includegraphics[width=0.5\linewidth]{img/HFP/koss/koss_p19_komma.pdf}
+}
+\subfloat[Kommajosyula model, $P=75.8$ bar]{
+\includegraphics[width=0.5\linewidth]{img/HFP/koss/koss_p75_komma.pdf}
+}
+\\
+\subfloat[Kurul \& Podowski model, $P=19.8$ bar]{
+\includegraphics[width=0.5\linewidth]{img/HFP/koss/koss_p19_kp.pdf}
+}
+\subfloat[Kurul \& Podowski model, $P=75.8$ bar]{
+\includegraphics[width=0.5\linewidth]{img/HFP/koss/koss_p75_kp.pdf}
+}
+\caption{Comparison with measured boiling curves from Kossolapov \cite{kossolapov_experimental_2021}. $\Delta T_{L}=10\degC$ and $G_{L}=1000~\debm$. $\phi_{w}$ axis is sometimes set to logarithmic scale if a HFP model largely overcomes the experiment.}
 \label{fig:HFP_koss_BC}
 \end{figure}
 
 
+\clearpage
+
+We can observe that experimental profiles are quite fairly reproduced in both cases with the new model. It shows different types of heat flux partitioning with the case at 75.8 bar starting to have a significant proportion of static coalescence evaporation flux. This is probably a consequence of both the high pressure and large wall superheat resulting in a very large nucleation site density and increasing the probability for two bubbles to coalesce early in their lifetime.
+
+However, we can see that the results drastically diverge from one HFP model to another, with Kommajosyula model finding extremely large evaporation heat fluxes and rapidly overcoming the measurements. A large evaporation heat flux is also computed by Kurul \& Podowski model who is yet a bit closer to the experiments for the 75.8\ bar case.
+
 \npar
 
-We can observe that experimental profiles are quite fairly reproduced in both cases. The model also shows different types of heat flux partitioning with the case at 75.8 bar starting to have a significant proportion of static coalescence evaporation flux. This is probably a consequence of both the high pressure and large wall superheat resulting in a very large nucleation site density and increasing the probability for two bubbles to coalesce early in their lifetime.
-
-\npar
-
-Figure \ref{fig:HFP_koss} shows the wall temperature predictions achieved with the different HFP models.
+Figure \ref{fig:HFP_koss} shows the wall temperature predictions achieved with the different HFP models on Kossolapov database.
 
 
 \begin{figure}[!h]
@@ -275,6 +289,7 @@ We can note that the new formulation generally better agrees with experimental m
 
 
 
+\clearpage
 
 \subsection{Jens-Lottes Data}
 \label{subsec:HFP_verif_Jens}
@@ -288,19 +303,44 @@ The data of Jens \& Lottes are of particular interest for the HFP validation sin
 \end{itemize}
 
 
-Figure \ref{fig:HFP_jens_BC} shows a typical boiling curve obtained for an experimental case of Jens \& Lottes. We can observe that in this region where wall superheat are low ($\Delta T_{w}<5\ $K), the quasi-entirety of the wall heat flux is evacuated through liquid convection and transient conduction through quenching. This is likely to be a consequence of the very high pressure conditions under which nucleation site density is very large but bubbles become extremely small ($R \sim \mu$m). Evaporation heat flux is then relatively small but the large number of bubbles and their sliding induce a strong quenching effect over the heater surface. 
-
+Figure \ref{fig:HFP_jens_BC} shows a typical boiling curve obtained for an experimental case of Jens \& Lottes with the new model, Kommajosyula and Kurul \& Podowski models.
 \npar
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.6\linewidth]{img/HFP/jens/jens_p138.pdf}
+\subfloat[New model]{
+\includegraphics[width=0.5\linewidth]{img/HFP/jens/jens_p138_nm.pdf}
+}\\
+\subfloat[Kommajosyula model]{
+\includegraphics[width=0.5\linewidth]{img/HFP/jens/jens_p138_komma.pdf}
+}
+\subfloat[$P=75.8$ bar]{
+\includegraphics[width=0.5\linewidth]{img/HFP/jens/jens_p138_kp.pdf}
+}
 \caption{Comparison with measured boiling curve by Jens \& Lottes \cite{jens_analysis_1951}. $P=138$ bar, $G=2600~\debm$, $\Delta T_{L}=64\degC$.}
 \label{fig:HFP_jens_BC}
 \end{figure}
 \npar
 
-Figure \ref{fig:HFP_jens} shows the wall temperature predictions achieved with the different HFP models.
+
+We can observe that, with the new model, in this region where wall superheat are low ($\Delta T_{w}<5\ $K), the quasi-entirety of the wall heat flux is evacuated through liquid convection and transient conduction through quenching . This is likely to be a consequence of the very high pressure conditions under which nucleation site density is very large but bubbles become extremely small ($R \sim \mu$m). Evaporation heat flux is then relatively small but the large number of bubbles and their sliding induce a strong quenching effect over the heater surface. 
+
+Similar to Kossolapov cases (Figure \ref{fig:HFP_koss_BC}),other HFP models provide strikingly different results. While having fair wall temperature predictions, Kommajosyula model predicts a nearly constant liquid convective heat flux before rapidly producing a large evaporation heat flux. On the other hand, Kurul \& Podowski model is still in his single-phase zone with only liquid convection.
+
+\begin{remark*}{}
+We can wonder why Komajosyula's model always yields a negligible quenching flux, with a resulting partitioning composed solely of evaporation and liquid convection. This may actually be a consequence of the quenching area estimation (Eq. \ref{eq:komma_phiq}) where it is computed as $A_{q}=\dfrac{1}{\sqrt{N_{sit,a}}}\dfrac{D_{d}+D_{lo}}{2} = \dfrac{1.1~D_{d}}{\sqrt{N_{sit,a}}}$ since he considers $D_{lo}=1.2~D_{d}$. We can see that reaching very large active nucleation site densities (as in high pressure conditions) will drastically reduce the quenching area.
+
+\npar
+
+This highlights the interest of simple, though important, discussions over the quenching area as discussed in Section  \ref{sec:quench_area}. Considering the constant "circular part" under the bubble ($\sim \pi R_{d}^{2}$) in addition to the "linear part" associated to sliding may avoid to reach so low quenching heat fluxes which are not expected in those conditions.
+\end{remark*}
+
+All in all, those comparisons of the resulting partitioning using different models points out that achieving good wall temperature predictions does not ensure at all the general validity of the underlying heat flux partitioning, which can vary by decades from one model to another. 
+
+\npar
+
+
+Figure \ref{fig:HFP_jens} shows the wall temperature predictions achieved with the different HFP models for the whole Jens-Lottes database.
 
 \begin{figure}[!h]
 \centering
@@ -325,6 +365,9 @@ Figure \ref{fig:HFP_jens} shows the wall temperature predictions achieved with t
 \npar
 
 Both the new formulation and Kommajosyula model achieve good predictions of the wall temperature in those high pressure conditions. However, Kurul \& Podowski and Basu models do not seem to capture properly the wall superheat evolution, with large relative overestimations ($\sim 200\%$).
+
+
+\clearpage
 
 
 \subsection{Kennel Data}
@@ -377,7 +420,6 @@ In his work, Kommajosyula \cite{kommajosyula_development_2020} presented better 
 \end{remark*}
 
 
-\clearpage
 \section{Validation for DEBORA Experiment}
 \label{sec:hfp_valid_debora}
 
@@ -430,5 +472,7 @@ In this Chapter, we proposed different aspects of validation regarding the propo
 \item The formulation seems able to capture different nature of heat flux partition, with high-quenching regimes at high pressure and low superheats (Figure \ref{fig:HFP_jens_BC}), regimes with both static and sliding coalescence at high pressure and high superheat (Figure \ref{fig:HFP_koss_BC}), or mixed between quenching and sliding coalescence at low to moderate pressure and high superheat (Figure \ref{fig:HFP_koss_BC}).
 
 \item Wall temperature predictions (Section \ref{sec:hfp_valid_DTw}) using the new formulation along with reasonable values for the closing parameters $\parth{\theta,\ \dtheta,\ K }$ yields better results in average compared to older models. In particular, it seems capable of enhancing the wall temperature predictions on the DEBORA case as shown on Figure \ref{fig:HFP_DEBORA}.
+
+\item It is however important to note that HFP models presenting similar performances in terms of wall temperature predictions may actually hide truly different flux partitioning as we saw on Figures \ref{fig:HFP_koss_BC} and \ref{fig:HFP_jens_BC}. This indicates the difficulty of achieving a globally validated modeling framework due to the spread of predictions produced by the different formulations.
 
 \end{itemize}
