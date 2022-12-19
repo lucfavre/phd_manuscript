@@ -19,8 +19,6 @@ A level-1 auxiliary file: Chapters/HFP/Chap_ToCHF.aux
 A level-1 auxiliary file: Chapters/industrial/Chap_Promoteur.aux
 A level-1 auxiliary file: Chapters/industrial/Chap_Prom_CFD.aux
 A level-1 auxiliary file: Chapters/intro_ccl/Conclusion.aux
-A level-1 auxiliary file: FrontBackMatter/Declaration.aux
-A level-1 auxiliary file: FrontBackMatter/Colophon.aux
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 20000 items.
@@ -49,7 +47,7 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 You've used 184 entries,
             6365 wiz_defined-function locations,
-            2986 strings with 291192 characters,
+            2984 strings with 291133 characters,
 and the built_in function-call counts, 1995652 in all, are:
 = -- 96704
 > -- 157868

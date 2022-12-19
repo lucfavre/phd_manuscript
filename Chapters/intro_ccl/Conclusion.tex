@@ -23,10 +23,11 @@ To do so, the work presented in this document has been separated in three main p
 \textbf{First}, an evaluation of the NEPTUNE\_CFD code regarding the simulation of boiling flows in PWR conditions has been realized. After presenting the NEPTUNE\_CFD modeling (Chapter \ref{chap:ncfd}), we started by analyzing the DEBORA experimental database which constitutes a rich source of physical information regarding boiling flows in thermal-hydraulic conditions close to PWR (Chapter \ref{chap:debora}). From this study we concluded that:
 
 \begin{itemize}
-\item The boiling flows in PWR are likely to be composed of small vapor inclusions (a few millimeters) even art high void fraction, which deviates from traditional descriptions supposing larger vapor structures.
+\item The boiling flows in PWR are likely to be composed of small vapor inclusions (a few millimeters) even at high void fraction, which deviates from traditional descriptions supposing larger vapor structures.
 \item Bubbles clearly present coalescence and condensation effects when measuring their diameter, with coalescence being dominant close to the wall and condensation in the bulk.
 %\item Wall temperature measurements are successfully reproduced with simple one-dimensional correlations both in single-phase and boiling regions.
-\item The database however shows some flaws, with a clear lack of simultaneous measurements of topology (void fraction, bubble diameter, vapor velocity) and thermal quantities (liquid and wall temperature). Moreover, significant errors on the applied heat flux were found when trying to recalculate it based on the measurements. Those elements further complicate the precise validation of CFD models for boiling flows. 
+\item The database however shows some flaws, with a clear lack of simultaneous measurements of topology (void fraction, bubble diameter, vapor velocity) and thermal quantities (liquid and wall temperature). Those elements further complicate the precise validation of CFD models for boiling flows. 
+% Moreover, significant errors on the applied heat flux were found when trying to recalculate it based on the measurements.
 \end{itemize}
 
 The NEPTUNE\_CFD code was then confronted to the DEBORA measurements (Chapter \ref{chap:debora_ncfd}) from which we can remember:
@@ -34,7 +35,7 @@ The NEPTUNE\_CFD code was then confronted to the DEBORA measurements (Chapter \r
 \begin{itemize}
 \item Good predicitions in the single-phase region both for the wall and liquid temperature profiles.
 \item Significant errors in the boiling region where the wall temperature is overestimated as well as the void fraction.
-\item Bubble diameter underestimation with an observed too large impact of the condensation in subcooled liquid region while coalescence alone seems fairly reproduced.
+\item Bubble diameter underestimation with an observed too large impact of the condensation in subcooled liquid region while coalescence alone seems fairly reproduced. Nonetheless, the order of magnitude of the computed diameter is in agreement with the experiments.
 \item The wall boiling closure being composed of old formulations which lead us to question its validity since it is very sensitive to modeling choices such as nucleation site density correlation. 
 \end{itemize}
 
@@ -122,7 +123,7 @@ The aforementioned points offers a myriad of perspectives regarding future works
 
 \item Parallel to recent experiments, the development of Direct Numerical Simulations represents nowadays a non-negligible source of information to enrich CFD models and allow to reach data beyond the scope of measurements techniques. This has been the case in this work with the DNS results of Shi \etal \cite{shi_drag_2021} or Urbano \etal \cite{urbano_direct_2018}.
 
-\item Force balance approaches to model bubble dynamics at the wall shall be later achieved without the implementation of several empirical constants over which the large uncertainty can change the results by decades. This is particularly the case for bubble foot-to-diameter ratio $r_{w}/R$, contact angle $\theta$, bubble inclination $\dtheta$ or bubble growth constant $K$ which, if used in a model, must be first assessed for the aimed conditions to avoid using non-physical conclusions (\eg the added mass case discussed in Subsection \ref{subsec:AM}).
+\item Force balance approaches to model bubble dynamics at the wall shall be later achieved without the implementation of several empirical constants over which the large uncertainty can change the results by decades. This is particularly the case for bubble foot-to-diameter ratio $r_{w}/R$, contact angle $\theta$, bubble inclination $\dtheta$ or bubble growth constant $K$ which, if used in a model, must be first assessed for the aimed conditions to avoid using non-physical conclusions (\eg the added mass case discussed in Subsection \ref{subsec:AM}). Moreover, the expression of the forces on which such approaches rely are dedicated to isolated bubbles, which must be questioned when approaching significant void fractions (such as DEBORA casesl). They could thus benefit from extensive validation in such situations (\eg checking the deviation from single bubble dynamics when there is a large number of sliding bubbles at the wall).
 
 
 \item Bubble dynamics at the wall should systematically try to account for bubble interactions since it is predominant when approaching the CHF (\eg coalescence, dry patch formation). Models based on simple homogeneous Poisson processes are easy to implement and would benefit from further efforts in that direction. For instance, inhomogeneous Poisson point processes can account for attractive or repulsive impact of events \cite{daley_introduction_2003}, which could be a way of accounting for local nucleation site thermal deactivation as suggested by Del Valle \& Kenning \cite{del_valle_subcooled_1985}.
