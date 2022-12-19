@@ -34,9 +34,9 @@ The NEPTUNE\_CFD code was then confronted to the DEBORA measurements (Chapter \r
 
 \begin{itemize}
 \item Good predicitions in the single-phase region both for the wall and liquid temperature profiles.
-\item Significant errors in the boiling region where the wall temperature is overestimated as well as the void fraction.
-\item Bubble diameter underestimation with an observed too large impact of the condensation in subcooled liquid region while coalescence alone seems fairly reproduced. Nonetheless, the order of magnitude of the computed diameter is in agreement with the experiments.
-\item The wall boiling closure being composed of old formulations which lead us to question its validity since it is very sensitive to modeling choices such as nucleation site density correlation. 
+\item Significant errors in the boiling region where the wall temperature is overestimated (up to 10\%), while void fraction presents coherent results (though overestimated at the wall by approximately 10\% in absolute) and vapor velocity is correctly predicted.
+\item Bubble diameter underestimation (10\% to 20\% in average) with an observed too large impact of the condensation in subcooled liquid region while coalescence alone seems fairly reproduced. Nonetheless, the order of magnitude of the computed diameter is in agreement with the experiments.
+\item The wall boiling closure being composed of old formulations which lead us to question its validity since resulting temperature predictions are very sensitive to modeling choices such as nucleation site density correlation.
 \end{itemize}
 
 Those results pointed towards weaknesses in the wall boiling formulation \ie the Heat Flux Partitioning model, which has then become the main part of this work.
@@ -64,7 +64,7 @@ Over the bubble dynamics, several other parameters had still to be modeled for t
 
 \item Bubble interactions were modeled using an homogeneous spatial Poisson process, from which it was possible to compute different types of interactions such as nucleation site suppression and bubble static coalescence. 
 
-\item The final formulation of the HFP model included the previously developed force-balance dynamics for bubble departure and sliding, and supposed that bubble sliding length was the average distance between two nucleating bubbles, at which a bubble coalescence occurs and triggers lift-off.
+\item The final formulation of the HFP model (Tables \ref{tab:HFP_formulation} and \ref{tab:HFP_closures}) included the previously developed force-balance dynamics for bubble departure and sliding, and supposed that bubble sliding length was the average distance between two nucleating bubbles, at which a bubble coalescence occurs and triggers lift-off.
 \end{itemize}
 
 The validation of the proposed formulation was then conducted in Chapter \ref{ch:HFP_validation}. The different tests allowed to conclude that:
@@ -86,7 +86,7 @@ Finally, \textbf{the last part} of this study is related to boiling flows in geo
 
 \begin{itemize}
 \item The presence of mixing vanes strongly changes the radial distribution of vapor, with a huge peak at the center in saturated conditions. The closer the vanes are, the larger the vapor accumulation will be.
-\item We proposed an estimation of the bubble diameter (new element to this database) which highlighted the preponderant coalescence effects in the bulk with bubble diameters greater than 2\ mm at void fractions around 90\%. The flow is likely to look like a foam composed of vapor bubbles and thin liquid films, deviating from the dispersed regime. 
+\item We proposed an estimation of the bubble diameter (new element to this database) which highlighted the preponderant coalescence effects in the bulk with bubble diameters greater than 2\ mm at void fractions around 90\%. The flow is likely to look like a foam composed of vapor bubbles and thin liquid films, deviating from the dispersed regime. In such conditions, we can expect some models validated for low to moderate void fraction flows (\eg interfacial transfers) to be inappropriate to model the complex interactions between the phases (\eg turbulence enhancement, change in phenomena scales).
 \end{itemize}
 
 Logically, we then finished by performing NEPTUNE\_CFD simulations of boiling flows in mixing vanes geometries. Results presented in Chapter \ref{chap:prom_ncfd} showed in the end that:
@@ -94,7 +94,7 @@ Logically, we then finished by performing NEPTUNE\_CFD simulations of boiling fl
 \begin{itemize}
 \item The code reproduces core vapor accumulation with bubble coalescence for DEBORA-Promoteur cases, but globally overestimates the measurements while failing to reproduce highest void fraction peak of $90\%$.
 \item Simulations of the single-phase counterpart (AGATE-Promoteur case) indicated that the rotation of the fluid is overestimated as we move downstream the mixing vanes, both with RANS and LES turbulence modeling. The result proved to be sensitive to the wall law and thus could explain the too large amount vapor in the bulk for DEBORA-Promoteur cases.
-\item Testing the CHF criterion of Zhang \cite{zhang_new_2022} on a $5 \times 5$ rod bundle with PWR mixing grids showed good qualitative features with a clearly visible effect of the mixing vanes repelling the boiling crisis risk.
+\item Testing the CHF criterion of Zhang \cite{zhang_new_2022} on a $5 \times 5$ rod bundle with PWR mixing grids showed good qualitative features with a clearly visible effect of the mixing vanes repelling the boiling crisis risk. Although this was achieved using the old formulation of the HFP, it shows the capability of CFD codes as tools to investigate the CHF in industrial geometries and further highlights the interest of developing new HFP models to better represent the local boiling phenomena.
 \end{itemize}
 
 \section{Perspectives}
@@ -123,7 +123,7 @@ The aforementioned points offers a myriad of perspectives regarding future works
 
 \item Parallel to recent experiments, the development of Direct Numerical Simulations represents nowadays a non-negligible source of information to enrich CFD models and allow to reach data beyond the scope of measurements techniques. This has been the case in this work with the DNS results of Shi \etal \cite{shi_drag_2021} or Urbano \etal \cite{urbano_direct_2018}.
 
-\item Force balance approaches to model bubble dynamics at the wall shall be later achieved without the implementation of several empirical constants over which the large uncertainty can change the results by decades. This is particularly the case for bubble foot-to-diameter ratio $r_{w}/R$, contact angle $\theta$, bubble inclination $\dtheta$ or bubble growth constant $K$ which, if used in a model, must be first assessed for the aimed conditions to avoid using non-physical conclusions (\eg the added mass case discussed in Subsection \ref{subsec:AM}). Moreover, the expression of the forces on which such approaches rely are dedicated to isolated bubbles, which must be questioned when approaching significant void fractions (such as DEBORA casesl). They could thus benefit from extensive validation in such situations (\eg checking the deviation from single bubble dynamics when there is a large number of sliding bubbles at the wall).
+\item Force balance approaches to model bubble dynamics at the wall shall be later achieved without the implementation of several empirical constants over which the large uncertainty can change the results by decades. This is particularly the case for bubble foot-to-diameter ratio $r_{w}/R$, contact angle $\theta$, bubble inclination $\dtheta$ or bubble growth constant $K$ which, if used in a model, must be first assessed for the aimed conditions to avoid using non-physical conclusions (\eg the added mass case discussed in Subsection \ref{subsec:AM}). Moreover, the expression of the forces on which those approaches rely are dedicated to isolated bubbles, which must be questioned when approaching significant void fractions (such as DEBORA cases). They could thus benefit from extensive validation in such situations (\eg checking the deviation from single bubble dynamics when there is a large number of sliding bubbles at the wall).
 
 
 \item Bubble dynamics at the wall should systematically try to account for bubble interactions since it is predominant when approaching the CHF (\eg coalescence, dry patch formation). Models based on simple homogeneous Poisson processes are easy to implement and would benefit from further efforts in that direction. For instance, inhomogeneous Poisson point processes can account for attractive or repulsive impact of events \cite{daley_introduction_2003}, which could be a way of accounting for local nucleation site thermal deactivation as suggested by Del Valle \& Kenning \cite{del_valle_subcooled_1985}.
