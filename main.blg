@@ -41,49 +41,47 @@ Reallocating 'str_pool' (item size: 1) to 130000 items.
 Reallocating 'str_pool' (item size: 1) to 195000 items.
 Reallocating 'str_pool' (item size: 1) to 260000 items.
 Reallocating 'str_pool' (item size: 1) to 325000 items.
-Warning--I didn't find a database entry for "krepper_2008"
 Biblatex version: 3.13
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 184 entries,
+You've used 185 entries,
             6365 wiz_defined-function locations,
-            2984 strings with 291133 characters,
-and the built_in function-call counts, 1995652 in all, are:
-= -- 96704
-> -- 157868
-< -- 13475
-+ -- 151432
-- -- 128855
-* -- 113337
-:= -- 267524
+            2993 strings with 293516 characters,
+and the built_in function-call counts, 2010513 in all, are:
+= -- 97571
+> -- 158812
+< -- 13552
++ -- 152419
+- -- 129624
+* -- 114345
+:= -- 269563
 add.period$ -- 0
-call.type$ -- 184
-change.case$ -- 183
-chr.to.int$ -- 11384
-cite$ -- 366
-duplicate$ -- 164728
-empty$ -- 137204
-format.name$ -- 13470
-if$ -- 309631
+call.type$ -- 185
+change.case$ -- 184
+chr.to.int$ -- 11456
+cite$ -- 368
+duplicate$ -- 165967
+empty$ -- 138250
+format.name$ -- 13573
+if$ -- 312023
 int.to.chr$ -- 0
-int.to.str$ -- 463
+int.to.str$ -- 465
 missing$ -- 0
-newline$ -- 9061
-num.names$ -- 9116
-pop$ -- 62275
+newline$ -- 9129
+num.names$ -- 9157
+pop$ -- 62644
 preamble$ -- 1
-purify$ -- 4257
+purify$ -- 4277
 quote$ -- 0
-skip$ -- 50983
+skip$ -- 51253
 stack$ -- 0
-substring$ -- 193547
-swap$ -- 48401
-text.length$ -- 10239
-text.prefix$ -- 199
+substring$ -- 195387
+swap$ -- 48722
+text.length$ -- 10305
+text.prefix$ -- 200
 top$ -- 1
-type$ -- 6144
+type$ -- 6178
 warning$ -- 0
-while$ -- 25742
+while$ -- 25957
 width$ -- 0
-write$ -- 8878
-(There was 1 warning)
+write$ -- 8945

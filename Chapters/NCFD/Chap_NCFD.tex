@@ -161,7 +161,7 @@ The interfacial area is computed using the transport equation of {Ruyer} \& {Sei
 For subcooled liquid, the following heat transfer coefficient is used \cite{ranz_evaporation_1952, manon_contribution_2000}:
 
 \begin{align}
-C_{L,i}&=\frac{\Nu_{L}\lambda_{L}}{d_{G}}\\
+C_{L,i}&=\frac{\Nu_{L}\lambda_{L}}{D_{V}}\\
 %
 Nu_{L}&=2+0.6\Re_{b}^{1/2}\Pr_{L}^{1/3}
 \label{eq:ncfd_subcooled_L}
@@ -414,7 +414,7 @@ D_{d}&=2.42\times 10^{-5} P^{0.709} \frac{a}{\sqrt{b\varphi}}\text{ with }
  %
   b&=\begin{cases}
     \dfrac{T_{sat}-T_{L}}{2 \parth{1-\dfrac{\rho_{V}}{\rho_{L}} }}, & \text{if $St\leq0.0065$}\\
-    \dfrac{1}{2 \parth{1-\rho_{G}/\rho_{L} })}\dfrac{\phi_{c,L}+\phi_{e}+\phi_{q}}{0.0065\rho_{L}c_{p,L}\norm{\vect{U_{L}}}}, & \text{\text{if $St>0.0065$}}
+    \dfrac{1}{2 \parth{1-\rho_{V}/\rho_{L} })}\dfrac{\phi_{c,L}+\phi_{e}+\phi_{q}}{0.0065\rho_{L}c_{p,L}\norm{\vect{U_{L}}}}, & \text{\text{if $St>0.0065$}}
     \end{cases}
 \end{align}
 where $\lambda_{w}$ and $\eta_{w}$ are the wall thermal conductivity and diffusivity, $St=\dfrac{\phi_{c,L}+\phi_{e}+\phi_{q}}{\rho_{L}c_{p,L}\norm{\vect{U_{L}}}\parth{T_{sat}-T_{L} }}$ is the Stanton number and $\varphi=\displaystyle \max{1 ; \parth{\frac{\norm{\vect{U_{L}}}}{U_{0}} }^{0.47} }$ with $U_{0}=0.61\text{m/s}$
@@ -424,10 +424,10 @@ where $\lambda_{w}$ and $\eta_{w}$ are the wall thermal conductivity and diffusi
 Finally, the quenching heat flux follows the approach of {Del Valle} \& {Kenning} \cite{del_valle_subcooled_1985} supposing that it follows a semi-infinite transient conduction regime: 
 
 \begin{equation}
-\phi_{q}=A_{G}t_{q}f\frac{2\lambda_{L} \parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}t_{q}}}
+\phi_{q}=A_{q}t_{q}f\frac{2\lambda_{L} \parth{T_{w}-T_{L}}}{\sqrt{\pi \eta_{L}t_{q}}}
 \label{eq:ncfd_phiq}
 \end{equation} 
-where $t_{q}$ is the quenching time, supposed to be equal to $1/f$.
+where $t_{q}$ is the quenching time, supposed to be equal to $1/f$, and $A_{q}=N_{sit} \pi R^{2}$ the area experiencing quenching.
 
 
 

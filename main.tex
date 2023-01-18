@@ -45,13 +45,15 @@
 \usepackage{etoolbox}
 \usepackage{multicol}
 
+%\setlength{\nomlabelwidth}{0.5\linewidth}
 \renewcommand\nomgroup[1]{%
   \item[\bfseries
-  \ifstrequal{#1}{L}{Latin symbols}{%
-  \ifstrequal{#1}{G}{Greek symbols}{%
+  \ifstrequal{#1}{L}{Latin Symbols}{%
+  \ifstrequal{#1}{G}{Greek Symbols}{%
   \ifstrequal{#1}{S}{Subscripts}{
   \ifstrequal{#1}{A}{Acronyms}{
-  \ifstrequal{#1}{N}{Non-dimensional numbers}{}}}}}%
+  \ifstrequal{#1}{N}{Dimensionless Numbers}{
+  \ifstrequal{#1}{M}{Mathematical Conventions}}}}}}%
 ]}
 
 
@@ -142,7 +144,7 @@
 
 %------------------------------------------------
 
-\ctparttext{You can put some informational part preamble text here. Illo principalmente su nos. Non message \emph{occidental} angloromanic da. Debitas effortio simplificate sia se, auxiliar summarios da que, se avantiate publicationes via. Pan in terra summarios, capital interlingua se que. Al via multo esser specimen, campo responder que da. Le usate medical addresses pro, europa origine sanctificate nos se.} % Text on the Part 2 page describing the content in Part 2
+%\ctparttext{You can put some informational part preamble text here. Illo principalmente su nos. Non message \emph{occidental} angloromanic da. Debitas effortio simplificate sia se, auxiliar summarios da que, se avantiate publicationes via. Pan in terra summarios, capital interlingua se que. Al via multo esser specimen, campo responder que da. Le usate medical addresses pro, europa origine sanctificate nos se.} % Text on the Part 2 page describing the content in Part 2
 
 
 \include{Chapters/intro_ccl/Intro}

@@ -114,7 +114,7 @@ On Figure \ref{fig:deb_cfd_msh_sensi}, we present simulation results for the 4 m
 
 We see that the different meshes provide similar results for the void fraction, bubble diameter, vapor velocity and liquid temperature. This is particularly true for the M4 and M8 meshes, allowing to assume that an acceptable grid convergence is reached with the M4 mesh. \textbf{Therefore, further simulations will be conducted using the M4 mesh.}
 
-\begin{remark*}
+\begin{remark*}{}
 One of the most remarkable impact of the mesh concerns the liquid temperature in the wall-adjacent cell. As the mesh refines, the strong temperature gradient at the wall is logically better captured, inducing a net rise in the liquid temperature when $r/R \to 1$.
 \end{remark*}
 
@@ -339,7 +339,7 @@ As observed in previous results, the simulations for saturated cases showed simu
 
 Considering that the inlet conditions (liquid mass flux / velocity and temperature) are correct, we can question the value of the total heat flux applied in the simulation. This echoes the analysis conducted in Subsection \ref{subsec:deb_phi_corr} where assembling tests from C3000 and C800 campaign to recompute the total heat injected in the system yielded calculated heat fluxes up to $8\%$ smaller than the given experimental value (Table \ref{tab:debora_flux_corr_res}).
 
-\begin{note*}
+\begin{note*}{}
 We want to insist here that this estimation was based on a "merging" of different experimental tests in similar conditions . Small differences in the control parameters (Table \ref{tab:debora_match_C8C30}) between C800 and C3000 cases can partly explain the calculated heat flux "error".
 \end{note*}
 
@@ -559,7 +559,7 @@ This Chapter has investigated the modeling of dispersed boiling flows implemente
 
 \end{itemize} 
 
-All in all, these results are highlighting the difficulty of reaching a precise modeling of the multiple physical phenomena at stake in dispersed boiling flows. Despite the absolute discrepancies, the current modeling shows an encouraging behavior in the bulk (void fraction and liquid temperature shapes, coalescence / break-up / condensation impact, etc.). This could benefit from further work to precisely model the interfacial heat transfers in the flow along with bubble population quantification. Approaches considering polydispersed population of bubbles such as the iMUSIG model \cite{krepper_2008} could be of interest in that prospect.
+All in all, these results are highlighting the difficulty of reaching a precise modeling of the multiple physical phenomena at stake in dispersed boiling flows. Despite the absolute discrepancies, the current modeling shows an encouraging behavior in the bulk (void fraction and liquid temperature shapes, coalescence / break-up / condensation impact, etc.). This could benefit from further work to precisely model the interfacial heat transfers in the flow along with bubble population quantification. Approaches considering polydispersed population of bubbles such as the iMUSIG model \cite{krepper_inhomogeneous_2008} could be of interest in that prospect.
 
 \npar
 

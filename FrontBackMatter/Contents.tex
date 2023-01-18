@@ -66,106 +66,173 @@
 %----------------------------------------------------------------------------------------
     
 %
-%%Latin symbols
-%\nomenclature[latin]{$G$}{Mass flux [$\debm$]}
-%\nomenclature[latin]{$R$}{Bubble radius [m]}
-%\nomenclature[latin]{$R_{c}$}{Bubble curvature radius [m]}
-%\nomenclature[latin]{$r_{w}$}{Bubble foot radius [m]}
-%\nomenclature[latin]{$D$}{Bubble diameter [m]}
+%Latin symbols
+\nomenclature[latin]{$A$}{Area [m\up{2}] or area fraction [-]}
+\nomenclature[latin]{$P$}{Pressure [bar]}
+\nomenclature[latin]{$G$}{Mass flux [$\debm$]}
+\nomenclature[latin]{$R$}{Bubble radius or tube radius [m]}
+\nomenclature[latin]{$R_{c}$}{Bubble curvature radius [m]}
+\nomenclature[latin]{$r_{w}$}{Bubble foot radius [m]}
+\nomenclature[latin]{$D$}{Diameter [m]}
 %\nomenclature[latin]{$D_{h}$}{Hydraulic diameter [m]}
-%\nomenclature[latin]{$l_{sl}$}{Bubble sliding length [m]}
-%\nomenclature[latin]{$F$}{Force [N]}
-%\nomenclature[latin]{$g$}{Gravity acceleration [m\up{2}/s]}
-%\nomenclature[latin]{$V$}{Volume [m\up{3}]}
-%\nomenclature[latin]{$T$}{Temperature [K]}
-%\nomenclature[latin]{$C$}{Force coefficient [-]}
-%\nomenclature[latin]{$U$}{Velocity [m/s]}
-%\nomenclature[latin]{$U_{\tau}$}{Wall friction velocity [m/s]}
-%\nomenclature[latin]{$U_{rel}=U_{L}-U_{b}$}{Relative velocity [m/s]}
-%\nomenclature[latin]{$E$}{Kinetic energy [J]}
-%\nomenclature[latin]{$K$}{Bubble growth constant [-]}
-%\nomenclature[latin]{$h_{LV}$}{Latent heat of vaporization [J/kg]}
-%\nomenclature[latin]{$L_{c}=\sqrt{\frac{\sigma}{\parth{\rho_{L}-\rho_{V}}g}}$}{Capillary length [m]}
-%
-%%Non-Dimensional numbers
-%\nomenclature[ND]{$\Re_{b}=\frac{U_{rel}D_{b}}{\nu_{L}}$}{Bubble Reynolds number [-]}
-%\nomenclature[ND]{$\Re_{D_{h}}=\frac{G_{L}D_{h}}{\mu_{L}}$}{Liquid bulk Reynolds number [-]}
-%\nomenclature[ND]{$\Sr =\frac{2 \gamma R}{\bars{U_{rel}}}$}{Non-dimensional shear rate [-]}
-%\nomenclature[ND]{$\Ja =\frac{\rho_{L}c_{P,L}\bars{T-T_{sat}}}{\rho_{V}h_{LV}}$}{Jakob number [-]}
-%\nomenclature[ND]{$\Pr =\frac{\nu}{\eta}$}{Prandtl number [-]}
-%\nomenclature[ND]{$\Fr =\frac{\rho_{L}U_{L}^{2}}{\parth{\rho_{L}-\rho_{V}}gR}$}{Froude number [-]}
-%\nomenclature[ND]{$\Eo =\frac{\parth{\rho_{L}-\rho_{V}}gR^{2}}{\sigma}$}{Eotvos number [-]}
-%\nomenclature[ND]{$\Ca =\frac{\mu_{L}U_{L}}{\sigma}$}{Capillary number [-]}
-%\nomenclature[ND]{$y^{+} =\frac{yU_{\tau}}{\nu_{L}}$}{Non-dimensional wall distance [-]}
-%
-%%Greek symbols
-%\nomenclature[grec]{$\phi$}{Heat flux [J/m\up{2}/s]}
-%\nomenclature[grec]{$\eta$}{Thermal diffusivity[m\up{2}/s]}
-%\nomenclature[grec]{$\mu$}{Dynamic viscosity [J.s/m\up{-3}]}
-%\nomenclature[grec]{$\nu$}{Kinematic viscosity [m\up{2}/s]}
-%\nomenclature[grec]{$\gamma$}{Shear rate [s\up{-1}]}
-%\nomenclature[grec]{$\lambda$}{Thermal conductivity [W/m/K]}
-%\nomenclature[grec]{$\sigma$}{Surface tension [J/m\up{2}]}
-%\nomenclature[grec]{$\rho$}{Density [kg/m\up{3}]}
-%\nomenclature[grec]{$\theta$, $\dtheta$}{Contact angle and half-hysteresis [$\degree$ or rad]}
-%\nomenclature[grec]{$\theta_{i}$}{Bubble inclination angle [$\degree$ or rad]}
-%
-%%Subscripts
-%\nomenclature[subscript]{$L$}{Liquid or Lift}
-%\nomenclature[subscript]{$V$}{Vapor}
-%\nomenclature[subscript]{$D$}{Drag}
-%\nomenclature[subscript]{$AM$}{Added-Mass}
-%
-%\nomenclature[subscript]{$d$}{Departure or Downstream}
-%\nomenclature[subscript]{$lo$}{Lift-off}
-%\nomenclature[subscript]{$u$}{upstream}
-%\nomenclature[subscript]{$b$}{Bubble}
-%\nomenclature[subscript]{$w$}{Wall}
-%\nomenclature[subscript]{$sat$}{Saturation}
+\nomenclature[latin]{$L$}{Length [m]}
+\nomenclature[latin]{$V$}{Volume [m\up{3}]}
+\nomenclature[latin]{$S$}{Surface [m\up{2}]}
+\nomenclature[latin]{$L_{g}$}{Distance between two PWR grids [m]}
+\nomenclature[latin]{$l_{sl}$}{Bubble sliding length [m]}
+\nomenclature[latin]{$F$}{Force [N]}
+\nomenclature[latin]{$g$}{Gravity acceleration [m\up{2}/s]}
+\nomenclature[latin]{$V$}{Volume [m\up{3}]}
+\nomenclature[latin]{$T$}{Temperature [K]}
+\nomenclature[latin]{$\Delta T_{k} = \bars{T_{k}-T_{sat}}$}{Temperature difference to saturation (superheat or subcooling) [K]}
+\nomenclature[latin]{$C_{D}$}{Drag coefficient [-]}
+\nomenclature[latin]{$C_{L}$}{Lift coefficient [-]}
+\nomenclature[latin]{$C_{AM}$}{Added Mass coefficient [-]}
+\nomenclature[latin]{$U$}{Velocity [m/s]}
+\nomenclature[latin]{$U_{\tau}$}{Wall friction velocity [m/s]}
+\nomenclature[latin]{$U_{rel}=U_{L}-U_{b}$}{Relative velocity [m/s]}
+\nomenclature[latin]{$Q$}{Interfacial heat transfer [J] or [J/m\up{3}]}
+\nomenclature[latin]{$q''$}{Interfacial heat flux density [J/m\up{2}]}
+\nomenclature[latin]{$\tens{I}$}{Identity tensor [-]}
+\nomenclature[latin]{$E$}{Kinetic energy [J]}
+\nomenclature[latin]{$K$}{Bubble growth constant [-]}
+\nomenclature[latin]{$h_{LV}$}{Latent heat of vaporization [J/kg]}
+\nomenclature[latin]{$L_{c}=\sqrt{\dfrac{\sigma}{\parth{\rho_{L}-\rho_{V}}g}}$}{Capillary length [m]}
+\nomenclature[latin]{$x_{eq}$}{Thermodynamic quality [-]}
+\nomenclature[latin]{$a_{i}$}{Interfacial area concentration [m\up{-1}]}
+\nomenclature[latin]{$h$}{Enthalpy per unit of mass [J/kg] or heat transfer coefficient [W/m\up{2}/K]}
+\nomenclature[latin]{$R_{ij}$}{Reynolds stress tensor components [m\up{2}/s\up{2}]}
+\nomenclature[latin]{$N_{sit}$}{Nucleation site density [m\up{-1}]}
+\nomenclature[latin]{$N_{sit,a}$}{ Active nucleation site density [m\up{-1}]}
+\nomenclature[latin]{$N_{b}$}{Bubble density [m\up{-1}]}
+\nomenclature[latin]{$t$}{Time [s]}
+\nomenclature[latin]{$f$}{Frequency [s\up{-1}]}
+\nomenclature[latin]{$c_{p}$}{Isobaric heat capacity [J/kg/K]}
+\nomenclature[latin]{$z$}{Axial coordinate [m]}
+\nomenclature[latin]{$r$}{Radial coordinate [m]}
+\nomenclature[latin]{$r_{w}$}{Bubble wall contact radius [m]}
+\nomenclature[latin]{$\vect{n}$}{Normal unit vector [-] }
+\nomenclature[latin]{$\mathcal{W}$}{Lambert's W-function}
+\nomenclature[latin]{$\mathcal{P}$}{Probability}
 %
 %
-%%Acronyms
-%\nomenclature[acronym]{PWR}{Pressurized Water Reactor}
-%\nomenclature[acronym]{SMR}{Small Modular Reactor}
-%\nomenclature[acronym]{CHF}{Critical Heat Flux}
-%\nomenclature[acronym]{BC}{Boiling Crisis}
-%\nomenclature[acronym]{HFP}{Heat Flux Partitioning}
-%\nomenclature[acronym]{DNS}{Direct Numerical Simulations}
-%\nomenclature[acronym]{RPE}{Rayleigh-Plesset Equation}
+%Non-Dimensional numbers
+\nomenclature[ND]{$\Re_{b}=\dfrac{U_{rel}D_{b}}{\nu_{L}}$}{Bubble Reynolds number [-]}
+\nomenclature[ND]{$\Re_{D_{h}}=\dfrac{GD_{h}}{\mu_{L}}$}{Liquid bulk Reynolds number [-]}
+\nomenclature[ND]{$\Sr =\dfrac{2 \gamma R}{\bars{U_{rel}}}$}{Non-dimensional shear rate [-]}
+\nomenclature[ND]{$\Ja =\dfrac{\rho_{L}c_{P,L}\Delta T}{\rho_{V}h_{LV}}$}{Jakob number [-]}
+\nomenclature[ND]{$\Ja^{*} =\dfrac{c_{P,L}\Delta T}{h_{LV}}$}{Reduced Jakob number [-]}
+\nomenclature[ND]{$\Pr =\dfrac{\nu}{\eta}$}{Prandtl number [-]}
+\nomenclature[ND]{$\Fr =\dfrac{\rho_{L}U_{L}^{2}}{\parth{\rho_{L}-\rho_{V}}gR}$}{Froude number [-]}
+\nomenclature[ND]{$\Eo =\dfrac{\parth{\rho_{L}-\rho_{V}}gR^{2}}{\sigma}$}{Eotvos number [-]}
+\nomenclature[ND]{$\Ca =\dfrac{\mu_{L}U_{L}}{\sigma}$}{Capillary number [-]}
+\nomenclature[ND]{$\Nu =\dfrac{h L}{\lambda}$}{Nusselt number [-]}
+\nomenclature[ND]{$\Pe =\Re \times \Pr$}{Péclet number [-]}
+\nomenclature[ND]{$\Bo =\dfrac{\phi_{w}}{Gh_{LV}}$}{Boiling number [-]}
+\nomenclature[ND]{$\We =\dfrac{G^{2}L}{\rho \sigma}$}{Weber number [-]}
+\nomenclature[ND]{$y^{+} =\dfrac{yU_{\tau}}{\nu_{L}}$}{Non-dimensional wall distance [-]}
+%
+%Greek symbols
+\nomenclature[grec]{$\alpha$}{Volumetric fraction (or void fraction for vapor) [-]}
+\nomenclature[grec]{$\phi$}{Heat flux [J/m\up{2}/s]}
+\nomenclature[grec]{$\Phi$}{Heat power [W]}
+\nomenclature[grec]{$\delta$}{Thickness [m]}
+\nomenclature[grec]{$\eta$}{Thermal diffusivity [m\up{2}/s]}
+\nomenclature[grec]{$\mu$}{Dynamic viscosity [Pa.s]}
+\nomenclature[grec]{$\nu$}{Kinematic viscosity [m\up{2}/s]}
+\nomenclature[grec]{$\gamma$}{Shear rate [s\up{-1}]}
+\nomenclature[grec]{$\Gamma$}{Interfacial Mass Transfer [kg/m\up{3}/s]}
+\nomenclature[grec]{$\lambda$}{Thermal conductivity [W/m/K]}
+\nomenclature[grec]{$\sigma$}{Surface tension [J/m\up{2}]}
+\nomenclature[grec]{$\rho$}{Density [kg/m\up{3}]}
+\nomenclature[grec]{$\theta$, $\dtheta$}{Contact angle and half-hysteresis [$\degree$ or rad]}
+\nomenclature[grec]{$\theta_{i}$}{Bubble inclination angle [$\degree$ or rad]}
+\nomenclature[grec]{$\tau_{i,j}$}{Stress tensor components [N/m\up{2}]}
+%
+%Subscripts
+\nomenclature[subscript]{$L$}{Liquid or Lift}
+\nomenclature[subscript]{$V$}{Vapor}
+\nomenclature[subscript]{$D$}{Drag}
+\nomenclature[subscript]{$AM$}{Added-Mass}
+\nomenclature[subscript]{$i$}{Interfacial}
+\nomenclature[subscript]{$in$}{Inlet or Initial}
+\nomenclature[subscript]{$d$}{Departure or Downstream}
+\nomenclature[subscript]{$lo$}{Lift-off}
+\nomenclature[subscript]{$u$}{Upstream}
+\nomenclature[subscript]{$b$}{Bubble}
+\nomenclature[subscript]{$1b$}{Single bubble}
+\nomenclature[subscript]{$w$}{Wall or wait}
+\nomenclature[subscript]{$sat$}{Saturation}
+\nomenclature[subscript]{$h$}{Hydraulic}
+\nomenclature[subscript]{$sl$}{Sliding}
+\nomenclature[subscript]{$T$}{Turbulent}
+\nomenclature[subscript]{$TD$}{Turbulent Dispersion}
+\nomenclature[subscript]{$q$}{Quenching}
+\nomenclature[subscript]{$e$}{Evaporation}
+\nomenclature[subscript]{$c$}{Forced Convection}
+\nomenclature[subscript]{$sit$}{Nucleation site}
+\nomenclature[subscript]{$g$}{Growth}
+\nomenclature[subscript]{$M$}{Mixture}
+\nomenclature[subscript]{$calc$}{Calculated}
+\nomenclature[subscript]{$exp$}{Experimental}
+\nomenclature[subscript]{$mod$}{Model}
+\nomenclature[subscript]{$SP$}{Single phase}
+\nomenclature[subscript]{$ML$}{Micro-layer}
+\nomenclature[subscript]{$\tau$}{Wall shear}
+\nomenclature[subscript]{$fc$}{Forced convection}
+\nomenclature[subscript]{$st$}{Static}
+\nomenclature[subscript]{$coal$}{Coalescence}
+\nomenclature[subscript]{$tot$}{Total}
+\nomenclature[subscript]{$mes$}{Measurements}
+\nomenclature[subscript]{$R$}{Radial}
+\nomenclature[subscript]{$A$}{Axial}
 %
 %
-%\printnomenclature[1in]
-%       
-%       
-%%----------------------------------------------------------------------------------------
-%%	Acronyms
-%%----------------------------------------------------------------------------------------
-%
-%\refstepcounter{dummy}
-%%\addcontentsline{toc}{chapter}{Acronyms} % Uncomment if you would like the acronyms to appear in the table of contents
-%\pdfbookmark[1]{Acronyms}{acronyms} % Bookmark name visible in a PDF viewer
-%
-%\markboth{\spacedlowsmallcaps{Acronyms}}{\spacedlowsmallcaps{Acronyms}}
-%
-%
-%\chapter*{Acronyms}
-%
-%\begin{acronym}[UML]
-%\acro{CFD}{Computational Fluid Dynamics}
-%\acro{CMFD}{Computational Multi-Fluid Dynamics}
-%\acro{NCFD}{NEPTUNE\_CFD}
-%\acro{DNS}{Direct Numerical Simulation}
-%\acro{NSD}{Nucleation Site Density}
-%\end{acronym}  
-%
-%\chapter*{Nomenclature}
-%
-%
-%\begin{tabular}{l c r}
-%
-%$N_{sit,0}$ & Nucleation Site Density computed by correlation & [$\mathrm{m}^{-2}$]
-%
-%\end{tabular}
+%Acronyms
+\nomenclature[acronym]{PWR}{Pressurized Water Reactor}
+\nomenclature[acronym]{RPV}{Reactor Pressure Vessel}
+\nomenclature[acronym]{EDF}{\'Electricité De France}
+\nomenclature[acronym]{CHF}{Critical Heat Flux}
+\nomenclature[acronym]{BC}{Boiling Crisis}
+\nomenclature[acronym]{HFP}{Heat Flux Partitioning}
+\nomenclature[acronym]{DNS}{Direct Numerical Simulation}
+\nomenclature[acronym]{LES}{Large Eddy Simulation}
+\nomenclature[acronym]{RANS}{Reynolds Averaged Navier-Stokes}
+\nomenclature[acronym]{RPE}{Rayleigh-Plesset Equation}
+\nomenclature[acronym]{ONB}{Onset of Nucleate Boiling}
+\nomenclature[acronym]{OSV}{Onset of Significant Void}
+\nomenclature[acronym]{LSD}{Liquid Sublayer Dryout}
+\nomenclature[acronym]{DNB}{Departure from Nucleate Boiling}
+\nomenclature[acronym]{ASN}{Autorité de Sûreté Nucléaire}
+\nomenclature[acronym]{MV}{Mixing Vanes}
+\nomenclature[acronym]{DNBR}{Departure from Nucleate Boiling Ratio}
+\nomenclature[acronym]{CFD}{Computational Fluid Dynamics}
+\nomenclature[acronym]{CMFD}{Computational Multi-Fluid Dynamics}
+\nomenclature[acronym]{LOCA}{Loss of Coolant Accident}
+\nomenclature[acronym]{CEA}{Commissariat à l'\'Energie Atomique et aux \'Energies Alternatives}
+\nomenclature[acronym]{IRSN}{Institut de Radioprotection et de Sûreté Nucléaire}
+\nomenclature[acronym]{NSD}{Nucleation Site Density}
+\nomenclature[acronym]{BDF}{Bubble Departure Frequency}
+\nomenclature[acronym]{BDD}{Bubble Departure Diameter}
+\nomenclature[acronym]{RMS}{Root Mean Square}
+%Mathematical Notations
+\nomenclature[math]{$\dot{R}$, $\ddot{R}$}{Time derivatives}
+\nomenclature[math]{$\vect{U}$}{Vector}
+\nomenclature[math]{$\tens{R}$}{Tensor}
+\nomenclature[math]{$\left<.\right>$}{Time-averaging}
+\nomenclature[math]{$\left<.\right>_{2}$}{Surface-averaging}
+\nomenclature[math]{$\left<.\right>_{k}$}{Phase-averaging}
+\nomenclature[math]{$\vect{\nabla} \cdot$}{Divergence operator}
+\nomenclature[math]{$\vect{\nabla}\parth{.}$}{Gradient operator}
+\nomenclature[math]{$\otimes$}{Tensor product}
+\nomenclature[math]{$\dfrac{D}{Dt}$}{Lagrangian derivative}
 
 
+%
+%
+%
+%
+%
+%
+\printnomenclature[5cm]
 \endgroup

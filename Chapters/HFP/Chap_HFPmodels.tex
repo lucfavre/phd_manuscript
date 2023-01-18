@@ -243,7 +243,7 @@ T_{L,OSV}=T_{sat}-0.7\exp{-0.065 \frac{D_{d}h_{c,L}}{\lambda_{L}}}\frac{\phi_{w}
 \includegraphics[width=0.5\linewidth]{img/HFP/Basu/slide.PNG}
 \label{fig:basu_hfp_sliding}
 }
-\caption{Sketch of the heat transfers zones and bubble behavior considered by Basu \etal. (Adapted from \cite{basu_wall_2005})}
+\caption{Sketch of the heat transfers zones and bubble behavior considered by Basu \etal. (Adapted from \cite{basu_wall_2005}). $Q$ represents the heat transfer.}
 \label{fig:basu_hfp_sketch}
 \end{figure}
 	
@@ -399,7 +399,7 @@ The total heat flux is partitioned between the liquid forced convection $\phi_{c
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.6\linewidth]{img/HFP/Gilman/hfp_model.PNG}
-\caption{Heat Flux Partitioning considered by Gilman \cite{gilman_development_2014} (Adapted from \cite{gilman_self-consistent_2017}).}
+\caption{Heat Flux Partitioning considered by Gilman \cite{gilman_development_2014} (Adapted from \cite{gilman_self-consistent_2017}). $q''$ are the heat fluxes and $sc$ means "sliding conduction".}
 \label{fig:gilman_hfp}
 \end{figure}
 
@@ -446,10 +446,10 @@ The sliding quenching term is also computed in a way similar to Basu \etal as:
 A_{sl} &= \overline{D}l_{sl} = \frac{D_{d}+D_{lo}}{2}\parth{N_{merg}s+l_{D_{N}\rightarrow D_{lo}}}
 \end{align}
 
-Regarding the boiling heat flux, Gilman splits it in two contributions respectively associated with the inception of nucleation ($\phi_{e,init}$) and liquid microlayer evaporation ($\phi_{e,ML}$) :
+Regarding the boiling heat flux, Gilman splits it in two contributions respectively associated with the inception of nucleation ($\phi_{e,in}$) and liquid microlayer evaporation ($\phi_{e,ML}$) :
 
 \begin{align}
-\phi_{e} &= \phi_{e,init} + \phi_{e,ML} \\
+\phi_{e} &= \phi_{e,in} + \phi_{e,ML} \\
 %
 &= \frac{4}{3}\pi R_{d}^{3}\rho_{V} h_{LV} \frac{1}{t_{w}+t_{g}}N_{sit,a} + V_{ML} \rho_{L}h_{LV} \frac{1}{t_{w}+t_{g}}N_{sit,a}\\
 %
@@ -524,18 +524,18 @@ S_{sl} = \min{1\ ;\ A_{sl}N_{sit,a}t^{*}f}
 The evaporation heat flux is based on Gilman approach by splitting it between inception and microlayer evaporation:
 
 \begin{align}
-\phi_{e} &= \phi_{e,init} + \phi_{e,ML} \\
-&= \frac{4}{3}\pi \parth{\frac{D_{init}}{2}}^{3}\rho_{V} h_{LV} f N_{sit,a} + V_{ML} \rho_{V} h_{LV} f N_{b}
+\phi_{e} &= \phi_{e,in} + \phi_{e,ML} \\
+&= \frac{4}{3}\pi \parth{\frac{D_{in}}{2}}^{3}\rho_{V} h_{LV} f N_{sit,a} + V_{ML} \rho_{V} h_{LV} f N_{b}
 \end{align}
 
 
 The microlayer terms are modeled based on the contact angle $\theta$ and the capillary number $\Ca = \dfrac{\mu_{L} U_{b}}{\sigma}$, where $U_{b}$ is the bubble interface velocity, as:
 
 \begin{align}
-D_{init} &= D_{d}~ \max{1\ ;\ 0.1237\Ca^{-0.373}\sin{\theta}}\\
+D_{in} &= D_{d}~ \max{1\ ;\ 0.1237\Ca^{-0.373}\sin{\theta}}\\
 V_{ML} &= \delta_{ML}D_{ML}^{2} \frac{\pi}{12} \parth{2 - \parth{\frac{D_{dry}}{D_{ML}}}^{2} - \frac{D_{dry}}{D_{ML}}}
 \end{align}
-with $D_{ML} = D_{init} / 2$ and $\dfrac{D_{dry}}{D_{ML}} = \max{1\ ;\ 0.1237\Ca^{-0.373}\sin{\theta}}$.
+with $D_{ML} = D_{in} / 2$ and $\dfrac{D_{dry}}{D_{ML}} = \max{1\ ;\ 0.1237\Ca^{-0.373}\sin{\theta}}$.
 
 \npar
 

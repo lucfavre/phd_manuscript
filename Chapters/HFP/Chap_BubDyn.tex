@@ -173,7 +173,7 @@ D_{lo} =& 1.2 D_{d}
 This formulation is used in Kommajosyula's HFP model. Having a proportionality between $D_{d}$ and $D_{lo}$ allows the comparison with a database gathering both departure and lift-off diameter measurements.
 \end{note*}
 
-Although this law presents coherent trends with flow conditions, the raw presence of $U_{L,bulk}$ in the expression is questionable because:
+Although this law presents coherent trends with flow conditions, we can question the raw presence of $U_{L,bulk}$ because:
 
 \begin{itemize}
 \item The relationship is not dimensionless and the constant $18.9 \times 10^{-6}$ must be in m\up{1.26}.s\up{-0.26} ;
@@ -241,7 +241,7 @@ The estimation of the bubble sliding velocity through an explicit correlation is
 Other assumptions regarding the sliding length relies on the value of the bubble-generating site density on the heater $N_{sit,a}$. Supposing that bubbles usually lift-off after sliding a distance between two active sites gives:
 
 \begin{equation}
-l_{sl} = \frac{1}{\sqrt{N_{bub}}}
+l_{sl} = \frac{1}{\sqrt{N_{sit,a}}}
 \label{eq:lsl_avgdist_bub}
 \end{equation}
 
@@ -255,7 +255,7 @@ Albeit proposing coherent trend with the flow boiling conditions along with good
 
 \npar
 
-To try to overcome this drawback and come up with more generalized models, researchers have explored an alternative approach by developing Mechanistic Models based on a force-balance to precisely depict the external efforts experienced by the growing bubble. The goal is to compute the sum of the forces applied to the bubble over its growing time and to detect departure and lift-off events using associated criteria such as a change in the force balance sign. This will be the subject of the next section.
+To try to overcome this drawback and come up with more generalized models, researchers have explored an alternative approach by developing mechanistic models based on a force-balance to precisely depict the external efforts experienced by the growing bubble. The goal is to compute the sum of the forces applied to the bubble over its growing time and to detect departure and lift-off events using associated criteria such as a change in the force balance sign. This will be the subject of the next section.
 
 \npar
 
@@ -2526,7 +2526,7 @@ At last, even though the force-balance approach presents many interests for mode
 Alternatively, in case it would prove to be necessary to define a lift-off diameter value for the HFP model, we propose a simple direct correlation based on non-dimensional parameters characterizing the boiling conditions. We chose to model the value of the non-dimensional lift-off diameter $D_{lo} / L_{c}$ using the liquid Prandtl number $\Pr_{L}$ at saturation, the density ratio $\rho^{*} = \rho_{L}/\rho_{V}$, the reduced Jakob numbers $\Ja_{w}^{*}$ and $\Ja_{L}^{*}$ and the wall Reynolds number $\Re_{\tau}$. Using the \texttt{sklearn} module to estimate the value of the coefficient for the multilinear regression over the data of Table \ref{tab:exp_data_dlo} yields: 
 
 \begin{equation}
-\frac{D_{lo}}{L_{c}} = e^{8.43} \Pr_{L}^{-0.005} \parth{\frac{\rho_{L}}{\rho_{V}}}^{-0.36} {\Ja_{w}^{*}}^{1.15} \parth{1+\Ja_{L}}^{-6.68} \parth{1+\Re_{\tau}}^{-0.53}
+\frac{D_{lo}}{L_{c}} = e^{8.43} \Pr_{L}^{-0.005} \parth{\frac{\rho_{L}}{\rho_{V}}}^{-0.36} {\Ja_{w}^{*}}^{1.15} \parth{1+\Ja_{L}^{*}}^{-6.68} \parth{1+\Re_{\tau}}^{-0.53}
 \label{eq:correl_dlo}
 \end{equation}
 
@@ -2594,7 +2594,7 @@ In this chapter, we discussed the different aspects of boiling bubble dynamics i
 
 \item A similar approach was more complicated to apply for lift-off predictions due to the high sensitivity of the  force balance perpendicular to the wall. Moreover, single bubble lift-off can not be considered as a general bubble behavior in vertical boiling according to many experimental observations.
 
-\item The many different correlations for bubble dynamics predictions are tied to their establishment range and can lack of generality or present undesirable mathematical behavior (\eg divergence or tending to 0 in pool boiling or saturated conditions). A direct correlation was proposed to estimate the bubble lift-off diameter (or maximum bubble diameter for a single bubble) based on a large experimental database in vertical boiling. The simple use of terms in the form $\parth{1+\Ja_{L}^{*}}^{a}$ and $\parth{1+\Re_{\tau}}^{b}$ that degenerates to 1 in pool or saturated boiling allow the correlation to be applied in any flow conditions.
+\item The many different correlations for bubble dynamics predictions are tied to their establishment range and can lack of generality or present undesirable mathematical behavior (\eg divergence or tending to 0 in pool boiling or saturated conditions). A direct correlation was proposed to estimate the bubble lift-off diameter (or maximum bubble diameter for a single bubble) based on a large experimental database in vertical boiling. The use of terms in the form $\parth{1+\Ja_{L}^{*}}^{a}$ and $\parth{1+\Re_{\tau}}^{b}$ that degenerates to 1 in pool or saturated boiling allow the correlation to be applied in any flow conditions.
 \end{itemize}
 
 

@@ -5772,6 +5772,101 @@
     \field{year}{2021}
   \endentry
 
+  \entry{krepper_inhomogeneous_2008}{article}{}
+    \name{author}{5}{}{%
+      {{hash=KE}{%
+         family={Krepper},
+         familyi={K\bibinitperiod},
+         given={Eckhard},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Lucas},
+         familyi={L\bibinitperiod},
+         given={Dirk},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=FT}{%
+         family={Frank},
+         familyi={F\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=PHM}{%
+         family={Prasser},
+         familyi={P\bibinitperiod},
+         given={Horst-Michael},
+         giveni={H\bibinithyphendelim M\bibinitperiod},
+      }}%
+      {{hash=ZPJ}{%
+         family={Zwart},
+         familyi={Z\bibinitperiod},
+         given={Phil\bibnamedelima J.},
+         giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KE+1}
+    \strng{fullhash}{KELDFTPHMZPJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    A generalized inhomogeneous multiple size group ({MUSIG}) model based on
+  the Eulerian modeling framework was developed in close cooperation of
+  {ANSYS}-{CFX} and Forschungszentrum Dresden-Rossendorf and implemented into
+  the {CFD} code {CFX}. The model enables the subdivision of the dispersed
+  phase into a number of size groups regarding the mass balance as well as
+  regarding the momentum balance. In this work, the special case of
+  polydispersed bubbly flow is considered. By simulating such flows, the mass
+  exchanged between bubble size classes by bubble coalescence and bubble
+  fragmentation, as well as the momentum transfer between the bubbles and the
+  surrounding liquid due to bubble size dependent interfacial forces have to be
+  considered. Particularly the lift force has been proven to play an important
+  role in establishing a certain bubble size distribution dependent flow
+  regime. In a previous study [Krepper, E., Lucas, D., Prasser, H.-M., 2005. On
+  the modeling of bubbly flow in vertical pipes. Nucl. Eng. Des. 235,
+  597–611] the application of such effects were considered and justified and
+  a general outline of such a model concept was given. In this paper the model
+  and its validation for several vertical pipe flow situations is presented.
+  The experimental data were obtained from the {TOPFLOW} test facility at the
+  Forschungszentrum Dresden-Rossendorf ({FZD}). The wire-mesh technology
+  measuring local gas volume fractions, bubble size distributions and
+  velocities of gas and liquid phases were employed. The inhomogeneous {MUSIG}
+  model approach was shown as capable of describing bubbly flows with higher
+  gas content. Particularly the separation phenomenon of small and large
+  bubbles is well described. This separation has been proven as a key
+  phenomenon in the establishment of the corresponding flow regime. Weaknesses
+  in this approach can be attributed to the characterization of bubble
+  coalescence and bubble fragmentation, which must be further investigated.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.nucengdes.2008.01.004
+    \endverb
+    \field{issn}{0029-5493}
+    \field{number}{7}
+    \field{pages}{1690\bibrangedash 1702}
+    \field{shortjournal}{Nuclear Engineering and Design}
+    \field{title}{The inhomogeneous {MUSIG} model for the simulation of
+  polydispersed flows}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0029549308000538
+    \endverb
+    \field{volume}{238}
+    \field{langid}{english}
+    \verb{file}
+    \verb ScienceDirect Snapshot:C\:\\Users\\Luc\\Zotero\\storage\\9X3EC5TB\\S0
+    \verb 029549308000538.html:text/html
+    \endverb
+    \field{journaltitle}{Nuclear Engineering and Design}
+    \field{day}{01}
+    \field{month}{07}
+    \field{year}{2008}
+    \field{urlday}{01}
+    \field{urlmonth}{12}
+    \field{urlyear}{2022}
+  \endentry
+
   \entry{kurul_multidimensional_1990}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=KN}{%

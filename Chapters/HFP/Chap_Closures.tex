@@ -1215,13 +1215,13 @@ where $A_{c,V}$ is the portion of the wall area in direct contact with vapor.
 The vapor heat transfer coefficient is estimated simply based on a conductive transfer over a bubble radius:
 
 \begin{equation}
-h_{c,V} = \dfrac{\lambda_{V}}{\overline{R}}
+h_{c,V} = \dfrac{\lambda_{V}}{\left<R\right>}
 \end{equation}
 
 For a truncated spherical bubble, the vapor contact area is its foot area : $\pi  \parth{R~\sin{\theta}}^{2}$. Since the bubbles are supposed to grow following a $\sqrt{t}$ law (Section \ref{sec:bub_growth}), the average radius for a bubble over its growth time $t_{g}$ is:
 
 \begin{equation}
-\overline{R} = \frac{1}{t_{g}}\int_{0}^{R}r\ \mathrm{d}r = \frac{1}{t_{g}} \int_{0}^{t_{g}} K\Ja_{w}\sqrt{\eta_{L}t}~\mathrm{d}t = \frac{1}{t_{g}} K\Ja_{w} \frac{2}{3}\sqrt{\eta_{L}}~t_{g}^{3/2} = \frac{2}{3}R
+\left<R\right> = \frac{1}{t_{g}}\int_{0}^{R}r\ \mathrm{d}r = \frac{1}{t_{g}} \int_{0}^{t_{g}} K\Ja_{w}\sqrt{\eta_{L}t}~\mathrm{d}t = \frac{1}{t_{g}} K\Ja_{w} \frac{2}{3}\sqrt{\eta_{L}}~t_{g}^{3/2} = \frac{2}{3}R
 \end{equation}
 
 Distinguishing between the bubbles that coalesce while growing up to $R_{d}$ on their site and sliding bubbles that reaches $R_{sl}$, we have:
@@ -1242,7 +1242,7 @@ The time-averaged surface proportion occupied by bubble footprints is then:
 Using the expressions of $A_{q}$ and $A_{c,V}$, we can deduce the remaining unaffected area $A_{c,L}$:
 
 \begin{equation}
-A_{c,L} = 1 - A_{q}t_{q}f - \overline{A_{c,V}}
+A_{c,L} = 1 - A_{q}t_{q}f - {A_{c,V}}
 \end{equation}
 
 \subsection{Model Summary}
@@ -1442,7 +1442,7 @@ $A_{q,1b} = \pi R_{coal,sl}^{2} \times A_{q,1b}^{*}$ with $A_{q,1b}^{*}$ by Eq. 
 %
 \multirow{4}*{Vapor Convective Heat Flux $\phi_{c,V}$} & 
 $\phi_{c,V} = A_{c,V} h_{c,V} \Delta T_{w}$ \newline
-$h_{c,V} = \dfrac{\lambda_{V}}{\overline{R}}$\newline
+$h_{c,V} = \dfrac{\lambda_{V}}{\left<R\right>}$\newline
 $A_{c,V} = \parth{N_{coal,st} + \dfrac{N_{coal,sl}}{2}}\pi \parth{\dfrac{2}{3}R_{d}\ \sin{\theta}}^{2} + \dfrac{N_{coal,sl}}{2}\pi \parth{\dfrac{2}{3}R_{sl}\ \sin{\theta}}^{2}$
 \\
 \\
