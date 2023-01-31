@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.18)  18 JAN 2023 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.18)  31 JAN 2023 22:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -806,47 +806,42 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
 [3]
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-[4 <./forces.pdf>]
-Missing character: There is no ; in font nullfont!
-[5 <./shi_scheme.pdf> <./wettability.pdf>]
-Missing character: There is no ; in font nullfont!
-[6 <./bub_life_VFB.pdf> <./FIP.pdf> <./static_coal.pdf>]
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
+[4 <./shi_scheme.pdf>] [5 <./wettability.pdf>]
 Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-[7 <./static_suppression.pdf>] [8 <./deb_prom.pdf>] [9 <./agate_mes_ax.pdf> <./
-subchannel.pdf>] [10 <./pwr_sketch.pdf>] [11 <./energy_mix.pdf>] (draw.aux) ) 
+[6 <./bub_life_VFB.pdf> <./FIP.pdf> <./static_coal.pdf>] [7 <./static_suppressi
+on.pdf> <./deb_sketch.pdf>] [8 <./deb_prom.pdf>] [9 <./agate_mes_ax.pdf> <./sub
+channel.pdf>] [10 <./pwr_sketch.pdf>] [11 <./energy_mix.pdf>] (draw.aux) ) 
 Here is how much of TeX's memory you used:
- 27962 strings out of 476404
- 701469 string characters out of 2790468
- 1882324 words of memory out of 3000000
- 47880 multiletter control sequences out of 15000+600000
+ 27974 strings out of 476404
+ 701605 string characters out of 2790468
+ 1893324 words of memory out of 3000000
+ 47893 multiletter control sequences out of 15000+600000
  516646 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,12n,104p,723b,2194s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C
-:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy1
-0.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmbx7.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmmi10.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmmi7.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/Luc/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C:/Users/Luc/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Luc/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Luc/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Lu
-c/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Use
-rs/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-<C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
-6.pfb>
-Output written on draw.pdf (11 pages, 303967 bytes).
+<C:/U
+sers/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.p
+fb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mbx7.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmmi7.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmmi8.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmmib10.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C:/Users/Luc/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Luc/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Luc/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Luc/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/
+Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on draw.pdf (11 pages, 296103 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
+ 325 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
 
