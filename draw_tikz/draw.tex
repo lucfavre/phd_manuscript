@@ -1899,6 +1899,89 @@ coordinates
 
 
 
+
+
+\beginpgfgraphicnamed{deb_sketch}
+
+\fbox{
+
+\begin{tikzpicture}[scale=2.0]
+
+\tikzmath{\length=4.0; \diam=0.6;};
+
+\coordinate (A1) at (0,0);
+\coordinate (A2) at ($(A1) + (0,\length)$);
+\coordinate (B1) at (\diam,0);
+\coordinate (B2) at ($(B1)+(0,\length)$);
+
+\fill[top color = blue!5!white, bottom color = blue!20!white] (A1)--(A2)--(B2)--(B1)--cycle;
+
+\draw (A1) -- (A2);
+\draw (B1) -- (B2);
+
+%Inlet water
+\draw [->, >=latex, blue!70!black] ($(A1)+({\diam / 2},-0.2)$) --++ (0,0.4) node[very near start, right]{$G_{L}$};
+
+
+%Applied heat flux
+\tikzmath{\lheat=3.5;};
+
+\foreach \z in {0,...,4}
+{
+\coordinate (P1) at (0,{0.5 + \z * \lheat / 5});
+\coordinate (P2) at (\diam, {0.5 + \z * \lheat / 5});
+
+\draw[->, >=latex, red!80!black] ($(P1)+(-0.4,0)$) -- (P1);
+\draw[->, >=latex, red!80!black] ($(P2)+(0.4,0)$) -- (P2);
+
+}
+
+
+\draw[red!80!black] (0,{\length / 2}) node[left]{$\phi_{w}$};
+\draw[red!80!black] (\diam,{\length / 2}) node[right]{$\phi_{w}$};
+
+%Measurement section
+\draw[brown!50!black, densely dashed, line width=2] (P1)--(P2);
+
+\draw[->, >=latex, brown!30!black] ($(P2)+(0.4,0.4)$)--($(P2)+(0.02,0.02)$)  node[very near start, above right]{\footnotesize{Measurements}};
+
+%Heating length
+\draw[black, densely dashed, <->,>=latex] ($(A1)+(-0.5,0.5)$) -- ($(P1) + (-0.5,0)$) node[midway,left]{$3.5~$m};
+
+%Radisu
+\draw[black, densely dashed, <->,>=latex] (A2)--(B2) node[midway,above]{$9.6~$mm};
+
+%Bubbles before MV
+\tikzmath{\lpremv=\lheat ;};
+\tikzmath{\bubrad=0.02;};
+\foreach \i in {1,...,150}
+{
+
+\draw[fill=gray!10!white] ({\bubrad+rnd*(\diam-2*\bubrad)}, { \lpremv / 4 + rnd*3*\lpremv /4}) circle(\bubrad);
+
+}
+
+
+
+
+\end{tikzpicture}
+
+
+
+}
+
+\endpgfgraphicnamed
+
+
+
+
+
+
+
+
+
+
+
 \beginpgfgraphicnamed{deb_prom}
 
 \fbox{
@@ -2363,8 +2446,45 @@ if
 \endpgfgraphicnamed
 
 
+\beginpgfgraphicnamed{energy_mix}
+
+\def\angle{0}
+\def\radius{4}
+\def\cyclelist{{"orange","blue","red","green", "purple"}}
+\newcount\cyclecount \cyclecount=-1
+\newcount\ind \ind=-1
+\begin{tikzpicture}[nodes = {font=\sffamily}, every node/.style={scale=1.5}]
+  \foreach \percent/\name in {
+      68.4/Nuclear,
+      11.4/Hydro,
+      9.4/Wind + Solar,
+      8.5/Natural Gas + Oil + Coal,
+      2.3/Other
+    } {
+      \ifx\percent\empty\else               % If \percent is empty, do nothing
+        \global\advance\cyclecount by 1     % Advance cyclecount
+        \global\advance\ind by 1            % Advance list index
+        \ifnum4<\cyclecount                 % If cyclecount is larger than list
+          \global\cyclecount=0              %   reset cyclecount and
+          \global\ind=0                     %   reset list index
+        \fi
+        \pgfmathparse{\cyclelist[\the\ind]} % Get color from cycle list
+        \edef\color{\pgfmathresult}         %   and store as \color
+        % Draw angle and set labels
+        \draw[fill={\color!50},draw={\color}] (0,0) -- (\angle:\radius)
+          arc (\angle:\angle+\percent*3.6:\radius) -- cycle;
+        \node at (\angle+0.5*\percent*3.6:0.7*\radius) {\percent\,\%};
+        \node[pin=\angle+0.5*\percent*3.6:\name]
+          at (\angle+0.5*\percent*3.6:\radius) {};
+        \pgfmathparse{\angle+\percent*3.6}  % Advance angle
+        \xdef\angle{\pgfmathresult}         %   and store in \angle
+      \fi
+    };
+\end{tikzpicture}
+
+\endpgfgraphicnamed
+
 
 \end{document}
 
 
-\end{document}
