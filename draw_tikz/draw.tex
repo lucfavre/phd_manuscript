@@ -23,6 +23,8 @@
 \usetikzlibrary{decorations.pathmorphing}
 \usetikzlibrary{calc}
 \usetikzlibrary{math}
+\usetikzlibrary{intersections,arrows.meta,bending} 
+
 \usepackage{pgfplots}
 \pgfrealjobname{draw}
 \usetikzlibrary{intersections}
@@ -2492,6 +2494,340 @@ if
 \endpgfgraphicnamed
 
 
+
+
+
+
+%%%BUBBLE TIME SCALES
+
+
+\begin{tikzpicture}[scale=2.5]
+\coordinate (O) at (0,0);
+\coordinate (Oliq) at (0,0.1);
+\coordinate (cavL) at ($(O)+(0.5,0)$);
+\coordinate (cavC) at ($(cavL)+(-45:0.5)$);
+\coordinate (cavR) at ($(cavC)+(+45:0.5)$);
+\coordinate (Oend) at ($(cavR)+(0.5,0)$);
+\coordinate (sep) at ($(Oend)+(1.0,0)+(0.05,0)$);
+
+%coordinates {(1,1) (2,2) (4,-2) (3,2)}
+
+
+
+%\draw[blue] plot [smooth, tension=0.3] coordinates {(Oliq) ($(cavL)+(0,0.1)$) ($(cavC)+(0,0.1)$) ($(cavR)+(0,0.1)$) ($(Oend)+(0,0.1)$)};
+
+\fill[top color=blue!10!white, bottom color=red!10!white] (O)--(cavL)--(cavC)--(cavR)--(sep)--($(sep)+(0,2)$)--($(O)+(0,2)$)--cycle;
+
+\fill[white] (cavC) circle(0.2);
+
+\coordinate (Ob) at ($(O) + (2.5,0)$);
+
+\draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep);
+
+\draw (cavC) node[below]{Before ONB : $t<0$};
+
+\draw (O) node[left]{$T_{w}$};
+
+\draw ($(O) + (0,2)$) node[left]{$T_{L}$};
+
+\end{tikzpicture}
+
+
+
+\begin{tikzpicture}[scale=2.5]
+\coordinate (O) at (0,0);
+\coordinate (Oliq) at (0,0.1);
+\coordinate (cavL) at ($(O)+(0.5,0)$);
+\coordinate (cavC) at ($(cavL)+(-45:0.5)$);
+\coordinate (cavR) at ($(cavC)+(+45:0.5)$);
+\coordinate (Oend) at ($(cavR)+(0.5,0)$);
+\coordinate (sep) at ($(Oend)+(1.0,0)+(0.05,0)$);
+
+%coordinates {(1,1) (2,2) (4,-2) (3,2)}
+
+
+%\draw[blue] plot [smooth, tension=0.3] coordinates {(Oliq) ($(cavL)+(0,0.1)$) ($(cavC)+(0,0.1)$) ($(cavR)+(0,0.1)$) ($(Oend)+(0,0.1)$)};
+
+\fill[top color=blue!10!white, bottom color=red!40!white] (O)--(cavL)--(cavC)--(cavR)--(sep)--($(sep)+(0,2)$)--($(O)+(0,2)$)--cycle;
+
+\fill[white] (cavC) circle(0.5);
+
+%\coordinate (Ob) at ($(O) + (2.5,0)$);
+
+\coordinate (Ob) at ($(O) + (2.6,0)$);
+
+\tikzmath{\ray=0.5; \hei = 0; \alphrad = acos(\hei / \ray);};
+
+\coordinate (Oarc) at (cavR);
+%\draw[fill=white] (Oarc) arc({(pi/2-\alphrad) r}:{(3*pi/2-\alphrad) r}:\ray);
+
+\draw[fill=white] (cavC) circle(0.5);
+
+%Wall
+
+\fill[white] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep)--++(0,-1)--($(O)-(0,1)$)--cycle;
+\draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep);
+
+\draw (cavC) node[below]{ONB : $t=0$};
+
+\draw (O) node[left]{$T_{w}$};
+
+\draw ($(O) + (0,2)$) node[left]{$T_{L}$};
+
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=2.5]
+\coordinate (O) at (0,0);
+\coordinate (Oliq) at (0,0.1);
+\coordinate (cavL) at ($(O)+(0.5,0)$);
+\coordinate (cavC) at ($(cavL)+(-45:0.5)$);
+\coordinate (cavR) at ($(cavC)+(+45:0.5)$);
+\coordinate (Oend) at ($(cavR)+(0.5,0)$);
+\coordinate (sep) at ($(Oend)+(1.0,0)+(0.05,0)$);
+
+%coordinates {(1,1) (2,2) (4,-2) (3,2)}
+
+
+%\draw[blue] plot [smooth, tension=0.3] coordinates {(Oliq) ($(cavL)+(0,0.1)$) ($(cavC)+(0,0.1)$) ($(cavR)+(0,0.1)$) ($(Oend)+(0,0.1)$)};
+
+\fill[top color=blue!10!white, bottom color=red!40!white] (O)--(cavL)--(cavC)--(cavR)--(sep)--($(sep)+(0,2)$)--($(O)+(0,2)$)--cycle;
+
+
+%\coordinate (Ob) at ($(O) + (2.5,0)$);
+
+\coordinate (Ob) at ($(O) + (2.6,0)$);
+
+\tikzmath{\ray=0.5; \hei = 0; \alphrad = acos(\hei / \ray);};
+
+\coordinate (Oarc) at (cavR);
+%\draw[fill=white] (Oarc) arc({(pi/2-\alphrad) r}:{(3*pi/2-\alphrad) r}:\ray);
+
+\draw[fill=white] ($(cavC) + (0,0.7)$) circle(0.5);
+\fill[white] (cavC) circle(0.5);
+
+%Wall
+
+\fill[white] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep)--++(0,-1)--($(O)-(0,1)$)--cycle;
+\draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep);
+
+\draw (cavC) node[below]{Departure : $t=t_{g,d}$, $R=K\sqrt{\eta_{L}t_{g,d} }$};
+
+
+\draw (O) node[left]{$T_{w}$};
+
+\draw ($(O) + (0,2)$) node[left]{$T_{L}$};
+
+\end{tikzpicture}
+
+
+
+\newcounter{randarcs}
+
+
+\begin{tikzpicture}[scale=2.5]
+\coordinate (O) at (0,0);
+\coordinate (Oliq) at (0,0.1);
+\coordinate (cavL) at ($(O)+(0.5,0)$);
+\coordinate (cavC) at ($(cavL)+(-45:0.5)$);
+\coordinate (cavR) at ($(cavC)+(+45:0.5)$);
+\coordinate (Oend) at ($(cavR)+(0.5,0)$);
+\coordinate (sep) at ($(Oend)+(1.0,0)+(0.05,0)$);
+
+%coordinates {(1,1) (2,2) (4,-2) (3,2)}
+
+
+%\draw[blue] plot [smooth, tension=0.3] coordinates {(Oliq) ($(cavL)+(0,0.1)$) ($(cavC)+(0,0.1)$) ($(cavR)+(0,0.1)$) ($(Oend)+(0,0.1)$)};
+
+\fill[top color=blue!10!white, bottom color=red!90!blue!5!white] (O)--(cavL)--(cavC)--(cavR)--(sep)--($(sep)+(0,2)$)--($(O)+(0,2)$)--cycle;
+
+
+%\coordinate (Ob) at ($(O) + (2.5,0)$);
+
+\coordinate (Ob) at ($(O) + (2.6,0)$);
+
+\tikzmath{\ray=0.5; \hei = 0; \alphrad = acos(\hei / \ray);};
+
+\coordinate (Oarc) at (cavR);
+%\draw[fill=white] (Oarc) arc({(pi/2-\alphrad) r}:{(3*pi/2-\alphrad) r}:\ray);
+
+\draw[fill=white] ($(cavC) + (1.0,0.7)$) circle(0.5);
+\draw[->=latex, thick, red] ($(cavC) + (1.5,0.7)$)--++(0.25,0) node[very near end, above]{\textcolor{red}{$\vect{U_{b}}$}};
+\fill[white] (cavC) circle(0.2);
+
+%%%%TURBULENCE QUENCHING
+%\pgfmathsetseed{21}
+%\foreach \X in {1,...,15}
+%{\pgfmathsetmacro{\myx}{0.3+0.2*rnd}
+%\pgfmathsetmacro{\myy}{0.3+0.2*rnd}
+%\pgfmathsetmacro{\angA}{360*rnd}
+%\pgfmathsetmacro{\radA}{0.1+0.1*rnd}
+%\pgfmathsetmacro{\myxp}{\myx+\radA*cos(\angA)}
+%\pgfmathsetmacro{\myyp}{\myy+\radA*sin(\angA)}
+%\pgfmathsetmacro{\angB}{\angA-75+150*rnd}
+%\pgfmathsetmacro{\radB}{\radA-0.1+0.2*rnd}
+%\pgfmathsetmacro{\myxq}{\myxp+\radB*cos(\angB)}
+%\pgfmathsetmacro{\myyq}{\myyp+\radB*sin(\angB)}
+%\pgfmathsetmacro{\angC}{\angB-45+90*rnd}
+%\pgfmathsetmacro{\radC}{\radB-0.1+0.2*rnd}
+%\pgfmathsetmacro{\myxr}{\myxq+\radB*cos(\angC)}
+%\pgfmathsetmacro{\myyr}{\myyq+\radB*sin(\angC)}
+%%\typeout{\angA,\radA;\angB,\radB}
+%\path[-{Latex},name path=test-arc, blue!70!black] plot[smooth,tension=1] 
+%coordinates {(\myx,\myy) (\myxp,\myyp) (\myxq,\myyq) (\myxr,\myyr) };
+%\def\HasIntersection{0}
+%\ifnum\X>1
+% \foreach \Y in {1,...,\number\value{randarcs}}
+% {\path[name intersections={of=\Y-arc and test-arc,total=\t},
+% /utils/exec=\ifnum\t>0
+%  \xdef\HasIntersection{1}%\typeout{intersects}
+% \fi];
+% }
+%\fi
+%\ifnum\HasIntersection=0
+%    \stepcounter{randarcs}
+%    \draw[-{Latex[bend]}] 
+%    plot[smooth,tension=1] coordinates {(\myx,\myy) (\myxp,\myyp)
+%    (\myxq,\myyq)  (\myxr,\myyr)};
+%    \path[name path global=\number\value{randarcs}-arc]
+%    plot[smooth,tension=1] coordinates {(\myx,\myy) (\myxp,\myyp)
+%    (\myxq,\myyq)  (\myxr,\myyr)} -- cycle;
+%\fi}
+
+\tikzmath{\rayspi=0.1;};
+
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=20,yshift=4] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;\\
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=24,yshift=12] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+
+%\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=25,yshift=6] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;\\
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=27,yshift=17] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+
+
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=30,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=34,yshift=10] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=37,yshift=20] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;\\
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=44,yshift=24] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+
+%Wall
+
+\fill[white] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep)--++(0,-1)--($(O)-(0,1)$)--cycle;
+\draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep);
+
+\draw (cavC) node[below]{After departure : $t>t_{g,d}$};
+
+\draw (O) node[left]{$T_{w}$};
+
+\draw ($(O) + (0,2)$) node[left]{$T_{L}$};
+\end{tikzpicture}
+
+
+\begin{tikzpicture}[scale=2.5]
+\coordinate (O) at (0,0);
+\coordinate (Oliq) at (0,0.1);
+\coordinate (cavL) at ($(O)+(0.5,0)$);
+\coordinate (cavC) at ($(cavL)+(-45:0.5)$);
+\coordinate (cavR) at ($(cavC)+(+45:0.5)$);
+\coordinate (Oend) at ($(cavR)+(0.5,0)$);
+\coordinate (sep) at ($(Oend)+(1.0,0)+(0.05,0)$);
+
+%coordinates {(1,1) (2,2) (4,-2) (3,2)}
+
+
+
+%\draw[blue] plot [smooth, tension=0.3] coordinates {(Oliq) ($(cavL)+(0,0.1)$) ($(cavC)+(0,0.1)$) ($(cavR)+(0,0.1)$) ($(Oend)+(0,0.1)$)};
+
+\fill[top color=blue!10!white, bottom color=blue!10!white] (O)--(cavL)--(cavC)--(cavR)--(sep)--($(sep)+(0,2)$)--($(O)+(0,2)$)--cycle;
+
+\fill[white] (cavC) circle(0.2);
+
+\coordinate (Ob) at ($(O) + (2.5,0)$);
+
+\draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep);
+
+\draw (cavC) node[below]{Wait period : $t>t_{g,d}$};
+
+\draw (O) node[left]{$T_{w}$};
+
+\draw ($(O) + (0,2)$) node[left]{$T_{L}$};
+
+\end{tikzpicture}
+
+
+
+\begin{tikzpicture}[scale=2.5]
+\coordinate (O) at (0,0);
+\coordinate (Oliq) at (0,0.1);
+\coordinate (cavL) at ($(O)+(0.5,0)$);
+\coordinate (cavC) at ($(cavL)+(-45:0.5)$);
+\coordinate (cavR) at ($(cavC)+(+45:0.5)$);
+\coordinate (Oend) at ($(cavR)+(0.5,0)$);
+\coordinate (sep) at ($(Oend)+(1.0,0)+(0.05,0)$);
+
+%coordinates {(1,1) (2,2) (4,-2) (3,2)}
+
+
+
+%\draw[blue] plot [smooth, tension=0.3] coordinates {(Oliq) ($(cavL)+(0,0.1)$) ($(cavC)+(0,0.1)$) ($(cavR)+(0,0.1)$) ($(Oend)+(0,0.1)$)};
+
+\fill[top color=blue!10!white, bottom color=red!10!white] (O)--(cavL)--(cavC)--(cavR)--(sep)--($(sep)+(0,2)$)--($(O)+(0,2)$)--cycle;
+
+\fill[white] (cavC) circle(0.2);
+
+\coordinate (Ob) at ($(O) + (2.5,0)$);
+
+\draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep);
+
+\draw (cavC) node[below]{TBL reconstruction : $t>t_{g,d}$};
+
+\draw (O) node[left]{$T_{w}$};
+
+\draw ($(O) + (0,2)$) node[left]{$T_{L}$};
+\end{tikzpicture}
+
+
+
+
+\begin{tikzpicture}[scale=2.5]
+\coordinate (O) at (0,0);
+\coordinate (Oliq) at (0,0.1);
+\coordinate (cavL) at ($(O)+(0.5,0)$);
+\coordinate (cavC) at ($(cavL)+(-45:0.5)$);
+\coordinate (cavR) at ($(cavC)+(+45:0.5)$);
+\coordinate (Oend) at ($(cavR)+(0.5,0)$);
+\coordinate (sep) at ($(Oend)+(1.0,0)+(0.05,0)$);
+
+%coordinates {(1,1) (2,2) (4,-2) (3,2)}
+
+
+%\draw[blue] plot [smooth, tension=0.3] coordinates {(Oliq) ($(cavL)+(0,0.1)$) ($(cavC)+(0,0.1)$) ($(cavR)+(0,0.1)$) ($(Oend)+(0,0.1)$)};
+
+\fill[top color=blue!10!white, bottom color=red!40!white] (O)--(cavL)--(cavC)--(cavR)--(sep)--($(sep)+(0,2)$)--($(O)+(0,2)$)--cycle;
+
+\fill[white] (cavC) circle(0.5);
+
+%\coordinate (Ob) at ($(O) + (2.5,0)$);
+
+\coordinate (Ob) at ($(O) + (2.6,0)$);
+
+\tikzmath{\ray=0.5; \hei = 0; \alphrad = acos(\hei / \ray);};
+
+\coordinate (Oarc) at (cavR);
+%\draw[fill=white] (Oarc) arc({(pi/2-\alphrad) r}:{(3*pi/2-\alphrad) r}:\ray);
+
+\draw[fill=white] (cavC) circle(0.5);
+
+%Wall
+
+\fill[white] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep)--++(0,-1)--($(O)-(0,1)$)--cycle;
+\draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep);
+
+\draw (cavC) node[below]{New nucleation : $t=t_{g,d}+t_{w} = \dfrac{1}{f}$};
+
+\draw (O) node[left]{$T_{w}$};
+
+\draw ($(O) + (0,2)$) node[left]{$T_{L}$};
+\end{tikzpicture}
 \end{document}
 
 
