@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.18)  18 JAN 2023 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.18)  1 FEB 2023 21:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -575,6 +575,44 @@ yfpu.code.tex))
 \tikz@math@dimen=\dimen283
 \tikz@math@toks=\toks39
 )
+(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/
+libraries\tikzlibraryintersections.code.tex
+(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrar
+yintersections.code.tex
+\pgf@intersect@solutions=\count308
+))
+(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrar
+yarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen284
+\pgfarrowlength=\dimen285
+\pgfarrowwidth=\dimen286
+\pgfarrowlinewidth=\dimen287
+)
+(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/
+libraries\tikzlibrarybending.code.tex
+File: tikzlibrarybending.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulebe
+nding.code.tex
+File: pgfmodulebending.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleno
+nlineartransformations.code.tex
+File: pgfmodulenonlineartransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgftransformnonlinearflatness=\dimen288
+)
+(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrar
+ycurvilinear.code.tex
+File: pgflibrarycurvilinear.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@curvilinear@time@a=\dimen289
+\pgf@curvilinear@length@a=\dimen290
+\pgf@curvilinear@length@b=\dimen291
+\pgf@curvilinear@length@c=\dimen292
+\pgf@curvilinear@length@d=\dimen293
+)
+\pgf@arrows@the@rigidity=\dimen294
+))
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revis
 ion.tex)
@@ -587,9 +625,9 @@ ode.tex
 \t@pgfplots@toka=\toks40
 \t@pgfplots@tokb=\toks41
 \t@pgfplots@tokc=\toks42
-\pgfplots@tmpa=\dimen284
-\c@pgfplots@coordindex=\count308
-\c@pgfplots@scanlineindex=\count309
+\pgfplots@tmpa=\dimen295
+\c@pgfplots@coordindex=\count309
+\c@pgfplots@scanlineindex=\count310
 
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssy
 sgeneric.code.tex))
@@ -612,13 +650,13 @@ pgfplotsliststructure.code.tex)
 pgfplotsliststructureext.code.tex)
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\
 pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count310
+\c@pgfplotsarray@tmp=\count311
 )
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\
 pgfplotsmatrix.code.tex)
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfpl
 otstableshared.code.tex
-\c@pgfplotstable@counta=\count311
+\c@pgfplotstable@counta=\count312
 \t@pgfplotstable@a=\toks46
 )
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\
@@ -631,7 +669,7 @@ inary.data.code.tex))
 til.verb.code.tex)
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrar
 ypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count312
+\c@pgfplotslibrarysurf@no=\count313
 
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrary
 pgfplots.surfshading.pgfsys-pdftex.def)))
@@ -665,13 +703,13 @@ libraries\tikzlibrarydecorations.pathreplacing.code.tex
 ns\pgflibrarydecorations.pathreplacing.code.tex))
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibra
 rypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count313
-\pgfplots@xmin@reg=\dimen285
-\pgfplots@xmax@reg=\dimen286
-\pgfplots@ymin@reg=\dimen287
-\pgfplots@ymax@reg=\dimen288
-\pgfplots@zmin@reg=\dimen289
-\pgfplots@zmax@reg=\dimen290
+\pgfplots@numplots=\count314
+\pgfplots@xmin@reg=\dimen296
+\pgfplots@xmax@reg=\dimen297
+\pgfplots@ymin@reg=\dimen298
+\pgfplots@ymax@reg=\dimen299
+\pgfplots@zmin@reg=\dimen300
+\pgfplots@zmax@reg=\dimen301
 )
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/
 libraries\tikzlibraryplotmarks.code.tex
@@ -687,45 +725,39 @@ Package TikZ externalization: calling \geometry{driver=none} during externaliza
 tion.
 
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/
-libraries\tikzlibraryintersections.code.tex
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrar
-yintersections.code.tex
-\pgf@intersect@solutions=\count314
-))
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdfte
 x.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count315
 \l__pdf_internal_box=\box66
 ) (draw.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Info: Redefining \degres on input line 64.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Info: Redefining \degres on input line 66.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 64.
+(french.ldf)             reported on input line 66.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 64.
-LaTeX Info: Redefining \up on input line 64.
+(french.ldf)             reported on input line 66.
+LaTeX Info: Redefining \up on input line 66.
 
 
 Package french.ldf Warning: OT1 encoding should not be used for French.
 (french.ldf)                Add \usepackage[T1]{fontenc} to the preamble
-(french.ldf)                of your document; reported on input line 64.
+(french.ldf)                of your document; reported on input line 66.
 
 Option `Gray' provided! 
  Command \Gray defined by SIunits package!
@@ -734,13 +766,13 @@ Option `Gray' provided!
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count316
-\scratchdimen=\dimen291
+\scratchdimen=\dimen302
 \scratchbox=\box67
 \nofMPsegments=\count317
 \nofMParguments=\count318
 \everyMPshowfont=\toks47
 \MPscratchCnt=\count319
-\MPscratchDim=\dimen292
+\MPscratchDim=\dimen303
 \MPnumerator=\count320
 \makeMPintoPDFobject=\count321
 \everyMPtoPDFconversion=\toks48
@@ -791,8 +823,10 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 64.
+ on input line 66.
 
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -816,24 +850,30 @@ Missing character: There is no ; in font nullfont!
 
 [7
 
-{C:/Users/Luc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] ) 
+{C:/Users/Luc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+\c@randarcs=\count322
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+ ) 
 Here is how much of TeX's memory you used:
- 27958 strings out of 476404
- 701384 string characters out of 2790468
- 1881324 words of memory out of 3000000
- 47894 multiletter control sequences out of 15000+600000
+ 28511 strings out of 476404
+ 716074 string characters out of 2790468
+ 1892324 words of memory out of 3000000
+ 48432 multiletter control sequences out of 15000+600000
  516646 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,12n,104p,723b,2194s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/Luc
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Us
-ers/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-<C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr8.pfb>
-Output written on deb_sketch.pdf (1 page, 58241 bytes).
+ 102i,12n,104p,723b,2196s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmr10.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr8.pfb>
+Output written on deb_sketch.pdf (1 page, 62080 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
+ 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 120 words of extra memory for PDF output out of 10000 (max. 10000000)
 

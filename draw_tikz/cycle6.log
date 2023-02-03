@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.18)  2 FEB 2023 02:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.18)  2 FEB 2023 01:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -719,14 +719,18 @@ File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 yplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
+No auxiliary output files.
+
+Package TikZ externalization: calling \geometry{driver=none} during externaliza
+tion.
+
+
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdfte
 x.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count315
 \l__pdf_internal_box=\box66
 ) (draw.aux)
-\openout1 = `draw.aux'.
-
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
 LaTeX Font Info:    ... okay on input line 66.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
@@ -782,10 +786,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: <none>
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: \Gm@driver 
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -824,60 +827,41 @@ your preamble.
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-[1
-
-{C:/Users/Luc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./growth_analy
-tical.pdf>]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-[2 <./HFP_sketch.pdf>]
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-[3]
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-[4 <./shi_scheme.pdf>] [5 <./wettability.pdf>]
 Missing character: There is no ; in font nullfont!
-[6 <./bub_life_VFB.pdf> <./FIP.pdf> <./static_coal.pdf>] [7 <./static_suppressi
-on.pdf> <./deb_sketch.pdf>] [8 <./deb_prom.pdf>] [9 <./agate_mes_ax.pdf> <./sub
-channel.pdf>] [10 <./pwr_sketch.pdf>] [11 <./energy_mix.pdf> <./cycle1.pdf>]
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
 \c@randarcs=\count322
+Missing character: There is no ; in font nullfont!
+[13
 
-[12 <./cycle2.pdf> <./cycle3.pdf>] [13 <./cycle4.pdf> <./cycle5.pdf>] [14 <./cy
-cle5.pdf> <./cycle6.pdf> <./kurul_hfp.pdf>] (draw.aux) ) 
+{C:/Users/Luc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] ) 
 Here is how much of TeX's memory you used:
- 28427 strings out of 476404
- 714230 string characters out of 2790468
+ 28483 strings out of 476404
+ 715172 string characters out of 2790468
  1893324 words of memory out of 3000000
- 48316 multiletter control sequences out of 15000+600000
+ 48397 multiletter control sequences out of 15000+600000
  516646 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,12n,104p,723b,2196s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/Luc/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/Luc/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users
-/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
-:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.
-pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmmib10.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cmextra/cmmib7.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Luc/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Luc/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Luc/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on draw.pdf (14 pages, 343964 bytes).
+<C:/Users/Luc
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Us
+ers/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
+
+Output written on cycle6.pdf (1 page, 23831 bytes).
 PDF statistics:
- 430 PDF objects out of 1000 (max. 8388607)
+ 46 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 135 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 

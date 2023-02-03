@@ -1058,7 +1058,7 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 
 
 
-%\beginpgfgraphicnamed{forces} %%IN COMMAND LINE : pdflatex --jobname=forces draw.tex
+\beginpgfgraphicnamed{forces} %%IN COMMAND LINE : pdflatex --jobname=forces draw.tex
 
 
 \fbox{
@@ -1172,89 +1172,89 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \draw[dotted, green!50!black, opacity=0.7, line width = 3pt] (Oarcb) arc({-pi+(1.15*\thetrecrad)) r}:{0.3 r}:1.01*\rayrec) arc ({0.3 r}:{ 0.93*(pi-(\thetadvrad)) r}:1.01*\rayadv)--cycle;
 
 \end{tikzpicture}
-
-
-
-
-\begin{tikzpicture}[scale=3.5, every node/.style={scale=0.9}]
-
-
-%%%%Truncated sphere on a vertical wall
-
-
-%Tilted bubble
-\coordinate (Ob2) at (2.5,1.0);
-
-\coordinate (O1) at (2.5,0);
-\coordinate (O2) at (2.5,2);
-\draw (O1)--(O2);
-
-\tikzmath{\thet = 40; \thetrad= \thet * pi / 180;
-\dthet=10; \dthetrad=\dthet*pi/180;
-\thetadvrad=\thetrad - \dthetrad;
-\thetrecrad=\thetrad + \dthetrad;
-\thetadv=\thetadvrad*180/pi;
-\thetrec=\thetrecrad*180/pi;
-\ray=0.5; 
-\rayadv=\ray *(1+cos(\thetrad r))/(1+ cos(\thetadvrad r);
-\rayrec=\ray *(1+cos(\thetrad r))/(1+ cos(\thetrecrad r);};
-
-\coordinate (Oarc) at ($(Ob2)-(0,{\ray * sin(\thetrad r)})$);
-\coordinate (Oarcb) at ($(Oarc)+(-\thetrecrad r : 0.15*\rayrec)$);
-
-\draw[thick] (Oarc) arc({-pi+(\thetrecrad)) r}:{0 r}:\rayrec) arc ({0 r}:{pi-(\thetadvrad)) r}:\rayadv);
-\draw[dotted, green!50!black, opacity=0.7, line width = 3pt] (Oarcb) arc({-pi+(1.15*\thetrecrad)) r}:{0.3 r}:1.01*\rayrec) arc ({0.3 r}:{ 0.93*(pi-(\thetadvrad)) r}:1.01*\rayadv)--cycle;
-
-%\draw[dotted, green!50!black, opacity=0.7, line width = 2pt] (Oarcb) arc({-pi+(\thetrecrad)) r}:{0.1 r}:0.95*\rayrec) arc ({0.1 r}:{pi-(1.6*\thetadvrad)) r}:1.1*\rayadv) -- cycle;
-
-%%Upstream angle
-%\draw (Oarc) --++(-90+\thetrecrad r:0.3) node[very near end, below]{$\theta + \dtheta$};
-%\draw ($(Oarc)+(0,-0.15)$) arc(-90:-90+\thetrecrad r:0.15) ;
-%
-%%Downstream angle
-%\coordinate (Oarc2) at ($(Oarc) + (0,{\rayadv * sin(\thetadvrad r) + \rayrec * sin(\thetrecrad r)})$);
-%\draw (Oarc2) --++({90-(\thetadvrad r)}:0.3);
-%\coordinate (angadv) at ($(Oarc2) +({90-(\thetadvrad r)}:0.3)$);
-%\draw (angadv)  node[above]{$\theta - \dtheta $};
-%\draw ($(Oarc2)+(0,+0.15)$) arc(90:{90-(\thetadvrad r)}:0.15);
-
-%%CONTROL VOLMUE
-
-%\draw[densely dotted, green!50!black, very thick] ($(Oarc)+(0.03,-0.7*\ray)$)--($(Oarc2)+(0.03,\ray)$)--++(2*\ray,0)--($(Oarc)+(0.04+2*\ray,-0.7*\ray)$)--cycle;
-
-
-
-%Center and radius
-
-%\coordinate (Cb) at ($(Oarc2)+( {\ray * cos(\thetrad r)} , {-0.5 * (\rayadv * sin(\thetadvrad r) + \rayrec  * sin(\thetrecrad r) )})$);
-%\draw (Cb) node{$\times$} node[below right]{$O$};
-%
-%\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc) node[midway, above left]{$R$};
 %
 %
-%\draw[densely dashed, <->, >=latex] ($(Oarc) + (-\ray/12,+\ray/15) $) -- ($(Oarc2) + (-\ray/12,-\ray/6) $) node[midway, left]{$d_{w}$};
-
-
-
-%Inclination angle
-
-%\draw[densely dotted] (Cb) --++ (\ray,0);
-%\draw[densely dotted] (Cb) --++ ({(1*\dthetrad r)}: \ray );
-%\draw ($(Cb) + (0.3,0)$) arc(0: {(\dthetrad r)}:0.3)  node[very near end, above]{$\dtheta$};
 %
 %
-
-
-
-
-\end{tikzpicture}
+%\begin{tikzpicture}[scale=3.5, every node/.style={scale=0.9}]
+%
+%
+%%%%%Truncated sphere on a vertical wall
+%
+%
+%%Tilted bubble
+%\coordinate (Ob2) at (2.5,1.0);
+%
+%\coordinate (O1) at (2.5,0);
+%\coordinate (O2) at (2.5,2);
+%\draw (O1)--(O2);
+%
+%\tikzmath{\thet = 40; \thetrad= \thet * pi / 180;
+%\dthet=10; \dthetrad=\dthet*pi/180;
+%\thetadvrad=\thetrad - \dthetrad;
+%\thetrecrad=\thetrad + \dthetrad;
+%\thetadv=\thetadvrad*180/pi;
+%\thetrec=\thetrecrad*180/pi;
+%\ray=0.5; 
+%\rayadv=\ray *(1+cos(\thetrad r))/(1+ cos(\thetadvrad r);
+%\rayrec=\ray *(1+cos(\thetrad r))/(1+ cos(\thetrecrad r);};
+%
+%\coordinate (Oarc) at ($(Ob2)-(0,{\ray * sin(\thetrad r)})$);
+%\coordinate (Oarcb) at ($(Oarc)+(-\thetrecrad r : 0.15*\rayrec)$);
+%
+%\draw[thick] (Oarc) arc({-pi+(\thetrecrad)) r}:{0 r}:\rayrec) arc ({0 r}:{pi-(\thetadvrad)) r}:\rayadv);
+%\draw[dotted, green!50!black, opacity=0.7, line width = 3pt] (Oarcb) arc({-pi+(1.15*\thetrecrad)) r}:{0.3 r}:1.01*\rayrec) arc ({0.3 r}:{ 0.93*(pi-(\thetadvrad)) r}:1.01*\rayadv)--cycle;
+%
+%%\draw[dotted, green!50!black, opacity=0.7, line width = 2pt] (Oarcb) arc({-pi+(\thetrecrad)) r}:{0.1 r}:0.95*\rayrec) arc ({0.1 r}:{pi-(1.6*\thetadvrad)) r}:1.1*\rayadv) -- cycle;
+%
+%%%Upstream angle
+%%\draw (Oarc) --++(-90+\thetrecrad r:0.3) node[very near end, below]{$\theta + \dtheta$};
+%%\draw ($(Oarc)+(0,-0.15)$) arc(-90:-90+\thetrecrad r:0.15) ;
+%%
+%%%Downstream angle
+%%\coordinate (Oarc2) at ($(Oarc) + (0,{\rayadv * sin(\thetadvrad r) + \rayrec * sin(\thetrecrad r)})$);
+%%\draw (Oarc2) --++({90-(\thetadvrad r)}:0.3);
+%%\coordinate (angadv) at ($(Oarc2) +({90-(\thetadvrad r)}:0.3)$);
+%%\draw (angadv)  node[above]{$\theta - \dtheta $};
+%%\draw ($(Oarc2)+(0,+0.15)$) arc(90:{90-(\thetadvrad r)}:0.15);
+%
+%%%CONTROL VOLMUE
+%
+%%\draw[densely dotted, green!50!black, very thick] ($(Oarc)+(0.03,-0.7*\ray)$)--($(Oarc2)+(0.03,\ray)$)--++(2*\ray,0)--($(Oarc)+(0.04+2*\ray,-0.7*\ray)$)--cycle;
+%
+%
+%
+%%Center and radius
+%
+%%\coordinate (Cb) at ($(Oarc2)+( {\ray * cos(\thetrad r)} , {-0.5 * (\rayadv * sin(\thetadvrad r) + \rayrec  * sin(\thetrecrad r) )})$);
+%%\draw (Cb) node{$\times$} node[below right]{$O$};
+%%
+%%\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc) node[midway, above left]{$R$};
+%%
+%%
+%%\draw[densely dashed, <->, >=latex] ($(Oarc) + (-\ray/12,+\ray/15) $) -- ($(Oarc2) + (-\ray/12,-\ray/6) $) node[midway, left]{$d_{w}$};
+%
+%
+%
+%%Inclination angle
+%
+%%\draw[densely dotted] (Cb) --++ (\ray,0);
+%%\draw[densely dotted] (Cb) --++ ({(1*\dthetrad r)}: \ray );
+%%\draw ($(Cb) + (0.3,0)$) arc(0: {(\dthetrad r)}:0.3)  node[very near end, above]{$\dtheta$};
+%%
+%%
+%
+%
+%
+%
+%\end{tikzpicture}
 
 
 
 }
 
 
-%\endpgfgraphicnamed
+\endpgfgraphicnamed
 
 
 
@@ -2501,6 +2501,8 @@ if
 %%%BUBBLE TIME SCALES
 
 
+\beginpgfgraphicnamed{cycle1}
+
 \begin{tikzpicture}[scale=2.5]
 \coordinate (O) at (0,0);
 \coordinate (Oliq) at (0,0.1);
@@ -2522,16 +2524,23 @@ if
 
 \coordinate (Ob) at ($(O) + (2.5,0)$);
 
+\fill[white] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep)--++(0,-1)--($(O)-(0,1)$)--cycle;
 \draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep);
-
-\draw (cavC) node[below]{Before ONB : $t<0$};
+%\draw (cavC) node[below]{Before ONB : $t<0$};
 
 \draw (O) node[left]{$T_{w}$};
 
 \draw ($(O) + (0,2)$) node[left]{$T_{L}$};
 
+\draw ($(O)+(0,0.2)$) node[left]{$T_{sat}$};
+\draw[dashed, thick, green!60!black] ($(O)+(0,0.2)$)--($(sep)+(0,0.2)$);
+
 \end{tikzpicture}
 
+\endpgfgraphicnamed
+
+
+\beginpgfgraphicnamed{cycle2}
 
 
 \begin{tikzpicture}[scale=2.5]
@@ -2567,14 +2576,25 @@ if
 
 \fill[white] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep)--++(0,-1)--($(O)-(0,1)$)--cycle;
 \draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep);
-
-\draw (cavC) node[below]{ONB : $t=0$};
+%\draw (cavC) node[below]{ONB : $t=0$};
 
 \draw (O) node[left]{$T_{w}$};
 
 \draw ($(O) + (0,2)$) node[left]{$T_{L}$};
 
+%\draw ($(O)+(0,0.2)$) node[left]{$T_{ONB}$};
+%\draw[dashed, thick, orange!60!black] ($(O)+(0,0.2)$)--($(sep)+(0,0.2)$);
+
+\draw ($(O)+(0,0.7)$) node[left]{$T_{sat}$};
+\draw[dashed, thick, green!60!black] ($(O)+(0,0.7)$)--($(sep)+(0,0.7)$);
+
 \end{tikzpicture}
+
+\endpgfgraphicnamed
+
+
+
+\beginpgfgraphicnamed{cycle3}
 
 
 \begin{tikzpicture}[scale=2.5]
@@ -2610,20 +2630,29 @@ if
 
 \fill[white] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep)--++(0,-1)--($(O)-(0,1)$)--cycle;
 \draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep);
-
-\draw (cavC) node[below]{Departure : $t=t_{g,d}$, $R=K\sqrt{\eta_{L}t_{g,d} }$};
+%\draw (cavC) node[below]{Departure : $t=t_{g,d}$, $R=K\sqrt{\eta_{L}t_{g,d} }$};
 
 
 \draw (O) node[left]{$T_{w}$};
 
 \draw ($(O) + (0,2)$) node[left]{$T_{L}$};
 
+
+\draw ($(O)+(0,0.7)$) node[left]{$T_{sat}$};
+\draw[dashed, thick, green!60!black] ($(O)+(0,0.7)$)--($(sep)+(0,0.7)$);
+
+
 \end{tikzpicture}
+
+\endpgfgraphicnamed
+
 
 
 
 \newcounter{randarcs}
 
+
+\beginpgfgraphicnamed{cycle4}
 
 \begin{tikzpicture}[scale=2.5]
 \coordinate (O) at (0,0);
@@ -2713,14 +2742,18 @@ if
 
 \fill[white] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep)--++(0,-1)--($(O)-(0,1)$)--cycle;
 \draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep);
-
-\draw (cavC) node[below]{After departure : $t>t_{g,d}$};
+%\draw (cavC) node[below]{After departure : $t>t_{g,d}$};
 
 \draw (O) node[left]{$T_{w}$};
 
 \draw ($(O) + (0,2)$) node[left]{$T_{L}$};
 \end{tikzpicture}
 
+\endpgfgraphicnamed
+
+
+
+\beginpgfgraphicnamed{cycle5}
 
 \begin{tikzpicture}[scale=2.5]
 \coordinate (O) at (0,0);
@@ -2743,9 +2776,9 @@ if
 
 \coordinate (Ob) at ($(O) + (2.5,0)$);
 
+\fill[white] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep)--++(0,-1)--($(O)-(0,1)$)--cycle;
 \draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep);
-
-\draw (cavC) node[below]{Wait period : $t>t_{g,d}$};
+%\draw (cavC) node[below]{Wait period : $t>t_{g,d}$};
 
 \draw (O) node[left]{$T_{w}$};
 
@@ -2753,7 +2786,10 @@ if
 
 \end{tikzpicture}
 
+\endpgfgraphicnamed
 
+
+\beginpgfgraphicnamed{cycle6}
 
 \begin{tikzpicture}[scale=2.5]
 \coordinate (O) at (0,0);
@@ -2776,16 +2812,25 @@ if
 
 \coordinate (Ob) at ($(O) + (2.5,0)$);
 
-\draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep);
 
-\draw (cavC) node[below]{TBL reconstruction : $t>t_{g,d}$};
+\fill[white] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep)--++(0,-1)--($(O)-(0,1)$)--cycle;
+\draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep);
+%\draw (cavC) node[below]{TBL reconstruction : $t>t_{g,d}$};
 
 \draw (O) node[left]{$T_{w}$};
 
 \draw ($(O) + (0,2)$) node[left]{$T_{L}$};
+
+\draw ($(O)+(0,0.2)$) node[left]{$T_{sat}$};
+\draw[dashed, thick, green!60!black] ($(O)+(0,0.2)$)--($(sep)+(0,0.2)$);
+
 \end{tikzpicture}
 
+\endpgfgraphicnamed
 
+
+
+\beginpgfgraphicnamed{cycle6}
 
 
 \begin{tikzpicture}[scale=2.5]
@@ -2822,12 +2867,114 @@ if
 \fill[white] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep)--++(0,-1)--($(O)-(0,1)$)--cycle;
 \draw[line width=1pt] (O)--(cavL)--(cavC)--(cavR)--(Oend)--(sep);
 
-\draw (cavC) node[below]{New nucleation : $t=t_{g,d}+t_{w} = \dfrac{1}{f}$};
+%\draw (cavC) node[below]{New nucleation : $t=t_{g,d}+t_{w} = \dfrac{1}{f}$};
 
 \draw (O) node[left]{$T_{w}$};
 
 \draw ($(O) + (0,2)$) node[left]{$T_{L}$};
+%
+%\draw ($(O)+(0,0.2)$) node[left]{$T_{ONB}$};
+%\draw[dashed, thick, orange!60!black] ($(O)+(0,0.2)$)--($(sep)+(0,0.2)$);
+
+\draw ($(O)+(0,0.7)$) node[left]{$T_{sat}$};
+\draw[dashed, thick, green!60!black] ($(O)+(0,0.7)$)--($(sep)+(0,0.7)$);
+
 \end{tikzpicture}
+
+\endpgfgraphicnamed
+
+
+
+%%%KURUL PODOWSKI HFP
+
+\beginpgfgraphicnamed{kurul_hfp}
+
+\fbox{
+
+\begin{tikzpicture}[scale=3.0]
+
+\coordinate (O) at (0,0);
+\coordinate (A1) at (1,0);
+\coordinate (A2) at (2,0);
+\coordinate (A3) at (3,0);
+\coordinate (A) at (3.5,0);
+
+
+%Sections and wall
+\draw (O) -- (A);
+\draw ($(O)-(0,0.03)$) -- ($(A)-(0,0.03)$);
+\foreach \i in {0,...,17}
+{
+\draw (\i*0.2,0) -- (\i*0.2+0.05,-0.03);
+}
+
+\fill[top color=blue!10!white, bottom color=red!10!white] (O)--(A)--++(0,1)--++(-3.5,0)--cycle;
+
+%\draw[dashed, gray!70!white] (A1) --++ (0,1);
+%\draw[dashed, gray!70!white] (A2) --++ (0,1);
+%\draw[dashed, gray!70!white] (A3) --++ (0,1);
+
+
+%Flow arrows
+%\foreach \i in {1,...,12} 
+%{
+%\coordinate (Oloc) at ($(O)+(-0.1,\i/13)$);
+%\draw[->,>=latex, gray!50!blue] (Oloc)--++({ln(1+0.05*\i)},0);
+%}
+%
+%\draw ($(Oloc) + ({ln(1+0.05*12)},0)$) node[below right]{${\overline{U_{L}}}$};
+
+
+%Liquid heat flux
+
+\coordinate (Ophi) at (0.4,0);
+
+\draw[->,>=latex, thick, blue!70!gray] ($(Ophi)+(0,-0.1)$)--($(Ophi)+(0,+0.1)$);
+\draw ($(Ophi)+(0,-0.15)$) node{${\phi_{c,L}}$};
+
+
+%Vapor convective flux
+\coordinate (Ob) at (1.5,0);
+
+\tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.2; \rw=\ray * sin(\alphrad r);};
+
+\coordinate (Oarc) at ($(Ob)+(\rw,0)$);
+\shade[ball color = gray!5!white, opacity = 0.5] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+\draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+
+%\draw[red, thick, densely dashed] (Oarc) --++ (-2*\rw, 0);
+
+\draw[->,>=latex, thick, brown!80!black] ($(Ob)+(0,-0.1)$)--($(Ob)+(0,+0.1)$);
+\draw ($(Ob)+(0,-0.15)$) node{${\phi_{e}}$};
+
+
+
+%Quenching heat flux
+
+\coordinate (Ob2) at (3.0,0.5);
+\tikzmath{\ray=0.25;};
+
+\shade[ball color = gray!5!white, opacity = 0.5] (Ob2) circle(\ray);
+\draw (Ob2) circle(\ray);
+
+
+\tikzmath{\rayspi=0.08;};
+
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=80,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=90,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+
+
+\coordinate (Ophiq) at ($(Ob2) - (0,0.5)$);
+\draw[->,>=latex, thick, orange!90!gray] ($(Ophiq)+(0,-0.1)$)--($(Ophiq)+(0,+0.1)$);
+\draw ($(Ophiq)+(0,-0.15)$) node{${\phi_{q}}$};
+
+
+\end{tikzpicture}
+
+}
+
+\endpgfgraphicnamed
 \end{document}
 
 
