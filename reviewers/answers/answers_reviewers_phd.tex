@@ -1,0 +1,98 @@
+\documentclass[8pt, a4paper]{article}
+\usepackage[margin=0.5in]{geometry}
+
+\newcommand{\npar}{\vspace{\baselineskip}}
+
+
+%%%REMARKS
+
+\usepackage{blindtext}
+
+\usepackage[most]{tcolorbox}
+
+\newtcbtheorem{remark}{\textbf{Remark :} }{
+   coltitle=black,
+   colback=brown!10,
+   colframe=red!70!blue,
+   detach title,
+   boxrule=0pt,
+   leftrule=2pt,
+  attach title to upper,
+   sharp corners,
+   left=1mm,
+}{}
+
+
+\begin{document}
+
+
+{\centering
+
+\Large{\textsc{Answers to reviewer's questions on Luc Favre's PhD thesis}}
+
+}
+
+\npar
+
+This document briefly sums up the conversion to \texttt{.json} format of the experimental data of the DEBORA experiment. It also presents the post-processing programs written in \texttt{python 3} to generate figures from NEPTUNE\_CFD simulations.
+
+\npar
+
+\section{Questions from Dirk Lucas}
+
+\begin{itemize}
+\setlength{\itemsep}{20pt}
+\item \textbf{Misunderstanding regarding the HFP validation vs. the statement that it has been implemented in NCFD:}
+
+\item \textbf{Use of "we" in the text}
+
+
+\item \textbf{References numbering}
+
+\item \textbf{Use of Kelvin instead of Celsius}
+
+\item \textbf{Lack of comparison with NEPTUNE\_CFD}
+
+\end{itemize}
+
+%\begin{itemize}
+%\item Re-explain it was tested outside of NEPTUNE\_CFD first (python code), the model has actually been implemented but still needs some extra numerical work
+%\end{itemize}
+
+\clearpage
+
+\section{Questions from Emilio Baglietto}
+
+\begin{itemize}
+\setlength{\itemsep}{20pt}
+
+\item \textbf{Scalability of R12 $\rightarrow$ PWR regarding CHF/ DNB ? Any new insight on this ? Regarding the ebullition cycle ?}
+
+\item \textbf{Potential error on DEBORA $\phi_{w}$ $\rightarrow$ discussions with experimental team ? }
+
+\item \textbf{Discontinuities in NCFD results presented ?}
+
+\item \textbf{Li et al. test providing lower $T_{w}$ than Hibiki \& Ishii while theoretically having less sites ?}
+
+\item \textbf{No inclusion of the microlayer in the growth term ? Subsequent validation of HFP at low pressure ?}
+
+\item \textbf{Matching bubble growth at low pressure without ML term ? Surprising / Unexpected ?}
+
+\item \textbf{New growth law of interest for low pressure boiling ?}
+
+\item \textbf{Richenderfer \& Kossolapov : developing TBL experiments $\rightarrow$ not really treatable with fully developed flow correlations}
+
+\item \textbf{Discussion regarding Li et al. vs. Hibiki \& Ishii NSD $\rightarrow$ fundamentally different (potential cavities vs. actually active sites) ? Discussion on nucleation site interactions}
+
+\item \textbf{Lift-off diameter in boiling term $\rightarrow$ discussion vs. inception diameter because extra growth comes from liquid evaporating ? Double counting of the heat to the fluid + to heat change ?}
+
+
+\item \textbf{Nearly no comparison on DEBORA case for HFP validation ? Only one case ?}
+
+\item \textbf{Wall-adjacent cell values instead of bulk values ?}
+
+\end{itemize}
+
+
+
+\end{document}
