@@ -287,6 +287,11 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \end{tikzpicture}
 
 
+
+
+
+%%%%HFP SKETCH
+
 \beginpgfgraphicnamed{HFP_sketch}
 
 \fbox{
@@ -298,6 +303,16 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \coordinate (A2) at (2,0);
 \coordinate (A3) at (3,0);
 \coordinate (A) at (4.5,0);
+
+\fill[top color = blue!10!white, bottom color = red!10!white] (O)--(A)--++(0,1)--++(-4.5,0)--cycle;
+
+\coordinate (Ob2) at (4.0,0.5);
+\tikzmath{\ray=0.25;};
+
+\fill[blue!15!white] (Ob2)--++(-\ray,0)--++(0,-0.5)--++(2*\ray,0)--++(0,0.5)--cycle;
+
+\coordinate (Ob2) at (2.75,0);
+\fill[blue!15!white] (Ob2)--++(0,1.2*\ray )--++(-2.0*\ray,0)--++(0,-1.2*\ray)--++(2.0*\ray,0)--cycle;
 
 
 %Sections and wall
@@ -319,7 +334,7 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 %Flow arrows
 \foreach \i in {1,...,12} 
 {
-\coordinate (Oloc) at ($(O)+(-0.1,\i/13)$);
+\coordinate (Oloc) at ($(O)+(0,\i/13)$);
 \draw[->,>=latex, gray!50!blue] (Oloc)--++({ln(1+0.05*\i)},0);
 }
 
@@ -333,20 +348,20 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \draw[->,>=latex, thick, blue!70!gray] ($(Ophi)+(0,-0.1)$)--($(Ophi)+(0,+0.1)$);
 \draw ($(Ophi)+(0,-0.15)$) node{${\phi_{c,L}}$};
 
-
+%
 %Boiling Coal St heat flux
 \coordinate (Ob) at (1.0,0);
 
 \tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.1; \rayw = sin(\alphrad r) * \ray;}; %Geom values
 
 \coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
-\shade[ball color = gray!40, opacity = 0.4] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+\shade[ball color = gray!40, opacity = 0.8] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
 
 \draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
 
 \coordinate (Ob) at (1.15,0);
 \coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
-\shade[ball color = gray!40, opacity = 0.4] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+\shade[ball color = gray!40, opacity = 0.8] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
 
 \draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
 
@@ -361,13 +376,13 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 
 
 
-%Vapor convective flux
+%%Vapor convective flux
 \coordinate (Ob) at (1.75,0);
 
 \tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.2; \rw=\ray * sin(\alphrad r);};
 
 \coordinate (Oarc) at ($(Ob)+(\rw,0)$);
-\shade[ball color = gray!40, opacity = 0.4] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+\shade[ball color = gray!40, opacity = 0.8] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
 
 \draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
 
@@ -381,6 +396,7 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 %Quenching heat flux
 \coordinate (Ob2) at (2.75,0);
 
+
 \tikzmath{\alph = 40; \alphrad= \alph * pi / 180;
 \dalph=20; \dalphrad=\dalph*pi/180;
 \alphadvrad=\alphrad - \dalphrad;
@@ -389,6 +405,8 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \rayadv=\ray *(1+cos(\alphrad r))/(1+ cos(\alphadvrad r);
 \rayrec=\ray *(1+cos(\alphrad r))/(1+ cos(\alphrecrad r);};
 
+%\fill[blue!15!white] (Ob2)--++(0,1.8*\ray )--++(-2.0*\ray,0)--++(0,-1.8*\ray)--++(2.0*\ray,0)--cycle;
+
 
 \coordinate (Cb2) at ($(Ob2)+(0.03,{\ray * cos(\alphrad r)})$);
 \draw[green!50!black,->, >=latex] (Cb2)--++({\ray+0.08},0); \draw ($(Cb2)+({\ray+0.08},0)$) node[above]{$\overline{U_{b}}$ }; %Bubble velocity
@@ -396,32 +414,45 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 
 \coordinate (Oarc) at ($(Ob2)+({\ray * sin(\alphrad r)},0)$);
 
-\shade[ball color = gray!40, opacity = 0.4] (Oarc) arc ({-(pi/2-(\alphadvrad)) r}:{(pi/2) r}:\rayadv) arc ({(pi/2) r}:{(pi+pi/2-(\alphrecrad)) r}:\rayrec);
+\shade[ball color = gray!40, opacity = 0.8] (Oarc) arc ({-(pi/2-(\alphadvrad)) r}:{(pi/2) r}:\rayadv) arc ({(pi/2) r}:{(pi+pi/2-(\alphrecrad)) r}:\rayrec);
 
 \draw (Oarc) arc ({-(pi/2-(\alphadvrad)) r}:{(pi/2) r}:\rayadv) arc ({(pi/2) r}:{(pi+pi/2-(\alphrecrad)) r}:\rayrec);
+
+
+
+\coordinate (w1) at ($(Oarc)+(-0.8*\ray, 2*\ray)$);
+\coordinate (w2) at ($(w1) + (-\ray,-\ray)$);
+\coordinate (w3) at ($(w2) + (-0.05,-0.5*\ray)$);
+
+\draw[blue, ->, >=latex]  plot [smooth, tension=1.0] coordinates {(w1) (w2) (w3)};
+
+
 
 \coordinate (Ob2) at (4.0,0.5);
 \tikzmath{\ray=0.25;};
 
-\shade[ball color = gray!40, opacity = 0.4] (Ob2) circle(\ray);
+\shade[ball color = gray!40, opacity = 0.8] (Ob2) circle(\ray);
 \draw (Ob2) circle(\ray);
 
 
+\coordinate (w1) at ($(Ob2)+(-1.1*\ray,1.1*\ray)$);
+\coordinate (w2) at ($(w1) + (0,-0.6)$);
+\coordinate (w3) at ($(w2) + (0.2,0)$);
 
-\tikzmath{\rayspi=0.07;};
+\draw[blue, ->, >=latex]  plot [smooth, tension=1.0] coordinates {(w1) (w2) (w3)};
 
-\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=65,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
-\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=70,yshift=5] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+\coordinate (w1) at ($(Ob2)+(+1.1*\ray,1.1*\ray)$);
+\coordinate (w2) at ($(w1) + (0,-0.6)$);
+\coordinate (w3) at ($(w2) + (-0.2,0)$);
+
+\draw[blue, ->, >=latex]  plot [smooth, tension=1.0] coordinates {(w1) (w2) (w3)};
+
+
 
 \coordinate (Ophisl) at ($(Oarc) - (\rayadv+\rayrec+0.05,0)$);
 \draw[->,>=latex, thick, orange!90!gray] ($(Ophisl)+(0,-0.1)$)--($(Ophisl)+(0,+0.1)$);
 \draw ($(Ophisl)+(0,-0.15)$) node{${\phi_{q}}$};
 
-
-\tikzmath{\rayspi=0.08;};
-
-\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=109,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
-\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=119,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
 
 
 \coordinate (Ophiq) at ($(Ob2) - (0,0.5)$);
@@ -436,7 +467,7 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.1; \rayw = sin(\alphrad r) * \ray;}; %Geom values
 
 \coordinate (Oarc) at ($(Ob)+({\ray * sin(\alphrad r)},0)$);
-\shade[ball color = gray!40, opacity = 0.4] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+\shade[ball color = gray!40, opacity = 0.8] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
 
 \draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
 
@@ -459,6 +490,7 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 }
 
 \endpgfgraphicnamed
+
 
 \fbox{
 
@@ -900,8 +932,7 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 %\draw[densely dotted] (Cb) --++ (0.7,0);
 %\draw[densely dotted] (Cb) --++ ({(1*\dthetrad r)}: 0.7 );
 %\draw ($(Cb) + (0.3,0)$) arc(0: {(\dthetrad r)}:0.3)  node[midway, right]{$\dtheta$};
-%
-%
+
 
 
 
@@ -1180,9 +1211,8 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 
 %\endpgfgraphicnamed
 
-%
-%
-%
+
+
 %\beginpgfgraphicnamed{shi_scheme}
 
 \fbox{
@@ -1256,13 +1286,14 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \end{tikzpicture}
 
 }
-%
-%
+
+
+
 %\endpgfgraphicnamed
-%
-%
+
+
 %%\beginpgfgraphicnamed{newbub_sugrue}
-%
+
 
 \fbox{
 
@@ -1384,16 +1415,15 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \end{tikzpicture}
 
 }
-%
+
+
 %\endpgfgraphicnamed
-%
-%
-%
-%
-%
+
+
+
 %\beginpgfgraphicnamed{bub_life_VFB}
-%
-%
+
+
 \fbox{
 
 
@@ -1513,14 +1543,16 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \end{tikzpicture}
 
 }
-%
-%
+
+
+
 %\endpgfgraphicnamed
-%
-%
+
+
 %\beginpgfgraphicnamed{FIP}
-%
-%
+
+
+
 \begin{tikzpicture}
 \begin{axis}[
 width=10cm,
@@ -1551,15 +1583,16 @@ coordinates
 \end{tikzpicture}
 %
 %\endpgfgraphicnamed
-%
-%
-%
-%
+
+
+
 %%%%BUBBLE INTERACTIONS
-%
-%
+
+
+
 %\beginpgfgraphicnamed{static_coal}
-%
+
+
 \begin{tikzpicture}[scale=4.0, every node/.style={scale=0.9}]
 
 
@@ -1639,15 +1672,15 @@ coordinates
 
 %
 %\endpgfgraphicnamed
-%
-%
-%
-%
-%
+
+
+
 %%%STATIC DEACTIVATION
-%
+
+
 %\beginpgfgraphicnamed{static_suppression}
-%
+
+
 \begin{tikzpicture}[scale=4.0, every node/.style={scale=0.9}]
 
 
@@ -1828,13 +1861,12 @@ coordinates
 \end{tikzpicture}
 
 %\endpgfgraphicnamed
-%
-%
-%
-%
-%
+
+
+
 %\beginpgfgraphicnamed{deb_sketch}
-%
+
+
 \fbox{
 
 \begin{tikzpicture}[scale=2.0]
@@ -1999,10 +2031,12 @@ coordinates
 }
 
 %\endpgfgraphicnamed
-%
-%
+
+
+
 %\beginpgfgraphicnamed{agate_mes_ax}
-%
+
+
 \fbox{
 
 \begin{tikzpicture}[scale=10]
@@ -2110,13 +2144,10 @@ if
 
 
 %\endpgfgraphicnamed
-%
-%
-%
-%
-%
-%
-%
+
+
+
+
 %%%%%PWR BY GLORIA FACCANONI
 %
 %% Pressurized Water Reactor
@@ -2126,6 +2157,8 @@ if
 %\fbox{
 
 %\usepackage[hmargin=1cm,vmargin=1cm]{geometry}
+
+
 \centering
 \begin{tikzpicture}[
         scale=0.7,
@@ -2418,12 +2451,10 @@ if
 \end{tikzpicture}
 
 %\endpgfgraphicnamed
-%
-%
-%
-%
-%
-%
+
+
+
+
 %%%%BUBBLE TIME SCALES
 %
 
@@ -2606,9 +2637,21 @@ if
 \coordinate (Oarc) at (cavR);
 %\draw[fill=white] (Oarc) arc({(pi/2-\alphrad) r}:{(3*pi/2-\alphrad) r}:\ray);
 
-\draw[fill=white] ($(cavC) + (1.0,0.7)$) circle(0.5);
+\coordinate (Ob) at ($(cavC) + (1.0,0.7)$);
+%\fill[blue!15!white] ($(Ob) +(0,0.5)$)--++(-1,0)--++(0,-1.0)--++(1,0)--cycle;
+
+\draw[fill=white] (Ob) circle(0.5);
 \draw[->=latex, thick, red] ($(cavC) + (1.5,0.7)$)--++(0.25,0) node[very near end, above]{\textcolor{red}{$\vect{U_{b}}$}};
 \fill[white] (cavC) circle(0.2);
+
+\coordinate (Ob) at ($(cavC) + (1.0,0.7)$);
+\coordinate (w1) at ($(Ob)+(0,1.15*0.5)$);
+\coordinate (w2) at ($(w1) + (-0.5,-0.2)$);
+\coordinate (w3) at ($(w2) + (-0.2, -0.4)$);
+
+\draw[blue, ->, >=latex]  plot [smooth, tension=1.0] coordinates {(w1) (w2) (w3)};
+
+
 
 %%%%TURBULENCE QUENCHING
 %\pgfmathsetseed{21}
@@ -2648,21 +2691,23 @@ if
 %    plot[smooth,tension=1] coordinates {(\myx,\myy) (\myxp,\myyp)
 %    (\myxq,\myyq)  (\myxr,\myyr)} -- cycle;
 %\fi}
+%
+%\tikzmath{\rayspi=0.1;};
+%
+%\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=20,yshift=4] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;\\
+%\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=24,yshift=12] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+%
+%%\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=25,yshift=6] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;\\
+%\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=27,yshift=17] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+%
+%
+%\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=30,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+%\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=34,yshift=10] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+%
+%\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=37,yshift=20] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;\\
+%\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=44,yshift=24] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
 
-\tikzmath{\rayspi=0.1;};
 
-\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=20,yshift=4] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;\\
-\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=24,yshift=12] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
-
-%\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=25,yshift=6] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;\\
-\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=27,yshift=17] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
-
-
-\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=30,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
-\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=34,yshift=10] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
-
-\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=37,yshift=20] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;\\
-\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=44,yshift=24] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
 
 %Wall
 
@@ -2813,7 +2858,7 @@ if
 
 %%%KURUL PODOWSKI HFP
 
-%\beginpgfgraphicnamed{kurul_hfp}
+\beginpgfgraphicnamed{kurul_hfp}
 
 \fbox{
 
@@ -2865,7 +2910,7 @@ if
 \tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.2; \rw=\ray * sin(\alphrad r);};
 
 \coordinate (Oarc) at ($(Ob)+(\rw,0)$);
-\shade[ball color = gray!5!white, opacity = 0.5] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
+\shade[ball color = gray!5!white, opacity = 1.0] (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
 
 \draw (Oarc) arc({-(pi/2-\alphrad) r}:{(pi+pi/2-\alphrad) r}:\ray);
 
@@ -2881,14 +2926,29 @@ if
 \coordinate (Ob2) at (3.0,0.5);
 \tikzmath{\ray=0.25;};
 
-\shade[ball color = gray!5!white, opacity = 0.5] (Ob2) circle(\ray);
+\fill[blue!15!white, opacity=0.7] ($(Ob2)-(\ray,0)$)--++(2*\ray,0)--++(0,-0.5)--++(-2*\ray,0)--cycle;
+
+\shade[ball color = gray!5!white, opacity = 1.0] (Ob2) circle(\ray);
 \draw (Ob2) circle(\ray);
+
+\coordinate (w1) at ($(Ob2)+(-1.1*\ray,1.1*\ray)$);
+\coordinate (w2) at ($(w1) + (0,-0.6)$);
+\coordinate (w3) at ($(w2) + (0.2,0)$);
+
+\draw[blue, ->, >=latex]  plot [smooth, tension=1.0] coordinates {(w1) (w2) (w3)};
+
+\coordinate (w1) at ($(Ob2)+(+1.1*\ray,1.1*\ray)$);
+\coordinate (w2) at ($(w1) + (0,-0.6)$);
+\coordinate (w3) at ($(w2) + (-0.2,0)$);
+
+\draw[blue, ->, >=latex]  plot [smooth, tension=1.0] coordinates {(w1) (w2) (w3)};
+
 
 
 \tikzmath{\rayspi=0.08;};
 
-\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=80,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
-\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=90,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+%\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=80,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
+%\draw[->,>=stealth,gray!50!blue] plot[domain=0:3.2,smooth,xshift=90,yshift=3] ({(\x *pi) r}:{\rayspi*(1-\x/6)}) ;
 
 
 \coordinate (Ophiq) at ($(Ob2) - (0,0.5)$);
@@ -2900,7 +2960,7 @@ if
 
 }
 
-%\endpgfgraphicnamed
+\endpgfgraphicnamed
 %
 %
 
