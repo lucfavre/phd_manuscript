@@ -1,0 +1,177 @@
+
+\documentclass[10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+
+\usepackage{enumitem}
+
+
+\usepackage{amsmath}
+\usepackage{bm}
+
+%%%PWR packages
+\usepackage[Gray]{SIunits}
+\usepackage[dvipsnames,pdftex,fixpdftex]{xcolor}
+
+
+%\usepackage{gensymb} 
+
+
+\usepackage[top=3cm, bottom=2cm, left=2cm, right=2cm]{geometry} %marges
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{calc}
+\usetikzlibrary{math}
+\usetikzlibrary{intersections,arrows.meta,bending} 
+
+\usepackage{pgfplots}
+\pgfrealjobname{draw}
+\usetikzlibrary{intersections}
+
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\newcommand{\npar}{\vspace{\baselineskip}}
+
+
+\newcommand{\vect}[1]{\overline{\boldsymbol{#1}}}
+%\newcommand{\dtime}[1]{\frac{\partial #1}{\partial t}}
+\newcommand{\dpartial}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\divg}[1]{\nabla\cdot\left(#1\right)}
+\newcommand{\grad}[1]{\overline{\boldsymbol{\nabla}}#1}
+\newcommand{\lapla}[1]{\overline{\boldsymbol{\Delta}}#1}
+%\newcommand{\tens}[1]{\overline{\overline{\boldsymbol{#1}}}}
+\newcommand{\gradtens}[1]{\overline{\overline{\boldsymbol{\nabla}}}#1}
+%\newcommand{\inv}[1]{\frac{1}{#1}}
+
+\newcommand{\dtheta}{\mathrm{d}\theta}
+
+\newcommand{\redmath}[1]{\begingroup\color{red}#1\endgroup}
+\newcommand{\orangemath}[1]{\begingroup\color{orange}#1\endgroup}
+\newcommand{\yellowmath}[1]{\begingroup\color{yellow}#1\endgroup}
+
+\newcommand{\etal}{\textit{et al.}}
+
+
+\begin{document}
+
+%%%PROGRESSIVE FORCE BALANCE
+
+
+\fbox{
+
+
+\begin{tikzpicture}[scale=3.5, every node/.style={scale=0.9}]
+
+
+%%%%Truncated sphere on a vertical wall
+
+
+%Tilted bubble
+\coordinate (Ob2) at (2.5,1.0);
+
+\coordinate (O1) at (2.5,0);
+\coordinate (O2) at (2.5,2);
+\draw (O1)--(O2);
+
+\tikzmath{\thet = 40; \thetrad= \thet * pi / 180;
+\dthet=10; \dthetrad=\dthet*pi/180;
+\thetadvrad=\thetrad - \dthetrad;
+\thetrecrad=\thetrad + \dthetrad;
+\thetadv=\thetadvrad*180/pi;
+\thetrec=\thetrecrad*180/pi;
+\ray=0.5; 
+\rayadv=\ray *(1+cos(\thetrad r))/(1+ cos(\thetadvrad r);
+\rayrec=\ray *(1+cos(\thetrad r))/(1+ cos(\thetrecrad r);};
+
+\coordinate (Oarc) at ($(Ob2)-(0,{\ray * sin(\thetrad r)})$);
+
+
+\draw (Oarc) arc({-pi+(\thetrecrad)) r}:{0 r}:\rayrec) arc ({0 r}:{pi-(\thetadvrad)) r}:\rayadv);
+
+%Upstream angle
+\draw (Oarc) --++(-90+\thetrecrad r:0.3) node[very near end, below]{$\theta + \dtheta$};
+\draw ($(Oarc)+(0,-0.15)$) arc(-90:-90+\thetrecrad r:0.15) ;
+
+%Downstream angle
+\coordinate (Oarc2) at ($(Oarc) + (0,{\rayadv * sin(\thetadvrad r) + \rayrec * sin(\thetrecrad r)})$);
+\draw (Oarc2) --++({90-(\thetadvrad r)}:0.3);
+\coordinate (angadv) at ($(Oarc2) +({90-(\thetadvrad r)}:0.3)$);
+\draw (angadv)  node[above]{$\theta - \dtheta $};
+\draw ($(Oarc2)+(0,+0.15)$) arc(90:{90-(\thetadvrad r)}:0.15);
+
+
+
+%Center and radius
+
+\coordinate (Cb) at ($(Oarc2)+( {\ray * cos(\thetrad r)} , {-0.5 * (\rayadv * sin(\thetadvrad r) + \rayrec  * sin(\thetrecrad r) )})$);
+\draw (Cb) node{$\times$} node[below right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc) node[midway, above left]{$R$};
+
+
+\draw[densely dashed, <->, >=latex] ($(Oarc) + (-\ray/12,+\ray/15) $) -- ($(Oarc2) + (-\ray/12,-\ray/6) $) node[midway, left]{$d_{w}$};
+
+
+
+%Inclination angle
+
+\draw[densely dotted] (Cb) --++ (\ray,0);
+\draw[densely dotted] (Cb) --++ ({(1*\dthetrad r)}: \ray );
+\draw ($(Cb) + (0.3,0)$) arc(0: {(\dthetrad r)}:0.3)  node[very near end, above]{$\dtheta$};
+
+
+
+
+
+%%Forces
+
+\draw[->, >=latex, violet!70!black] (Ob2)--++(\ray/2,0) node[near end, above]{$\vect{F_{CP}}$};
+
+%\draw[->, >=latex, red!70!black!] ($(Cb)+(\ray,0)$)--++(\ray/2,0) node[very near end, above]{$\vect{F_{L}}$};
+\draw[->, >=latex, red!70!black!] ($(Cb)+({sin(5)},{cos(5)*\rayrec*1.04})$)--++(0,+\ray/2) node[very near end, right]{$\vect{F_{D}}$};
+\draw[->, >=latex, red] ($(Cb)+(0,+\rayrec*1.04)$)--++(0,+\ray/1.5) node[very near end, left]{$\vect{U_{b}}$};
+
+
+\draw[->, >=latex, violet] (Oarc)--++(90+\thetrec:\ray/2) node[very near end, left]{$\vect{F_{C}}$};
+\draw[->, >=latex, violet] (Oarc2)--++(-90-\thetadv:\ray/2) node[very near end, left]{$\vect{F_{C}}$};
+
+%\draw[->, >=latex, blue!70!black] (Cb)--++(0,\ray/1.5) node[very near end, right]{$\vect{F_{B}}$};
+
+
+\draw[->, >=latex, green!50!black!] (Cb)--++(160-\thet:\ray/1.5) node[very near end, above]{$\vect{F_{AM}}$};
+
+%Gravity
+
+\draw[->, >=latex, blue!30!black]  ($(Cb)+({1.5*\ray},{1.5*\ray})$)--++(0,-\ray/2) node[very near end, right]{$\vect{g}$};
+
+
+
+%Flow arrows
+\foreach \i in {2,...,14} 
+{
+\coordinate (Oloc) at ($(O1)+(\i/15,0.05)$);
+\draw[->,>=latex, gray!70!blue] (Oloc)--++(0,{ln(1+0.03*\i)});
+}
+\draw[gray!70!blue] ($(Oloc)+(0.1,0.1)$) node{$\vect{U_{L}}$};
+
+%%Referential vectors
+\coordinate (Ovect) at (4.0,0);
+\draw[->, >=latex] (Ovect)--++(0.3,0) node[very near end, above right]{$\vect{e_{y}}$};
+\draw[->, >=latex] (Ovect)--++(0,0.3) node[very near end, above right]{$\vect{e_{x}}$};
+
+%Control volume
+
+\coordinate (Oarc) at ($(Ob2)-(0,{\ray * sin(\thetrad r)})$);
+\coordinate (Oarcb) at ($(Oarc)+(-\thetrecrad r : 0.15*\rayrec)$);
+
+\draw[thick] (Oarc) arc({-pi+(\thetrecrad)) r}:{0 r}:\rayrec) arc ({0 r}:{pi-(\thetadvrad)) r}:\rayadv);
+\draw[dotted, green!50!black, opacity=0.7, line width = 3pt] (Oarcb) arc({-pi+(1.15*\thetrecrad)) r}:{0.3 r}:1.01*\rayrec) arc ({0.3 r}:{ 0.93*(pi-(\thetadvrad)) r}:1.01*\rayadv)--cycle;
+
+\end{tikzpicture}
+
+}
+
+
+\end{document}

@@ -52,7 +52,7 @@
 
 \newcommand{\etal}{\textit{et al.}}
 
-
+\pgfplotsset{compat=1.18} 
 
 
 
@@ -1057,8 +1057,8 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 
 
 
-
-\beginpgfgraphicnamed{forces} %%IN COMMAND LINE : pdflatex --jobname=forces draw.tex
+%
+%\beginpgfgraphicnamed{forces} %%IN COMMAND LINE : pdflatex --jobname=forces draw.tex
 
 
 \fbox{
@@ -1172,94 +1172,18 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \draw[dotted, green!50!black, opacity=0.7, line width = 3pt] (Oarcb) arc({-pi+(1.15*\thetrecrad)) r}:{0.3 r}:1.01*\rayrec) arc ({0.3 r}:{ 0.93*(pi-(\thetadvrad)) r}:1.01*\rayadv)--cycle;
 
 \end{tikzpicture}
-%
-%
-%
-%
-%\begin{tikzpicture}[scale=3.5, every node/.style={scale=0.9}]
-%
-%
-%%%%%Truncated sphere on a vertical wall
-%
-%
-%%Tilted bubble
-%\coordinate (Ob2) at (2.5,1.0);
-%
-%\coordinate (O1) at (2.5,0);
-%\coordinate (O2) at (2.5,2);
-%\draw (O1)--(O2);
-%
-%\tikzmath{\thet = 40; \thetrad= \thet * pi / 180;
-%\dthet=10; \dthetrad=\dthet*pi/180;
-%\thetadvrad=\thetrad - \dthetrad;
-%\thetrecrad=\thetrad + \dthetrad;
-%\thetadv=\thetadvrad*180/pi;
-%\thetrec=\thetrecrad*180/pi;
-%\ray=0.5; 
-%\rayadv=\ray *(1+cos(\thetrad r))/(1+ cos(\thetadvrad r);
-%\rayrec=\ray *(1+cos(\thetrad r))/(1+ cos(\thetrecrad r);};
-%
-%\coordinate (Oarc) at ($(Ob2)-(0,{\ray * sin(\thetrad r)})$);
-%\coordinate (Oarcb) at ($(Oarc)+(-\thetrecrad r : 0.15*\rayrec)$);
-%
-%\draw[thick] (Oarc) arc({-pi+(\thetrecrad)) r}:{0 r}:\rayrec) arc ({0 r}:{pi-(\thetadvrad)) r}:\rayadv);
-%\draw[dotted, green!50!black, opacity=0.7, line width = 3pt] (Oarcb) arc({-pi+(1.15*\thetrecrad)) r}:{0.3 r}:1.01*\rayrec) arc ({0.3 r}:{ 0.93*(pi-(\thetadvrad)) r}:1.01*\rayadv)--cycle;
-%
-%%\draw[dotted, green!50!black, opacity=0.7, line width = 2pt] (Oarcb) arc({-pi+(\thetrecrad)) r}:{0.1 r}:0.95*\rayrec) arc ({0.1 r}:{pi-(1.6*\thetadvrad)) r}:1.1*\rayadv) -- cycle;
-%
-%%%Upstream angle
-%%\draw (Oarc) --++(-90+\thetrecrad r:0.3) node[very near end, below]{$\theta + \dtheta$};
-%%\draw ($(Oarc)+(0,-0.15)$) arc(-90:-90+\thetrecrad r:0.15) ;
-%%
-%%%Downstream angle
-%%\coordinate (Oarc2) at ($(Oarc) + (0,{\rayadv * sin(\thetadvrad r) + \rayrec * sin(\thetrecrad r)})$);
-%%\draw (Oarc2) --++({90-(\thetadvrad r)}:0.3);
-%%\coordinate (angadv) at ($(Oarc2) +({90-(\thetadvrad r)}:0.3)$);
-%%\draw (angadv)  node[above]{$\theta - \dtheta $};
-%%\draw ($(Oarc2)+(0,+0.15)$) arc(90:{90-(\thetadvrad r)}:0.15);
-%
-%%%CONTROL VOLMUE
-%
-%%\draw[densely dotted, green!50!black, very thick] ($(Oarc)+(0.03,-0.7*\ray)$)--($(Oarc2)+(0.03,\ray)$)--++(2*\ray,0)--($(Oarc)+(0.04+2*\ray,-0.7*\ray)$)--cycle;
-%
-%
-%
-%%Center and radius
-%
-%%\coordinate (Cb) at ($(Oarc2)+( {\ray * cos(\thetrad r)} , {-0.5 * (\rayadv * sin(\thetadvrad r) + \rayrec  * sin(\thetrecrad r) )})$);
-%%\draw (Cb) node{$\times$} node[below right]{$O$};
-%%
-%%\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc) node[midway, above left]{$R$};
-%%
-%%
-%%\draw[densely dashed, <->, >=latex] ($(Oarc) + (-\ray/12,+\ray/15) $) -- ($(Oarc2) + (-\ray/12,-\ray/6) $) node[midway, left]{$d_{w}$};
-%
-%
-%
-%%Inclination angle
-%
-%%\draw[densely dotted] (Cb) --++ (\ray,0);
-%%\draw[densely dotted] (Cb) --++ ({(1*\dthetrad r)}: \ray );
-%%\draw ($(Cb) + (0.3,0)$) arc(0: {(\dthetrad r)}:0.3)  node[very near end, above]{$\dtheta$};
-%%
-%%
-%
-%
-%
-%
-%\end{tikzpicture}
 
 
 
 }
 
 
-\endpgfgraphicnamed
+%\endpgfgraphicnamed
 
-
-
-
-\beginpgfgraphicnamed{shi_scheme}
+%
+%
+%
+%\beginpgfgraphicnamed{shi_scheme}
 
 \fbox{
 
@@ -1332,13 +1256,13 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \end{tikzpicture}
 
 }
-
-
-\endpgfgraphicnamed
-
-
-%\beginpgfgraphicnamed{newbub_sugrue}
-
+%
+%
+%\endpgfgraphicnamed
+%
+%
+%%\beginpgfgraphicnamed{newbub_sugrue}
+%
 
 \fbox{
 
@@ -1378,9 +1302,9 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 
 }
 
-
-\beginpgfgraphicnamed{wettability}
-
+%
+%\beginpgfgraphicnamed{wettability}
+%
 \fbox{
 
 \begin{tikzpicture}[scale=2.5]
@@ -1460,16 +1384,16 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \end{tikzpicture}
 
 }
-
-\endpgfgraphicnamed
-
-
-
-
-
-\beginpgfgraphicnamed{bub_life_VFB}
-
-
+%
+%\endpgfgraphicnamed
+%
+%
+%
+%
+%
+%\beginpgfgraphicnamed{bub_life_VFB}
+%
+%
 \fbox{
 
 
@@ -1589,14 +1513,14 @@ node[near end, above left,red!50!black]{$T_{L}(y)$};
 \end{tikzpicture}
 
 }
-
-
-\endpgfgraphicnamed
-
-
-\beginpgfgraphicnamed{FIP}
-
-
+%
+%
+%\endpgfgraphicnamed
+%
+%
+%\beginpgfgraphicnamed{FIP}
+%
+%
 \begin{tikzpicture}
 \begin{axis}[
 width=10cm,
@@ -1625,17 +1549,17 @@ coordinates
 {(0.31, 0.3) (0.59, 0.3)} node[midway, above]{$t_{L}$};
 \end{axis}
 \end{tikzpicture}
-
-\endpgfgraphicnamed
-
-
-
-
-%%%BUBBLE INTERACTIONS
-
-
-\beginpgfgraphicnamed{static_coal}
-
+%
+%\endpgfgraphicnamed
+%
+%
+%
+%
+%%%%BUBBLE INTERACTIONS
+%
+%
+%\beginpgfgraphicnamed{static_coal}
+%
 \begin{tikzpicture}[scale=4.0, every node/.style={scale=0.9}]
 
 
@@ -1713,17 +1637,17 @@ coordinates
 
 \end{tikzpicture}
 
-
-\endpgfgraphicnamed
-
-
-
-
-
-%%STATIC DEACTIVATION
-
-\beginpgfgraphicnamed{static_suppression}
-
+%
+%\endpgfgraphicnamed
+%
+%
+%
+%
+%
+%%%STATIC DEACTIVATION
+%
+%\beginpgfgraphicnamed{static_suppression}
+%
 \begin{tikzpicture}[scale=4.0, every node/.style={scale=0.9}]
 
 
@@ -1857,11 +1781,11 @@ coordinates
 
 \end{tikzpicture}
 
-\endpgfgraphicnamed
-
-
-\beginpgfgraphicnamed{slide_area}
-
+%\endpgfgraphicnamed
+%
+%
+%\beginpgfgraphicnamed{slide_area}
+%
 \begin{tikzpicture}[scale=4.0]
 
 
@@ -1903,14 +1827,14 @@ coordinates
 
 \end{tikzpicture}
 
-\endpgfgraphicnamed
-
-
-
-
-
-\beginpgfgraphicnamed{deb_sketch}
-
+%\endpgfgraphicnamed
+%
+%
+%
+%
+%
+%\beginpgfgraphicnamed{deb_sketch}
+%
 \fbox{
 
 \begin{tikzpicture}[scale=2.0]
@@ -1978,20 +1902,15 @@ coordinates
 
 }
 
-\endpgfgraphicnamed
+%\endpgfgraphicnamed
 
 
 
 
 
 
-
-
-
-
-
-\beginpgfgraphicnamed{deb_prom}
-
+%\beginpgfgraphicnamed{deb_prom}
+%
 \fbox{
 
 \begin{tikzpicture}[scale=2.0]
@@ -2078,11 +1997,12 @@ coordinates
 
 
 }
-\endpgfgraphicnamed
 
-
-\beginpgfgraphicnamed{agate_mes_ax}
-
+%\endpgfgraphicnamed
+%
+%
+%\beginpgfgraphicnamed{agate_mes_ax}
+%
 \fbox{
 
 \begin{tikzpicture}[scale=10]
@@ -2159,10 +2079,12 @@ if
 
 
 }
-\endpgfgraphicnamed
 
-\beginpgfgraphicnamed{subchannel}
 
+%\endpgfgraphicnamed
+%
+%\beginpgfgraphicnamed{subchannel}
+%
 \begin{tikzpicture}[scale=300]
 
 \tikzmath{\R=0.00475; \p=0.0126;};
@@ -2185,20 +2107,22 @@ if
 
 
 \end{tikzpicture}
-\endpgfgraphicnamed
 
 
-
-
-
-
-
-%%%%PWR BY GLORIA FACCANONI
-
-% Pressurized Water Reactor
-% Author: Gloria Faccanoni <http://www.science.unitn.it/~gloria/home.htm>
-
-\beginpgfgraphicnamed{pwr_sketch}
+%\endpgfgraphicnamed
+%
+%
+%
+%
+%
+%
+%
+%%%%%PWR BY GLORIA FACCANONI
+%
+%% Pressurized Water Reactor
+%% Author: Gloria Faccanoni <http://www.science.unitn.it/~gloria/home.htm>
+%
+%\beginpgfgraphicnamed{pwr_sketch}
 %\fbox{
 
 %\usepackage[hmargin=1cm,vmargin=1cm]{geometry}
@@ -2452,10 +2376,12 @@ if
 %                   (d) -- (ff);
 \end{tikzpicture}
 %}
-\endpgfgraphicnamed
 
 
-\beginpgfgraphicnamed{energy_mix}
+%\endpgfgraphicnamed
+%
+%
+%\beginpgfgraphicnamed{energy_mix}
 
 \def\angle{0}
 \def\radius{4}
@@ -2491,15 +2417,15 @@ if
     };
 \end{tikzpicture}
 
-\endpgfgraphicnamed
-
-
-
-
-
-
-%%%BUBBLE TIME SCALES
-
+%\endpgfgraphicnamed
+%
+%
+%
+%
+%
+%
+%%%%BUBBLE TIME SCALES
+%
 
 \beginpgfgraphicnamed{cycle1}
 
@@ -2887,7 +2813,7 @@ if
 
 %%%KURUL PODOWSKI HFP
 
-\beginpgfgraphicnamed{kurul_hfp}
+%\beginpgfgraphicnamed{kurul_hfp}
 
 \fbox{
 
@@ -2974,7 +2900,137 @@ if
 
 }
 
+%\endpgfgraphicnamed
+%
+%
+
+
+
+
+%%%PROGRESSIVE FORCE BALANCE
+
+\beginpgfgraphicnamed{bdf_prog} %%IN COMMAND LINE : pdflatex --jobname=forces draw.tex
+%
+%
+\fbox{
+
+
+\begin{tikzpicture}[scale=3.5, every node/.style={scale=0.9}]
+
+
+%%%%Truncated sphere on a vertical wall
+
+
+%Tilted bubble
+\coordinate (Ob2) at (2.5,1.0);
+
+\coordinate (O1) at (2.5,0);
+\coordinate (O2) at (2.5,2);
+\draw (O1)--(O2);
+
+\tikzmath{\thet = 40; \thetrad= \thet * pi / 180;
+\dthet=10; \dthetrad=\dthet*pi/180;
+\thetadvrad=\thetrad - \dthetrad;
+\thetrecrad=\thetrad + \dthetrad;
+\thetadv=\thetadvrad*180/pi;
+\thetrec=\thetrecrad*180/pi;
+\ray=0.5; 
+\rayadv=\ray *(1+cos(\thetrad r))/(1+ cos(\thetadvrad r);
+\rayrec=\ray *(1+cos(\thetrad r))/(1+ cos(\thetrecrad r);};
+
+\coordinate (Oarc) at ($(Ob2)-(0,{\ray * sin(\thetrad r)})$);
+
+
+\draw (Oarc) arc({-pi+(\thetrecrad)) r}:{0 r}:\rayrec) arc ({0 r}:{pi-(\thetadvrad)) r}:\rayadv);
+
+%Upstream angle
+\draw (Oarc) --++(-90+\thetrecrad r:0.3) node[very near end, below]{$\theta + \dtheta$};
+\draw ($(Oarc)+(0,-0.15)$) arc(-90:-90+\thetrecrad r:0.15) ;
+
+%Downstream angle
+\coordinate (Oarc2) at ($(Oarc) + (0,{\rayadv * sin(\thetadvrad r) + \rayrec * sin(\thetrecrad r)})$);
+\draw (Oarc2) --++({90-(\thetadvrad r)}:0.3);
+\coordinate (angadv) at ($(Oarc2) +({90-(\thetadvrad r)}:0.3)$);
+\draw (angadv)  node[above]{$\theta - \dtheta $};
+\draw ($(Oarc2)+(0,+0.15)$) arc(90:{90-(\thetadvrad r)}:0.15);
+
+
+
+%Center and radius
+
+\coordinate (Cb) at ($(Oarc2)+( {\ray * cos(\thetrad r)} , {-0.5 * (\rayadv * sin(\thetadvrad r) + \rayrec  * sin(\thetrecrad r) )})$);
+\draw (Cb) node{$\times$} node[below right]{$O$};
+
+\draw[densely dashed, <->, >=latex] (Cb) -- (Oarc) node[midway, above left]{$R$};
+
+
+\draw[densely dashed, <->, >=latex] ($(Oarc) + (-\ray/12,+\ray/15) $) -- ($(Oarc2) + (-\ray/12,-\ray/6) $) node[midway, left]{$d_{w}$};
+
+
+
+%Inclination angle
+
+\draw[densely dotted] (Cb) --++ (\ray,0);
+\draw[densely dotted] (Cb) --++ ({(1*\dthetrad r)}: \ray );
+\draw ($(Cb) + (0.3,0)$) arc(0: {(\dthetrad r)}:0.3)  node[very near end, above]{$\dtheta$};
+
+
+
+
+
+%%Forces
+
+\draw[->, >=latex, violet!70!black] (Ob2)--++(\ray/2,0) node[near end, above]{$\vect{F_{CP}}$};
+
+\draw[->, >=latex, red!70!black!] ($(Cb)+(\ray,0)$)--++(\ray/2,0) node[very near end, above]{$\vect{F_{L}}$};
+\draw[->, >=latex, red!70!black!] ($(Cb)+({sin(5)},{cos(5)*\rayrec*1.04})$)--++(0,+\ray/2) node[very near end, right]{$\vect{F_{D}}$};
+\draw[->, >=latex, red] ($(Cb)+(0,+\rayrec*1.04)$)--++(0,+\ray/1.5) node[very near end, left]{$\vect{U_{b}}$};
+
+
+\draw[->, >=latex, violet] (Oarc)--++(90+\thetrec:\ray/2) node[very near end, left]{$\vect{F_{C}}$};
+\draw[->, >=latex, violet] (Oarc2)--++(-90-\thetadv:\ray/2) node[very near end, left]{$\vect{F_{C}}$};
+
+\draw[->, >=latex, blue!70!black] (Cb)--++(0,\ray/1.5) node[very near end, right]{$\vect{F_{B}}$};
+
+
+\draw[->, >=latex, green!50!black!] (Cb)--++(160-\thet:\ray/1.5) node[very near end, above]{$\vect{F_{AM}}$};
+
+%Gravity
+
+\draw[->, >=latex, blue!30!black]  ($(Cb)+({1.5*\ray},{1.5*\ray})$)--++(0,-\ray/2) node[very near end, right]{$\vect{g}$};
+
+
+
+%Flow arrows
+\foreach \i in {2,...,14} 
+{
+\coordinate (Oloc) at ($(O1)+(\i/15,0.05)$);
+\draw[->,>=latex, gray!70!blue] (Oloc)--++(0,{ln(1+0.03*\i)});
+}
+\draw[gray!70!blue] ($(Oloc)+(0.1,0.1)$) node{$\vect{U_{L}}$};
+
+%%Referential vectors
+\coordinate (Ovect) at (4.0,0);
+\draw[->, >=latex] (Ovect)--++(0.3,0) node[very near end, above right]{$\vect{e_{y}}$};
+\draw[->, >=latex] (Ovect)--++(0,0.3) node[very near end, above right]{$\vect{e_{x}}$};
+
+%Control volume
+
+\coordinate (Oarc) at ($(Ob2)-(0,{\ray * sin(\thetrad r)})$);
+\coordinate (Oarcb) at ($(Oarc)+(-\thetrecrad r : 0.15*\rayrec)$);
+
+\draw[thick] (Oarc) arc({-pi+(\thetrecrad)) r}:{0 r}:\rayrec) arc ({0 r}:{pi-(\thetadvrad)) r}:\rayadv);
+\draw[dotted, green!50!black, opacity=0.7, line width = 3pt] (Oarcb) arc({-pi+(1.15*\thetrecrad)) r}:{0.3 r}:1.01*\rayrec) arc ({0.3 r}:{ 0.93*(pi-(\thetadvrad)) r}:1.01*\rayadv)--cycle;
+
+\end{tikzpicture}
+
+}
+
+
 \endpgfgraphicnamed
+
+
+
 \end{document}
 
 
