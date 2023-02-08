@@ -2034,6 +2034,70 @@ coordinates
 
 
 
+%%%%AGATE PROM
+
+
+\beginpgfgraphicnamed{agate_prom}
+%
+\fbox{
+
+\begin{tikzpicture}[scale=2.0]
+
+\tikzmath{\length=4.0; \diam=0.6;};
+
+\coordinate (A1) at (0,0);
+\coordinate (A2) at ($(A1) + (0,\length)$);
+\coordinate (B1) at (\diam,0);
+\coordinate (B2) at ($(B1)+(0,\length)$);
+
+\fill[top color = blue!5!white, bottom color = blue!20!white] (A1)--(A2)--(B2)--(B1)--cycle;
+
+\draw (A1) -- (A2);
+\draw (B1) -- (B2);
+
+%Inlet water
+\draw [->, >=latex, blue!70!black] ($(A1)+({\diam / 2},-0.2)$) --++ (0,0.4) node[very near start, right]{$G_{L}$};
+
+
+%\draw[red!80!black] (0,{\length / 2}) node[left]{$\phi_{w}$};
+%\draw[red!80!black] (\diam,{\length / 2}) node[right]{$\phi_{w}$};
+
+%Measurement section
+\draw[brown!50!black, densely dashed, line width=2] (P1)--(P2);
+
+\draw[->, >=latex, brown!50!black] ($(P2)+(0.4,0.4)$)--($(P2)+(0.02,0.02)$)  node[very near start, above right]{\footnotesize{Measurements}};
+
+
+%Mixing Vanes
+\tikzmath{\lmv = 2.5;};
+\coordinate (Omv) at (0,\lmv);
+\coordinate (Omv2) at (\diam , \lmv);
+
+
+\draw[black, line width=1.0] (Omv)--++(\diam,0);
+\draw[black, line width=1.0] ($(Omv)+(0,+0.05)$)--++(\diam,0);
+\draw[black, line width=1.0] ($(Omv)+(0,+0.05)$)--++(35:\diam /2);
+\draw[black, line width=1.0] ($(Omv2)+(0,+0.05)$)--++(-35+180:\diam /2);
+
+%LMV
+\draw[black, densely dashed, <->, >=latex] ($(Omv2)+(0.5,0)$) -- ($(P2) + (0.5,0)$) node[midway, right]{$z$};
+
+
+
+\end{tikzpicture}
+
+
+}
+
+\endpgfgraphicnamed
+
+
+
+
+
+
+
+
 %\beginpgfgraphicnamed{agate_mes_ax}
 
 
@@ -2904,7 +2968,7 @@ if
 \draw ($(Ophi)+(0,-0.15)$) node{${\phi_{c,L}}$};
 
 
-%Vapor convective flux
+%Boiling flux
 \coordinate (Ob) at (1.5,0);
 
 \tikzmath{\alph = 40; \alphrad= \alph * pi / 180; \ray=0.2; \rw=\ray * sin(\alphrad r);};
@@ -2916,9 +2980,12 @@ if
 
 %\draw[red, thick, densely dashed] (Oarc) --++ (-2*\rw, 0);
 
-\draw[->,>=latex, thick, brown!80!black] ($(Ob)+(0,-0.1)$)--($(Ob)+(0,+0.1)$);
-\draw ($(Ob)+(0,-0.15)$) node{${\phi_{e}}$};
+\draw[->,>=latex, thick, brown!80!black] plot [smooth, tension=0.5] coordinates {($(Oarc)+(0,-0.1)$) ($(Oarc)+(0.05,+0.03)$) ($(Oarc)+(-0.05,+0.1)$)};
 
+\coordinate (Oarc2) at ($(Oarc) + (-2*\rw,0)$);
+\draw[->,>=latex, thick, brown!80!black] plot [smooth, tension=0.5] coordinates {($(Oarc2)+(0,-0.1)$) ($(Oarc2)+(-0.05,+0.03)$) ($(Oarc2)+(+0.05,+0.1)$)};
+
+\draw ($(Ob)+(0,-0.15)$) node{${\phi_{e}}$}; %($(Ob)+(-0.1,-0.15)$) 
 
 
 %Quenching heat flux
@@ -3089,6 +3156,36 @@ if
 
 \endpgfgraphicnamed
 
+\beginpgfgraphicnamed{nb_nsit}
+
+\fbox{
+\begin{tikzpicture}
+
+\coordinate (s1) at (1,0);
+\coordinate (s2) at (2.0,0);
+\coordinate (s3) at (3,0);
+\coordinate (s4) at (4.0,0);
+
+\fill[color = gray!15!white, opacity=0.5] (s1) circle(0.35);
+\draw(s1) circle(0.35);
+
+\fill[color = gray!15!white, opacity=0.5] (s4) circle(0.35);
+\draw(s4) circle(0.35);
+
+\draw (s1) node{$\times$};
+\draw (s2) node{$\times$};
+\draw (s3) node{$\times$};
+\draw (s4) node{$\times$};
+
+
+
+\draw[<->,dashed, >=latex] ($(s2)+(0,0.2)$)--($(s3)+(0,0.2)$) node[midway, above]{$s_{a}$};
+\draw[<->,dashed, >=latex] ($(s1)+(0,-0.5)$)--($(s4)+(0,-0.5)$) node[midway, below]{$s_{b}$};
+
+\end{tikzpicture}
+}
+
+\endpgfgraphicnamed
 
 
 \end{document}

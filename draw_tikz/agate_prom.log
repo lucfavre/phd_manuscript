@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.18)  8 FEB 2023 20:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.18)  8 FEB 2023 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -719,14 +719,18 @@ File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 yplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
+No auxiliary output files.
+
+Package TikZ externalization: calling \geometry{driver=none} during externaliza
+tion.
+
+
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdfte
 x.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count315
 \l__pdf_internal_box=\box66
 ) (draw.aux)
-\openout1 = `draw.aux'.
-
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
 LaTeX Font Info:    ... okay on input line 66.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
@@ -782,10 +786,9 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: <none>
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: \Gm@driver 
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -821,56 +824,52 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-[1
-
-{C:/Users/Luc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./growth_analy
-tical.pdf>]
 Package pgfplots info on input line 280: Using 'lua backend=false' for axis: xm
 ode=log unsupported (yet).
 Package pgfplots info on input line 280: Using 'lua backend=false' for axis: ym
 ode=log unsupported (yet).
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+\openout3 = `agate_prom.dpth'.
 
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-[2 <./HFP_sketch.pdf>]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-[3]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-[4]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-[5]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-[6]
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-[7]
+[7
+
+{C:/Users/Luc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 Missing character: There is no ; in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no f in font nullfont!
@@ -898,482 +897,37 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no f in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-[8]
-Overfull \hbox (3.04633pt too wide) in paragraph at lines 2344--2344
+
+Overfull \hbox (3.04633pt too wide) in paragraph at lines 2408--2408
 [][]\OT1/cmr/m/n/9 Reactor 
  []
 
 
-Overfull \hbox (230.24268pt too wide) in paragraph at lines 2410--2412
+Overfull \hbox (230.24268pt too wide) in paragraph at lines 2474--2476
  [][] 
  []
 
 \cyclecount=\count322
 \ind=\count323
 Missing character: There is no ; in font nullfont!
-[9] [10] [11 <./cycle1.pdf>]
 \c@randarcs=\count324
- [12 <./cycle2.pdf> <./cycle3.pdf>] [13 <./cycle4.pdf> <./cycle5.pdf>]
 Missing character: There is no ; in font nullfont!
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3096 \beginpgfgraphicnamed{nb_nsit}\\
-                                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[14 <./cycle6.pdf> <./cycle6.pdf> <./kurul_hfp.pdf>]
-
-! Package tikz Error: A node must have a (possibly empty) label text.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3122 }
-        
-This error message was generated by an \errmessage
-command, so I can't give any explicit help.
-Pretend that you're Hercule Poirot: Examine all clues,
-and deduce the truth by order and method.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.3122 }
-        
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\pgf@process ...x =\pgf@x \global \pgf@y =\pgf@y }
-                                                  
-l.3122 }
-        
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra \endcsname.
-<argument> ...pgf@sh@sa@\tikz@fig@name \endcsname 
-                                                  {\pgf@sh@reanchor {\tikz@s...
-l.3122 }
-        
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.3122 }
-        
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! Package tikz Error: A node must have a (possibly empty) label text.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3122 }
-        
-(That was another \errmessage.)
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.3122 }
-        
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\pgf@process ...x =\pgf@x \global \pgf@y =\pgf@y }
-                                                  
-l.3122 }
-        
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra \endcsname.
-<argument> ...pgf@sh@sa@\tikz@fig@name \endcsname 
-                                                  {\pgf@sh@reanchor {\tikz@s...
-l.3122 }
-        
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.3122 }
-        
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! Package tikz Error: A node must have a (possibly empty) label text.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3122 }
-        
-(That was another \errmessage.)
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.3122 }
-        
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\pgf@process ...x =\pgf@x \global \pgf@y =\pgf@y }
-                                                  
-l.3122 }
-        
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra \endcsname.
-<argument> ...pgf@sh@sa@\tikz@fig@name \endcsname 
-                                                  {\pgf@sh@reanchor {\tikz@s...
-l.3122 }
-        
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.3122 }
-        
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! Package tikz Error: A node must have a (possibly empty) label text.
-
-See the tikz package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3122 }
-        
-(That was another \errmessage.)
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.3122 }
-        
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\pgf@process ...x =\pgf@x \global \pgf@y =\pgf@y }
-                                                  
-l.3122 }
-        
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra \endcsname.
-<argument> ...pgf@sh@sa@\tikz@fig@name \endcsname 
-                                                  {\pgf@sh@reanchor {\tikz@s...
-l.3122 }
-        
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \times 
-l.3122 }
-        
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.3122 }
-        
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[15] (draw.aux) ) 
+ ) 
 Here is how much of TeX's memory you used:
- 29081 strings out of 476404
- 727328 string characters out of 2790468
- 1899324 words of memory out of 3000000
- 48990 multiletter control sequences out of 15000+600000
+ 29046 strings out of 476404
+ 726882 string characters out of 2790468
+ 1897324 words of memory out of 3000000
+ 48969 multiletter control sequences out of 15000+600000
  516945 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,13n,104p,723b,2214s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmbsy10.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmbx7.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Luc/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Luc/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Luc/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/Luc/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><C:/Users
-/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
-/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pf
-b><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r8.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmr9.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb>
-Output written on draw.pdf (15 pages, 286773 bytes).
+<C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmmi7.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmr8.pfb>
+Output written on agate_prom.pdf (1 page, 34428 bytes).
 PDF statistics:
- 261 PDF objects out of 1000 (max. 8388607)
+ 45 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
