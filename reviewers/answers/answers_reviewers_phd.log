@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.18)  4 FEB 2023 15:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.18)  9 FEB 2023 10:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./answers_reviewers_phd.tex
 (answers_reviewers_phd.tex
-LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-01-16>
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-08-05>
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -19,41 +19,42 @@ File: size10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count190
 \c@figure=\count191
 \c@table=\count192
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
-\bibindent=\dimen140
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 \Gm@cnth=\count193
 \Gm@cntv=\count194
 \c@Gm@tempcnt=\count195
-\Gm@bindingoffset=\dimen141
-\Gm@wd@mp=\dimen142
-\Gm@odd@mp=\dimen143
-\Gm@even@mp=\dimen144
-\Gm@layoutwidth=\dimen145
-\Gm@layoutheight=\dimen146
-\Gm@layouthoffset=\dimen147
-\Gm@layoutvoffset=\dimen148
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
 \Gm@dimlist=\toks17
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)
+)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.st
+y
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
-
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+ (C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 \c@blindtext=\count196
@@ -75,73 +76,83 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@pangramcount=\count278
 \c@blind@pangrammax=\count279
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.st
+y
 Package: tcolorbox 2022/06/24 version 5.1.1 text color boxes
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-c
-ommon.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.s
+ty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
+l-common.tex
 \pgfutil@everybye=\toks18
-\pgfutil@tempdima=\dimen149
-\pgfutil@tempdimb=\dimen150
-)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-l
-atex.def
+\pgfutil@tempdima=\dimen147
+\pgfutil@tempdimb=\dimen148
+
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
+l-common-lists.tex))
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
+l-latex.def
 \pgfutil@abb=\box51
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.co
-de.tex
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
-Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs
+.code.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex
+)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
-Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.st
-y (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore
+.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen151
-\Gin@req@width=\dimen152
-)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.st
-y
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.
-code.tex
-Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.c
-ode.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
+f
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys
+.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
+s.code.tex
 \pgfkeys@pathtoks=\toks19
 \pgfkeys@temptoks=\toks20
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeysli
-braryfiltered.code.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
+sfiltered.code.tex
 \pgfkeys@tmptoks=\toks21
 ))
-\pgf@x=\dimen153
-\pgf@y=\dimen154
-\pgf@xa=\dimen155
-\pgf@ya=\dimen156
-\pgf@xb=\dimen157
-\pgf@yb=\dimen158
-\pgf@xc=\dimen159
-\pgf@yc=\dimen160
-\pgf@xd=\dimen161
-\pgf@yd=\dimen162
+\pgf@x=\dimen151
+\pgf@y=\dimen152
+\pgf@xa=\dimen153
+\pgf@ya=\dimen154
+\pgf@xb=\dimen155
+\pgf@yb=\dimen156
+\pgf@xc=\dimen157
+\pgf@yc=\dimen158
+\pgf@xd=\dimen159
+\pgf@yd=\dimen160
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
 \c@pgf@counta=\count280
@@ -153,38 +164,40 @@ braryfiltered.code.tex
 \t@pgf@tokc=\toks24
 \pgf@sys@id@count=\count284
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
-File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.
+cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-
-pdftex.def
-File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-
-common-pdf.def
-File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )))
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyss
-oftpath.code.tex
-File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+yssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfsyssoftpath@smallbuffer@items=\count285
 \pgfsyssoftpath@bigbuffer@items=\count286
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysp
-rotocol.code.tex
-File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex-dev/graphics\mathcolor
+.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -195,181 +208,183 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.
-code.tex
-Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+re.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.t
-ex
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.co
-de.tex)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.
-code.tex
-\pgfmath@dimen=\dimen163
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
+e.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc
+.code.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil
+.code.tex)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathpars
+er.code.tex
+\pgfmath@dimen=\dimen161
 \pgfmath@count=\count287
 \pgfmath@box=\box52
 \pgfmath@toks=\toks25
 \pgfmath@stack@operand=\toks26
 \pgfmath@stack@operation=\toks27
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctio
-ns.code.tex)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctio
-ns.basic.code.tex)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctio
-ns.trigonometric.code.tex)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctio
-ns.random.code.tex)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctio
-ns.comparison.code.tex)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctio
-ns.base.code.tex)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctio
-ns.round.code.tex)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctio
-ns.misc.code.tex)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctio
-ns.integerarithmetics.code.tex)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.co
-de.tex)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.c
-ode.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.code.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.basic.code.tex)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.trigonometric.code.tex)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.random.code.tex)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.comparison.code.tex)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.base.code.tex)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.round.code.tex)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.misc.code.tex)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.integerarithmetics.code.tex)))
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloa
+t.code.tex
 \c@pgfmathroundto@lastzeros=\count288
 ))
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.te
-x)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorep
-oints.code.tex
-File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@picminx=\dimen164
-\pgf@picmaxx=\dimen165
-\pgf@picminy=\dimen166
-\pgf@picmaxy=\dimen167
-\pgf@pathminx=\dimen168
-\pgf@pathmaxx=\dimen169
-\pgf@pathminy=\dimen170
-\pgf@pathmaxy=\dimen171
-\pgf@xx=\dimen172
-\pgf@xy=\dimen173
-\pgf@yx=\dimen174
-\pgf@yy=\dimen175
-\pgf@zx=\dimen176
-\pgf@zy=\dimen177
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code
+.tex)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen162
+\pgf@picmaxx=\dimen163
+\pgf@picminy=\dimen164
+\pgf@picmaxy=\dimen165
+\pgf@pathminx=\dimen166
+\pgf@pathmaxx=\dimen167
+\pgf@pathminy=\dimen168
+\pgf@pathmaxy=\dimen169
+\pgf@xx=\dimen170
+\pgf@xy=\dimen171
+\pgf@yx=\dimen172
+\pgf@yy=\dimen173
+\pgf@zx=\dimen174
+\pgf@zy=\dimen175
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorep
-athconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@path@lastx=\dimen178
-\pgf@path@lasty=\dimen179
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen176
+\pgf@path@lasty=\dimen177
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorep
-athusage.code.tex
-File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@shorten@end@additional=\dimen180
-\pgf@shorten@start@additional=\dimen181
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen178
+\pgf@shorten@start@additional=\dimen179
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcores
-copes.code.tex
-File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+rescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box53
 \pgf@hbox=\box54
 \pgf@layerbox@main=\box55
 \pgf@picture@serial@count=\count289
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreg
-raphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgflinewidth=\dimen182
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+regraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen180
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoret
-ransformations.code.tex
-File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@pt@x=\dimen183
-\pgf@pt@y=\dimen184
-\pgf@pt@temp=\dimen185
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+retransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen181
+\pgf@pt@y=\dimen182
+\pgf@pt@temp=\dimen183
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreq
-uick.code.tex
-File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+requick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreo
-bjects.code.tex
-File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorep
-athprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorea
-rrows.code.tex
-File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfarrowsep=\dimen186
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+rearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen184
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcores
-hade.code.tex
-File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@max=\dimen187
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen185
 \pgf@sys@shading@range@num=\count290
 \pgf@shadingcount=\count291
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorei
-mage.code.tex
-File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoree
-xternal.code.tex
-File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfexternal@startupbox=\box56
+))
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+relayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorel
-ayers.code.tex
-File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+retransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoret
-ransparency.code.tex
-File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorep
-atterns.code.tex
-File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorer
-df.code.tex
-File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+rerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulesh
-apes.code.tex
-File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+eshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfnodeparttextbox=\box57
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulepl
-ot.code.tex
-File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+eplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp
--version-0-65.sty
-Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen188
-\pgf@nodesepend=\dimen189
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
+omp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen186
+\pgf@nodesepend=\dimen187
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp
--version-1-18.sty
-Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
+omp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks28
 \verbatim@line=\toks29
 \verbatim@in@stream=\read3
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.
+sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
 \@envbody=\toks30
-) (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count292
 )
@@ -385,54 +400,58 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \tcb@temp=\box64
 \tcb@temp=\box65
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbraster.code.
-tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbraster.co
+de.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '5.1.1'
 \c@tcbrastercolumn=\count296
 \c@tcbrasterrow=\count297
 \c@tcbrasternum=\count298
 \c@tcbraster=\count299
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code.t
-ex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.cod
+e.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '5.1.1'
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.st
-y
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz
+.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.s
+ty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.
+sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
+s.code.tex))
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
+e.tex))
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor
+.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.c
-ode.tex))
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.t
-ex))
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.co
-de.tex
-Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen190
-\pgffor@skip=\dimen191
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
+e.tex)
+\pgffor@iter=\dimen188
+\pgffor@skip=\dimen189
 \pgffor@stack=\toks31
 \pgffor@toks=\toks32
 ))
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\
-tikz.code.tex
-Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz\tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrar
-yplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@plot@mark@count=\count300
-\pgfplotmarksize=\dimen192
+\pgfplotmarksize=\dimen190
 )
-\tikz@lastx=\dimen193
-\tikz@lasty=\dimen194
-\tikz@lastxsaved=\dimen195
-\tikz@lastysaved=\dimen196
-\tikz@lastmovetox=\dimen197
-\tikz@lastmovetoy=\dimen198
-\tikzleveldistance=\dimen199
-\tikzsiblingdistance=\dimen256
+\tikz@lastx=\dimen191
+\tikz@lasty=\dimen192
+\tikz@lastxsaved=\dimen193
+\tikz@lastysaved=\dimen194
+\tikz@lastmovetox=\dimen195
+\tikz@lastmovetoy=\dimen196
+\tikzleveldistance=\dimen197
+\tikzsiblingdistance=\dimen198
 \tikz@figbox=\box66
 \tikz@figbox@bg=\box67
 \tikz@tempbox=\box68
@@ -442,35 +461,36 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikznumberofcurrentchild=\count303
 \tikz@fig@count=\count304
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulema
-trix.code.tex
-File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+ematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfmatrixcurrentrow=\count305
 \pgfmatrixcurrentcolumn=\count306
 \pgf@matrix@numberofcolumns=\count307
 )
 \tikz@expandcount=\count308
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/
-libraries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
 \tcb@waterbox=\box70
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsaw.
-code.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigs
+aw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '5.1.1'
 ))
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable.co
-de.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable
+.code.tex
 Library (tcolorbox): 'tcbbreakable.code.tex' version '5.1.1'
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfcol.sty
-Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/oberdiek\pdfcol.sty
+Package: pdfcol 2019/12/29 v1.6 Handle new color stacks for pdfTeX (HO)
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.
+sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 ))
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
@@ -478,31 +498,31 @@ Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
 \tcb@totalupperbox=\box72
 \tcb@totallowerbox=\box73
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbhooks.code.t
-ex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbhooks.cod
+e.tex
 Library (tcolorbox): 'tcbhooks.code.tex' version '5.1.1'
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbtheorems.cod
-e.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbtheorems.
+code.tex
 Library (tcolorbox): 'tcbtheorems.code.tex' version '5.1.1'
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip50
+\@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks33
-\ex@=\dimen257
+\ex@=\dimen199
 ))
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen258
+\pmbraise@=\dimen256
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count309
@@ -522,7 +542,7 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen259
+\big@size=\dimen257
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count314
@@ -540,120 +560,123 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \column@=\count319
 \maxfields@=\count320
 \andhelp@=\toks35
-\eqnshift@=\dimen260
-\alignsep@=\dimen261
-\tagshift@=\dimen262
-\tagwidth@=\dimen263
-\totwidth@=\dimen264
-\lineht@=\dimen265
+\eqnshift@=\dimen258
+\alignsep@=\dimen259
+\tagshift@=\dimen260
+\tagwidth@=\dimen261
+\totwidth@=\dimen262
+\lineht@=\dimen263
 \@envbody=\toks36
-\multlinegap=\skip51
-\multlinetaggap=\skip52
+\multlinegap=\skip50
+\multlinetaggap=\skip51
 \mathdisplay@stack=\toks37
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 ))
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbfitting.code
-.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbfitting.c
+ode.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '5.1.1'
-\tcbfitdim=\dimen266
-\tcb@lowerfitdim=\dimen267
-\tcb@upperfitdim=\dimen268
+\tcbfitdim=\dimen264
+\tcb@lowerfitdim=\dimen265
+\tcb@upperfitdim=\dimen266
 \tcb@cur@hbadness=\count321
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsutf8
-.code.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsu
+tf8.code.tex
 Library (tcolorbox): 'tcblistingsutf8.code.tex' version '5.1.1'
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistings.cod
-e.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistings.
+code.tex
 Library (tcolorbox): 'tcblistings.code.tex' version '5.1.1'
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count322
 \lst@gtempboxa=\box76
 \lst@token=\toks38
 \lst@length=\count323
-\lst@currlwidth=\dimen269
+\lst@currlwidth=\dimen267
 \lst@column=\count324
 \lst@pos=\count325
-\lst@lostspace=\dimen270
-\lst@width=\dimen271
+\lst@lostspace=\dimen268
+\lst@width=\dimen269
 \lst@newlines=\count326
 \lst@lineno=\count327
-\lst@maxwidth=\dimen272
+\lst@maxwidth=\dimen270
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count328
 \lst@skipnumbers=\count329
 \lst@framebox=\box77
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingscore
-.code.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsc
+ore.code.tex
 Library (tcolorbox): 'tcblistingscore.code.tex' version '5.1.1'
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbprocessing.c
-ode.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbprocessin
+g.code.tex
 Library (tcolorbox): 'tcbprocessing.code.tex' version '5.1.1'
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.s
-ty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmd
+s.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-) (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 ))
 \c@tcblisting=\count330
 ))
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/listingsutf8\listingsutf8
-.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/listingsutf8\listingsu
+tf8.sty
 Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.
+sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.
+sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 ))))
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbexternal.cod
-e.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbexternal.
+code.tex
 Library (tcolorbox): 'tcbexternal.code.tex' version '5.1.1'
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbmagazine.cod
-e.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbmagazine.
+code.tex
 Library (tcolorbox): 'tcbmagazine.code.tex' version '5.1.1'
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbvignette.cod
-e.tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbvignette.
+code.tex
 Library (tcolorbox): 'tcbvignette.code.tex' version '5.1.1'
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/
-libraries\tikzlibraryfadings.code.tex
-File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrar
-yfadings.code.tex
-File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryfadings.code.tex
+File: pgflibraryfadings.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbposter.code.
-tex
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbposter.co
+de.tex
 Library (tcolorbox): 'tcbposter.code.tex' version '5.1.1'
 ))
 \c@tcb@cnt@remark=\count331
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdfte
-x.def
-File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
+ftex.def
+File: l3backend-pdftex.def 2022-08-05 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count332
 \l__pdf_internal_box=\box78
 )
@@ -714,64 +737,66 @@ LaTeX Font Info:    ... okay on input line 26.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
+kii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count333
-\scratchdimen=\dimen273
+\scratchdimen=\dimen271
 \scratchbox=\box79
 \nofMPsegments=\count334
 \nofMParguments=\count335
 \everyMPshowfont=\toks39
 \MPscratchCnt=\count336
-\MPscratchDim=\dimen274
+\MPscratchDim=\dimen272
 \MPnumerator=\count337
 \makeMPintoPDFobject=\count338
 \everyMPtoPDFconversion=\toks40
 )
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-bas
-e.sty
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
+base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
+cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@lstlisting=\count339
- (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+
+(C:\Users\Luczer\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks41
 \inpenc@posthook=\toks42
 )
 [1
 
-{C:/Users/Luc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
+{C:/Users/Luczer/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
 
-] [3]
-(answers_reviewers_phd.aux) ) 
+]
+[3] [4] (answers_reviewers_phd.aux) ) 
 Here is how much of TeX's memory you used:
- 20365 strings out of 476404
- 446037 string characters out of 2790468
- 1859324 words of memory out of 3000000
- 40403 multiletter control sequences out of 15000+600000
- 514458 words of font info for 40 fonts, out of 8000000 for 9000
+ 20364 strings out of 477954
+ 447164 string characters out of 2825277
+ 758871 words of memory out of 3000000
+ 38829 multiletter control sequences out of 15000+600000
+ 471262 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,5n,104p,436b,261s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/
-enc/dvips/cm-super/cm-super-ts1.enc}<C:/Users/Luc/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Luc/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Luc/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Luc/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Luc/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/User
-s/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C
-:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmtt10.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-s
-uper/sfrm1000.pfb>
-Output written on answers_reviewers_phd.pdf (3 pages, 128860 bytes).
+ 99i,5n,104p,436b,261s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/Luczer/AppData/Local/Programs/Mi
+KTeX/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Users/Luczer/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Luczer/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Lu
+czer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
+C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmmi7.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Luczer/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on answers_reviewers_phd.pdf (4 pages, 107807 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
