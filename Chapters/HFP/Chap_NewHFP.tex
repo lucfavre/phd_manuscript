@@ -438,25 +438,25 @@ Since refrigerant are usually known to have low contact angle and recalling that
 
 \npar
 
-Based on the NCFD calculations of case 8G2P26W16Te44.9 (Chapter \ref{chap:debora_ncfd}), we extract the axial profile of $T_{L}$ and $U_{L}$ in the wall-adjacent cell and use it as inputs in the HFP models. This yields the axial wall temperature profile presented in Figure \ref{fig:HFP_DEBORA}.
+A one-dimensional simulation of the 8G2P26W16Te44.9 DEBORA case is conducted to compare the wall temperature results obtained by the different HFP models and the NCFD simulation (Chapter \ref{chap:debora_ncfd}).
 
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.6\linewidth]{img/HFP/test_allHFP_8Te44.pdf}
-\caption{Comparison of different HFP on the 8G2P26W16Te49 DEBORA case.}
+\includegraphics[width=0.6\linewidth]{img/HFP/test_allHFPbbis_8Te44.pdf}
+\caption{Comparison of different HFP and NCFD simulation on the 8G2P26W16Te49 DEBORA case.}
 \label{fig:HFP_DEBORA}
 \end{figure}
 
 We see that the models perform in very different ways for the DEBORA conditions. Basu \etal formulation largely overestimates the experimental value while Kommajosyula's model finds a wall temperature slightly lower than the NCFD computation. On the other hand, the new formulation provides a wall temperature much closer to the experimental measurements, which is probably an effect mainly due to the large quenching combined with the pressure dependency of the nucleation site density.
-
-\begin{remark*}{}
-The wall-adjacent cell is located approximately at $y^{+} \approx 100$ which corresponds to a wall distance of roughly 0.3~mm. This could be considered a too short distance to extract the liquid temperature as input in the HFP model. 
-
-\npar
-
-However, the chosen case displays a large range of wall subcooling values (dotted blue line on Figure \ref{fig:HFP_DEBORA}) and the model appears to present very few variation while extracted value of $T_{L}$ increases by nearly $20\degC$. Sensitivity to the wall distance should nevertheless be further tested.
-\end{remark*}
+%
+%\begin{remark*}{}
+%The wall-adjacent cell is located approximately at $y^{+} \approx 100$ which corresponds to a wall distance of roughly 0.3~mm. This could be considered a too short distance to extract the liquid temperature as input in the HFP model. 
+%
+%\npar
+%
+%However, the chosen case displays a large range of wall subcooling values (dotted blue line on Figure \ref{fig:HFP_DEBORA}) and the model appears to present very few variation while extracted value of $T_{L}$ increases by nearly $20\degC$. Sensitivity to the wall distance should nevertheless be further tested.
+%\end{remark*}
 
 
 

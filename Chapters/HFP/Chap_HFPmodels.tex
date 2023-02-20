@@ -148,7 +148,7 @@ The convective heat flux is expressed as :
 with $A_{c,L}$ the portion of the wall unaffected by boiling, $U_{L}$ the liquid velocity, $\St$ the Stanton number and $\delta$ a location in the buffer layer.
 
 \begin{note*}{}
-The choice of Kurul \& Podowski of taking the liquid properties at the buffer layer is not further detailed in their work. It could however be questioned when comparing the bubble size with $\delta$.
+The choice of Kurul \& Podowski of taking the liquid properties at the buffer layer is not further detailed in their work. It could however be questioned when comparing the bubble size with $\delta$. Moreover, one should keep in mind that the chosen mechanisms were dedicated to pool boiling description rather than flow boiling.
 \end{note*}
 
 
@@ -398,8 +398,8 @@ The total heat flux is partitioned between the liquid forced convection $\phi_{c
 
 \begin{figure}[!h]
 \centering
-\includegraphics[width=0.6\linewidth]{img/HFP/Gilman/hfp_model.PNG}
-\caption{Heat Flux Partitioning considered by Gilman \cite{gilman_development_2014} (Adapted from \cite{gilman_self-consistent_2017}). $q''$ are the heat fluxes and $sc$ means "sliding conduction".}
+\includegraphics[width=0.8\linewidth]{img/HFP/Gilman/mind_map.png}
+\caption{Heat Flux Partitioning mind-map description by Gilman \cite{gilman_development_2014} (Adapted from \cite{gilman_self-consistent_2017}).}% $q''$ are the heat fluxes and $sc$ means "sliding conduction".
 \label{fig:gilman_hfp}
 \end{figure}
 
@@ -484,6 +484,17 @@ The last HFP model we will look through in this Chapter was proposed by Kommajos
 \item Simpler empirical correlations for closure parameters such as bubble departure diameter and wait time ;
 \item A modification of the probabilistic approach for the static interaction between sites.
 \end{itemize}
+
+
+
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.8\linewidth]{img/HFP/komma/hfp_komma.PNG}
+\caption{Heat Flux Partitioning considered by Kommajosyula \cite{kommajosyula_development_2020}.}% $q''$ are the heat fluxes and $sc$ means "sliding conduction".
+\label{fig:komma_hfp}
+\end{figure}
+
+
 
 The total heat flux is partitioned by Kommajosyula between four fluxes : the forced liquid convection $\phi_{c,L}$, the sliding conduction $\phi_{q,sl}$, the evaporation $\phi_{e}$ and a direct convective flux to the vapor $\phi_{vap}$. Using the wall dry area $S_{dry}$, he writes:
 
@@ -635,7 +646,7 @@ Moreover, each of those approaches requires a certain number of closure laws to 
 
 \npar
 
-In this global framework, we will propose the development of a new HFP model by first trying to have a close look at boiling bubble dynamics to propose an acceptable modeling of a bubble lifetime growing and sliding on the wall  (Chapter \ref{chap:bub_dyn}). Then, we will tackle the problem of the closure laws aiming to compute important yet highly uncertain parameters ($N_{sit}$, $t_{w}$, etc.) before proposing a final formulation for the HFP that will be compared to experimental measurements (Chapter \ref{chap:HFP_Assembling}). In order to complete the description of the aforementioned models, we will highlight throughout the development when a given closure law is used in one of the presented models.
+In this global framework, we will propose the development of a new HFP model by first trying to have a close look at boiling bubble dynamics to propose an acceptable modeling of a bubble lifetime growing and sliding on the wall using most recent experimental and numerical results from the literature (Chapter \ref{chap:bub_dyn}). Then, we will tackle the problem of the closure laws aiming to compute important yet highly uncertain parameters ($N_{sit}$, $t_{w}$, etc.) before proposing a final formulation for the HFP that will be compared to experimental measurements (Chapter \ref{chap:HFP_Assembling}). In order to complete the description of the aforementioned models, we will highlight throughout the development when a given closure law is used in one of the presented models.
 %
 %In each of the 4 presented HFP models, there is a number of parameters that still need to be computed in order for the model to be fully expressed. Those parameters are often the nucleation site density, bubble diameters, etc. To do so, closure relationships are used and differ from one model to another. Here we want to sum up the different choices of the authors to point the variety of possibilities that exist.
 %

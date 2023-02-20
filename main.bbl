@@ -90,6 +90,32 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{al-arabi_turbulent_1982}{article}{}
+    \name{author}{1}{}{%
+      {{hash=AAM}{%
+         family={Al-Arabi},
+         familyi={A\bibinithyphendelim A\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AAM1}
+    \strng{fullhash}{AAM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb https://doi.org/10.1080/01457638108939586
+    \endverb
+    \field{issn}{3-4}
+    \field{pages}{76\bibrangedash 83}
+    \field{title}{Turbulent Heat Transferin the Entrance Region of a Tube}
+    \field{volume}{3}
+    \field{journaltitle}{Heat Transfer Engineering}
+    \field{year}{1982}
+  \endentry
+
   \entry{aubry_thyc_1995}{article}{}
     \name{author}{4}{}{%
       {{hash=AS}{%

@@ -101,12 +101,13 @@ The Gnielinski correlation is used in Kommajosyula's HFP model to compute the li
 The two correlations are of similar efficiency regarding wall temperature predictions over the considered data sets. They both have very good agreement with Kennel data and clear overestimation of $\Delta T_{w}$ on Richenderfer and Kossolapov measurements. The slope difference compared to the parity implies that the correlations are predicting too small Nusselt numbers for those cases. Regarding Jens-Lottes data, both models underestimate the wall temperatures, with better results achieved by Gnielinski correlation.
 
 \begin{remark*}{}
-We tested different friction factor along with different values of wall roughness in the Gnielinski correlation and observed a negligible impact on the overall results. This allows to stay with a simple formulation for the friction coefficient.
+Different friction factor were tested along with different values of wall roughness in the Gnielinski correlation and observed a negligible impact on the overall results. This allows to stay with a simple formulation for the friction coefficient.
+
 \end{remark*}
 
 \npar
 
-The error obtained on Richenderfer and Kossolapov data can be explained by the definition of the HTC computed by Gnielinski correlation. Indeed, Gnielinski correlated a Nusselt number associated to a forced convection coefficient $h_{fc,Gniel}$ in the case of a internal flow with a completely heated wall. However, only one side of the channel is heated in Richenderfer ans Kossolapov experiments. If $S_{heat}$ denotes this actual heated surface, then Gnielinski correlation estimates the HTC for a surface $4S_{heat}$. With the same imposed total heat power $\Phi_{w}$ and bulk liquid temperature $T_{L}$, we have:
+The error obtained on Richenderfer and Kossolapov data can partly be explained by the definition of the HTC computed by Gnielinski correlation. Indeed, Gnielinski correlated a Nusselt number associated to a forced convection coefficient $h_{fc,Gniel}$ in the case of a internal flow with a completely heated wall. However, only one side of the channel is heated in Richenderfer ans Kossolapov experiments. If $S_{heat}$ denotes this actual heated surface, then Gnielinski correlation estimates the HTC for a surface $4S_{heat}$. With the same imposed total heat power $\Phi_{w}$ and bulk liquid temperature $T_{L}$, we have:
 
 \begin{align}
 h_{fc,Gniel} =& \frac{\Phi_{w}}{\parth{T_{w,Gniel}-T_{L}} 4S_{heat}} \\
@@ -121,6 +122,10 @@ h_{fc,exp}=4h_{fc,Gniel}
 
 \begin{remark*}{}
 This correction can be interpreted as using the thermal diameter instead of the hydraulic diameter, which is 4 times smaller when only one side of the channel is heated.
+
+\npar
+
+Moreover, it should be noted that the experiments of Kossolapov and Richenderfer correspond to developing thermal boundary layers, for which larger heat transfer coefficients are expected. For instance, testing the Al-Arabi correlation \cite{al-arabi_turbulent_1982} for those experiments shows a 20\% to 40\% enhancement of the heat transfer coefficient compared to a fully developed flow. This further explains the initially observed overestimation of the wall temperature.
 \end{remark*}
 
 \npar
@@ -392,11 +397,18 @@ Overall, the model of Li \etal is the most efficient with an acceptable agreemen
 \npar
 \begin{remark*}{}
 The coherency of NSD predictions is hard to ensure since we do not know the exact contact angle and boiling surface morphology in the experiments. This was pointed out by Richenderfer \cite{richenderfer_experimental_2018} who observed significant variation in the NSD value depending on the heater, though keeping the same material (ITO). For instance, this may explain the fact that the NSD measured by Kossolapov at $10.5$ bar is higher than any other pressure on his experiment, leading to both underestimations and overestimations of the model of Li \etal depending on the pressure.
+
+\npar
+
+Moreover, we must keep in mind that Richenderfer and Kossolapov experiments are conducted on non-prototypical surfaces, which usually display much lower nucleation site densities compared to metallic surfaces. This could explain the systematic overestimation on Richenderfer data observed on Figure \ref{fig:pred_nsit_models}.
 \end{remark*}
 
 \npar
 All things considered, those comparisons show that the Nucleation Site Density remains among the most difficult quantity to evaluate because of its very large variations over experiments, boiling surfaces and flow conditions. Dedicated correlations are hardly precise outside of their establishment databases. However, it remains the best yet only way to compute $N_{sit}$. \textbf{In that regard, the NSD correlation of Li \etal appears to be the most coherent choice.}
 
+\begin{note*}{}
+It seems important to note that Li \etal correlation is validated on data established using water as working fluid. Its extension to other fluids must be carefully done, in particular regarding value of the critical temperature $T_{c}$ in Eq. \ref{eq:nsit_li}.
+\end{note*}
 
 
 
@@ -1261,6 +1273,10 @@ In the end, we can see that to fully close the model, we need to set 3 parameter
 
 \item The bubble growth constant $K$ which value has been discussed earlier (Section \ref{sec:bub_growth}). Its value should roughly lie between 0.1 and 2 depending on the flow conditions. It appeared that for subcooled low pressure flow match with values of $K < 1$ while at higher pressures $1 \leq K \leq 2$ better represent the bubble growth regime.
 \end{itemize}
+
+\begin{remark*}{}
+Since the contribution of the microlayer was not directly accounted for in this work, we can mention that its impact can be included in the value of $K$ in the bubble growth term for low pressure cases (as done by Mazzocco \etal \cite{mazzocco_reassessed_2018}).
+\end{remark*}
 
 
 

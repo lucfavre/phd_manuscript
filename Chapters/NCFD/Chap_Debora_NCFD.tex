@@ -92,6 +92,7 @@ First simulated case was simulated up to a physical time of 40\ s, ensuring the 
 
 On Figure \ref{fig:deb_cfd_msh_sensi}, we present simulation results for the 4 meshes (Table \ref{tab:deb_cfd_msh}) of the case 30G2P26W16Te66.6. 
 
+
 \begin{figure}[!h]
 \centering
 \subfloat[Void fraction]{
@@ -110,6 +111,11 @@ On Figure \ref{fig:deb_cfd_msh_sensi}, we present simulation results for the 4 m
 \caption{Mesh sensitivity study for 30G2P26Te66.6 case}
 \label{fig:deb_cfd_msh_sensi}
 \end{figure}
+
+
+\begin{note*}{}
+What looks like discontinuities in the results presented in Figure \ref{fig:deb_cfd_msh_sensi} is due to the fact that we do not interpolate the CFD results. Therefore, sharp edges correspond to mesh cell centers where values of interest are calculated.
+\end{note*}
 
 
 We see that the different meshes provide similar results for the void fraction, bubble diameter, vapor velocity and liquid temperature. This is particularly true for the M4 and M8 meshes, allowing to assume that an acceptable grid convergence is reached with the M4 mesh. \textbf{Therefore, further simulations will be conducted using the M4 mesh.}
@@ -165,7 +171,7 @@ Those comparisons highlight the validation of the code for the single-phase flow
 
 \subsection{Low Subcooling Cases}
 
-Next cases to be simulated are 8G2P26W16Te55.7 and Te61.5. Their outlet quality is closer to saturation with $x_{eq,out} \geq -0.1$ and thus present a subcooled boiling region during a significant portion of the heating length. However, the bulk flow is expected to stay fully liquid in those conditions (Figure \ref{fig:G2P26W16_alpha}). The results are presented of Figure \ref{fig:deb_cfd_8T55_T61}.
+Next cases to be simulated are 8G2P26W16Te55.7 and Te61.5. Their outlet quality is closer to saturation with $x_{eq,out} \geq -0.1$ and thus present a subcooled boiling region during a significant portion of the heating length. However, the bulk flow is expected to stay fully liquid in those conditions (Figure \ref{fig:G2P26W16_alpha}). The results are presented in Figure \ref{fig:deb_cfd_8T55_T61}.
 
 
 \begin{figure}[!h]
@@ -193,7 +199,7 @@ Liquid temperature profiles (Figure \ref{fig:8T55_T61_TL}) are similar to those 
 
 \npar
 
-However, the wall temperature start to show significant discrepancies with the measurements (Figure \ref{fig:8T55_T61_Tw}). The deviation from the linear profile observed in the pure-single phase region towards a stabilization corresponding to the boiling regime fails to be reproduced (Figure \ref{fig:8T55_T61_Tw_x}). First, the temperature plateau appears to start later than the experiment (around $x_{eq}\approx -0.3$ for the simulations contrary to $x_{eq} \approx -0.4$ for the experiments) and further reaches a wall temperature up to $6 \degC$ above the measurements.
+However, the wall temperatures start to show significant discrepancies with the measurements (Figure \ref{fig:8T55_T61_Tw}). The deviation from the linear profile observed in the pure-single phase region towards a stabilization corresponding to the boiling regime fails to be reproduced (Figure \ref{fig:8T55_T61_Tw_x}). First, the temperature plateau appears to start later than the experiment (around $x_{eq}\approx -0.3$ for the simulations contrary to $x_{eq} \approx -0.4$ for the experiments) and further reaches a wall temperature up to $6 \degC$ above the measurements.
 
 \npar
 Albeit the liquid temperature seems correctly distributed along the radial direction in the subcooled boiling region (also meaning that any amount of vapor potentially produced at the wall is correctly re-condensed), the wall temperature behavior significantly deviates from the experiments both by missing the ONB and exhibiting a too large superheat in the boiling region. \textbf{This consequently casts interrogations towards the modeling of the wall temperature in the code, which is a result of the wall boiling model (Section \ref{sec:ncfd_HFP}).}

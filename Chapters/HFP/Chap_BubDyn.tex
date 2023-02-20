@@ -9,7 +9,7 @@
 
 \section{Introduction}
 
-Dynamics of boiling bubbles is playing an important role in the Heat Flux Partitioning models. For instance, the evaporation heat flux $\phi_{e}$ is directly proportional to the bubble lift-off radius $R_{lo}$ \ref{eq:KP_hfp_phie} while the quenching heat flux $\phi_{q}$ depends on the wall area visited by a bubble $A_{q,1b}$ (Eq. \ref{eq:gilman_hfp_phiq}) which depends on the bubble sliding length $l_{sl}$, departure radius $R_{d}$ and lift-off radius $R_{lo}$.
+Dynamics of boiling bubbles is playing an important role in the Heat Flux Partitioning models. For instance, the evaporation heat flux $\phi_{e}$ is directly proportional to the bubble volume $V_{b} \propto R^{3}$ \ref{eq:KP_hfp_phie} while the quenching heat flux $\phi_{q}$ depends on the wall area visited by a bubble $A_{q,1b}$ (Eq. \ref{eq:gilman_hfp_phiq}) which depends on the bubble sliding length $l_{sl}$, departure radius $R_{d}$ and lift-off radius $R_{lo}$.
 
 \subsection{Experimental Insights}
 
@@ -1495,7 +1495,7 @@ Those results are encouraging and validate the modeling of $\delta_{b}$ with the
 \subsection{Comparison with Experimental Measurements}
 
 \subsubsection{Low Pressure Measurements}
-To further evaluate the proposed model, we compare the result with experimental measurements of bubble radius in vertical boiling of water at atmospheric pressure by Maity \cite{maity_effect_2000} in a square channel. The choice of $\delta$ is adapted to each case and $\theta=45\degree$ is the average measured contact angle in the experiments.
+To further evaluate the proposed model, we compare the result with experimental measurements of bubble radius in vertical boiling of water at atmospheric pressure by Maity \cite{maity_effect_2000} in a square channel. The choice of $\delta$ is adapted to each case (best-fitting of the final radius $R_{\infty}$) and $\theta=45\degree$ is the average measured contact angle in the experiments.
 
 In addition, we also plot the predictions by the heat diffusion solution $R=K\Ja_{w}\sqrt{\eta_{L}t}$ with $K=\dfrac{2b}{\sqrt{\pi}}$ and $1 \leq b \leq \sqrt{\pi}$. A solution with an optimized value of $K$ is also represented. The models of Mazzocco and Yoo \etal are also compared. The results are presented on Figure \ref{fig:growth_comp_maity}.
 
@@ -1630,7 +1630,7 @@ Note that this assumptions is true if the thermal and hydrodynamic boundary laye
 
 \end{itemize}
 
-All things considered, it seems that the proposed new growth law of Eq. \ref{eq:exp_growth} can be of greater interest for low pressure boiling where larger bubbles are more impacted by the bulk flow. Although it provides finer physical representation of bubble radius evolution, its application is limited by the estimation of $\delta$ to which the model is strongly sensitive. \textbf{On the other hand, less precise yet acceptable predictions of bubble growth are achieved using the $t^{1/2}$ law with a growth constant $K$ close to unity.}
+All things considered, it seems that the proposed new growth law of Eq. \ref{eq:exp_growth} can be of greater interest for low pressure subcooled boiling since the associated larger bubbles are more likely to be impacted by the bulk flow, contrary to high pressure bubbles. Although it provides finer physical representation of bubble radius evolution, its application is limited by the estimation of $\delta$ to which the model is strongly sensitive. Moreover, it could benefit from an association with a microlayer evaporation term which would be of greater physical consistency for low pressure boiling. \textbf{On the other hand, less precise yet acceptable predictions of bubble growth are achieved using the $t^{1/2}$ law with a growth constant $K$ close to unity.}
 
 
 

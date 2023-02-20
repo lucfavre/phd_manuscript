@@ -104,7 +104,7 @@ The main components of the primary loop are:
 \begin{itemize}
 \item \textbf{The reactor vessel} containing the core where fission reactions take place within the nuclear fuel rods, gathered in so-called "fuel assemblies". The pressurized water flow between the rods to remove the heat released at their surface and moderates the neutrons to maintain the chain reaction.
 
-\item \textbf{The primary pumps} which role is to ensure the water flow throughout the loop. They require an electrical power supply of approximately 7~MW.
+\item \textbf{The primary pumps} which role is to ensure the water flow throughout the loop. Each pump requires an electrical power supply of approximately 7~MW.
 
 \item \textbf{The pressurizer}, imposing the pressure and keeps the water in a liquid state. It is actually a vessel with a liquid-vapor mixture in which pressure can be increased through vaporization of the liquid water (using heating resistors) or diminished by vapor condensation (using water aspersion system).
 
@@ -177,7 +177,7 @@ A RPV can not be replaced, thus scaling the whole reactor's lifetime. The longer
 
 \subsubsection{Fuel Assembly and Core Structure}
 
-A fuel assembly is composed of $17 \times 17$ rods and guide thimbles among which 264 are nuclear fuel rods. 24 of them are guide thimbles in which absorbing rods (used to shut down the chain reaction by neutron absorption in incidental or accidental situations) can be inserted, one of them being dedicated to instrumentation. The top nozzle of the assembly ensures its stability using a hold-down spring. The whole structure is 4\ m high and is also maintained by 8 grids placed every 50\ cm (Figure \ref{fig:fuel_assembly}). 
+A fuel assembly is composed of $17 \times 17$ rods and guide thimbles among which 264 are nuclear fuel rods. 24 of them are guide thimbles in which absorbing rods (used to shut down the chain reaction by neutron absorption in incidental or accidental situations) can be inserted, one of them being dedicated to instrumentation. The top nozzle of the assembly ensures its stability using a hold-down spring. The whole structure is 4\ m high and is also maintained by 8 grids placed every 50\ cm (Figure \ref{fig:fuel_assembly}) for french PWR reactors. 
 
 
 
@@ -339,7 +339,7 @@ However in PWR, the very low inlet flow quality ($T_{L,in}\approx T_{sat}-50\deg
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.5\linewidth]{img/intro/dnb_bloch.png}
-\caption{Experimental shadowgrams from Bloch \etal \cite{bloch_phenomenological_2013} of the flow boiling at CHF for a 27\ K subcooled liquid flowing upwards at 0.6\ m/s.}
+\caption{Experimental shadowgrams from Bloch \etal \cite{bloch_phenomenological_2013} of the flow boiling at CHF for a 27\ K subcooled liquid flowing upwards at 0.6\ m/s and atmospheric pressure.}
 \label{fig:dnb_bloch}
 \end{figure}
 
@@ -362,7 +362,7 @@ According to Bricard (1995, \cite{bricard_modelisation_1995}), the LSD boiling c
 
 \subsection{Boiling Curves}
 
-The boiling crisis phenomenon has been reported among the first times in the pioneering work Nukiyama \cite{nukiyama_maximum_1966} who observed the variety of heat transfer regimes occurring during boiling and identified the maximum accessible heat flux as the Critical Heat Flux. He summarized his findings on a so-called "boiling curve" representing the evolution of the wall temperature (or superheat) against the applied heat flux $\phi_{w}$ (Figure \ref{fig:nukiyama_curve}).
+The boiling crisis phenomenon has been reported among the first times in the pioneering work of Nukiyama \cite{nukiyama_maximum_1966} who observed the variety of heat transfer regimes occurring during boiling and identified the maximum accessible heat flux as the Critical Heat Flux. He summarized his findings on a so-called "boiling curve" representing the evolution of the wall temperature (or superheat) against the applied heat flux $\phi_{w}$ (Figure \ref{fig:nukiyama_curve}).
 
 \begin{figure}[!h]
 \centering
@@ -424,7 +424,7 @@ This correlation is then used in multidimensional codes based on porous medium a
 
 Using the average thermal-hydraulics values of the flow at the scale of the subchannel, the dedicated correlation then estimates CHF in the cell which can be compared to the applied heat flux $\phi_{w}$ to estimate the \textbf{Departure to Nucleate Boiling Ratio} (DNBR) $\phi_{w} / \phi_{w,CHF}$ that gives the safety margin to the boiling crisis. For EDF, those numerical studies are conducted using the THYC code \cite{aubry_thyc_1995}.
 
-\section{Towards Local Predictions of the CHF Using CMFD}
+\section{Towards Local Predictions of the CHF Using Computational Multi-Fluid Dynamics}
 
 Investigating the boiling crisis physics has showed that the associated time-space scale was sometimes lower than 1\ ms and 1\ mm \cite{bloch_study_2016}, \ie smaller than the sub-channel scale. Achieving wall-boiling modeling at those scales is impossible with traditional safety studies codes and thus put the light onto Computational Multi-Fluid Dynamics (CMFD), which recent improvements over the past decades (model formulations, computational capacity, meshing techniques, etc.) has demonstrated its capability of simulating nearly industrial-scaled situations.
 
