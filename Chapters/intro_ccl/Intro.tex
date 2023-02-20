@@ -91,7 +91,7 @@ Pressurized Water Reactors are the only type of nuclear power plants operated in
 
 \subsubsection{Primary Loop}
 
-The primary loop aims to collect the thermal energy expelled by the fission reactions within the nuclear fuel rods. The water flowing through the core gathers this energy and transfers it towards the vapor generator, while ensuring a moderating effect to maintain the nuclear chain reaction in the fuel. The primary loop is fully closed and operates at a pressure around 155\ bar, a temperature of $300\degC$ and mass flow rates between $3000$ and $5000\ \debm$ (approximately 20 tons per second).  
+The primary loop aims to collect the thermal energy expelled by the fission reactions within the nuclear fuel rods. The water flowing through the core gathers this energy and transfers it towards the vapor generator, while ensuring a moderating effect to maintain the nuclear chain reaction in the fuel. The primary loop is fully closed and operates at a pressure around 155\ bar, a temperature of $300\degC$ and mass flow rates between $3000$ and $5000\ \debm$ (approximately 20 tons per second) at the core inlet.  
 
 \npar
 
@@ -135,7 +135,7 @@ The secondary loop is designed to receive the thermal energy from the primary lo
 \subsubsection{Cooling Loop}
 
 
-The cooling loop's goal is to cool down and condense the steam coming our of the turbines. Depending on the geographical situation of the nuclear power plant, the associated heat sink may either be natural (lake, sea, etc.) or built (cooling tower). It is a completely open circuit.
+The cooling loop's goal is to cool down and condense the steam coming out of the turbines. Depending on the geographical situation of the nuclear power plant, the associated heat sink may either be natural (lake, sea, etc.) or built (cooling tower). It is a completely open circuit.
 
 %:
 %
@@ -168,7 +168,7 @@ A RPV can not be replaced, thus scaling the whole reactor's lifetime. The longer
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.6\linewidth]{img/intro/vessel_pic.jpg}
-\caption{Picture of the Reactor Pressure Vessel of the finnish European Pressurized Reactor \cite{nouvelle_cuve_2010}, \textcopyright Areva}
+\caption{Picture of the Reactor Pressure Vessel of the Finnish European Pressurized Reactor \cite{nouvelle_cuve_2010}, \textcopyright Areva}
 \label{fig:vessel_pic}
 \end{figure}
 
@@ -194,11 +194,11 @@ In a reactor core, the number of fuel assemblies can vary depending on its final
 
 \subsubsection{Fuel Rod}
 
-Fuel rods are the elementary component of the reactor's core since they contain the nuclear fuel pellets made of enriched uranium. A pellet measures 13.5\ mm height for an 8\ mm diameter, weighing approximately 8.3\ g. They are placed in a neutron-transparent tubular cladding made of zircaloy (an alloy made of 98\% of zirconium and tin), allowing neutrons to move through the core to trigger fission reactions in nearby rods. This cladding is the first containment barrier and contains a total of 272 pellets (Figure \ref{fig:fuel_assembly}).
+Fuel rods are the elementary component of the reactor's core since they contain the nuclear fuel pellets made of enriched uranium. A pellet measures 13.5\ mm height for an 8\ mm diameter, weighing approximately 8.3\ g. They are placed in a neutron-transparent tubular cladding made of Zircaloy (an alloy made of 98\% of zirconium and tin), allowing neutrons to move through the core to trigger fission reactions in nearby rods. This cladding is the first containment barrier and contains a total of 272 pellets (Figure \ref{fig:fuel_assembly}).
 
 \npar
 
-The bundle organization of the rods allows water to flow between them and to moderate neutrons coming out of recent fissions. Moreover, this geometry ensures a large heat exchange surface to enhance the fuel cooling. A single fuel rod usually measures 4\ m height for a 9.5\ mm diameter and weighs 2\ kg (Figure \ref{fig:fuel_rod}).
+The bundle organization of the rods allows water to flow between them and to moderate neutrons coming out of recent fission. Moreover, this geometry ensures a large heat exchange surface to enhance the fuel cooling. A single fuel rod usually measures 4\ m height for a 9.5\ mm diameter and weighs 2\ kg (Figure \ref{fig:fuel_rod}).
 
 
 \begin{figure}[!h]
@@ -211,7 +211,7 @@ The bundle organization of the rods allows water to flow between them and to mod
 \npar
 
 \begin{note*}{}
-In normal PWR conditions, the heat flux at the rods lies rougly between $500~$kW/m\up{2} and 1.5~MW/m\up{2} \cite{pujet_memento_2016}. In accidental conditions, it can rise up to several MW/m\up{2} \cite{manon_contribution_2000}.
+In normal PWR conditions, the heat flux at the rods lies roughly between $500~$kW/m\up{2} and 1.5~MW/m\up{2} \cite{pujet_memento_2016}. In accidental conditions, it can rise up to several MW/m\up{2} \cite{manon_contribution_2000}.
 \end{note*}
  
 \subsubsection{Grids}
@@ -243,7 +243,7 @@ Figure \ref{fig:fuel_grid_I8C} shows an enlarge model of a grid for a $5 \times 
 \centering
 \includegraphics[width=0.3\linewidth]{img/intro/MaquetteGrille.png}
 \includegraphics[width=0.3\linewidth]{img/intro/CanauxGrille.jpg}
-\caption{Model of a $5 \times 5$ grid (scale 5:1) from EDF Lab Chatou. Mixing vanes circled in red, dimples in green and spings in orange.}
+\caption{Model of a $5 \times 5$ grid (scale 5:1) from EDF Lab Chatou. Mixing vanes circled in red, dimples in green and springs in orange.}
 \label{fig:fuel_grid_I8C}
 \end{figure}
 
@@ -288,7 +288,7 @@ In nuclear reactors, the water enters in the fuel assemblies from bottom and flo
 
 \subsection{Vertical Subcooled Boiling Flow Regimes}
 
-When the liquid heats up while flowing upwards, different heat exchange regimes can occur along with various multiphase flow regimes during phase-change. They are usually defined depending on the liquid thermodynamic quality $x_{eq}$ ($x_{eq}<0$ if the the flow is subcooled, $0 \leq x_{eq} \leq 1$ if the mixture is at saturation) and the time-space distribution of the liquid and vapor phases. In the case of a simple tube, Figure \ref{fig:boiling_collier} presents a sketch of the different flow and heat transfer regimes occurring for vertical flow boiling in a tube with a negative inlet liquid quality. A low but constant heat flux is applied over the tube, long enough to end-up with pure vapor flow ($x_{eq} \geq 1$).
+When the liquid heats up while flowing upwards, different heat exchange regimes can occur along with various multiphase flow regimes during phase-change. They are usually defined depending on the liquid thermodynamic quality $x_{eq} = \dfrac{h_{V,sat}-h_{M}}{h_{V,sat}-h_{L,sat}}$ ($x_{eq}<0$ if the the flow is subcooled, $0 \leq x_{eq} \leq 1$ if the mixture is at saturation) and the time-space distribution of the liquid and vapor phases. In the case of a simple tube, Figure \ref{fig:boiling_collier} presents a sketch of the different flow and heat transfer regimes occurring for vertical flow boiling in a tube with a negative inlet liquid quality. A low but constant heat flux is applied over the tube, long enough to end-up with pure vapor flow ($x_{eq} \geq 1$).
 
 
 \begin{figure}[!h]
@@ -396,7 +396,7 @@ Even if boiling can be a very efficient way of increasing the global heat transf
 
 \npar
 
-Any nuclear power unit operator, such as EDF, consequently has to prevent the occurrence of DNB in the core to ensure the full integrity of the nuclear fuel rods. Safety margins imposed by the french Nuclear Satefy Authority (ASN) have to be respected at all time. Otherwise, the nuclear unit will have to be stopped in order to prevent any incident or accident. Such constraints represent a very challenging aspect for nuclear core thermal-hydraulics which primary goal is to be able to anticipate and predict the value of the CHF for a large range of operating conditions.
+Any nuclear power unit operator, such as EDF, consequently has to prevent the occurrence of DNB in the core to ensure the full integrity of the nuclear fuel rods. Safety margins imposed by the french Nuclear Safety Authority (ASN) have to be respected at all time. Otherwise, the nuclear unit will have to be stopped in order to prevent any incident or accident. Such constraints represent a very challenging aspect for nuclear core thermal-hydraulics which primary goal is to be able to anticipate and predict the value of the CHF for a large range of operating conditions.
 
 \npar
 
@@ -410,13 +410,13 @@ where $P$ is the pressure, $G$ the total mass flux, $L_{g}$ the distance between
 
 \npar
 
-This correlation is then used in multidimensional codes based on porous medium approaches (to avoid fine representation of the geometry), where the scale of a computation cell is usually that of a "subchannel" (Figure \ref{fig:subchannel_sketch}) \ie the space between four rods.
+This correlation is then used in multidimensional codes based on porous medium approaches (to avoid fine representation of the geometry), where the scale of a computation cell is usually that of a "sub-channel" (Figure \ref{fig:subchannel_sketch}) \ie the space between four rods.
 
 
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.4\linewidth]{img/intro/subchannel.pdf}
-\caption{Sketch of a subchannel in a rod bundle (dashed lines). The equivalent hydraulic diameter here is $D_{h}=11.78\ $mm.}
+\caption{Sketch of a sub-channel in a rod bundle (dashed lines). The equivalent hydraulic diameter here is $D_{h}=11.78\ $mm.}
 \label{fig:subchannel_sketch}
 \end{figure}
 

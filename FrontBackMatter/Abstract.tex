@@ -11,15 +11,15 @@
 
 \chapter*{Abstract}
 
-In Pressurized Water Reactors (PWR), the heat released by the nuclear fuel is transferred to the water flowing in the primary circuit which is pressurized at 150 bar to avoid boiling. However, water can sometimes reach the Onset of Nucleate Boiling (ONB) under accident conditions that can further lead to the Boiling Crisis. At this point, an instantaneous transition between nucleate and film boiling occurs, inducing the formation of a vapor blanket around the fuel rods which acts as a thermal insulation and  causes a rapid rise of their temperature, posing a risk of fuel cladding damage. Prediction of the Critical Heat Flux (corresponding to Boiling Crisis occurrence) is thus a primal safety stake, currently achieved using dedicated experimental correlations that do not include any detailed description of the boiling physics.
+In Pressurized Water Reactors (PWR), the heat released by the nuclear fuel is transferred to the water flowing in the primary circuit, which is pressurized at 150 bar to avoid boiling. However, water can sometimes reach the Onset of Nucleate Boiling (ONB) under accident conditions that can further lead to the Boiling Crisis. At this point, an instantaneous transition between nucleate and film boiling occurs, inducing the formation of a vapor blanket around the fuel rods which acts as a thermal insulation and  causes a rapid rise of their temperature, posing a risk of fuel cladding damage. Prediction of the Critical Heat Flux (corresponding to Boiling Crisis occurrence) is thus a primal safety stake, currently achieved using dedicated experimental correlations that do not include any detailed description of the boiling physics.
 
 \npar
 
-This thesis aims to study the modeling of the boiling physics at a local scale, so-called  “CFD” (Computational Fluid Dynamics), which allows to simulate boiling flows using a millimeter spatial discretization. The in-house code NEPTUNE\_CFD is the reference tool used by EDF R\&D to investigate the local-scale multiphase physics.
+This thesis aims to study the modeling of the boiling physics at a local scale, so-called  “CFD” (Computational Fluid Dynamics), which allows simulating boiling flows using a millimeter spatial discretization. The in-house code NEPTUNE\_CFD is the reference tool used by EDF R\&D to investigate the local-scale multiphase physics.
 
 \npar
 
-First, simulations of boiling flows in a vertical tube are achieved using NEPTUNE\_CFD. Results are compared to the DEBORA experiment (flow boiling of refrigerant R12 that mimics PWR dimensionless numbers) in conditions representative of the industrial situation. The results show a global agreement with the measurements but display significant discrepancies regarding bubble diameter and wall temperature. The latter is computed through the wall boiling model of NEPTUNE\_CFD called “Heat Flux Partitioning”, which splits the wall heat flux between different heat transfer mechanisms (convection, phase change, transient conduction, etc.).
+First, simulations of boiling flows in a vertical tube are achieved using NEPTUNE\_CFD. Results are compared to the DEBORA experiment (flow boiling of refrigerant R12 that mimics PWR dimensionless numbers) in conditions representative of the industrial situation. The results show a global agreement with the measurements, but display significant discrepancies regarding bubble diameter and wall temperature. The latter is computed through the wall boiling model of NEPTUNE\_CFD called “Heat Flux Partitioning”, which splits the wall heat flux between different heat transfer mechanisms (convection, phase change, transient conduction, etc.).
 
 \npar
 
@@ -31,7 +31,7 @@ The Critical Heat Flux prediction in anchored as a perspective of this framework
 
 \npar
 
-Finally, the focus was put on a configuration consisting of a tube with mixing vanes similar to those present in PWR cores. Results of NEPTUNE\_CFD simulations showed significant discrepancy regarding core void fraction prediction. Single-phase flow simulations of the same case displayed an overestimation of the liquid’s rotation which could explain the too large vapor gathering at the center for the boiling cases. 
+Finally, the focus was put on a configuration consisting of a tube with mixing vanes similar to those present in PWR cores. Results of NEPTUNE\_CFD simulations showed significant discrepancy regarding core void fraction prediction. Single-phase flow simulations of the same case displayed an overestimation of the liquid’s rotation, which could explain the too large vapor gathering at the center for the boiling cases. 
 
 \endgroup		
 

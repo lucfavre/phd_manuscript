@@ -48,7 +48,7 @@ On the other hand, some models are based on the estimation of heat transfer coef
 \begin{equation}
 \phi_{w} = \phi_{SP} + \phi_{NB} = h_{SP}\parth{T_{w}-T_{L}}F + h_{NB}\parth{T_{w}-T_{sat}}S
 \end{equation}
-with $F$ an amplification factor for the single phasae heat transfer due to bubble agitation and $S$ a suppression term hindering the nucleate boiling under the effect of bulk liquid flow.
+with $F$ an amplification factor for the single phase heat transfer due to bubble agitation and $S$ a suppression term hindering the nucleate boiling under the effect of bulk liquid flow.
 
 \npar
 The single phase part $h_{SP}$ is calculated using Dittus-Boelter \cite{dittus_heat_1985} formulation (Eq. \ref{eq:dittus}) while the nucleate boiling part is:
@@ -266,7 +266,7 @@ Those two cases are distinguished using the average distance between nucleation 
 
 \subsection{Case 1 : Bubble Sliding, $D_{d}<s$}
 
-In this case, the bubble will grow up to its departure diameter $D_{d}$ and slide over a length $l_{sl,0}$ before lifting-off. If $l_{sl,0}<s$, the bubble will slide up to its lift-off diameter $D_{lo}$ and leave the wall withouth colliding with other bubbles. On the contrary, if $l_{sl,0}\geq s$ the sliding bubble will merge with bubbles growing on their nucleation site, inducing a sudden growth of the bubble diameter that can exceed $D_{lo}$ and thus trigger lift-off after sliding over a reduced length $l_{sl}<l_{sl,0}$. Those assumptions are summarized on Figure \ref{fig:basu_hfp_sliding}.
+In this case, the bubble will grow up to its departure diameter $D_{d}$ and slide over a length $l_{sl,0}$ before lifting-off. If $l_{sl,0}<s$, the bubble will slide up to its lift-off diameter $D_{lo}$ and leave the wall without colliding with other bubbles. On the contrary, if $l_{sl,0}\geq s$ the sliding bubble will merge with bubbles growing on their nucleation site, inducing a sudden growth of the bubble diameter that can exceed $D_{lo}$ and thus trigger lift-off after sliding over a reduced length $l_{sl}<l_{sl,0}$. Those assumptions are summarized on Figure \ref{fig:basu_hfp_sliding}.
 
 \npar
 If bubble coalescence occurs, the number of bubbles lifting-off the surface is lower than the actual number of nucleating sites. Basu \etal thus define a reduction factor $R_{f}$ that damps the total nucleation site density:
@@ -333,9 +333,9 @@ The boiling heat flux is:
 \end{equation}
 
 
-\subsection{Case 2 : Bubble Coalesence without Sliding, $D_{d}\geq s$}
+\subsection{Case 2 : Bubble Coalescence without Sliding, $D_{d}\geq s$}
 
-Under higher wall superheats, the subsequent rise in the nucleation site density $N_{sit}$ can lead to boiling regimes where bubbles coalesce with each other at early stages of their lifetime \ie while still attached to their nucleation site. This situation is accounted for by Basu \etal in the case when $D_{d} \geq s$ by considering immediate lift-off of coalesced bubble at radius $D > D_{lo}$. In this case, the total density of bubbles leaving the surface is lower than $N_{sit}$ and is thus reduced using:
+Under higher wall superheat, the subsequent rise in the nucleation site density $N_{sit}$ can lead to boiling regimes where bubbles coalesce with each other at early stages of their lifetime \ie while still attached to their nucleation site. This situation is accounted for by Basu \etal in the case when $D_{d} \geq s$ by considering immediate lift-off of coalesced bubble at radius $D > D_{lo}$. In this case, the total density of bubbles leaving the surface is lower than $N_{sit}$ and is thus reduced using:
 
 \begin{equation}
 R_{f} = \frac{s^{3}}{D_{lo}^{3}}
@@ -380,7 +380,7 @@ f = \dfrac{1}{t_{g} + t_{w}}
 
 \section{Gilman (2017)}
 
-A more recent HFP model dedicated to CFD simulations has been proposed in Gilman PhD work \cite{gilman_development_2014} and summarized in Gilman \& Baglietto \cite{gilman_self-consistent_2017}. Among the different evolutions proposed in their work, we can mention:
+A more recent HFP model dedicated to CFD simulations has been proposed in Gilman PhD work \cite{gilman_development_2014} and summarized in Gilman \& Baglietto \cite{gilman_self-consistent_2017}. Among the different evolution proposed in their work, we can mention:
 
 \begin{itemize}
 \item A probabilistic law to account for static interaction between nucleation sites ;

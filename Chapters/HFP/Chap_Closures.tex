@@ -98,7 +98,7 @@ The Gnielinski correlation is used in Kommajosyula's HFP model to compute the li
 \end{figure}
 
 \npar
-The two correlations are of similar efficiency regarding wall temperature predictions over the considered data sets. They both have very good agreement with Kennel data and clear overestimations of $\Delta T_{w}$ on Richenderfer and Kossolapov measurements. The slope difference compared to the parity implies that the correlations are predicting too small Nusselt numbers for those cases. Regarding Jens-Lottes data, both models underestimate the wall temperatures, with better results achieved by Gnielinski correlation.
+The two correlations are of similar efficiency regarding wall temperature predictions over the considered data sets. They both have very good agreement with Kennel data and clear overestimation of $\Delta T_{w}$ on Richenderfer and Kossolapov measurements. The slope difference compared to the parity implies that the correlations are predicting too small Nusselt numbers for those cases. Regarding Jens-Lottes data, both models underestimate the wall temperatures, with better results achieved by Gnielinski correlation.
 
 \begin{remark*}{}
 We tested different friction factor along with different values of wall roughness in the Gnielinski correlation and observed a negligible impact on the overall results. This allows to stay with a simple formulation for the friction coefficient.
@@ -260,7 +260,7 @@ We can note that it also includes the value of the static contact angle $\theta$
 \label{fig:nsd_theta_wet}
 \end{figure}
 
-This influence of the contact angle on the NSD was confirmed by experimental obervations of Basu \etal \cite{basu_wall_2005} and was also included in a law correlated on their own measurements :
+This influence of the contact angle on the NSD was confirmed by experimental observations of Basu \etal \cite{basu_wall_2005} and was also included in a law correlated on their own measurements :
 
 \begin{align}
 N_{sit}=&
@@ -284,7 +284,7 @@ with $N_{0}=55~395.26\ \mathrm{m}^{-2}$ and $P_{0}=1.01\ \mathrm{bar}$.
 
 \npar
 
-Finally, one of the most recent NSD correlation has been proposed by Li \etal in 2018 \cite{li_development_2018} and validated over a large range of measurements by including a more realistic power law for $\Delta T_{w}$. It avoids the divergence of $N_{sit}$ observed in Hibiki \& Ishii law (Eq. \ref{eq:nsit_hibiki}) when reaching high pressure and superheats. It also includes the impact of pressure and contact angle and its evolution with temperature \eg its decrease close to 0 $\degree$ when approaching the critical temperature \cite{song_temperature_2021}:
+Finally, one of the most recent NSD correlation has been proposed by Li \etal in 2018 \cite{li_development_2018} and validated over a large range of measurements by including a more realistic power law for $\Delta T_{w}$. It avoids the divergence of $N_{sit}$ observed in Hibiki \& Ishii law (Eq. \ref{eq:nsit_hibiki}) when reaching high pressure and superheat. It also includes the impact of pressure and contact angle and its evolution with temperature \eg its decrease close to 0 $\degree$ when approaching the critical temperature \cite{song_temperature_2021}:
 
 
 \begin{align}
@@ -384,14 +384,14 @@ The Lemmert \& Chawla model appears to fail in predicting the NSD at high pressu
 Although the model of Zhou \etal includes a pressure term, its partial calibration on data covering a low range of pressure may explain the large error observed when compared to higher pressure measurements.
 
 \npar
-On the contrary, models from Hibiki \& Ishii and Li \etal seem to better reproduce the different trends with flow conditions, especially with pressure. The model from Li \etal achieves better predictions by avoiding to reach unphysically high values of $N_{sit}$ at higher wall superheat compared to Hibiki \& Ishii. This behavior is clear over Kossolapov data at high pressure, where both model lead to overestimations, the strongest discrepancy being associated to Hibiki \& Ishii model.
+On the contrary, models from Hibiki \& Ishii and Li \etal seem to better reproduce the different trends with flow conditions, especially with pressure. The model from Li \etal achieves better predictions by avoiding to reach nonphysically high values of $N_{sit}$ at higher wall superheat compared to Hibiki \& Ishii. This behavior is clear over Kossolapov data at high pressure, where both model lead to overestimation, the strongest discrepancy being associated to Hibiki \& Ishii model.
 
 \npar
 Overall, the model of Li \etal is the most efficient with an acceptable agreement on most of the data of Borishanskii and Zhou \etal. The measurements of Richenderfer and Kossolapov fail to be precisely reproduced, but it shows a coherent trend and the most limited error when compared to other correlations.
 
 \npar
 \begin{remark*}{}
-The coherency of NSD predictions is hard to ensure since we do not know the exact contact angle and boiling surface morphology in the experiments. This was pointed out by Richenderfer \cite{richenderfer_experimental_2018} who observed significant variation in the NSD value depending on the heater, though keeping the same material (ITO). For instance, this may explain the fact that the NSD measured by Kossolapov at $10.5$ bar is higher than any other pressure on his experiment, leading to both underpredictions and overpredictions of the model of Li \etal depending on the pressure.
+The coherency of NSD predictions is hard to ensure since we do not know the exact contact angle and boiling surface morphology in the experiments. This was pointed out by Richenderfer \cite{richenderfer_experimental_2018} who observed significant variation in the NSD value depending on the heater, though keeping the same material (ITO). For instance, this may explain the fact that the NSD measured by Kossolapov at $10.5$ bar is higher than any other pressure on his experiment, leading to both underestimations and overestimations of the model of Li \etal depending on the pressure.
 \end{remark*}
 
 \npar
@@ -524,7 +524,7 @@ C_{1} &= \frac{1 + \cos{\theta} }{\sin{\theta}}\ ;\ C_{2} = \frac{1}{\sin{\theta
 
 \npar
 
-All those analytical approaches present one pivotal parameter: the activated cavity radius $R_{c}$. It is a very complicated parameter to evaluate since it can vary by decades depending on the flow conditions and the boiling surface morphology. 
+All those analytic approaches present one pivotal parameter: the activated cavity radius $R_{c}$. It is a very complicated parameter to evaluate since it can vary by decades depending on the flow conditions and the boiling surface morphology. 
 
 \npar
 
@@ -626,7 +626,7 @@ The experimental data are all using water as working fluid. We can see at first 
 \label{fig:tw_Jaw}
 \end{figure}
 
-On Figure \ref{fig:tw_Jaw}, we show the evolution of the measures wait times with the wall Jakob number. We can see that the low values of Jakob number actually correspond to high wait times, which seems to confirm the previous assumptions.
+On Figure \ref{fig:tw_Jaw}, we show the evolution of the measured wait times with the wall Jakob number. We can see that the low values of Jakob number actually correspond to high wait times, which seems to confirm the previous assumptions.
 
 \npar
 
@@ -647,7 +647,7 @@ The data sets from Kossolapov and Richenderfer also give the associated frequenc
 \label{fig:twf_Jawred}
 \end{figure}
 
-We can see that for lower values of $\Ja_{w}^{*}$, the product $t_{w} \times f$ starts to tend to $1$. For higher values, a linear decrease seem to be the general trend of the measurements. However, it can't decrease linearly forever, which is why the trend on Figure \ref{fig:twf_Jawred} extrapolated to higher values of $\Ja_{w}^{*}$ looks like a sigmoid in order to approach zero for large superheats. Nevertheless, we clearly lack of measurements at larger values of $\Ja_{w}^{*}$ to confirm this supposed trend.
+We can see that for lower values of $\Ja_{w}^{*}$, the product $t_{w} \times f$ starts to tend to $1$. For higher values, a linear decrease seem to be the general trend of the measurements. However, it can't decrease linearly forever, which is why the trend on Figure \ref{fig:twf_Jawred} extrapolated to higher values of $\Ja_{w}^{*}$ looks like a sigmoid in order to approach zero for large superheat. Nevertheless, we clearly lack of measurements at larger values of $\Ja_{w}^{*}$ to confirm this supposed trend.
 
 \npar
 
@@ -690,7 +690,7 @@ The correlation of Basu \etal naturally performs well on their own data but larg
 When testing the analytic formulations of the wait time, we tested different combinations of ($t_{w}$, $R_{c}$) expressions. Overall, we saw that the results were strongly dependent on the value of the cavity radius with values that can change by decades depending on the chosen formulation.
 
 \npar
-At last, it appeared that choosing the Yeoh \etal expression of $t_{w}$ (Eq. \ref{eq:twait_yeoh}) along with the cavity radius of Han \& Griffith (Eq. \ref{eq:rc_han}) resulted in good results in average over the three chosen datasets. As we can see on Figure \ref{fig:tw_pred_anal}, it produces overall better results compared to the correlation. Moreover, we used contact angle values that were representative of each experimental conditions according to each author:
+At last, it appeared that choosing the Yeoh \etal expression of $t_{w}$ (Eq. \ref{eq:twait_yeoh}) along with the cavity radius of Han \& Griffith (Eq. \ref{eq:rc_han}) resulted in good results in average over the three chosen data sets. As we can see on Figure \ref{fig:tw_pred_anal}, it produces overall better results compared to the correlation. Moreover, we used contact angle values that were representative of each experimental conditions according to each author:
 
 \begin{itemize}
 \item $\theta = 31 \degree$ for Basu \etal data \cite{basu_wall_2005-1} (metallic surface) ;
@@ -755,7 +755,7 @@ More recent observations also show a random distribution of the sites such as in
 \label{fig:zhou_sites}
 }
 
-\caption{Examples of exprimental nucleation sites distribution in flow boiling.}
+\caption{Examples of experimental nucleation sites distribution in flow boiling.}
 \label{fig:sites_distribution}
 \end{figure}
 
@@ -783,7 +783,7 @@ This special case of Poisson point-processes is also called "Complete Spatial Ra
 Although observations of the boiling surface presented random distributions of sites close to a Poisson process, Del Valle \& Kenning \cite{del_valle_subcooled_1985} found that the measured nearest-neighbor distance distribution was deviating from Eq. \ref{eq:poisson_distribution} for low values of $r$.
 \end{remark*}
 
-Eq. \ref{eq:poisson_distribution} allows to compute the average distance $s$ betwen two events:
+Eq. \ref{eq:poisson_distribution} allows to compute the average distance $s$ between two events:
 
 \begin{equation}
 s = \int_{0}^{+\infty} r f\parth{r}\mathrm{d}r  = 2 \frac{\sqrt{\pi}}{4\sqrt{\lambda \pi}} = \frac{1}{2\sqrt{\lambda}}
@@ -928,7 +928,7 @@ Figure \ref{fig:pcoal_st} the evolution of $\mathcal{P}_{coal,st}$ with the wall
 \subsection{Sliding Coalescence}
 
 
-The question of sliding coalescence is partly adressed by Basu \etal \cite{basu_wall_2005} (Section \ref{sec:hfp_basu}) by comparing the computed sliding distance of a single bubble $l_{sl,0}$ with the average distance between two active nucleation sites $s = 1 / \sqrt{N_{sit,a}}$ (twice the value obtained if we use the Poisson distribution Eq. \ref{eq:poisson_avg_dist}). They suppose that if $l_{sl,0} > s$ bubble coalescence will occur during the sliding phase and reduces the number of sites generating sliding bubbles.
+The question of sliding coalescence is partly addressed by Basu \etal \cite{basu_wall_2005} (Section \ref{sec:hfp_basu}) by comparing the computed sliding distance of a single bubble $l_{sl,0}$ with the average distance between two active nucleation sites $s = 1 / \sqrt{N_{sit,a}}$ (twice the value obtained if we use the Poisson distribution Eq. \ref{eq:poisson_avg_dist}). They suppose that if $l_{sl,0} > s$ bubble coalescence will occur during the sliding phase and reduces the number of sites generating sliding bubbles.
 
 \begin{remark*}{}
 Their approach is based on the distribution of active nucleation sites $N_{sit,a}$ and not on the bubble density $N_{b}$ which could better represent the average distance between two bubbles actually living on the surface.
@@ -1278,7 +1278,7 @@ In the end, we can see that to fully close the model, we need to set 3 parameter
 Physical Parameter & Modeling\\
 \hline
 \\
-{Liquid Convective Heat Tranfer Coefficient $h_{c,L}$} & {$
+{Liquid Convective Heat Transfer Coefficient $h_{c,L}$} & {$
 \Nu_{L} = \dfrac{h_{c,L}\lambda_{L}}{D_{h}} = \dfrac{\dfrac{C_{f}}{2} \parth{\Re_{D_{h}} - 1000} \Pr }{1+12.7\sqrt{\dfrac{C_{f}}{2}} \parth{\Pr^{2/3}-1}}$, $C_{f} = 0.036 \Re_{D_{h}}^{-0.1818}$
 }\\
 \\
@@ -1466,7 +1466,7 @@ At last, we can remember that:
 \begin{itemize}
 \item Single phase heat transfer coefficient is well predicted using Gnielinski correlation, with errors on the wall temperature below 3K for single-phase water flows in various conditions. A corrective factor of 4 had to be used for cases where only one side of the channel is heated to account for geometry difference regarding the correlation establishment.
 
-\item Nucleation site density using existing correlations have been assessed using different expriments with water. Covering a large range of pressure, it appeared that Li \etal \cite{li_development_2018} formulation was better at predicting the experimental nucleation site density. In particular, the influence of pressure is very significant and must be accounted for. However, we must keep in mind that although the nucleation site density is critical for wall boiling modeling, its value depends on very fine details of the boiling surface which are not always accessible.
+\item Nucleation site density using existing correlations have been assessed using different experiments with water. Covering a large range of pressure, it appeared that Li \etal \cite{li_development_2018} formulation was better at predicting the experimental nucleation site density. In particular, the influence of pressure is very significant and must be accounted for. However, we must keep in mind that although the nucleation site density is critical for wall boiling modeling, its value depends on very fine details of the boiling surface which are not always accessible.
 
 \item The bubble wait time has been studied using some existing experimental measurements. Its strong decrease with the wall superheat makes it accounting between nearly 100\% down to 50\% of the total nucleation period. Comparison of wait time values predictions showed that analytic approaches could perform better than correlations, though this requires an estimation of the active cavity radius which can be very tricky depending and surface-dependent.
 

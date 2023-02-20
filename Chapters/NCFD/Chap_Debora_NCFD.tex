@@ -9,7 +9,7 @@ Due to the large amount of measurements along with its scaling conditions with P
 
 \npar
 
-In this Chapter, we present neptune\_cfd simulations of the DEBORA experiment. The objective is to assess the current modeling of the code for dispersed two-phase boiling flows. To do so, we will simulate cases from the different campaigns of the DEBORA database (C800 and C3000) to conduct comparisons of void faction, bubble diameter, vapor velocity, liquid temperature and wall temperature profiles.
+In this Chapter, we present NEPTUNE\_CFD simulations of the DEBORA experiment. The objective is to assess the current modeling of the code for dispersed two-phase boiling flows. To do so, we will simulate cases from the different campaigns of the DEBORA database (C800 and C3000) to conduct comparisons of void faction, bubble diameter, vapor velocity, liquid temperature and wall temperature profiles.
 
 \npar
 
@@ -238,7 +238,7 @@ Those saturated cases are confirming that \textbf{the boiling model fails to pre
 
 
 \begin{remark*}{}
-The small yet observed global overestimation of the liquid temperature may be a consequence of either a too large condensation or interfacial area concentration (\ie small bubble diameter). 
+The small yet observed global overestimation of the liquid temperature may be a consequence of either a too large condensation or too large interfacial area concentration (\ie small bubble diameter). 
 \end{remark*}
 
 
@@ -252,7 +252,7 @@ Now that comparisons with thermal measurements have been conducted, we move to a
 
 \subsection{Subcooled Boiling Cases}
 
-Subcooled cases 30G2P26W16Te62 and Te64 are simulated. They both have an outlet quality $x_{eq,out} \leq 0$ with pure liquid at the center of the test section, but present significant void fraction when approaching the wall (Figure \ref{fig:G2P26W16_alpha}). Results of the NEPTUNE\_CFD Simulations are presented on Figure \ref{fig:deb_cfd_30T66_T70}.
+Subcooled cases 30G2P26W16Te62 and Te64 are simulated. They both have an outlet quality $x_{eq,out} \leq 0$ with pure liquid at the center of the test section, but present significant void fraction when approaching the wall (Figure \ref{fig:G2P26W16_alpha}). Results of the NEPTUNE\_CFD Simulations are presented on Figure \ref{fig:deb_cfd_30T62_T64}.
 
 \begin{figure}[!h]
 \centering
@@ -318,7 +318,7 @@ Similar to the subcooled cases, the void fraction (Figure \ref{fig:30T66_T70_alp
 
 \npar
 
-Bubble diameter (Figure \ref{fig:30T66_T70_dV}) for the Te66 case behaves close to the subcooled cases, with a large overestimation under the sharp decrease when $r/R < 0.8$. However, case Te70 presents a different profile with a larger growth in bubble diameter nearly matching maximum experimental value at $r/R \approx 0.6$, but then decreases too rapidly. Recalling thermal results for the 8G2P26W16Te70.3 case presenting similar operating conditions (Figure \ref{fig:8T66_T70_TL}), $r/R \approx 0.6$ corresponds to the radial position where the computed liquid temperature becomes lower than saturation temperature, enabling condensation to occur. This tends to indicate that \textbf{condensation may be responsible for most of the bubble diameter underestimation in the sub-cooled region}. On the contrary, \textbf{coalescence and break-up terms alone seem to be able to reproduce the bubble diameter increase before condensation starts}.
+Bubble diameter (Figure \ref{fig:30T66_T70_dV}) for the Te66 case behaves close to the subcooled cases, with a large underestimation under the sharp decrease when $r/R < 0.8$. However, case Te70 presents a different profile with a larger growth in bubble diameter nearly matching maximum experimental value at $r/R \approx 0.6$, but then decreases too rapidly. Recalling thermal results for the 8G2P26W16Te70.3 case presenting similar operating conditions (Figure \ref{fig:8T66_T70_TL}), $r/R \approx 0.6$ corresponds to the radial position where the computed liquid temperature becomes lower than saturation temperature, enabling condensation to occur. This tends to indicate that \textbf{condensation may be responsible for most of the bubble diameter underestimation in the sub-cooled region}. On the contrary, \textbf{coalescence and break-up terms alone seem to be able to reproduce the bubble diameter increase before condensation starts}.
 
 \npar
 
@@ -427,7 +427,7 @@ The wall temperature is slightly reduced at the beginning of the heated length, 
 \npar
 
 
-Void fraction predictions are significantly enhanced for both C3000 cases (Figure \ref{fig:30T66_T70_alpha_pc}), especially regarding case Te70 which matches the experiment at the center of the tube and a maximum error $\alpha_{CFD} - \alpha_{exp} \approx 5\%$ over the whole section. Case Te66 still presents a large overestiation at the wall, but better matches bulk measurements for $r/R \leq 0.8$. However, it seems to slightly underestimate the core void fraction for $r/R \leq 0.5$.
+Void fraction predictions are significantly enhanced for both C3000 cases (Figure \ref{fig:30T66_T70_alpha_pc}), especially regarding case Te70 which matches the experiment at the center of the tube and a maximum error $\alpha_{CFD} - \alpha_{exp} \approx 5\%$ over the whole section. Case Te66 still presents a large overestimation at the wall, but better matches bulk measurements for $r/R \leq 0.8$. However, it seems to slightly underestimate the core void fraction for $r/R \leq 0.5$.
 
 
 \npar
@@ -559,7 +559,7 @@ This Chapter has investigated the modeling of dispersed boiling flows implemente
 
 \end{itemize} 
 
-All in all, these results are highlighting the difficulty of reaching a precise modeling of the multiple physical phenomena at stake in dispersed boiling flows. Despite the absolute discrepancies, the current modeling shows an encouraging behavior in the bulk (void fraction and liquid temperature shapes, coalescence / break-up / condensation impact, etc.). This could benefit from further work to precisely model the interfacial heat transfers in the flow along with bubble population quantification. Approaches considering polydispersed population of bubbles such as the iMUSIG model \cite{krepper_inhomogeneous_2008} could be of interest in that prospect.
+All in all, these results are highlighting the difficulty of reaching a precise modeling of the multiple physical phenomena at stake in dispersed boiling flows. Despite the absolute discrepancies, the current modeling shows an encouraging behavior in the bulk (void fraction and liquid temperature shapes, coalescence / break-up / condensation impact, etc.). This could benefit from further work to precisely model the interfacial heat transfers in the flow along with bubble population quantification. Approaches considering poly-dispersed population of bubbles such as the iMUSIG model \cite{krepper_inhomogeneous_2008} could be of interest in that prospect.
 
 \npar
 

@@ -44,7 +44,7 @@ To simulate two-phase dispersed boiling flows, NEPTUNE\_CFD solves the ensemble-
 	\label{eq:mass}
 \end{equation}
 
-Where $\alpha_{k}$, $\rho_{k}$, $\vect{U_{k}}$ are the volumetric fraction, average density and velocity of phase $k$ ; $\orangemath{\Gamma_{k}}=\Gamma_{k,i}+\Gamma_{k,w}$ the interfacial mass transfer term per unit of volume and time splitted between bulk and wall contribution.
+Where $\alpha_{k}$, $\rho_{k}$, $\vect{U_{k}}$ are the volumetric fraction, average density and velocity of phase $k$ ; $\orangemath{\Gamma_{k}}=\Gamma_{k,i}+\Gamma_{k,w}$ the interfacial mass transfer term per unit of volume and time split between bulk and wall contribution.
 Subscripts $k= L$ or $V$ denotes the liquid or vapor phase, $i$ the interfacial quantities and $w$ the wall contribution.
 
 \subsection{Momentum Balance}
@@ -152,7 +152,7 @@ with $D_{V}$ being the vapor phase Sauter mean bubble diameter and $C_{k,i}$ the
 \npar
 
 \begin{note*}{}
-The interfacial area is computed using the transport equation of {Ruyer} \& {Seiler} \cite{ruyer_modelisation_2009}.
+The interfacial area is computed using the transport equation of {Ruyer} \& {Seiler} \cite{ruyer_modelisation_2009} that accounts for bubble breakup and coalescence to estimate bubble diameter.
 \end{note*}
 
 
@@ -172,7 +172,7 @@ Where $\Re_{b}$ is the bubble Reynolds number $Re_{b}=\dfrac{\norm{\vect{U_{V}}-
 
 \subsubsection{Superheated Liquid}
 
-On the other hand, if the liquid is overheated, the maximum of three heat transfer coefficients accounting for different heat tranfer mechanisms is taken \cite{berne_analyse_1983}:
+On the other hand, if the liquid is overheated, the maximum of three heat transfer coefficients accounting for different heat transfer mechanisms is taken \cite{berne_analyse_1983}:
 
 \begin{equation}
 C_{L,i}=\max{C_{L,i,1}\ ;\ C_{L,i,2}\ ;\ C_{L,i,3}}
@@ -191,7 +191,7 @@ where $\Pe=\Re_{b} \Pr_{L}$ is the Peclet number, $\Ja_{L}=\dfrac{ \rho_{L}c_{p,
 
 \npar
 
-Those three Nusselt numbers respectively correspond to stationnary conduction around a sphere, transient conduction for a spherical bubble growth in uniformly superheated liquid \cite{plesset_growth_1954} and transient convection around a sphere in a supheated flow \cite{ruckenstein_mass_1964}.
+Those three Nusselt numbers respectively correspond to stationary conduction around a sphere, transient conduction for a spherical bubble growth in uniformly superheated liquid \cite{plesset_growth_1954} and transient convection around a sphere in a superheated flow \cite{ruckenstein_mass_1964}.
 
 \subsubsection{Vapor Heat Transfer}
 
@@ -346,7 +346,7 @@ $C_{s}$ & $C_{1}$ & $C_{2}$ & $C_{1}^{\omega}$ & $C_{2}^{\omega}$ & $C_{\varepsi
 \section{Wall Boiling Model}
 \label{sec:ncfd_HFP}
 
-The modeling of the heterogeneous boiling phenomenon at the wall is based on a Heat Flux Partioning (HFP) model,  from Kurul \& Podowski original work\cite{kurul_multidimensional_1990} who divided the wall heat flux density $\phi_{w}$ in three terms  :
+The modeling of the heterogeneous boiling phenomenon at the wall is based on a Heat Flux Partitioning (HFP) model,  from Kurul \& Podowski original work\cite{kurul_multidimensional_1990} who divided the wall heat flux density $\phi_{w}$ in three terms  :
 
 \begin{itemize}
 \item A single phase convective heat flux $\phi_{c,L}$ heating the liquid through the fraction of the wall area unaffected by the vapor bubbles ;
@@ -354,11 +354,11 @@ The modeling of the heterogeneous boiling phenomenon at the wall is based on a H
 \item A quenching heat flux $\phi_{q}$ to represent the thermal impact of bubbles departing from the wall and being replaced by cool liquid
 \end{itemize}
 
-A fourth flux is added to this HFP in NEPTUNE\_CFD, following Mimouni \etal\cite{mimouni_computational_2016} who consider a convective heat flux towards the vapour $\phi_{c,V}$ when the wall area is covered by a dense accumulation of bubbles. 
+A fourth flux is added to this HFP in NEPTUNE\_CFD, following Mimouni \etal\cite{mimouni_computational_2016} who consider a convective heat flux towards the vapor $\phi_{c,V}$ when the wall area is covered by a dense accumulation of bubbles. 
 
 \npar
 
-The model is then ponderated by a phenomelogical function $f_{\alpha_{L}}$ enhancing $\phi_{c,V}$ when the void fraction at the wall becomes large. It thus gives Equation \ref{eq:ncfd_HFP} :
+The model is then ponderated by a phenomenological function $f_{\alpha_{L}}$ enhancing $\phi_{c,V}$ when the void fraction at the wall becomes large. It thus gives Equation \ref{eq:ncfd_HFP} :
 
 \begin{equation}
 \phi_{w}=f_{\alpha_{L}} \parth{\phi_{c,L}+\phi_{e}+\phi_{q}} + \parth{1+f_{\alpha_{L}} }\phi_{c,V}

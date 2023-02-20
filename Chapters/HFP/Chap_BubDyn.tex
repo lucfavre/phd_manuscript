@@ -48,7 +48,7 @@ This behavior has been supported by many experimental observations who clearly o
 
 \npar
 
-The bubble sliding process has also been thermally studied through experiments to quantify its impact on the wall heat transfer. Estrada-Perez \etal \cite{estrada-perez_time-resolved_2018} observed the significant thermal impact of sliding bubbles footprints. Kossolapov \cite{kossolapov_experimental_2021} also investigated the sliding of boiling bubbles and measured the magnitude of the transient heat transfer induced by the disruption of the liquid thermal boundary layer in the bubble's wake. Typical experimental observations from those works a reproduced on Figure \ref{fig:slide_thermal_exp}
+The bubble sliding process has also been thermally studied through experiments to quantify its impact on the wall heat transfer. Estrada-Perez \etal \cite{estrada-perez_time-resolved_2018} observed the significant thermal impact of sliding bubbles footprints. Kossolapov \cite{kossolapov_experimental_2021} also investigated the sliding of boiling bubbles and measured the magnitude of the transient heat transfer induced by the disruption of the liquid thermal boundary layer in the bubble's wake. Typical experimental observations from those works are reproduced on Figure \ref{fig:slide_thermal_exp}
 
 \begin{figure}[H]
 
@@ -121,7 +121,7 @@ with the Reynolds numbers based on $L_{o} = \dfrac{\rho_{L}\nu_{L}^{2}}{\sigma}$
 \npar
 
 
-In the case of vertical flow boiling, \"Unal (1976)\cite{unal_maximum_1976} derived a correlation based on a semi-analytical approach of the heat transfer mechanisms around a bubble to estimate its maximum diameter, including simultaneous influences of pressure, heater material, liquid velocity and subcooling:
+In the case of vertical flow boiling, \"Unal (1976)\cite{unal_maximum_1976} derived a correlation based on a semi-analytic approach of the heat transfer mechanisms around a bubble to estimate its maximum diameter, including simultaneous influences of pressure, heater material, liquid velocity and subcooling:
 
 \begin{align}
 D_{lo}=& 2.42\times 10^{-5} P^{0.709}\frac{a}{\sqrt{b\varphi}}
@@ -132,7 +132,7 @@ D_{lo}=& 2.42\times 10^{-5} P^{0.709}\frac{a}{\sqrt{b\varphi}}
 \nonumber \varphi=& \max{1\ ;\ \parth{\frac{U_{L}}{U_{0}}}^{0.47}},\ U_{0}=0.61~\mathrm{m/s}
 \end{align}
 
-\"Unal validated his law against several measurements from the literature covering pressures from 1 to 177 bars, liquid velocities from 0.08 to 9.15 m/s, subcoolings from 3 to 86K and heat fluxes from 0.47 to 10.64 MW/m\up{2}.
+\"Unal validated his law against several measurements from the literature covering pressures from 1 to 177 bars, liquid velocities from 0.08 to 9.15 m/s, subcooling from 3 to 86K and heat fluxes from 0.47 to 10.64 MW/m\up{2}.
 
 
 \begin{note*}{}
@@ -251,7 +251,7 @@ This modeling choice is made by Kommajosyula.
 
 \subsubsection{Conclusion on Correlations}
 
-Albeit proposing coherent trend with the flow boiling conditions along with good estimations of the desired parameters on given experimental datasets, explicit correlations inherently include a limited range of application. Moreover, the constant increase of the number of works proposing data-fitted laws makes the selection of a proper relationship a complicated matter due to their potential lack of generality.
+Albeit proposing coherent trend with the flow boiling conditions along with good estimations of the desired parameters on given experimental data sets, explicit correlations inherently include a limited range of application. Moreover, the constant increase of the number of works proposing data-fitted laws makes the selection of a proper relationship a complicated matter due to their potential lack of generality.
 
 \npar
 
@@ -380,7 +380,7 @@ Author (Year) & Correlation\\
 
 \subsection{Introduction}
 
-The derivation of the force balance over a growing bubble on a wall in a liquid flow is a very complicated problem that many researchers have tried to tackle over the past decades. Many theroetical and numerical approaches have been conducted to estimate the forces at stake in bubble dynamics and sometimes compared to experimental visualization of bubbles in movement. 
+The derivation of the force balance over a growing bubble on a wall in a liquid flow is a very complicated problem that many researchers have tried to tackle over the past decades. Many theoretical and numerical approaches have been conducted to estimate the forces at stake in bubble dynamics and sometimes compared to experimental visualization of bubbles in movement. 
 
 
 \npar 
@@ -536,7 +536,7 @@ The capillary force acts at the triple contact line at the bubble's foot and is 
 \end{equation}
 where $\vect{\tau}$ is the unit vector tangent to the interface and perpendicular to the contact line.
 
-To compute the resulting components parallel and tangent to the wall, Klausner \etal \cite{klausner_vapor_1993} account for a contact angle difference between the upstream (receeding) contact angle $\theta_{u}$ and downstream (advancing) contact angle $\theta_{d}$. If the local contact angle is noted $\gamma$, then:
+To compute the resulting components parallel and tangent to the wall, Klausner \etal \cite{klausner_vapor_1993} account for a contact angle difference between the upstream (receding) contact angle $\theta_{u}$ and downstream (advancing) contact angle $\theta_{d}$. If the local contact angle is noted $\gamma$, then:
 
 \begin{equation}
 \vect{\tau}\parth{\Phi} = \cos{\gamma} \cos{\Phi} \vect{e_{x}} + \sin{\gamma} \vect{e_{y}}
@@ -741,7 +741,7 @@ In accordance with the computation of the drag coefficient, our model will rely 
 
 \end{itemize}  
 
-The resulting formulation of $C_{L}$ corresponds to the superpositions of two contributions respectively associated to the uniform flow and the shear rate, both coupled with the wall presence. 
+The resulting formulation of $C_{L}$ corresponds to the superposition of two contributions respectively associated to the uniform flow and the shear rate, both coupled with the wall presence. 
 
 \begin{align}
 C_{L}^{W} =C_{Lu}^{W} + C_{L\omega}^{W}
@@ -824,7 +824,7 @@ In PWR conditions, taking $\Sr \approx 0.7$ with $\Re_{b} \approx 500$ for the s
 \subsection{Inertia Force}
 \label{subsec:AM}
 
-The Inertia force originates from various effects (bubble growth, freestream and bubble acceleration, etc.) and includes both added mass and Tchen forces and is expressed as presented in Magnaudet \& Eames (2000) \cite{magnaudet_motion_2000}:
+The Inertia force originates from various effects (bubble growth, free stream and bubble acceleration, etc.) and includes both added mass and Tchen forces and is expressed as presented in Magnaudet \& Eames (2000) \cite{magnaudet_motion_2000}:
 
 \begin{equation}
 \vect{F_{I}} = \underbrace{ \rho_{L}V_{b}\parth{\dtime{\vect{U_{L}}}+\vecgrad{\vect{U_{L}} }\cdot \vect{U_{L}}} }_{\text{Liquid inertia or Tchen force}} + \underbrace{ \derive{}{t}\parth{\rho_{L}C_{AM}V_{b}\parth{\vect{U_{L}}-\vect{U_{b}}}} }_{\text{Added Mass force } \vect{F_{AM}}}
@@ -849,7 +849,7 @@ In previous mechanistic models, the derivation of the added mass force was condu
 \vect{F_{AM,RPE}}=- \rho_{L}\pi R^{2}\crocht{R\ddot{R}+\frac{3}{2}\dot{R}^{2}}\vect{e_{y}}
 \end{equation}
 
-Then, assuming a bubble inclination angle $\theta_{i}$, this force was projected along the $x$ axis to obtain an Added Mass force parallel to the wall that hinders departure. The inclination angle value is often empiricial and used for data fitting \cite{zeng_unified_1993-1, colombo_prediction_2015, mazzocco_reassessed_2018, ren_development_2020}.
+Then, assuming a bubble inclination angle $\theta_{i}$, this force was projected along the $x$ axis to obtain an Added Mass force parallel to the wall that hinders departure. The inclination angle value is often empirical and used for data fitting \cite{zeng_unified_1993-1, colombo_prediction_2015, mazzocco_reassessed_2018, ren_development_2020}.
 
 \begin{equation}
 \vect{F_{AM,RPE}}=- \rho_{L}\pi R^{2}\crocht{R\ddot{R}+\frac{3}{2}\dot{R}^{2}}\parth{\sin{\theta_{i}}\vect{e_{x}} + \cos{\theta_{i}}\vect{e_{y}}}
@@ -1010,7 +1010,7 @@ Those force balances will respectively be used later to study the departure by s
 
 \npar
 
-On Table \ref{tab:all_BdF}, we sum up some of the mentioned mechanistc approaches and their models along with the proposed force balance.
+On Table \ref{tab:all_BdF}, we sum up some of the mentioned mechanistic approaches and their models along with the proposed force balance.
 
 
 
@@ -1225,7 +1225,7 @@ The microlayer is also often taken into account for HFP modeling by enhancing th
 
 \npar
 
-However, the presence of a liquid microlayer beneath the nucleated bubble is not assured for every boiling conditions. Indeed, experimental observations recently realized by Kossolapov \cite{kossolapov_experimental_2021} showed that the microlayer only existed for pressures below 3 bars when using water as working fluid. Moreover, Direct Numerical Simulations of Urbano \etal \cite{urbano_direct_2018} where a full coupling between mass, momentum and energy balance was achieved managed to detect wether if the bubble grows in a contact-line regime or if a microlayer appears. They proposed a criterion based on the capillary and Jakob numbers determining the formation of a microlayer, further validated by extra Direct Numerical Simulations from B\'ures \& Sato \cite{bures_modelling_2021}:
+However, the presence of a liquid microlayer beneath the nucleated bubble is not assured for every boiling conditions. Indeed, experimental observations recently realized by Kossolapov \cite{kossolapov_experimental_2021} showed that the microlayer only existed for pressures below 3 bars when using water as working fluid. Moreover, Direct Numerical Simulations of Urbano \etal \cite{urbano_direct_2018} where a full coupling between mass, momentum and energy balance was achieved managed to detect whether if the bubble grows in a contact-line regime or if a microlayer appears. They proposed a criterion based on the capillary and Jakob numbers determining the formation of a microlayer, further validated by extra Direct Numerical Simulations from B\'ures \& Sato \cite{bures_modelling_2021}:
 
 \begin{equation}
 \frac{\Ja \Ca}{\parth{\theta-\theta_{0}}^{3}} > \frac{1}{A^{3}},\ \theta_{0}=5\degree,\ A=313
@@ -1392,7 +1392,7 @@ a = \frac{\Ja_{w}\eta_{L}}{4 \delta_{b} \delta f_{V} } \parth{1 + \frac{\Ja_{L}}
 
 Solutions of this differential equation depend on the hypothesis over $\delta$ and $\delta_{b}$. If we assume that the bubble grows in a fully established liquid flow then $\delta$ can be considered as constant.
 
-When the bubble will start to nucleate, the liquid-vapor interface will delimit a frontier through which a transient heat transfer between the vapor at constant temperature $T_{sat}$ and liquid at $T_{L}\parth{y}$ will occur. To estimate the associated local boudary layer thickness $\delta_{b}$, we can rely on the solution of semi-infinite transient conduction as treated in Del Valle \& Kenning \cite{del_valle_subcooled_1985} or Mikic \& Rohsenow \cite{mikic_bubble_1970}:
+When the bubble will start to nucleate, the liquid-vapor interface will delimit a frontier through which a transient heat transfer between the vapor at constant temperature $T_{sat}$ and liquid at $T_{L}\parth{y}$ will occur. To estimate the associated local boundary layer thickness $\delta_{b}$, we can rely on the solution of semi-infinite transient conduction as treated in Del Valle \& Kenning \cite{del_valle_subcooled_1985} or Mikic \& Rohsenow \cite{mikic_bubble_1970}:
 
 \begin{equation}
 \delta_{b} = \sqrt{\eta_{L}t}
@@ -1460,7 +1460,7 @@ In addition, no modeling of the micro-region accounting for the specific phase c
 To assess the validity of Eq. \ref{eq:exp_growth}, we will compare the radius time profile with DNS results by Urbano \etal \cite{urbano_direct_2019} who simulated the same physical situation as depicted in Figure \ref{fig:anal_growth} for pool boiling. They also solved the heat conduction in the wall and studied the growth dynamics depending on the values of $\Delta T_{L}$ and $\Delta T_{w}$ as well as the equilibrium diameter reached by the bubble. 
 
 \begin{note*}{}
-The wall temperature in Urbano \etal work is imposed on the outer side of the simulated wall thickness contrary to the model where it is imposed directly at the inner side.
+The wall temperature in Urbano \etal \cite{urbano_direct_2019} work is imposed on the outer side of the simulated wall thickness contrary to the model where it is imposed directly at the inner side.
 \end{note*}
 
 \npar
@@ -1469,7 +1469,7 @@ In their analysis, Urbano \etal derived the same equilibrium radius as in Eq. \r
 
 \npar
 
-DNS results obtained for three couples of subcooling $\Delta T_{L}$ and superheat $\Delta T_{w}$ are used for comparison. Results are displayed on Figure \ref{fig:growth_comp_urbano} with and withouth the corrective factor on $R_{\infty}$ suggested by Urbano \etal
+DNS results obtained for three couples of subcooling $\Delta T_{L}$ and superheat $\Delta T_{w}$ are used for comparison. Results are displayed on Figure \ref{fig:growth_comp_urbano} with and without the corrective factor on $R_{\infty}$ suggested by Urbano \etal
 
 \begin{figure}[h!]
 \subfloat[Results using $R_{\infty}$]{
@@ -1482,7 +1482,7 @@ DNS results obtained for three couples of subcooling $\Delta T_{L}$ and superhea
 \label{fig:growth_comp_urbano}
 \end{figure}
 
-The analytical formulation of the bubble growth matches very well with the DNS results when the equilibrium radius is corrected. The different growth regime induced by the pairs $\parth{\Delta T_{L},\ \Delta T_{w}}$ are correctly captured by the model. DNS results present different equilibrium radius values when the subcooling and superheat changes, which can not be accounted for by the model.
+The analytic formulation of the bubble growth matches very well with the DNS results when the equilibrium radius is corrected. The different growth regime induced by the pairs $\parth{\Delta T_{L},\ \Delta T_{w}}$ are correctly captured by the model. DNS results present different equilibrium radius values when the subcooling and superheat changes, which can not be accounted for by the model.
 
 \npar
 
@@ -1595,7 +1595,7 @@ The model is now compared to higher pressure measurement (20 bar and 40 bar) for
 }
 
 
-	\caption{Comparison with experimental measurements of Kossolapov \cite{kossolapov_experimental_2021}. $\Delta T_{w}$ values are recalculated from analytical growth profiles fitted by the author.}
+	\caption{Comparison with experimental measurements of Kossolapov \cite{kossolapov_experimental_2021}. $\Delta T_{w}$ values are recalculated from analytic growth profiles fitted by the author.}
 	\label{fig:comp_growth_koss}
 \end{center}
 \end{figure}
@@ -1884,11 +1884,11 @@ Finally, we would like to acknowledge that the empiricism to evaluate those para
 
 \subsubsection{Growth Constant Value}
 
-As discussed in Section \ref{sec:bub_growth}, a value close to one or lower for the contant $K$ in the bubble growth rate usually provides reasonable approximation of the bubble radius. In particular, subcooled flow boiling may need smaller values of $K$, as well as fluids with high Prandtl numbers. 
+As discussed in Section \ref{sec:bub_growth}, a value close to one or lower for the constant $K$ in the bubble growth rate usually provides reasonable approximation of the bubble radius. In particular, subcooled flow boiling may need smaller values of $K$, as well as fluids with high Prandtl numbers. 
 
 \npar
 
-To avoid a systematic overestimation of the added mass term which could lead to strong underestimations of the departure diameter in cases that would present strong subcoolings, liquid velocity or working fluids with low thermal conductivity, we will use:
+To avoid a systematic overestimation of the added mass term which could lead to strong underestimations of the departure diameter in cases that would present strong subcooling, liquid velocity or working fluids with low thermal conductivity, we will use:
 
 \begin{equation}
 K=\frac{2b}{\sqrt{\pi}},\ b=0.24
@@ -2285,7 +2285,7 @@ Contrary to those observations, other authors who realized experimental visualiz
 \item Bubble lift-off under application of a high heat flux (rapid growth) or after coalescence with an other bubble on its path.
 \end{itemize}
 
-Similar behaviors of bubbles sliding along the wall and not leaving it until a coalescence occurs have also been reported for vertical flow boiling by Prodanovic \etal \cite{prodanovic_bubble_2002} or Thorncroft \etal \cite{thorncroft_experimental_1998}. In particular, Prodanovic \etal mentioned that bubbles that would detach from the wall by themsleves cannot be interpreted as typical bubble behavior in those conditions since there were very few of them. Typical experimental visualizations of this nature are presented on Figure \ref{fig:exp_nolift}
+Similar behaviors of bubbles sliding along the wall and not leaving it until a coalescence occurs have also been reported for vertical flow boiling by Prodanovic \etal \cite{prodanovic_bubble_2002} or Thorncroft \etal \cite{thorncroft_experimental_1998}. In particular, Prodanovic \etal mentioned that bubbles that would detach from the wall by themselves cannot be interpreted as typical bubble behavior in those conditions since there were very few of them. Typical experimental visualizations of this nature are presented on Figure \ref{fig:exp_nolift}
 
 \begin{figure}[h!]
 \begin{center}
@@ -2331,7 +2331,7 @@ As explained by \"Unal, their measurements (detailed in De Munk \cite{munk_two-p
 
 \npar
 
-This was also pointed out by Kossolapov \cite{kossolapov_experimental_2021} who showed that at very high pressure, old measurements of bubble diameter were larger for flow boiling compared to pool boiling, which is intuitively unphysical. This could be explained as mentioned above if those measurements were actually coalesced bubbles which would naturally exhibit larger diameters than single bubbles at lift-off.  
+This was also pointed out by Kossolapov \cite{kossolapov_experimental_2021} who showed that at very high pressure, old measurements of bubble diameter were larger for flow boiling compared to pool boiling, which is intuitively nonphysical. This could be explained as mentioned above if those measurements were actually coalesced bubbles which would naturally exhibit larger diameters than single bubbles at lift-off.  
 
 \npar
 
@@ -2399,7 +2399,7 @@ To evaluate the influence of the flow boiling conditions over the various experi
 
 \item The local wall Reynolds number $\Re_{\tau} = \dfrac{\rho_{L}U_{\tau}L_{c}}{\mu_{L}}$, evaluating the impact of the liquid flow, with $U_{\tau}$ the shear friction velocity as in Eq. \ref{eq:utau_mcadams}.
 
-\item The capillary number $\Ca$ which can be related to bubble deformability under viscous effects.
+\item The capillary number $\Ca$ which can be related to bubble deformation under viscous effects.
 \end{itemize}
 
 
@@ -2467,7 +2467,7 @@ Moreover, we can observe that measurements from \"Unal do not follow the general
 As previously discussed, the prediction of the lift-off using the force balance perpendicular to the wall (Eq. \ref{eq:bdf_y}) is complicated because:
 
 \begin{itemize}
-\item The spherical shape withouth tilt ($\dtheta = 0$) leads to exact compensation between contact pressure force and capillary force. Leaving only the added mass force and lift force to predict the lift-off.
+\item The spherical shape without tilt ($\dtheta = 0$) leads to exact compensation between contact pressure force and capillary force. Leaving only the added mass force and lift force to predict the lift-off.
 
 \item Those two forces can both be directed towards the wall depending on the flow conditions, making it impossible for a single bubble to lift-off by itself.
 
@@ -2571,7 +2571,7 @@ Moreover, existing database, though diverse, are lacking of high pressure measur
 Finally, the question of lift-off in the framework of the HFP model can be answered in three ways:
 
 \begin{enumerate}
-\item[1)] No lift-off diameter value is attributed to single bubbles.  It is thus computed by solving the bubble sliding until it collides and coalesces with an other bubble growing on its nucleation site. This approach is likely to be the most representative of the general behavior of bubbles in vertical boiling according to experiments. However, it may lead to very large, if not unphysical, values of sliding length at low heat fluxes values where the average distance between bubbles would increase greatly.
+\item[1)] No lift-off diameter value is attributed to single bubbles.  It is thus computed by solving the bubble sliding until it collides and coalesces with an other bubble growing on its nucleation site. This approach is likely to be the most representative of the general behavior of bubbles in vertical boiling according to experiments. However, it may lead to very large, if not nonphysical, values of sliding length at low heat fluxes values where the average distance between bubbles would increase greatly.
 
 \item[2)] Same as above 1) but the lift-off is considered when a non-dimensional number representative of bubble deformation reaches a critical value. Several bubble coalescence can thus occur until that moment occurs.
 
