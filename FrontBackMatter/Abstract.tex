@@ -15,7 +15,7 @@ In Pressurized Water Reactors (PWR), the heat released by the nuclear fuel is tr
 
 \npar
 
-This thesis aims to study the modeling of the boiling physics at a local scale, so-called  “CFD” (Computational Fluid Dynamics), which allows simulating boiling flows using a millimeter spatial discretization. The in-house code NEPTUNE\_CFD is the reference tool used by EDF R\&D to investigate the local-scale multiphase physics.
+This thesis aims to study the modeling of the boiling physics at a local scale, so-called  “CFD” (Computational Fluid Dynamics), which allows simulating boiling flows using a millimeter spatial discretization. The in-house code NEPTUNE\_CFD is the reference tool used by EDF R\&D to investigate local-scale multiphase physics.
 
 \npar
 
@@ -23,11 +23,11 @@ First, simulations of boiling flows in a vertical tube are achieved using NEPTUN
 
 \npar
 
-The main objective of the thesis then consisted in the development of a new Heat Flux Partitioning model in order to account for a more extensive descriptions of the boiling phenomena, including notably the effect of bubble sliding. A fine modeling of bubble dynamics at the wall has been proposed thorough a mechanistic approach based on a force balance over the bubble. Forces at stake have been reassessed (drag, added mass, etc.) and allowed satisfactory prediction of bubble detachment diameter as well as sliding velocity at low and high pressure. The Heat Flux Partitioning model has been completed by conducting a precise evaluation of the numerous required closure laws (waiting time, nucleation site density, etc.) through comparisons with experimental measurements from the literature. The newly assembled model has finally been validated against wall temperature measurements and implemented in NEPTUNE\_CFD.
+The main objective of the thesis then consisted in the development of a new Heat Flux Partitioning model in order to account for a more extensive description of the boiling phenomena, including notably the effect of bubble sliding. A fine modeling of bubble dynamics at the wall has been proposed through a mechanistic approach based on a force balance over the bubble. Forces at stake have been reassessed (drag, added mass, etc.) and allowed satisfactory prediction of bubble detachment diameter as well as sliding velocity at low and high pressure. The Heat Flux Partitioning model has been completed by conducting a precise evaluation of the numerous required closure laws (waiting time, nucleation site density, etc.) through comparisons with experimental measurements from the literature. The newly assembled model has finally been validated against wall temperature measurements and implemented in NEPTUNE\_CFD.
 
 \npar
 
-The Critical Heat Flux prediction in anchored as a perspective of this framework. Recent experiments showed that the Boiling Crisis can be described using physical parameters involved in the Heat Flux Partitioning formulation. A criterion based on the proportion of wall area covered by bubbles has further been tested using the old NEPTUNE\_CFD formulation and showed a coherent qualitative behavior.
+The Critical Heat Flux prediction is anchored as a perspective of this framework. Recent experiments showed that the Boiling Crisis can be described using physical parameters involved in the Heat Flux Partitioning formulation. A criterion based on the proportion of wall area covered by bubbles has further been tested using the old NEPTUNE\_CFD formulation and showed a coherent qualitative behavior.
 
 \npar
 
