@@ -268,12 +268,12 @@ C_{L} = \begin{cases}
 where $\Eo_{H} = \dfrac{g\parth{\rho_{V}-\rho_{L}}D_{H}^{2}}{\sigma}$ is a modified E\"otv\"os number with:
 
 \begin{equation}
-D_{H} = D_{V}\sqrt[3]{1+0.163^Eo^{0.757}}
+D_{H} = D_{V}\sqrt[3]{1+0.163 \Eo^{0.757}}
 \end{equation}
 
 \subsubsection{Turbulent Dispersion Force}
 
-The turbulent dispersion force is computed following the General Turbulent Dispersion approach presented by Lavieville \etal \cite{lavieville_generalized_2017}:
+The turbulent dispersion force is computed following the General Turbulent Dispersion approach from Haynes \cite{haynes_contribution_2004} and presented by Lavieville \etal \cite{lavieville_generalized_2017}:
 
 \begin{equation}
 \vect{F_{V,TD}}=-\vect{F_{L,TD}}=-\frac{2}{3}\alpha_{L}\alpha_{V}C_{TD}\grad{\alpha_{V}}
@@ -466,12 +466,12 @@ with $C_{kr}=0.5$ , $k_{r}$ a "bubble roughness Reynolds number", $C_{\mu}=0.09$
 
 \npar
 
-The non-dimensional wall liquid temperature $T_{L}^{+}$ is modeled according following a Van Driest formulation:
+The non-dimensional wall phase temperature $T_{k}^{+}$ is modeled according following a Van Driest formulation:
 
 \begin{equation}
-T_{L}^{+} = \int_{0}^{y^{+}} \frac{2\mathrm{d}y}{1 + \dfrac{1}{2}\dfrac{\Pr_{L}}{\Pr_{T}}\sqrt{1+4\kappa^{2} {y^{+}}^{2}  \parth{1-\exp{-y^{+}/A}}^{2}}}
+T_{k}^{+} = \int_{0}^{y^{+}} \frac{2\mathrm{d}y}{1 + \dfrac{1}{2}\dfrac{\Pr_{k}}{\Pr_{k,T}}\sqrt{1+4\kappa^{2} {y^{+}}^{2}  \parth{1-\exp{-y^{+}/A}}^{2}}}
 \end{equation}
-with $A=25.6$, $\Pr_{T} = 0.9$ and $y^{+} \approx 100$ usually.
+with $A=25.6$, $\Pr_{k,T} = 0.9$ and $y^{+} \approx 100$ usually for liquid water.
 
 \section{Conclusions}
 

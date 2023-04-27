@@ -4632,6 +4632,31 @@
     \field{urlyear}{2022}
   \endentry
 
+  \entry{haynes_contribution_2004}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=HPA}{%
+         family={Haynes},
+         familyi={H\bibinitperiod},
+         given={Pierre-Antoine},
+         giveni={P\bibinithyphendelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HPA1}
+    \strng{fullhash}{HPA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Contribution à la modélisation de la turbulence pour les
+  écoulements à bulles : proposition d'un modèle (k-epsilon) multi-échelles
+  diphasique}
+    \list{institution}{1}{%
+      {Toulouse, {INPT}}%
+    }
+    \field{type}{These de doctorat}
+    \field{year}{2004}
+  \endentry
+
   \entry{hewitt_phenomenological_1990}{article}{}
     \name{author}{2}{}{%
       {{hash=HGF}{%
@@ -9104,7 +9129,7 @@
     This study aims to better characterize the heat transfer and flow structure
   in the fully developed nucleate flow boiling regime in a semi-annular duct.
   Experiments with a refrigerant {HFE}7000 were performed in the range of
-  Reynolds numbers from 13 000 to 40 500, subcoolings close to 15 ∘C, for
+  Reynolds numbers from 13 000 to 40 500, subcoolings close to 15 ∘C, for
   constant heating power, constant wall temperature and constant heating rates
   (linear increase of the wall temperature). With constant heating power, the
   wall heat flux is well predicted by a Chen-type correlation based on a
@@ -9117,17 +9142,16 @@
   number based on the liquid subcooling and the Boiling number. A drag
   coefficient of the bubbles sliding on the wall is estimated from the
   measurements of the bubble relative velocities and is in good agreement with
-  the recent numerical simulation of Shi et al. [1] for a spherical bubble
+  the recent numerical simulation of Shi et al. [1] for a spherical bubble
   moving close to a wall in a shear flow. In the experiments with a constant
   set temperature, a non-homogeneity of the surface temperatures is observed as
   well as high fluctuations of temperatures and heat fluxes. The heat transfer
-  is strongly degraded ( ≃ 60\%) by comparison with heating with a set
-  power. Finally a transient nucleate boiling regime with a constant
-  temperature increase {dT}/dt is investigated. For
-  {dT}/dt {\textless} 50 ∘C.s−1, the results are similar to those of
-  Auracher and Marquardt and a correlation for the prediction of the wall heat
-  flux versus the wall temperature in the transient nucleate boiling regime is
-  provided.%
+  is strongly degraded ( ≃ 60\%) by comparison with heating with a set power.
+  Finally a transient nucleate boiling regime with a constant temperature
+  increase {dT}/dt is investigated. For {dT}/dt {\textless} 50 ∘C.s−1, the
+  results are similar to those of Auracher and Marquardt and a correlation for
+  the prediction of the wall heat flux versus the wall temperature in the
+  transient nucleate boiling regime is provided.%
     }
     \verb{doi}
     \verb 10.1016/j.ijheatmasstransfer.2020.120548
@@ -9529,30 +9553,29 @@
   wide temperature range on a variety of solids, not limited to metallic
   surfaces, is presented. As suggested by the literature data, the temperature
   dependence of contact angle of water may be classified into three regimes:
-  (a) low temperatures below the saturation point (i.e., 100 °C at
-  atmospheric pressure), (b) medium temperatures up to
-  {\textasciitilde}170 °C, and (c) high temperatures up to 300 °C at
-  pressurized conditions. A slightly-decreasing or nearly-invariant trend of
-  the contact angles of water on both non-metallic and metallic surfaces was
-  reported for the low-temperature regime. In contrast, a steeper linear
-  decline in water contact angle was demonstrated at temperatures above
-  100 °C. The few experimental data available on several metallic surfaces
-  showed that the contact angle of water either again becomes nearly
-  temperature-independent or further decreases with temperature above 210 °C.
-  A theoretical understanding of the temperature dependence is given based on
-  surface thermodynamic analysis, although the exact molecular mechanisms
-  underlying these experimental observations remain unclear. Consequently, the
-  theoretical model for predicting the variation of the contact angle of water
-  with temperature is not well-developed. As the critical point of water
-  (374 °C and 22.1 {MPa}) is approached, the surface tension, and hence the
-  contact angle, should become vanishingly small. However, this theoretical
-  expectation has not yet been verified due to the lack of experimental data at
-  such high temperatures/pressures. Finally, future research directions are
-  identified, including a systematic exploration of the contact angle at
-  near-critical temperatures, the effects of surface oxidation, corrosion, and
-  deposition on contact angle during operation of boilers and reactors, and the
-  particular effect of irradiation on contact angle in nuclear reactor
-  applications.%
+  (a) low temperatures below the saturation point (i.e., 100 °C at atmospheric
+  pressure), (b) medium temperatures up to {\textasciitilde}170 °C, and (c)
+  high temperatures up to 300 °C at pressurized conditions. A
+  slightly-decreasing or nearly-invariant trend of the contact angles of water
+  on both non-metallic and metallic surfaces was reported for the
+  low-temperature regime. In contrast, a steeper linear decline in water
+  contact angle was demonstrated at temperatures above 100 °C. The few
+  experimental data available on several metallic surfaces showed that the
+  contact angle of water either again becomes nearly temperature-independent or
+  further decreases with temperature above 210 °C. A theoretical understanding
+  of the temperature dependence is given based on surface thermodynamic
+  analysis, although the exact molecular mechanisms underlying these
+  experimental observations remain unclear. Consequently, the theoretical model
+  for predicting the variation of the contact angle of water with temperature
+  is not well-developed. As the critical point of water (374 °C and 22.1
+  {MPa}) is approached, the surface tension, and hence the contact angle,
+  should become vanishingly small. However, this theoretical expectation has
+  not yet been verified due to the lack of experimental data at such high
+  temperatures/pressures. Finally, future research directions are identified,
+  including a systematic exploration of the contact angle at near-critical
+  temperatures, the effects of surface oxidation, corrosion, and deposition on
+  contact angle during operation of boilers and reactors, and the particular
+  effect of irradiation on contact angle in nuclear reactor applications.%
     }
     \verb{doi}
     \verb 10.1016/j.cis.2020.102339
@@ -11715,8 +11738,8 @@
   ({BDF}) are two key parameters, which determine the amount of heat taken away
   by vapor bubbles from the heating surface. In the present work, an experiment
   is carried out to closely observe the boiling behaviors on horizontal
-  aluminum heating surface at system pressures from 121 to 312 {kPa}, flow
-  velocities from 0.5 to 2.0 m/s and subcooling degrees from 5 to 15 K using
+  aluminum heating surface at system pressures from 121 to 312 {kPa}, flow
+  velocities from 0.5 to 2.0 m/s and subcooling degrees from 5 to 15 K using
   high-speed photography. A bubble tracking algorithm is developed, which
   efficiently determines the locations of active nucleation sites. Results show
   that values of active {NSD} and {BDF} are greater in conditions of elevated
