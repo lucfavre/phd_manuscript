@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8) (preloaded format=pdflatex 2022.8.18)  4 MAY 2023 15:59
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.18)  10 MAY 2023 21:29
->>>>>>> Stashed changes
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.18)  13 JUN 2023 17:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2140,11 +2136,13 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 82
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (main.aux
 (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Titleback.aux)
-(FrontBackMatter/Publications.aux) (FrontBackMatter/Abstract.aux)
-(FrontBackMatter/Resume.aux) (FrontBackMatter/Contents.aux)
-(Chapters/intro_ccl/Intro.aux) (Chapters/NCFD/Chap_NCFD.aux)
-(Chapters/NCFD/Chap_Debora.aux) (Chapters/NCFD/Chap_Debora_NCFD.aux)
-(Chapters/HFP/Chap_HFPmodels.aux) (Chapters/HFP/Chap_BubDyn.aux
+(FrontBackMatter/Acknowledgments.aux) (FrontBackMatter/Dedication.aux)
+(FrontBackMatter/Foreword.aux) (FrontBackMatter/Abstract.aux)
+(FrontBackMatter/Resume.aux) (FrontBackMatter/Publications.aux)
+(FrontBackMatter/Contents.aux) (Chapters/intro_ccl/Intro.aux)
+(Chapters/NCFD/Chap_NCFD.aux) (Chapters/NCFD/Chap_Debora.aux)
+(Chapters/NCFD/Chap_Debora_NCFD.aux) (Chapters/HFP/Chap_HFPmodels.aux)
+(Chapters/HFP/Chap_BubDyn.aux
 
 LaTeX Warning: Label `eq:frost' multiply defined.
 
@@ -2556,9 +2554,18 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 
 
 ]
-\openout2 = `FrontBackMatter/Publications.aux'.
+\openout2 = `FrontBackMatter/Acknowledgments.aux'.
 
- (FrontBackMatter/Publications.tex
+ (FrontBackMatter/Acknowledgments.tex
+[4
+
+
+
+
+
+
+
+]
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -2571,27 +2578,65 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 5.
+(Font)              <10> on input line 36.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.6> on input line 5.
+(Font)              <7.6> on input line 36.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 5.
+(Font)              <6> on input line 36.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 5.
+(Font)              scaled to size 10.42007pt on input line 36.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 5.
+(Font)              scaled to size 7.91925pt on input line 36.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 5.
+(Font)              scaled to size 6.25204pt on input line 36.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 5.
+(Font)              scaled to size 10.42007pt on input line 36.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 5.
+(Font)              scaled to size 7.91925pt on input line 36.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 5.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
-) [4
+(Font)              scaled to size 6.25204pt on input line 36.
+[5
+
+]
+Overfull \hbox (4.54276pt too wide) in paragraph at lines 136--137
+[]\T1/lmr/m/n/10 Merci à Frédéric Le Quéré et Frédéric Praslon de l'Université 
+Gus-tave Eif-fel pour m'avoir per-mis d'enseigner
+ []
+
+[6] [7]) [8]
+\openout2 = `FrontBackMatter/Dedication.aux'.
+
+ (FrontBackMatter/Dedication.tex) [9
+
+
+
+
+
+]
+\openout2 = `FrontBackMatter/Foreword.aux'.
+
+ (FrontBackMatter/Foreword.tex
+
+Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makeschapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makeschapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+8.
+(C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+) [10
 
 
 
@@ -2601,7 +2646,8 @@ Package microtype Info: Character `029' is missing
 ]
 \openout2 = `FrontBackMatter/Abstract.aux'.
 
- (FrontBackMatter/Abstract.tex
+
+(FrontBackMatter/Abstract.tex
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -2613,7 +2659,7 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-) [5
+) [11
 
 
 
@@ -2646,17 +2692,16 @@ Overfull \hbox (2.71089pt too wide) in paragraph at lines 42--43
 es flu-ides, écoule-ments mul-ti-phasiques,
  []
 
-) [6
+) [12
 
 
 
 
 
 ]
-<<<<<<< Updated upstream
-\openout2 = `FrontBackMatter/Acknowledgments.aux'.
+\openout2 = `FrontBackMatter/Publications.aux'.
 
- (FrontBackMatter/Acknowledgments.tex
+ (FrontBackMatter/Publications.tex
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -2668,15 +2713,17 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-[7
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
+) [13
 
 
 
 
 
-] [8] [9]) [10]
-=======
->>>>>>> Stashed changes
+
+]
 \openout2 = `FrontBackMatter/Contents.aux'.
 
  (FrontBackMatter/Contents.tex
@@ -2693,22 +2740,14 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 
 Package tocbasic Info: character protrusion at toc deactivated on input line 13
 .
-<<<<<<< Updated upstream
-(main.toc [11
-=======
-(main.toc [7
->>>>>>> Stashed changes
+(main.toc [14
 
 
 
 
 
 
-<<<<<<< Updated upstream
-] [12] [13])
-=======
-] [8] [9])
->>>>>>> Stashed changes
+] [15] [16])
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -2717,11 +2756,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 13
 1: chapter
 1: chapter
 1: section
-<<<<<<< Updated upstream
-[14]
-=======
-[10]
->>>>>>> Stashed changes
+[17]
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -2735,15 +2770,9 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 
 Package tocbasic Info: character protrusion at lof deactivated on input line 33
 .
-<<<<<<< Updated upstream
-(main.lof [15
+(main.lof [18
 
-] [16] [17]
-=======
-(main.lof [11
-
-] [12] [13]
->>>>>>> Stashed changes
+] [19] [20]
 Overfull \hbox (7.30785pt too wide) in paragraph at lines 320--320
  [][] []\T1/lmr/m/n/10 Average rel-a-tive im-por-tance of ra-dial ve-loc-ity to
  ax-ial ve-loc-ity in AGATE-Promoteur 
@@ -2760,11 +2789,7 @@ OML/lmm/m/it/10 D[]$\T1/lmr/m/n/10 respectively
 \tf@lof=\write9
 \openout9 = `main.lof'.
 
-<<<<<<< Updated upstream
- [18]
-=======
- [14]
->>>>>>> Stashed changes
+ [21]
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -2782,11 +2807,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 46
 \tf@lot=\write10
 \openout10 = `main.lot'.
 
-<<<<<<< Updated upstream
- [19] (main.nls
-=======
- [15] (main.nls
->>>>>>> Stashed changes
+ [22] (main.nls
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -2798,11 +2819,7 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
-<<<<<<< Updated upstream
-[20] [21] [22] [23])) [24]
-=======
-[16] [17] [18] [19])) [20]
->>>>>>> Stashed changes
+[23] [24] [25] [26])) [27]
 \openout2 = `Chapters/intro_ccl/Intro.aux'.
 
  (Chapters/intro_ccl/Intro.tex
@@ -2827,11 +2844,7 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/9'.
 (microtype)             Ignoring protrusion settings for this character.
 )
-<<<<<<< Updated upstream
-<img/intro/pwr_tikz.pdf, id=995, 659.30214pt x 428.67853pt>
-=======
-<img/intro/pwr_tikz.pdf, id=976, 659.30214pt x 428.67853pt>
->>>>>>> Stashed changes
+<img/intro/pwr_tikz.pdf, id=1030, 659.30214pt x 428.67853pt>
 File: img/intro/pwr_tikz.pdf Graphic file (type pdf)
 <use img/intro/pwr_tikz.pdf>
 Package pdftex.def Info: img/intro/pwr_tikz.pdf  used on input line 85.
@@ -2852,20 +2865,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ] [2 <./img/intro/pwr_tikz.pdf>]
-<<<<<<< Updated upstream
-<img/intro/vessel_pic.jpg, id=1031, 899.36pt x 600.2425pt>
-=======
-<img/intro/vessel_pic.jpg, id=1011, 899.36pt x 600.2425pt>
->>>>>>> Stashed changes
+<img/intro/vessel_pic.jpg, id=1065, 899.36pt x 600.2425pt>
 File: img/intro/vessel_pic.jpg Graphic file (type jpg)
 <use img/intro/vessel_pic.jpg>
 Package pdftex.def Info: img/intro/vessel_pic.jpg  used on input line 170.
 (pdftex.def)             Requested size: 273.14928pt x 182.29976pt.
-<<<<<<< Updated upstream
-<img/intro/fuel_assembly.png, id=1035, 925.4575pt x 894.34125pt>
-=======
-<img/intro/fuel_assembly.png, id=1015, 925.4575pt x 894.34125pt>
->>>>>>> Stashed changes
+<img/intro/fuel_assembly.png, id=1069, 925.4575pt x 894.34125pt>
 File: img/intro/fuel_assembly.png Graphic file (type png)
 <use img/intro/fuel_assembly.png>
 Package pdftex.def Info: img/intro/fuel_assembly.png  used on input line 186.
@@ -2874,11 +2879,7 @@ Package pdftex.def Info: img/intro/fuel_assembly.png  used on input line 186.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< Updated upstream
-<img/intro/fuel_rod.jpg, id=1041, 501.875pt x 313.17pt>
-=======
-<img/intro/fuel_rod.jpg, id=1021, 501.875pt x 313.17pt>
->>>>>>> Stashed changes
+<img/intro/fuel_rod.jpg, id=1075, 501.875pt x 313.17pt>
 File: img/intro/fuel_rod.jpg Graphic file (type jpg)
 <use img/intro/fuel_rod.jpg>
 Package pdftex.def Info: img/intro/fuel_rod.jpg  used on input line 206.
@@ -2887,11 +2888,7 @@ Package pdftex.def Info: img/intro/fuel_rod.jpg  used on input line 206.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [3 <./img/intro/vessel_pic.jpg>]
-<<<<<<< Updated upstream
-<img/intro/pic_grid.png, id=1055, 1645.14626pt x 734.745pt>
-=======
-<img/intro/pic_grid.png, id=1035, 1645.14626pt x 734.745pt>
->>>>>>> Stashed changes
+<img/intro/pic_grid.png, id=1089, 1645.14626pt x 734.745pt>
 File: img/intro/pic_grid.png Graphic file (type png)
 <use img/intro/pic_grid.png>
 Package pdftex.def Info: img/intro/pic_grid.png  used on input line 223.
@@ -2901,31 +2898,19 @@ Package pdftex.def Info: img/intro/pic_grid.png  used on input line 223.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4 <./img/intro/fuel_assembly.png> <./img/intro/fuel_rod.jpg>]
-<<<<<<< Updated upstream
-<img/intro/MaquetteGrille.png, id=1067, 1485.29906pt x 1559.07469pt>
-=======
-<img/intro/MaquetteGrille.png, id=1047, 1485.29906pt x 1559.07469pt>
->>>>>>> Stashed changes
+<img/intro/MaquetteGrille.png, id=1102, 1485.29906pt x 1559.07469pt>
 File: img/intro/MaquetteGrille.png Graphic file (type png)
 <use img/intro/MaquetteGrille.png>
 Package pdftex.def Info: img/intro/MaquetteGrille.png  used on input line 244.
 (pdftex.def)             Requested size: 136.57463pt x 143.35573pt.
-<<<<<<< Updated upstream
-<img/intro/CanauxGrille.jpg, id=1068, 1635.86156pt x 1750.28906pt>
-=======
-<img/intro/CanauxGrille.jpg, id=1048, 1635.86156pt x 1750.28906pt>
->>>>>>> Stashed changes
+<img/intro/CanauxGrille.jpg, id=1103, 1635.86156pt x 1750.28906pt>
 File: img/intro/CanauxGrille.jpg Graphic file (type jpg)
 <use img/intro/CanauxGrille.jpg>
 Package pdftex.def Info: img/intro/CanauxGrille.jpg  used on input line 245.
 (pdftex.def)             Requested size: 136.57463pt x 146.11523pt.
  [5 <./img/intro/pic_grid.png> <./img/intro/MaquetteGrille.png> <./img/intro/Ca
 nauxGrille.jpg>]
-<<<<<<< Updated upstream
-<img/intro/boiling_collier.png, id=1081, 709.65125pt x 941.5175pt>
-=======
-<img/intro/boiling_collier.png, id=1062, 709.65125pt x 941.5175pt>
->>>>>>> Stashed changes
+<img/intro/boiling_collier.png, id=1116, 709.65125pt x 941.5175pt>
 File: img/intro/boiling_collier.png Graphic file (type png)
 <use img/intro/boiling_collier.png>
 Package pdftex.def Info: img/intro/boiling_collier.png  used on input line 296.
@@ -2933,20 +2918,12 @@ Package pdftex.def Info: img/intro/boiling_collier.png  used on input line 296.
 (pdftex.def)             Requested size: 273.14928pt x 362.40634pt.
 
 [6 <./img/intro/boiling_collier.png>]
-<<<<<<< Updated upstream
-<img/intro/dnb_bloch.png, id=1094, 849.67438pt x 429.605pt>
-=======
-<img/intro/dnb_bloch.png, id=1075, 849.67438pt x 429.605pt>
->>>>>>> Stashed changes
+<img/intro/dnb_bloch.png, id=1129, 849.67438pt x 429.605pt>
 File: img/intro/dnb_bloch.png Graphic file (type png)
 <use img/intro/dnb_bloch.png>
 Package pdftex.def Info: img/intro/dnb_bloch.png  used on input line 341.
 (pdftex.def)             Requested size: 227.62209pt x 115.08371pt.
-<<<<<<< Updated upstream
-<img/intro/liu_96CHF.png, id=1097, 239.89626pt x 342.27875pt>
-=======
-<img/intro/liu_96CHF.png, id=1078, 239.89626pt x 342.27875pt>
->>>>>>> Stashed changes
+<img/intro/liu_96CHF.png, id=1132, 239.89626pt x 342.27875pt>
 File: img/intro/liu_96CHF.png Graphic file (type png)
 <use img/intro/liu_96CHF.png>
 Package pdftex.def Info: img/intro/liu_96CHF.png  used on input line 350.
@@ -2957,11 +2934,7 @@ LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 350.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 350.
-<<<<<<< Updated upstream
-<img/intro/liu_CHF.png, id=1098, 227.85126pt x 333.245pt>
-=======
-<img/intro/liu_CHF.png, id=1079, 227.85126pt x 333.245pt>
->>>>>>> Stashed changes
+<img/intro/liu_CHF.png, id=1133, 227.85126pt x 333.245pt>
 File: img/intro/liu_CHF.png Graphic file (type png)
 <use img/intro/liu_CHF.png>
 Package pdftex.def Info: img/intro/liu_CHF.png  used on input line 353.
@@ -2971,31 +2944,19 @@ Package pdftex.def Info: img/intro/liu_CHF.png  used on input line 353.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [7 <./img/intro/dnb_bloch.png>]
-<<<<<<< Updated upstream
-<img/intro/nukiyama.png, id=1119, 809.0225pt x 486.81876pt>
-=======
-<img/intro/nukiyama.png, id=1099, 809.0225pt x 486.81876pt>
->>>>>>> Stashed changes
+<img/intro/nukiyama.png, id=1153, 809.0225pt x 486.81876pt>
 File: img/intro/nukiyama.png Graphic file (type png)
 <use img/intro/nukiyama.png>
 Package pdftex.def Info: img/intro/nukiyama.png  used on input line 369.
 (pdftex.def)             Requested size: 318.66953pt x 191.75275pt.
  [8 <./img/intro/liu_96CHF.png> <./img/intro/liu_CHF.png> <./img/intro/nukiyama
 .png>]
-<<<<<<< Updated upstream
-<img/intro/chf_rod.png, id=1140, 1047.915pt x 463.7325pt>
-=======
-<img/intro/chf_rod.png, id=1120, 1047.915pt x 463.7325pt>
->>>>>>> Stashed changes
+<img/intro/chf_rod.png, id=1174, 1047.915pt x 463.7325pt>
 File: img/intro/chf_rod.png Graphic file (type png)
 <use img/intro/chf_rod.png>
 Package pdftex.def Info: img/intro/chf_rod.png  used on input line 389.
 (pdftex.def)             Requested size: 227.62209pt x 100.72655pt.
-<<<<<<< Updated upstream
-<img/intro/chf_assembly.png, id=1141, 1195.96812pt x 342.27875pt>
-=======
-<img/intro/chf_assembly.png, id=1121, 1195.96812pt x 342.27875pt>
->>>>>>> Stashed changes
+<img/intro/chf_assembly.png, id=1175, 1195.96812pt x 342.27875pt>
 File: img/intro/chf_assembly.png Graphic file (type png)
 <use img/intro/chf_assembly.png>
 Package pdftex.def Info: img/intro/chf_assembly.png  used on input line 392.
@@ -3005,11 +2966,7 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 389--393
 [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/intro/subchannel.pdf, id=1146, 238.49702pt x 188.7602pt>
-=======
-<img/intro/subchannel.pdf, id=1126, 238.49702pt x 188.7602pt>
->>>>>>> Stashed changes
+<img/intro/subchannel.pdf, id=1180, 238.49702pt x 188.7602pt>
 File: img/intro/subchannel.pdf Graphic file (type pdf)
 <use img/intro/subchannel.pdf>
 Package pdftex.def Info: img/intro/subchannel.pdf  used on input line 418.
@@ -3084,30 +3041,18 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 
 ]
-<<<<<<< Updated upstream
-<img/DEBORA/rhost_R12_PWR.pdf, id=1391, 422.32457pt x 319.04958pt>
-=======
-<img/DEBORA/rhost_R12_PWR.pdf, id=1369, 422.32457pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/DEBORA/rhost_R12_PWR.pdf, id=1425, 422.32457pt x 319.04958pt>
 File: img/DEBORA/rhost_R12_PWR.pdf Graphic file (type pdf)
 <use img/DEBORA/rhost_R12_PWR.pdf>
 Package pdftex.def Info: img/DEBORA/rhost_R12_PWR.pdf  used on input line 67.
 (pdftex.def)             Requested size: 273.14928pt x 206.3574pt.
  [22 <./img/DEBORA/rhost_R12_PWR.pdf>]
-<<<<<<< Updated upstream
-<img/DEBORA/We_R12_PWR.pdf, id=1415, 404.80853pt x 331.90129pt>
-=======
-<img/DEBORA/We_R12_PWR.pdf, id=1393, 404.80853pt x 331.90129pt>
->>>>>>> Stashed changes
+<img/DEBORA/We_R12_PWR.pdf, id=1450, 404.80853pt x 331.90129pt>
 File: img/DEBORA/We_R12_PWR.pdf Graphic file (type pdf)
 <use img/DEBORA/We_R12_PWR.pdf>
 Package pdftex.def Info: img/DEBORA/We_R12_PWR.pdf  used on input line 93.
 (pdftex.def)             Requested size: 273.14928pt x 223.96799pt.
-<<<<<<< Updated upstream
-<img/DEBORA/Bo_R12_PWR.pdf, id=1417, 404.80853pt x 331.90129pt>
-=======
-<img/DEBORA/Bo_R12_PWR.pdf, id=1395, 404.80853pt x 331.90129pt>
->>>>>>> Stashed changes
+<img/DEBORA/Bo_R12_PWR.pdf, id=1452, 404.80853pt x 331.90129pt>
 File: img/DEBORA/Bo_R12_PWR.pdf Graphic file (type pdf)
 <use img/DEBORA/Bo_R12_PWR.pdf>
 Package pdftex.def Info: img/DEBORA/Bo_R12_PWR.pdf  used on input line 118.
@@ -3117,11 +3062,7 @@ Package pdftex.def Info: img/DEBORA/Bo_R12_PWR.pdf  used on input line 118.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [23 <./img/DEBORA/We_R12_PWR.pdf>] [24 <./img/DEBORA/Bo_R12_PWR.pdf>]
-<<<<<<< Updated upstream
-<img/DEBORA/debora_sketch.png, id=1470, 581.67313pt x 694.595pt>
-=======
-<img/DEBORA/debora_sketch.png, id=1449, 581.67313pt x 694.595pt>
->>>>>>> Stashed changes
+<img/DEBORA/debora_sketch.png, id=1505, 581.67313pt x 694.595pt>
 File: img/DEBORA/debora_sketch.png Graphic file (type png)
 <use img/DEBORA/debora_sketch.png>
 Package pdftex.def Info: img/DEBORA/debora_sketch.png  used on input line 243.
@@ -3130,11 +3071,7 @@ Package pdftex.def Info: img/DEBORA/debora_sketch.png  used on input line 243.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< Updated upstream
-<img/DEBORA/FIP.pdf, id=1477, 272.7028pt x 98.54114pt>
-=======
-<img/DEBORA/FIP.pdf, id=1456, 272.7028pt x 98.54114pt>
->>>>>>> Stashed changes
+<img/DEBORA/FIP.pdf, id=1512, 272.7028pt x 98.54114pt>
 File: img/DEBORA/FIP.pdf Graphic file (type pdf)
 <use img/DEBORA/FIP.pdf>
 Package pdftex.def Info: img/DEBORA/FIP.pdf  used on input line 274.
@@ -3143,11 +3080,7 @@ Package pdftex.def Info: img/DEBORA/FIP.pdf  used on input line 274.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [25]
-<<<<<<< Updated upstream
-<img/DEBORA/optical_probe.png, id=1486, 795.47188pt x 602.75188pt>
-=======
-<img/DEBORA/optical_probe.png, id=1464, 795.47188pt x 602.75188pt>
->>>>>>> Stashed changes
+<img/DEBORA/optical_probe.png, id=1520, 795.47188pt x 602.75188pt>
 File: img/DEBORA/optical_probe.png Graphic file (type png)
 <use img/DEBORA/optical_probe.png>
 Package pdftex.def Info: img/DEBORA/optical_probe.png  used on input line 301.
@@ -3174,22 +3107,14 @@ Overfull \hbox (19.16006pt too wide) in paragraph at lines 575--576
 26W16,
  []
 
-<<<<<<< Updated upstream
-<img/DEBORA/30G2P26W16/30G2P26W16_alpha.pdf, id=1548, 442.71701pt x 323.91066pt
-=======
-<img/DEBORA/30G2P26W16/30G2P26W16_alpha.pdf, id=1527, 442.71701pt x 323.91066pt
->>>>>>> Stashed changes
+<img/DEBORA/30G2P26W16/30G2P26W16_alpha.pdf, id=1583, 442.71701pt x 323.91066pt
 >
 File: img/DEBORA/30G2P26W16/30G2P26W16_alpha.pdf Graphic file (type pdf)
 <use img/DEBORA/30G2P26W16/30G2P26W16_alpha.pdf>
 Package pdftex.def Info: img/DEBORA/30G2P26W16/30G2P26W16_alpha.pdf  used on in
 put line 586.
 (pdftex.def)             Requested size: 227.62209pt x 166.54153pt.
-<<<<<<< Updated upstream
-<img/DEBORA/30G2P26W16/30G2P26W16_ugz.pdf, id=1549, 443.22255pt x 323.91066pt>
-=======
-<img/DEBORA/30G2P26W16/30G2P26W16_ugz.pdf, id=1528, 443.22255pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/DEBORA/30G2P26W16/30G2P26W16_ugz.pdf, id=1584, 443.22255pt x 323.91066pt>
 File: img/DEBORA/30G2P26W16/30G2P26W16_ugz.pdf Graphic file (type pdf)
 <use img/DEBORA/30G2P26W16/30G2P26W16_ugz.pdf>
 Package pdftex.def Info: img/DEBORA/30G2P26W16/30G2P26W16_ugz.pdf  used on inpu
@@ -3200,21 +3125,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 586--591
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/DEBORA/30G2P26W16/30G2P26W16_dv.pdf, id=1550, 442.71701pt x 323.91066pt>
-=======
-<img/DEBORA/30G2P26W16/30G2P26W16_dv.pdf, id=1529, 442.71701pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/DEBORA/30G2P26W16/30G2P26W16_dv.pdf, id=1585, 442.71701pt x 323.91066pt>
 File: img/DEBORA/30G2P26W16/30G2P26W16_dv.pdf Graphic file (type pdf)
 <use img/DEBORA/30G2P26W16/30G2P26W16_dv.pdf>
 Package pdftex.def Info: img/DEBORA/30G2P26W16/30G2P26W16_dv.pdf  used on input
  line 595.
 (pdftex.def)             Requested size: 227.62209pt x 166.54153pt.
-<<<<<<< Updated upstream
-<img/DEBORA/30G2P26W16/30G2P26W16_ai.pdf, id=1551, 460.36748pt x 323.91066pt>
-=======
-<img/DEBORA/30G2P26W16/30G2P26W16_ai.pdf, id=1530, 460.36748pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/DEBORA/30G2P26W16/30G2P26W16_ai.pdf, id=1586, 460.36748pt x 323.91066pt>
 File: img/DEBORA/30G2P26W16/30G2P26W16_ai.pdf Graphic file (type pdf)
 <use img/DEBORA/30G2P26W16/30G2P26W16_ai.pdf>
 Package pdftex.def Info: img/DEBORA/30G2P26W16/30G2P26W16_ai.pdf  used on input
@@ -3231,21 +3148,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [30] [31 <./img/DEBORA/30G2P26W16/30G2P26W16_alpha.pdf> <./img/DEBORA/30G2P26W1
 6/30G2P26W16_ugz.pdf> <./img/DEBORA/30G2P26W16/30G2P26W16_dv.pdf> <./img/DEBORA
 /30G2P26W16/30G2P26W16_ai.pdf>]
-<<<<<<< Updated upstream
-<img/DEBORA/8G2P26W16/8G2P26W16_TL.pdf, id=1668, 436.08989pt x 323.91066pt>
-=======
-<img/DEBORA/8G2P26W16/8G2P26W16_TL.pdf, id=1646, 436.08989pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/DEBORA/8G2P26W16/8G2P26W16_TL.pdf, id=1702, 436.08989pt x 323.91066pt>
 File: img/DEBORA/8G2P26W16/8G2P26W16_TL.pdf Graphic file (type pdf)
 <use img/DEBORA/8G2P26W16/8G2P26W16_TL.pdf>
 Package pdftex.def Info: img/DEBORA/8G2P26W16/8G2P26W16_TL.pdf  used on input l
 ine 642.
 (pdftex.def)             Requested size: 227.62209pt x 169.07208pt.
-<<<<<<< Updated upstream
-<img/DEBORA/8G2P26W16/8G2P26W16_TLSH.pdf, id=1669, 439.89772pt x 323.91066pt>
-=======
-<img/DEBORA/8G2P26W16/8G2P26W16_TLSH.pdf, id=1647, 439.89772pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/DEBORA/8G2P26W16/8G2P26W16_TLSH.pdf, id=1703, 439.89772pt x 323.91066pt>
 File: img/DEBORA/8G2P26W16/8G2P26W16_TLSH.pdf Graphic file (type pdf)
 <use img/DEBORA/8G2P26W16/8G2P26W16_TLSH.pdf>
 Package pdftex.def Info: img/DEBORA/8G2P26W16/8G2P26W16_TLSH.pdf  used on input
@@ -3256,21 +3165,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 642--647
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/DEBORA/8G2P26W16/8G2P26W16_Tw_z.pdf, id=1670, 436.08989pt x 323.91066pt>
-=======
-<img/DEBORA/8G2P26W16/8G2P26W16_Tw_z.pdf, id=1648, 436.08989pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/DEBORA/8G2P26W16/8G2P26W16_Tw_z.pdf, id=1704, 436.08989pt x 323.91066pt>
 File: img/DEBORA/8G2P26W16/8G2P26W16_Tw_z.pdf Graphic file (type pdf)
 <use img/DEBORA/8G2P26W16/8G2P26W16_Tw_z.pdf>
 Package pdftex.def Info: img/DEBORA/8G2P26W16/8G2P26W16_Tw_z.pdf  used on input
  line 651.
 (pdftex.def)             Requested size: 227.62209pt x 169.07208pt.
-<<<<<<< Updated upstream
-<img/DEBORA/8G2P26W16/8G2P26W16_Tw_x.pdf, id=1671, 436.08989pt x 323.91066pt>
-=======
-<img/DEBORA/8G2P26W16/8G2P26W16_Tw_x.pdf, id=1649, 436.08989pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/DEBORA/8G2P26W16/8G2P26W16_Tw_x.pdf, id=1705, 436.08989pt x 323.91066pt>
 File: img/DEBORA/8G2P26W16/8G2P26W16_Tw_x.pdf Graphic file (type pdf)
 <use img/DEBORA/8G2P26W16/8G2P26W16_Tw_x.pdf>
 Package pdftex.def Info: img/DEBORA/8G2P26W16/8G2P26W16_Tw_x.pdf  used on input
@@ -3295,22 +3196,14 @@ inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img/DEBORA/8G2P26W16/8G2P26W16_Tw_x.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/DEBORA/30G2P14W16/30G2P14W16_alpha.pdf, id=1794, 442.71701pt x 323.91066pt
-=======
-<img/DEBORA/30G2P14W16/30G2P14W16_alpha.pdf, id=1772, 442.71701pt x 323.91066pt
->>>>>>> Stashed changes
+<img/DEBORA/30G2P14W16/30G2P14W16_alpha.pdf, id=1828, 442.71701pt x 323.91066pt
 >
 File: img/DEBORA/30G2P14W16/30G2P14W16_alpha.pdf Graphic file (type pdf)
 <use img/DEBORA/30G2P14W16/30G2P14W16_alpha.pdf>
 Package pdftex.def Info: img/DEBORA/30G2P14W16/30G2P14W16_alpha.pdf  used on in
 put line 687.
 (pdftex.def)             Requested size: 227.62209pt x 166.54153pt.
-<<<<<<< Updated upstream
-<img/DEBORA/30G2P14W16/30G2P14W16_ugz.pdf, id=1795, 443.22255pt x 323.91066pt>
-=======
-<img/DEBORA/30G2P14W16/30G2P14W16_ugz.pdf, id=1773, 443.22255pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/DEBORA/30G2P14W16/30G2P14W16_ugz.pdf, id=1829, 443.22255pt x 323.91066pt>
 File: img/DEBORA/30G2P14W16/30G2P14W16_ugz.pdf Graphic file (type pdf)
 <use img/DEBORA/30G2P14W16/30G2P14W16_ugz.pdf>
 Package pdftex.def Info: img/DEBORA/30G2P14W16/30G2P14W16_ugz.pdf  used on inpu
@@ -3321,21 +3214,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 687--692
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/DEBORA/30G2P14W16/30G2P14W16_dv.pdf, id=1796, 449.5711pt x 323.91066pt>
-=======
-<img/DEBORA/30G2P14W16/30G2P14W16_dv.pdf, id=1774, 449.5711pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/DEBORA/30G2P14W16/30G2P14W16_dv.pdf, id=1830, 449.5711pt x 323.91066pt>
 File: img/DEBORA/30G2P14W16/30G2P14W16_dv.pdf Graphic file (type pdf)
 <use img/DEBORA/30G2P14W16/30G2P14W16_dv.pdf>
 Package pdftex.def Info: img/DEBORA/30G2P14W16/30G2P14W16_dv.pdf  used on input
  line 696.
 (pdftex.def)             Requested size: 227.62209pt x 164.0011pt.
-<<<<<<< Updated upstream
-<img/DEBORA/30G2P14W16/30G2P14W16_ai.pdf, id=1797, 453.51338pt x 323.91066pt>
-=======
-<img/DEBORA/30G2P14W16/30G2P14W16_ai.pdf, id=1775, 453.51338pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/DEBORA/30G2P14W16/30G2P14W16_ai.pdf, id=1831, 453.51338pt x 323.91066pt>
 File: img/DEBORA/30G2P14W16/30G2P14W16_ai.pdf Graphic file (type pdf)
 <use img/DEBORA/30G2P14W16/30G2P14W16_ai.pdf>
 Package pdftex.def Info: img/DEBORA/30G2P14W16/30G2P14W16_ai.pdf  used on input
@@ -3349,21 +3234,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 696--701
 [33 <./img/DEBORA/30G2P14W16/30G2P14W16_alpha.pdf> <./img/DEBORA/30G2P14W16/30G
 2P14W16_ugz.pdf> <./img/DEBORA/30G2P14W16/30G2P14W16_dv.pdf> <./img/DEBORA/30G2
 P14W16/30G2P14W16_ai.pdf>]
-<<<<<<< Updated upstream
-<img/DEBORA/8G2P14W16/8G2P14W16_TL.pdf, id=1907, 446.75183pt x 323.91066pt>
-=======
-<img/DEBORA/8G2P14W16/8G2P14W16_TL.pdf, id=1885, 446.75183pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/DEBORA/8G2P14W16/8G2P14W16_TL.pdf, id=1941, 446.75183pt x 323.91066pt>
 File: img/DEBORA/8G2P14W16/8G2P14W16_TL.pdf Graphic file (type pdf)
 <use img/DEBORA/8G2P14W16/8G2P14W16_TL.pdf>
 Package pdftex.def Info: img/DEBORA/8G2P14W16/8G2P14W16_TL.pdf  used on input l
 ine 739.
 (pdftex.def)             Requested size: 227.62209pt x 165.03407pt.
-<<<<<<< Updated upstream
-<img/DEBORA/8G2P14W16/8G2P14W16_TLSH.pdf, id=1908, 439.89772pt x 323.91066pt>
-=======
-<img/DEBORA/8G2P14W16/8G2P14W16_TLSH.pdf, id=1886, 439.89772pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/DEBORA/8G2P14W16/8G2P14W16_TLSH.pdf, id=1942, 439.89772pt x 323.91066pt>
 File: img/DEBORA/8G2P14W16/8G2P14W16_TLSH.pdf Graphic file (type pdf)
 <use img/DEBORA/8G2P14W16/8G2P14W16_TLSH.pdf>
 Package pdftex.def Info: img/DEBORA/8G2P14W16/8G2P14W16_TLSH.pdf  used on input
@@ -3374,21 +3251,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 739--744
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/DEBORA/8G2P14W16/8G2P14W16_Tw_z.pdf, id=1909, 418.34688pt x 323.91066pt>
-=======
-<img/DEBORA/8G2P14W16/8G2P14W16_Tw_z.pdf, id=1887, 418.34688pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/DEBORA/8G2P14W16/8G2P14W16_Tw_z.pdf, id=1943, 418.34688pt x 323.91066pt>
 File: img/DEBORA/8G2P14W16/8G2P14W16_Tw_z.pdf Graphic file (type pdf)
 <use img/DEBORA/8G2P14W16/8G2P14W16_Tw_z.pdf>
 Package pdftex.def Info: img/DEBORA/8G2P14W16/8G2P14W16_Tw_z.pdf  used on input
  line 748.
 (pdftex.def)             Requested size: 227.62209pt x 176.23866pt.
-<<<<<<< Updated upstream
-<img/DEBORA/8G2P14W16/8G2P14W16_Tw_x.pdf, id=1910, 418.34688pt x 323.91066pt>
-=======
-<img/DEBORA/8G2P14W16/8G2P14W16_Tw_x.pdf, id=1888, 418.34688pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/DEBORA/8G2P14W16/8G2P14W16_Tw_x.pdf, id=1944, 418.34688pt x 323.91066pt>
 File: img/DEBORA/8G2P14W16/8G2P14W16_Tw_x.pdf Graphic file (type pdf)
 <use img/DEBORA/8G2P14W16/8G2P14W16_Tw_x.pdf>
 Package pdftex.def Info: img/DEBORA/8G2P14W16/8G2P14W16_Tw_x.pdf  used on input
@@ -3413,40 +3282,19 @@ inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img/DEBORA/8G2P14W16/8G2P14W16_Tw_x.pdf): PDF 
 inclusion: multiple pdfs with page group included in a single page
 >] [35]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
-89.
- (C:\Users\Luc\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-<<<<<<< Updated upstream
-<img/DEBORA/corr_flux/interp_alpha.pdf, id=2048, 428.43207pt x 319.04958pt>
-=======
-<img/DEBORA/corr_flux/interp_alpha.pdf, id=2027, 428.43207pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/DEBORA/corr_flux/interp_alpha.pdf, id=2083, 428.43207pt x 319.04958pt>
 File: img/DEBORA/corr_flux/interp_alpha.pdf Graphic file (type pdf)
 <use img/DEBORA/corr_flux/interp_alpha.pdf>
 Package pdftex.def Info: img/DEBORA/corr_flux/interp_alpha.pdf  used on input l
 ine 897.
 (pdftex.def)             Requested size: 182.09488pt x 135.60643pt.
-<<<<<<< Updated upstream
-<img/DEBORA/corr_flux/interp_uvz.pdf, id=2049, 422.08353pt x 319.04958pt>
-=======
-<img/DEBORA/corr_flux/interp_uvz.pdf, id=2028, 422.08353pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/DEBORA/corr_flux/interp_uvz.pdf, id=2084, 422.08353pt x 319.04958pt>
 File: img/DEBORA/corr_flux/interp_uvz.pdf Graphic file (type pdf)
 <use img/DEBORA/corr_flux/interp_uvz.pdf>
 Package pdftex.def Info: img/DEBORA/corr_flux/interp_uvz.pdf  used on input lin
 e 900.
 (pdftex.def)             Requested size: 182.09488pt x 137.64139pt.
-<<<<<<< Updated upstream
-<img/DEBORA/corr_flux/interp_TL.pdf, id=2050, 428.43207pt x 322.32701pt>
-=======
-<img/DEBORA/corr_flux/interp_TL.pdf, id=2029, 428.43207pt x 322.32701pt>
->>>>>>> Stashed changes
+<img/DEBORA/corr_flux/interp_TL.pdf, id=2085, 428.43207pt x 322.32701pt>
 File: img/DEBORA/corr_flux/interp_TL.pdf Graphic file (type pdf)
 <use img/DEBORA/corr_flux/interp_TL.pdf>
 Package pdftex.def Info: img/DEBORA/corr_flux/interp_TL.pdf  used on input line
@@ -3461,21 +3309,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [36] [37 <./img/DEBORA/corr_flux/interp_alpha.pdf> <./img/DEBORA/corr_flux/inte
 rp_uvz.pdf> <./img/DEBORA/corr_flux/interp_TL.pdf>]
-<<<<<<< Updated upstream
-<img/DEBORA/Tw/Tw_8G2P14W16_correl.pdf, id=2123, 422.55154pt x 323.72894pt>
-=======
-<img/DEBORA/Tw/Tw_8G2P14W16_correl.pdf, id=2101, 422.55154pt x 323.72894pt>
->>>>>>> Stashed changes
+<img/DEBORA/Tw/Tw_8G2P14W16_correl.pdf, id=2156, 422.55154pt x 323.72894pt>
 File: img/DEBORA/Tw/Tw_8G2P14W16_correl.pdf Graphic file (type pdf)
 <use img/DEBORA/Tw/Tw_8G2P14W16_correl.pdf>
 Package pdftex.def Info: img/DEBORA/Tw/Tw_8G2P14W16_correl.pdf  used on input l
 ine 1015.
 (pdftex.def)             Requested size: 227.62209pt x 174.3862pt.
-<<<<<<< Updated upstream
-<img/DEBORA/Tw/Tw_8G4P14W24_correl.pdf, id=2124, 422.55154pt x 319.55508pt>
-=======
-<img/DEBORA/Tw/Tw_8G4P14W24_correl.pdf, id=2102, 422.55154pt x 319.55508pt>
->>>>>>> Stashed changes
+<img/DEBORA/Tw/Tw_8G4P14W24_correl.pdf, id=2157, 422.55154pt x 319.55508pt>
 File: img/DEBORA/Tw/Tw_8G4P14W24_correl.pdf Graphic file (type pdf)
 <use img/DEBORA/Tw/Tw_8G4P14W24_correl.pdf>
 Package pdftex.def Info: img/DEBORA/Tw/Tw_8G4P14W24_correl.pdf  used on input l
@@ -3486,21 +3326,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 1015--1019
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/DEBORA/Tw/Tw_8G2P26W16_correl.pdf, id=2125, 422.55154pt x 321.9757pt>
-=======
-<img/DEBORA/Tw/Tw_8G2P26W16_correl.pdf, id=2103, 422.55154pt x 321.9757pt>
->>>>>>> Stashed changes
+<img/DEBORA/Tw/Tw_8G2P26W16_correl.pdf, id=2158, 422.55154pt x 321.9757pt>
 File: img/DEBORA/Tw/Tw_8G2P26W16_correl.pdf Graphic file (type pdf)
 <use img/DEBORA/Tw/Tw_8G2P26W16_correl.pdf>
 Package pdftex.def Info: img/DEBORA/Tw/Tw_8G2P26W16_correl.pdf  used on input l
 ine 1029.
 (pdftex.def)             Requested size: 227.62209pt x 173.44176pt.
-<<<<<<< Updated upstream
-<img/DEBORA/Tw/Tw_8G5P26W16_correl.pdf, id=2126, 422.55154pt x 319.55508pt>
-=======
-<img/DEBORA/Tw/Tw_8G5P26W16_correl.pdf, id=2104, 422.55154pt x 319.55508pt>
->>>>>>> Stashed changes
+<img/DEBORA/Tw/Tw_8G5P26W16_correl.pdf, id=2159, 422.55154pt x 319.55508pt>
 File: img/DEBORA/Tw/Tw_8G5P26W16_correl.pdf Graphic file (type pdf)
 <use img/DEBORA/Tw/Tw_8G5P26W16_correl.pdf>
 Package pdftex.def Info: img/DEBORA/Tw/Tw_8G5P26W16_correl.pdf  used on input l
@@ -3511,11 +3343,7 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 1029--1033
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/DEBORA/Tw/Tw_8G5P26W24_correl.pdf, id=2127, 422.55154pt x 319.55508pt>
-=======
-<img/DEBORA/Tw/Tw_8G5P26W24_correl.pdf, id=2105, 422.55154pt x 319.55508pt>
->>>>>>> Stashed changes
+<img/DEBORA/Tw/Tw_8G5P26W24_correl.pdf, id=2160, 422.55154pt x 319.55508pt>
 File: img/DEBORA/Tw/Tw_8G5P26W24_correl.pdf Graphic file (type pdf)
 <use img/DEBORA/Tw/Tw_8G5P26W24_correl.pdf>
 Package pdftex.def Info: img/DEBORA/Tw/Tw_8G5P26W24_correl.pdf  used on input l
@@ -3548,11 +3376,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 \openout5 = `main.mtc'.
 
 (main.mtc4)
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/msh/domain.png, id=2258, 558.58687pt x 274.77657pt>
-=======
-<img/DEBORA/cfd/msh/domain.png, id=2236, 558.58687pt x 274.77657pt>
->>>>>>> Stashed changes
+<img/DEBORA/cfd/msh/domain.png, id=2292, 558.58687pt x 274.77657pt>
 File: img/DEBORA/cfd/msh/domain.png Graphic file (type png)
 <use img/DEBORA/cfd/msh/domain.png>
 Package pdftex.def Info: img/DEBORA/cfd/msh/domain.png  used on input line 26.
@@ -3567,38 +3391,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ]
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/msh/deb_m1.png, id=2268, 430.60875pt x 614.295pt>
-=======
-<img/DEBORA/cfd/msh/deb_m1.png, id=2247, 430.60875pt x 614.295pt>
->>>>>>> Stashed changes
+<img/DEBORA/cfd/msh/deb_m1.png, id=2302, 430.60875pt x 614.295pt>
 File: img/DEBORA/cfd/msh/deb_m1.png Graphic file (type png)
 <use img/DEBORA/cfd/msh/deb_m1.png>
 Package pdftex.def Info: img/DEBORA/cfd/msh/deb_m1.png  used on input line 66.
 (pdftex.def)             Requested size: 113.81104pt x 162.35622pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/msh/deb_m2.png, id=2269, 430.60875pt x 614.295pt>
-=======
-<img/DEBORA/cfd/msh/deb_m2.png, id=2248, 430.60875pt x 614.295pt>
->>>>>>> Stashed changes
+<img/DEBORA/cfd/msh/deb_m2.png, id=2303, 430.60875pt x 614.295pt>
 File: img/DEBORA/cfd/msh/deb_m2.png Graphic file (type png)
 <use img/DEBORA/cfd/msh/deb_m2.png>
 Package pdftex.def Info: img/DEBORA/cfd/msh/deb_m2.png  used on input line 69.
 (pdftex.def)             Requested size: 113.81104pt x 162.35622pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/msh/deb_m4.png, id=2270, 430.60875pt x 614.295pt>
-=======
-<img/DEBORA/cfd/msh/deb_m4.png, id=2249, 430.60875pt x 614.295pt>
->>>>>>> Stashed changes
+<img/DEBORA/cfd/msh/deb_m4.png, id=2304, 430.60875pt x 614.295pt>
 File: img/DEBORA/cfd/msh/deb_m4.png Graphic file (type png)
 <use img/DEBORA/cfd/msh/deb_m4.png>
 Package pdftex.def Info: img/DEBORA/cfd/msh/deb_m4.png  used on input line 72.
 (pdftex.def)             Requested size: 113.81104pt x 162.35622pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/msh/deb_m8.png, id=2271, 430.60875pt x 614.295pt>
-=======
-<img/DEBORA/cfd/msh/deb_m8.png, id=2250, 430.60875pt x 614.295pt>
->>>>>>> Stashed changes
+<img/DEBORA/cfd/msh/deb_m8.png, id=2305, 430.60875pt x 614.295pt>
 File: img/DEBORA/cfd/msh/deb_m8.png Graphic file (type png)
 <use img/DEBORA/cfd/msh/deb_m8.png>
 Package pdftex.def Info: img/DEBORA/cfd/msh/deb_m8.png  used on input line 75.
@@ -3608,44 +3416,28 @@ Overfull \hbox (26.6666pt too wide) in paragraph at lines 66--76
  [][][][][][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/30G2P26W16/30T66_alpha_msh.pdf, id=2274, 416.84312pt x 315.2717
-=======
-<img/DEBORA/cfd/30G2P26W16/30T66_alpha_msh.pdf, id=2253, 416.84312pt x 315.2717
->>>>>>> Stashed changes
+<img/DEBORA/cfd/30G2P26W16/30T66_alpha_msh.pdf, id=2308, 416.84312pt x 315.2717
 9pt>
 File: img/DEBORA/cfd/30G2P26W16/30T66_alpha_msh.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/30G2P26W16/30T66_alpha_msh.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/30G2P26W16/30T66_alpha_msh.pdf  used on
  input line 100.
 (pdftex.def)             Requested size: 182.09488pt x 137.7242pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/30G2P26W16/30T66_dV_msh.pdf, id=2275, 410.96817pt x 315.27179pt
-=======
-<img/DEBORA/cfd/30G2P26W16/30T66_dV_msh.pdf, id=2254, 410.96817pt x 315.27179pt
->>>>>>> Stashed changes
+<img/DEBORA/cfd/30G2P26W16/30T66_dV_msh.pdf, id=2309, 410.96817pt x 315.27179pt
 >
 File: img/DEBORA/cfd/30G2P26W16/30T66_dV_msh.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/30G2P26W16/30T66_dV_msh.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/30G2P26W16/30T66_dV_msh.pdf  used on in
 put line 103.
 (pdftex.def)             Requested size: 182.09488pt x 139.69656pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/30G2P26W16/30T66_Uvap_msh.pdf, id=2276, 411.32372pt x 315.27179
-=======
-<img/DEBORA/cfd/30G2P26W16/30T66_Uvap_msh.pdf, id=2255, 411.32372pt x 315.27179
->>>>>>> Stashed changes
+<img/DEBORA/cfd/30G2P26W16/30T66_Uvap_msh.pdf, id=2310, 411.32372pt x 315.27179
 pt>
 File: img/DEBORA/cfd/30G2P26W16/30T66_Uvap_msh.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/30G2P26W16/30T66_Uvap_msh.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/30G2P26W16/30T66_Uvap_msh.pdf  used on 
 input line 107.
 (pdftex.def)             Requested size: 182.09488pt x 139.57149pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/30G2P26W16/30T66_TL_msh.pdf, id=2277, 416.84312pt x 315.27179pt
-=======
-<img/DEBORA/cfd/30G2P26W16/30T66_TL_msh.pdf, id=2256, 416.84312pt x 315.27179pt
->>>>>>> Stashed changes
+<img/DEBORA/cfd/30G2P26W16/30T66_TL_msh.pdf, id=2311, 416.84312pt x 315.27179pt
 >
 File: img/DEBORA/cfd/30G2P26W16/30T66_TL_msh.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/30G2P26W16/30T66_TL_msh.pdf>
@@ -3658,33 +3450,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [42 <./img/DEBORA/cfd/msh/domain.png> <./img/DEBORA/cfd/msh/deb_m1.png (PNG cop
 y)> <./img/DEBORA/cfd/msh/deb_m2.png (PNG copy)> <./img/DEBORA/cfd/msh/deb_m4.p
 ng (PNG copy)> <./img/DEBORA/cfd/msh/deb_m8.png (PNG copy)>]
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T31_T44_TL_ref.pdf, id=2288, 411.66263pt x 319.04958
-=======
-<img/DEBORA/cfd/8G2P26W16/8T31_T44_TL_ref.pdf, id=2267, 411.66263pt x 319.04958
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T31_T44_TL_ref.pdf, id=2322, 411.66263pt x 319.04958
 pt>
 File: img/DEBORA/cfd/8G2P26W16/8T31_T44_TL_ref.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T31_T44_TL_ref.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/8G2P26W16/8T31_T44_TL_ref.pdf  used on 
 input line 145.
 (pdftex.def)             Requested size: 182.09488pt x 141.12709pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_ref.pdf, id=2289, 411.66263pt x 322.57924
-=======
-<img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_ref.pdf, id=2268, 411.66263pt x 322.57924
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_ref.pdf, id=2323, 411.66263pt x 322.57924
 pt>
 File: img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_ref.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_ref.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_ref.pdf  used on 
 input line 149.
 (pdftex.def)             Requested size: 182.09488pt x 142.68839pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_x_ref.pdf, id=2290, 411.66263pt x 323.084
-=======
-<img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_x_ref.pdf, id=2269, 411.66263pt x 323.084
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_x_ref.pdf, id=2324, 411.66263pt x 323.084
 76pt>
 File: img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_x_ref.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_x_ref.pdf>
@@ -3709,33 +3489,21 @@ pdfTeX warning: pdflatex (file ./img/DEBORA/cfd/30G2P26W16/30T66_Uvap_msh.pdf):
 pdfTeX warning: pdflatex (file ./img/DEBORA/cfd/30G2P26W16/30T66_TL_msh.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T55_T61_TL_ref.pdf, id=2355, 411.66263pt x 319.04958
-=======
-<img/DEBORA/cfd/8G2P26W16/8T55_T61_TL_ref.pdf, id=2333, 411.66263pt x 319.04958
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T55_T61_TL_ref.pdf, id=2388, 411.66263pt x 319.04958
 pt>
 File: img/DEBORA/cfd/8G2P26W16/8T55_T61_TL_ref.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T55_T61_TL_ref.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/8G2P26W16/8T55_T61_TL_ref.pdf  used on 
 input line 182.
 (pdftex.def)             Requested size: 182.09488pt x 141.12709pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_ref.pdf, id=2356, 422.32457pt x 319.04958
-=======
-<img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_ref.pdf, id=2334, 422.32457pt x 319.04958
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_ref.pdf, id=2389, 422.32457pt x 319.04958
 pt>
 File: img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_ref.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_ref.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_ref.pdf  used on 
 input line 186.
 (pdftex.def)             Requested size: 182.09488pt x 137.56836pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_x_ref.pdf, id=2357, 411.66263pt x 319.555
-=======
-<img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_x_ref.pdf, id=2335, 411.66263pt x 319.555
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_x_ref.pdf, id=2390, 411.66263pt x 319.555
 08pt>
 File: img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_x_ref.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_x_ref.pdf>
@@ -3756,33 +3524,21 @@ pdfTeX warning: pdflatex (file ./img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_ref.pdf):
 pdfTeX warning: pdflatex (file ./img/DEBORA/cfd/8G2P26W16/8T31_T44_Tw_x_ref.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_ref.pdf, id=2425, 416.84312pt x 319.43845
-=======
-<img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_ref.pdf, id=2403, 416.84312pt x 319.43845
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_ref.pdf, id=2458, 416.84312pt x 319.43845
 pt>
 File: img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_ref.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_ref.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_ref.pdf  used on 
 input line 220.
 (pdftex.def)             Requested size: 182.09488pt x 139.54437pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_ref.pdf, id=2426, 407.70433pt x 319.43845
-=======
-<img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_ref.pdf, id=2404, 407.70433pt x 319.43845
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_ref.pdf, id=2459, 407.70433pt x 319.43845
 pt>
 File: img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_ref.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_ref.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_ref.pdf  used on 
 input line 224.
 (pdftex.def)             Requested size: 182.09488pt x 142.66876pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_x_ref.pdf, id=2427, 407.70433pt x 315.627
-=======
-<img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_x_ref.pdf, id=2405, 407.70433pt x 315.627
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_x_ref.pdf, id=2460, 407.70433pt x 315.627
 33pt>
 File: img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_x_ref.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_x_ref.pdf>
@@ -3803,11 +3559,7 @@ pdfTeX warning: pdflatex (file ./img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_ref.pdf):
 pdfTeX warning: pdflatex (file ./img/DEBORA/cfd/8G2P26W16/8T55_T61_Tw_x_ref.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/30G2P26W16/30T62_T64_alpha_ref.pdf, id=2489, 422.32457pt x 319.
-=======
-<img/DEBORA/cfd/30G2P26W16/30T62_T64_alpha_ref.pdf, id=2467, 422.32457pt x 319.
->>>>>>> Stashed changes
+<img/DEBORA/cfd/30G2P26W16/30T62_T64_alpha_ref.pdf, id=2522, 422.32457pt x 319.
 04958pt>
 File: img/DEBORA/cfd/30G2P26W16/30T62_T64_alpha_ref.pdf Graphic file (type pdf)
 
@@ -3815,22 +3567,14 @@ File: img/DEBORA/cfd/30G2P26W16/30T62_T64_alpha_ref.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/DEBORA/cfd/30G2P26W16/30T62_T64_alpha_ref.pdf  use
 d on input line 268.
 (pdftex.def)             Requested size: 182.09488pt x 137.56836pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/30G2P26W16/30T62_T64_dV_ref.pdf, id=2490, 422.32457pt x 320.599
-=======
-<img/DEBORA/cfd/30G2P26W16/30T62_T64_dV_ref.pdf, id=2468, 422.32457pt x 320.599
->>>>>>> Stashed changes
+<img/DEBORA/cfd/30G2P26W16/30T62_T64_dV_ref.pdf, id=2523, 422.32457pt x 320.599
 43pt>
 File: img/DEBORA/cfd/30G2P26W16/30T62_T64_dV_ref.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/30G2P26W16/30T62_T64_dV_ref.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/30G2P26W16/30T62_T64_dV_ref.pdf  used o
 n input line 272.
 (pdftex.def)             Requested size: 182.09488pt x 138.23663pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/30G2P26W16/30T62_T64_Uvap_ref.pdf, id=2491, 415.97601pt x 319.0
-=======
-<img/DEBORA/cfd/30G2P26W16/30T62_T64_Uvap_ref.pdf, id=2469, 415.97601pt x 319.0
->>>>>>> Stashed changes
+<img/DEBORA/cfd/30G2P26W16/30T62_T64_Uvap_ref.pdf, id=2524, 415.97601pt x 319.0
 4958pt>
 File: img/DEBORA/cfd/30G2P26W16/30T62_T64_Uvap_ref.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/30G2P26W16/30T62_T64_Uvap_ref.pdf>
@@ -3843,11 +3587,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [46 <./img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_ref.pdf> <./img/DEBORA/cfd/8G2P26W1
 6/8T66_T70_Tw_ref.pdf> <./img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_x_ref.pdf>]
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/30G2P26W16/30T66_T70_alpha_ref.pdf, id=2554, 415.47047pt x 319.
-=======
-<img/DEBORA/cfd/30G2P26W16/30T66_T70_alpha_ref.pdf, id=2532, 415.47047pt x 319.
->>>>>>> Stashed changes
+<img/DEBORA/cfd/30G2P26W16/30T66_T70_alpha_ref.pdf, id=2588, 415.47047pt x 319.
 04958pt>
 File: img/DEBORA/cfd/30G2P26W16/30T66_T70_alpha_ref.pdf Graphic file (type pdf)
 
@@ -3855,22 +3595,14 @@ File: img/DEBORA/cfd/30G2P26W16/30T66_T70_alpha_ref.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/DEBORA/cfd/30G2P26W16/30T66_T70_alpha_ref.pdf  use
 d on input line 309.
 (pdftex.def)             Requested size: 182.09488pt x 139.83212pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/30G2P26W16/30T66_T70_dV_ref.pdf, id=2555, 415.47047pt x 319.049
-=======
-<img/DEBORA/cfd/30G2P26W16/30T66_T70_dV_ref.pdf, id=2533, 415.47047pt x 319.049
->>>>>>> Stashed changes
+<img/DEBORA/cfd/30G2P26W16/30T66_T70_dV_ref.pdf, id=2589, 415.47047pt x 319.049
 58pt>
 File: img/DEBORA/cfd/30G2P26W16/30T66_T70_dV_ref.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/30G2P26W16/30T66_T70_dV_ref.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/30G2P26W16/30T66_T70_dV_ref.pdf  used o
 n input line 313.
 (pdftex.def)             Requested size: 182.09488pt x 139.83212pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/30G2P26W16/30T66_T70_Uvap_ref.pdf, id=2556, 422.83012pt x 319.0
-=======
-<img/DEBORA/cfd/30G2P26W16/30T66_T70_Uvap_ref.pdf, id=2534, 422.83012pt x 319.0
->>>>>>> Stashed changes
+<img/DEBORA/cfd/30G2P26W16/30T66_T70_Uvap_ref.pdf, id=2590, 422.83012pt x 319.0
 4958pt>
 File: img/DEBORA/cfd/30G2P26W16/30T66_T70_Uvap_ref.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/30G2P26W16/30T66_T70_Uvap_ref.pdf>
@@ -3904,55 +3636,35 @@ Overfull \hbox (30.99464pt too wide) in paragraph at lines 364--375
  [][] 
  []
 
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_pc.pdf, id=2654, 416.84312pt x 319.43845p
-=======
-<img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_pc.pdf, id=2633, 416.84312pt x 319.43845p
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_pc.pdf, id=2688, 416.84312pt x 319.43845p
 t>
 File: img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_pc.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_pc.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/8G2P26W16/8T66_T70_TL_pc.pdf  used on i
 nput line 393.
 (pdftex.def)             Requested size: 182.09488pt x 139.54437pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_pc.pdf, id=2655, 407.70433pt x 319.43845p
-=======
-<img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_pc.pdf, id=2634, 407.70433pt x 319.43845p
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_pc.pdf, id=2689, 407.70433pt x 319.43845p
 t>
 File: img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_pc.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_pc.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/8G2P26W16/8T66_T70_Tw_pc.pdf  used on i
 nput line 397.
 (pdftex.def)             Requested size: 182.09488pt x 142.66876pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/30G2P26W16/30T66_T70_alpha_pc.pdf, id=2658, 410.96817pt x 315.2
-=======
-<img/DEBORA/cfd/30G2P26W16/30T66_T70_alpha_pc.pdf, id=2637, 410.96817pt x 315.2
->>>>>>> Stashed changes
+<img/DEBORA/cfd/30G2P26W16/30T66_T70_alpha_pc.pdf, id=2692, 410.96817pt x 315.2
 7179pt>
 File: img/DEBORA/cfd/30G2P26W16/30T66_T70_alpha_pc.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/30G2P26W16/30T66_T70_alpha_pc.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/30G2P26W16/30T66_T70_alpha_pc.pdf  used
  on input line 419.
 (pdftex.def)             Requested size: 182.09488pt x 139.69656pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/30G2P26W16/30T66_T70_dV_pc.pdf, id=2659, 410.96817pt x 315.2717
-=======
-<img/DEBORA/cfd/30G2P26W16/30T66_T70_dV_pc.pdf, id=2638, 410.96817pt x 315.2717
->>>>>>> Stashed changes
+<img/DEBORA/cfd/30G2P26W16/30T66_T70_dV_pc.pdf, id=2693, 410.96817pt x 315.2717
 9pt>
 File: img/DEBORA/cfd/30G2P26W16/30T66_T70_dV_pc.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/30G2P26W16/30T66_T70_dV_pc.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/30G2P26W16/30T66_T70_dV_pc.pdf  used on
  input line 423.
 (pdftex.def)             Requested size: 182.09488pt x 139.69656pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/30G2P26W16/30T66_T70_Uvap_pc.pdf, id=2660, 417.19867pt x 315.27
-=======
-<img/DEBORA/cfd/30G2P26W16/30T66_T70_Uvap_pc.pdf, id=2639, 417.19867pt x 315.27
->>>>>>> Stashed changes
+<img/DEBORA/cfd/30G2P26W16/30T66_T70_Uvap_pc.pdf, id=2694, 417.19867pt x 315.27
 179pt>
 File: img/DEBORA/cfd/30G2P26W16/30T66_T70_Uvap_pc.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/30G2P26W16/30T66_T70_Uvap_pc.pdf>
@@ -3972,77 +3684,49 @@ od-el-ing, we con-duct sim-u-la-tions of the 8G2P26W16Te55.7
 [50 <./img/DEBORA/cfd/30G2P26W16/30T66_T70_alpha_pc.pdf> <./img/DEBORA/cfd/30G2
 P26W16/30T66_T70_dV_pc.pdf> <./img/DEBORA/cfd/30G2P26W16/30T66_T70_Uvap_pc.pdf>
 ]
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T55_alpha_nsit.pdf, id=2771, 434.50961pt x 319.04958
-=======
-<img/DEBORA/cfd/8G2P26W16/8T55_alpha_nsit.pdf, id=2749, 434.50961pt x 319.04958
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T55_alpha_nsit.pdf, id=2804, 434.50961pt x 319.04958
 pt>
 File: img/DEBORA/cfd/8G2P26W16/8T55_alpha_nsit.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T55_alpha_nsit.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/8G2P26W16/8T55_alpha_nsit.pdf  used on 
 input line 493.
 (pdftex.def)             Requested size: 182.09488pt x 133.7078pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T55_dV_nsit.pdf, id=2772, 431.08257pt x 319.04958pt>
-=======
-<img/DEBORA/cfd/8G2P26W16/8T55_dV_nsit.pdf, id=2750, 431.08257pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T55_dV_nsit.pdf, id=2805, 431.08257pt x 319.04958pt>
 
 File: img/DEBORA/cfd/8G2P26W16/8T55_dV_nsit.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T55_dV_nsit.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/8G2P26W16/8T55_dV_nsit.pdf  used on inp
 ut line 497.
 (pdftex.def)             Requested size: 182.09488pt x 134.76909pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T55_Uvap_nsit.pdf, id=2773, 415.97601pt x 319.04958p
-=======
-<img/DEBORA/cfd/8G2P26W16/8T55_Uvap_nsit.pdf, id=2751, 415.97601pt x 319.04958p
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T55_Uvap_nsit.pdf, id=2806, 415.97601pt x 319.04958p
 t>
 File: img/DEBORA/cfd/8G2P26W16/8T55_Uvap_nsit.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T55_Uvap_nsit.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/8G2P26W16/8T55_Uvap_nsit.pdf  used on i
 nput line 502.
 (pdftex.def)             Requested size: 182.09488pt x 139.6666pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T55_TL_nsit.pdf, id=2774, 418.14865pt x 315.27179pt>
-=======
-<img/DEBORA/cfd/8G2P26W16/8T55_TL_nsit.pdf, id=2752, 418.14865pt x 315.27179pt>
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T55_TL_nsit.pdf, id=2807, 418.14865pt x 315.27179pt>
 
 File: img/DEBORA/cfd/8G2P26W16/8T55_TL_nsit.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T55_TL_nsit.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/8G2P26W16/8T55_TL_nsit.pdf  used on inp
 ut line 506.
 (pdftex.def)             Requested size: 182.09488pt x 137.29605pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T55_Tw_nsit.pdf, id=2775, 422.32457pt x 319.31622pt>
-=======
-<img/DEBORA/cfd/8G2P26W16/8T55_Tw_nsit.pdf, id=2753, 422.32457pt x 319.31622pt>
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T55_Tw_nsit.pdf, id=2808, 422.32457pt x 319.31622pt>
 
 File: img/DEBORA/cfd/8G2P26W16/8T55_Tw_nsit.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T55_Tw_nsit.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/8G2P26W16/8T55_Tw_nsit.pdf  used on inp
 ut line 511.
 (pdftex.def)             Requested size: 182.09488pt x 137.68333pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T55_Tw_x_nsit.pdf, id=2776, 411.66263pt x 319.55508p
-=======
-<img/DEBORA/cfd/8G2P26W16/8T55_Tw_x_nsit.pdf, id=2754, 411.66263pt x 319.55508p
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T55_Tw_x_nsit.pdf, id=2809, 411.66263pt x 319.55508p
 t>
 File: img/DEBORA/cfd/8G2P26W16/8T55_Tw_x_nsit.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T55_Tw_x_nsit.pdf>
 Package pdftex.def Info: img/DEBORA/cfd/8G2P26W16/8T55_Tw_x_nsit.pdf  used on i
 nput line 515.
 (pdftex.def)             Requested size: 182.09488pt x 141.3507pt.
-<<<<<<< Updated upstream
-<img/DEBORA/cfd/8G2P26W16/8T55_fluxes_nsit.pdf, id=2777, 415.47047pt x 319.0495
-=======
-<img/DEBORA/cfd/8G2P26W16/8T55_fluxes_nsit.pdf, id=2755, 415.47047pt x 319.0495
->>>>>>> Stashed changes
+<img/DEBORA/cfd/8G2P26W16/8T55_fluxes_nsit.pdf, id=2810, 415.47047pt x 319.0495
 8pt>
 File: img/DEBORA/cfd/8G2P26W16/8T55_fluxes_nsit.pdf Graphic file (type pdf)
 <use img/DEBORA/cfd/8G2P26W16/8T55_fluxes_nsit.pdf>
@@ -4106,30 +3790,18 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 
 ] [56]
-<<<<<<< Updated upstream
-<img/HFP/KP/KP_hfp.PNG, id=2964, 1285.80376pt x 596.2275pt>
-=======
-<img/HFP/KP/KP_hfp.PNG, id=2942, 1285.80376pt x 596.2275pt>
->>>>>>> Stashed changes
+<img/HFP/KP/KP_hfp.PNG, id=2997, 1285.80376pt x 596.2275pt>
 File: img/HFP/KP/KP_hfp.PNG Graphic file (type png)
 <use img/HFP/KP/KP_hfp.PNG>
 Package pdftex.def Info: img/HFP/KP/KP_hfp.PNG  used on input line 132.
 (pdftex.def)             Requested size: 273.14928pt x 126.65799pt.
  [57 <./img/HFP/KP/KP_hfp.PNG>] [58]
-<<<<<<< Updated upstream
-<img/HFP/Basu/zones.PNG, id=2996, 609.77812pt x 948.54375pt>
-=======
-<img/HFP/Basu/zones.PNG, id=2974, 609.77812pt x 948.54375pt>
->>>>>>> Stashed changes
+<img/HFP/Basu/zones.PNG, id=3030, 609.77812pt x 948.54375pt>
 File: img/HFP/Basu/zones.PNG Graphic file (type png)
 <use img/HFP/Basu/zones.PNG>
 Package pdftex.def Info: img/HFP/Basu/zones.PNG  used on input line 241.
 (pdftex.def)             Requested size: 227.62209pt x 354.08199pt.
-<<<<<<< Updated upstream
-<img/HFP/Basu/slide.PNG, id=2997, 518.6878pt x 804.00375pt>
-=======
-<img/HFP/Basu/slide.PNG, id=2975, 518.6878pt x 804.00375pt>
->>>>>>> Stashed changes
+<img/HFP/Basu/slide.PNG, id=3031, 518.6878pt x 804.00375pt>
 File: img/HFP/Basu/slide.PNG Graphic file (type png)
 <use img/HFP/Basu/slide.PNG>
 Package pdftex.def Info: img/HFP/Basu/slide.PNG  used on input line 245.
@@ -4169,11 +3841,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 336.
 
 [60]
-<<<<<<< Updated upstream
-<img/HFP/Gilman/mind_map.png, id=3026, 898.85812pt x 519.9425pt>
-=======
-<img/HFP/Gilman/mind_map.png, id=3005, 898.85812pt x 519.9425pt>
->>>>>>> Stashed changes
+<img/HFP/Gilman/mind_map.png, id=3060, 898.85812pt x 519.9425pt>
 File: img/HFP/Gilman/mind_map.png Graphic file (type png)
 <use img/HFP/Gilman/mind_map.png>
 Package pdftex.def Info: img/HFP/Gilman/mind_map.png  used on input line 401.
@@ -4183,11 +3851,7 @@ Package pdftex.def Info: img/HFP/Gilman/mind_map.png  used on input line 401.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [61] [62 <./img/HFP/Gilman/mind_map.png>]
-<<<<<<< Updated upstream
-<img/HFP/komma/hfp_komma.PNG, id=3061, 1348.28719pt x 709.90219pt>
-=======
-<img/HFP/komma/hfp_komma.PNG, id=3039, 1348.28719pt x 709.90219pt>
->>>>>>> Stashed changes
+<img/HFP/komma/hfp_komma.PNG, id=3094, 1348.28719pt x 709.90219pt>
 File: img/HFP/komma/hfp_komma.PNG Graphic file (type png)
 <use img/HFP/komma/hfp_komma.PNG>
 Package pdftex.def Info: img/HFP/komma/hfp_komma.PNG  used on input line 492.
@@ -4219,71 +3883,43 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 
 ]
-<<<<<<< Updated upstream
-<img/bub_dyn/slide_maity.png, id=3145, 1025.8325pt x 533.49312pt>
-=======
-<img/bub_dyn/slide_maity.png, id=3124, 1025.8325pt x 533.49312pt>
->>>>>>> Stashed changes
+<img/bub_dyn/slide_maity.png, id=3179, 1025.8325pt x 533.49312pt>
 File: img/bub_dyn/slide_maity.png Graphic file (type png)
 <use img/bub_dyn/slide_maity.png>
 Package pdftex.def Info: img/bub_dyn/slide_maity.png  used on input line 34.
 (pdftex.def)             Requested size: 273.14928pt x 142.05066pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/slide_koss.png, id=3148, 842.14626pt x 274.02374pt>
-=======
-<img/bub_dyn/slide_koss.png, id=3127, 842.14626pt x 274.02374pt>
->>>>>>> Stashed changes
+<img/bub_dyn/slide_koss.png, id=3182, 842.14626pt x 274.02374pt>
 File: img/bub_dyn/slide_koss.png Graphic file (type png)
 <use img/bub_dyn/slide_koss.png>
 Package pdftex.def Info: img/bub_dyn/slide_koss.png  used on input line 38.
 (pdftex.def)             Requested size: 273.14928pt x 88.88104pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/slide_thermal_estrada.png, id=3163, 854.19125pt x 180.675pt>
-=======
-<img/bub_dyn/slide_thermal_estrada.png, id=3142, 854.19125pt x 180.675pt>
->>>>>>> Stashed changes
+<img/bub_dyn/slide_thermal_estrada.png, id=3197, 854.19125pt x 180.675pt>
 File: img/bub_dyn/slide_thermal_estrada.png Graphic file (type png)
 <use img/bub_dyn/slide_thermal_estrada.png>
 Package pdftex.def Info: img/bub_dyn/slide_thermal_estrada.png  used on input l
 ine 58.
 (pdftex.def)             Requested size: 364.19672pt x 77.0326pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/slide_thermal_koss.png, id=3166, 796.9775pt x 254.45062pt>
-=======
-<img/bub_dyn/slide_thermal_koss.png, id=3145, 796.9775pt x 254.45062pt>
->>>>>>> Stashed changes
+<img/bub_dyn/slide_thermal_koss.png, id=3200, 796.9775pt x 254.45062pt>
 File: img/bub_dyn/slide_thermal_koss.png Graphic file (type png)
 <use img/bub_dyn/slide_thermal_koss.png>
 Package pdftex.def Info: img/bub_dyn/slide_thermal_koss.png  used on input line
  62.
 (pdftex.def)             Requested size: 364.19672pt x 116.27606pt.
  [67 <./img/bub_dyn/slide_maity.png> <./img/bub_dyn/slide_koss.png>]
-<<<<<<< Updated upstream
-<img/bub_dyn/bub_life_VFB.pdf, id=3186, 295.46687pt x 282.86378pt>
-=======
-<img/bub_dyn/bub_life_VFB.pdf, id=3164, 295.46687pt x 282.86378pt>
->>>>>>> Stashed changes
+<img/bub_dyn/bub_life_VFB.pdf, id=3219, 295.46687pt x 282.86378pt>
 File: img/bub_dyn/bub_life_VFB.pdf Graphic file (type pdf)
 <use img/bub_dyn/bub_life_VFB.pdf>
 Package pdftex.def Info: img/bub_dyn/bub_life_VFB.pdf  used on input line 74.
 (pdftex.def)             Requested size: 295.90593pt x 283.30763pt.
  [68 <./img/bub_dyn/slide_thermal_estrada.png> <./img/bub_dyn/slide_thermal_kos
 s.png> <./img/bub_dyn/bub_life_VFB.pdf>] [69]
-<<<<<<< Updated upstream
-<img/bub_dyn/correl_comp_1bar.pdf, id=3243, 429.93202pt x 322.82736pt>
-=======
-<img/bub_dyn/correl_comp_1bar.pdf, id=3221, 429.93202pt x 322.82736pt>
->>>>>>> Stashed changes
+<img/bub_dyn/correl_comp_1bar.pdf, id=3276, 429.93202pt x 322.82736pt>
 File: img/bub_dyn/correl_comp_1bar.pdf Graphic file (type pdf)
 <use img/bub_dyn/correl_comp_1bar.pdf>
 Package pdftex.def Info: img/bub_dyn/correl_comp_1bar.pdf  used on input line 1
 96.
 (pdftex.def)             Requested size: 212.21017pt x 159.33823pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/correl_comp_100bar.pdf, id=3244, 616.79518pt x 328.15286pt>
-=======
-<img/bub_dyn/correl_comp_100bar.pdf, id=3222, 616.79518pt x 328.15286pt>
->>>>>>> Stashed changes
+<img/bub_dyn/correl_comp_100bar.pdf, id=3277, 616.79518pt x 328.15286pt>
 File: img/bub_dyn/correl_comp_100bar.pdf Graphic file (type pdf)
 <use img/bub_dyn/correl_comp_100bar.pdf>
 Package pdftex.def Info: img/bub_dyn/correl_comp_100bar.pdf  used on input line
@@ -4308,52 +3944,32 @@ Underfull \hbox (badness 4391) in paragraph at lines 305--305
  []
 
 [72] [73]
-<<<<<<< Updated upstream
-<img/bub_dyn/bub_bdf.pdf, id=3341, 244.15216pt x 206.40514pt>
-=======
-<img/bub_dyn/bub_bdf.pdf, id=3319, 244.15216pt x 206.40514pt>
->>>>>>> Stashed changes
+<img/bub_dyn/bub_bdf.pdf, id=3374, 244.15216pt x 206.40514pt>
 File: img/bub_dyn/bub_bdf.pdf Graphic file (type pdf)
 <use img/bub_dyn/bub_bdf.pdf>
 Package pdftex.def Info: img/bub_dyn/bub_bdf.pdf  used on input line 450.
 (pdftex.def)             Requested size: 273.14928pt x 230.94225pt.
  [74 <./img/bub_dyn/bub_bdf.pdf>] [75] [76]
-<<<<<<< Updated upstream
-<img/bub_dyn/shi_scheme.pdf, id=3418, 200.28728pt x 120.30244pt>
-=======
-<img/bub_dyn/shi_scheme.pdf, id=3397, 200.28728pt x 120.30244pt>
->>>>>>> Stashed changes
+<img/bub_dyn/shi_scheme.pdf, id=3453, 200.28728pt x 120.30244pt>
 File: img/bub_dyn/shi_scheme.pdf Graphic file (type pdf)
 <use img/bub_dyn/shi_scheme.pdf>
 Package pdftex.def Info: img/bub_dyn/shi_scheme.pdf  used on input line 631.
 (pdftex.def)             Requested size: 250.38568pt x 150.39784pt.
  [77 <./img/bub_dyn/shi_scheme.pdf>]
-<<<<<<< Updated upstream
-<img/bub_dyn/forces/corr_drag.pdf, id=3465, 448.80727pt x 313.85518pt>
-=======
-<img/bub_dyn/forces/corr_drag.pdf, id=3445, 448.80727pt x 313.85518pt>
->>>>>>> Stashed changes
+<img/bub_dyn/forces/corr_drag.pdf, id=3500, 448.80727pt x 313.85518pt>
 File: img/bub_dyn/forces/corr_drag.pdf Graphic file (type pdf)
 <use img/bub_dyn/forces/corr_drag.pdf>
 Package pdftex.def Info: img/bub_dyn/forces/corr_drag.pdf  used on input line 6
 75.
 (pdftex.def)             Requested size: 273.14928pt x 191.02515pt.
  [78 <./img/bub_dyn/forces/corr_drag.pdf>] [79]
-<<<<<<< Updated upstream
-<img/bub_dyn/forces/lift_shi_srpos.pdf, id=3526, 489.63304pt x 317.49396pt>
-=======
-<img/bub_dyn/forces/lift_shi_srpos.pdf, id=3505, 489.63304pt x 317.49396pt>
->>>>>>> Stashed changes
+<img/bub_dyn/forces/lift_shi_srpos.pdf, id=3560, 489.63304pt x 317.49396pt>
 File: img/bub_dyn/forces/lift_shi_srpos.pdf Graphic file (type pdf)
 <use img/bub_dyn/forces/lift_shi_srpos.pdf>
 Package pdftex.def Info: img/bub_dyn/forces/lift_shi_srpos.pdf  used on input l
 ine 797.
 (pdftex.def)             Requested size: 227.62209pt x 147.59924pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/forces/lift_shi_srneg.pdf, id=3527, 482.77896pt x 319.51646pt>
-=======
-<img/bub_dyn/forces/lift_shi_srneg.pdf, id=3506, 482.77896pt x 319.51646pt>
->>>>>>> Stashed changes
+<img/bub_dyn/forces/lift_shi_srneg.pdf, id=3561, 482.77896pt x 319.51646pt>
 File: img/bub_dyn/forces/lift_shi_srneg.pdf Graphic file (type pdf)
 <use img/bub_dyn/forces/lift_shi_srneg.pdf>
 Package pdftex.def Info: img/bub_dyn/forces/lift_shi_srneg.pdf  used on input l
@@ -4366,11 +3982,7 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 797--801
 
 [80 <./img/bub_dyn/forces/lift_shi_srpos.pdf> <./img/bub_dyn/forces/lift_shi_sr
 neg.pdf>] [81]
-<<<<<<< Updated upstream
-<img/bub_dyn/forces/CAM_plot.pdf, id=3615, 530.00848pt x 317.49396pt>
-=======
-<img/bub_dyn/forces/CAM_plot.pdf, id=3594, 530.00848pt x 317.49396pt>
->>>>>>> Stashed changes
+<img/bub_dyn/forces/CAM_plot.pdf, id=3649, 530.00848pt x 317.49396pt>
 File: img/bub_dyn/forces/CAM_plot.pdf Graphic file (type pdf)
 <use img/bub_dyn/forces/CAM_plot.pdf>
 Package pdftex.def Info: img/bub_dyn/forces/CAM_plot.pdf  used on input line 95
@@ -4401,11 +4013,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1071--1071
  []
 
 [84] [85] [86]
-<<<<<<< Updated upstream
-<img/growth/ML_urbano.PNG, id=3742, 720.44156pt x 462.97969pt>
-=======
-<img/growth/ML_urbano.PNG, id=3721, 720.44156pt x 462.97969pt>
->>>>>>> Stashed changes
+<img/growth/ML_urbano.PNG, id=3776, 720.44156pt x 462.97969pt>
 File: img/growth/ML_urbano.PNG Graphic file (type png)
 <use img/growth/ML_urbano.PNG>
 Package pdftex.def Info: img/growth/ML_urbano.PNG  used on input line 1206.
@@ -4415,32 +4023,20 @@ Package pdftex.def Info: img/growth/ML_urbano.PNG  used on input line 1206.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [87] [88 <./img/growth/ML_urbano.PNG>]
-<<<<<<< Updated upstream
-<img/growth/growth_analytical.pdf, id=3788, 380.31888pt x 232.51167pt>
-=======
-<img/growth/growth_analytical.pdf, id=3767, 380.31888pt x 232.51167pt>
->>>>>>> Stashed changes
+<img/growth/growth_analytical.pdf, id=3823, 380.31888pt x 232.51167pt>
 File: img/growth/growth_analytical.pdf Graphic file (type pdf)
 <use img/growth/growth_analytical.pdf>
 Package pdftex.def Info: img/growth/growth_analytical.pdf  used on input line 1
 317.
 (pdftex.def)             Requested size: 318.66953pt x 194.8224pt.
  [89] [90 <./img/growth/growth_analytical.pdf>] [91]
-<<<<<<< Updated upstream
-<img/growth/comp_urbano_nocorr.pdf, id=3862, 415.97601pt x 319.04958pt>
-=======
-<img/growth/comp_urbano_nocorr.pdf, id=3841, 415.97601pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/growth/comp_urbano_nocorr.pdf, id=3896, 415.97601pt x 319.04958pt>
 File: img/growth/comp_urbano_nocorr.pdf Graphic file (type pdf)
 <use img/growth/comp_urbano_nocorr.pdf>
 Package pdftex.def Info: img/growth/comp_urbano_nocorr.pdf  used on input line 
 1477.
 (pdftex.def)             Requested size: 227.62209pt x 174.58203pt.
-<<<<<<< Updated upstream
-<img/growth/comp_urbano_corr.pdf, id=3863, 415.97601pt x 319.04958pt>
-=======
-<img/growth/comp_urbano_corr.pdf, id=3842, 415.97601pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/growth/comp_urbano_corr.pdf, id=3897, 415.97601pt x 319.04958pt>
 File: img/growth/comp_urbano_corr.pdf Graphic file (type pdf)
 <use img/growth/comp_urbano_corr.pdf>
 Package pdftex.def Info: img/growth/comp_urbano_corr.pdf  used on input line 14
@@ -4454,38 +4050,22 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 1477--1481
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< Updated upstream
-<img/growth/maity_V0.pdf, id=3869, 489.9906pt x 273.1806pt>
-=======
-<img/growth/maity_V0.pdf, id=3848, 489.9906pt x 273.1806pt>
->>>>>>> Stashed changes
+<img/growth/maity_V0.pdf, id=3903, 489.9906pt x 273.1806pt>
 File: img/growth/maity_V0.pdf Graphic file (type pdf)
 <use img/growth/maity_V0.pdf>
 Package pdftex.def Info: img/growth/maity_V0.pdf  used on input line 1505.
 (pdftex.def)             Requested size: 227.62209pt x 126.9026pt.
-<<<<<<< Updated upstream
-<img/growth/maity_V0p077.pdf, id=3870, 489.9906pt x 273.1806pt>
-=======
-<img/growth/maity_V0p077.pdf, id=3849, 489.9906pt x 273.1806pt>
->>>>>>> Stashed changes
+<img/growth/maity_V0p077.pdf, id=3904, 489.9906pt x 273.1806pt>
 File: img/growth/maity_V0p077.pdf Graphic file (type pdf)
 <use img/growth/maity_V0p077.pdf>
 Package pdftex.def Info: img/growth/maity_V0p077.pdf  used on input line 1508.
 (pdftex.def)             Requested size: 227.62209pt x 126.9026pt.
-<<<<<<< Updated upstream
-<img/growth/maity_V0p15.pdf, id=3871, 489.9906pt x 273.1806pt>
-=======
-<img/growth/maity_V0p15.pdf, id=3850, 489.9906pt x 273.1806pt>
->>>>>>> Stashed changes
+<img/growth/maity_V0p15.pdf, id=3905, 489.9906pt x 273.1806pt>
 File: img/growth/maity_V0p15.pdf Graphic file (type pdf)
 <use img/growth/maity_V0p15.pdf>
 Package pdftex.def Info: img/growth/maity_V0p15.pdf  used on input line 1512.
 (pdftex.def)             Requested size: 227.62209pt x 126.9026pt.
-<<<<<<< Updated upstream
-<img/growth/maity_V0p25.pdf, id=3872, 489.9906pt x 273.1806pt>
-=======
-<img/growth/maity_V0p25.pdf, id=3851, 489.9906pt x 273.1806pt>
->>>>>>> Stashed changes
+<img/growth/maity_V0p25.pdf, id=3906, 489.9906pt x 273.1806pt>
 File: img/growth/maity_V0p25.pdf Graphic file (type pdf)
 <use img/growth/maity_V0p25.pdf>
 Package pdftex.def Info: img/growth/maity_V0p25.pdf  used on input line 1515.
@@ -4514,11 +4094,7 @@ ltiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img/growth/maity_V0p25.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/growth/SH5.9_SC0.3_V0.25_sensidelta.pdf, id=4010, 494.32681pt x 277.51682p
-=======
-<img/growth/SH5.9_SC0.3_V0.25_sensidelta.pdf, id=3989, 494.32681pt x 277.51682p
->>>>>>> Stashed changes
+<img/growth/SH5.9_SC0.3_V0.25_sensidelta.pdf, id=4044, 494.32681pt x 277.51682p
 t>
 File: img/growth/SH5.9_SC0.3_V0.25_sensidelta.pdf Graphic file (type pdf)
 <use img/growth/SH5.9_SC0.3_V0.25_sensidelta.pdf>
@@ -4526,21 +4102,13 @@ Package pdftex.def Info: img/growth/SH5.9_SC0.3_V0.25_sensidelta.pdf  used on i
 nput line 1559.
 (pdftex.def)             Requested size: 273.14928pt x 153.35036pt.
  [94 <./img/growth/SH5.9_SC0.3_V0.25_sensidelta.pdf>]
-<<<<<<< Updated upstream
-<img/growth/Koss_P20_G500.pdf, id=4033, 489.9906pt x 273.1806pt>
-=======
-<img/growth/Koss_P20_G500.pdf, id=4012, 489.9906pt x 273.1806pt>
->>>>>>> Stashed changes
+<img/growth/Koss_P20_G500.pdf, id=4068, 489.9906pt x 273.1806pt>
 File: img/growth/Koss_P20_G500.pdf Graphic file (type pdf)
 <use img/growth/Koss_P20_G500.pdf>
 Package pdftex.def Info: img/growth/Koss_P20_G500.pdf  used on input line 1578.
 
 (pdftex.def)             Requested size: 227.62209pt x 126.9026pt.
-<<<<<<< Updated upstream
-<img/growth/Koss_P40_G500.pdf, id=4034, 489.9906pt x 273.1806pt>
-=======
-<img/growth/Koss_P40_G500.pdf, id=4013, 489.9906pt x 273.1806pt>
->>>>>>> Stashed changes
+<img/growth/Koss_P40_G500.pdf, id=4069, 489.9906pt x 273.1806pt>
 File: img/growth/Koss_P40_G500.pdf Graphic file (type pdf)
 <use img/growth/Koss_P40_G500.pdf>
 Package pdftex.def Info: img/growth/Koss_P40_G500.pdf  used on input line 1581.
@@ -4551,21 +4119,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 1578--1582
  [][][] 
  []
 
-<<<<<<< Updated upstream
-<img/growth/Koss_P20_G1000.pdf, id=4035, 489.9906pt x 273.1806pt>
-=======
-<img/growth/Koss_P20_G1000.pdf, id=4014, 489.9906pt x 273.1806pt>
->>>>>>> Stashed changes
+<img/growth/Koss_P20_G1000.pdf, id=4070, 489.9906pt x 273.1806pt>
 File: img/growth/Koss_P20_G1000.pdf Graphic file (type pdf)
 <use img/growth/Koss_P20_G1000.pdf>
 Package pdftex.def Info: img/growth/Koss_P20_G1000.pdf  used on input line 1585
 .
 (pdftex.def)             Requested size: 227.62209pt x 126.9026pt.
-<<<<<<< Updated upstream
-<img/growth/Koss_P40_G1000.pdf, id=4036, 489.9906pt x 273.1806pt>
-=======
-<img/growth/Koss_P40_G1000.pdf, id=4015, 489.9906pt x 273.1806pt>
->>>>>>> Stashed changes
+<img/growth/Koss_P40_G1000.pdf, id=4071, 489.9906pt x 273.1806pt>
 File: img/growth/Koss_P40_G1000.pdf Graphic file (type pdf)
 <use img/growth/Koss_P40_G1000.pdf>
 Package pdftex.def Info: img/growth/Koss_P40_G1000.pdf  used on input line 1588
@@ -4576,21 +4136,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 1585--1589
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/growth/Koss_P20_G1500.pdf, id=4037, 489.9906pt x 273.1806pt>
-=======
-<img/growth/Koss_P20_G1500.pdf, id=4016, 489.9906pt x 273.1806pt>
->>>>>>> Stashed changes
+<img/growth/Koss_P20_G1500.pdf, id=4072, 489.9906pt x 273.1806pt>
 File: img/growth/Koss_P20_G1500.pdf Graphic file (type pdf)
 <use img/growth/Koss_P20_G1500.pdf>
 Package pdftex.def Info: img/growth/Koss_P20_G1500.pdf  used on input line 1592
 .
 (pdftex.def)             Requested size: 227.62209pt x 126.9026pt.
-<<<<<<< Updated upstream
-<img/growth/Koss_P40_G1500.pdf, id=4038, 489.9906pt x 273.1806pt>
-=======
-<img/growth/Koss_P40_G1500.pdf, id=4017, 489.9906pt x 273.1806pt>
->>>>>>> Stashed changes
+<img/growth/Koss_P40_G1500.pdf, id=4073, 489.9906pt x 273.1806pt>
 File: img/growth/Koss_P40_G1500.pdf Graphic file (type pdf)
 <use img/growth/Koss_P40_G1500.pdf>
 Package pdftex.def Info: img/growth/Koss_P40_G1500.pdf  used on input line 1595
@@ -4622,32 +4174,20 @@ pdfTeX warning: pdflatex (file ./img/growth/Koss_P20_G1500.pdf): PDF inclusion:
 pdfTeX warning: pdflatex (file ./img/growth/Koss_P40_G1500.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >] [96]
-<<<<<<< Updated upstream
-<img/bub_dyn/dep_maps/ND_map1.pdf, id=4182, 430.91045pt x 322.35507pt>
-=======
-<img/bub_dyn/dep_maps/ND_map1.pdf, id=4162, 430.91045pt x 322.35507pt>
->>>>>>> Stashed changes
+<img/bub_dyn/dep_maps/ND_map1.pdf, id=4217, 430.91045pt x 322.35507pt>
 File: img/bub_dyn/dep_maps/ND_map1.pdf Graphic file (type pdf)
 <use img/bub_dyn/dep_maps/ND_map1.pdf>
 Package pdftex.def Info: img/bub_dyn/dep_maps/ND_map1.pdf  used on input line 1
 689.
 (pdftex.def)             Requested size: 273.14928pt x 204.33412pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/dep_maps/press_map.pdf, id=4185, 430.91045pt x 322.35507pt>
-=======
-<img/bub_dyn/dep_maps/press_map.pdf, id=4165, 430.91045pt x 322.35507pt>
->>>>>>> Stashed changes
+<img/bub_dyn/dep_maps/press_map.pdf, id=4220, 430.91045pt x 322.35507pt>
 File: img/bub_dyn/dep_maps/press_map.pdf Graphic file (type pdf)
 <use img/bub_dyn/dep_maps/press_map.pdf>
 Package pdftex.def Info: img/bub_dyn/dep_maps/press_map.pdf  used on input line
  1706.
 (pdftex.def)             Requested size: 273.14928pt x 204.33412pt.
  [97 <./img/bub_dyn/dep_maps/ND_map1.pdf>]
-<<<<<<< Updated upstream
-<img/bub_dyn/dep_maps/R12_PWR.pdf, id=4218, 430.91045pt x 322.35507pt>
-=======
-<img/bub_dyn/dep_maps/R12_PWR.pdf, id=4197, 430.91045pt x 322.35507pt>
->>>>>>> Stashed changes
+<img/bub_dyn/dep_maps/R12_PWR.pdf, id=4252, 430.91045pt x 322.35507pt>
 File: img/bub_dyn/dep_maps/R12_PWR.pdf Graphic file (type pdf)
 <use img/bub_dyn/dep_maps/R12_PWR.pdf>
 Package pdftex.def Info: img/bub_dyn/dep_maps/R12_PWR.pdf  used on input line 1
@@ -4655,61 +4195,37 @@ Package pdftex.def Info: img/bub_dyn/dep_maps/R12_PWR.pdf  used on input line 1
 (pdftex.def)             Requested size: 273.14928pt x 204.33412pt.
  [98 <./img/bub_dyn/dep_maps/press_map.pdf> <./img/bub_dyn/dep_maps/R12_PWR.pdf
 >]
-<<<<<<< Updated upstream
-<img/bub_dyn/dep_maps/Maity_2.pdf, id=4283, 424.43935pt x 322.35507pt>
-=======
-<img/bub_dyn/dep_maps/Maity_2.pdf, id=4262, 424.43935pt x 322.35507pt>
->>>>>>> Stashed changes
+<img/bub_dyn/dep_maps/Maity_2.pdf, id=4317, 424.43935pt x 322.35507pt>
 File: img/bub_dyn/dep_maps/Maity_2.pdf Graphic file (type pdf)
 <use img/bub_dyn/dep_maps/Maity_2.pdf>
 Package pdftex.def Info: img/bub_dyn/dep_maps/Maity_2.pdf  used on input line 1
 808.
 (pdftex.def)             Requested size: 204.85847pt x 155.58453pt.
-<<<<<<< Updated upstream
-<img//bub_dyn/dep_maps/Guan_2.pdf, id=4284, 424.43935pt x 322.35507pt>
-=======
-<img//bub_dyn/dep_maps/Guan_2.pdf, id=4263, 424.43935pt x 322.35507pt>
->>>>>>> Stashed changes
+<img//bub_dyn/dep_maps/Guan_2.pdf, id=4318, 424.43935pt x 322.35507pt>
 File: img//bub_dyn/dep_maps/Guan_2.pdf Graphic file (type pdf)
 <use img//bub_dyn/dep_maps/Guan_2.pdf>
 Package pdftex.def Info: img//bub_dyn/dep_maps/Guan_2.pdf  used on input line 1
 812.
 (pdftex.def)             Requested size: 204.85847pt x 155.58453pt.
-<<<<<<< Updated upstream
-<img//bub_dyn/dep_maps/Sugrue_2.pdf, id=4285, 432.27321pt x 322.35507pt>
-=======
-<img//bub_dyn/dep_maps/Sugrue_2.pdf, id=4264, 432.27321pt x 322.35507pt>
->>>>>>> Stashed changes
+<img//bub_dyn/dep_maps/Sugrue_2.pdf, id=4319, 432.27321pt x 322.35507pt>
 File: img//bub_dyn/dep_maps/Sugrue_2.pdf Graphic file (type pdf)
 <use img//bub_dyn/dep_maps/Sugrue_2.pdf>
 Package pdftex.def Info: img//bub_dyn/dep_maps/Sugrue_2.pdf  used on input line
  1817.
 (pdftex.def)             Requested size: 204.85847pt x 152.7661pt.
-<<<<<<< Updated upstream
-<img//bub_dyn/dep_maps/Chen_2.pdf, id=4286, 424.43935pt x 322.35507pt>
-=======
-<img//bub_dyn/dep_maps/Chen_2.pdf, id=4265, 424.43935pt x 322.35507pt>
->>>>>>> Stashed changes
+<img//bub_dyn/dep_maps/Chen_2.pdf, id=4320, 424.43935pt x 322.35507pt>
 File: img//bub_dyn/dep_maps/Chen_2.pdf Graphic file (type pdf)
 <use img//bub_dyn/dep_maps/Chen_2.pdf>
 Package pdftex.def Info: img//bub_dyn/dep_maps/Chen_2.pdf  used on input line 1
 821.
 (pdftex.def)             Requested size: 204.85847pt x 155.58453pt.
-<<<<<<< Updated upstream
-<img//bub_dyn/dep_maps/Ren_2.pdf, id=4287, 432.27321pt x 322.35507pt>
-=======
-<img//bub_dyn/dep_maps/Ren_2.pdf, id=4266, 432.27321pt x 322.35507pt>
->>>>>>> Stashed changes
+<img//bub_dyn/dep_maps/Ren_2.pdf, id=4321, 432.27321pt x 322.35507pt>
 File: img//bub_dyn/dep_maps/Ren_2.pdf Graphic file (type pdf)
 <use img//bub_dyn/dep_maps/Ren_2.pdf>
 Package pdftex.def Info: img//bub_dyn/dep_maps/Ren_2.pdf  used on input line 18
 26.
 (pdftex.def)             Requested size: 204.85847pt x 152.7661pt.
-<<<<<<< Updated upstream
-<img//bub_dyn/dep_maps/Kossolapov_2.pdf, id=4288, 432.27321pt x 322.35507pt>
-=======
-<img//bub_dyn/dep_maps/Kossolapov_2.pdf, id=4267, 432.27321pt x 322.35507pt>
->>>>>>> Stashed changes
+<img//bub_dyn/dep_maps/Kossolapov_2.pdf, id=4322, 432.27321pt x 322.35507pt>
 File: img//bub_dyn/dep_maps/Kossolapov_2.pdf Graphic file (type pdf)
 <use img//bub_dyn/dep_maps/Kossolapov_2.pdf>
 Package pdftex.def Info: img//bub_dyn/dep_maps/Kossolapov_2.pdf  used on input 
@@ -4741,60 +4257,36 @@ n: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img//bub_dyn/dep_maps/Kossolapov_2.pdf): PDF i
 nclusion: multiple pdfs with page group included in a single page
 >] [101]
-<<<<<<< Updated upstream
-<img/bub_dyn/pred_nosensi.pdf, id=4474, 511.99646pt x 330.68468pt>
-=======
-<img/bub_dyn/pred_nosensi.pdf, id=4454, 511.99646pt x 330.68468pt>
->>>>>>> Stashed changes
+<img/bub_dyn/pred_nosensi.pdf, id=4509, 511.99646pt x 330.68468pt>
 File: img/bub_dyn/pred_nosensi.pdf Graphic file (type pdf)
 <use img/bub_dyn/pred_nosensi.pdf>
 Package pdftex.def Info: img/bub_dyn/pred_nosensi.pdf  used on input line 1924.
 
 (pdftex.def)             Requested size: 273.14928pt x 176.42763pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/pred_mazzocco.pdf, id=4475, 449.84314pt x 271.10902pt>
-=======
-<img/bub_dyn/pred_mazzocco.pdf, id=4455, 449.84314pt x 271.10902pt>
->>>>>>> Stashed changes
+<img/bub_dyn/pred_mazzocco.pdf, id=4510, 449.84314pt x 271.10902pt>
 File: img/bub_dyn/pred_mazzocco.pdf Graphic file (type pdf)
 <use img/bub_dyn/pred_mazzocco.pdf>
 Package pdftex.def Info: img/bub_dyn/pred_mazzocco.pdf  used on input line 1928
 .
 (pdftex.def)             Requested size: 273.14928pt x 164.6275pt.
  [102 <./img/bub_dyn/pred_nosensi.pdf> <./img/bub_dyn/pred_mazzocco.pdf>]
-<<<<<<< Updated upstream
-<img/bub_dyn/bub_sugrue.pdf, id=4532, 99.37024pt x 206.40514pt>
-=======
-<img/bub_dyn/bub_sugrue.pdf, id=4512, 99.37024pt x 206.40514pt>
->>>>>>> Stashed changes
+<img/bub_dyn/bub_sugrue.pdf, id=4567, 99.37024pt x 206.40514pt>
 File: img/bub_dyn/bub_sugrue.pdf Graphic file (type pdf)
 <use img/bub_dyn/bub_sugrue.pdf>
 Package pdftex.def Info: img/bub_dyn/bub_sugrue.pdf  used on input line 1956.
 (pdftex.def)             Requested size: 65.75587pt x 136.57463pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/pic_sugrue.png, id=4533, 506.89375pt x 503.8825pt>
-=======
-<img/bub_dyn/pic_sugrue.png, id=4513, 506.89375pt x 503.8825pt>
->>>>>>> Stashed changes
+<img/bub_dyn/pic_sugrue.png, id=4568, 506.89375pt x 503.8825pt>
 File: img/bub_dyn/pic_sugrue.png Graphic file (type png)
 <use img/bub_dyn/pic_sugrue.png>
 Package pdftex.def Info: img/bub_dyn/pic_sugrue.png  used on input line 1957.
 (pdftex.def)             Requested size: 159.33823pt x 158.38553pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/newbub_sugrue.pdf, id=4534, 113.82022pt x 206.40514pt>
-=======
-<img/bub_dyn/newbub_sugrue.pdf, id=4514, 113.82022pt x 206.40514pt>
->>>>>>> Stashed changes
+<img/bub_dyn/newbub_sugrue.pdf, id=4569, 113.82022pt x 206.40514pt>
 File: img/bub_dyn/newbub_sugrue.pdf Graphic file (type pdf)
 <use img/bub_dyn/newbub_sugrue.pdf>
 Package pdftex.def Info: img/bub_dyn/newbub_sugrue.pdf  used on input line 1958
 .
 (pdftex.def)             Requested size: 75.31781pt x 136.57463pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/pred_sensi.pdf, id=4539, 511.99646pt x 330.68468pt>
-=======
-<img/bub_dyn/pred_sensi.pdf, id=4519, 511.99646pt x 330.68468pt>
->>>>>>> Stashed changes
+<img/bub_dyn/pred_sensi.pdf, id=4574, 511.99646pt x 330.68468pt>
 File: img/bub_dyn/pred_sensi.pdf Graphic file (type pdf)
 <use img/bub_dyn/pred_sensi.pdf>
 Package pdftex.def Info: img/bub_dyn/pred_sensi.pdf  used on input line 2030.
@@ -4805,31 +4297,19 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [103 <./img/bub_dyn/bub_sugrue.pdf> <./img/bub_dyn/pic_sugrue.png> <./img/bub_d
 yn/newbub_sugrue.pdf>] [104 <./img/bub_dyn/pred_sensi.pdf>]
-<<<<<<< Updated upstream
-<img/bub_dyn/sliding/maity_V0p077.pdf, id=4582, 867.24pt x 289.08pt>
-=======
-<img/bub_dyn/sliding/maity_V0p077.pdf, id=4561, 867.24pt x 289.08pt>
->>>>>>> Stashed changes
+<img/bub_dyn/sliding/maity_V0p077.pdf, id=4616, 867.24pt x 289.08pt>
 File: img/bub_dyn/sliding/maity_V0p077.pdf Graphic file (type pdf)
 <use img/bub_dyn/sliding/maity_V0p077.pdf>
 Package pdftex.def Info: img/bub_dyn/sliding/maity_V0p077.pdf  used on input li
 ne 2118.
 (pdftex.def)             Requested size: 386.96031pt x 128.98645pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/sliding/maity_V0p15.pdf, id=4583, 867.24pt x 289.08pt>
-=======
-<img/bub_dyn/sliding/maity_V0p15.pdf, id=4562, 867.24pt x 289.08pt>
->>>>>>> Stashed changes
+<img/bub_dyn/sliding/maity_V0p15.pdf, id=4617, 867.24pt x 289.08pt>
 File: img/bub_dyn/sliding/maity_V0p15.pdf Graphic file (type pdf)
 <use img/bub_dyn/sliding/maity_V0p15.pdf>
 Package pdftex.def Info: img/bub_dyn/sliding/maity_V0p15.pdf  used on input lin
 e 2122.
 (pdftex.def)             Requested size: 386.96031pt x 128.98645pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/sliding/maity_V0p25.pdf, id=4584, 867.24pt x 289.08pt>
-=======
-<img/bub_dyn/sliding/maity_V0p25.pdf, id=4563, 867.24pt x 289.08pt>
->>>>>>> Stashed changes
+<img/bub_dyn/sliding/maity_V0p25.pdf, id=4618, 867.24pt x 289.08pt>
 File: img/bub_dyn/sliding/maity_V0p25.pdf Graphic file (type pdf)
 <use img/bub_dyn/sliding/maity_V0p25.pdf>
 Package pdftex.def Info: img/bub_dyn/sliding/maity_V0p25.pdf  used on input lin
@@ -4839,31 +4319,19 @@ e 2126.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< Updated upstream
-<img/bub_dyn/sliding/Koss_P20_G500.pdf, id=4588, 867.24pt x 289.08pt>
-=======
-<img/bub_dyn/sliding/Koss_P20_G500.pdf, id=4567, 867.24pt x 289.08pt>
->>>>>>> Stashed changes
+<img/bub_dyn/sliding/Koss_P20_G500.pdf, id=4622, 867.24pt x 289.08pt>
 File: img/bub_dyn/sliding/Koss_P20_G500.pdf Graphic file (type pdf)
 <use img/bub_dyn/sliding/Koss_P20_G500.pdf>
 Package pdftex.def Info: img/bub_dyn/sliding/Koss_P20_G500.pdf  used on input l
 ine 2158.
 (pdftex.def)             Requested size: 386.96031pt x 128.98645pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/sliding/Koss_P20_G1000.pdf, id=4589, 867.24pt x 289.08pt>
-=======
-<img/bub_dyn/sliding/Koss_P20_G1000.pdf, id=4568, 867.24pt x 289.08pt>
->>>>>>> Stashed changes
+<img/bub_dyn/sliding/Koss_P20_G1000.pdf, id=4623, 867.24pt x 289.08pt>
 File: img/bub_dyn/sliding/Koss_P20_G1000.pdf Graphic file (type pdf)
 <use img/bub_dyn/sliding/Koss_P20_G1000.pdf>
 Package pdftex.def Info: img/bub_dyn/sliding/Koss_P20_G1000.pdf  used on input 
 line 2162.
 (pdftex.def)             Requested size: 386.96031pt x 128.98645pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/sliding/Koss_P20_G1500.pdf, id=4590, 867.24pt x 289.08pt>
-=======
-<img/bub_dyn/sliding/Koss_P20_G1500.pdf, id=4569, 867.24pt x 289.08pt>
->>>>>>> Stashed changes
+<img/bub_dyn/sliding/Koss_P20_G1500.pdf, id=4624, 867.24pt x 289.08pt>
 File: img/bub_dyn/sliding/Koss_P20_G1500.pdf Graphic file (type pdf)
 <use img/bub_dyn/sliding/Koss_P20_G1500.pdf>
 Package pdftex.def Info: img/bub_dyn/sliding/Koss_P20_G1500.pdf  used on input 
@@ -4872,31 +4340,19 @@ line 2166.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< Updated upstream
-<img/bub_dyn/sliding/Koss_P40_G500.pdf, id=4591, 867.24pt x 289.08pt>
-=======
-<img/bub_dyn/sliding/Koss_P40_G500.pdf, id=4570, 867.24pt x 289.08pt>
->>>>>>> Stashed changes
+<img/bub_dyn/sliding/Koss_P40_G500.pdf, id=4625, 867.24pt x 289.08pt>
 File: img/bub_dyn/sliding/Koss_P40_G500.pdf Graphic file (type pdf)
 <use img/bub_dyn/sliding/Koss_P40_G500.pdf>
 Package pdftex.def Info: img/bub_dyn/sliding/Koss_P40_G500.pdf  used on input l
 ine 2178.
 (pdftex.def)             Requested size: 386.96031pt x 128.98645pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/sliding/Koss_P40_G1000.pdf, id=4592, 867.24pt x 289.08pt>
-=======
-<img/bub_dyn/sliding/Koss_P40_G1000.pdf, id=4571, 867.24pt x 289.08pt>
->>>>>>> Stashed changes
+<img/bub_dyn/sliding/Koss_P40_G1000.pdf, id=4626, 867.24pt x 289.08pt>
 File: img/bub_dyn/sliding/Koss_P40_G1000.pdf Graphic file (type pdf)
 <use img/bub_dyn/sliding/Koss_P40_G1000.pdf>
 Package pdftex.def Info: img/bub_dyn/sliding/Koss_P40_G1000.pdf  used on input 
 line 2182.
 (pdftex.def)             Requested size: 386.96031pt x 128.98645pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/sliding/Koss_P40_G1500.pdf, id=4593, 867.24pt x 289.08pt>
-=======
-<img/bub_dyn/sliding/Koss_P40_G1500.pdf, id=4572, 867.24pt x 289.08pt>
->>>>>>> Stashed changes
+<img/bub_dyn/sliding/Koss_P40_G1500.pdf, id=4627, 867.24pt x 289.08pt>
 File: img/bub_dyn/sliding/Koss_P40_G1500.pdf Graphic file (type pdf)
 <use img/bub_dyn/sliding/Koss_P40_G1500.pdf>
 Package pdftex.def Info: img/bub_dyn/sliding/Koss_P40_G1500.pdf  used on input 
@@ -4906,21 +4362,13 @@ line 2186.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [105]
-<<<<<<< Updated upstream
-<img/bub_dyn/sliding/maity_V0p25_forces.pdf, id=4602, 505.89pt x 289.08pt>
-=======
-<img/bub_dyn/sliding/maity_V0p25_forces.pdf, id=4581, 505.89pt x 289.08pt>
->>>>>>> Stashed changes
+<img/bub_dyn/sliding/maity_V0p25_forces.pdf, id=4636, 505.89pt x 289.08pt>
 File: img/bub_dyn/sliding/maity_V0p25_forces.pdf Graphic file (type pdf)
 <use img/bub_dyn/sliding/maity_V0p25_forces.pdf>
 Package pdftex.def Info: img/bub_dyn/sliding/maity_V0p25_forces.pdf  used on in
 put line 2213.
 (pdftex.def)             Requested size: 227.62209pt x 130.07155pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/sliding/Koss_P40_G1500_forces.pdf, id=4603, 505.89pt x 289.08pt>
-=======
-<img/bub_dyn/sliding/Koss_P40_G1500_forces.pdf, id=4582, 505.89pt x 289.08pt>
->>>>>>> Stashed changes
+<img/bub_dyn/sliding/Koss_P40_G1500_forces.pdf, id=4637, 505.89pt x 289.08pt>
 File: img/bub_dyn/sliding/Koss_P40_G1500_forces.pdf Graphic file (type pdf)
 <use img/bub_dyn/sliding/Koss_P40_G1500_forces.pdf>
 Package pdftex.def Info: img/bub_dyn/sliding/Koss_P40_G1500_forces.pdf  used on
@@ -4975,32 +4423,20 @@ DF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img/bub_dyn/sliding/Koss_P40_G1500_forces.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/bub_dyn/lift-off/lift_exp_hor_maity.PNG, id=4777, 821.31844pt x 213.79875p
-=======
-<img/bub_dyn/lift-off/lift_exp_hor_maity.PNG, id=4757, 821.31844pt x 213.79875p
->>>>>>> Stashed changes
+<img/bub_dyn/lift-off/lift_exp_hor_maity.PNG, id=4812, 821.31844pt x 213.79875p
 t>
 File: img/bub_dyn/lift-off/lift_exp_hor_maity.PNG Graphic file (type png)
 <use img/bub_dyn/lift-off/lift_exp_hor_maity.PNG>
 Package pdftex.def Info: img/bub_dyn/lift-off/lift_exp_hor_maity.PNG  used on i
 nput line 2244.
 (pdftex.def)             Requested size: 318.66953pt x 82.95055pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/lift-off/lift_exp_maity.PNG, id=4786, 844.65562pt x 432.86719pt>
-=======
-<img/bub_dyn/lift-off/lift_exp_maity.PNG, id=4766, 844.65562pt x 432.86719pt>
->>>>>>> Stashed changes
+<img/bub_dyn/lift-off/lift_exp_maity.PNG, id=4821, 844.65562pt x 432.86719pt>
 File: img/bub_dyn/lift-off/lift_exp_maity.PNG Graphic file (type png)
 <use img/bub_dyn/lift-off/lift_exp_maity.PNG>
 Package pdftex.def Info: img/bub_dyn/lift-off/lift_exp_maity.PNG  used on input
  line 2264.
 (pdftex.def)             Requested size: 318.66953pt x 163.31554pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/lift-off/lift_exp_situ.PNG, id=4789, 1155.56718pt x 338.76563pt>
-=======
-<img/bub_dyn/lift-off/lift_exp_situ.PNG, id=4769, 1155.56718pt x 338.76563pt>
->>>>>>> Stashed changes
+<img/bub_dyn/lift-off/lift_exp_situ.PNG, id=4824, 1155.56718pt x 338.76563pt>
 File: img/bub_dyn/lift-off/lift_exp_situ.PNG Graphic file (type png)
 <use img/bub_dyn/lift-off/lift_exp_situ.PNG>
 Package pdftex.def Info: img/bub_dyn/lift-off/lift_exp_situ.PNG  used on input 
@@ -5010,21 +4446,13 @@ line 2268.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< Updated upstream
-<img/bub_dyn/lift-off/exp_prodanovic.PNG, id=4797, 433.62pt x 270.25969pt>
-=======
-<img/bub_dyn/lift-off/exp_prodanovic.PNG, id=4777, 433.62pt x 270.25969pt>
->>>>>>> Stashed changes
+<img/bub_dyn/lift-off/exp_prodanovic.PNG, id=4832, 433.62pt x 270.25969pt>
 File: img/bub_dyn/lift-off/exp_prodanovic.PNG Graphic file (type png)
 <use img/bub_dyn/lift-off/exp_prodanovic.PNG>
 Package pdftex.def Info: img/bub_dyn/lift-off/exp_prodanovic.PNG  used on input
  line 2294.
 (pdftex.def)             Requested size: 227.62209pt x 141.86783pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/lift-off/exp_scheiff.PNG, id=4800, 563.85657pt x 666.23906pt>
-=======
-<img/bub_dyn/lift-off/exp_scheiff.PNG, id=4780, 563.85657pt x 666.23906pt>
->>>>>>> Stashed changes
+<img/bub_dyn/lift-off/exp_scheiff.PNG, id=4835, 563.85657pt x 666.23906pt>
 File: img/bub_dyn/lift-off/exp_scheiff.PNG Graphic file (type png)
 <use img/bub_dyn/lift-off/exp_scheiff.PNG>
 Package pdftex.def Info: img/bub_dyn/lift-off/exp_scheiff.PNG  used on input li
@@ -5050,21 +4478,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 2378--2378
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< Updated upstream
-<img/bub_dyn/lift-off/Dbar_Jaw.pdf, id=4849, 435.2674pt x 319.22775pt>
-=======
-<img/bub_dyn/lift-off/Dbar_Jaw.pdf, id=4828, 435.2674pt x 319.22775pt>
->>>>>>> Stashed changes
+<img/bub_dyn/lift-off/Dbar_Jaw.pdf, id=4883, 435.2674pt x 319.22775pt>
 File: img/bub_dyn/lift-off/Dbar_Jaw.pdf Graphic file (type pdf)
 <use img/bub_dyn/lift-off/Dbar_Jaw.pdf>
 Package pdftex.def Info: img/bub_dyn/lift-off/Dbar_Jaw.pdf  used on input line 
 2413.
 (pdftex.def)             Requested size: 227.62209pt x 166.93948pt.
-<<<<<<< Updated upstream
-<img//bub_dyn/lift-off/Dbar_JaL.pdf, id=4850, 435.2674pt x 319.22775pt>
-=======
-<img//bub_dyn/lift-off/Dbar_JaL.pdf, id=4829, 435.2674pt x 319.22775pt>
->>>>>>> Stashed changes
+<img//bub_dyn/lift-off/Dbar_JaL.pdf, id=4884, 435.2674pt x 319.22775pt>
 File: img//bub_dyn/lift-off/Dbar_JaL.pdf Graphic file (type pdf)
 <use img//bub_dyn/lift-off/Dbar_JaL.pdf>
 Package pdftex.def Info: img//bub_dyn/lift-off/Dbar_JaL.pdf  used on input line
@@ -5075,21 +4495,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 2413--2418
  [][][] 
  []
 
-<<<<<<< Updated upstream
-<img/bub_dyn/lift-off/Dbar_rhost.pdf, id=4851, 435.2674pt x 319.04958pt>
-=======
-<img/bub_dyn/lift-off/Dbar_rhost.pdf, id=4830, 435.2674pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/bub_dyn/lift-off/Dbar_rhost.pdf, id=4885, 435.2674pt x 319.04958pt>
 File: img/bub_dyn/lift-off/Dbar_rhost.pdf Graphic file (type pdf)
 <use img/bub_dyn/lift-off/Dbar_rhost.pdf>
 Package pdftex.def Info: img/bub_dyn/lift-off/Dbar_rhost.pdf  used on input lin
 e 2422.
 (pdftex.def)             Requested size: 227.62209pt x 166.8463pt.
-<<<<<<< Updated upstream
-<img//bub_dyn/lift-off/Dbar_Pr.pdf, id=4852, 435.2674pt x 319.04958pt>
-=======
-<img//bub_dyn/lift-off/Dbar_Pr.pdf, id=4831, 435.2674pt x 319.04958pt>
->>>>>>> Stashed changes
+<img//bub_dyn/lift-off/Dbar_Pr.pdf, id=4886, 435.2674pt x 319.04958pt>
 File: img//bub_dyn/lift-off/Dbar_Pr.pdf Graphic file (type pdf)
 <use img//bub_dyn/lift-off/Dbar_Pr.pdf>
 Package pdftex.def Info: img//bub_dyn/lift-off/Dbar_Pr.pdf  used on input line 
@@ -5100,21 +4512,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 2422--2427
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/bub_dyn/lift-off/Dbar_Retau.pdf, id=4853, 435.2674pt x 319.04958pt>
-=======
-<img/bub_dyn/lift-off/Dbar_Retau.pdf, id=4832, 435.2674pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/bub_dyn/lift-off/Dbar_Retau.pdf, id=4887, 435.2674pt x 319.04958pt>
 File: img/bub_dyn/lift-off/Dbar_Retau.pdf Graphic file (type pdf)
 <use img/bub_dyn/lift-off/Dbar_Retau.pdf>
 Package pdftex.def Info: img/bub_dyn/lift-off/Dbar_Retau.pdf  used on input lin
 e 2431.
 (pdftex.def)             Requested size: 227.62209pt x 166.8463pt.
-<<<<<<< Updated upstream
-<img//bub_dyn/lift-off/Dbar_Ca.pdf, id=4854, 435.2674pt x 319.04958pt>
-=======
-<img//bub_dyn/lift-off/Dbar_Ca.pdf, id=4833, 435.2674pt x 319.04958pt>
->>>>>>> Stashed changes
+<img//bub_dyn/lift-off/Dbar_Ca.pdf, id=4888, 435.2674pt x 319.04958pt>
 File: img//bub_dyn/lift-off/Dbar_Ca.pdf Graphic file (type pdf)
 <use img//bub_dyn/lift-off/Dbar_Ca.pdf>
 Package pdftex.def Info: img//bub_dyn/lift-off/Dbar_Ca.pdf  used on input line 
@@ -5132,11 +4536,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 /Dbar_JaL.pdf> <./img/bub_dyn/lift-off/Dbar_rhost.pdf> <./img//bub_dyn/lift-off
 /Dbar_Pr.pdf> <./img/bub_dyn/lift-off/Dbar_Retau.pdf> <./img//bub_dyn/lift-off/
 Dbar_Ca.pdf>]
-<<<<<<< Updated upstream
-<img/bub_dyn/lift-off/pred_bdf.pdf, id=4988, 435.77293pt x 338.17758pt>
-=======
-<img/bub_dyn/lift-off/pred_bdf.pdf, id=4968, 435.77293pt x 338.17758pt>
->>>>>>> Stashed changes
+<img/bub_dyn/lift-off/pred_bdf.pdf, id=5023, 435.77293pt x 338.17758pt>
 File: img/bub_dyn/lift-off/pred_bdf.pdf Graphic file (type pdf)
 <use img/bub_dyn/lift-off/pred_bdf.pdf>
 Package pdftex.def Info: img/bub_dyn/lift-off/pred_bdf.pdf  used on input line 
@@ -5147,21 +4547,13 @@ Package pdftex.def Info: img/bub_dyn/lift-off/pred_bdf.pdf  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [114]
-<<<<<<< Updated upstream
-<img/bub_dyn/lift-off/komma_correl.pdf, id=5005, 552.77574pt x 345.4506pt>
-=======
-<img/bub_dyn/lift-off/komma_correl.pdf, id=4985, 552.77574pt x 345.4506pt>
->>>>>>> Stashed changes
+<img/bub_dyn/lift-off/komma_correl.pdf, id=5040, 552.77574pt x 345.4506pt>
 File: img/bub_dyn/lift-off/komma_correl.pdf Graphic file (type pdf)
 <use img/bub_dyn/lift-off/komma_correl.pdf>
 Package pdftex.def Info: img/bub_dyn/lift-off/komma_correl.pdf  used on input l
 ine 2544.
 (pdftex.def)             Requested size: 341.43312pt x 213.38121pt.
-<<<<<<< Updated upstream
-<img/bub_dyn/lift-off/reduced_correl.pdf, id=5008, 552.77574pt x 345.4506pt>
-=======
-<img/bub_dyn/lift-off/reduced_correl.pdf, id=4988, 552.77574pt x 345.4506pt>
->>>>>>> Stashed changes
+<img/bub_dyn/lift-off/reduced_correl.pdf, id=5043, 552.77574pt x 345.4506pt>
 File: img/bub_dyn/lift-off/reduced_correl.pdf Graphic file (type pdf)
 <use img/bub_dyn/lift-off/reduced_correl.pdf>
 Package pdftex.def Info: img/bub_dyn/lift-off/reduced_correl.pdf  used on input
@@ -5202,21 +4594,13 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 
 ]
-<<<<<<< Updated upstream
-<img/single_phase/comp_dittus.pdf, id=5123, 436.25145pt x 324.41621pt>
-=======
-<img/single_phase/comp_dittus.pdf, id=5102, 436.25145pt x 324.41621pt>
->>>>>>> Stashed changes
+<img/single_phase/comp_dittus.pdf, id=5158, 436.25145pt x 324.41621pt>
 File: img/single_phase/comp_dittus.pdf Graphic file (type pdf)
 <use img/single_phase/comp_dittus.pdf>
 Package pdftex.def Info: img/single_phase/comp_dittus.pdf  used on input line 9
 1.
 (pdftex.def)             Requested size: 204.85847pt x 152.34198pt.
-<<<<<<< Updated upstream
-<img/single_phase/comp_gniel.pdf, id=5124, 436.25145pt x 324.41621pt>
-=======
-<img/single_phase/comp_gniel.pdf, id=5103, 436.25145pt x 324.41621pt>
->>>>>>> Stashed changes
+<img/single_phase/comp_gniel.pdf, id=5159, 436.25145pt x 324.41621pt>
 File: img/single_phase/comp_gniel.pdf Graphic file (type pdf)
 <use img/single_phase/comp_gniel.pdf>
 Package pdftex.def Info: img/single_phase/comp_gniel.pdf  used on input line 95
@@ -5227,21 +4611,13 @@ Package pdftex.def Info: img/single_phase/comp_gniel.pdf  used on input line 95
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [119]
-<<<<<<< Updated upstream
-<img/single_phase/comp_ncfd.pdf, id=5133, 436.25145pt x 324.41621pt>
-=======
-<img/single_phase/comp_ncfd.pdf, id=5113, 436.25145pt x 324.41621pt>
->>>>>>> Stashed changes
+<img/single_phase/comp_ncfd.pdf, id=5168, 436.25145pt x 324.41621pt>
 File: img/single_phase/comp_ncfd.pdf Graphic file (type pdf)
 <use img/single_phase/comp_ncfd.pdf>
 Package pdftex.def Info: img/single_phase/comp_ncfd.pdf  used on input line 140
 .
 (pdftex.def)             Requested size: 204.85847pt x 152.34198pt.
-<<<<<<< Updated upstream
-<img/single_phase/comp_gniel_corr.pdf, id=5134, 436.25145pt x 324.41621pt>
-=======
-<img/single_phase/comp_gniel_corr.pdf, id=5114, 436.25145pt x 324.41621pt>
->>>>>>> Stashed changes
+<img/single_phase/comp_gniel_corr.pdf, id=5169, 436.25145pt x 324.41621pt>
 File: img/single_phase/comp_gniel_corr.pdf Graphic file (type pdf)
 <use img/single_phase/comp_gniel_corr.pdf>
 Package pdftex.def Info: img/single_phase/comp_gniel_corr.pdf  used on input li
@@ -5254,21 +4630,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [120 <./img/single_phase/comp_dittus.pdf> <./img/single_phase/comp_gniel.pdf>]
 [121 <./img/single_phase/comp_ncfd.pdf> <./img/single_phase/comp_gniel_corr.pdf
 >]
-<<<<<<< Updated upstream
-<img/NSD/nsd_press_koss.png, id=5259, 1209.51875pt x 296.60812pt>
-=======
-<img/NSD/nsd_press_koss.png, id=5238, 1209.51875pt x 296.60812pt>
->>>>>>> Stashed changes
+<img/NSD/nsd_press_koss.png, id=5293, 1209.51875pt x 296.60812pt>
 File: img/NSD/nsd_press_koss.png Graphic file (type png)
 <use img/NSD/nsd_press_koss.png>
 Package pdftex.def Info: img/NSD/nsd_press_koss.png  used on input line 234.
 (pdftex.def)             Requested size: 318.66953pt x 78.14366pt.
  [122 <./img/NSD/nsd_press_koss.png>]
-<<<<<<< Updated upstream
-<img/NSD/wettability.pdf, id=5276, 488.71083pt x 195.75735pt>
-=======
-<img/NSD/wettability.pdf, id=5255, 488.71083pt x 195.75735pt>
->>>>>>> Stashed changes
+<img/NSD/wettability.pdf, id=5310, 488.71083pt x 195.75735pt>
 File: img/NSD/wettability.pdf Graphic file (type pdf)
 <use img/NSD/wettability.pdf>
 Package pdftex.def Info: img/NSD/wettability.pdf  used on input line 263.
@@ -5283,38 +4651,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 347--347
 []|\T1/lmr/m/n/7 Borishanskii
  []
 
-<<<<<<< Updated upstream
-<img/NSD/nsit_LC.pdf, id=5312, 419.82607pt x 321.17284pt>
-=======
-<img/NSD/nsit_LC.pdf, id=5291, 419.82607pt x 321.17284pt>
->>>>>>> Stashed changes
+<img/NSD/nsit_LC.pdf, id=5346, 419.82607pt x 321.17284pt>
 File: img/NSD/nsit_LC.pdf Graphic file (type pdf)
 <use img/NSD/nsit_LC.pdf>
 Package pdftex.def Info: img/NSD/nsit_LC.pdf  used on input line 367.
 (pdftex.def)             Requested size: 204.85847pt x 156.72426pt.
-<<<<<<< Updated upstream
-<img/NSD/nsit_HI.pdf, id=5313, 419.82607pt x 321.17284pt>
-=======
-<img/NSD/nsit_HI.pdf, id=5292, 419.82607pt x 321.17284pt>
->>>>>>> Stashed changes
+<img/NSD/nsit_HI.pdf, id=5347, 419.82607pt x 321.17284pt>
 File: img/NSD/nsit_HI.pdf Graphic file (type pdf)
 <use img/NSD/nsit_HI.pdf>
 Package pdftex.def Info: img/NSD/nsit_HI.pdf  used on input line 371.
 (pdftex.def)             Requested size: 204.85847pt x 156.72426pt.
-<<<<<<< Updated upstream
-<img/NSD/nsit_Zhou.pdf, id=5314, 419.82607pt x 321.17284pt>
-=======
-<img/NSD/nsit_Zhou.pdf, id=5293, 419.82607pt x 321.17284pt>
->>>>>>> Stashed changes
+<img/NSD/nsit_Zhou.pdf, id=5348, 419.82607pt x 321.17284pt>
 File: img/NSD/nsit_Zhou.pdf Graphic file (type pdf)
 <use img/NSD/nsit_Zhou.pdf>
 Package pdftex.def Info: img/NSD/nsit_Zhou.pdf  used on input line 376.
 (pdftex.def)             Requested size: 204.85847pt x 156.72426pt.
-<<<<<<< Updated upstream
-<img/NSD/nsit_Li.pdf, id=5315, 419.82607pt x 321.17284pt>
-=======
-<img/NSD/nsit_Li.pdf, id=5294, 419.82607pt x 321.17284pt>
->>>>>>> Stashed changes
+<img/NSD/nsit_Li.pdf, id=5349, 419.82607pt x 321.17284pt>
 File: img/NSD/nsit_Li.pdf Graphic file (type pdf)
 <use img/NSD/nsit_Li.pdf>
 Package pdftex.def Info: img/NSD/nsit_Li.pdf  used on input line 380.
@@ -5340,20 +4692,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 616--616
  []
 
 [128]
-<<<<<<< Updated upstream
-<img/tw/Jaw_tw.pdf, id=5644, 416.89314pt x 315.27179pt>
-=======
-<img/tw/Jaw_tw.pdf, id=5623, 416.89314pt x 315.27179pt>
->>>>>>> Stashed changes
+<img/tw/Jaw_tw.pdf, id=5678, 416.89314pt x 315.27179pt>
 File: img/tw/Jaw_tw.pdf Graphic file (type pdf)
 <use img/tw/Jaw_tw.pdf>
 Package pdftex.def Info: img/tw/Jaw_tw.pdf  used on input line 636.
 (pdftex.def)             Requested size: 273.14928pt x 206.57428pt.
-<<<<<<< Updated upstream
-<img/tw/Jawred_twf.pdf, id=5647, 415.9069pt x 315.27179pt>
-=======
-<img/tw/Jawred_twf.pdf, id=5626, 415.9069pt x 315.27179pt>
->>>>>>> Stashed changes
+<img/tw/Jawred_twf.pdf, id=5681, 415.9069pt x 315.27179pt>
 File: img/tw/Jawred_twf.pdf Graphic file (type pdf)
 <use img/tw/Jawred_twf.pdf>
 Package pdftex.def Info: img/tw/Jawred_twf.pdf  used on input line 657.
@@ -5362,20 +4706,12 @@ Package pdftex.def Info: img/tw/Jawred_twf.pdf  used on input line 657.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< Updated upstream
-<img/tw/tw_Basu.pdf, id=5653, 435.77293pt x 319.55508pt>
-=======
-<img/tw/tw_Basu.pdf, id=5632, 435.77293pt x 319.55508pt>
->>>>>>> Stashed changes
+<img/tw/tw_Basu.pdf, id=5687, 435.77293pt x 319.55508pt>
 File: img/tw/tw_Basu.pdf Graphic file (type pdf)
 <use img/tw/tw_Basu.pdf>
 Package pdftex.def Info: img/tw/tw_Basu.pdf  used on input line 682.
 (pdftex.def)             Requested size: 227.62209pt x 166.91563pt.
-<<<<<<< Updated upstream
-<img/tw/tw_Komma.pdf, id=5654, 435.77293pt x 319.55508pt>
-=======
-<img/tw/tw_Komma.pdf, id=5633, 435.77293pt x 319.55508pt>
->>>>>>> Stashed changes
+<img/tw/tw_Komma.pdf, id=5688, 435.77293pt x 319.55508pt>
 File: img/tw/tw_Komma.pdf Graphic file (type pdf)
 <use img/tw/tw_Komma.pdf>
 Package pdftex.def Info: img/tw/tw_Komma.pdf  used on input line 685.
@@ -5386,11 +4722,7 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 682--686
  []
 
 [129 <./img/tw/Jaw_tw.pdf>]
-<<<<<<< Updated upstream
-<img/tw/twYeoh_RcHan.pdf, id=5675, 435.77293pt x 319.55508pt>
-=======
-<img/tw/twYeoh_RcHan.pdf, id=5654, 435.77293pt x 319.55508pt>
->>>>>>> Stashed changes
+<img/tw/twYeoh_RcHan.pdf, id=5709, 435.77293pt x 319.55508pt>
 File: img/tw/twYeoh_RcHan.pdf Graphic file (type pdf)
 <use img/tw/twYeoh_RcHan.pdf>
 Package pdftex.def Info: img/tw/twYeoh_RcHan.pdf  used on input line 696.
@@ -5408,11 +4740,7 @@ dfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img/tw/tw_Komma.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/site_interaction/site_f_kossolapov.PNG, id=5761, 1586.17593pt x 675.27281p
-=======
-<img/site_interaction/site_f_kossolapov.PNG, id=5740, 1586.17593pt x 675.27281p
->>>>>>> Stashed changes
+<img/site_interaction/site_f_kossolapov.PNG, id=5796, 1586.17593pt x 675.27281p
 t>
 File: img/site_interaction/site_f_kossolapov.PNG Graphic file (type png)
 <use img/site_interaction/site_f_kossolapov.PNG>
@@ -5424,21 +4752,13 @@ put line 732.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [131 <./img/tw/twYeoh_RcHan.pdf>]
-<<<<<<< Updated upstream
-<img/site_interaction/sites_kenning_red.PNG, id=5794, 467.7475pt x 499.8675pt>
-=======
-<img/site_interaction/sites_kenning_red.PNG, id=5774, 467.7475pt x 499.8675pt>
->>>>>>> Stashed changes
+<img/site_interaction/sites_kenning_red.PNG, id=5829, 467.7475pt x 499.8675pt>
 File: img/site_interaction/sites_kenning_red.PNG Graphic file (type png)
 <use img/site_interaction/sites_kenning_red.PNG>
 Package pdftex.def Info: img/site_interaction/sites_kenning_red.PNG  used on in
 put line 763.
 (pdftex.def)             Requested size: 227.62209pt x 243.25157pt.
-<<<<<<< Updated upstream
-<img/site_interaction/sites_zhou.PNG, id=5797, 1254.93843pt x 666.23906pt>
-=======
-<img/site_interaction/sites_zhou.PNG, id=5777, 1254.93843pt x 666.23906pt>
->>>>>>> Stashed changes
+<img/site_interaction/sites_zhou.PNG, id=5832, 1254.93843pt x 666.23906pt>
 File: img/site_interaction/sites_zhou.PNG Graphic file (type png)
 <use img/site_interaction/sites_zhou.PNG>
 Package pdftex.def Info: img/site_interaction/sites_zhou.PNG  used on input lin
@@ -5454,11 +4774,7 @@ LaTeX Font Info:    Trying to load font information for U+fplmbb on input line
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
 [132 <./img/site_interaction/site_f_kossolapov.PNG>]
-<<<<<<< Updated upstream
-<img/site_interaction/static_suppression.pdf, id=5822, 396.72818pt x 131.84258p
-=======
-<img/site_interaction/static_suppression.pdf, id=5802, 396.72818pt x 131.84258p
->>>>>>> Stashed changes
+<img/site_interaction/static_suppression.pdf, id=5857, 396.72818pt x 131.84258p
 t>
 File: img/site_interaction/static_suppression.pdf Graphic file (type pdf)
 <use img/site_interaction/static_suppression.pdf>
@@ -5467,21 +4783,13 @@ nput line 842.
 (pdftex.def)             Requested size: 409.71696pt x 136.16147pt.
  [133 <./img/site_interaction/sites_kenning_red.PNG> <./img/site_interaction/si
 tes_zhou.PNG>]
-<<<<<<< Updated upstream
-<img/site_interaction/CSR_HI.pdf, id=5835, 422.63074pt x 319.04958pt>
-=======
-<img/site_interaction/CSR_HI.pdf, id=5814, 422.63074pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/site_interaction/CSR_HI.pdf, id=5869, 422.63074pt x 319.04958pt>
 File: img/site_interaction/CSR_HI.pdf Graphic file (type pdf)
 <use img/site_interaction/CSR_HI.pdf>
 Package pdftex.def Info: img/site_interaction/CSR_HI.pdf  used on input line 88
 8.
 (pdftex.def)             Requested size: 227.62209pt x 171.8363pt.
-<<<<<<< Updated upstream
-<img/site_interaction/CSR_Li.pdf, id=5838, 422.63074pt x 319.04958pt>
-=======
-<img/site_interaction/CSR_Li.pdf, id=5817, 422.63074pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/site_interaction/CSR_Li.pdf, id=5872, 422.63074pt x 319.04958pt>
 File: img/site_interaction/CSR_Li.pdf Graphic file (type pdf)
 <use img/site_interaction/CSR_Li.pdf>
 Package pdftex.def Info: img/site_interaction/CSR_Li.pdf  used on input line 89
@@ -5492,11 +4800,7 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 888--892
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/site_interaction/static_coal.pdf, id=5842, 236.2165pt x 143.77213pt>
-=======
-<img/site_interaction/static_coal.pdf, id=5821, 236.2165pt x 143.77213pt>
->>>>>>> Stashed changes
+<img/site_interaction/static_coal.pdf, id=5876, 236.2165pt x 143.77213pt>
 File: img/site_interaction/static_coal.pdf Graphic file (type pdf)
 <use img/site_interaction/static_coal.pdf>
 Package pdftex.def Info: img/site_interaction/static_coal.pdf  used on input li
@@ -5506,11 +4810,7 @@ ne 908.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [134 <./img/site_interaction/static_suppression.pdf>]
-<<<<<<< Updated upstream
-<img/site_interaction/P_coal_st.pdf, id=5874, 415.04266pt x 319.04958pt>
-=======
-<img/site_interaction/P_coal_st.pdf, id=5853, 415.04266pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/site_interaction/P_coal_st.pdf, id=5908, 415.04266pt x 319.04958pt>
 File: img/site_interaction/P_coal_st.pdf Graphic file (type pdf)
 <use img/site_interaction/P_coal_st.pdf>
 Package pdftex.def Info: img/site_interaction/P_coal_st.pdf  used on input line
@@ -5526,21 +4826,13 @@ pdfTeX warning: pdflatex (file ./img/site_interaction/CSR_Li.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
 > <./img/site_interaction/static_coal.pdf>] [136 <./img/site_interaction/P_coal
 _st.pdf>]
-<<<<<<< Updated upstream
-<img/lsl/Koss_P20_G500_lsl.pdf, id=5959, 462.52798pt x 346.89601pt>
-=======
-<img/lsl/Koss_P20_G500_lsl.pdf, id=5938, 462.52798pt x 346.89601pt>
->>>>>>> Stashed changes
+<img/lsl/Koss_P20_G500_lsl.pdf, id=5994, 462.52798pt x 346.89601pt>
 File: img/lsl/Koss_P20_G500_lsl.pdf Graphic file (type pdf)
 <use img/lsl/Koss_P20_G500_lsl.pdf>
 Package pdftex.def Info: img/lsl/Koss_P20_G500_lsl.pdf  used on input line 996.
 
 (pdftex.def)             Requested size: 227.62209pt x 170.71628pt.
-<<<<<<< Updated upstream
-<img/lsl/Koss_P40_G500_lsl.pdf, id=5960, 462.52798pt x 346.89601pt>
-=======
-<img/lsl/Koss_P40_G500_lsl.pdf, id=5939, 462.52798pt x 346.89601pt>
->>>>>>> Stashed changes
+<img/lsl/Koss_P40_G500_lsl.pdf, id=5995, 462.52798pt x 346.89601pt>
 File: img/lsl/Koss_P40_G500_lsl.pdf Graphic file (type pdf)
 <use img/lsl/Koss_P40_G500_lsl.pdf>
 Package pdftex.def Info: img/lsl/Koss_P40_G500_lsl.pdf  used on input line 999.
@@ -5551,21 +4843,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 996--1000
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/lsl/Koss_P20_G1000_lsl.pdf, id=5961, 462.52798pt x 346.89601pt>
-=======
-<img/lsl/Koss_P20_G1000_lsl.pdf, id=5940, 462.52798pt x 346.89601pt>
->>>>>>> Stashed changes
+<img/lsl/Koss_P20_G1000_lsl.pdf, id=5996, 462.52798pt x 346.89601pt>
 File: img/lsl/Koss_P20_G1000_lsl.pdf Graphic file (type pdf)
 <use img/lsl/Koss_P20_G1000_lsl.pdf>
 Package pdftex.def Info: img/lsl/Koss_P20_G1000_lsl.pdf  used on input line 100
 3.
 (pdftex.def)             Requested size: 227.62209pt x 170.71628pt.
-<<<<<<< Updated upstream
-<img/lsl/Koss_P40_G1000_lsl.pdf, id=5962, 462.52798pt x 346.89601pt>
-=======
-<img/lsl/Koss_P40_G1000_lsl.pdf, id=5941, 462.52798pt x 346.89601pt>
->>>>>>> Stashed changes
+<img/lsl/Koss_P40_G1000_lsl.pdf, id=5997, 462.52798pt x 346.89601pt>
 File: img/lsl/Koss_P40_G1000_lsl.pdf Graphic file (type pdf)
 <use img/lsl/Koss_P40_G1000_lsl.pdf>
 Package pdftex.def Info: img/lsl/Koss_P40_G1000_lsl.pdf  used on input line 100
@@ -5576,21 +4860,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 1003--1007
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/lsl/Koss_P20_G1500_lsl.pdf, id=5963, 462.52798pt x 346.89601pt>
-=======
-<img/lsl/Koss_P20_G1500_lsl.pdf, id=5942, 462.52798pt x 346.89601pt>
->>>>>>> Stashed changes
+<img/lsl/Koss_P20_G1500_lsl.pdf, id=5998, 462.52798pt x 346.89601pt>
 File: img/lsl/Koss_P20_G1500_lsl.pdf Graphic file (type pdf)
 <use img/lsl/Koss_P20_G1500_lsl.pdf>
 Package pdftex.def Info: img/lsl/Koss_P20_G1500_lsl.pdf  used on input line 101
 0.
 (pdftex.def)             Requested size: 227.62209pt x 170.71628pt.
-<<<<<<< Updated upstream
-<img/lsl/Koss_P40_G1500_lsl.pdf, id=5964, 462.52798pt x 346.89601pt>
-=======
-<img/lsl/Koss_P40_G1500_lsl.pdf, id=5943, 462.52798pt x 346.89601pt>
->>>>>>> Stashed changes
+<img/lsl/Koss_P40_G1500_lsl.pdf, id=5999, 462.52798pt x 346.89601pt>
 File: img/lsl/Koss_P40_G1500_lsl.pdf Graphic file (type pdf)
 <use img/lsl/Koss_P40_G1500_lsl.pdf>
 Package pdftex.def Info: img/lsl/Koss_P40_G1500_lsl.pdf  used on input line 101
@@ -5604,31 +4880,19 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 1010--1014
 [137 <./img/lsl/Koss_P20_G500_lsl.pdf> <./img/lsl/Koss_P40_G500_lsl.pdf> <./img
 /lsl/Koss_P20_G1000_lsl.pdf> <./img/lsl/Koss_P40_G1000_lsl.pdf> <./img/lsl/Koss
 _P20_G1500_lsl.pdf> <./img/lsl/Koss_P40_G1500_lsl.pdf>] [138]
-<<<<<<< Updated upstream
-<img/slide_area/slide_area1.pdf, id=6093, 72.02007pt x 68.68762pt>
-=======
-<img/slide_area/slide_area1.pdf, id=6073, 72.02007pt x 68.68762pt>
->>>>>>> Stashed changes
+<img/slide_area/slide_area1.pdf, id=6128, 72.02007pt x 68.68762pt>
 File: img/slide_area/slide_area1.pdf Graphic file (type pdf)
 <use img/slide_area/slide_area1.pdf>
 Package pdftex.def Info: img/slide_area/slide_area1.pdf  used on input line 105
 9.
 (pdftex.def)             Requested size: 68.28384pt x 65.12708pt.
-<<<<<<< Updated upstream
-<img/slide_area/slide_area2.pdf, id=6094, 72.02007pt x 85.75839pt>
-=======
-<img/slide_area/slide_area2.pdf, id=6074, 72.02007pt x 85.75839pt>
->>>>>>> Stashed changes
+<img/slide_area/slide_area2.pdf, id=6129, 72.02007pt x 85.75839pt>
 File: img/slide_area/slide_area2.pdf Graphic file (type pdf)
 <use img/slide_area/slide_area2.pdf>
 Package pdftex.def Info: img/slide_area/slide_area2.pdf  used on input line 106
 3.
 (pdftex.def)             Requested size: 68.28384pt x 81.31297pt.
-<<<<<<< Updated upstream
-<img/slide_area/slide_area3.pdf, id=6095, 72.02007pt x 165.42503pt>
-=======
-<img/slide_area/slide_area3.pdf, id=6075, 72.02007pt x 165.42503pt>
->>>>>>> Stashed changes
+<img/slide_area/slide_area3.pdf, id=6130, 72.02007pt x 165.42503pt>
 File: img/slide_area/slide_area3.pdf Graphic file (type pdf)
 <use img/slide_area/slide_area3.pdf>
 Package pdftex.def Info: img/slide_area/slide_area3.pdf  used on input line 106
@@ -5638,11 +4902,7 @@ Package pdftex.def Info: img/slide_area/slide_area3.pdf  used on input line 106
 
  <./img/slide_area/slide_area1.pdf> <./img/slide_area/slide_area2.pdf> <./img/s
 lide_area/slide_area3.pdf>]
-<<<<<<< Updated upstream
-<img/HFP/HFP_sketch.pdf, id=6139, 401.30629pt x 113.1979pt>
-=======
-<img/HFP/HFP_sketch.pdf, id=6118, 409.84218pt x 106.82912pt>
->>>>>>> Stashed changes
+<img/HFP/HFP_sketch.pdf, id=6173, 401.30629pt x 113.1979pt>
 File: img/HFP/HFP_sketch.pdf Graphic file (type pdf)
 <use img/HFP/HFP_sketch.pdf>
 Package pdftex.def Info: img/HFP/HFP_sketch.pdf  used on input line 1119.
@@ -5683,22 +4943,14 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 
 ]
-<<<<<<< Updated upstream
-<img/HFP/fullcomp_Koss/sites_G2000_nocorr.pdf, id=6251, 422.24495pt x 322.82736
-=======
-<img/HFP/fullcomp_Koss/sites_G2000_nocorr.pdf, id=6228, 422.24495pt x 322.82736
->>>>>>> Stashed changes
+<img/HFP/fullcomp_Koss/sites_G2000_nocorr.pdf, id=6285, 422.24495pt x 322.82736
 pt>
 File: img/HFP/fullcomp_Koss/sites_G2000_nocorr.pdf Graphic file (type pdf)
 <use img/HFP/fullcomp_Koss/sites_G2000_nocorr.pdf>
 Package pdftex.def Info: img/HFP/fullcomp_Koss/sites_G2000_nocorr.pdf  used on 
 input line 64.
 (pdftex.def)             Requested size: 227.62209pt x 174.02861pt.
-<<<<<<< Updated upstream
-<img/HFP/fullcomp_Koss/sites_G2000.pdf, id=6252, 422.24495pt x 322.82736pt>
-=======
-<img/HFP/fullcomp_Koss/sites_G2000.pdf, id=6229, 422.24495pt x 322.82736pt>
->>>>>>> Stashed changes
+<img/HFP/fullcomp_Koss/sites_G2000.pdf, id=6286, 422.24495pt x 322.82736pt>
 File: img/HFP/fullcomp_Koss/sites_G2000.pdf Graphic file (type pdf)
 <use img/HFP/fullcomp_Koss/sites_G2000.pdf>
 Package pdftex.def Info: img/HFP/fullcomp_Koss/sites_G2000.pdf  used on input l
@@ -5715,21 +4967,13 @@ sites_G2000.pdf
 pdfTeX warning: pdflatex (file ./img/HFP/fullcomp_Koss/sites_G2000.pdf): PDF in
 clusion: multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/HFP/fullcomp_Koss/f_G2000.pdf, id=6292, 423.45421pt x 325.71529pt>
-=======
-<img/HFP/fullcomp_Koss/f_G2000.pdf, id=6269, 423.45421pt x 325.71529pt>
->>>>>>> Stashed changes
+<img/HFP/fullcomp_Koss/f_G2000.pdf, id=6327, 423.45421pt x 325.71529pt>
 File: img/HFP/fullcomp_Koss/f_G2000.pdf Graphic file (type pdf)
 <use img/HFP/fullcomp_Koss/f_G2000.pdf>
 Package pdftex.def Info: img/HFP/fullcomp_Koss/f_G2000.pdf  used on input line 
 93.
 (pdftex.def)             Requested size: 207.15839pt x 159.33823pt.
-<<<<<<< Updated upstream
-<img/HFP/fullcomp_Koss/times_G2000.pdf, id=6293, 548.04008pt x 328.38293pt>
-=======
-<img/HFP/fullcomp_Koss/times_G2000.pdf, id=6270, 548.04008pt x 328.38293pt>
->>>>>>> Stashed changes
+<img/HFP/fullcomp_Koss/times_G2000.pdf, id=6328, 548.04008pt x 328.38293pt>
 File: img/HFP/fullcomp_Koss/times_G2000.pdf Graphic file (type pdf)
 <use img/HFP/fullcomp_Koss/times_G2000.pdf>
 Package pdftex.def Info: img/HFP/fullcomp_Koss/times_G2000.pdf  used on input l
@@ -5740,21 +4984,13 @@ Overfull \hbox (31.17207pt too wide) in paragraph at lines 93--97
 [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/HFP/fullcomp_Koss/Aq1b_G2000.pdf, id=6296, 436.55605pt x 328.38293pt>
-=======
-<img/HFP/fullcomp_Koss/Aq1b_G2000.pdf, id=6273, 436.55605pt x 328.38293pt>
->>>>>>> Stashed changes
+<img/HFP/fullcomp_Koss/Aq1b_G2000.pdf, id=6331, 436.55605pt x 328.38293pt>
 File: img/HFP/fullcomp_Koss/Aq1b_G2000.pdf Graphic file (type pdf)
 <use img/HFP/fullcomp_Koss/Aq1b_G2000.pdf>
 Package pdftex.def Info: img/HFP/fullcomp_Koss/Aq1b_G2000.pdf  used on input li
 ne 124.
 (pdftex.def)             Requested size: 227.62209pt x 171.22108pt.
-<<<<<<< Updated upstream
-<img/HFP/fullcomp_Koss/Abub_tot_G2000.pdf, id=6297, 419.97276pt x 322.82736pt>
-=======
-<img/HFP/fullcomp_Koss/Abub_tot_G2000.pdf, id=6274, 419.97276pt x 322.82736pt>
->>>>>>> Stashed changes
+<img/HFP/fullcomp_Koss/Abub_tot_G2000.pdf, id=6332, 419.97276pt x 322.82736pt>
 File: img/HFP/fullcomp_Koss/Abub_tot_G2000.pdf Graphic file (type pdf)
 <use img/HFP/fullcomp_Koss/Abub_tot_G2000.pdf>
 Package pdftex.def Info: img/HFP/fullcomp_Koss/Abub_tot_G2000.pdf  used on inpu
@@ -5768,11 +5004,7 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 124--128
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< Updated upstream
-<img/HFP/fullcomp_Koss/length_G2000.pdf, id=6299, 534.21745pt x 328.38293pt>
-=======
-<img/HFP/fullcomp_Koss/length_G2000.pdf, id=6276, 534.21745pt x 328.38293pt>
->>>>>>> Stashed changes
+<img/HFP/fullcomp_Koss/length_G2000.pdf, id=6334, 534.21745pt x 328.38293pt>
 File: img/HFP/fullcomp_Koss/length_G2000.pdf Graphic file (type pdf)
 <use img/HFP/fullcomp_Koss/length_G2000.pdf>
 Package pdftex.def Info: img/HFP/fullcomp_Koss/length_G2000.pdf  used on input 
@@ -5796,21 +5028,13 @@ pdfTeX warning: pdflatex (file ./img/HFP/fullcomp_Koss/Abub_tot_G2000.pdf): PDF
 pdfTeX warning: pdflatex (file ./img/HFP/fullcomp_Koss/length_G2000.pdf): PDF i
 nclusion: multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/HFP/fullcomp_Koss/hfp_G2000.pdf, id=6395, 419.97276pt x 322.82736pt>
-=======
-<img/HFP/fullcomp_Koss/hfp_G2000.pdf, id=6373, 419.97276pt x 322.82736pt>
->>>>>>> Stashed changes
+<img/HFP/fullcomp_Koss/hfp_G2000.pdf, id=6430, 419.97276pt x 322.82736pt>
 File: img/HFP/fullcomp_Koss/hfp_G2000.pdf Graphic file (type pdf)
 <use img/HFP/fullcomp_Koss/hfp_G2000.pdf>
 Package pdftex.def Info: img/HFP/fullcomp_Koss/hfp_G2000.pdf  used on input lin
 e 157.
 (pdftex.def)             Requested size: 227.62209pt x 174.96947pt.
-<<<<<<< Updated upstream
-<img/HFP/fullcomp_Koss/boil_curve_G2000.pdf, id=6396, 420.9968pt x 337.08487pt>
-=======
-<img/HFP/fullcomp_Koss/boil_curve_G2000.pdf, id=6374, 420.9968pt x 337.08487pt>
->>>>>>> Stashed changes
+<img/HFP/fullcomp_Koss/boil_curve_G2000.pdf, id=6431, 420.9968pt x 337.08487pt>
 
 File: img/HFP/fullcomp_Koss/boil_curve_G2000.pdf Graphic file (type pdf)
 <use img/HFP/fullcomp_Koss/boil_curve_G2000.pdf>
@@ -5830,20 +5054,12 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 157--161
 pdfTeX warning: pdflatex (file ./img/HFP/fullcomp_Koss/boil_curve_G2000.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/HFP/koss/koss_p19_nm.pdf, id=6451, 420.9968pt x 337.08487pt>
-=======
-<img/HFP/koss/koss_p19_nm.pdf, id=6428, 420.9968pt x 337.08487pt>
->>>>>>> Stashed changes
+<img/HFP/koss/koss_p19_nm.pdf, id=6485, 420.9968pt x 337.08487pt>
 File: img/HFP/koss/koss_p19_nm.pdf Graphic file (type pdf)
 <use img/HFP/koss/koss_p19_nm.pdf>
 Package pdftex.def Info: img/HFP/koss/koss_p19_nm.pdf  used on input line 233.
 (pdftex.def)             Requested size: 227.62209pt x 182.25458pt.
-<<<<<<< Updated upstream
-<img/HFP/koss/koss_p75_nm.pdf, id=6452, 420.9968pt x 337.08487pt>
-=======
-<img/HFP/koss/koss_p75_nm.pdf, id=6429, 420.9968pt x 337.08487pt>
->>>>>>> Stashed changes
+<img/HFP/koss/koss_p75_nm.pdf, id=6486, 420.9968pt x 337.08487pt>
 File: img/HFP/koss/koss_p75_nm.pdf Graphic file (type pdf)
 <use img/HFP/koss/koss_p75_nm.pdf>
 Package pdftex.def Info: img/HFP/koss/koss_p75_nm.pdf  used on input line 236.
@@ -5853,21 +5069,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 233--237
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/HFP/koss/koss_p19_komma.pdf, id=6453, 422.24495pt x 322.82736pt>
-=======
-<img/HFP/koss/koss_p19_komma.pdf, id=6430, 422.24495pt x 322.82736pt>
->>>>>>> Stashed changes
+<img/HFP/koss/koss_p19_komma.pdf, id=6487, 422.24495pt x 322.82736pt>
 File: img/HFP/koss/koss_p19_komma.pdf Graphic file (type pdf)
 <use img/HFP/koss/koss_p19_komma.pdf>
 Package pdftex.def Info: img/HFP/koss/koss_p19_komma.pdf  used on input line 24
 0.
 (pdftex.def)             Requested size: 227.62209pt x 174.02861pt.
-<<<<<<< Updated upstream
-<img/HFP/koss/koss_p75_komma.pdf, id=6454, 427.84494pt x 325.25409pt>
-=======
-<img/HFP/koss/koss_p75_komma.pdf, id=6431, 427.84494pt x 325.25409pt>
->>>>>>> Stashed changes
+<img/HFP/koss/koss_p75_komma.pdf, id=6488, 427.84494pt x 325.25409pt>
 File: img/HFP/koss/koss_p75_komma.pdf Graphic file (type pdf)
 <use img/HFP/koss/koss_p75_komma.pdf>
 Package pdftex.def Info: img/HFP/koss/koss_p75_komma.pdf  used on input line 24
@@ -5878,20 +5086,12 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 240--244
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/HFP/koss/koss_p19_kp.pdf, id=6455, 422.24495pt x 322.82736pt>
-=======
-<img/HFP/koss/koss_p19_kp.pdf, id=6432, 422.24495pt x 322.82736pt>
->>>>>>> Stashed changes
+<img/HFP/koss/koss_p19_kp.pdf, id=6489, 422.24495pt x 322.82736pt>
 File: img/HFP/koss/koss_p19_kp.pdf Graphic file (type pdf)
 <use img/HFP/koss/koss_p19_kp.pdf>
 Package pdftex.def Info: img/HFP/koss/koss_p19_kp.pdf  used on input line 247.
 (pdftex.def)             Requested size: 227.62209pt x 174.02861pt.
-<<<<<<< Updated upstream
-<img/HFP/koss/koss_p75_kp.pdf, id=6456, 408.8117pt x 337.08487pt>
-=======
-<img/HFP/koss/koss_p75_kp.pdf, id=6433, 408.8117pt x 337.08487pt>
->>>>>>> Stashed changes
+<img/HFP/koss/koss_p75_kp.pdf, id=6490, 408.8117pt x 337.08487pt>
 File: img/HFP/koss/koss_p75_kp.pdf Graphic file (type pdf)
 <use img/HFP/koss/koss_p75_kp.pdf>
 Package pdftex.def Info: img/HFP/koss/koss_p75_kp.pdf  used on input line 250.
@@ -5927,21 +5127,13 @@ multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img/HFP/koss/koss_p75_kp.pdf): PDF inclusion: 
 multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/HFP/koss/KP_Kossolapov.pdf, id=6568, 414.75082pt x 326.21094pt>
-=======
-<img/HFP/koss/KP_Kossolapov.pdf, id=6545, 414.75082pt x 326.21094pt>
->>>>>>> Stashed changes
+<img/HFP/koss/KP_Kossolapov.pdf, id=6602, 414.75082pt x 326.21094pt>
 File: img/HFP/koss/KP_Kossolapov.pdf Graphic file (type pdf)
 <use img/HFP/koss/KP_Kossolapov.pdf>
 Package pdftex.def Info: img/HFP/koss/KP_Kossolapov.pdf  used on input line 271
 .
 (pdftex.def)             Requested size: 227.62209pt x 179.03328pt.
-<<<<<<< Updated upstream
-<img/HFP/koss/Basu_Kossolapov.pdf, id=6569, 414.75082pt x 326.21094pt>
-=======
-<img/HFP/koss/Basu_Kossolapov.pdf, id=6546, 414.75082pt x 326.21094pt>
->>>>>>> Stashed changes
+<img/HFP/koss/Basu_Kossolapov.pdf, id=6603, 414.75082pt x 326.21094pt>
 File: img/HFP/koss/Basu_Kossolapov.pdf Graphic file (type pdf)
 <use img/HFP/koss/Basu_Kossolapov.pdf>
 Package pdftex.def Info: img/HFP/koss/Basu_Kossolapov.pdf  used on input line 2
@@ -5952,21 +5144,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 271--275
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/HFP/koss/Komma_Kossolapov.pdf, id=6570, 414.75082pt x 326.21094pt>
-=======
-<img/HFP/koss/Komma_Kossolapov.pdf, id=6547, 414.75082pt x 326.21094pt>
->>>>>>> Stashed changes
+<img/HFP/koss/Komma_Kossolapov.pdf, id=6604, 414.75082pt x 326.21094pt>
 File: img/HFP/koss/Komma_Kossolapov.pdf Graphic file (type pdf)
 <use img/HFP/koss/Komma_Kossolapov.pdf>
 Package pdftex.def Info: img/HFP/koss/Komma_Kossolapov.pdf  used on input line 
 278.
 (pdftex.def)             Requested size: 227.62209pt x 179.03328pt.
-<<<<<<< Updated upstream
-<img/HFP/koss/NM_Kossolapov.pdf, id=6571, 414.75082pt x 326.21094pt>
-=======
-<img/HFP/koss/NM_Kossolapov.pdf, id=6548, 414.75082pt x 326.21094pt>
->>>>>>> Stashed changes
+<img/HFP/koss/NM_Kossolapov.pdf, id=6605, 414.75082pt x 326.21094pt>
 File: img/HFP/koss/NM_Kossolapov.pdf Graphic file (type pdf)
 <use img/HFP/koss/NM_Kossolapov.pdf>
 Package pdftex.def Info: img/HFP/koss/NM_Kossolapov.pdf  used on input line 281
@@ -5992,31 +5176,19 @@ ion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img/HFP/koss/NM_Kossolapov.pdf): PDF inclusion
 : multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/HFP/jens/jens_p138_nm.pdf, id=6659, 408.8117pt x 337.08487pt>
-=======
-<img/HFP/jens/jens_p138_nm.pdf, id=6636, 408.8117pt x 337.08487pt>
->>>>>>> Stashed changes
+<img/HFP/jens/jens_p138_nm.pdf, id=6694, 408.8117pt x 337.08487pt>
 File: img/HFP/jens/jens_p138_nm.pdf Graphic file (type pdf)
 <use img/HFP/jens/jens_p138_nm.pdf>
 Package pdftex.def Info: img/HFP/jens/jens_p138_nm.pdf  used on input line 313.
 
 (pdftex.def)             Requested size: 227.62209pt x 187.69124pt.
-<<<<<<< Updated upstream
-<img/HFP/jens/jens_p138_komma.pdf, id=6660, 408.8117pt x 337.08487pt>
-=======
-<img/HFP/jens/jens_p138_komma.pdf, id=6637, 408.8117pt x 337.08487pt>
->>>>>>> Stashed changes
+<img/HFP/jens/jens_p138_komma.pdf, id=6695, 408.8117pt x 337.08487pt>
 File: img/HFP/jens/jens_p138_komma.pdf Graphic file (type pdf)
 <use img/HFP/jens/jens_p138_komma.pdf>
 Package pdftex.def Info: img/HFP/jens/jens_p138_komma.pdf  used on input line 3
 16.
 (pdftex.def)             Requested size: 227.62209pt x 187.69124pt.
-<<<<<<< Updated upstream
-<img/HFP/jens/jens_p138_kp.pdf, id=6661, 420.9968pt x 337.08487pt>
-=======
-<img/HFP/jens/jens_p138_kp.pdf, id=6638, 420.9968pt x 337.08487pt>
->>>>>>> Stashed changes
+<img/HFP/jens/jens_p138_kp.pdf, id=6696, 420.9968pt x 337.08487pt>
 File: img/HFP/jens/jens_p138_kp.pdf Graphic file (type pdf)
 <use img/HFP/jens/jens_p138_kp.pdf>
 Package pdftex.def Info: img/HFP/jens/jens_p138_kp.pdf  used on input line 319.
@@ -6038,20 +5210,12 @@ on: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img/HFP/jens/jens_p138_kp.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/HFP/jens/KP_Jens.pdf, id=6727, 414.75082pt x 326.21094pt>
-=======
-<img/HFP/jens/KP_Jens.pdf, id=6705, 414.75082pt x 326.21094pt>
->>>>>>> Stashed changes
+<img/HFP/jens/KP_Jens.pdf, id=6762, 414.75082pt x 326.21094pt>
 File: img/HFP/jens/KP_Jens.pdf Graphic file (type pdf)
 <use img/HFP/jens/KP_Jens.pdf>
 Package pdftex.def Info: img/HFP/jens/KP_Jens.pdf  used on input line 349.
 (pdftex.def)             Requested size: 227.62209pt x 179.03328pt.
-<<<<<<< Updated upstream
-<img/HFP/jens/Basu_Jens.pdf, id=6728, 414.75082pt x 326.21094pt>
-=======
-<img/HFP/jens/Basu_Jens.pdf, id=6706, 414.75082pt x 326.21094pt>
->>>>>>> Stashed changes
+<img/HFP/jens/Basu_Jens.pdf, id=6763, 414.75082pt x 326.21094pt>
 File: img/HFP/jens/Basu_Jens.pdf Graphic file (type pdf)
 <use img/HFP/jens/Basu_Jens.pdf>
 Package pdftex.def Info: img/HFP/jens/Basu_Jens.pdf  used on input line 352.
@@ -6061,20 +5225,12 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 349--353
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/HFP/jens/Komma_Jens.pdf, id=6729, 414.75082pt x 326.21094pt>
-=======
-<img/HFP/jens/Komma_Jens.pdf, id=6707, 414.75082pt x 326.21094pt>
->>>>>>> Stashed changes
+<img/HFP/jens/Komma_Jens.pdf, id=6764, 414.75082pt x 326.21094pt>
 File: img/HFP/jens/Komma_Jens.pdf Graphic file (type pdf)
 <use img/HFP/jens/Komma_Jens.pdf>
 Package pdftex.def Info: img/HFP/jens/Komma_Jens.pdf  used on input line 356.
 (pdftex.def)             Requested size: 227.62209pt x 179.03328pt.
-<<<<<<< Updated upstream
-<img/HFP/jens/NM_Jens.pdf, id=6730, 414.75082pt x 326.21094pt>
-=======
-<img/HFP/jens/NM_Jens.pdf, id=6708, 414.75082pt x 326.21094pt>
->>>>>>> Stashed changes
+<img/HFP/jens/NM_Jens.pdf, id=6765, 414.75082pt x 326.21094pt>
 File: img/HFP/jens/NM_Jens.pdf Graphic file (type pdf)
 <use img/HFP/jens/NM_Jens.pdf>
 Package pdftex.def Info: img/HFP/jens/NM_Jens.pdf  used on input line 359.
@@ -6100,20 +5256,12 @@ ultiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img/HFP/jens/NM_Jens.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/HFP/kennel/KP_Kennel.pdf, id=6823, 414.75082pt x 326.21094pt>
-=======
-<img/HFP/kennel/KP_Kennel.pdf, id=6800, 414.75082pt x 326.21094pt>
->>>>>>> Stashed changes
+<img/HFP/kennel/KP_Kennel.pdf, id=6857, 414.75082pt x 326.21094pt>
 File: img/HFP/kennel/KP_Kennel.pdf Graphic file (type pdf)
 <use img/HFP/kennel/KP_Kennel.pdf>
 Package pdftex.def Info: img/HFP/kennel/KP_Kennel.pdf  used on input line 397.
 (pdftex.def)             Requested size: 227.62209pt x 179.03328pt.
-<<<<<<< Updated upstream
-<img/HFP/kennel/Basu_Kennel.pdf, id=6824, 414.75082pt x 326.21094pt>
-=======
-<img/HFP/kennel/Basu_Kennel.pdf, id=6801, 414.75082pt x 326.21094pt>
->>>>>>> Stashed changes
+<img/HFP/kennel/Basu_Kennel.pdf, id=6858, 414.75082pt x 326.21094pt>
 File: img/HFP/kennel/Basu_Kennel.pdf Graphic file (type pdf)
 <use img/HFP/kennel/Basu_Kennel.pdf>
 Package pdftex.def Info: img/HFP/kennel/Basu_Kennel.pdf  used on input line 400
@@ -6124,21 +5272,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 397--401
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/HFP/kennel/Komma_Kennel.pdf, id=6825, 414.75082pt x 326.21094pt>
-=======
-<img/HFP/kennel/Komma_Kennel.pdf, id=6802, 414.75082pt x 326.21094pt>
->>>>>>> Stashed changes
+<img/HFP/kennel/Komma_Kennel.pdf, id=6859, 414.75082pt x 326.21094pt>
 File: img/HFP/kennel/Komma_Kennel.pdf Graphic file (type pdf)
 <use img/HFP/kennel/Komma_Kennel.pdf>
 Package pdftex.def Info: img/HFP/kennel/Komma_Kennel.pdf  used on input line 40
 4.
 (pdftex.def)             Requested size: 227.62209pt x 179.03328pt.
-<<<<<<< Updated upstream
-<img/HFP/kennel/NM_Kennel_t50_K05_dt5.pdf, id=6826, 414.75082pt x 326.21094pt>
-=======
-<img/HFP/kennel/NM_Kennel_t50_K05_dt5.pdf, id=6803, 414.75082pt x 326.21094pt>
->>>>>>> Stashed changes
+<img/HFP/kennel/NM_Kennel_t50_K05_dt5.pdf, id=6860, 414.75082pt x 326.21094pt>
 File: img/HFP/kennel/NM_Kennel_t50_K05_dt5.pdf Graphic file (type pdf)
 <use img/HFP/kennel/NM_Kennel_t50_K05_dt5.pdf>
 Package pdftex.def Info: img/HFP/kennel/NM_Kennel_t50_K05_dt5.pdf  used on inpu
@@ -6164,11 +5304,7 @@ n: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img/HFP/kennel/NM_Kennel_t50_K05_dt5.pdf): PDF
  inclusion: multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/HFP/test_allHFPbbis_8Te44.pdf, id=6915, 428.06543pt x 327.35269pt>
-=======
-<img/HFP/test_allHFPbbis_8Te44.pdf, id=6892, 428.06543pt x 327.35269pt>
->>>>>>> Stashed changes
+<img/HFP/test_allHFPbbis_8Te44.pdf, id=6949, 428.06543pt x 327.35269pt>
 File: img/HFP/test_allHFPbbis_8Te44.pdf Graphic file (type pdf)
 <use img/HFP/test_allHFPbbis_8Te44.pdf>
 Package pdftex.def Info: img/HFP/test_allHFPbbis_8Te44.pdf  used on input line 
@@ -6201,20 +5337,12 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 
 ]
-<<<<<<< Updated upstream
-<img/chf/chf_zuber.png, id=6977, 787.94376pt x 541.02126pt>
-=======
-<img/chf/chf_zuber.png, id=6955, 787.94376pt x 541.02126pt>
->>>>>>> Stashed changes
+<img/chf/chf_zuber.png, id=7012, 787.94376pt x 541.02126pt>
 File: img/chf/chf_zuber.png Graphic file (type png)
 <use img/chf/chf_zuber.png>
 Package pdftex.def Info: img/chf/chf_zuber.png  used on input line 55.
 (pdftex.def)             Requested size: 273.14928pt x 187.5441pt.
-<<<<<<< Updated upstream
-<img/chf/chf_lee.png, id=6982, 355.3275pt x 579.66562pt>
-=======
-<img/chf/chf_lee.png, id=6960, 355.3275pt x 579.66562pt>
->>>>>>> Stashed changes
+<img/chf/chf_lee.png, id=7017, 355.3275pt x 579.66562pt>
 File: img/chf/chf_lee.png Graphic file (type png)
 <use img/chf/chf_lee.png>
 Package pdftex.def Info: img/chf/chf_lee.png  used on input line 73.
@@ -6223,22 +5351,14 @@ Package pdftex.def Info: img/chf/chf_lee.png  used on input line 73.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< Updated upstream
-<img/chf/chf_weisman.png, id=6988, 330.23375pt x 477.28313pt>
-=======
-<img/chf/chf_weisman.png, id=6966, 330.23375pt x 477.28313pt>
->>>>>>> Stashed changes
+<img/chf/chf_weisman.png, id=7023, 330.23375pt x 477.28313pt>
 File: img/chf/chf_weisman.png Graphic file (type png)
 <use img/chf/chf_weisman.png>
 Package pdftex.def Info: img/chf/chf_weisman.png  used on input line 91.
 (pdftex.def)             Requested size: 182.09488pt x 263.18382pt.
 [162 <./img/chf/chf_zuber.png>] [163 <./img/chf/chf_lee.png> <./img/chf/chf_wei
 sman.png>]
-<<<<<<< Updated upstream
-<img/chf/chf_ha.png, id=7022, 407.02063pt x 361.85187pt>
-=======
-<img/chf/chf_ha.png, id=6999, 407.02063pt x 361.85187pt>
->>>>>>> Stashed changes
+<img/chf/chf_ha.png, id=7056, 407.02063pt x 361.85187pt>
 File: img/chf/chf_ha.png Graphic file (type png)
 <use img/chf/chf_ha.png>
 Package pdftex.def Info: img/chf/chf_ha.png  used on input line 139.
@@ -6257,11 +5377,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 149.
 
 [164 <./img/chf/chf_ha.png>]
-<<<<<<< Updated upstream
-<img/chf/chf_baglietto.png, id=7042, 782.925pt x 703.62875pt>
-=======
-<img/chf/chf_baglietto.png, id=7019, 782.925pt x 703.62875pt>
->>>>>>> Stashed changes
+<img/chf/chf_baglietto.png, id=7076, 782.925pt x 703.62875pt>
 File: img/chf/chf_baglietto.png Graphic file (type png)
 <use img/chf/chf_baglietto.png>
 Package pdftex.def Info: img/chf/chf_baglietto.png  used on input line 170.
@@ -6280,21 +5396,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 187.
 
 [165 <./img/chf/chf_baglietto.png>]
-<<<<<<< Updated upstream
-<img/chf/chf_zhang_cluster.png, id=7058, 270.00874pt x 271.0125pt>
-=======
-<img/chf/chf_zhang_cluster.png, id=7035, 270.00874pt x 271.0125pt>
->>>>>>> Stashed changes
+<img/chf/chf_zhang_cluster.png, id=7092, 270.00874pt x 271.0125pt>
 File: img/chf/chf_zhang_cluster.png Graphic file (type png)
 <use img/chf/chf_zhang_cluster.png>
 Package pdftex.def Info: img/chf/chf_zhang_cluster.png  used on input line 203.
 
 (pdftex.def)             Requested size: 159.33823pt x 159.9332pt.
-<<<<<<< Updated upstream
-<img/chf/chf_crit/CHF_triplet_Te70_DEBORA.png, id=7067, 549.05125pt x 674.52pt>
-=======
-<img/chf/chf_crit/CHF_triplet_Te70_DEBORA.png, id=7044, 549.05125pt x 674.52pt>
->>>>>>> Stashed changes
+<img/chf/chf_crit/CHF_triplet_Te70_DEBORA.png, id=7101, 549.05125pt x 674.52pt>
 
 File: img/chf/chf_crit/CHF_triplet_Te70_DEBORA.png Graphic file (type png)
 <use img/chf/chf_crit/CHF_triplet_Te70_DEBORA.png>
@@ -6330,11 +5438,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 \openout5 = `main.mtc'.
 
 (main.mtc10)
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/prom_pic2.png, id=7113, 578.66188pt x 429.10312pt>
-=======
-<img/DEBORA-Promoteur/prom_pic2.png, id=7090, 578.66188pt x 429.10312pt>
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/prom_pic2.png, id=7147, 578.66188pt x 429.10312pt>
 File: img/DEBORA-Promoteur/prom_pic2.png Graphic file (type png)
 <use img/DEBORA-Promoteur/prom_pic2.png>
 Package pdftex.def Info: img/DEBORA-Promoteur/prom_pic2.png  used on input line
@@ -6344,13 +5448,8 @@ Package pdftex.def Info: img/DEBORA-Promoteur/prom_pic2.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< Updated upstream
-\imageheight=\skip169
-<img/DEBORA-Promoteur/debprom_mesrad.jpg, id=7118, 894.34125pt x 670.75594pt>
-=======
 \imageheight=\skip170
-<img/DEBORA-Promoteur/debprom_mesrad.jpg, id=7095, 894.34125pt x 670.75594pt>
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/debprom_mesrad.jpg, id=7152, 894.34125pt x 670.75594pt>
 File: img/DEBORA-Promoteur/debprom_mesrad.jpg Graphic file (type jpg)
 <use img/DEBORA-Promoteur/debprom_mesrad.jpg>
 Package pdftex.def Info: img/DEBORA-Promoteur/debprom_mesrad.jpg  used on input
@@ -6361,11 +5460,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--63
 [][]|\T1/lmr/m/n/8 Mea-sure-ment ra-dius. (Adapted
  []
 
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/deb_prom_sketch.pdf, id=7121, 189.31026pt x 251.47551pt>
-=======
-<img/DEBORA-Promoteur/deb_prom_sketch.pdf, id=7098, 189.31026pt x 251.47551pt>
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/deb_prom_sketch.pdf, id=7155, 189.31026pt x 251.47551pt>
 File: img/DEBORA-Promoteur/deb_prom_sketch.pdf Graphic file (type pdf)
 <use img/DEBORA-Promoteur/deb_prom_sketch.pdf>
 Package pdftex.def Info: img/DEBORA-Promoteur/deb_prom_sketch.pdf  used on inpu
@@ -6376,11 +5471,7 @@ t line 68.
 
 ] [171 <./img/DEBORA-Promoteur/prom_pic2.png> <./img/DEBORA-Promoteur/debprom_m
 esrad.jpg> <./img/DEBORA-Promoteur/deb_prom_sketch.pdf>]
-<<<<<<< Updated upstream
-<img/AGATE/agate_mes_rad.PNG, id=7155, 606.76688pt x 692.5875pt>
-=======
-<img/AGATE/agate_mes_rad.PNG, id=7132, 606.76688pt x 692.5875pt>
->>>>>>> Stashed changes
+<img/AGATE/agate_mes_rad.PNG, id=7189, 606.76688pt x 692.5875pt>
 File: img/AGATE/agate_mes_rad.PNG Graphic file (type png)
 <use img/AGATE/agate_mes_rad.PNG>
 Package pdftex.def Info: img/AGATE/agate_mes_rad.PNG  used on input line 136.
@@ -6390,11 +5481,7 @@ Underfull \hbox (badness 7099) in paragraph at lines 136--136
 [][]|\T1/lmr/m/n/8 Ra-dial mea-sure-ments di-am-e-ters.
  []
 
-<<<<<<< Updated upstream
-<img/AGATE/agate_mes_ax.pdf, id=7158, 336.88058pt x 427.6045pt>
-=======
-<img/AGATE/agate_mes_ax.pdf, id=7135, 336.88058pt x 427.6045pt>
->>>>>>> Stashed changes
+<img/AGATE/agate_mes_ax.pdf, id=7192, 336.88058pt x 427.6045pt>
 File: img/AGATE/agate_mes_ax.pdf Graphic file (type pdf)
 <use img/AGATE/agate_mes_ax.pdf>
 Package pdftex.def Info: img/AGATE/agate_mes_ax.pdf  used on input line 142.
@@ -6403,11 +5490,7 @@ Package pdftex.def Info: img/AGATE/agate_mes_ax.pdf  used on input line 142.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [172]
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/48G3P26W23/48G3P26W23_alpha.pdf, id=7170, 435.8629pt x 32
-=======
-<img/DEBORA-Promoteur/48G3P26W23/48G3P26W23_alpha.pdf, id=7147, 435.8629pt x 32
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/48G3P26W23/48G3P26W23_alpha.pdf, id=7205, 435.8629pt x 32
 3.91066pt>
 File: img/DEBORA-Promoteur/48G3P26W23/48G3P26W23_alpha.pdf Graphic file (type p
 df)
@@ -6415,11 +5498,7 @@ df)
 Package pdftex.def Info: img/DEBORA-Promoteur/48G3P26W23/48G3P26W23_alpha.pdf  
 used on input line 182.
 (pdftex.def)             Requested size: 227.62209pt x 169.1561pt.
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/48G3P26W23/48G3P26W23_nu.pdf, id=7171, 453.51338pt x 323.
-=======
-<img/DEBORA-Promoteur/48G3P26W23/48G3P26W23_nu.pdf, id=7148, 453.51338pt x 323.
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/48G3P26W23/48G3P26W23_nu.pdf, id=7206, 453.51338pt x 323.
 91066pt>
 File: img/DEBORA-Promoteur/48G3P26W23/48G3P26W23_nu.pdf Graphic file (type pdf)
 
@@ -6436,11 +5515,7 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 182--187
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [173 <./img/AGATE/agate_mes_rad.PNG> <./img/AGATE/agate_mes_ax.pdf>]
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_alpha.pdf, id=7202, 435.8629pt x 32
-=======
-<img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_alpha.pdf, id=7180, 435.8629pt x 32
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_alpha.pdf, id=7237, 435.8629pt x 32
 3.91066pt>
 File: img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_alpha.pdf Graphic file (type p
 df)
@@ -6448,11 +5523,7 @@ df)
 Package pdftex.def Info: img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_alpha.pdf  
 used on input line 211.
 (pdftex.def)             Requested size: 227.62209pt x 169.1561pt.
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_nu.pdf, id=7203, 453.51338pt x 323.
-=======
-<img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_nu.pdf, id=7181, 453.51338pt x 323.
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_nu.pdf, id=7238, 453.51338pt x 323.
 91066pt>
 File: img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_nu.pdf Graphic file (type pdf)
 
@@ -6465,11 +5536,7 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 211--216
  [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_alpha.pdf, id=7204, 435.8629pt x 32
-=======
-<img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_alpha.pdf, id=7182, 435.8629pt x 32
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_alpha.pdf, id=7239, 435.8629pt x 32
 3.91066pt>
 File: img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_alpha.pdf Graphic file (type p
 df)
@@ -6477,11 +5544,7 @@ df)
 Package pdftex.def Info: img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_alpha.pdf  
 used on input line 227.
 (pdftex.def)             Requested size: 227.62209pt x 169.1561pt.
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_nu.pdf, id=7205, 446.65929pt x 323.
-=======
-<img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_nu.pdf, id=7183, 446.65929pt x 323.
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_nu.pdf, id=7240, 446.65929pt x 323.
 91066pt>
 File: img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_nu.pdf Graphic file (type pdf)
 
@@ -6512,11 +5575,7 @@ ha.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_nu.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_deltanu.pdf, id=7345, 432.05507pt x
-=======
-<img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_deltanu.pdf, id=7323, 432.05507pt x
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_deltanu.pdf, id=7380, 432.05507pt x
  323.91066pt>
 File: img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_deltanu.pdf Graphic file (type
  pdf)
@@ -6524,11 +5583,7 @@ File: img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_deltanu.pdf Graphic file (type
 Package pdftex.def Info: img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_deltanu.pdf
   used on input line 277.
 (pdftex.def)             Requested size: 227.62209pt x 170.64873pt.
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_deltanu.pdf, id=7346, 432.05507pt x
-=======
-<img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_deltanu.pdf, id=7324, 432.05507pt x
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_deltanu.pdf, id=7381, 432.05507pt x
  323.91066pt>
 File: img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_deltanu.pdf Graphic file (type
  pdf)
@@ -6550,11 +5605,7 @@ moteur/52G3P26W27/52G3P26W27_nu.pdf
 pdfTeX warning: pdflatex (file ./img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_nu.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/AGATE/Urap_z.pdf, id=7412, 462.52798pt x 346.89601pt>
-=======
-<img/AGATE/Urap_z.pdf, id=7389, 462.52798pt x 346.89601pt>
->>>>>>> Stashed changes
+<img/AGATE/Urap_z.pdf, id=7446, 462.52798pt x 346.89601pt>
 File: img/AGATE/Urap_z.pdf Graphic file (type pdf)
 <use img/AGATE/Urap_z.pdf>
 Package pdftex.def Info: img/AGATE/Urap_z.pdf  used on input line 299.
@@ -6570,11 +5621,7 @@ ge
 pdfTeX warning: pdflatex (file ./img/AGATE/Urap_z.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_dv.pdf, id=7488, 435.8629pt x 323.9
-=======
-<img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_dv.pdf, id=7465, 435.8629pt x 323.9
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_dv.pdf, id=7522, 435.8629pt x 323.9
 1066pt>
 File: img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_dv.pdf Graphic file (type pdf)
 
@@ -6582,11 +5629,7 @@ File: img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_dv.pdf Graphic file (type pdf)
 Package pdftex.def Info: img/DEBORA-Promoteur/52G3P26W23/52G3P26W23_dv.pdf  use
 d on input line 328.
 (pdftex.def)             Requested size: 227.62209pt x 169.1561pt.
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_dv.pdf, id=7489, 435.8629pt x 323.9
-=======
-<img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_dv.pdf, id=7466, 435.8629pt x 323.9
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_dv.pdf, id=7523, 435.8629pt x 323.9
 1066pt>
 File: img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_dv.pdf Graphic file (type pdf)
 
@@ -6605,7 +5648,7 @@ eur/52G3P26W27/52G3P26W27_dv.pdf
 pdfTeX warning: pdflatex (file ./img/DEBORA-Promoteur/52G3P26W27/52G3P26W27_dv.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >])
-Overfull \hbox (4.8185pt too wide) in paragraph at lines 371--189
+Overfull \hbox (4.8185pt too wide) in paragraph at lines 371--188
 []\T1/lmr/m/n/10 In the next chap-ter, we per-form nu-mer-i-cal sim-u-la-tions 
 of the DEBORA-Promoteur and AGATE-Promoteur
  []
@@ -6631,11 +5674,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 \openout5 = `main.mtc'.
 
 (main.mtc11)
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/cfd/prom_M2_all.png, id=7568, 2007.5pt x 893.3375pt>
-=======
-<img/DEBORA-Promoteur/cfd/prom_M2_all.png, id=7545, 2007.5pt x 893.3375pt>
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/cfd/prom_M2_all.png, id=7603, 2007.5pt x 893.3375pt>
 File: img/DEBORA-Promoteur/cfd/prom_M2_all.png Graphic file (type png)
 <use img/DEBORA-Promoteur/cfd/prom_M2_all.png>
 Package pdftex.def Info: img/DEBORA-Promoteur/cfd/prom_M2_all.png  used on inpu
@@ -6651,33 +5690,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ]
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/cfd/G3P26W23Te65_alpha.pdf, id=7575, 287.90236pt x 335.04
-=======
-<img/DEBORA-Promoteur/cfd/G3P26W23Te65_alpha.pdf, id=7553, 287.90236pt x 335.04
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/cfd/G3P26W23Te65_alpha.pdf, id=7610, 287.90236pt x 335.04
 025pt>
 File: img/DEBORA-Promoteur/cfd/G3P26W23Te65_alpha.pdf Graphic file (type pdf)
 <use img/DEBORA-Promoteur/cfd/G3P26W23Te65_alpha.pdf>
 Package pdftex.def Info: img/DEBORA-Promoteur/cfd/G3P26W23Te65_alpha.pdf  used 
 on input line 69.
 (pdftex.def)             Requested size: 150.2314pt x 174.83029pt.
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/cfd/G3P26W23Te69_alpha.pdf, id=7576, 281.04828pt x 335.04
-=======
-<img/DEBORA-Promoteur/cfd/G3P26W23Te69_alpha.pdf, id=7554, 281.04828pt x 335.04
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/cfd/G3P26W23Te69_alpha.pdf, id=7611, 281.04828pt x 335.04
 025pt>
 File: img/DEBORA-Promoteur/cfd/G3P26W23Te69_alpha.pdf Graphic file (type pdf)
 <use img/DEBORA-Promoteur/cfd/G3P26W23Te69_alpha.pdf>
 Package pdftex.def Info: img/DEBORA-Promoteur/cfd/G3P26W23Te69_alpha.pdf  used 
 on input line 73.
 (pdftex.def)             Requested size: 150.2314pt x 179.08884pt.
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/cfd/G3P26W23Te75_alpha.pdf, id=7577, 281.04828pt x 335.04
-=======
-<img/DEBORA-Promoteur/cfd/G3P26W23Te75_alpha.pdf, id=7555, 281.04828pt x 335.04
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/cfd/G3P26W23Te75_alpha.pdf, id=7612, 281.04828pt x 335.04
 025pt>
 File: img/DEBORA-Promoteur/cfd/G3P26W23Te75_alpha.pdf Graphic file (type pdf)
 <use img/DEBORA-Promoteur/cfd/G3P26W23Te75_alpha.pdf>
@@ -6689,33 +5716,21 @@ Overfull \hbox (15.45pt too wide) in paragraph at lines 69--78
  [][][][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/cfd/G3P26W23Te65_dV.pdf, id=7578, 281.04828pt x 335.04025
-=======
-<img/DEBORA-Promoteur/cfd/G3P26W23Te65_dV.pdf, id=7556, 281.04828pt x 335.04025
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/cfd/G3P26W23Te65_dV.pdf, id=7613, 281.04828pt x 335.04025
 pt>
 File: img/DEBORA-Promoteur/cfd/G3P26W23Te65_dV.pdf Graphic file (type pdf)
 <use img/DEBORA-Promoteur/cfd/G3P26W23Te65_dV.pdf>
 Package pdftex.def Info: img/DEBORA-Promoteur/cfd/G3P26W23Te65_dV.pdf  used on 
 input line 82.
 (pdftex.def)             Requested size: 150.2314pt x 179.08884pt.
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/cfd/G3P26W23Te69_dV.pdf, id=7579, 281.71193pt x 335.04025
-=======
-<img/DEBORA-Promoteur/cfd/G3P26W23Te69_dV.pdf, id=7557, 281.71193pt x 335.04025
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/cfd/G3P26W23Te69_dV.pdf, id=7614, 281.71193pt x 335.04025
 pt>
 File: img/DEBORA-Promoteur/cfd/G3P26W23Te69_dV.pdf Graphic file (type pdf)
 <use img/DEBORA-Promoteur/cfd/G3P26W23Te69_dV.pdf>
 Package pdftex.def Info: img/DEBORA-Promoteur/cfd/G3P26W23Te69_dV.pdf  used on 
 input line 86.
 (pdftex.def)             Requested size: 150.2314pt x 178.67474pt.
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/cfd/G3P26W23Te75_dV.pdf, id=7580, 281.04828pt x 330.17914
-=======
-<img/DEBORA-Promoteur/cfd/G3P26W23Te75_dV.pdf, id=7558, 281.04828pt x 330.17914
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/cfd/G3P26W23Te75_dV.pdf, id=7615, 281.04828pt x 330.17914
 pt>
 File: img/DEBORA-Promoteur/cfd/G3P26W23Te75_dV.pdf Graphic file (type pdf)
 <use img/DEBORA-Promoteur/cfd/G3P26W23Te75_dV.pdf>
@@ -6727,33 +5742,21 @@ Overfull \hbox (15.45pt too wide) in paragraph at lines 82--91
  [][][][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/cfd/G3P26W23Te65_Uvap.pdf, id=7581, 281.5538pt x 330.1791
-=======
-<img/DEBORA-Promoteur/cfd/G3P26W23Te65_Uvap.pdf, id=7559, 281.5538pt x 330.1791
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/cfd/G3P26W23Te65_Uvap.pdf, id=7616, 281.5538pt x 330.1791
 4pt>
 File: img/DEBORA-Promoteur/cfd/G3P26W23Te65_Uvap.pdf Graphic file (type pdf)
 <use img/DEBORA-Promoteur/cfd/G3P26W23Te65_Uvap.pdf>
 Package pdftex.def Info: img/DEBORA-Promoteur/cfd/G3P26W23Te65_Uvap.pdf  used o
 n input line 95.
 (pdftex.def)             Requested size: 150.2314pt x 176.17807pt.
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/cfd/G3P26W23Te69_Uvap.pdf, id=7582, 282.21748pt x 330.179
-=======
-<img/DEBORA-Promoteur/cfd/G3P26W23Te69_Uvap.pdf, id=7560, 282.21748pt x 330.179
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/cfd/G3P26W23Te69_Uvap.pdf, id=7617, 282.21748pt x 330.179
 14pt>
 File: img/DEBORA-Promoteur/cfd/G3P26W23Te69_Uvap.pdf Graphic file (type pdf)
 <use img/DEBORA-Promoteur/cfd/G3P26W23Te69_Uvap.pdf>
 Package pdftex.def Info: img/DEBORA-Promoteur/cfd/G3P26W23Te69_Uvap.pdf  used o
 n input line 99.
 (pdftex.def)             Requested size: 150.2314pt x 175.76997pt.
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/cfd/G3P26W23Te75_Uvap.pdf, id=7583, 281.5538pt x 330.1791
-=======
-<img/DEBORA-Promoteur/cfd/G3P26W23Te75_Uvap.pdf, id=7561, 281.5538pt x 330.1791
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/cfd/G3P26W23Te75_Uvap.pdf, id=7618, 281.5538pt x 330.1791
 4pt>
 File: img/DEBORA-Promoteur/cfd/G3P26W23Te75_Uvap.pdf Graphic file (type pdf)
 <use img/DEBORA-Promoteur/cfd/G3P26W23Te75_Uvap.pdf>
@@ -6800,11 +5803,7 @@ pdfTeX warning: pdflatex (file ./img/DEBORA-Promoteur/cfd/G3P26W23Te69_Uvap.pdf
 pdfTeX warning: pdflatex (file ./img/DEBORA-Promoteur/cfd/G3P26W23Te75_Uvap.pdf
 ): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/DEBORA-Promoteur/cfd/G3P26W23Te75_alpha_drag.pdf, id=7731, 490.25241pt x 3
-=======
-<img/DEBORA-Promoteur/cfd/G3P26W23Te75_alpha_drag.pdf, id=7708, 490.25241pt x 3
->>>>>>> Stashed changes
+<img/DEBORA-Promoteur/cfd/G3P26W23Te75_alpha_drag.pdf, id=7765, 490.25241pt x 3
 39.83891pt>
 File: img/DEBORA-Promoteur/cfd/G3P26W23Te75_alpha_drag.pdf Graphic file (type p
 df)
@@ -6815,69 +5814,41 @@ used on input line 124.
  [182
 
  <./img/DEBORA-Promoteur/cfd/G3P26W23Te75_alpha_drag.pdf>]
-<<<<<<< Updated upstream
-<img/AGATE/prom_M4_all.png, id=7766, 2007.5pt x 893.3375pt>
-=======
-<img/AGATE/prom_M4_all.png, id=7743, 2007.5pt x 893.3375pt>
->>>>>>> Stashed changes
+<img/AGATE/prom_M4_all.png, id=7800, 2007.5pt x 893.3375pt>
 File: img/AGATE/prom_M4_all.png Graphic file (type png)
 <use img/AGATE/prom_M4_all.png>
 Package pdftex.def Info: img/AGATE/prom_M4_all.png  used on input line 185.
 (pdftex.def)             Requested size: 455.24417pt x 202.57349pt.
  [183 <./img/AGATE/prom_M4_all.png>]
-<<<<<<< Updated upstream
-<img/AGATE/z15/pos1112_VA.pdf, id=7778, 415.47047pt x 323.91066pt>
-=======
-<img/AGATE/z15/pos1112_VA.pdf, id=7755, 415.47047pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/AGATE/z15/pos1112_VA.pdf, id=7812, 415.47047pt x 323.91066pt>
 File: img/AGATE/z15/pos1112_VA.pdf Graphic file (type pdf)
 <use img/AGATE/z15/pos1112_VA.pdf>
 Package pdftex.def Info: img/AGATE/z15/pos1112_VA.pdf  used on input line 240.
 (pdftex.def)             Requested size: 182.09488pt x 141.96262pt.
-<<<<<<< Updated upstream
-<img/AGATE/z15/pos1112_VT.pdf, id=7779, 426.35939pt x 323.91066pt>
-=======
-<img/AGATE/z15/pos1112_VT.pdf, id=7756, 426.35939pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/AGATE/z15/pos1112_VT.pdf, id=7813, 426.35939pt x 323.91066pt>
 File: img/AGATE/z15/pos1112_VT.pdf Graphic file (type pdf)
 <use img/AGATE/z15/pos1112_VT.pdf>
 Package pdftex.def Info: img/AGATE/z15/pos1112_VT.pdf  used on input line 244.
 (pdftex.def)             Requested size: 182.09488pt x 138.33978pt.
-<<<<<<< Updated upstream
-<img/AGATE/z15/pos1112_RMS_A.pdf, id=7780, 415.47047pt x 319.04958pt>
-=======
-<img/AGATE/z15/pos1112_RMS_A.pdf, id=7757, 415.47047pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/AGATE/z15/pos1112_RMS_A.pdf, id=7814, 415.47047pt x 319.04958pt>
 File: img/AGATE/z15/pos1112_RMS_A.pdf Graphic file (type pdf)
 <use img/AGATE/z15/pos1112_RMS_A.pdf>
 Package pdftex.def Info: img/AGATE/z15/pos1112_RMS_A.pdf  used on input line 24
 9.
 (pdftex.def)             Requested size: 182.09488pt x 139.83212pt.
-<<<<<<< Updated upstream
-<img/AGATE/z15/pos1112_RMS_T.pdf, id=7781, 415.47047pt x 319.04958pt>
-=======
-<img/AGATE/z15/pos1112_RMS_T.pdf, id=7758, 415.47047pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/AGATE/z15/pos1112_RMS_T.pdf, id=7815, 415.47047pt x 319.04958pt>
 File: img/AGATE/z15/pos1112_RMS_T.pdf Graphic file (type pdf)
 <use img/AGATE/z15/pos1112_RMS_T.pdf>
 Package pdftex.def Info: img/AGATE/z15/pos1112_RMS_T.pdf  used on input line 25
 3.
 (pdftex.def)             Requested size: 182.09488pt x 139.83212pt.
-<<<<<<< Updated upstream
-<img/AGATE/Ur_s_Ua/1Dh_Ur_s_Ua.png, id=7787, 1606.0pt x 1183.42125pt>
-=======
-<img/AGATE/Ur_s_Ua/1Dh_Ur_s_Ua.png, id=7764, 1606.0pt x 1183.42125pt>
->>>>>>> Stashed changes
+<img/AGATE/Ur_s_Ua/1Dh_Ur_s_Ua.png, id=7821, 1606.0pt x 1183.42125pt>
 File: img/AGATE/Ur_s_Ua/1Dh_Ur_s_Ua.png Graphic file (type png)
 <use img/AGATE/Ur_s_Ua/1Dh_Ur_s_Ua.png>
 Package pdftex.def Info: img/AGATE/Ur_s_Ua/1Dh_Ur_s_Ua.png  used on input line 
 271.
 (pdftex.def)             Requested size: 227.62209pt x 167.71834pt.
-<<<<<<< Updated upstream
-<img/AGATE/Ur_s_Ua/1Dh_Urm_s_Uam.png, id=7788, 1606.0pt x 1183.42125pt>
-=======
-<img/AGATE/Ur_s_Ua/1Dh_Urm_s_Uam.png, id=7765, 1606.0pt x 1183.42125pt>
->>>>>>> Stashed changes
+<img/AGATE/Ur_s_Ua/1Dh_Urm_s_Uam.png, id=7822, 1606.0pt x 1183.42125pt>
 File: img/AGATE/Ur_s_Ua/1Dh_Urm_s_Uam.png Graphic file (type png)
 <use img/AGATE/Ur_s_Ua/1Dh_Urm_s_Uam.png>
 Package pdftex.def Info: img/AGATE/Ur_s_Ua/1Dh_Urm_s_Uam.png  used on input lin
@@ -6888,39 +5859,23 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 271--275
 [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/AGATE/z200/pos910_VA.pdf, id=7791, 415.47047pt x 323.91066pt>
-=======
-<img/AGATE/z200/pos910_VA.pdf, id=7768, 415.47047pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/AGATE/z200/pos910_VA.pdf, id=7825, 415.47047pt x 323.91066pt>
 File: img/AGATE/z200/pos910_VA.pdf Graphic file (type pdf)
 <use img/AGATE/z200/pos910_VA.pdf>
 Package pdftex.def Info: img/AGATE/z200/pos910_VA.pdf  used on input line 293.
 (pdftex.def)             Requested size: 182.09488pt x 141.96262pt.
-<<<<<<< Updated upstream
-<img/AGATE/z200/pos910_VT.pdf, id=7792, 426.35939pt x 323.91066pt>
-=======
-<img/AGATE/z200/pos910_VT.pdf, id=7769, 426.35939pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/AGATE/z200/pos910_VT.pdf, id=7826, 426.35939pt x 323.91066pt>
 File: img/AGATE/z200/pos910_VT.pdf Graphic file (type pdf)
 <use img/AGATE/z200/pos910_VT.pdf>
 Package pdftex.def Info: img/AGATE/z200/pos910_VT.pdf  used on input line 297.
 (pdftex.def)             Requested size: 182.09488pt x 138.33978pt.
-<<<<<<< Updated upstream
-<img/AGATE/z200/pos910_RMS_A.pdf, id=7793, 415.47047pt x 319.04958pt>
-=======
-<img/AGATE/z200/pos910_RMS_A.pdf, id=7770, 415.47047pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/AGATE/z200/pos910_RMS_A.pdf, id=7827, 415.47047pt x 319.04958pt>
 File: img/AGATE/z200/pos910_RMS_A.pdf Graphic file (type pdf)
 <use img/AGATE/z200/pos910_RMS_A.pdf>
 Package pdftex.def Info: img/AGATE/z200/pos910_RMS_A.pdf  used on input line 30
 2.
 (pdftex.def)             Requested size: 182.09488pt x 139.83212pt.
-<<<<<<< Updated upstream
-<img/AGATE/z200/pos910_RMS_T.pdf, id=7794, 415.47047pt x 319.04958pt>
-=======
-<img/AGATE/z200/pos910_RMS_T.pdf, id=7771, 415.47047pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/AGATE/z200/pos910_RMS_T.pdf, id=7828, 415.47047pt x 319.04958pt>
 File: img/AGATE/z200/pos910_RMS_T.pdf Graphic file (type pdf)
 <use img/AGATE/z200/pos910_RMS_T.pdf>
 Package pdftex.def Info: img/AGATE/z200/pos910_RMS_T.pdf  used on input line 30
@@ -6953,21 +5908,13 @@ n: multiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img/AGATE/z200/pos910_RMS_T.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
 >]
-<<<<<<< Updated upstream
-<img/AGATE/Ur_s_Ua/10Dh_Ur_s_Ua.png, id=7935, 1606.0pt x 1183.42125pt>
-=======
-<img/AGATE/Ur_s_Ua/10Dh_Ur_s_Ua.png, id=7913, 1606.0pt x 1183.42125pt>
->>>>>>> Stashed changes
+<img/AGATE/Ur_s_Ua/10Dh_Ur_s_Ua.png, id=7970, 1606.0pt x 1183.42125pt>
 File: img/AGATE/Ur_s_Ua/10Dh_Ur_s_Ua.png Graphic file (type png)
 <use img/AGATE/Ur_s_Ua/10Dh_Ur_s_Ua.png>
 Package pdftex.def Info: img/AGATE/Ur_s_Ua/10Dh_Ur_s_Ua.png  used on input line
  325.
 (pdftex.def)             Requested size: 227.62209pt x 167.71834pt.
-<<<<<<< Updated upstream
-<img/AGATE/Ur_s_Ua/10Dh_Urm_s_Uam.png, id=7936, 1606.0pt x 1183.42125pt>
-=======
-<img/AGATE/Ur_s_Ua/10Dh_Urm_s_Uam.png, id=7914, 1606.0pt x 1183.42125pt>
->>>>>>> Stashed changes
+<img/AGATE/Ur_s_Ua/10Dh_Urm_s_Uam.png, id=7971, 1606.0pt x 1183.42125pt>
 File: img/AGATE/Ur_s_Ua/10Dh_Urm_s_Uam.png Graphic file (type png)
 <use img/AGATE/Ur_s_Ua/10Dh_Urm_s_Uam.png>
 Package pdftex.def Info: img/AGATE/Ur_s_Ua/10Dh_Urm_s_Uam.png  used on input li
@@ -6978,39 +5925,23 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 325--329
 [][][][] 
  []
 
-<<<<<<< Updated upstream
-<img/AGATE/z440/pos910_VA.pdf, id=7939, 415.47047pt x 323.91066pt>
-=======
-<img/AGATE/z440/pos910_VA.pdf, id=7917, 415.47047pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/AGATE/z440/pos910_VA.pdf, id=7974, 415.47047pt x 323.91066pt>
 File: img/AGATE/z440/pos910_VA.pdf Graphic file (type pdf)
 <use img/AGATE/z440/pos910_VA.pdf>
 Package pdftex.def Info: img/AGATE/z440/pos910_VA.pdf  used on input line 348.
 (pdftex.def)             Requested size: 182.09488pt x 141.96262pt.
-<<<<<<< Updated upstream
-<img/AGATE/z440/pos910_VT.pdf, id=7940, 426.35939pt x 323.91066pt>
-=======
-<img/AGATE/z440/pos910_VT.pdf, id=7918, 426.35939pt x 323.91066pt>
->>>>>>> Stashed changes
+<img/AGATE/z440/pos910_VT.pdf, id=7975, 426.35939pt x 323.91066pt>
 File: img/AGATE/z440/pos910_VT.pdf Graphic file (type pdf)
 <use img/AGATE/z440/pos910_VT.pdf>
 Package pdftex.def Info: img/AGATE/z440/pos910_VT.pdf  used on input line 352.
 (pdftex.def)             Requested size: 182.09488pt x 138.33978pt.
-<<<<<<< Updated upstream
-<img/AGATE/z440/pos910_RMS_A.pdf, id=7941, 415.47047pt x 319.04958pt>
-=======
-<img/AGATE/z440/pos910_RMS_A.pdf, id=7919, 415.47047pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/AGATE/z440/pos910_RMS_A.pdf, id=7976, 415.47047pt x 319.04958pt>
 File: img/AGATE/z440/pos910_RMS_A.pdf Graphic file (type pdf)
 <use img/AGATE/z440/pos910_RMS_A.pdf>
 Package pdftex.def Info: img/AGATE/z440/pos910_RMS_A.pdf  used on input line 35
 7.
 (pdftex.def)             Requested size: 182.09488pt x 139.83212pt.
-<<<<<<< Updated upstream
-<img/AGATE/z440/pos910_RMS_T.pdf, id=7942, 415.47047pt x 319.04958pt>
-=======
-<img/AGATE/z440/pos910_RMS_T.pdf, id=7920, 415.47047pt x 319.04958pt>
->>>>>>> Stashed changes
+<img/AGATE/z440/pos910_RMS_T.pdf, id=7977, 415.47047pt x 319.04958pt>
 File: img/AGATE/z440/pos910_RMS_T.pdf Graphic file (type pdf)
 <use img/AGATE/z440/pos910_RMS_T.pdf>
 Package pdftex.def Info: img/AGATE/z440/pos910_RMS_T.pdf  used on input line 36
@@ -7019,21 +5950,13 @@ Package pdftex.def Info: img/AGATE/z440/pos910_RMS_T.pdf  used on input line 36
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< Updated upstream
-<img/AGATE/Ur_s_Ua/44Dh_Ur_s_Ua.png, id=7948, 1606.0pt x 1183.42125pt>
-=======
-<img/AGATE/Ur_s_Ua/44Dh_Ur_s_Ua.png, id=7926, 1606.0pt x 1183.42125pt>
->>>>>>> Stashed changes
+<img/AGATE/Ur_s_Ua/44Dh_Ur_s_Ua.png, id=7983, 1606.0pt x 1183.42125pt>
 File: img/AGATE/Ur_s_Ua/44Dh_Ur_s_Ua.png Graphic file (type png)
 <use img/AGATE/Ur_s_Ua/44Dh_Ur_s_Ua.png>
 Package pdftex.def Info: img/AGATE/Ur_s_Ua/44Dh_Ur_s_Ua.png  used on input line
  383.
 (pdftex.def)             Requested size: 227.62209pt x 167.71834pt.
-<<<<<<< Updated upstream
-<img/AGATE/Ur_s_Ua/44Dh_Urm_s_Uam.png, id=7949, 1606.0pt x 1183.42125pt>
-=======
-<img/AGATE/Ur_s_Ua/44Dh_Urm_s_Uam.png, id=7927, 1606.0pt x 1183.42125pt>
->>>>>>> Stashed changes
+<img/AGATE/Ur_s_Ua/44Dh_Urm_s_Uam.png, id=7984, 1606.0pt x 1183.42125pt>
 File: img/AGATE/Ur_s_Ua/44Dh_Urm_s_Uam.png Graphic file (type png)
 <use img/AGATE/Ur_s_Ua/44Dh_Urm_s_Uam.png>
 Package pdftex.def Info: img/AGATE/Ur_s_Ua/44Dh_Urm_s_Uam.png  used on input li
@@ -7060,21 +5983,13 @@ pdfTeX warning: pdflatex (file ./img/AGATE/z440/pos910_RMS_T.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
 > <./img/AGATE/Ur_s_Ua/44Dh_Ur_s_Ua.png (PNG copy)> <./img/AGATE/Ur_s_Ua/44Dh_U
 rm_s_Uam.png (PNG copy)>]
-<<<<<<< Updated upstream
-<img/chf/chf_crit/grid1_full.png, id=8035, 1606.0pt x 1300.86pt>
-=======
-<img/chf/chf_crit/grid1_full.png, id=8012, 1606.0pt x 1300.86pt>
->>>>>>> Stashed changes
+<img/chf/chf_crit/grid1_full.png, id=8069, 1606.0pt x 1300.86pt>
 File: img/chf/chf_crit/grid1_full.png Graphic file (type png)
 <use img/chf/chf_crit/grid1_full.png>
 Package pdftex.def Info: img/chf/chf_crit/grid1_full.png  used on input line 44
 6.
 (pdftex.def)             Requested size: 227.62209pt x 184.36215pt.
-<<<<<<< Updated upstream
-<img/chf/chf_crit/grid1.png, id=8036, 1606.0pt x 1300.86pt>
-=======
-<img/chf/chf_crit/grid1.png, id=8013, 1606.0pt x 1300.86pt>
->>>>>>> Stashed changes
+<img/chf/chf_crit/grid1.png, id=8070, 1606.0pt x 1300.86pt>
 File: img/chf/chf_crit/grid1.png Graphic file (type png)
 <use img/chf/chf_crit/grid1.png>
 Package pdftex.def Info: img/chf/chf_crit/grid1.png  used on input line 449.
@@ -7087,21 +6002,13 @@ Overfull \hbox (13.33331pt too wide) in paragraph at lines 446--450
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<<<<<<< Updated upstream
-<img/chf/chf_crit/grid2_full.png, id=8037, 1606.0pt x 1300.86pt>
-=======
-<img/chf/chf_crit/grid2_full.png, id=8014, 1606.0pt x 1300.86pt>
->>>>>>> Stashed changes
+<img/chf/chf_crit/grid2_full.png, id=8071, 1606.0pt x 1300.86pt>
 File: img/chf/chf_crit/grid2_full.png Graphic file (type png)
 <use img/chf/chf_crit/grid2_full.png>
 Package pdftex.def Info: img/chf/chf_crit/grid2_full.png  used on input line 45
 8.
 (pdftex.def)             Requested size: 227.62209pt x 184.36215pt.
-<<<<<<< Updated upstream
-<img/chf/chf_crit/grid2.png, id=8038, 1606.0pt x 1300.86pt>
-=======
-<img/chf/chf_crit/grid2.png, id=8015, 1606.0pt x 1300.86pt>
->>>>>>> Stashed changes
+<img/chf/chf_crit/grid2.png, id=8072, 1606.0pt x 1300.86pt>
 File: img/chf/chf_crit/grid2.png Graphic file (type png)
 <use img/chf/chf_crit/grid2.png>
 Package pdftex.def Info: img/chf/chf_crit/grid2.png  used on input line 461.
@@ -7242,14 +6149,16 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                in the main.log file.
 
 [207] (main.aux (FrontBackMatter/Titlepage.aux) (FrontBackMatter/Titleback.aux)
-(FrontBackMatter/Publications.aux) (FrontBackMatter/Abstract.aux)
-(FrontBackMatter/Resume.aux) (FrontBackMatter/Contents.aux)
-(Chapters/intro_ccl/Intro.aux) (Chapters/NCFD/Chap_NCFD.aux)
-(Chapters/NCFD/Chap_Debora.aux) (Chapters/NCFD/Chap_Debora_NCFD.aux)
-(Chapters/HFP/Chap_HFPmodels.aux) (Chapters/HFP/Chap_BubDyn.aux)
-(Chapters/HFP/Chap_Closures.aux) (Chapters/HFP/Chap_NewHFP.aux)
-(Chapters/HFP/Chap_ToCHF.aux) (Chapters/industrial/Chap_Promoteur.aux)
-(Chapters/industrial/Chap_Prom_CFD.aux) (Chapters/intro_ccl/Conclusion.aux))
+(FrontBackMatter/Acknowledgments.aux) (FrontBackMatter/Dedication.aux)
+(FrontBackMatter/Foreword.aux) (FrontBackMatter/Abstract.aux)
+(FrontBackMatter/Resume.aux) (FrontBackMatter/Publications.aux)
+(FrontBackMatter/Contents.aux) (Chapters/intro_ccl/Intro.aux)
+(Chapters/NCFD/Chap_NCFD.aux) (Chapters/NCFD/Chap_Debora.aux)
+(Chapters/NCFD/Chap_Debora_NCFD.aux) (Chapters/HFP/Chap_HFPmodels.aux)
+(Chapters/HFP/Chap_BubDyn.aux) (Chapters/HFP/Chap_Closures.aux)
+(Chapters/HFP/Chap_NewHFP.aux) (Chapters/HFP/Chap_ToCHF.aux)
+(Chapters/industrial/Chap_Promoteur.aux) (Chapters/industrial/Chap_Prom_CFD.aux
+) (Chapters/intro_ccl/Conclusion.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.43996pt have occurred.
@@ -7264,97 +6173,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< Updated upstream
- 68808 strings out of 477954
- 1601384 string characters out of 2825277
- 2839091 words of memory out of 3000000
- 84406 multiletter control sequences out of 15000+600000
- 643750 words of font info for 197 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 108i,23n,125p,10601b,3413s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{
-C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:
-/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C
-:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/U
-sers/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/
-Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:
-/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Use
-rs/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.
-pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmbx7.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmex10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Luczer/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Luczer/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Luczer/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/User
-s/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmmi9.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmmib10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cmextra/cmmib7.pfb><C:/Users/Luczer/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Luczer/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Luczer/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Luczer/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users
-/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r9.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmsy6.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Luczer/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Luczer/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:/Users/Luc
-zer/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmbb.pfb><C:/Us
-ers/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/mathpazo/fplmr.pfb>
-<C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb
-><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
-b><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx9.pf
-b><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.
-pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc1
-0.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex
-10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmm
-i10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-mi5.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-mi6.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-mi7.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-mi8.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-mi9.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-r10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-r12.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-r5.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr
-6.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7
-.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.
-pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.p
-fb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.
-pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri7.
-pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri8.
-pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.
-pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10
-.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy1
-0.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy
-5.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy
-6.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy
-7.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy
-8.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy
-9.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt
-10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/symbols/msbm10.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/cm-super/sfrm1200.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKTeX/f
-onts/type1/urw/palatino/uplr8a.pfb><C:/Users/Luczer/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/wasy-type1/wasy10.pfb>
-Output written on main.pdf (231 pages, 41709748 bytes).
-PDF statistics:
- 9403 PDF objects out of 10688 (max. 8388607)
- 1367 named destinations out of 1440 (max. 500000)
- 38928 words of extra memory for PDF output out of 42996 (max. 10000000)
-=======
- 68897 strings out of 476404
- 1601446 string characters out of 2790468
- 2895122 words of memory out of 3000000
- 86075 multiletter control sequences out of 15000+600000
- 683753 words of font info for 200 fonts, out of 8000000 for 9000
+ 69015 strings out of 476404
+ 1606219 string characters out of 2790468
+ 2905931 words of memory out of 3000000
+ 86156 multiletter control sequences out of 15000+600000
+ 687097 words of font info for 202 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,23n,125p,10601b,3423s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/
@@ -7416,20 +6239,21 @@ lmr9.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri
 10.pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri7.
 pfb><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri8.pfb
 ><C:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C
-:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/
-Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy5.pfb><C:/Use
-rs/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/
-Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Luc
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Luc/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/Luc/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Luc/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users
-/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:
-/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on main.pdf (227 pages, 41664682 bytes).
+:/Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/
+Users/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Us
+ers/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy5.pfb><C:/Users
+/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Lu
+c/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Luc/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Luc/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/Luc/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/Luc/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/lm/lmtt9.pfb><C:/Users/Luc/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/Luc/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/cm-super/sfrm1200.pfb><C:/User
+s/Luc/AppData/Local/Programs/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on main.pdf (234 pages, 41743221 bytes).
 PDF statistics:
- 9377 PDF objects out of 10688 (max. 8388607)
- 1360 named destinations out of 1440 (max. 500000)
- 38408 words of extra memory for PDF output out of 42996 (max. 10000000)
->>>>>>> Stashed changes
+ 9454 PDF objects out of 10688 (max. 8388607)
+ 1374 named destinations out of 1440 (max. 500000)
+ 39456 words of extra memory for PDF output out of 42996 (max. 10000000)
 
